@@ -1,0 +1,98 @@
+# ============================================
+# Unity generated folders
+# ============================================
+
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+
+# ============================================
+# Unity cache / generated files
+# ============================================
+
+MemoryCaptures/
+Recordings/
+
+# Asset meta files should NOT be ignored
+# *.meta MUST be committed
+
+# ============================================
+# Visual Studio / Rider / VSCode
+# ============================================
+
+.vs/
+.idea/
+.gradle/
+.vscode/
+
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+
+# ============================================
+# OS generated files
+# ============================================
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ============================================
+# Unity crash reports
+# ============================================
+
+sysinfo.txt
+
+# ============================================
+# Build output
+# ============================================
+
+/Build/
+/Builds/
+/BuildOutput/
+
+# ============================================
+# Auto-generated addressables
+# ============================================
+
+/Assets/AddressableAssetsData/*/*.bin*
+/Assets/AddressableAssetsData/*/*.json
+
+# ============================================
+# Package manager generated files
+# ============================================
+
+packages-lock.json
+
+# ============================================
+# Rider
+# ============================================
+
+*.sln.iml
+
+# ============================================
+# Plastic SCM
+# ============================================
+
+.plastic/
+plastic.sln
+
+# ============================================
+# User specific
+# ============================================
+
+*.pidb.meta
+*.pdb.meta
