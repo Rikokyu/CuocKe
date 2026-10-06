@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 3
   tags:
   - Slot
+  - Pet
+  - Rooster
   layers:
   - Default
   - TransparentFX
@@ -51,3 +53,4 @@ TagManager:
   - Light Layer 5
   - Light Layer 6
   - Light Layer 7
+  m_MigratedRenderPipelines: []
