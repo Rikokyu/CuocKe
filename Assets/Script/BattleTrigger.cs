@@ -13,6 +13,9 @@ public class BattleTrigger : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        // Unity still delivers trigger messages to a DISABLED component; the scene switches this trigger off on purpose
+        // (the childhood friend starts the fight), so respect that.
+        if (!enabled) return;
         if (!other.CompareTag("Player")) return;
         if (triggerOnce && consumed) return;
 

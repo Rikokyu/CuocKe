@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4890830c199e76340babb0b205329a7d, type: 3}
+  m_Name: Quest_ThuSucVoiBanCu
+  m_EditorClassIdentifier: Assembly-CSharp::QuestDefinition
+  questId: thu_suc_voi_ban_cu
+  title: "Th\u1EED s\u1EE9c v\u1EDBi b\u1EA1n c\u0169"
+  description: "G\u1EB7p b\u1EA1n th\xE2n c\u0169 v\xE0 \u0111\u1EA5u th\u1EED v\u1EDBi
+    ch\xFA g\xE0 c\u1EE7a m\xECnh."
+  objective: "N\xF3i chuy\u1EC7n v\u1EDBi b\u1EA1n c\u0169 \u0111\u1EC3 b\u1EAFt
+    \u0111\u1EA7u tr\u1EADn \u0111\u1EA5u."
+  objectiveKey: first_battle
+  progressLabel: "\u0110\xE3 \u0111\u1EA5u"
+  requiredAmount: 1
+  rewardMoney: 0
+  repeatable: 0
+  turnInObjective: 
+  objectiveCompletedMessage: 
+  silentCompletion: 0
+  offerLines:
+  - 
+  activeLines:
+  - 
+  readyLines:
+  - 
+  completedLines:
+  - 

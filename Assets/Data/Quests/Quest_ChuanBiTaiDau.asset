@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4890830c199e76340babb0b205329a7d, type: 3}
+  m_Name: Quest_ChuanBiTaiDau
+  m_EditorClassIdentifier: Assembly-CSharp::QuestDefinition
+  questId: chuan_bi_tai_dau
+  title: "Chu\u1EA9n b\u1ECB t\xE1i \u0111\u1EA5u"
+  description: "G\xE0 \u0111\xE3 bi\u1EBFn h\xECnh! Ki\u1EBFm ti\u1EC1n (ve chai,
+    giao h\xE0ng), mua th\u1EA3m t\u1EADp \u1EDF ch\u1EE3 v\xE0 tr\u1EA3i \u1EDF
+    khu t\u1EADp, thu\xEA hu\u1EA5n luy\u1EC7n vi\xEAn luy\u1EC7n g\xE0 r\u1ED3i
+    g\u1EB7p b\u1EA1n th\xE2n \u0111\u1EC3 t\xE1i \u0111\u1EA5u."
+  objective: "Ki\u1EBFm ti\u1EC1n, mua \u0111\u1ED3 t\u1EADp v\xE0 luy\u1EC7n g\xE0
+    \u1EDF khu hu\u1EA5n luy\u1EC7n"
+  objectiveKey: prepare_rematch
+  progressLabel: "Bu\u1ED5i t\u1EADp"
+  requiredAmount: 5
+  rewardMoney: 0
+  repeatable: 0
+  turnInObjective: "G\xE0 \u0111\xE3 s\u1EB5n s\xE0ng: g\u1EB7p b\u1EA1n th\xE2n
+    \u0111\u1EC3 t\xE1i \u0111\u1EA5u"
+  objectiveCompletedMessage: "Luy\u1EC7n xong! \u0110\u1EBFn g\u1EB7p b\u1EA1n th\xE2n
+    \u0111\u1EC3 t\xE1i \u0111\u1EA5u."
+  silentCompletion: 0
+  offerLines:
+  - 
+  activeLines:
+  - 
+  readyLines:
+  - 
+  completedLines:
+  - 

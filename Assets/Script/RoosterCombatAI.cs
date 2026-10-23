@@ -26,6 +26,8 @@ public class RoosterCombatAI : MonoBehaviour, IStopOnDeath
     public float detectionRadius = 6f;
     public float leashRadius = 12f;
     public LayerMask enemyLayerMask = ~0;
+    [Tooltip("When false the rooster never switches Idle -> Combat on its own. BattleManager turns this off when a battle ends and on again when the next one starts.")]
+    public bool autoEngage = true;
 
     [Header("Combat")]
     public float attackRange = 1.8f;
@@ -80,7 +82,7 @@ public class RoosterCombatAI : MonoBehaviour, IStopOnDeath
             agent.SetDestination(distToSpawn > 0.5f ? spawnPoint : transform.position);
         }
 
-        Transform found = FindEnemyInRange(detectionRadius);
+        Transform found = autoEngage ? FindEnemyInRange(detectionRadius) : null;
         if (found != null)
         {
             currentTarget = found;
@@ -165,10 +167,28 @@ public class RoosterCombatAI : MonoBehaviour, IStopOnDeath
         foreach (var hit in hits)
         {
             if (!hit.CompareTag(enemyTag)) continue;
+            if (!HasClearLineOfSight(hit)) continue; // a wall/obstacle stands between the attack point and the target
 
             var hp = hit.GetComponentInParent<HealthSystem>();
             if (hp != null) hp.TakeDamage(damage);
         }
+    }
+
+    /// <summary>True unless something solid (not the target itself, not a trigger) sits between the attack point
+    /// and the target's collider - i.e. the hit does not reach through a wall. Everything in this project shares
+    /// one physics layer, so this checks WHAT was hit rather than filtering by layer.</summary>
+    bool HasClearLineOfSight(Collider target)
+    {
+        Vector3 from = attackPoint.position;
+        Vector3 to = target.bounds.center;
+        Vector3 delta = to - from;
+        float dist = delta.magnitude;
+        if (dist < 0.05f) return true;
+
+        RaycastHit hit;
+        if (Physics.Raycast(from, delta / dist, out hit, dist, ~0, QueryTriggerInteraction.Ignore))
+            return hit.collider == target || hit.transform.IsChildOf(target.transform) || target.transform.IsChildOf(hit.transform);
+        return true; // nothing solid in the way
     }
 
     Transform FindEnemyInRange(float radius)
@@ -185,6 +205,28 @@ public class RoosterCombatAI : MonoBehaviour, IStopOnDeath
         isDead = true;
         currentTarget = null;
         if (agent != null && agent.enabled) agent.isStopped = true;
+    }
+
+    /// <summary>
+    /// Counterpart of StopCombat() for a rooster that was killed and then revived by HealthSystem.Revive (the final boss
+    /// reuses the rooster that died in the earlier rematch). Without it StopCombat's private isDead flag stays set and the
+    /// Animator stays in 'Dead' (that state only leaves through the WakeUp trigger), so the rooster lay there forever.
+    /// Call it only after Revive() returned true.
+    /// </summary>
+    public void ResumeAfterRevive()
+    {
+        isDead = false;
+        currentTarget = null;
+        Animator anim = GetComponent<Animator>();
+        if (anim != null)
+        {
+            foreach (AnimatorControllerParameter prm in anim.parameters)
+            {
+                if (prm.name == "isRunning" && prm.type == AnimatorControllerParameterType.Bool) anim.SetBool("isRunning", false);
+                if (prm.name == "WakeUp" && prm.type == AnimatorControllerParameterType.Trigger) anim.SetTrigger("WakeUp");
+            }
+        }
+        if (agent != null && agent.enabled && agent.isOnNavMesh) agent.isStopped = false;
     }
 
     void OnDrawGizmosSelected()

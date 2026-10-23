@@ -33,6 +33,8 @@ public class PetCombatAI : MonoBehaviour, IStopOnDeath
     public float detectionRadius = 6f;   // aggro range - switches Follow -> Combat
     public float leashRadius = 12f;      // give-up range - switches Combat -> Follow
     public LayerMask enemyLayerMask = ~0;
+    [Tooltip("When false the pet never switches Follow -> Combat on its own. BattleManager turns this off when a battle ends and on again when the next one starts.")]
+    public bool autoEngage = true;
 
     [Header("Combat")]
     public float attackRange = 1.8f;
@@ -97,7 +99,7 @@ public class PetCombatAI : MonoBehaviour, IStopOnDeath
 
         HandleIdlePushUp();
 
-        Transform found = FindEnemyInRange(detectionRadius);
+        Transform found = autoEngage ? FindEnemyInRange(detectionRadius) : null;
         if (found != null)
         {
             // A Rooster showed up - drop everything (including a push-up in progress) and fight
@@ -242,10 +244,28 @@ public class PetCombatAI : MonoBehaviour, IStopOnDeath
         foreach (var hit in hits)
         {
             if (!hit.CompareTag(enemyTag)) continue;
+            if (!HasClearLineOfSight(hit)) continue; // a wall/obstacle stands between the attack point and the target
 
             var hp = hit.GetComponentInParent<HealthSystem>();
             if (hp != null) hp.TakeDamage(damage);
         }
+    }
+
+    /// <summary>True unless something solid (not the target itself, not a trigger) sits between the attack point
+    /// and the target's collider - i.e. the hit does not reach through a wall. Everything in this project shares
+    /// one physics layer, so this checks WHAT was hit rather than filtering by layer.</summary>
+    bool HasClearLineOfSight(Collider target)
+    {
+        Vector3 from = attackPoint.position;
+        Vector3 to = target.bounds.center;
+        Vector3 delta = to - from;
+        float dist = delta.magnitude;
+        if (dist < 0.05f) return true;
+
+        RaycastHit hit;
+        if (Physics.Raycast(from, delta / dist, out hit, dist, ~0, QueryTriggerInteraction.Ignore))
+            return hit.collider == target || hit.transform.IsChildOf(target.transform) || target.transform.IsChildOf(hit.transform);
+        return true; // nothing solid in the way
     }
 
     Transform FindEnemyInRange(float radius)
@@ -263,6 +283,23 @@ public class PetCombatAI : MonoBehaviour, IStopOnDeath
         currentTarget = null;
         isPushingUp = false;
         if (agent != null && agent.enabled) agent.isStopped = true;
+    }
+
+    /// <summary>
+    /// Undoes StopCombat() once the pet has been revived (HealthSystem.Revive) and has finished getting up:
+    /// back to plain Follow with all combat/push-up state cleared.
+    /// </summary>
+    public void ResumeAfterRecovery()
+    {
+        isDead = false;
+        currentTarget = null;
+        currentState = State.Follow;
+        cooldownTimer = 0f;
+        isPushingUp = false;
+        playerIdleTimer = 0f;
+        if (player != null) lastPlayerPosition = player.position;
+        if (anim != null) anim.SetBool("IsPushing", false);
+        if (agent != null && agent.enabled && agent.isOnNavMesh) agent.isStopped = false;
     }
 
     void OnDrawGizmosSelected()

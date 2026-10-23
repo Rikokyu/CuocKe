@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b62b11e35e28ca4b8a5d87e5eb5cafa, type: 3}
+  m_Name: ShopCatalog_DungCu
+  m_EditorClassIdentifier: Assembly-CSharp::ShopCatalog
+  entries:
+  - item: {fileID: 11400000, guid: d531017b122e996459732881ea61e1ea, type: 2}
+    price: 60
+    description: "B\xECnh t\u01B0\u1EDBi \u0111\u1EC3 ch\u0103m rau, ch\u0103m c\xE2y
+      cho \xF4ng b\xE0."
+  - item: {fileID: 11400000, guid: c98c7fa4c88a52f47b0d6556e94a5c3d, type: 2}
+    price: 150
+    description: "Th\u1EA3m \u0111\u1EC3 g\xE0 h\xEDt \u0111\u1EA5t. Mua r\u1ED3i
+      ch\u1ECDn tr\xEAn thanh nhanh, \u0111\u1EE9ng c\u1EA1nh ch\u1ED7 h\xEDt \u0111\u1EA5t
+      \u1EDF khu t\u1EADp v\xE0 nh\u1EA5n F \u0111\u1EC3 tr\u1EA3i."
+  - item: {fileID: 11400000, guid: fe191e551a583074a89f2d050e524802, type: 2}
+    price: 40
+    description: "Th\u1EE9c \u0103n b\u1ED5 sung h\u1ED7 tr\u1EE3 g\xE0 luy\u1EC7n
+      t\u1EADp."
+  - item: {fileID: 11400000, guid: a0b7e29ec3c82414a9790762da7c2656, type: 2}
+    price: 20
+    description: "Ch\u1ECDn v\xE9 tr\xEAn thanh nhanh r\u1ED3i nh\u1EA5n F \u0111\u1EC3
+      c\xE0o. C\xF3 th\u1EC3 tr\xFAng ti\u1EC1n, c\u0169ng c\xF3 th\u1EC3 tr\u01B0\u1EE3t."
+  - item: {fileID: 11400000, guid: 4381a16f1ed4a0c40b13dedd40305d5c, type: 2}
+    price: 80
+    description: "Ph\xE2n b\xF3n gi\xE0u protein cho lu\u1ED1ng rau. \u0110\u1EE9ng
+      c\u1EA1nh lu\u1ED1ng rau, ch\u1ECDn ph\xE2n b\xF3n r\u1ED3i nh\u1EA5n F."

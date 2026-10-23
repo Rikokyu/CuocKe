@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a1591f63e5e0ef4caf631b8d219eda3, type: 3}
+  m_Name: Opponent_ChiBa
+  m_EditorClassIdentifier: Assembly-CSharp::OpponentDefinition
+  opponentId: chiba
+  displayName: "Ch\u1ECB Ba"
+  maxHealth: 130
+  damage: 14
+  attackCooldown: 1.5
+  rewardMoney: 200
+  medals: 1
+  introLines:
+  - "Nghe n\xF3i g\xE0 m\xE0y v\u1EEBa h\u1EA1 \u0111\u01B0\u1EE3c g\xE0 th\u1EB1ng
+    b\u1EA1n m\xE0y h\u1EA3?"
+  - "G\xE0 ch\u1ECB Ba nu\xF4i b\u1EB1ng c\xE1m x\u1ECBn \u0111\u1EA5y. \u0110\u1EA5u
+    m\u1ED9t tr\u1EADn gi\u1EA3i l\xE0ng kh\xF4ng?"
+  retryLines:
+  - "Ch\u01B0a ph\u1EE5c h\u1EA3? Luy\u1EC7n th\xEAm r\u1ED3i th\xE1ch \u0111\u1EA5u
+    l\u1EA1i, ch\u1ECB kh\xF4ng ch\u1EA1y \u0111\xE2u."
+  defeatedLines:
+  - "Ch\u1ECB ch\u1ECBu thua r\u1ED3i. G\xE0 em kh\xE1 th\u1EADt! Sang g\u1EB7p Ch\xFA
+    T\u01B0 \u0111i, \u1ED5ng \u0111ang ch\u1EDD."
+  lockedLines:
+  - "Ch\u01B0a \u0111\u1EBFn l\u01B0\u1EE3t em \u0111\xE2u."
+  challengeLabel: "Th\xE1ch \u0111\u1EA5u!"

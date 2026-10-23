@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a1591f63e5e0ef4caf631b8d219eda3, type: 3}
+  m_Name: Opponent_ChuTu
+  m_EditorClassIdentifier: Assembly-CSharp::OpponentDefinition
+  opponentId: chutu
+  displayName: "Ch\xFA T\u01B0"
+  maxHealth: 190
+  damage: 18
+  attackCooldown: 1.5
+  rewardMoney: 350
+  medals: 1
+  introLines:
+  - "Ch\xFA T\u01B0 nghe ti\u1EBFng g\xE0 m\xE0y r\u1ED3i. Th\u1EAFng \u0111\u01B0\u1EE3c
+    ch\u1ECB Ba th\xEC c\u0169ng kh\xE1 \u0111\u1EA5y."
+  - "G\xE0 ch\xFA to x\xE1c v\xE0 \u0111\xE1nh \u0111au l\u1EAFm. D\xE1m \u0111\u1EA5u
+    kh\xF4ng?"
+  retryLines:
+  - "G\xE0 m\xE0y ch\u01B0a \u0111\u1EE7 \u0111\xF4 \u0111\xE2u. T\u1EADp th\xEAm
+    r\u1ED3i quay l\u1EA1i."
+  defeatedLines:
+  - "Ch\xFA thua r\u1ED3i. M\xE0y v\xF4 \u0111\u1ECBch gi\u1EA3i l\xE0ng \u0111\xFAng
+    ngh\u0129a!"
+  lockedLines:
+  - "Mu\u1ED1n \u0111\u1EA5u v\u1EDBi ch\xFA th\xEC ph\u1EA3i th\u1EAFng ch\u1ECB
+    Ba tr\u01B0\u1EDBc \u0111\xE3."
+  challengeLabel: "Th\xE1ch \u0111\u1EA5u!"

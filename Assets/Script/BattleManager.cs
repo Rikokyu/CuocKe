@@ -30,6 +30,9 @@ public class BattleManager : MonoBehaviour
     /// <summary>Set once the first story battle has resolved to a loss. Runtime-only, no persistence this milestone.</summary>
     public static bool firstBattleCompleted;
 
+    /// <summary>Raised once when a battle ends in a player loss (after state is Completed and firstBattleCompleted is set).</summary>
+    public event System.Action PlayerLostBattle;
+
     float originalPlayerDamage;
     float originalEnemyDamage;
     bool balanceApplied;
@@ -60,6 +63,7 @@ public class BattleManager : MonoBehaviour
         }
 
         CurrentBattleState = BattleState.InBattle;
+        SetEngagement(true);
 
         if (isFirstBattle)
             ApplyFirstBattleBalance();
@@ -89,6 +93,13 @@ public class BattleManager : MonoBehaviour
 
         balanceApplied = true;
         Debug.Log($"[BattleManager] First Battle balance applied: Player damage {originalPlayerDamage}->{firstBattlePlayerDamage}, Enemy damage {originalEnemyDamage}->{firstBattleEnemyDamage}");
+    }
+
+    /// <summary>Lets both fighters start (true) or stop (false) picking fights on their own. Existing AI is otherwise untouched.</summary>
+    void SetEngagement(bool engage)
+    {
+        if (mainChickenCombat != null) mainChickenCombat.autoEngage = engage;
+        if (enemyCombat != null) enemyCombat.autoEngage = engage;
     }
 
     void RestoreBalance()
@@ -128,6 +139,7 @@ public class BattleManager : MonoBehaviour
         if (enemyHealth != null) enemyHealth.OnDeath.RemoveListener(HandleEnemyChickenDeath);
 
         RestoreBalance();
+        SetEngagement(false); // battle over: nobody auto-aggros again until the next StartBattle
 
         // Note: we don't need to manually stop the surviving fighter's combat AI here -
         // PetCombatAI/RoosterCombatAI already detect the opponent's HealthSystem.IsDead
@@ -138,6 +150,7 @@ public class BattleManager : MonoBehaviour
             if (isFirstBattle) firstBattleCompleted = true;
             CurrentBattleState = BattleState.Completed;
             Debug.Log("[BattleManager] Battle Completed - first loss recorded. Main Chicken is NOT destroyed; game returns to normal gameplay. (Week 2: Quest system picks up from here.)");
+            PlayerLostBattle?.Invoke();
         }
         else
         {

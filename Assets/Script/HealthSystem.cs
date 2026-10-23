@@ -30,6 +30,8 @@ public class HealthSystem : MonoBehaviour
 
     public bool IsDead { get; private set; }
 
+    bool[] colliderWasEnabled; // captured in Die() so Revive() restores exactly what was on
+
     void Awake()
     {
         currentHealth = maxHealth;
@@ -57,6 +59,44 @@ public class HealthSystem : MonoBehaviour
         OnHealthChanged?.Invoke(currentHealth, maxHealth);
     }
 
+    /// <summary>
+    /// Brings a dead entity back (used by the post-loss recovery sequence). Does nothing and returns false
+    /// unless IsDead. Restores HP to healthFraction of max (at least 1), re-enables exactly the colliders and
+    /// the NavMeshAgent that Die() switched off, clears the Animator isDead flag and refreshes health bars.
+    /// It does NOT play the WakeUp animation or resume combat AI - the caller owns that.
+    /// </summary>
+    public bool Revive(float healthFraction = 1f)
+    {
+        if (!IsDead) return false;
+        IsDead = false;
+
+        currentHealth = Mathf.Clamp(maxHealth * Mathf.Clamp01(healthFraction), 1f, maxHealth);
+
+        if (colliders != null)
+        {
+            for (int i = 0; i < colliders.Length; i++)
+            {
+                bool wasOn = colliderWasEnabled == null || i >= colliderWasEnabled.Length || colliderWasEnabled[i];
+                if (colliders[i] != null && wasOn) colliders[i].enabled = true;
+            }
+        }
+
+        if (agent != null)
+        {
+            agent.enabled = true;
+            NavMeshHit hit;
+            if (!agent.isOnNavMesh && NavMesh.SamplePosition(transform.position, out hit, 3f, NavMesh.AllAreas))
+                agent.Warp(hit.position);
+            if (agent.isOnNavMesh) agent.isStopped = true; // stays put until the caller resumes the AI
+        }
+
+        if (animator != null)
+            animator.SetBool("isDead", false);
+
+        OnHealthChanged?.Invoke(currentHealth, maxHealth);
+        return true;
+    }
+
     void Die()
     {
         if (IsDead) return; // idempotent - Die() can only ever run once
@@ -75,8 +115,13 @@ public class HealthSystem : MonoBehaviour
         }
 
         // Disable colliders so it lies flat and can't be hit or block pathing anymore
-        foreach (var col in colliders)
-            if (col != null) col.enabled = false;
+        colliderWasEnabled = new bool[colliders.Length];
+        for (int i = 0; i < colliders.Length; i++)
+        {
+            if (colliders[i] == null) continue;
+            colliderWasEnabled[i] = colliders[i].enabled;
+            colliders[i].enabled = false;
+        }
 
         // Tell any combat AI on this object to stop fighting (decoupled via interface,
         // not a direct reference to PetCombatAI/RoosterCombatAI - avoids a circular dependency)

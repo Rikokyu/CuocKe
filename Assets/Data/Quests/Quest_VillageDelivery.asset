@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4890830c199e76340babb0b205329a7d, type: 3}
+  m_Name: Quest_VillageDelivery
+  m_EditorClassIdentifier: Assembly-CSharp::QuestDefinition
+  questId: village_delivery
+  title: "Ship h\xE0ng l\xE0ng qu\xEA"
+  description: "L\u1EA5y g\xF3i h\xE0ng c\u1EA1nh nh\xE0 \xF4ng b\xE0, mang \u0111\u1EBFn
+    cho ng\u01B0\u1EDDi nh\u1EADn trong l\xE0ng r\u1ED3i quay l\u1EA1i nh\u1EADn
+    ti\u1EC1n c\xF4ng."
+  objective: "L\u1EA5y g\xF3i h\xE0ng c\u1EA1nh nh\xE0 \xF4ng b\xE0, giao cho b\u1EA1n
+    th\u1EDDi th\u01A1 \u1EA5u"
+  objectiveKey: delivery
+  progressLabel: "G\xF3i h\xE0ng"
+  requiredAmount: 1
+  rewardMoney: 200
+  repeatable: 0
+  turnInObjective: "Quay l\u1EA1i g\u1EB7p b\xE0 \u0111\u1EC3 nh\u1EADn ti\u1EC1n
+    c\xF4ng"
+  offerLines:
+  - "\xD4ng c\xF3 g\xF3i h\xE0ng c\u1EA7n giao. Mang n\xF3 \u0111\u1EBFn ng\u01B0\u1EDDi
+    nh\u1EADn r\u1ED3i quay l\u1EA1i l\u1EA5y ti\u1EC1n c\xF4ng nh\xE9!"
+  - "G\xF3i h\xE0ng \u0111\u1EC3 c\u1EA1nh nh\xE0 \xF4ng b\xE0 \u0111\u1EA5y, c\u1EA7m
+    l\xEAn r\u1ED3i \u0111em cho b\u1EA1n th\u1EDDi th\u01A1 \u1EA5u c\u1EE7a ch\xE1u.
+    Xong vi\u1EC7c b\xE0 tr\u1EA3 {2} ti\u1EC1n."
+  activeLines:
+  - "G\xF3i h\xE0ng giao ch\u01B0a ch\xE1u? C\u1EA7m g\xF3i h\xE0ng c\u1EA1nh nh\xE0
+    \u0111em \u0111\u1EBFn cho ng\u01B0\u1EDDi nh\u1EADn \u0111i nh\xE9!"
+  readyLines:
+  - "Giao xong r\u1ED3i h\u1EA3? Gi\u1ECFi l\u1EAFm! \u0110\xE2y, {2} ti\u1EC1n c\xF4ng
+    c\u1EE7a ch\xE1u."
+  completedLines:
+  - "C\u1EA3m \u01A1n ch\xE1u nh\xE9, nh\u1EDD \u0111\u01B0\u1EE3c ch\xE1u l\xE0
+    \xF4ng b\xE0 y\xEAn t\xE2m."

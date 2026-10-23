@@ -18,6 +18,8 @@ public class MainChickenAcquire : MonoBehaviour
     public ChickenState currentState = ChickenState.Down;
     public bool IsAcquired => currentState == ChickenState.MainChicken;
     public KeyCode interactKey = KeyCode.E;
+    [Tooltip("ON (default): pressing E next to the lying chicken wakes it. OFF: only WakeUp() does (the story wakes it from the grandfather's dialogue).")]
+    public bool wakeWithInteractKey = true;
 
     bool playerInRange;
     PetCombatAI combatAI;
@@ -36,7 +38,7 @@ public class MainChickenAcquire : MonoBehaviour
     void Update()
     {
         // E only does anything while the chicken is still down - can't repeat/stack the sequence.
-        if (currentState == ChickenState.Down && playerInRange && Input.GetKeyDown(interactKey))
+        if (wakeWithInteractKey && currentState == ChickenState.Down && playerInRange && Input.GetKeyDown(interactKey))
             StartWakeUp();
 
         // Poll for the Animator finishing its own WakeUp->ChickenIdle transition (driven by
@@ -45,6 +47,15 @@ public class MainChickenAcquire : MonoBehaviour
         if (currentState == ChickenState.WakingUp && anim.GetCurrentAnimatorStateInfo(0).IsName("ChickenIdle"))
             FinishWakeUp();
     }
+
+    /// <summary>Starts the wake-up sequence from code (story dialogue). Only works while the chicken is still Down; false otherwise, so it can never stack or repeat.</summary>
+    public bool WakeUp()
+    {
+        if (currentState != ChickenState.Down) return false;
+        StartWakeUp();
+        return true;
+    }
+
 
     void StartWakeUp()
     {

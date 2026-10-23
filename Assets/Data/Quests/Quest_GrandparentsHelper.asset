@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4890830c199e76340babb0b205329a7d, type: 3}
+  m_Name: Quest_GrandparentsHelper
+  m_EditorClassIdentifier: Assembly-CSharp::QuestDefinition
+  questId: grandparents_helper
+  title: "Ch\xE1u ngoan b\u1EA5t \u0111\u1EAFc d\u0129"
+  description: "Mu\u1ED1n c\xF3 ti\u1EC1n hu\u1EA5n luy\u1EC7n g\xE0 th\xEC ph\u1EA3i
+    ph\u1EE5 \xF4ng b\xE0. L\u1EA5y b\xECnh t\u01B0\u1EDBi c\u1EA1nh nh\xE0, t\u01B0\u1EDBi
+    3 c\xE2y ngo\xE0i s\xE2n r\u1ED3i quay l\u1EA1i g\u1EB7p b\xE0 nh\u1EADn ti\u1EC1n
+    c\xF4ng."
+  objective: "L\u1EA5y b\xECnh t\u01B0\u1EDBi c\u1EA1nh nh\xE0, t\u01B0\u1EDBi 3
+    c\xE2y cho \xF4ng b\xE0"
+  objectiveKey: chore
+  progressLabel: "\u0110\xE3 t\u01B0\u1EDBi"
+  requiredAmount: 3
+  rewardMoney: 150
+  repeatable: 0
+  turnInObjective: "Quay l\u1EA1i g\u1EB7p b\xE0 \u0111\u1EC3 nh\u1EADn ti\u1EC1n
+    c\xF4ng"
+  offerLines:
+  - "Mu\u1ED1n c\xF3 ti\u1EC1n hu\u1EA5n luy\u1EC7n g\xE0 th\xEC ph\u1EE5 \xF4ng
+    b\xE0 ch\xFAt \u0111i ch\xE1u!"
+  - "T\u01B0\u1EDBi gi\xFAp b\xE0 {1} lu\u1ED1ng rau ngo\xE0i s\xE2n nh\xE9. Xong
+    b\xE0 tr\u1EA3 {2} ti\u1EC1n, ti\u1EC1n th\u1EADt \u0111\xE0ng ho\xE0ng, kh\xF4ng
+    ph\u1EA3i ti\u1EC1n \xE2m ph\u1EE7 \u0111\xE2u!"
+  - "B\xECnh t\u01B0\u1EDBi b\xE0 \u0111\u1EC3 c\u1EA1nh nh\xE0 \u0111\u1EA5y. C\u1EA7m
+    l\u1EA5y n\xF3 th\xEC m\u1EDBi t\u01B0\u1EDBi \u0111\u01B0\u1EE3c nh\xE9!"
+  activeLines:
+  - "M\u1EDBi t\u01B0\u1EDBi \u0111\u01B0\u1EE3c {0}/{1} lu\u1ED1ng th\xF4i ch\xE1u
+    \u01A1i. Rau n\xF3 kh\xE1t n\u01B0\u1EDBc h\xE9o c\u1EA3 r\u1ED3i k\xECa!"
+  readyLines:
+  - "Gi\u1ECFi qu\xE1, ch\xE1u ngoan b\u1EA5t \u0111\u1EAFc d\u0129 c\u1EE7a b\xE0!
+    \u0110\xE2y, {2} ti\u1EC1n c\xF4ng, \u0111\u1EEBng ti\xEAu h\u1EBFt v\xE0o k\u1EB9o
+    k\xE9o nh\xE9."
+  completedLines:
+  - "C\u1EA3m \u01A1n ch\xE1u nh\xE9. Rau xanh m\u01B0\u1EDBt, g\xE0 nh\xE0 m\xECnh
+    c\u0169ng c\xF3 ti\u1EC1n t\u1EADp luy\u1EC7n r\u1ED3i."
