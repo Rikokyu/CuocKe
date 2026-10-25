@@ -71,6 +71,8 @@ public class DialogueUI : MonoBehaviour
     public event Action<bool> LineShown;
 
     public bool IsOpen { get; private set; }
+    /// <summary>Read-only: the NPC name passed to Open() for the dialogue that is open now (null when closed). Used only to drive NPC gesture animations; it changes nothing in the dialogue.</summary>
+    public string CurrentSpeaker { get { return IsOpen ? currentSpeaker : null; } }
 
     void Awake()
     {

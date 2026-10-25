@@ -72,12 +72,12 @@ FINAL BOSS — tái đấu bạn thân cũ → THẮNG → KẾT THÚC GAME
 
 ### 4.7 Progression: kiếm tiền → mua → huấn luyện
 - **Nguồn tiền hiện có [ĐÃ CÓ]:** ví tiền `CurrencyWallet` + HUD; quest ve chai 100 (+ 104 tiền nhặt đủ 12 món), chăm rau 150, giao hàng 200 → tổng khoảng 554 tiền một lần.
-- **Cửa hàng [ĐÃ CÓ], ở `NPC_MarketVillager`:** Bình tưới 60, Tạ tập cho gà 150, Thức ăn tăng lực 40. Các món này **chưa có hiệu ứng**.
+- **Cửa hàng [ĐÃ CÓ], ở `NPC_MarketVillager`:** Bình tưới 60, Thảm tập cho gà 150 (thay Tạ tập; trải ở khu tập, cần cho hít đất), Thức ăn tăng lực 40, Vé số 20 (cào bằng F, có thể trúng tiền), Phân bón protein 80 (rắc cạnh luống rau bằng F, hiệu ứng thật chưa thiết kế). Bình tưới và Thức ăn tăng lực **chưa có hiệu ứng**.
 - **Huấn luyện [ĐANG LÀM]** (code và scene có, sửa lần cuối 2026-10-13, `PROJECT_STATUS.md` chưa ghi, chưa được chạy thử khi viết tài liệu này):
   - `ChickenStats`: Sức mạnh, Tấn công, Tốc độ (khởi điểm 10, trần 40) + Máu tối đa suy ra. Gà chưa luyện thì combat **không đổi**.
   - Ảnh hưởng combat qua `PetCombatAI`/`HealthSystem`/`NavMeshAgent` (không sửa script combat): Tấn công +1 sát thương/điểm; Sức mạnh +0.5 sát thương và +5 máu/điểm; Tốc độ +3% tốc độ di chuyển và nhịp đánh/điểm. Đủ 40/40/40: sát thương 10 → 55, máu 100 → 250, tốc độ ×1.9. Trong trận chỉ số sát thương không bị ghi đè (BattleManager vẫn giữ cân bằng trận đầu).
-  - 3 trạm ở khu `TrainingArea` (x -15..-1, z 47..57): hít đất (40 tiền, +2 Sức mạnh, **cần Tạ tập**), máy chạy bộ (50, +2 Tốc độ), bao cát (60, +2 Tấn công); gà thật sự làm động tác bằng Animator hiện có; một phiên 4 giây; không tập khi đang đánh; hủy ngang thì hoàn tiền.
-  - Kinh tế: mỗi chỉ số cần 15 phiên để từ 10 lên 40 → 600 / 750 / 900 tiền = 2250, cộng 150 Tạ tập. Tiền từ quest hiện chỉ khoảng 554, nên tiền thưởng giải đấu là nguồn chính để luyện tiếp (đúng ý "dùng tiền tiếp tục huấn luyện").
+  - 3 trạm ở khu `TrainingArea` (x -15..-1, z 47..57): hít đất (40 tiền, +2 Sức mạnh, **cần Thảm tập đã trải ở khu tập**), máy chạy bộ (50, +2 Tốc độ), bao cát (60, +2 Tấn công); gà thật sự làm động tác bằng Animator hiện có; một phiên 4 giây; không tập khi đang đánh; hủy ngang thì hoàn tiền.
+  - Kinh tế: mỗi chỉ số cần 15 phiên để từ 10 lên 40 → 600 / 750 / 900 tiền = 2250, cộng 150 Thảm tập. Tiền từ quest hiện chỉ khoảng 554, nên tiền thưởng giải đấu là nguồn chính để luyện tiếp (đúng ý "dùng tiền tiếp tục huấn luyện").
 - **[CHƯA LÀM]:** khóa huấn luyện cho đến khi biến hình; **protein** thành vật phẩm có hiệu ứng (dùng vật phẩm "Thức ăn tăng lực" hay thêm `Item_BotProtein` — [CẦN QUYẾT ĐỊNH]); hiển thị chỉ số gà trên HUD; lưu/tải (chỉ số, tiền, vật phẩm hiện reset khi tắt Play).
 
 ### 4.8 Giải đấu NPC

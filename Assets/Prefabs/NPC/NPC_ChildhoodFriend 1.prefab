@@ -1,0 +1,458 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2272370115488859411
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8443468095628508992}
+  - component: {fileID: 3980454643897037889}
+  - component: {fileID: 6517635815488684751}
+  m_Layer: 0
+  m_Name: "\u043F\u043E\u043A\u0440\u044B\u0448\u043A\u0430 (1)"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8443468095628508992
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2272370115488859411}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.48357192, y: -3.8761598e-11, z: 0.00000004464674, w: 0.87530464}
+  m_LocalPosition: {x: -0.0019963519, y: 0.10554767, z: 1.0704547}
+  m_LocalScale: {x: 500, y: 499.99985, z: 499.9999}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 632031947840683854}
+  m_LocalEulerAnglesHint: {x: -57.838, y: 0, z: 0}
+--- !u!33 &3980454643897037889
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2272370115488859411}
+  m_Mesh: {fileID: 521814816643474578, guid: 318f85674b89eb943a64f500d7f4a11d, type: 3}
+--- !u!23 &6517635815488684751
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2272370115488859411}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2336839302229727711, guid: 318f85674b89eb943a64f500d7f4a11d, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &9131398741946667732
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 899927367976379146}
+  - component: {fileID: 9061090939879399613}
+  - component: {fileID: 607757781187587019}
+  - component: {fileID: 7431650992383509282}
+  - component: {fileID: 481842585005563498}
+  m_Layer: 0
+  m_Name: NPC_ChildhoodFriend 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &899927367976379146
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9131398741946667732}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 24, y: 0.121, z: 19.7}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6821263770279013837}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9061090939879399613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9131398741946667732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 863ced175d196c641a37063e9dae9177, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::QuestObjectiveTarget
+  quest: {fileID: 11400000, guid: 9fdce12d520833149b877b8c24d6a202, type: 2}
+  objectiveKeyOverride: 
+  amount: 1
+  interactionDistance: 3.2
+  interactKey: 101
+  promptText: "Nh\u1EA5n E \u0111\u1EC3 giao h\xE0ng"
+  doneMessage: "\u0110\xE3 giao h\xE0ng!"
+  player: {fileID: 0}
+  requiredItem: {fileID: 0}
+  missingItemPromptText: "C\u1EA7n c\u1EA7m g\xF3i h\xE0ng \u0111\u1EC3 giao"
+  minProgress: 0
+  lockedHintText: 
+  hideOnUse: {fileID: 0}
+  grantItem: {fileID: 0}
+  grantCount: 1
+  bagFullMessage: "T\xFAi \u0111\u1EA7y, kh\xF4ng nh\u1EADn th\xEAm \u0111\u01B0\u1EE3c."
+  questManager: {fileID: 0}
+  prompt: {fileID: 0}
+  banner: {fileID: 0}
+  dialogue: {fileID: 0}
+--- !u!114 &607757781187587019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9131398741946667732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 709618d64535d294484833c35ecc702a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ChildhoodFriendBattleTaunt
+  interactionDistance: 3
+  interactKey: 101
+  promptText: "Nh\u1EA5n E \u0111\u1EC3 n\xF3i chuy\u1EC7n v\u1EDBi B\u1EA1n th\xE2n"
+  player: {fileID: 0}
+  dialogue: {fileID: 0}
+  prompt: {fileID: 0}
+  questManager: {fileID: 0}
+  questBattle: {fileID: 11400000, guid: 67499589fd8c04f499abc755095037db, type: 2}
+  deliveryTarget: {fileID: 0}
+  tauntDelaySeconds: 2.5
+  challengeLines:
+  - "\u01A0, th\u1EB1ng IT v\u1EC1 l\xE0ng r\u1ED3i \xE0? L\xE2u l\u1EAFm kh\xF4ng
+    g\u1EB7p!"
+  - "\u01A0, con g\xE0 n\xE0y c\u1EE7a m\xE0y \xE1? Tr\xF4ng... h\u01A1i y\u1EBFu
+    \u0111\u1EA5y nh\u1EC9."
+  - "Th\u1EED s\u1EE9c v\u1EDBi g\xE0 c\u1EE7a tao xem sao? \u0110\u1EC3 l\xFAc n\xE0o
+    r\u1EA3nh m\xECnh \u0111\u1EA5u m\u1ED9t tr\u1EADn!"
+  acceptLabel: "Nh\u1EADn l\u1EDDi th\xE1ch \u0111\u1EA5u"
+  needChickenLines:
+  - "\u01A0, g\xE0 c\u1EE7a m\xE0y \u0111\xE2u? D\u1EAFt n\xF3 theo r\u1ED3i h\u1EB5ng
+    n\xF3i chuy\u1EC7n th\xE1ch \u0111\u1EA5u!"
+  fightingLines:
+  - "\u0110ang \u0111\u1EA5u r\u1ED3i, nh\xECn \u0111i \u0111\xE2u \u0111\u1EA5y?!"
+  afterLossLines:
+  - "Hahaha, thua r\u1ED3i \u0111\xF3! B\u1EEFa n\xE0o t\xE1i \u0111\u1EA5u kh\xF4ng?
+    M\xC0Y S\u1EE2 \xC0"
+  idleLines:
+  - "G\xE0 m\xE0y c\xF2n y\u1EBFu l\u1EAFm. V\u1EC1 gi\xFAp \xF4ng b\xE0 \u0111i
+    \u0111\xE3, r\u1ED3i t\xEDnh chuy\u1EC7n t\xE1i \u0111\u1EA5u. Tao ch\u1EDD \u0111\u1EA5y."
+  playerSpeakerName: "T\xF4i"
+  playerReplyLines:
+  - "M\xE0y \u0111\u1EE3i \u0111\xF3!"
+--- !u!114 &7431650992383509282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9131398741946667732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca50278103d45a342ad9f069dbbf8bf0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RematchController
+  questManager: {fileID: 0}
+  dialogue: {fileID: 0}
+  banner: {fileID: 0}
+  rematchQuest: {fileID: 11400000, guid: 8acb6228d533dab49aa780129186f67e, type: 2}
+  chickenStats: {fileID: 0}
+  arenaStartDistance: 4
+  victoryDialogueDelay: 2.5
+  getUpDelay: 3
+  getUpTimeout: 8
+  idleStateName: ChickenIdle
+  arenaRadius: 6
+  guidanceReminderSeconds: 6
+  guidanceMessage: "H\xE3y d\u1EABn g\xE0 \u0111\u1EBFn \u0111\u1EA5u tr\u01B0\u1EDDng
+    \u0111\u1EC3 b\u1EAFt \u0111\u1EA7u tr\u1EADn t\xE1i \u0111\u1EA5u!"
+  notReadyLines:
+  - "G\xE0 m\xE0y m\u1EDBi t\u1EADp {0}/{1} bu\u1ED5i th\xF4i \xE0? Ch\u01B0a \u0111\u1EE7
+    \u0111\xF4 \u0111\u1EC3 \u0111\u1EA5u v\u1EDBi tao \u0111\xE2u."
+  - "Kh\xF4ng c\xF3 ti\u1EC1n th\xEC \u0111i nh\u1EB7t ve chai, giao h\xE0ng \u0111i.
+    Mua th\u1EA3m t\u1EADp \u1EDF ch\u1EE3, r\u1ED3i nh\u1EDD hu\u1EA5n luy\u1EC7n
+    vi\xEAn \u1EDF khu t\u1EADp luy\u1EC7n cho g\xE0."
+  readyLines:
+  - "\u1ED2, nh\xECn con g\xE0 m\xE0y kh\xE1c h\u1EB3n r\u1ED3i \u0111\u1EA5y. S\u1EB5n
+    s\xE0ng t\xE1i \u0111\u1EA5u ch\u01B0a?"
+  retryLines:
+  - "Sao, ch\u01B0a ph\u1EE5c \xE0? T\u1EADp th\xEAm c\u0169ng \u0111\u01B0\u1EE3c,
+    ho\u1EB7c \u0111\u1EA5u l\u1EA1i lu\xF4n!"
+  rematchLabel: "T\xE1i \u0111\u1EA5u!"
+  transformedLines:
+  - "Khoan... g\xE0 m\xE0y sao t\u1EF1 d\u01B0ng to ra c\u1EA3 v\xF2ng th\u1EBF kia?
+    M\xE0y cho n\xF3 \u0103n c\xE1i g\xEC v\u1EADy?"
+  tournamentOpenLines:
+  - "G\xE0 m\xE0y m\u1EA1nh l\xEAn th\u1EADt r\u1ED3i \u0111\u1EA5y. Nghe n\xF3i
+    gi\u1EA3i l\xE0ng \u0111ang m\u1EDF, ch\u1ECB Ba v\u1EDBi ch\xFA T\u01B0 \u0111ang
+    ch\u1EDD."
+  - "H\u1EA1 \u0111\u01B0\u1EE3c c\u1EA3 hai ng\u01B0\u1EDDi \u0111\xF3 r\u1ED3i
+    h\u1EB5ng quay l\u1EA1i n\xF3i chuy\u1EC7n v\u1EDBi tao."
+  tournamentPartLines:
+  - "Nghe n\xF3i m\xE0y h\u1EA1 \u0111\u01B0\u1EE3c {0}/{1} ng\u01B0\u1EDDi \u1EDF
+    gi\u1EA3i l\xE0ng r\u1ED3i h\u1EA3? H\u1EA1 n\u1ED1t ng\u01B0\u1EDDi c\xF2n l\u1EA1i
+    \u0111i, r\u1ED3i quay l\u1EA1i \u0111\xE2y."
+  tournamentDoneLines:
+  - "H\u1EA1 c\u1EA3 ch\u1ECB Ba l\u1EABn ch\xFA T\u01B0, l\u1EA5y \u0111\u1EE7 {0}
+    huy ch\u01B0\u01A1ng r\u1ED3i c\u01A1 \xE0? G\xE0 m\xE0y gi\u1EDD kh\xF4ng ph\u1EA3i
+    d\u1EA1ng v\u1EEBa \u0111\xE2u."
+  - "\u0110\u01B0\u1EE3c r\u1ED3i. L\u1EA7n n\xE0y tao kh\xF4ng \u0111\xF9a n\u1EEFa."
+  fightingLines:
+  - "\u0110ang \u0111\u1EA5u r\u1ED3i, nh\xECn \u0111i \u0111\xE2u \u0111\u1EA5y?!"
+  recoveringLines:
+  - "\u0110\u1EE3i g\xE0 m\xE0y \u0111\u1EE9ng d\u1EADy \u0111\xE3 r\u1ED3i h\u1EB5ng
+    n\xF3i chuy\u1EC7n."
+  needChickenLines:
+  - "G\xE0 c\u1EE7a m\xE0y \u0111\xE2u? D\u1EAFt n\xF3 theo r\u1ED3i h\u1EB5ng t\xE1i
+    \u0111\u1EA5u!"
+  wonLines:
+  - "H\u1EA3?! Tao thua th\u1EADt \xE0... C\xF4ng nh\u1EADn g\xE0 m\xE0y kho\u1EBB
+    th\u1EADt \u0111\u1EA5y."
+  - "Nh\u01B0ng \u0111\u1EEBng t\u01B0\u1EDFng tao b\u1ECF cu\u1ED9c nh\xE9. C\xF2n
+    l\xE2u m\u1EDBi xong!"
+  startMessage: "Tr\u1EADn t\xE1i \u0111\u1EA5u b\u1EAFt \u0111\u1EA7u!"
+  lostMessage: "Thua r\u1ED3i! Luy\u1EC7n th\xEAm r\u1ED3i n\xF3i chuy\u1EC7n v\u1EDBi
+    b\u1EA1n \u0111\u1EC3 \u0111\u1EA5u l\u1EA1i."
+--- !u!114 &481842585005563498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9131398741946667732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1e704885ed9e044183981a1ad7fd8e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FinalBossController
+  questManager: {fileID: 0}
+  dialogue: {fileID: 0}
+  banner: {fileID: 0}
+  finalBossQuest: {fileID: 11400000, guid: 9fe81f85d83cbb34e82c0985ee5a1537, type: 2}
+  tournamentManager: {fileID: 0}
+  requiredMedals: 2
+  bossMaxHealth: 330
+  bossDamage: 34
+  arenaStartDistance: 4
+  victoryDialogueDelay: 2.5
+  getUpDelay: 3
+  getUpTimeout: 8
+  idleStateName: ChickenIdle
+  arenaRadius: 6
+  guidanceReminderSeconds: 6
+  guidanceMessage: "H\xE3y d\u1EABn g\xE0 \u0111\u1EBFn \u0111\u1EA5u tr\u01B0\u1EDDng
+    \u0111\u1EC3 b\u1EAFt \u0111\u1EA7u tr\u1EADn ph\u1EE5c th\xF9!"
+  challengeLines:
+  - "M\xE0y h\u1EA1 \u0111\u01B0\u1EE3c c\u1EA3 ch\u1ECB Ba l\u1EABn ch\xFA T\u01B0
+    r\u1ED3i \xE0? Kh\xF4ng ng\u1EDD \u0111\u1EA5y."
+  - "Nh\u01B0ng \u0111\u1EEBng t\u01B0\u1EDFng th\u1EBF l\xE0 xong. L\u1EA7n n\xE0y
+    tao s\u1EBD kh\xF4ng nh\u1EB9 tay \u0111\xE2u."
+  - "M\xC0Y S\u1EE2 \xC0? \u0110\u1EA5u th\u1EADt m\u1ED9t tr\u1EADn cho ra l\u1EBD
+    \u0111i!"
+  acceptLabel: "Ph\u1EE5c th\xF9!"
+  retryLines:
+  - "H\u1EA3, ch\u01B0a ph\u1EE5c \xE0? L\u1EA1i \u0111\xE2y, tao ch\u1EDD s\u1EB5n
+    r\u1ED3i."
+  fightingLines:
+  - "\u0110ang \u0111\u1EA5u r\u1ED3i, nh\xECn \u0111i \u0111\xE2u \u0111\u1EA5y?!"
+  recoveringLines:
+  - "\u0110\u1EE3i g\xE0 m\xE0y \u0111\u1EE9ng d\u1EADy \u0111\xE3 r\u1ED3i h\u1EB5ng
+    n\xF3i chuy\u1EC7n."
+  needChickenLines:
+  - "G\xE0 c\u1EE7a m\xE0y \u0111\xE2u? D\u1EAFt n\xF3 theo r\u1ED3i h\u1EB5ng \u0111\u1EA5u!"
+  wonLines:
+  - "...Tao thua th\u1EADt r\u1ED3i. G\xE0 c\u1EE7a m\xE0y gi\u1EDD kh\xF4ng c\xF2n
+    g\xEC \u0111\u1EC3 ch\xEA n\u1EEFa."
+  - "Th\xF4i \u0111\u01B0\u1EE3c, tao c\xF4ng nh\u1EADn m\xE0y ngon. D\u1EAFt g\xE0
+    v\u1EC1 nh\xE0 \xF4ng b\xE0 m\xE0 khoe \u0111i, \u0111\xE1ng l\u1EAFm."
+  afterWonIdleLines:
+  - "Haha, ngh\u0129 l\u1EA1i v\u1EABn ph\u1EE5c m\xE0y v\u1EDBi con g\xE0 \u0111\xF3
+    \u0111\u1EA5y."
+  startMessage: "Tr\u1EADn ph\u1EE5c th\xF9 cu\u1ED1i c\xF9ng b\u1EAFt \u0111\u1EA7u!"
+  lostMessage: "Thua r\u1ED3i! Luy\u1EC7n th\xEAm r\u1ED3i quay l\u1EA1i \u0111\u1EA5u
+    ti\u1EBFp."
+  winMessage: "Chi\u1EBFn th\u1EAFng! B\u1EA1n \u0111\xE3 \u0111\xE1nh b\u1EA1i b\u1EA1n
+    th\xE2n c\u0169!"
+--- !u!1001 &6423054731366992422
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 899927367976379146}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 8b3bc5edeece3b1498bf69015a1dfbc2, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8b3bc5edeece3b1498bf69015a1dfbc2, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8b3bc5edeece3b1498bf69015a1dfbc2, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8b3bc5edeece3b1498bf69015a1dfbc2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8b3bc5edeece3b1498bf69015a1dfbc2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8b3bc5edeece3b1498bf69015a1dfbc2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8b3bc5edeece3b1498bf69015a1dfbc2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8b3bc5edeece3b1498bf69015a1dfbc2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8b3bc5edeece3b1498bf69015a1dfbc2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8b3bc5edeece3b1498bf69015a1dfbc2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8b3bc5edeece3b1498bf69015a1dfbc2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8b3bc5edeece3b1498bf69015a1dfbc2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8b3bc5edeece3b1498bf69015a1dfbc2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -1864740628597940677, guid: 8b3bc5edeece3b1498bf69015a1dfbc2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.00045793733
+      objectReference: {fileID: 0}
+    - target: {fileID: -1864740628597940677, guid: 8b3bc5edeece3b1498bf69015a1dfbc2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.032086905
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8b3bc5edeece3b1498bf69015a1dfbc2, type: 3}
+      propertyPath: m_Name
+      value: GTA SA Carl Johnson
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 8b3bc5edeece3b1498bf69015a1dfbc2, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: e84934e328501c548a8e4fb3818390c6, type: 2}
+    - target: {fileID: 5866666021909216657, guid: 8b3bc5edeece3b1498bf69015a1dfbc2, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -3321919801592875672, guid: 8b3bc5edeece3b1498bf69015a1dfbc2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8443468095628508992}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8b3bc5edeece3b1498bf69015a1dfbc2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4689734714869243503}
+  m_SourcePrefab: {fileID: 100100000, guid: 8b3bc5edeece3b1498bf69015a1dfbc2, type: 3}
+--- !u!4 &632031947840683854 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -3321919801592875672, guid: 8b3bc5edeece3b1498bf69015a1dfbc2, type: 3}
+  m_PrefabInstance: {fileID: 6423054731366992422}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6188561540162566007 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8b3bc5edeece3b1498bf69015a1dfbc2, type: 3}
+  m_PrefabInstance: {fileID: 6423054731366992422}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4689734714869243503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6188561540162566007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aefc72880f781b40ac9c62ef74c2c64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCTalkAnimator
+  speakerName: "B\u1EA1n th\xE2n"
+  talkingParameter: isTalking
+  dialogue: {fileID: 0}
+--- !u!4 &6821263770279013837 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8b3bc5edeece3b1498bf69015a1dfbc2, type: 3}
+  m_PrefabInstance: {fileID: 6423054731366992422}
+  m_PrefabAsset: {fileID: 0}

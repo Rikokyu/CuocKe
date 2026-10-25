@@ -159,6 +159,10 @@ public class RoosterCombatAI : MonoBehaviour, IStopOnDeath
     }
 
     /// <summary>Call from an Animation Event on the connect frame of each attack clip. Function field must be "OnAttackHit".</summary>
+    /// <summary>Where this rooster walks back to when idle. BattleArena moves it when a fight is held in the arena.</summary>
+    public Vector3 HomePoint { get { return spawnPoint; } }
+    public void SetHomePoint(Vector3 p) { spawnPoint = p; }
+
     public void OnAttackHit()
     {
         if (attackPoint == null) return;

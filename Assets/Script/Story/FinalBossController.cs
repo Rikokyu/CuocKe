@@ -191,6 +191,8 @@ public class FinalBossController : MonoBehaviour
 
     bool ArrivedAtArena(Vector3 petPos, Vector3 arenaCenter)
     {
+        // the real arena zone (BattleArena); the foe-based check below is only the fallback when no arena exists
+        if (BattleArena.Instance != null) return BattleArena.Instance.Arrived(petPos, player != null ? player.position : petPos);
         return WithinArena(petPos, arenaCenter) && (player == null || WithinArena(player.position, arenaCenter));
     }
 
@@ -223,6 +225,7 @@ public class FinalBossController : MonoBehaviour
         {
             nextGuidanceAt = Time.time + guidanceReminderSeconds;
             if (banner != null && !string.IsNullOrEmpty(guidanceMessage)) banner.Show(guidanceMessage, 4f);
+            if (BattleArena.Instance != null) BattleArena.Instance.ShowMarker();
         }
     }
 
@@ -243,6 +246,7 @@ public class FinalBossController : MonoBehaviour
         if (foe.currentHealth < bossMaxHealth) foe.Heal(bossMaxHealth - foe.currentHealth);
         foeCombat.damage = bossDamage;
 
+        if (BattleArena.Instance != null) BattleArena.Instance.BringFoe(foe);
         PlaceChickenAtArena(pet, foe);
 
         bm.isFirstBattle = false;

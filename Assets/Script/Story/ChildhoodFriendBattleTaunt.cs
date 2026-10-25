@@ -187,6 +187,14 @@ public class ChildhoodFriendBattleTaunt : MonoBehaviour
         if (BattleManager.Instance == null) { Debug.LogError("[ChildhoodFriendBattleTaunt] No BattleManager.", this); return; }
         if (questManager.GetState(questBattle.questId) != QuestState.Active) return;
         if (LostFirstBattle() || BattleManager.Instance.IsBattleActive) return;
+        if (BattleArena.Instance != null) { BattleArena.Instance.RequestStart(BeginFirstFight, null); return; } // the fight starts once chicken + player are in the arena
+        BeginFirstFight();
+    }
+
+    void BeginFirstFight()
+    {
+        if (BattleManager.Instance == null || questManager.GetState(questBattle.questId) != QuestState.Active) return;
+        if (LostFirstBattle() || BattleManager.Instance.IsBattleActive) return;
         BattleManager.Instance.StartBattle(); // the existing AI + first-battle balance do the rest
     }
 

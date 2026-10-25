@@ -36,7 +36,7 @@ Kiểm tra → lập kế hoạch thay đổi nhỏ → làm → compile → tes
 | Tiền, HUD tiền | [ĐÃ CÓ] | `CurrencyWallet` (`Add`, `TrySpend`) |
 | Quest kiếm tiền (ve chai, giao hàng) | [ĐÃ CÓ] | `scrap_collector` 100, `village_delivery` 200 |
 | Inventory + Hotbar | [ĐÃ CÓ] | hai kho riêng chưa đồng bộ (lưới cũ và hotbar) |
-| Cửa hàng dụng cụ | [ĐÃ CÓ] | bình tưới 60, tạ tập 150, thức ăn tăng lực 40; món chưa có hiệu ứng |
+| Cửa hàng dụng cụ | [ĐÃ CÓ] | bình tưới 60, thảm tập 150, thức ăn tăng lực 40, vé số 20, phân bón protein 80; bình tưới và thức ăn tăng lực chưa có hiệu ứng |
 | `ChickenStats` + 3 `TrainingStation` (hít đất, máy chạy, bao cát) | [ĐANG LÀM] | có code và scene, sửa 2026-10-13, chưa vào `PROJECT_STATUS.md`, chưa kiểm chứng |
 | Khóa huấn luyện cho đến khi biến hình | [CHƯA LÀM] | trạm hiện dùng được ngay |
 | Protein có hiệu ứng | [CHƯA LÀM] | |

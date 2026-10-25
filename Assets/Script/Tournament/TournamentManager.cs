@@ -200,6 +200,8 @@ public class TournamentManager : MonoBehaviour
 
     bool ArrivedAtArena(Vector3 petPos, Vector3 arenaCenter)
     {
+        // the real arena zone (BattleArena); the foe-based check below is only the fallback when no arena exists
+        if (BattleArena.Instance != null) return BattleArena.Instance.Arrived(petPos, player != null ? player.position : petPos);
         return WithinArena(petPos, arenaCenter) && (player == null || WithinArena(player.position, arenaCenter));
     }
 
@@ -235,6 +237,7 @@ public class TournamentManager : MonoBehaviour
         {
             nextGuidanceAt = Time.time + guidanceReminderSeconds;
             if (banner != null && !string.IsNullOrEmpty(guidanceMessage)) banner.Show(guidanceMessage, 4f);
+            if (BattleArena.Instance != null) BattleArena.Instance.ShowMarker();
         }
     }
 
@@ -254,6 +257,7 @@ public class TournamentManager : MonoBehaviour
         entry.roosterCombat.attackCooldown = def.attackCooldown;
         if (pet.currentHealth < pet.maxHealth) pet.Heal(pet.maxHealth - pet.currentHealth);
 
+        if (BattleArena.Instance != null) BattleArena.Instance.BringFoe(entry.rooster);
         PlaceChicken(pet, entry.rooster);
 
         // point the (stable) BattleManager at this opponent for one fight

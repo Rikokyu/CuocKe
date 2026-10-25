@@ -1240,3 +1240,182 @@ Note for tools: right after moving a terrain in Edit Mode the physics world is s
 ### CP3 - NOT DONE: moving the zones (the actual 'relayout')
 The task also says 're-arrange the map'. No target layout exists in GAME_DESIGN or in the roadmap (the docs list zones but no coordinates plan), and every zone is already present (EntranceGate, grandparents' house, garden, TrainingArea, BattleArea, ShopArea, RewardArea). Moving them would touch ~2,450 renderers, the roads/paddies/ponds meshes and every NavMesh/quest/M11-M13 coordinate, so I stopped after the terrain consolidation and did not invent a layout. DECISION NEEDED from the owner: (A) keep the zone positions as they are (current state); (B) a described target (for example: gate at the village head, grandparents' house right inside the gate, arena and training area on opposite sides, shop and rewards near the centre) - then it is done zone by zone with the same checks (spawn, colliders, NavMesh PathComplete, quest targets, M11-M13 references) after each zone.
 Rollback options, from cheapest: (1) enable `OLD_Terrain_Tiles_DISABLED`, disable/delete `Terrain_Village`, re-bake; (2) open `Assets/Scenes/Backup/MainGame_BeforeTerrainMerge_20261023.unity` (identical to the scene before this change).
+
+## 49. Scrap sparkle (quest scrap items) - twinkling stars on uncollected scrap (2026-10-24, NOT committed)
+Tags: [VERIFIED-PLAY] = Play Mode with real frames (`runInBackground` + `QueuePlayerLoopUpdate`, `captureDeltaTime 0.02`), calling the same public methods E calls (`ScrapCollector.TryCollect`). NO real keyboard/mouse. [NUMERIC] = rendered to a small texture and measured. [NOT VERIFIED] = not tested.
+Request: when the scrap quest is accepted, uncollected scrap of THAT quest shows a star-sparkle particle effect for ~2 s, then off, repeating until the item is picked or the quest no longer needs scrap; picking stops it at once; other pickups unaffected; reuse particle assets; no per-frame spawning; no change to quest acceptance, amount, or reward.
+
+### What was found
+- Scrap quest `scrap_collector` (`Quest_EarnMoneyForTraining.asset`, key `scrap`, 10 needed, reward 100). 12 `ScrapPickup` under `ScrapItems`; `ScrapCollector` collects the nearest in range (E); `ScrapPickup.MarkCollected()` switches the pickup GameObject OFF, so a particle child stops at once. Collection is allowed in any state != NotStarted (surplus items still pay item money).
+- `ItemPickups/Pickup_VeChai/Scrap_PlasticBottle` carries a DISABLED `ScrapPickup` (inventory item, not a quest item): it is not under `ScrapItems`, so it gets no effect.
+- No particle prefab existed. Reused: `Assets/Art/VFX/Vfx_Particle.mat` (soft dot, URP Particles/Unlit) for glints, and the existing `Assets/UI/UI/PNG/White/1x/star.png` (64x64, alpha corner 0 / centre 1) for the stars via a copy of the same material.
+- Pre-existing scene Particle Systems: `GameVfx/HitHeavy`, `WaterDrops`, `HitSpark` (3). Baseline PS count in the scene is therefore 27 (24 mine + 3).
+
+### Changed / added
+- NEW `Assets/Script/Scrap/ScrapSparkleController.cs`: one instance. Per pickup under `pickupsRoot` it plays/stops the pickup's `SparkleFX` child ONLY when the wanted state changes (no spawning, no per-frame allocation). Wanted = quest state is `Active` AND the pickup is enabled, not collected and active AND inside its window (`sparkleSeconds` 2 s on, `pauseSeconds` 3 s off, items spread over the cycle by `stagger`). End of a burst: stop emitting (last stars fade). Collected / quest ReadyToTurnIn / Completed / not started: `StopEmittingAndClear` (also on disable).
+- NEW `Assets/Prefabs/VFX/ScrapSparkle.prefab` (2 Particle Systems: `Stars` 14/s warm-white star sprites rising slowly, shrinking + fading; child `Glints` soft dots 6/s; world space, max 40+20 particles, no shadows).
+- NEW `Assets/Art/VFX/Vfx_Star.mat` (copy of `Vfx_Particle.mat` with the star texture). `Vfx_Particle.mat` itself is unchanged.
+- Scene `MainGame` (saved): `SparkleFX` (prefab instance, local (0,0.2,0), scale compensated for parent scale) as a child of each of the 12 pickups under `ScrapItems`; new root object `ScrapSparkleController` wired to `ScrapItems`, `Quest_EarnMoneyForTraining` and the `QuestManager`.
+- NOT changed: `ScrapPickup`, `ScrapCollector`, `QuestManager`, any quest asset, acceptance rules, amount (10), reward (100), money values.
+- ASSUMPTION to confirm: the request gives the ON time (2 s) but not the OFF time; I used 3 s off (5 s cycle). Change `pauseSeconds` in the Inspector (or `sparkleSeconds`).
+
+### Test results
+[NUMERIC] star texture alpha ok; rendering one item with 1 s of effect: 1.0% of the frame changed, 0 magenta pixels, 17 particles alive.
+[VERIFIED-PLAY] all 4 requested cases:
+1. Before accepting the quest: no item emits, 0 particles alive; the inventory `Pickup_VeChai` and everything under `ItemPickups` / `QuestObjectives` has no particle system.
+2. Just accepted (forced `AcceptQuest`; the NPC/first-loss gate is existing behaviour): 4 of 12 items emitting (58 particles), 0 mismatches with the schedule; later in time the set of emitting items changed and still matched the schedule (repeat works). Pure schedule check over 20 s: ON windows of 2.00-2.01 s every 5 s (4 windows), duty 0.40; items are staggered (5/12 on at one instant).
+3. Collecting a sparkling item: in the same call it is already off (pickup + effect inactive, not emitting), progress counted exactly once, another sparkling item was unaffected.
+4. At 10/10 (`ReadyToTurnIn`): the 2 uncollected items stop sparkling and have 0 particles; a surplus item can still be collected (unchanged behaviour); `TurnIn` pays exactly 100 once, a second `TurnIn` pays 0; in `Completed` no item emits. Particle System object count stayed 27 (no leak).
+Console: 0 errors from this change. 2 console errors exist that are NOT caused by it: `Prefab instance problem. Missing Prefab Asset: 'Superhero_Female_FullBody (1)'` (guid f63617f13ea6fe945939bb43897696c3) from `Assets/Prefabs/NPC/NPCs_FromVillageMap.prefab` (last written 2026-10-23 11:54, before this task) and `Problem detected while opening the Scene file MainGame.unity` that it causes; plus the editor Account API warning. Not fixed (out of scope).
+
+### Manual checks still needed (with real keyboard/mouse)
+1. Accept the scrap quest from the villager (needs the first-battle loss) and LOOK at the stars: size, colour, brightness against the terrain/sky, readable from ~10-20 m? (sizes/rates are guesses: `Stars` start size 0.14-0.24, 14/s.)
+2. Walk to a sparkling item, press E: effect gone at once; the next items keep blinking; the prompt/banner/money are as before.
+3. Collect 10: remaining scrap stops sparkling; talk to the villager: reward paid once.
+4. Check nothing sparkles on `Pickup_VeChai` (hotbar item near (11.5,0,9.5)), the watering can, the sack, the delivery box.
+5. Check frame rate with all 12 sparkling (only ~5 are on at once).
+
+### Next task
+Owner decisions from section 44 (E2-E4) are still open: evening/night mechanism, who opens the `tim_ga` quest, when the muscle change shows. Then Checkpoint 2 (bed only at evening, light fade). Separate small task if wanted: repair the missing `Superhero_Female_FullBody` prefab reference in `NPCs_FromVillageMap.prefab`.
+Git: nothing was committed or pushed. An earlier request to push `feature/Character-Pet-Enemy` was NOT carried out: the Unity tool cannot start a `git` process (`System.Diagnostics.Process` is not available there), so it has to be run from a terminal/GitHub Desktop.
+
+
+## 50. Training NPC request received again - already implemented, re-checked statically (2026-10-24, NOT committed, NO project file changed)
+The same request (trainer NPC, prepaid hours, price rising with hours, run + push-up + boxing, +20 damage per hour, total hours shown, no payment when short of money / no double charge / no stat gain after a failed payment) was found ALREADY BUILT and tested in sections 40 (design incl. time allocation) and 47 (implementation + tests). Nothing was redone. Checked now by reading code/scene only (NOT re-run in Play Mode): `TrainerNPC.cs` (438 lines), `TrainingHoursHUD.cs`, `ChickenStats.cs`, `TrainingStation.cs` exist; `NPC_Trainer` is in MainGame at (-7.5,0,48.3); the three stations have `paidByTrainer = true` (no own prompt or charge); `TrainerNPC.TryBook` refuses when the window is closed or a session runs (no second charge), refuses unaffordable or invalid hours, spends ONCE with `wallet.TrySpend(total)` and returns without any session/hours/damage if that fails, sets `IsSessionActive` in the same frame as the payment, and refunds if the chicken cannot be taken over; Console has 0 compile errors.
+Time allocation (as already recorded): one hour = one circuit Treadmill -> Push-up -> Punching bag, each 1/3 of the hour; prices 150 / 350 / 600 / 900 / 1250 for 1-5 hours; +20 damage per COMPLETED hour.
+Still open (owner decisions / manual tests, unchanged from section 47): balance (+20/hour makes the rematch, tournament and boss far easier, no cap); real E/mouse test and the on-screen look of the trainer window (Vietnamese letters); NPC_Trainer is a placeholder model; `chuan_bi_tai_dau` progress through a trainer session was only checked via the `Changed` event.
+
+
+## 51. NPC animations from UAL Standard (2026-10-24, NOT committed)
+### A. Audit (before editing)
+- `NPCs_FromVillageMap` (prefab `Assets/Prefabs/NPC/NPCs_FromVillageMap.prefab`) is a GROUP of 6 NPCs, not one: NPC_Grandfather (model 'The Boss (1)'), NPC_Grandmother ('Ch13_nonPBR (1)'), NPC_ChuTu ('Big Vegas'), NPC_CoLan ('kaya'), NPC_BacHai ('Ch43_nonPBR'), NPC_ChiBa ('Ch03_nonPBR'). All six are skinned mixamo rigs (`mixamorig:Hips`). Only the grandmother had an Animator (empty: no controller, no avatar, nothing in code referenced it).
+- `NPC_MarketVillager` (prefab `NPC_MarketVillager.prefab`): model 'Peasant Nolant(Free Version)', skinned, `metarig` rig (33 bones), had NO Animator.
+- `NPC_ChildhoodFriend` (prefab `NPC_ChildhoodFriend.prefab`): the model is 'GTA SA Carl Johnson (1)' = two STATIC MeshFilter/MeshRenderer meshes (no SkinnedMeshRenderer, no bones; an unused empty `Armature/root` is left over). It cannot take an animation, so it was NOT changed (the model was replaced by the owner; not touched). Its root Animator has no controller (unchanged).
+- All source FBXs were Generic/NoAvatar. `Assets/Art/Character/NPC/UAL1_Standard.fbx` (the asset asked for) is a Generic rig with 43 clips (also unused by any prefab/controller; the identical copies under `Assets/UI/Universal Animation Library[Standard]/` and `UAL1_Standard_RM.fbx` were not touched).
+- Real clip names in `UAL1_Standard.fbx` (all prefixed `Armature|`): A_TPose, Crouch_Fwd_Loop, Crouch_Idle_Loop, Dance_Loop, Death01, Driving_Loop, Fixing_Kneeling, Hit_Chest, Hit_Head, Idle_Loop, Idle_Talking_Loop, Idle_Torch_Loop, Interact, Jog_Fwd_Loop, Jump_Land, Jump_Loop, Jump_Start, PickUp_Table, Pistol_Aim_Down, Pistol_Aim_Neutral, Pistol_Aim_Up, Pistol_Idle_Loop, Pistol_Reload, Pistol_Shoot, Punch_Cross, Punch_Jab, Push_Loop, Roll, Sitting_Enter, Sitting_Exit, Sitting_Idle_Loop, Sitting_Talking_Loop, Spell_Simple_Enter, Spell_Simple_Exit, Spell_Simple_Idle_Loop, Spell_Simple_Shoot, Sprint_Loop, Swim_Fwd_Loop, Swim_Idle_Loop, Sword_Attack, Sword_Idle, Walk_Formal_Loop, Walk_Loop. In the file none of them had the loop flag.
+### B. Compatibility and retarget
+Different skeletons (UAL bone names vs mixamo vs metarig), so the clips can only be shared through Humanoid retargeting. Changed importer settings (assets edited, nothing replaced or deleted):
+- `UAL1_Standard.fbx`: Animation Type Generic -> Humanoid, Avatar 'Create From This Model' -> `UAL1_StandardAvatar` (human, valid). Loop Time + Loop Pose switched ON for every clip whose name contains `_Loop` (others off).
+- Each NPC model FBX Generic -> Humanoid / Create From This Model, all avatars human + valid (auto mapping, not hand-checked bone by bone): `Assets/Art/Character/NPC/Big Vegas.fbx`, `kaya.fbx`, `Ch43_nonPBR.fbx`, `Ch03_nonPBR.fbx`, `Peasant Nolant(Free Version).fbx`; `Assets/Art/Character/OngBaBanThan/The Boss (1).fbx`, `Ch13_nonPBR (1).fbx`. Their own embedded T-pose clip is not used.
+### C. Controller and wiring
+- NEW single shared controller `Assets/Animations/NPC/NPC_UAL.controller`: states Idle (`Armature|Idle_Loop`, default), Walk (`Armature|Walk_Loop`), Talk (`Armature|Idle_Talking_Loop`); bool params `isWalking`, `isTalking`; transitions without exit time, 0.15 s. No script uses the params yet (see E).
+- One Animator per animated model (on the model child, the object that matches the avatar's root): controller `NPC_UAL`, the model's own Humanoid avatar, Apply Root Motion OFF, Culling = Cull Update Transforms. Edited in the PREFAB assets (scene instances follow): `NPCs_FromVillageMap.prefab` (6 models) and `NPC_MarketVillager.prefab` (1 model). The empty, controller-less Animator on `NPC_Grandmother` (root) was removed so the grandmother does not have two Animators. Scene `MainGame` not changed by hand (not dirty).
+- Not changed: colliders, positions, rotations, scales, `QuestNPC`, `ShopNPC`, `VillagerFlavorNPC`, `GrandfatherChickenRescue`, `TournamentOpponentNPC`, dialogue, quests, models.
+### D. Tests [VERIFIED-PLAY, editor paused + EditorApplication.Step, NO real input, NO Game-view look]
+Compile/Console: 0 errors. All 7 animated NPCs report state Idle, clip `Armature|Idle_Loop`, avatars human + valid, Animator initialized. Bone rotations of Head / arm / leg really change over 60 frames (up to ~3.5 / 4.4 / 5.5 deg: a subtle idle), identical across NPCs, so the retarget works. `kaya` showed 0 change at first ONLY because she is off-screen (renderers not visible, culling skips the update); with Culling temporarily AlwaysAnimate (runtime only) her leg moved 29 deg. Setting `isWalking` -> `Armature|Walk_Loop` on the market villager and grandmother, root position drift 0.000 (no root motion), back to Idle after clearing; `isTalking` -> `Armature|Idle_Talking_Loop`. All NPC root components/positions unchanged (list checked). `QuestNPC.Interact()` on the grandmother returned true and opened the dialogue; she stayed in Idle with the same position/rotation while talking.
+### E. Not done / known issues / manual checks
+- `NPC_ChildhoodFriend` (static Carl Johnson mesh) has NO animation. To animate him the owner must supply a rigged model (same Humanoid steps as above) - not done, not guessed.
+- NPCs never move in this project (no agent, no patrol), so Walk/Talk are unused; nothing drives `isWalking`/`isTalking` (adding a driver, e.g. a one-line `isTalking` while the dialogue is open, was not requested). Only idle plays.
+- `NPC_MarketVillager` has LEFTOVER duplicates at its root: a `Hat` SkinnedMeshRenderer and a `metarig` (a second, static copy next to the nested animated model). The static hat is ~0.15 m off the animated hat while the NPC idles: a possible double-hat artifact. Not removed (owner's layout); suggested fix: delete the root-level `Hat` and `metarig` in the prefab after looking at it.
+- Look in the Game view NOT checked: Humanoid auto-mapping quality per model (twisted limbs, hands, feet sinking), foot height (the models' own root offsets), hat/clothing clipping, speed of the idle. Please look at each of the 7 NPCs once. Also check the other URP-shader magenta materials seen earlier are unrelated (not touched).
+- Importer changes affect every other use of those 7 FBX files (prefabs reference their meshes/materials only; no other animation use found by a text scan of prefabs/controllers; binary scenes could not be scanned).
+
+## 48. Shop goods: training mat replaces the weights, lottery ticket, protein fertilizer (2026-10-24, NOT committed)
+[VERIFIED-PLAY] = Play Mode, editor paused + `EditorApplication.Step()`; the shop was driven through the REAL Buy buttons (`Button.onClick`), items through `ItemUseController.UseSelected()` (the exact method key F calls). NO real F / E key, no mouse, no look at the shop window, hotbar or props on screen. The Play session ended by itself between some calls, so tests were re-run in single calls. The story gate (`Transformed`) and the chicken wake-up were set by code.
+
+STEP 1 - audit of every reference to the old weights (`Item_TaTapGa`, 'Tạ tập') BEFORE any change: (a) scene `MainGame`: only `Station_PushUp` -> `TrainingStation.requiredItem` (checked by scanning all 10513 components with SerializedObject, because the scene file is binary and a text search cannot see GUIDs); (b) asset `Assets/Data/Shop/ShopCatalog_DungCu.asset` (entry, price 150); (c) text: `RematchController.cs` line 47 (dialogue 'Mua Tạ tập ở chợ ...'); (d) docs: GAME_DESIGN.md lines 75/79/80, DEVELOPMENT_ROADMAP.md line 39, older sections of this file (history, left as is); (e) `Assets/_Recovery/0 (10..19).unity` are Unity auto-recovery backups (not in the build) - they still point at the old asset and will show it as missing if opened. TrainerNPC / TrainingStation only use the item generically (`displayName`), no hard-coded weights. After replacing (a)-(d) a new scan found 0 scene references and 0 asset dependencies, then `Item_TaTapGa.asset` was deleted (via manage_asset). Restore it from git if the old build is needed.
+
+STEP 2 - what changed:
+- New items (existing `ItemDefinition`, placeholder coloured icons, no sprites): `Assets/Data/Items/Item_ThamTap.asset` (Thảm tập cho gà, stack 5), `Item_VeSo.asset` (Vé số, stack 20), `Item_PhanBonProtein.asset` (Phân bón protein, stack 10).
+- Shop (existing `ShopCatalog_DungCu`, no code change to ShopUI/ShopNPC): Bình tưới 60 | Thảm tập 150 (replaced the weights, same row) | Thức ăn tăng lực 40 | Vé số 20 | Phân bón protein 80.
+- `TrainingStation.cs`: new optional `requiresPlacement` + `placedVisual`, `IsPlaced`, `CanPlace`, `Place()` (once only) and `RequirementProblem()` (one place that says why the required item is missing; used by the station and the trainer). `TrainerNPC.cs`: the inline inventory check was replaced by `RequirementProblem()`. `RematchController.cs`: one dialogue string.
+- New `Assets/Script/Inventory/ItemUseController.cs` (object `ItemUseController` in the scene): key F uses the SELECTED hotbar item. Mat: stand within 3.5 m of the push-up station, F consumes ONE mat and places it (the `Mat` prop appears, the trainer accepts push-up). Ticket: F anywhere consumes ONE ticket FIRST, then rolls a prize (0: 70%, 20: 20%, 50: 7%, 200: 2.5%, 1000: 0.5% = expected 17.5 per 20-coin ticket) and pays with wallet.Add. Fertilizer: F within 3 m of a vegetable plot consumes ONE bag, plays the water effect and a message. Prompts `Nhấn F để trải thảm tập` / `Nhấn F để rắc phân bón protein` use the shared prompt. Blocked while dialogue, shop, old inventory or the trainer window is open.
+- Scene: `Station_PushUp` now needs the mat PLACED (requiredItem = mat, requiresPlacement on, the `Mat` child hidden until placed); the `Item_TaTapGa` reference is gone.
+
+Verified [VERIFIED-PLAY]: compile clean, no project errors in the Console. Shop lists 5 rows with the right prices and no weights. With 0 money all 5 buys refused (message 'Không đủ tiền mua ...'), nothing changed. With 1000: mat 150, ticket 20, fertilizer 80 bought through the real buttons, money 850 / 830 / 750 exactly, each item once. Bag full (5 slots used): buying food (needs a new slot) refused with 'Túi đầy ... Tiền không bị trừ.' and money unchanged; a 2nd ticket (stack has room) still bought. A stale click after closing the shop buys nothing. Ticket: prize table checked at rolls 0 / 0.69 / 0.71 / 0.91 / 0.985 / 0.999 -> 0 / 0 / 20 / 50 / 200 / 1000; expected prize 17.5 < price 20; using a ticket consumed exactly 1 (2 -> 1 -> 0), money changed only by the prize, with 0 tickets nothing happens and money is unchanged. Fertilizer: far from the plots F is refused with a message and nothing is consumed; next to plot 1 the prompt shows, F consumed 1 (1 -> 0), prompt disappeared, a second F did nothing. Mat: far from the station refused (mat kept); the trainer refused the 1h booking while the mat was not placed (money unchanged); placing consumed 1 mat, `IsPlaced` true, the `Mat` prop appeared; a second mat could not be placed (kept in the bag, message 'đã được trải rồi'); after placing, a 1h trainer session ran (Chạy máy -> Chống đẩy -> Đấm bao cát, push-up animation seen), money -150, hours 1, damage 10 -> 30.
+
+[NOT VERIFIED]: real F key and clicking the shop buttons with the mouse; how the shop window looks with 5 rows (row height / scroll), the hotbar icons, the mat prop and the `Nhấn F ...` prompts on screen; the mat prompt itself (after the trainer window was opened in the test it was suppressed on purpose; the same code path is verified for the fertilizer prompt); Vietnamese diacritics in the TMP font; buying through `NPC_MarketVillager` interaction (ShopUI was opened by code); a real ticket drawing with Random (only the table and one real draw were checked).
+
+Known gaps / decisions for the owner: (1) the fertilizer has NO real gameplay effect yet - it is only consumed with a water effect and a message; the garden quest still uses its own sack (`QuestProteinBag`). Tell me what it should do (e.g. count for the garden quest, boost something). (2) the mat is consumed when placed, but the shop keeps selling it: a second mat is wasted (the shop could hide it once `IsPlaced`). (3) Bình tưới and Thức ăn tăng lực still have no effect. (4) the lottery table and prices are first guesses.
+
+MANUAL TEST LIST (needs a human with keyboard and mouse): (1) talk to `NPC_MarketVillager`: window shows 5 goods, icons/prices readable and the window scrolls or fits; (2) with 0 money try to buy each good: red message, money unchanged; (3) with enough money buy mat, ticket, fertilizer: money drops by exactly the price once even when double-clicking; (4) fill the 5 hotbar slots and try to buy a good that needs a free slot: refused, money unchanged; (5) select the ticket with keys 1-5 / wheel, press F several times: one ticket per press, messages, money; (6) walk to a vegetable plot, select the fertilizer: prompt `Nhấn F ...` appears only near a plot, F uses one; (7) walk to the push-up place in the training area (the green mat is NOT visible at first), select the mat, press F: mat appears; try pressing F again with a 2nd mat: nothing; (8) talk to the trainer: booking 1 hour works only after the mat is placed, with the chicken doing run, push-up, boxing; (9) E on the trainer / NPCs and F near a plot do not trigger each other; (10) leave Play Mode and re-enter: nothing is saved (no save system), the mat must be bought and placed again.
+Git status could not be run from Unity MCP; nothing committed or pushed.
+
+---
+
+## 52. Pet model swap: Chicken Warrior / ROCKY / jacketBlocky (2026-10-24, NOT committed)
+
+**Ánh xạ NPC → model pet (ghi TRƯỚC khi kiểm tra tiếp; không tạo NPC/pet mới, chỉ đổi model của các rooster đang có):**
+
+| NPC | Rooster trong scene | Vai trò | Model mới | Controller |
+|---|---|---|---|---|
+| NPC_ChildhoodFriend (bạn thân) | `GuguGaga` (BattleManager.enemy, rematch + final boss) | trận tái đấu, boss cuối | **Chicken Warrior** (`Chicken Warrior with motions.fbx`) | `Assets/Animations/ChickenWarrior/ChickenWarrior.controller` |
+| NPC_ChiBa (đối thủ 1, yếu hơn: 130 HP / 14 dmg) | `Rooster_ChiBa` | giải đấu, trận đầu | **jacketBlocky** (`jacketBlocky.fbx`, có rig, 0 clip) | `FunnyChicken/Chicken.controller` + chuyển động thủ tục |
+| NPC_ChuTu (đối thủ 2, mạnh hơn: 190 HP / 18 dmg) | `Rooster_ChuTu` | giải đấu, trận sau | **ROCKY** (`ROCKY.fbx`, mesh tĩnh, không rig, 0 clip) | `FunnyChicken/Chicken.controller` + chuyển động thủ tục |
+
+Lý do phân công: ROCKY to và nặng nên cho đối thủ mạnh nhất (Chú Tư); jacketBlocky nhỏ hơn cho Chị Ba. Giữ nguyên: `ChienKe_Pet` (gà người chơi, `normal_chicken`), asset gà cũ (`GuguGaga.prefab`, `GuguGaga.blend`, `FunnyChicken/Chicken.controller` vẫn được tham chiếu nên KHÔNG xóa).
+
+**Hiện trạng tìm thấy:** việc đổi model đã được làm sẵn trong editor (chưa lưu ra đĩa; scene đang dirty) bởi session trước: `ChickenWarrior.controller` (7 tham số, state Idle/Run/GetHit/Dead/WakeUp/Attack1-6, tag `Attack`, event `OnAttackHit`), `OpponentModelMotion.cs`. Tôi chỉ kiểm tra và lưu scene, không làm lại.
+
+**Animation đã cấu hình (đọc từ controller thật, không đoán):**
+- Chicken Warrior: rig Generic có Avatar riêng và 35 clip `RPG_Armed_*` ngay trong FBX, nên dùng clip của chính model (không retarget). `ChickenWarrior.controller`: Idle=`RPG_Armed_Idle`, Run=`RPG_Armed_Run` (speed 0.86), GetHit=`GetHit_F1`, Dead=`Death1`, WakeUp=`Death1` chạy ngược (-1.5), Attack1-3/6=`Attack_Dual1-3/1`, Attack4/5=`Kick_L1/R1`. Mọi state tấn công có tag `Attack`; mỗi clip tấn công có event `OnAttackHit` (0.46s / 0.26s). Tham số khớp `RoosterCombatAI` (isRunning, Attack, AttackIndex 1-6, isDead, WakeUp) và `OpponentModelMotion` (GetHit). Logic combat không đổi.
+- jacketBlocky (có xương, 0 clip) và ROCKY (mesh tĩnh, 0 clip): KHÔNG có animation riêng và không tương thích rig gà cũ, nên không retarget. Dùng `FunnyChicken/Chicken.controller` chỉ để giữ timing combat (tag `Attack`, event), còn hình ảnh do `OpponentModelMotion` (procedural, chỉ đọc HP/Animator): thở, nảy khi chạy, lao tới khi đánh, giật khi trúng đòn, ngã ngửa khi chết. **Hạn chế:** không có clip đánh/trúng đòn/chết thật cho 2 model này. **Asset còn thiếu nếu muốn đẹp hơn:** clip idle/run/attack/hit/death cho jacketBlocky (có rig) và một bản rig+clip cho ROCKY.
+
+**File/asset liên quan:** `Assets/Animations/ChickenWarrior/ChickenWarrior.controller`, `Assets/Script/Pet/OpponentModelMotion.cs`, scene `MainGame.unity` (GuguGaga, Rooster_ChiBa, Rooster_ChuTu; tôi đã LƯU scene vì đổi model chỉ mới nằm trong editor). Không đổi công thức damage/HP/thưởng/quest. Tôi không sửa script nào trong lần này.
+
+**Kích thước/vị trí (đo ở Play Mode):** cao khoảng 2.2-2.3 m, khớp BoxCollider (2.3 m); gốc y 0.06-0.10; chân/ngón của Chicken Warrior cách gốc ~0.1-0.15 m (đứng trên đất); jacketBlocky/ROCKY minY ≈ 0.07-0.08; hướng nhìn: sau trận hướng về gà người chơi (dot 0.99). Chưa nhìn bằng mắt trong Game view (ảnh chụp quá lớn để đọc).
+
+**Test (Play Mode, đi qua code: `StartBattle`/`StartChallenge`/`StartFinalBattle` thật + bước frame; KHÔNG phím/chuột thật; để rút ngắn, HP đối thủ/gà được đặt thấp trước khi đánh):**
+- GuguGaga (Chicken Warrior) thắng: Idle→Run→Attack_Dual1→GetHit_F1→Kick_R1→Death1, thắng sau ~270 frame. Thua: gà chết, trận kết thúc. Sau trận chết, `Revive`+`ResumeAfterRevive` đứng dậy lại được.
+- Boss cuối (330 HP / 34 dmg): thua → gà hồi, thông số trả về 150/18, quest vẫn Active; thắng → `phuc_thu_cuoi_cung` Completed, `FinalBossDefeated` true, thông số trả về.
+- Chị Ba (jacketBlocky): thua → không trả thưởng, gà hồi, đối thủ hồi đầy và về chỗ cũ; thắng → +200 tiền, +1 huy chương, ngã (pitch -88), mở Chú Tư.
+- Chú Tư (ROCKY): thắng → +350, huy chương 2, quest `giai_dau_lang` Completed, ngã (pitch -78). Trận THUA của Chú Tư chưa test riêng (cùng code với Chị Ba).
+- BattleManager 1, không NPC/pet mới; BattleManager.enemy trả về GuguGaga sau mỗi trận giải đấu. Console: 0 lỗi do thay đổi này; còn cảnh báo cũ của scene: `Missing Prefab Asset: Superhero_Female_FullBody (1)` (không thuộc phần này, cần xử lý riêng).
+
+**CHƯA kiểm tra:** nhìn bằng mắt trong Game view (kích thước, hướng, chân chạm đất, màu/texture, ROCKY/jacketBlocky khi chuyển động), phím/chuột thật, trận đánh thật không chỉnh HP, âm thanh/particle trên model mới, độ lớn của Chicken Warrior so với gà người chơi, tính cân bằng khi Chị Ba/Chú Tư có model khác.
+
+**Test thủ công cần làm:**
+1. Đến nhà bạn thân, xem GuguGaga (Chicken Warrior): đứng đúng chỗ, chân chạm đất, quay mặt đúng hướng.
+2. Đánh trận tái đấu: thấy animation đánh, trúng đòn, ngã; thử cả thắng và thua.
+3. Giải đấu: nói chuyện Chị Ba và Chú Tư, thách đấu; xem jacketBlocky/ROCKY lao tới, giật khi trúng, ngã khi hạ gục; thử cả thắng lẫn thua.
+4. Đủ 2 huy chương, đánh boss cuối; xem Chicken Warrior đứng dậy từ trạng thái chết và ending.
+5. Kiểm tra va chạm: gà người chơi không xuyên qua model, collider khớp hình.
+6. Quyết định: giữ procedural cho ROCKY/jacketBlocky hay bổ sung clip.
+
+Không commit/push Git.
+
+## 53. NPC animation re-check: ChildhoodFriend, RewardKeeper, CoLan (2026-10-24, NOT committed)
+Task: check `NPC_ChildhoodFriend` (GTA SA model rigged with Mixamo), `NPC_RewardKeeper`, `NPC_CoLan` against `Assets/Art/Character/NPC/UAL1_Standard.fbx`; give idle/walk to any NPC that lacks them; check what the friend needs for the current gameplay. Tags: [VERIFIED-EDIT] = read/changed in Edit Mode; [VERIFIED-PLAY] = Play Mode, real frames plus manual `Animator.Update` stepping; [NOT VERIFIED] = not looked at.
+The Editor was in Play Mode when this started; I exited it (runtime state only, nothing saved was affected).
+
+### A. Result per NPC (state found BEFORE my change -> state now)
+| NPC | Model (FBX) | Found | Now |
+|---|---|---|---|
+| `NPC_ChildhoodFriend` (prefab `Assets/Prefabs/NPC/NPC_ChildhoodFriend 1.prefab`) | `GTA SA Carl Johnson.fbx` (`Assets/Art/Character/OngBaBanThan/`), SkinnedMeshRenderer, 34 bones, root bone `mixamorig:Hips`. Humanoid, `GTA SA Carl JohnsonAvatar` valid (34 human bones mapped, no middle/ring/little fingers, no missing required bone) | ALREADY correct: Animator on the model child, controller `NPC_UAL`, own avatar, root motion off, `CullUpdateTransforms`, plus `NPCTalkAnimator` on the same object | unchanged |
+| `NPC_CoLan` (inside `NPCs_FromVillageMap`, model `kaya`) | `kaya.fbx`, Humanoid, `kayaAvatar` valid (54 bones) | ALREADY correct (done in section 51), scene instance connected to the prefab | unchanged |
+| `NPC_RewardKeeper` (plain scene object, not a prefab) | `Ch39_nonPBR.fbx`, 52-bone Mixamo skinned mesh. Importer was Generic / NoAvatar | MISSING: no Animator, no avatar | FIXED (see C) |
+`UAL1_Standard.fbx`: Humanoid, `UAL1_StandardAvatar` valid, 43 clips; `Idle_Loop`, `Walk_Loop`, `Idle_Talking_Loop` all have Loop Time on. `Assets/Animations/NPC/NPC_UAL.controller` (the ONE shared controller): Idle (default) / Walk / Talk, bool params `isWalking`, `isTalking`, no exit time, 0.15 s. Only one controller with that name exists; each of the 3 NPCs exists once in the scene. No NPC and no controller was created.
+
+### B. Corrections to section 51 (it is outdated, the project is ahead of it)
+- 51-A/E said the friend is a static Carl Johnson mesh with no animation. Now he is rigged and animated (see A). His prefab is `NPC_ChildhoodFriend 1.prefab` (the only friend prefab; it was written 10:19 today).
+- 51-E said nothing drives `isTalking`. `Assets/Script/Story/NPCTalkAnimator.cs` (found already present, written 10:18 today, NOT by this task) does: while `DialogueUI` is open, the speaker is `Bạn thân` and the shown line is not the player's, it sets `isTalking`. It is on the friend only.
+- 51 said `NPC_RewardKeeper` is a clone of the market villager model. Its model is now `Ch39_nonPBR`.
+
+### C. What I changed (2 things, nothing else)
+1. `Assets/Art/Character/NPC/Ch39_nonPBR.fbx` (+ its `.meta`): Animation Type Generic -> Humanoid, Avatar `Create From This Model` -> `Ch39_nonPBRAvatar` (human, valid, 52 bones mapped, 0 required bones missing). Rollback: set it back to Generic / No Avatar. This FBX is used only by `NPC_RewardKeeper` in MainGame (and the unused `Assets/_Recovery/0 (20).unity`).
+2. Scene `MainGame` (saved): Unity auto-created an Animator on the FBX model root after step 1 (avatar set, controller empty, Apply Root Motion on). I configured that same Animator on `NPC_RewardKeeper/Ch39_nonPBR`: controller `NPC_UAL`, Apply Root Motion OFF, Culling `CullUpdateTransforms` (same as every other NPC). No second Animator was added.
+NOT changed: models, positions/rotations/scales, dialogue, quests, `RewardNPC`, `QuestObjectiveTarget`, `ChildhoodFriendBattleTaunt`, `RematchController`, `FinalBossController`, `VillagerFlavorNPC`, `NPCTalkAnimator`, the controller, any script.
+
+### D. Friend: animations the current gameplay needs
+- Idle (default): he stands still while his rooster fights, while the delivery/rematch/boss quests wait, and between dialogues. Present.
+- Talk: every `dialogue.Open("Bạn thân", ...)` in `ChildhoodFriendBattleTaunt` (taunt, challenge, after-loss), `RematchController` and `FinalBossController` uses exactly the speaker `Bạn thân`, which is what `NPCTalkAnimator.speakerName` expects, so Talk plays for all of them. The player's own lines (speaker `Tôi`) keep him in Idle. Present.
+- Walk: wired in the controller (`Armature|Walk_Loop`) but he never walks: he has no agent, and leaving/returning is done by switching his renderers off/on (`RematchController.UpdateFriendPresence`). Unused, kept for later.
+- No win/lose/taunt-reaction animation exists and no script asks for one. UAL has candidates (`Dance_Loop`, `Hit_Chest`, `Death01`, `Punch_Jab`) but nothing triggers them, so none was added.
+
+### E. Tests
+[VERIFIED-EDIT] compile: forced refresh + compile request, Console has no compile error (only MCP port messages after the domain reload). Scene saved, then reloaded from disk: all 3 Animators still have controller + avatar.
+[VERIFIED-PLAY] for all 3 NPCs (culling set to AlwaysAnimate at RUNTIME only, so off-screen NPCs are evaluated): state `Idle`, clip `Armature|Idle_Loop`, avatar human + valid, Animator initialized; over 60 stepped frames the bones really move (head 3.9, upper arm 4.9, upper leg 4.5 degrees, identical for the 3 NPCs = retarget works). `isWalking` true -> state `Walk`, clip `Armature|Walk_Loop`, model and root drift 0.0000 (no root motion); false -> back to `Idle`.
+[VERIFIED-PLAY] friend Talk through the real path: `DialogueUI.Open("Bạn thân", ...)` -> `NPCTalkAnimator` set `isTalking` -> state `Talk`, clip `Armature|Idle_Talking_Loop`; `Close()` -> `isTalking` false -> `Idle`. Friend root components unchanged (QuestObjectiveTarget, ChildhoodFriendBattleTaunt, RematchController, FinalBossController); `NPC_RewardKeeper` still has Transform + `RewardNPC` (enabled).
+Foot heights measured (world y, ground is 0): ankle L/R and toe-base L/R: friend 0.31/0.30 and 0.14/0.14 (root y 0.12), RewardKeeper 0.26/0.28 and 0.08/0.10, CoLan 0.21/0.18 and 0.03/0.00.
+
+### F. Manual checks still needed (Game view, real E key / mouse) [NOT VERIFIED]
+1. Look at each of the 3 NPCs once: twisted limbs, hands, feet sinking or floating. The friend's toes sit at about 0.14 and his root is at y 0.12 (higher than the others): check he does not float. Auto-mapping was not checked bone by bone.
+2. Talk to the friend with the real E key: Talk should start with his lines, return to Idle on the player's answer `Tôi: ...` and when the dialogue closes.
+3. Friend vanish/return (rematch won -> away -> 2 medals): after he reappears he should be animating (his renderers are toggled, and `CullUpdateTransforms` freezes the pose while hidden). He also has a static tire mesh (`покрышка (1)`) under the Head bone.
+4. `NPC_RewardKeeper` and `NPC_CoLan` only play Idle: nothing drives `isTalking`/`isWalking` for them (`NPCTalkAnimator` is on the friend only). Giving the Reward Keeper a Talk gesture would be one `NPCTalkAnimator` with the speaker name used by `RewardNPC`; not done (not requested).
+5. Off-screen NPCs do not animate by design (culling); this is not a bug.
+
+### G. Known issues, not touched
+- `Assets/Prefabs/NPC/NPCs_FromVillageMap.prefab` still has a missing nested prefab `Superhero_Female_FullBody (1)` (guid f63617f13ea6fe945939bb43897696c3): the Console error `Problem detected while opening the Scene file` repeats on every scene open. Separate small task.
+- After leaving Play Mode the scene is marked dirty by `Driving RectTransform` (UI layout); harmless, I reloaded the scene from disk instead of saving it.
+- Git: nothing was committed or pushed. For `git status`: `Ch39_nonPBR.fbx.meta`, `Assets/Scenes/MainGame.unity`, this file (plus earlier uncommitted work such as `NPCTalkAnimator.cs` and `NPC_ChildhoodFriend 1.prefab`).
