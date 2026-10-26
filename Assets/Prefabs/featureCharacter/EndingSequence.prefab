@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4738111076870286922
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2887082680759650755}
+  - component: {fileID: 2261400395807618613}
+  m_Layer: 0
+  m_Name: EndingSequence
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2887082680759650755
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4738111076870286922}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2261400395807618613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4738111076870286922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bb2d93f968105244b0595e391ffb61d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EndingSequence
+  questManager: {fileID: 0}
+  dialogue: {fileID: 0}
+  banner: {fileID: 0}
+  finalBossQuest: {fileID: 11400000, guid: 9fe81f85d83cbb34e82c0985ee5a1537, type: 2}
+  player: {fileID: 0}
+  playerMovement: {fileID: 0}
+  mouseLook: {fileID: 0}
+  chicken: {fileID: 0}
+  homeSpot: {fileID: 0}
+  lookAtAtHome: {fileID: 0}
+  celebrateSeconds: 4
+  fadeSeconds: 1.2
+  blackHoldSeconds: 2
+  creditsScrollSpeed: 70
+  celebrateMessage: "G\xE0 \u0103n m\u1EEBng chi\u1EBFn th\u1EAFng b\u1EB1ng... v\xE0i
+    ch\u1EE5c c\xE1i ch\u1ED1ng \u0111\u1EA9y!"
+  timeSkipText: "V\xE0i ng\xE0y sau..."
+  grandfatherLines:
+  - "\u1EE6a, th\u1EB1ng ch\xE1u IT v\u1EC1 r\u1ED3i \u0111\u1EA5y \xE0? Nghe n\xF3i
+    ch\xE1u h\u1EA1 lu\xF4n th\u1EB1ng b\u1EA1n th\xE2n h\u1ED3i b\xE9 r\u1ED3i h\u1EA3?"
+  - "\xD4ng \u0111\xE3 b\u1EA3o r\u1ED3i, con g\xE0 nh\xE0 m\xECnh m\xE0 t\u1EADp
+    th\xEAm t\xED l\xE0 th\xE0nh v\xF5 s\u01B0!"
+  grandmotherLines:
+  - "Nh\u1EDD b\xE0 b\xF3n ph\xE2n protein cho rau \u0111\u1EA5y nh\xE9! G\xE0 \u0103n
+    rau m\u1EDBi c\xF3 c\u01A1 b\u1EAFp th\u1EBF n\xE0y, c\xF4ng c\u1EE7a b\xE0 c\u1EA3."
+  - "Th\xF4i v\xE0o nh\xE0 \u0103n c\u01A1m \u0111i, c\u1EA3 tu\u1EA7n nay ch\u1EAFc
+    \u0103n m\xEC g\xF3i g\u1EA7y r\u1ED9c c\u1EA3 ng\u01B0\u1EDDi r\u1ED3i."
+  grandfatherClosingLines:
+  - "\xC0 m\xE0... s\xE1ng mai nh\u1EDB l\xEAn t\u1EC9nh \u0111i l\xE0m nh\xE9. S\u1EBFp
+    ch\xE1u nh\u1EAFn: 'Deadline s\xE1ng mai'."
+  - "Ch\xE1u b\u1EA3o s\u1EBFp l\xE0 ch\xE1u \u0111ang b\u1EADn... \u0111\xE1 g\xE0,
+    \xF4ng n\xF3i gi\xFAp cho."
+  epilogue: "Th\u1EBF l\xE0 g\xE3 IT v\u1EC1 qu\xEA ngh\u1EC9 ph\xE9p, kh\xF4ng nh\u1EEFng
+    ch\u1EB3ng ngh\u1EC9 ng\u01A1i\nm\xE0 c\xF2n tr\u1EDF th\xE0nh hu\u1EA5n luy\u1EC7n
+    vi\xEAn g\xE0 chi\u1EBFn s\u1ED1 m\u1ED9t l\xE0ng.\n\nC\xF2n deadline \u01B0?
+    \u0110\u1EC3 mai t\xEDnh."
+  creditsTitle: "C\u01AF\u1EDAC K\xCA"
+  credits: "H\u1EBET\n\nC\u1EA3m \u01A1n b\u1EA1n \u0111\xE3 ch\u01A1i!\n\n\nThi\u1EBFt
+    k\u1EBF & l\u1EADp tr\xECnh\n[Nh\xF3m m\u1EA5y qu\xEAn r\u1ED3i]\n[Nguy\u1EC5n
+    Trung Hi\u1EC7p - Nguy\u1EC5n L\xEA Anh Tu\u1EA5n]\n\nC\xF4ng c\u1EE5\nUnity
+    6 \xB7 Universal Render Pipeline\n\nM\xF4 h\xECnh, ho\u1EA1t \u1EA3nh v\xE0 \xE2m
+    thanh\n[\u0110\u1ED3 free, s\xE0i ch\xF9a, kh\xF4ng t\u1ED1n 1 c\xE0nh n\xE0o
+    :')]\n\nTri \xE2n\n\xD4ng, B\xE0 v\xE0 t\u1EA5t c\u1EA3 nh\u1EEFng con g\xE0
+    trong l\xE0ng\n\n\n(M\u1ECDi nh\xE2n v\u1EADt \u0111\u1EC1u h\u01B0 c\u1EA5u.
+    Kh\xF4ng c\xF3 con g\xE0 n\xE0o b\u1ECB th\u01B0\u01A1ng khi l\xE0m game n\xE0y.)"
+  quitLabel: "Tho\xE1t game"

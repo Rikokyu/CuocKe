@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4690178962680764582
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8395068946641454658}
+  - component: {fileID: 3097474387500908698}
+  m_Layer: 0
+  m_Name: BattleArena
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8395068946641454658
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4690178962680764582}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 28.5, y: 0, z: 19.7}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3097474387500908698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4690178962680764582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3995ef5a4f4653f4891b819a014ef304, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BattleArena
+  center: {x: 28.5, y: 0, z: 19.7}
+  radius: 8.5
+  foeOffset: {x: 3, y: 0, z: 0}
+  returnDelay: 8
+  guidanceReminderSeconds: 6
+  firstFightGuidance: "H\xE3y d\u1EABn g\xE0 \u0111\u1EBFn \u0111\u1EA5u tr\u01B0\u1EDDng
+    \u0111\u1EC3 b\u1EAFt \u0111\u1EA7u tr\u1EADn \u0111\u1EA5u!"
+  markerMaterial: {fileID: 2100000, guid: 12d772b63dec80a48847f2428de408c6, type: 2}

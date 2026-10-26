@@ -85,6 +85,12 @@ public class TournamentManager : MonoBehaviour
         lost = new bool[OpponentCount];
         Medals = 0;
         MedalsSpent = 0;
+
+        // Defensive: every opponent's rooster defaults to autoEngage=true in the scene (it is only the
+        // currently-default BattleManager.enemyCombat target that anything else quiets at startup), so
+        // without this, Chi Ba / Chu Tu would attack the player's chicken on sight, before any challenge.
+        for (int i = 0; i < OpponentCount; i++)
+            if (opponents[i].roosterCombat != null) opponents[i].roosterCombat.autoEngage = false;
     }
 
     void OnDestroy()
@@ -189,6 +195,7 @@ public class TournamentManager : MonoBehaviour
 
         if (player != null && !ArrivedAtArena(pet.transform.position, entry.rooster.transform.position))
         {
+            entry.roosterCombat.autoEngage = false; // defensive: don't let a stale flag attack the chicken while it travels
             pendingIndex = index;
             pendingArrival = true;
             nextGuidanceAt = 0f; // show the guidance banner immediately
@@ -320,6 +327,8 @@ public class TournamentManager : MonoBehaviour
         fightActive = false;
         bool won = bm.enemyHealth != null && bm.enemyHealth.IsDead;
         int index = activeIndex;
+        if (index >= 0 && index < OpponentCount && opponents[index].roosterCombat != null)
+            opponents[index].roosterCombat.autoEngage = false; // defensive, see StartChallenge's pending-arrival branch
         RestoreBattleManager(bm);
         activeIndex = -1;
 

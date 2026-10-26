@@ -10,7 +10,7 @@ using UnityEngine.AI;
 ///
 /// Flow (assumptions are in PROJECT_STATUS.md):
 ///   - The quest starts when the chicken transforms (ChickenTransformationTrigger, unchanged).
-///   - Every finished training session (ChickenStats.Changed) reports 1 progress. QuestManager ignores it unless the
+///   - Quest progress follows the chicken's total training hours (ChickenStats.TrainingHours, capped at the required amount). QuestManager ignores it unless the
 ///     quest is Active and clamps at requiredAmount, so nothing counts early or twice.
 ///   - At the required amount the quest is ReadyToTurnIn: only then does the friend offer the rematch.
 ///   - The rematch uses the NORMAL balance (BattleManager.isFirstBattle is switched off; that flag otherwise stays true
@@ -130,11 +130,17 @@ public class RematchController : MonoBehaviour
         if (chickenStats != null) chickenStats.Changed -= OnStatsChanged;
     }
 
-    /// <summary>One finished training session = one step of preparation. Only counts while the quest is Active.</summary>
+    /// <summary>The quest's 'buổi tập' = the chicken's total training hours (ChickenStats.TrainingHours): a 2-hour session
+    /// shows 2/N, 5 hours in total shows 5/N. Progress is raised to min(TrainingHours, required); it never goes down and
+    /// stat-only changes (no new hours) add nothing. Only counts while the quest is Active.</summary>
     void OnStatsChanged()
     {
-        if (questManager == null || rematchQuest == null) return;
-        questManager.ReportProgress(rematchQuest.objectiveKey, 1);
+        if (questManager == null || rematchQuest == null || chickenStats == null) return;
+        QuestStatus status = questManager.GetStatus(rematchQuest);
+        if (status == null || status.State != QuestState.Active) return;
+        int target = Mathf.Min(chickenStats.TrainingHours, rematchQuest.requiredAmount);
+        int missing = target - status.Progress;
+        if (missing > 0) questManager.ReportProgress(rematchQuest.objectiveKey, missing);
     }
 
     /// <summary>
@@ -206,6 +212,8 @@ public class RematchController : MonoBehaviour
 
         if (player != null && !ArrivedAtArena(pet.transform.position, foe.transform.position))
         {
+            RoosterCombatAI foeCombat0 = foe.GetComponent<RoosterCombatAI>();
+            if (foeCombat0 != null) foeCombat0.autoEngage = false; // defensive: see TournamentManager's same fix
             pendingArrival = true;
             nextGuidanceAt = 0f;
             return;
@@ -337,6 +345,7 @@ public class RematchController : MonoBehaviour
         if (bm.CurrentBattleState != BattleManager.BattleState.Completed) return;
 
         fightActive = false;
+        if (bm.enemyCombat != null) bm.enemyCombat.autoEngage = false; // defensive, see StartRematch's pending-arrival branch
         if (bm.enemyHealth != null && bm.enemyHealth.IsDead) OnVictory();
         else OnDefeat();
     }

@@ -34,6 +34,8 @@ public class ChickenTransformationTrigger : MonoBehaviour
 
     [Header("Messages")]
     [SerializeField, TextArea(1, 3)] string transformedMessage = "Sáng dậy, con gà đã to khoẻ hẳn ra! Khu huấn luyện đã mở.";
+    [Tooltip("Shown when the chicken is taken back at the training area (missing-chicken flow).")]
+    [SerializeField, TextArea(1, 3)] string recoveredMessage = "Đã nhận lại gà! Nó to khoẻ hẳn ra. Khu huấn luyện đã mở.";
 
     [Header("Placeholder transform")]
     [SerializeField] float scaleMultiplier = 1.35f;
@@ -46,19 +48,34 @@ public class ChickenTransformationTrigger : MonoBehaviour
     public static bool Transformed { get; private set; }
 
     /// <summary>Training stations ask this. If the scene has no such trigger nothing is locked.</summary>
-    public static bool TrainingUnlocked { get { return Instance == null || Transformed; } }
+    public static bool TrainingUnlocked { get { return Instance == null || (Transformed && (MissingChickenStory.Instance == null || ChickenRecovered)); } }
+
+    /// <summary>True once the player took the chicken back at the training area (missing-chicken flow). Without that flow it is never needed.</summary>
+    public static bool ChickenRecovered { get; private set; }
+
+    /// <summary>Why training is still locked (shown by the trainer and the stations).</summary>
+    public static string TrainingLockedMessage
+    {
+        get
+        {
+            if (Transformed && MissingChickenStory.Instance != null && !ChickenRecovered)
+                return "Con gà đang mất tích. Hãy tìm lại nó trước đã.";
+            return "Gà chưa sẵn sàng tập luyện. Hãy xong việc vườn ở nhà ông bà rồi đi ngủ đã.";
+        }
+    }
 
     bool pendingGardenInfo;
 
-    void Awake()
+void Awake()
     {
         Instance = this;
         Transformed = false;
+        ChickenRecovered = false;
     }
 
-    void OnDestroy()
+void OnDestroy()
     {
-        if (Instance == this) { Instance = null; Transformed = false; }
+        if (Instance == this) { Instance = null; Transformed = false; ChickenRecovered = false; }
     }
 
     void OnEnable()
@@ -93,16 +110,33 @@ public class ChickenTransformationTrigger : MonoBehaviour
     }
 
     /// <summary>The one-time change. Guarded by Transformed, and QuestManager.TurnIn only completes the garden quest once.</summary>
-    void Transform()
+void Transform()
     {
         if (Transformed) return;
         Transformed = true;
 
         ApplyPlaceholderTransform();
 
+        // Missing-chicken flow: the chicken is gone in the morning; training and the next quest wait until it is taken back.
+        if (MissingChickenStory.Instance != null) return;
+
+        UnlockTrainingAndNextQuest(transformedMessage);
+    }
+
+    /// <summary>The player took the chicken back (called once by MissingChickenStory.TryTakeBack). Unlocks training and starts the next quest.</summary>
+    public bool CompleteRecovery()
+    {
+        if (!Transformed || ChickenRecovered) return false;
+        ChickenRecovered = true; // flip first: never twice
+        UnlockTrainingAndNextQuest(recoveredMessage);
+        return true;
+    }
+
+    void UnlockTrainingAndNextQuest(string message)
+    {
         if (questManager != null && nextQuest != null && questManager.GetState(nextQuest.questId) == QuestState.NotStarted)
             questManager.AcceptQuest(nextQuest);
-        if (banner != null && !string.IsNullOrEmpty(transformedMessage)) banner.Show(transformedMessage, 6f);
+        if (banner != null && !string.IsNullOrEmpty(message)) banner.Show(message, 6f);
     }
 
     void ApplyPlaceholderTransform()

@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3652499975717170805
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6649123596419001603}
+  - component: {fileID: 32450083148628560}
+  m_Layer: 0
+  m_Name: PostLossSequence
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6649123596419001603
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3652499975717170805}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &32450083148628560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3652499975717170805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b0a6c9794c4f1146af6da326d2353c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PostLossSequence
+  battleManager: {fileID: 0}
+  chickenHealth: {fileID: 0}
+  chickenCombat: {fileID: 0}
+  enemyCombat: {fileID: 0}
+  messageBanner: {fileID: 0}
+  lossMessage: "B\u1EA1n \u0111\xE3 thua tr\u1EADn! H\xE3y t\xECm c\xE1ch hu\u1EA5n
+    luy\u1EC7n g\xE0 m\u1EA1nh h\u01A1n."
+  messageSeconds: 5
+  getUpDelay: 3
+  recoveredHealthFraction: 1
+  getUpTimeout: 8
+  idleStateName: ChickenIdle
+  onSequenceStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onChickenRecovered:
+    m_PersistentCalls:
+      m_Calls: []

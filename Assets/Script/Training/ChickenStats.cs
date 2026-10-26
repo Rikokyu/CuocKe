@@ -35,8 +35,8 @@ public class ChickenStats : MonoBehaviour
     [SerializeField, Range(0f, 0.2f)] float speedBonusPerPoint = 0.03f;
 
     [Header("Trainer NPC (prepaid hours)")]
-    [Tooltip("Damage added by EACH completed training hour (owner requirement: +20).")]
-    [SerializeField, Min(0f)] float damagePerTrainingHour = 20f;
+    [Tooltip("Damage added by EACH completed training hour (owner requirement: +7).")]
+    [SerializeField, Min(0f)] float damagePerTrainingHour = 7f;
 
     public int Strength { get; private set; }
     public int Attack { get; private set; }

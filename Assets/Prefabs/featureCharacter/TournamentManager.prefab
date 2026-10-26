@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2917839782554417356
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5884432158835502726}
+  - component: {fileID: 5557234627180162244}
+  m_Layer: 0
+  m_Name: TournamentManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5884432158835502726
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2917839782554417356}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5557234627180162244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2917839782554417356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03e9d2a860a7f8746a81e03c71a45202, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TournamentManager
+  questManager: {fileID: 0}
+  dialogue: {fileID: 0}
+  banner: {fileID: 0}
+  wallet: {fileID: 0}
+  rematchQuest: {fileID: 11400000, guid: 8acb6228d533dab49aa780129186f67e, type: 2}
+  tournamentQuest: {fileID: 11400000, guid: 1989041d0b8b83f4aa09da3b56507527, type: 2}
+  opponents:
+  - definition: {fileID: 11400000, guid: d600b545dc76b1549aea3a7246d06db9, type: 2}
+    rooster: {fileID: 0}
+    roosterCombat: {fileID: 0}
+  - definition: {fileID: 11400000, guid: d8e083a51e6c82549aabc00a4fceea72, type: 2}
+    rooster: {fileID: 0}
+    roosterCombat: {fileID: 0}
+  arenaStartDistance: 4
+  getUpDelay: 3
+  getUpTimeout: 8
+  idleStateName: ChickenIdle
+  arenaRadius: 6
+  guidanceReminderSeconds: 6
+  guidanceMessage: "H\xE3y d\u1EABn g\xE0 \u0111\u1EBFn \u0111\u1EA5u tr\u01B0\u1EDDng
+    \u0111\u1EC3 b\u1EAFt \u0111\u1EA7u tr\u1EADn \u0111\u1EA5u!"
+  startMessage: "Tr\u1EADn \u0111\u1EA5u gi\u1EA3i l\xE0ng b\u1EAFt \u0111\u1EA7u!"
+  lostMessage: "Thua r\u1ED3i! Luy\u1EC7n th\xEAm r\u1ED3i th\xE1ch \u0111\u1EA5u
+    l\u1EA1i."
+  winMessage: "Th\u1EAFng! Nh\u1EADn {0} huy ch\u01B0\u01A1ng v\xE0 {1} ti\u1EC1n"
+  needChickenMessage: "G\xE0 c\u1EE7a b\u1EA1n ch\u01B0a s\u1EB5n s\xE0ng \u0111\u1EC3
+    thi \u0111\u1EA5u"

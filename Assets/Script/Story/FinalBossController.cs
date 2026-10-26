@@ -181,6 +181,7 @@ public class FinalBossController : MonoBehaviour
 
         if (player != null && !ArrivedAtArena(pet.transform.position, foe.transform.position))
         {
+            foeCombat.autoEngage = false; // defensive: see TournamentManager's/RematchController's same fix
             pendingArrival = true;
             nextGuidanceAt = 0f;
             return;
@@ -314,6 +315,7 @@ public class FinalBossController : MonoBehaviour
 
         fightActive = false;
         bool won = bm.enemyHealth != null && bm.enemyHealth.IsDead;
+        if (bm.enemyCombat != null) bm.enemyCombat.autoEngage = false; // defensive, see StartFinalBattle's pending-arrival branch
         RestoreFoeStats(bm.enemyHealth, bm.enemyCombat); // the opponent goes back to its normal stats either way
 
         if (won) OnVictory();

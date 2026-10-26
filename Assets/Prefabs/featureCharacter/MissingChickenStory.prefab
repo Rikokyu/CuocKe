@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5689539679500244634
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6321515526254222453}
+  - component: {fileID: 4368357007435889218}
+  m_Layer: 0
+  m_Name: MissingChickenStory
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6321515526254222453
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5689539679500244634}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4368357007435889218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5689539679500244634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aaf24afe88dafd740bf53042c7c356fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MissingChickenStory
+  questManager: {fileID: 0}
+  gardenQuest: {fileID: 11400000, guid: b30866a93c6442f41ad09cd261ac4ba6, type: 2}
+  findQuest: {fileID: 11400000, guid: 22dd26eb89eb31847ad14a7bf75422b5, type: 2}
+  chicken: {fileID: 0}
+  trainingSpawn: {fileID: 0}
+  player: {fileID: 0}
+  bed: {fileID: 0}
+  grandfather: {fileID: 0}
+  grandmother: {fileID: 0}
+  dialogue: {fileID: 0}
+  prompt: {fileID: 0}
+  banner: {fileID: 0}
+  memeShot: {fileID: 0}
+  viewCamera: {fileID: 0}
+  discoverDistance: 10
+  viewHalfAngle: 60
+  takeDistance: 2.5
+  interactKey: 101
+  takePrompt: "Nh\u1EA5n E \u0111\u1EC3 nh\u1EADn l\u1EA1i con g\xE0"
+  wakeMessage: "S\xE1ng d\u1EADy... con g\xE0 \u0111\xE2u r\u1ED3i? H\u1ECFi \xF4ng
+    b\xE0 xem sao."
+  askButtonLabel: "\u0110i t\xECm con g\xE0"
+  askGrandfatherLines:
+  - "[Player] \xD4ng \u01A1i, s\xE1ng nay ch\xE1u d\u1EADy kh\xF4ng th\u1EA5y con
+    g\xE0 \u0111\xE2u c\u1EA3. \xD4ng c\xF3 th\u1EA5y n\xF3 kh\xF4ng \u1EA1?"
+  - "C\xF3, \xF4ng th\u1EA5y n\xF3 ch\u1EA1y ra kh\u1ECFi s\xE2n t\u1EEB t\u1EDD
+    m\u1EDD s\xE1ng, tr\xF4ng kho\u1EBB re. H\xECnh nh\u01B0 n\xF3 ch\u1EA1y v\u1EC1
+    ph\xEDa khu hu\u1EA5n luy\u1EC7n."
+  - "Ch\xE1u ra \u0111\xF3 t\xECm th\u1EED xem."
+  askGrandmotherLines:
+  - "[Player] B\xE0 \u01A1i, b\xE0 c\xF3 th\u1EA5y con g\xE0 c\u1EE7a ch\xE1u \u0111\xE2u
+    kh\xF4ng \u1EA1? S\xE1ng nay ch\xE1u d\u1EADy l\xE0 m\u1EA5t ti\xEAu r\u1ED3i."
+  - "B\xE0 d\u1EADy t\u01B0\u1EDBi rau \u0111\xE3 kh\xF4ng th\u1EA5y n\xF3. Nghe
+    ng\u01B0\u1EDDi ta b\u1EA3o th\u1EA5y n\xF3 ch\u1EA1y v\u1EC1 ph\xEDa khu hu\u1EA5n
+    luy\u1EC7n \u0111\u1EA5y."
+  - "Ch\xE1u ra \u0111\xF3 xem th\u1EED \u0111i."
+  remindLines:
+  - "Ch\xE1u ra khu hu\u1EA5n luy\u1EC7n t\xECm con g\xE0 \u0111i, ch\u1EAFc n\xF3
+    \u1EDF \u0111\xF3."
+  remindFoundLines:
+  - "Th\u1EA5y n\xF3 r\u1ED3i th\xEC \u0111\u1EBFn g\u1EA7n, d\u1EABn n\xF3 v\u1EC1
+    nh\xE9."
+  searchMessage: "\u0110\xE3 nh\u1EADn nhi\u1EC7m v\u1EE5: T\xECm con g\xE0 \u1EDF
+    khu hu\u1EA5n luy\u1EC7n."
+  discoveryCaption: "C\xE1i h\xE9o l\xE1 g\xEC d\u1EADy fen. Con g\xE0 nh\xECn quen
+    v\u1EADy"
+  foundHint: "\u0110\u1EBFn g\u1EA7n con g\xE0 v\xE0 nh\u1EA5n E \u0111\u1EC3 nh\u1EADn
+    l\u1EA1i n\xF3."

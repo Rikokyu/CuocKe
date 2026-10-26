@@ -156,7 +156,7 @@ public class TrainingStation : MonoBehaviour
     void TrainingRefusal(out string why)
     {
         why = null;
-        if (!ChickenTransformationTrigger.TrainingUnlocked) { why = "Gà chưa sẵn sàng tập luyện. Hãy xong việc vườn ở nhà ông bà rồi đi ngủ đã"; return; } // story gate
+        if (!ChickenTransformationTrigger.TrainingUnlocked) { why = ChickenTransformationTrigger.TrainingLockedMessage; return; } // story gate
         if (BattleManager.Instance != null && BattleManager.Instance.IsBattleActive) { why = "Đang trong trận đấu, chưa thể tập"; return; }
 
         MainChickenAcquire acquire = MainChickenAcquire.Instance;

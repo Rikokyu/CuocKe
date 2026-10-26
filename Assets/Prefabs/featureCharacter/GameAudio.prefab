@@ -1,0 +1,339 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5358557726528743844
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7572742349489433034}
+  - component: {fileID: 6196230736278751892}
+  m_Layer: 0
+  m_Name: GameAudio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7572742349489433034
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5358557726528743844}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6196230736278751892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5358557726528743844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 808134f3764216748846277b0b1da6f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameAudio
+  master: 1
+  musicVolume: 0.3
+  ambienceVolume: 0.45
+  sfxVolume: 1
+  dialogueDuck: 0.5
+  fadeSeconds: 2.5
+  exploreMusic: {fileID: 8300000, guid: b8f61dad8c9a1ca46959509b940f3f1e, type: 3}
+  sadMusic: {fileID: 8300000, guid: e458d164bcc704f48a23f9ea2d31237a, type: 3}
+  battleMusic: {fileID: 8300000, guid: 7fb703e712fe69742b3d712b004510de, type: 3}
+  endingMusic: {fileID: 8300000, guid: 338e0e5da9d75764c8af8507986bf611, type: 3}
+  dayAmbience: {fileID: 8300000, guid: 593341181e687fa4daddcd2443c069fe, type: 3}
+  eveningAmbience: {fileID: 8300000, guid: b03b5379379a0544fbf5ecf7f12c57ed, type: 3}
+  nightAmbience: {fileID: 8300000, guid: ae3aa2ee492296e49bd70eb1073dd710, type: 3}
+  footstep:
+    name: footstep
+    clips:
+    - {fileID: 8300000, guid: ea8b23ff13e80e648917f132237434d4, type: 3}
+    - {fileID: 8300000, guid: 0bd1c09b6c624364c8a0a966cd7776f6, type: 3}
+    - {fileID: 8300000, guid: 7f75fc9dbd47bf94fa20cec5a4d14faf, type: 3}
+    - {fileID: 8300000, guid: 2f18bd8f482c5a1418be62699a14df3d, type: 3}
+    - {fileID: 8300000, guid: b12e32200fa322a4f80c565d6b7fe0f7, type: 3}
+    volume: 0.35
+    minInterval: 0.25
+    pitchJitter: 0.1
+    maxSeconds: 0
+    lastTime: -99
+    lastIndex: -1
+    playedCount: 0
+    blockedCount: 0
+  dialogueVoice:
+    name: dialogueVoice
+    clips:
+    - {fileID: 8300000, guid: 8fcc125943523c1498c422882653ac20, type: 3}
+    volume: 0.7
+    minInterval: 0.8
+    pitchJitter: 0.1
+    maxSeconds: 1.7
+    lastTime: -99
+    lastIndex: -1
+    playedCount: 0
+    blockedCount: 0
+  questAccepted:
+    name: questAccepted
+    clips:
+    - {fileID: 8300000, guid: 445e6c9b920b8f54a9e83fc926fb7b66, type: 3}
+    volume: 0.6
+    minInterval: 0.5
+    pitchJitter: 0.05
+    maxSeconds: 0
+    lastTime: -99
+    lastIndex: -1
+    playedCount: 0
+    blockedCount: 0
+  objectiveDone:
+    name: objectiveDone
+    clips:
+    - {fileID: 8300000, guid: fdfc2482ee072634e93949cbbd6455cc, type: 3}
+    - {fileID: 8300000, guid: c5054f4f2e1050e4488a6bb204a6a0a3, type: 3}
+    volume: 0.6
+    minInterval: 0.5
+    pitchJitter: 0.05
+    maxSeconds: 0
+    lastTime: -99
+    lastIndex: -1
+    playedCount: 0
+    blockedCount: 0
+  questDone:
+    name: questDone
+    clips:
+    - {fileID: 8300000, guid: b93c2acb8773655429207eec4c9f60e6, type: 3}
+    - {fileID: 8300000, guid: cc20941535c768a45a73269a522ffd29, type: 3}
+    volume: 0.7
+    minInterval: 1
+    pitchJitter: 0.05
+    maxSeconds: 0
+    lastTime: -99
+    lastIndex: -1
+    playedCount: 0
+    blockedCount: 0
+  moneyGain:
+    name: moneyGain
+    clips:
+    - {fileID: 8300000, guid: dcece9db4499fa144ab2768faf4e3c26, type: 3}
+    - {fileID: 8300000, guid: 4f653086f006b1e41b767e025f9dfcd6, type: 3}
+    - {fileID: 8300000, guid: 7b4b3707e24d1204d9238d62a3a45d69, type: 3}
+    - {fileID: 8300000, guid: 71db780b98a455b478a3fd3c5b565ee8, type: 3}
+    - {fileID: 8300000, guid: 8a612f6c35bef2e44aa403a8cd456d22, type: 3}
+    volume: 0.6
+    minInterval: 0.2
+    pitchJitter: 0.05
+    maxSeconds: 0
+    lastTime: -99
+    lastIndex: -1
+    playedCount: 0
+    blockedCount: 0
+  moneySpend:
+    name: moneySpend
+    clips:
+    - {fileID: 8300000, guid: 5667e319f0ce9a54ea0f578a78e7e65b, type: 3}
+    - {fileID: 8300000, guid: 83cd9fdd2e83c0d468f032a37c47f6bb, type: 3}
+    - {fileID: 8300000, guid: b30004d8fa0838746b71c65b49b910ca, type: 3}
+    - {fileID: 8300000, guid: 65482252a0b13cf45b5e45387104f10e, type: 3}
+    - {fileID: 8300000, guid: 124c763cc6c7a5f42aad474c2338da45, type: 3}
+    volume: 0.6
+    minInterval: 0.2
+    pitchJitter: 0.05
+    maxSeconds: 0
+    lastTime: -99
+    lastIndex: -1
+    playedCount: 0
+    blockedCount: 0
+  pickup:
+    name: pickup
+    clips:
+    - {fileID: 8300000, guid: dd6da3881d6e205489a79d0f0ac913fe, type: 3}
+    - {fileID: 8300000, guid: 5a803df5de4c057469343ca83b64c66c, type: 3}
+    - {fileID: 8300000, guid: 4befdaf7284463543ab8d333d91b935a, type: 3}
+    - {fileID: 8300000, guid: 207ea438e48c13f409ee18915078ed05, type: 3}
+    - {fileID: 8300000, guid: 8b11e959b7aa6074d920de0e9ded521f, type: 3}
+    volume: 0.6
+    minInterval: 0.2
+    pitchJitter: 0.05
+    maxSeconds: 0
+    lastTime: -99
+    lastIndex: -1
+    playedCount: 0
+    blockedCount: 0
+  trainDone:
+    name: trainDone
+    clips:
+    - {fileID: 8300000, guid: 7e252b8ceefa9d349afd806da07f2738, type: 3}
+    - {fileID: 8300000, guid: 46c554857d226e24f8f3583fe63021c6, type: 3}
+    - {fileID: 8300000, guid: 406878656953afb4c878bc1253e35202, type: 3}
+    - {fileID: 8300000, guid: 8e6e3da58a27a0c438fea743a6637dfa, type: 3}
+    - {fileID: 8300000, guid: b2a3d2e918d455a4da9a7ae1ecd61215, type: 3}
+    volume: 0.7
+    minInterval: 0.5
+    pitchJitter: 0.05
+    maxSeconds: 0
+    lastTime: -99
+    lastIndex: -1
+    playedCount: 0
+    blockedCount: 0
+  hitLight:
+    name: hitLight
+    clips:
+    - {fileID: 8300000, guid: 1b5ad8b349d55e4468634e7cccc4714a, type: 3}
+    - {fileID: 8300000, guid: 028395ef80118604593c34825c9d9ca9, type: 3}
+    - {fileID: 8300000, guid: 56a70559094d240429b9ae209c8c09da, type: 3}
+    - {fileID: 8300000, guid: 018beaaddbe387b49aa2a873892384b7, type: 3}
+    - {fileID: 8300000, guid: 3a12886289ab31e4086de6ce652603e8, type: 3}
+    volume: 0.7
+    minInterval: 0.12
+    pitchJitter: 0.1
+    maxSeconds: 0
+    lastTime: -99
+    lastIndex: -1
+    playedCount: 0
+    blockedCount: 0
+  hitHeavy:
+    name: hitHeavy
+    clips:
+    - {fileID: 8300000, guid: a3dbb7ca8a68eae468a4bf2718f2fe52, type: 3}
+    - {fileID: 8300000, guid: faf2535504dd14148abbe13ad27d61a3, type: 3}
+    - {fileID: 8300000, guid: c7a55955684fa914280fa1c58cce98cb, type: 3}
+    - {fileID: 8300000, guid: caf24f35d42b7294fa0f53485744dde0, type: 3}
+    - {fileID: 8300000, guid: ea7d343ddeb3c1b4c8cb82aa5a3bbca5, type: 3}
+    volume: 0.85
+    minInterval: 0.2
+    pitchJitter: 0.08
+    maxSeconds: 0
+    lastTime: -99
+    lastIndex: -1
+    playedCount: 0
+    blockedCount: 0
+  hitSnap:
+    name: hitSnap
+    clips:
+    - {fileID: 8300000, guid: 82c1f06ad9d24cc43968faad1203aca2, type: 3}
+    - {fileID: 8300000, guid: 5cae46d6a7579b4429927316679acc35, type: 3}
+    - {fileID: 8300000, guid: 529453aa562c7184f8674f7502a7e2f1, type: 3}
+    - {fileID: 8300000, guid: 426f57f80e7ccad4cb1e163bbdf453a1, type: 3}
+    - {fileID: 8300000, guid: 976a527b2c7c5c24fa27ed50d4332f50, type: 3}
+    volume: 0.45
+    minInterval: 0.15
+    pitchJitter: 0.1
+    maxSeconds: 0
+    lastTime: -99
+    lastIndex: -1
+    playedCount: 0
+    blockedCount: 0
+  hitBurst:
+    name: hitBurst
+    clips:
+    - {fileID: 8300000, guid: a96cb8e6333842e40931afb9a925cf16, type: 3}
+    - {fileID: 8300000, guid: ee47bcded205a5144a9d29bc69a068c1, type: 3}
+    - {fileID: 8300000, guid: 53f7e4ce9949f6342bb7bf7db91f9e12, type: 3}
+    - {fileID: 8300000, guid: 44a20bed85754fb4b8ce05337e93ff62, type: 3}
+    - {fileID: 8300000, guid: 2d6a6252189a050448ddde620bb6101c, type: 3}
+    volume: 0.7
+    minInterval: 0.35
+    pitchJitter: 0.08
+    maxSeconds: 0
+    lastTime: -99
+    lastIndex: -1
+    playedCount: 0
+    blockedCount: 0
+  deathKnock:
+    name: deathKnock
+    clips:
+    - {fileID: 8300000, guid: 9553a088525fc01449883fadc0fc21c1, type: 3}
+    - {fileID: 8300000, guid: 51e1b720a54a1be41ac01e5b6107c2c0, type: 3}
+    - {fileID: 8300000, guid: 5719f0ed835301f4cb04a8d9a9d92949, type: 3}
+    - {fileID: 8300000, guid: a2e4a01b36d69094bb273aa7eb301800, type: 3}
+    - {fileID: 8300000, guid: 281bc2abf0d976442828e2daec1cdf3b, type: 3}
+    volume: 0.8
+    minInterval: 1
+    pitchJitter: 0.05
+    maxSeconds: 0
+    lastTime: -99
+    lastIndex: -1
+    playedCount: 0
+    blockedCount: 0
+  battleStart:
+    name: battleStart
+    clips:
+    - {fileID: 8300000, guid: cc20941535c768a45a73269a522ffd29, type: 3}
+    volume: 0.7
+    minInterval: 2
+    pitchJitter: 0.05
+    maxSeconds: 0
+    lastTime: -99
+    lastIndex: -1
+    playedCount: 0
+    blockedCount: 0
+  battleWon:
+    name: battleWon
+    clips:
+    - {fileID: 8300000, guid: b93c2acb8773655429207eec4c9f60e6, type: 3}
+    volume: 0.8
+    minInterval: 3
+    pitchJitter: 0.05
+    maxSeconds: 0
+    lastTime: -99
+    lastIndex: -1
+    playedCount: 0
+    blockedCount: 0
+  battleLost:
+    name: battleLost
+    clips:
+    - {fileID: 8300000, guid: 6761363c519931e4c91a849b19ad3ec7, type: 3}
+    - {fileID: 8300000, guid: 33ac7941b5267534284c2e94e7c756f0, type: 3}
+    - {fileID: 8300000, guid: c54285f1055e9bb4c81d4d8793971c0c, type: 3}
+    - {fileID: 8300000, guid: 5774594908ae10f4d9fcf12b3239c8db, type: 3}
+    - {fileID: 8300000, guid: 680665b37e18c7248807fb434ce287b2, type: 3}
+    volume: 0.7
+    minInterval: 3
+    pitchJitter: 0.05
+    maxSeconds: 0
+    lastTime: -99
+    lastIndex: -1
+    playedCount: 0
+    blockedCount: 0
+  transformation:
+    name: transformation
+    clips:
+    - {fileID: 8300000, guid: 7d1f90c82180a844290f2093d0a5ec80, type: 3}
+    - {fileID: 8300000, guid: 43438b1302c155a47b1474e220c94d7d, type: 3}
+    volume: 0.9
+    minInterval: 5
+    pitchJitter: 0.05
+    maxSeconds: 0
+    lastTime: -99
+    lastIndex: -1
+    playedCount: 0
+    blockedCount: 0
+  rooster:
+    name: rooster
+    clips:
+    - {fileID: 8300000, guid: 90538b0e6c4bf394f952caf628f2d543, type: 3}
+    volume: 0.7
+    minInterval: 20
+    pitchJitter: 0.08
+    maxSeconds: 0
+    lastTime: -99
+    lastIndex: -1
+    playedCount: 0
+    blockedCount: 0
+  sfxVoices: 8
+  idleRoosterDelay: {x: 45, y: 90}
+  footstepStride: 1.7
+  hitSpatialBlend: 0.6
+  maxHitVoices: 4

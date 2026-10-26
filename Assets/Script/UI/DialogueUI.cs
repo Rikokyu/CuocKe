@@ -70,6 +70,14 @@ public class DialogueUI : MonoBehaviour
     /// <summary>Raised when a line is shown. true = the Player speaks it, false = an NPC (used by GameAudio).</summary>
     public event Action<bool> LineShown;
 
+    /// <summary>Raised when a line starts typing out (true = the Player speaks it). The NPC voice starts on this.</summary>
+    public event Action<bool> TypingStarted;
+    /// <summary>Raised once whenever typing ends: the line finished, was skipped (E / click) or the dialogue closed. The voice stops on this.</summary>
+    public event Action TypingStopped;
+
+    /// <summary>True when lines are typed letter by letter (otherwise the whole line appears at once and nothing is typed).</summary>
+    public bool TypewriterEnabled { get { return typewriter && charactersPerSecond > 0f; } }
+
     public bool IsOpen { get; private set; }
     /// <summary>Read-only: the NPC name passed to Open() for the dialogue that is open now (null when closed). Used only to drive NPC gesture animations; it changes nothing in the dialogue.</summary>
     public string CurrentSpeaker { get { return IsOpen ? currentSpeaker : null; } }
@@ -134,16 +142,18 @@ public class DialogueUI : MonoBehaviour
         }
         if (panelImage != null) panelImage.color = byPlayer ? playerPanelColor : npcPanelColor;
 
+        EndTyping(); // a line that was still typing (next pressed) stops its voice before the new line starts
         if (LineShown != null) LineShown(byPlayer);
         if (bodyLabel == null) return;
         bodyLabel.text = text;
-        if (typewriter && charactersPerSecond > 0f)
+        if (TypewriterEnabled)
         {
             bodyLabel.ForceMeshUpdate();
             totalCharacters = bodyLabel.textInfo.characterCount;
             visibleCharacters = 0f;
             bodyLabel.maxVisibleCharacters = 0;
             typing = totalCharacters > 0;
+            if (typing && TypingStarted != null) TypingStarted(byPlayer);
         }
         else
         {
@@ -155,9 +165,17 @@ public class DialogueUI : MonoBehaviour
     /// <summary>Shows the rest of the current line at once (E while typing, or a click on the text).</summary>
     public void CompleteLine()
     {
-        if (!IsOpen || !typing) return;
+        if (!IsOpen) return;
+        EndTyping();
+    }
+
+    /// <summary>The ONE place where typing stops (finished / skipped / closed / replaced by the next line): shows the whole text and tells the listeners once.</summary>
+    void EndTyping()
+    {
+        if (!typing) return;
         typing = false;
         if (bodyLabel != null) bodyLabel.maxVisibleCharacters = int.MaxValue;
+        if (TypingStopped != null) TypingStopped();
     }
 
     void AdvanceTyping()
@@ -195,7 +213,7 @@ public class DialogueUI : MonoBehaviour
         if (!IsOpen) return;
 
         IsOpen = false;
-        typing = false;
+        EndTyping(); // stops the voice at once (also covers OnDisable)
         if (bodyLabel != null) bodyLabel.maxVisibleCharacters = int.MaxValue;
         if (speakerLabel != null) speakerLabel.color = npcNameColor;
         if (panelImage != null) panelImage.color = npcPanelColor;

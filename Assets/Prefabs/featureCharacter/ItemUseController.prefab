@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6998508581250526476
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9065095442286297812}
+  - component: {fileID: 30442557364778964}
+  m_Layer: 0
+  m_Name: ItemUseController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9065095442286297812
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6998508581250526476}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &30442557364778964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6998508581250526476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e6c0727b9792cd4bb53300906d74621, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemUseController
+  trainingMat: {fileID: 11400000, guid: c98c7fa4c88a52f47b0d6556e94a5c3d, type: 2}
+  lotteryTicket: {fileID: 11400000, guid: a0b7e29ec3c82414a9790762da7c2656, type: 2}
+  proteinFertilizer: {fileID: 11400000, guid: 4381a16f1ed4a0c40b13dedd40305d5c, type: 2}
+  useKey: 102
+  matStation: {fileID: 0}
+  matPlaceDistance: 3.5
+  gardenPlots:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  fertilizerDistance: 3
+  prizeAmounts: 000000001400000032000000c8000000e8030000
+  prizeWeights:
+  - 70
+  - 20
+  - 7
+  - 2.5
+  - 0.5
+  hotbar: {fileID: 0}
+  wallet: {fileID: 0}
+  prompt: {fileID: 0}
+  banner: {fileID: 0}
+  dialogue: {fileID: 0}
+  shop: {fileID: 0}
+  trainer: {fileID: 0}
+  player: {fileID: 0}

@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1696796098979412026
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3723381682194155882}
+  - component: {fileID: 6107736974159726240}
+  m_Layer: 0
+  m_Name: IntroScreenController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3723381682194155882
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1696796098979412026}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6107736974159726240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1696796098979412026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e83791610a170c749b1cd8c1e8ab43db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::IntroScreen
+  headline: "C\u01AF\u1EDAC K\xCA"
+  body: "Sau bao n\u0103m l\xE0m IT qu\u1EA7n qu\u1EADt v\u1EDBi deadline, b\u1EA1n
+    quy\u1EBFt \u0111\u1ECBnh x\xE1ch ba l\xF4 v\u1EC1 qu\xEA th\u0103m \xF4ng b\xE0...\n\n(\u0110\xE2y
+    l\xE0 m\xE0n h\xECnh ch\u1EEF t\u1EA1m th\u1EDDi thay cho \u0111o\u1EA1n intro
+    ho\u1EA1t h\xECnh.)"
+  buttonLabel: "B\u1EAFt \u0111\u1EA7u [Enter]"
+  playerMovement: {fileID: 0}
+  questManager: {fileID: 0}
+  questArrive: {fileID: 11400000, guid: 47f6fd93c10dc4540819459e029f7b18, type: 2}

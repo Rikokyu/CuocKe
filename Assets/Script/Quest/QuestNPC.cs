@@ -93,6 +93,14 @@ public bool Interact()
         if (quest == null || questManager == null || dialogue == null) return false;
         if (dialogue.IsOpen) return false;
 
+        // Morning after the garden quest: Bà answers 'where is my chicken' (MissingChickenStory). False for every other NPC / moment.
+        if (MissingChickenStory.Instance != null && MissingChickenStory.Instance.TryHandleGrandparent(transform))
+        {
+            SetPromptVisible(false);
+            FacePlayer();
+            return true;
+        }
+
         if (!IsOfferAvailable())
         {
             if (!HasIdleLines()) return false;

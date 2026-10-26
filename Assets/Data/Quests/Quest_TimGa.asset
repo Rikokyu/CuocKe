@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4890830c199e76340babb0b205329a7d, type: 3}
+  m_Name: Quest_TimGa
+  m_EditorClassIdentifier: Assembly-CSharp::QuestDefinition
+  questId: tim_ga
+  title: "T\xECm con g\xE0"
+  description: "S\xE1ng d\u1EADy kh\xF4ng th\u1EA5y con g\xE0 \u0111\xE2u. H\u1ECFi
+    \xF4ng b\xE0 r\u1ED3i \u0111i t\xECm n\xF3."
+  objective: "T\xECm con g\xE0 \u1EDF khu hu\u1EA5n luy\u1EC7n, \u0111\u1EBFn g\u1EA7n
+    v\xE0 nh\u1EA5n E \u0111\u1EC3 nh\u1EADn l\u1EA1i"
+  objectiveKey: find_chicken
+  progressLabel: "\u0110\xE3 t\xECm"
+  requiredAmount: 1
+  rewardMoney: 0
+  repeatable: 0
+  turnInObjective: 
+  objectiveCompletedMessage: 
+  silentCompletion: 1
+  offerLines: []
+  activeLines: []
+  readyLines: []
+  completedLines: []

@@ -14,7 +14,7 @@ public class IntroScreen : MonoBehaviour
     [SerializeField] string headline = "CUỘC KÊ";
     [SerializeField, TextArea(2, 5)] string body =
         "Sau bao năm làm IT quần quật với deadline, bạn quyết định xách ba lô về quê thăm ông bà...\n\n(Đây là màn hình chữ tạm thời thay cho đoạn intro hoạt hình.)";
-    [SerializeField] string buttonLabel = "Bắt đầu";
+    [SerializeField] string buttonLabel = "Bắt đầu (Enter)";
 
     [Header("Scene references")]
     [SerializeField] MonoBehaviour playerMovement; // assign the Player's PlayerMovement component
@@ -30,6 +30,12 @@ public class IntroScreen : MonoBehaviour
         if (playerMovement != null) playerMovement.enabled = false;
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+    }
+
+    void Update()
+    {
+        // Enter (main or numpad) starts the game, same as clicking the button
+        if (canvasRoot != null && (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.KeypadEnter))) Dismiss();
     }
 
     void BuildUI()

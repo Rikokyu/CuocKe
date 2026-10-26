@@ -62,7 +62,7 @@ public class GameAudio : MonoBehaviour
 
     [Header("SFX groups")]
     public Bank footstep = new Bank { name = "footstep", volume = 0.35f, minInterval = 0.25f, pitchJitter = 0.1f };
-    public Bank dialogueVoice = new Bank { name = "dialogueVoice", volume = 0.35f, minInterval = 0.4f, pitchJitter = 0.1f };
+    public Bank dialogueVoice = new Bank { name = "dialogueVoice", volume = 0.5f, minInterval = 0.4f, pitchJitter = 0.1f };
     public Bank questAccepted = new Bank { name = "questAccepted", volume = 0.6f, minInterval = 0.5f };
     public Bank objectiveDone = new Bank { name = "objectiveDone", volume = 0.6f, minInterval = 0.5f };
     public Bank questDone = new Bank { name = "questDone", volume = 0.7f, minInterval = 1f };
@@ -72,6 +72,9 @@ public class GameAudio : MonoBehaviour
     public Bank trainDone = new Bank { name = "trainDone", volume = 0.7f, minInterval = 0.5f };
     public Bank hitLight = new Bank { name = "hitLight", volume = 0.7f, minInterval = 0.12f, pitchJitter = 0.1f };
     public Bank hitHeavy = new Bank { name = "hitHeavy", volume = 0.85f, minInterval = 0.2f, pitchJitter = 0.08f };
+    // Layers under the hit sound. They only play when the main hit sound just played (same gate, so the pair stays in sync and never doubles the density).
+    public Bank hitSnap = new Bank { name = "hitSnap", volume = 0.45f, minInterval = 0.15f, pitchJitter = 0.1f };    // crisp crack under a light hit
+    public Bank hitBurst = new Bank { name = "hitBurst", volume = 0.7f, minInterval = 0.35f, pitchJitter = 0.08f };  // low boom under a heavy hit (there is no real explosion clip in the project)
     public Bank deathKnock = new Bank { name = "deathKnock", volume = 0.8f, minInterval = 1f };
     public Bank battleStart = new Bank { name = "battleStart", volume = 0.7f, minInterval = 2f };
     public Bank battleWon = new Bank { name = "battleWon", volume = 0.8f, minInterval = 3f };
@@ -84,6 +87,16 @@ public class GameAudio : MonoBehaviour
     [Tooltip("Random pause between two idle chicken calls (only while exploring).")]
     public Vector2 idleRoosterDelay = new Vector2(45f, 90f);
     public float footstepStride = 1.7f;
+    [Tooltip("How 3D the fight hit sounds are (0 = flat, 1 = full distance falloff). Below 1 so a hit stays audible from the gameplay camera.")]
+    [Range(0f, 1f)] public float hitSpatialBlend = 0.6f;
+    [Tooltip("At most this many voices of the pool may be busy with fight-hit sounds at once, so a flurry of hits can never use up every voice. A hit that would exceed it is skipped.")]
+    [Range(2, 8)] public int maxHitVoices = 4;
+    /// <summary>Hits skipped because maxHitVoices was reached (diagnostics / tests).</summary>
+    public int HitVoiceBlocked { get; private set; }
+    readonly List<AudioSource> hitVoices = new List<AudioSource>();
+    AudioSource lastVoice;
+    /// <summary>Time.frameCount of the last fight-hit sound (compare with GameVfx.LastHitFrame).</summary>
+    public int LastHitSfxFrame { get; private set; }
 
     public static GameAudio Instance { get; private set; }
 
@@ -95,7 +108,7 @@ public class GameAudio : MonoBehaviour
     {
         yield return footstep; yield return dialogueVoice; yield return questAccepted; yield return objectiveDone; yield return questDone;
         yield return moneyGain; yield return moneySpend; yield return pickup; yield return trainDone; yield return hitLight;
-        yield return hitHeavy; yield return deathKnock; yield return battleStart; yield return battleWon; yield return battleLost;
+        yield return hitHeavy; yield return hitSnap; yield return hitBurst; yield return deathKnock; yield return battleStart; yield return battleWon; yield return battleLost;
         yield return transformation; yield return rooster;
     }
 
@@ -203,7 +216,12 @@ public class GameAudio : MonoBehaviour
         if (inventory != null) inventory.Changed += () => Play(pickup);
 
         dialogue = FindFirstObjectByType<DialogueUI>(FindObjectsInactive.Include);
-        if (dialogue != null) dialogue.LineShown += OnDialogueLine;
+        if (dialogue != null)
+        {
+            dialogue.LineShown += OnDialogueLine;
+            dialogue.TypingStarted += StartDialogueVoice;
+            dialogue.TypingStopped += StopDialogueVoice;
+        }
 
         battle = BattleManager.Instance;
         if (battle != null) battle.PlayerLostBattle += () => Play(battleLost);
@@ -219,7 +237,7 @@ public class GameAudio : MonoBehaviour
 
     // ------------------------------------------------------------ playing
     /// <summary>Plays a clip of the group (2D, or 3D at a position). Returns false when it was skipped.</summary>
-    public bool Play(Bank bank, Vector3? position = null, float volumeScale = 1f, float pitch = 1f)
+    public bool Play(Bank bank, Vector3? position = null, float volumeScale = 1f, float pitch = 1f, float spatialBlend = 1f)
     {
         if (bank == null || bank.clips == null || bank.clips.Length == 0) return false;
         if (Time.unscaledTime - bank.lastTime < bank.minInterval) { bank.blockedCount++; return false; }
@@ -231,19 +249,20 @@ public class GameAudio : MonoBehaviour
 
         bank.lastTime = Time.unscaledTime;
         bank.playedCount++;
-        if (position.HasValue) { s.transform.position = position.Value; s.spatialBlend = 1f; }
+        if (position.HasValue) { s.transform.position = position.Value; s.spatialBlend = spatialBlend; }
         else s.spatialBlend = 0f;
         s.clip = clip;
         s.volume = Mathf.Clamp01(bank.volume * sfxVolume * master * volumeScale);
         s.pitch = pitch * (1f + Random.Range(-bank.pitchJitter, bank.pitchJitter));
         s.Play();
+        lastVoice = s;
         if (bank.maxSeconds > 0f && bank.maxSeconds < clip.length) s.SetScheduledEndTime(AudioSettings.dspTime + bank.maxSeconds / Mathf.Max(0.1f, s.pitch));
         return true;
     }
 
     AudioSource FreeVoice()
     {
-        foreach (AudioSource s in sfxPool) if (!s.isPlaying) return s;
+        foreach (AudioSource s in sfxPool) if (!s.isPlaying && s != dialogueVoiceSrc) return s; // the source that holds the talking voice is never lent out
         return null;
     }
 
@@ -260,7 +279,71 @@ public class GameAudio : MonoBehaviour
 
     void OnDialogueLine(bool byPlayer)
     {
+        // With the typewriter the voice loops while the letters appear (StartDialogueVoice / StopDialogueVoice);
+        // without it a line has no typing time, so it keeps the old single blip.
+        if (dialogue != null && dialogue.TypewriterEnabled) return;
         Play(dialogueVoice, null, 1f, byPlayer ? 1.3f : 1f);   // the player's lines use the same voice, higher
+    }
+
+    // ---- talking voice: repeats WHILE the letters are typed, stops at once when the line is finished / skipped / the dialogue closes.
+    // One held source from the existing pool and the existing clip; no source or clip is created per letter or per line.
+    AudioSource dialogueVoiceSrc;
+    bool voiceLooping;
+    bool voiceByPlayer;
+    float voicePhraseEndsAt;   // repeat is time based (does not depend on isPlaying, which is false without an audio device or while the editor is paused)
+
+    /// <summary>True while the dialogue voice is on (diagnostics / tests).</summary>
+    public bool DialogueVoiceActive { get { return voiceLooping && dialogueVoiceSrc != null; } }
+    /// <summary>How many times a voice phrase was started (diagnostics / tests).</summary>
+    public int DialogueVoicePhrases { get; private set; }
+    /// <summary>The volume the dialogue voice is played at (bank volume x sfx x master). Only this group is affected.</summary>
+    public float DialogueVoiceVolume { get { return Mathf.Clamp01(dialogueVoice.volume * sfxVolume * master); } }
+
+    void StartDialogueVoice(bool byPlayer)
+    {
+        StopDialogueVoice(); // a new line (maybe another NPC) never overlaps the previous voice
+        voiceByPlayer = byPlayer;
+        voiceLooping = true;
+        PlayVoicePhrase();
+    }
+
+    void StopDialogueVoice()
+    {
+        voiceLooping = false;
+        if (dialogueVoiceSrc != null)
+        {
+            dialogueVoiceSrc.Stop();
+            dialogueVoiceSrc = null;
+        }
+    }
+
+    void PlayVoicePhrase()
+    {
+        AudioClip clip = dialogueVoice.Pick();
+        if (clip == null) { voiceLooping = false; return; }
+
+        AudioSource s = dialogueVoiceSrc != null ? dialogueVoiceSrc : FreeVoice();
+        if (s == null) return; // all voices busy: try again next frame, never stack
+
+        dialogueVoiceSrc = s;
+        dialogueVoice.playedCount++;
+        DialogueVoicePhrases++;
+        s.spatialBlend = 0f;
+        s.clip = clip;
+        s.volume = DialogueVoiceVolume;
+        s.pitch = (voiceByPlayer ? 1.3f : 1f) * (1f + Random.Range(-dialogueVoice.pitchJitter, dialogueVoice.pitchJitter));
+        s.Play();
+        float phrase = dialogueVoice.maxSeconds > 0f && dialogueVoice.maxSeconds < clip.length ? dialogueVoice.maxSeconds : clip.length;
+        if (phrase < clip.length) s.SetScheduledEndTime(AudioSettings.dspTime + phrase / Mathf.Max(0.1f, s.pitch));
+        voicePhraseEndsAt = Time.unscaledTime + phrase / Mathf.Max(0.1f, s.pitch) + 0.05f;
+    }
+
+    void TickDialogueVoice()
+    {
+        if (!voiceLooping) return;
+        // safety net: no voice without an open, still typing dialogue
+        if (dialogue == null || !dialogue.IsOpen || !dialogue.IsTyping) { StopDialogueVoice(); return; }
+        if (dialogueVoiceSrc == null || Time.unscaledTime >= voicePhraseEndsAt) PlayVoicePhrase(); // phrase ended: repeat
     }
 
     void HookAllHealth()
@@ -283,12 +366,24 @@ public class GameAudio : MonoBehaviour
         float lost = before - current;
         if (lost <= 0.01f) return;
         bool heavy = lost >= 0.15f * max || lost >= 25f;
-        Play(heavy ? hitHeavy : hitLight, h.transform.position);
+        // same point as the particle burst (the victim's collider centre)
+        Vector3 at = h.transform.position;
+        Collider col = h.GetComponentInChildren<Collider>();
+        if (col != null) at = col.bounds.center;
+        for (int i = hitVoices.Count - 1; i >= 0; i--) if (hitVoices[i] == null || !hitVoices[i].isPlaying) hitVoices.RemoveAt(i);
+        if (hitVoices.Count + 2 > maxHitVoices) { HitVoiceBlocked++; return; }   // never let hit sounds take over the whole pool
+        if (Play(heavy ? hitHeavy : hitLight, at, 1f, 1f, hitSpatialBlend))
+        {
+            LastHitSfxFrame = Time.frameCount;
+            hitVoices.Add(lastVoice);
+            if (Play(heavy ? hitBurst : hitSnap, at, 1f, 1f, hitSpatialBlend)) hitVoices.Add(lastVoice);   // layer, only together with the main hit sound
+        }
     }
 
     // ------------------------------------------------------------ per frame
     void Update()
     {
+        TickDialogueVoice();
         float dt = Time.unscaledDeltaTime;
 
         float duckGoal = (dialogue != null && dialogue.IsOpen) ? dialogueDuck : 1f;

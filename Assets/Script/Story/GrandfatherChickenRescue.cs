@@ -73,6 +73,9 @@ public class GrandfatherChickenRescue : MonoBehaviour
     {
         if (dialogue == null || dialogue.IsOpen || questManager == null) return;
 
+        // Morning after the garden quest: the chicken is missing, Ông answers that question first (MissingChickenStory). Otherwise this is false.
+        if (MissingChickenStory.Instance != null && MissingChickenStory.Instance.TryHandleGrandparent(transform)) { SetPrompt(false); return; }
+
         // 1) Arrival: the player really reached Ông and talks to him -> Quest 1 is done (once).
         QuestState arrive = questManager.GetState(questArrive.questId);
         if (arrive == QuestState.NotStarted) questManager.AcceptQuest(questArrive); // safety: intro was skipped

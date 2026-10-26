@@ -18,7 +18,7 @@ MonoBehaviour:
     description: "B\xECnh t\u01B0\u1EDBi \u0111\u1EC3 ch\u0103m rau, ch\u0103m c\xE2y
       cho \xF4ng b\xE0."
   - item: {fileID: 11400000, guid: c98c7fa4c88a52f47b0d6556e94a5c3d, type: 2}
-    price: 150
+    price: 60
     description: "Th\u1EA3m \u0111\u1EC3 g\xE0 h\xEDt \u0111\u1EA5t. Mua r\u1ED3i
       ch\u1ECDn tr\xEAn thanh nhanh, \u0111\u1EE9ng c\u1EA1nh ch\u1ED7 h\xEDt \u0111\u1EA5t
       \u1EDF khu t\u1EADp v\xE0 nh\u1EA5n F \u0111\u1EC3 tr\u1EA3i."

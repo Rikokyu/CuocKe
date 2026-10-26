@@ -176,7 +176,7 @@ public class TrainerNPC : MonoBehaviour
     /// <summary>The reason a booking cannot start (null = it can). Money is checked last.</summary>
     string Refusal(int hours)
     {
-        if (!ChickenTransformationTrigger.TrainingUnlocked) return "Gà chưa sẵn sàng tập luyện. Hãy xong việc vườn ở nhà ông bà rồi đi ngủ đã.";
+        if (!ChickenTransformationTrigger.TrainingUnlocked) return ChickenTransformationTrigger.TrainingLockedMessage;
         if (BattleManager.Instance != null && BattleManager.Instance.IsBattleActive) return "Đang trong trận đấu, chưa thể tập.";
         MainChickenAcquire acquire = MainChickenAcquire.Instance;
         if (acquire != null && !acquire.IsAcquired) return "Gà chưa tỉnh dậy, chưa thể tập.";
@@ -374,7 +374,7 @@ public class TrainerNPC : MonoBehaviour
 
         MakeLabel(panelGO.transform, "Huấn luyện viên - Tập luyện cho gà", 44, TextAlignmentOptions.Center, new Color(1f, 0.85f, 0.3f), new Vector2(0f, 300f), new Vector2(860f, 70f));
         infoLabel = MakeLabel(panelGO.transform, "", 28, TextAlignmentOptions.Center, Color.white, new Vector2(0f, 235f), new Vector2(860f, 50f));
-        MakeLabel(panelGO.transform, "Mỗi giờ gà chạy bộ, hít đất và đấm bao cát (mỗi môn 1/3 giờ). Mỗi giờ +20 sát thương.", 24, TextAlignmentOptions.Center, new Color(0.8f, 0.8f, 0.8f), new Vector2(0f, 185f), new Vector2(860f, 60f));
+        MakeLabel(panelGO.transform, "Mỗi giờ gà chạy bộ, hít đất và đấm bao cát (mỗi môn 1/3 giờ). Mỗi giờ +7 sát thương.", 24, TextAlignmentOptions.Center, new Color(0.8f, 0.8f, 0.8f), new Vector2(0f, 185f), new Vector2(860f, 60f));
 
         float y = 110f;
         for (int h = 1; h <= maxHoursPerSession; h++)
