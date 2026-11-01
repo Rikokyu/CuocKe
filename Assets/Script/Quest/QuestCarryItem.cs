@@ -38,7 +38,7 @@ public class QuestCarryItem : MonoBehaviour
     [SerializeField] bool releaseWhenReadyToTurnIn;
 
     [Header("Interaction")]
-    [SerializeField, Min(0.5f)] float interactionDistance = 1.8f;
+    [SerializeField, Min(0.5f)] float interactionDistance = 2.8f;
     [SerializeField] KeyCode interactKey = KeyCode.E;
     [SerializeField] string promptText = "Nhấn E để nhặt bình tưới";
     [SerializeField, TextArea(1, 3)] string pickedUpMessage = "Đã cầm bình tưới. Mang ra sân tưới 3 cây cho ông bà!";
@@ -58,7 +58,18 @@ public class QuestCarryItem : MonoBehaviour
     [Tooltip("ON: the first successful use (QuestObjectiveTarget.requiredItem) uses the item up - it leaves the hand and does not come back to the world in this quest run (e.g. the sack of powder).")]
     [SerializeField] bool consumeOnUse;
 
+    [Header("Hotbar (2D icon)")]
+    [Tooltip("Optional. While the item is carried this ItemDefinition (with its 2D icon) is shown on the hotbar. It is removed when the item is dropped, used up or the quest ends.")]
+    [SerializeField] ItemDefinition hotbarItem;
+    [SerializeField] string bagFullText = "Hotbar đầy, hãy vứt bớt đồ (phím Q) rồi nhặt lại.";
+
     bool promptShown;
+    bool inBag;                    // the hotbar item was added by this carry (so only this carry removes it)
+    int droppedCycle = -1;         // quest cycle in which the player dropped the item on the ground
+    bool worldMoved;               // the world model was moved to a drop point
+    Vector3 worldHomePos;
+    Quaternion worldHomeRot = Quaternion.identity;
+    float groundY;
     int heldCycle = -1;
     int consumedCycle = -1;
     Quaternion heldBaseRotation = Quaternion.identity;
@@ -66,6 +77,9 @@ public class QuestCarryItem : MonoBehaviour
 
     /// <summary>True while the can is in the player's hands (read by QuestObjectiveTarget).</summary>
     public bool IsHeld { get; private set; }
+
+    /// <summary>The hotbar item shown while carried (null = none). Used by the Q drop key.</summary>
+    public ItemDefinition HotbarItem { get { return hotbarItem; } }
 
     void Start()
     {
@@ -81,6 +95,13 @@ public class QuestCarryItem : MonoBehaviour
         if (worldModel == null || heldModel == null)
             Debug.LogError("[QuestCarryItem] worldModel / heldModel is not assigned.", this);
 
+        if (worldModel != null)
+        {
+            worldHomePos = worldModel.transform.position;
+            worldHomeRot = worldModel.transform.rotation;
+        }
+        groundY = transform.position.y;
+
         if (heldModel != null)
         {
             heldBaseRotation = heldModel.transform.localRotation;
@@ -95,7 +116,13 @@ public class QuestCarryItem : MonoBehaviour
 
         if (IsHeld && !CarryStillValid(status)) SetHeld(false);
 
-        bool worldVisible = !IsHeld && consumedCycle != status.Cycle && (status.State == QuestState.NotStarted || status.State == QuestState.Active);
+        bool dropped = droppedCycle == status.Cycle;
+        if (worldMoved && (!dropped || status.State == QuestState.NotStarted || status.State == QuestState.Completed)) RestoreWorldModel();
+        dropped = droppedCycle == status.Cycle;
+
+        bool worldVisible = !IsHeld && consumedCycle != status.Cycle
+            && (status.State == QuestState.NotStarted || status.State == QuestState.Active
+                || (dropped && status.State == QuestState.ReadyToTurnIn && !releaseWhenReadyToTurnIn));
         if (worldModel != null)
         {
             if (worldModel.activeSelf != worldVisible) worldModel.SetActive(worldVisible);
@@ -103,7 +130,7 @@ public class QuestCarryItem : MonoBehaviour
                 worldModel.transform.Rotate(0f, worldSpinDegreesPerSecond * Time.deltaTime, 0f, Space.World);
         }
 
-        bool canPickUp = player != null && CanPickUp(status) && IsPlayerInRange() && !IsBlockedByUI();
+        bool canPickUp = player != null && CanPickUp(status) && IsPlayerInRange() && !IsBlockedByUI() && InteractObject.IsAimed(this);
         SetPromptVisible(canPickUp);
 
         if (canPickUp && Input.GetKeyDown(interactKey))
@@ -119,8 +146,15 @@ public class QuestCarryItem : MonoBehaviour
         if (quest == null || questManager == null || IsHeld) return false;
 
         QuestStatus status = questManager.GetStatus(quest);
-        if (status.State != QuestState.Active) return false;
+        if (!CanPickUp(status)) return false;
 
+        if (hotbarItem != null && InventorySystem.Instance != null && !InventorySystem.Instance.CanAdd(hotbarItem, 1))
+        {
+            if (banner != null) banner.Show(bagFullText);
+            return false;
+        }
+
+        droppedCycle = -1;
         heldCycle = status.Cycle;
         SetHeld(true); // flip first: a second press in the same frame cannot pick it up again
         SetPromptVisible(false);
@@ -161,7 +195,10 @@ public class QuestCarryItem : MonoBehaviour
 
     bool CanPickUp(QuestStatus status)
     {
-        return status.State == QuestState.Active && !IsHeld && consumedCycle != status.Cycle;
+        if (IsHeld || consumedCycle == status.Cycle) return false;
+        if (status.State == QuestState.Active) return true;
+        // an item the player dropped can be picked up again while the carry is still valid (watering can until the hand-in)
+        return droppedCycle == status.Cycle && status.State == QuestState.ReadyToTurnIn && !releaseWhenReadyToTurnIn;
     }
 
     bool CarryStillValid(QuestStatus status)
@@ -171,9 +208,49 @@ public class QuestCarryItem : MonoBehaviour
         return running && status.Cycle == heldCycle;
     }
 
+    /// <summary>
+    /// Q key (ItemDropController): the carried item leaves the hands and stays on the ground at groundPoint, where E picks it up again.
+    /// Pays nothing and changes no quest progress. Returns false if the item is not carried or has no world model.
+    /// </summary>
+    public bool Drop(Vector3 groundPoint)
+    {
+        if (!IsHeld || worldModel == null || quest == null || questManager == null) return false;
+
+        QuestStatus status = questManager.GetStatus(quest);
+        droppedCycle = status.Cycle;
+        SetHeld(false); // flip first: one press can never drop twice
+
+        worldModel.transform.SetPositionAndRotation(groundPoint + Vector3.up * (worldHomePos.y - groundY), worldHomeRot);
+        worldMoved = true;
+        return true;
+    }
+
+    void RestoreWorldModel()
+    {
+        if (worldModel != null) worldModel.transform.SetPositionAndRotation(worldHomePos, worldHomeRot);
+        worldMoved = false;
+        droppedCycle = -1;
+    }
+
+    void SyncBag(bool wantInBag)
+    {
+        InventorySystem inv = InventorySystem.Instance;
+        if (hotbarItem == null || inv == null) return;
+        if (wantInBag && !inBag)
+        {
+            if (inv.Add(hotbarItem, 1)) inBag = true;
+        }
+        else if (!wantInBag && inBag)
+        {
+            inv.Remove(hotbarItem, 1);
+            inBag = false;
+        }
+    }
+
     void SetHeld(bool held)
     {
         IsHeld = held;
+        SyncBag(held);
         if (!held && pourRoutine != null)
         {
             StopCoroutine(pourRoutine);
@@ -189,7 +266,8 @@ public class QuestCarryItem : MonoBehaviour
 
     bool IsPlayerInRange()
     {
-        Vector3 offset = player.position - transform.position;
+        Vector3 point = worldMoved && worldModel != null ? worldModel.transform.position : transform.position;
+        Vector3 offset = player.position - point;
         offset.y = 0f; // ignore height: the player's pivot is at the CharacterController centre
         return offset.sqrMagnitude <= interactionDistance * interactionDistance;
     }
@@ -211,6 +289,7 @@ public class QuestCarryItem : MonoBehaviour
     void OnDisable()
     {
         SetPromptVisible(false);
+        SyncBag(false);
     }
 
     void OnDrawGizmosSelected()

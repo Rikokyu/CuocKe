@@ -20,6 +20,12 @@ public class OpponentDefinition : ScriptableObject
     [Min(0)] public int rewardMoney = 200;
     [Min(0)] public int medals = 1;
 
+    [Header("Training gate")]
+    [Tooltip("The chicken needs at least this many total training hours (ChickenStats.TrainingHours) before this opponent can be challenged.")]
+    [Min(0)] public int minTrainingHours = 0;
+    [Tooltip("{0} = hours needed, {1} = hours the chicken has trained.")]
+    [TextArea(2, 4)] public string[] notTrainedLines = { "Gà mày mới tập {1} giờ thôi à? Phải tập tối thiểu {0} giờ rồi hẵng thách đấu tao." };
+
     [Header("Dialogue")]
     [TextArea(2, 4)] public string[] introLines = { "Nghe nói gà mày mạnh lắm? Vào đấu một trận xem!" };
     [TextArea(2, 4)] public string[] retryLines = { "Chưa phục à? Luyện thêm rồi đấu lại cũng được." };

@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ItemDefinition
   itemId: protein_fertilizer
   displayName: "Ph\xE2n b\xF3n protein"
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: e547eccc3d04da143bbd6edb21f34e84, type: 3}
   placeholderColor: {r: 0.8, g: 0.5, b: 0.2, a: 1}
   maxStack: 10

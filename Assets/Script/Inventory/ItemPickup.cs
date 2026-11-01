@@ -18,7 +18,7 @@ public class ItemPickup : MonoBehaviour
 {
     [SerializeField] ItemDefinition item;
     [SerializeField, Min(1)] int amount = 1;
-    [SerializeField, Min(0.5f)] float interactionDistance = 2f;
+    [SerializeField, Min(0.5f)] float interactionDistance = 3f;
     [SerializeField] KeyCode interactKey = KeyCode.E;
 
     [Header("Texts ({0} = item name, {1} = amount)")]
@@ -27,6 +27,19 @@ public class ItemPickup : MonoBehaviour
     [SerializeField] string fullFormat = "Túi đầy, không nhặt được {0}";
 
     public bool IsCollected { get; private set; }
+
+    /// <summary>Name of the item (used by the crosshair label).</summary>
+    public string ItemDisplayName { get { return item != null ? item.displayName : null; } }
+
+    bool destroyOnPickup;
+
+    /// <summary>Used by ItemDropController: turns a freshly created object into a pickup of 'def' (destroyed once picked up again).</summary>
+    public void Setup(ItemDefinition def, int count)
+    {
+        item = def;
+        amount = Mathf.Max(1, count);
+        destroyOnPickup = true;
+    }
 
     // ---- shared (static) state: one decision per frame for all pickups ----
     static readonly List<ItemPickup> active = new List<ItemPickup>();
@@ -93,6 +106,7 @@ public class ItemPickup : MonoBehaviour
             {
                 ItemPickup p = active[i];
                 if (p == null || p.IsCollected || p.item == null) continue;
+                if (!InteractObject.IsAimed(p)) continue; // only the pickup under the crosshair dot
 
                 Vector3 offset = p.transform.position - playerPos;
                 offset.y = 0f; // the player's pivot is at the CharacterController centre
@@ -147,7 +161,8 @@ public class ItemPickup : MonoBehaviour
         }
 
         if (banner != null) banner.Show(string.Format(pickedFormat, item.displayName, amount));
-        gameObject.SetActive(false);
+        if (destroyOnPickup) Destroy(gameObject);
+        else gameObject.SetActive(false);
         return true;
     }
 

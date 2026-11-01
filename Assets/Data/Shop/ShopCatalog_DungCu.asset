@@ -13,24 +13,22 @@ MonoBehaviour:
   m_Name: ShopCatalog_DungCu
   m_EditorClassIdentifier: Assembly-CSharp::ShopCatalog
   entries:
-  - item: {fileID: 11400000, guid: d531017b122e996459732881ea61e1ea, type: 2}
-    price: 60
-    description: "B\xECnh t\u01B0\u1EDBi \u0111\u1EC3 ch\u0103m rau, ch\u0103m c\xE2y
-      cho \xF4ng b\xE0."
   - item: {fileID: 11400000, guid: c98c7fa4c88a52f47b0d6556e94a5c3d, type: 2}
     price: 60
     description: "Th\u1EA3m \u0111\u1EC3 g\xE0 h\xEDt \u0111\u1EA5t. Mua r\u1ED3i
       ch\u1ECDn tr\xEAn thanh nhanh, \u0111\u1EE9ng c\u1EA1nh ch\u1ED7 h\xEDt \u0111\u1EA5t
       \u1EDF khu t\u1EADp v\xE0 nh\u1EA5n F \u0111\u1EC3 tr\u1EA3i."
-  - item: {fileID: 11400000, guid: fe191e551a583074a89f2d050e524802, type: 2}
-    price: 40
-    description: "Th\u1EE9c \u0103n b\u1ED5 sung h\u1ED7 tr\u1EE3 g\xE0 luy\u1EC7n
-      t\u1EADp."
   - item: {fileID: 11400000, guid: a0b7e29ec3c82414a9790762da7c2656, type: 2}
     price: 20
-    description: "Ch\u1ECDn v\xE9 tr\xEAn thanh nhanh r\u1ED3i nh\u1EA5n F \u0111\u1EC3
-      c\xE0o. C\xF3 th\u1EC3 tr\xFAng ti\u1EC1n, c\u0169ng c\xF3 th\u1EC3 tr\u01B0\u1EE3t."
-  - item: {fileID: 11400000, guid: 4381a16f1ed4a0c40b13dedd40305d5c, type: 2}
-    price: 80
-    description: "Ph\xE2n b\xF3n gi\xE0u protein cho lu\u1ED1ng rau. \u0110\u1EE9ng
-      c\u1EA1nh lu\u1ED1ng rau, ch\u1ECDn ph\xE2n b\xF3n r\u1ED3i nh\u1EA5n F."
+    description: "Mua 1 ho\u1EB7c nhi\u1EC1u v\xE9 (ch\u1ECDn s\u1ED1 l\u01B0\u1EE3ng
+      \u1EDF tr\xEAn). Mang \u0111\u1EBFn MrBeast \u0111\u1EC3 \u0111\u1ED5i th\u01B0\u1EDFng:
+      \u0111o\xE1n \u0111\xFAng ch\u1EB5n/l\u1EBB th\xEC tr\xFAng 500 VN\u0110 m\u1ED7i
+      v\xE9."
+  - item: {fileID: 11400000, guid: c9b836e60ff860a46adf8c1b6a83bef6, type: 2}
+    price: 50
+    description: "N\xF3n l\xE1 \u0111\u1ED9i l\xEAn \u0111\u1EA7u cho g\xE0. Mua
+      xong g\xE0 \u0111\u1ED9i ngay, kh\xF4ng c\u1EA7n mang theo."
+  - item: {fileID: 11400000, guid: 4dfa4161ae174f448b392856639f690c, type: 2}
+    price: 200
+    description: "Ba thanh ki\u1EBFm c\u1EE7a Zoro \u0111eo sau l\u01B0ng g\xE0.
+      Mua xong g\xE0 h\u1ECDc \u0111\u01B0\u1EE3c chi\xEAu ki\u1EBFm 3122."

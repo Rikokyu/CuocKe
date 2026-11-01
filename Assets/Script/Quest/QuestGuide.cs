@@ -37,6 +37,8 @@ public class QuestGuide : MonoBehaviour
         public bool requireAvailable;
         [Tooltip("The nearest valid one is shown.")]
         public Transform[] targets;
+        [Tooltip("When this rule matches the TRACKED quest, the guide shows no arrow at all (e.g. scrap lying all over the village).")]
+        public bool hideGuide;
     }
 
     [Header("Scene references")]
@@ -154,6 +156,7 @@ public class QuestGuide : MonoBehaviour
                 if (r.quest.questId != tracked.Definition.questId || tracked.State != r.state) continue;
                 if (tracked.Progress < r.minProgress || (r.maxProgress >= 0 && tracked.Progress > r.maxProgress)) continue;
                 if (!HeldOk(r)) continue;
+                if (r.hideGuide) return; // tracked quest that needs no arrow
                 Transform t = Nearest(r);
                 if (t != null) { Pick(r, t); return; }
             }

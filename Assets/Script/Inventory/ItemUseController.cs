@@ -4,10 +4,9 @@ using UnityEngine;
 /// "Use the selected hotbar item" (key F). One small controller for the three shop goods; it reuses HotbarUI (which slot is selected),
 /// InventorySystem (consume), CurrencyWallet (prize), InteractionPromptUI / MessageBannerUI (feedback). No new shop or inventory.
 ///
-///  - Training mat (Thảm tập cho gà): stand next to the push-up station, select the mat, press F: ONE mat is consumed and the station is
+///  - Training mat (Thảm tập cho gà): stand next to the push-up station, select the mat, press E: ONE mat is consumed and the station is
 ///    marked as placed (TrainingStation.Place) - the mat prop appears and the trainer accepts the push-up part. Placing works once.
-///  - Lottery ticket (Vé số): select it, press F anywhere: ONE ticket is consumed FIRST, then a prize is rolled from prizeAmounts /
-///    prizeWeights (expected value stays below the ticket price) and paid with wallet.Add. A press can never pay without using a ticket.
+///  - Lottery ticket (Vé số): NOT used with F any more - tickets are redeemed at MrBeast (LotteryRedeem: guess even / odd).
 ///  - Protein fertilizer (Phân bón protein): select it, press F next to a vegetable plot: ONE bag is consumed, short water-style effect and
 ///    a message. It does NOT change the garden quest (that quest keeps its own sack) - the real gameplay effect is still to be designed.
 ///
@@ -26,14 +25,19 @@ public class ItemUseController : MonoBehaviour
     [Header("Training mat")]
     [SerializeField] TrainingStation matStation;
     [SerializeField, Min(0.5f)] float matPlaceDistance = 3.5f;
+    [Tooltip("Key that places the training mat (the other items keep using 'useKey').")]
+    [SerializeField] KeyCode matPlaceKey = KeyCode.E;
+
+    [Header("Training mat - placement cue (scrap-collector style clink)")]
+    [Tooltip("3D clinking sound played at the placement spot while the player carries the mat and it is not placed yet, so the player can hear where to put it. Played through GameAudio (no extra AudioSource).")]
+    [SerializeField] GameAudio.Bank matCue = new GameAudio.Bank { name = "matCue", volume = 0.55f, minInterval = 0.1f, pitchJitter = 0.15f };
+    [SerializeField, Min(0.5f)] float matCueInterval = 2.5f;
+    [Tooltip("The cue is only played when the player is closer than this to the placement spot.")]
+    [SerializeField, Min(1f)] float matCueHearDistance = 20f;
 
     [Header("Protein fertilizer")]
     [SerializeField] Transform[] gardenPlots;
     [SerializeField, Min(0.5f)] float fertilizerDistance = 3f;
-
-    [Header("Lottery (prizeAmounts[i] is won with chance prizeWeights[i] / sum)")]
-    [SerializeField] int[] prizeAmounts = { 0, 20, 50, 200, 1000 };
-    [SerializeField] float[] prizeWeights = { 70f, 20f, 7f, 2.5f, 0.5f };
 
     [Header("Scene references")]
     [SerializeField] HotbarUI hotbar;
@@ -47,6 +51,7 @@ public class ItemUseController : MonoBehaviour
     [SerializeField] Transform player;
 
     bool promptShown;
+    float nextMatCueTime;
 
     void Start()
     {
@@ -64,20 +69,60 @@ public class ItemUseController : MonoBehaviour
         SetPrompt(false, null);
     }
 
-    void Update()
+void Update()
     {
         if (hotbar == null || player == null) return;
 
         if (IsBlocked()) { SetPrompt(false, null); return; }
 
+        TickMatCue();
+
         ItemDefinition selected = hotbar.SelectedItem;
+        bool matReady = selected != null && selected == trainingMat && CanPlaceMatHere() && MatKeyFree();
         string promptText = null;
-        if (selected != null && selected == trainingMat && CanPlaceMatHere()) promptText = "Nhấn F để trải thảm tập";
+        if (matReady) promptText = "Nhấn E để trải thảm tập";
         else if (selected != null && selected == proteinFertilizer && NearestPlot() != null) promptText = "Nhấn F để rắc phân bón protein";
         SetPrompt(promptText != null, promptText);
 
-        if (selected != null && Input.GetKeyDown(useKey)) UseSelected();
+        if (selected == null) return;
+        if (selected == trainingMat)
+        {
+            // the mat uses E (not F); stays silent when out of range or when the crosshair is on something else (trainer, NPC...)
+            if (matReady && Input.GetKeyDown(matPlaceKey)) TryPlaceMat();
+        }
+        else if (Input.GetKeyDown(useKey)) UseSelected();
     }
+
+/// <summary>E is shared with every NPC / pickup: the mat only reacts when the crosshair is on nothing or on the placement spot itself.</summary>
+    bool MatKeyFree()
+    {
+        return InteractObject.Aimed == null || InteractObject.IsAimed(matStation);
+    }
+
+    /// <summary>Plays a short double clink (like a scrap collector's bottles) at the placement spot every few seconds, only while it helps the player find the spot.</summary>
+    void TickMatCue()
+    {
+        if (Time.time < nextMatCueTime) return;
+        nextMatCueTime = Time.time + matCueInterval * Random.Range(0.85f, 1.15f);
+
+        InventorySystem inv = InventorySystem.Instance;
+        if (trainingMat == null || matStation == null || inv == null || player == null) return;
+        if (!matStation.CanPlace || !inv.Has(trainingMat)) return;
+        Vector3 offset = player.position - matStation.transform.position;
+        offset.y = 0f;
+        if (offset.sqrMagnitude > matCueHearDistance * matCueHearDistance) return;
+        if (GameAudio.Instance == null) return;
+
+        PlayMatClink();
+        Invoke(nameof(PlayMatClink), 0.22f);
+    }
+
+    void PlayMatClink()
+    {
+        if (GameAudio.Instance == null || matStation == null || !matStation.CanPlace) return;
+        GameAudio.Instance.Play(matCue, matStation.transform.position, 1f, Random.Range(0.95f, 1.25f), 1f);
+    }
+
 
     /// <summary>What F does: uses the selected hotbar item. True if something was used (an item consumed).</summary>
     public bool UseSelected()
@@ -87,7 +132,7 @@ public class ItemUseController : MonoBehaviour
         if (selected == null) return false;
 
         if (selected == trainingMat) return TryPlaceMat();
-        if (selected == lotteryTicket) return TryUseTicket();
+        if (selected == lotteryTicket) { Say("Mang vé số đến MrBeast để đổi thưởng nhé!"); return false; }
         if (selected == proteinFertilizer) return TryUseFertilizer();
         return false; // other items have no use yet
     }
@@ -117,44 +162,6 @@ public class ItemUseController : MonoBehaviour
             return false;
         }
         Say("Đã trải thảm tập ở khu tập. Gà có thể hít đất rồi!");
-        return true;
-    }
-
-    // ---------------------------------------------------------------- lottery
-
-    /// <summary>The prize for a roll in [0,1) (0 = the first prize in the table). Public so the table can be tested without randomness.</summary>
-    public int PrizeForRoll(float roll01)
-    {
-        if (prizeAmounts == null || prizeWeights == null) return 0;
-        int n = Mathf.Min(prizeAmounts.Length, prizeWeights.Length);
-        float total = 0f;
-        for (int i = 0; i < n; i++) total += Mathf.Max(0f, prizeWeights[i]);
-        if (total <= 0f) return 0;
-
-        float target = Mathf.Clamp01(roll01) * total;
-        float acc = 0f;
-        for (int i = 0; i < n; i++)
-        {
-            acc += Mathf.Max(0f, prizeWeights[i]);
-            if (target < acc) return Mathf.Max(0, prizeAmounts[i]);
-        }
-        return Mathf.Max(0, prizeAmounts[n - 1]);
-    }
-
-    public bool TryUseTicket()
-    {
-        InventorySystem inv = InventorySystem.Instance;
-        if (lotteryTicket == null || wallet == null || inv == null) return false;
-        if (!inv.Has(lotteryTicket)) return false;
-
-        if (!inv.Remove(lotteryTicket, 1)) return false; // the ticket is used up BEFORE any prize exists
-        int prize = PrizeForRoll(Random.value);
-        if (prize > 0)
-        {
-            wallet.Add(prize);
-            Say(string.Format("Cào vé số: TRÚNG {0} tiền!", prize));
-        }
-        else Say("Cào vé số: trượt rồi, chúc may mắn lần sau!");
         return true;
     }
 

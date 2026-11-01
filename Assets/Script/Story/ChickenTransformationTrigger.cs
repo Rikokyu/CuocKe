@@ -21,7 +21,7 @@ public class ChickenTransformationTrigger : MonoBehaviour
     [SerializeField] MessageBannerUI banner;
     [SerializeField] QuestDefinition choreQuest;  // grandparents_helper
     [SerializeField] QuestDefinition gardenQuest; // garden_protein
-    [SerializeField] QuestDefinition nextQuest;   // chuan_bi_tai_dau
+    [SerializeField] QuestDefinition nextQuest;
     [SerializeField] Transform chicken;           // ChienKe_Pet
 
     [Header("Dialogue")]
@@ -30,6 +30,12 @@ public class ChickenTransformationTrigger : MonoBehaviour
         "Cảm ơn cháu nhé! Cháu giúp bà thêm chút nữa là xong.",
         "Bao phân bón bà để ở góc sân. Cháu bón cho luống rau, rồi hái rau cho con gà ăn.",
         "Xong việc thì vào nhà đi ngủ cho khoẻ nhé."
+    };
+
+    [Header("Player's reaction when the transformed chicken is taken back (a [Player] line: the dialogue shows 'Tôi')")]
+    [SerializeField, TextArea(2, 4)] string[] recoveredLines =
+    {
+        "[Player] Nhìn trông lực hơn hẳn nhỉ, Hay là mình thử đấu lại với thằng bạn thử xem sao"
     };
 
     [Header("Messages")]
@@ -48,7 +54,10 @@ public class ChickenTransformationTrigger : MonoBehaviour
     public static bool Transformed { get; private set; }
 
     /// <summary>Training stations ask this. If the scene has no such trigger nothing is locked.</summary>
-    public static bool TrainingUnlocked { get { return Instance == null || (Transformed && (MissingChickenStory.Instance == null || ChickenRecovered)); } }
+    public static bool TrainingUnlocked { get { return Instance == null || (Transformed && (MissingChickenStory.Instance == null || ChickenRecovered) && !SecondDisappearance); } }
+
+    /// <summary>True while the chicken is away the SECOND time (after the tournament, ZoroReunionStory): training waits until it is taken back.</summary>
+    static bool SecondDisappearance { get { return ZoroReunionStory.Instance != null && ZoroReunionStory.Instance.ChickenIsAway; } }
 
     /// <summary>True once the player took the chicken back at the training area (missing-chicken flow). Without that flow it is never needed.</summary>
     public static bool ChickenRecovered { get; private set; }
@@ -58,7 +67,7 @@ public class ChickenTransformationTrigger : MonoBehaviour
     {
         get
         {
-            if (Transformed && MissingChickenStory.Instance != null && !ChickenRecovered)
+            if ((Transformed && MissingChickenStory.Instance != null && !ChickenRecovered) || SecondDisappearance)
                 return "Con gà đang mất tích. Hãy tìm lại nó trước đã.";
             return "Gà chưa sẵn sàng tập luyện. Hãy xong việc vườn ở nhà ông bà rồi đi ngủ đã.";
         }
@@ -97,6 +106,7 @@ void OnDestroy()
     void StartGardenQuest()
     {
         if (questManager == null || gardenQuest == null) return;
+        if (GardenFlowStory.Instance != null) return; // Ông now gives this quest (GardenFlowStory)
         if (questManager.GetState(gardenQuest.questId) != QuestState.NotStarted) return;
         questManager.AcceptQuest(gardenQuest);
         pendingGardenInfo = true; // Bà explains once the claim dialogue has closed (never forced: Esc/E closes it)
@@ -129,13 +139,18 @@ void Transform()
         if (!Transformed || ChickenRecovered) return false;
         ChickenRecovered = true; // flip first: never twice
         UnlockTrainingAndNextQuest(recoveredMessage);
+        // the Player says what to do next; the quest just accepted (the rematch against the friend) is the answer
+        if (dialogue != null && !dialogue.IsOpen && recoveredLines != null && recoveredLines.Length > 0)
+            dialogue.Open("Tôi", recoveredLines, null, null);
         return true;
     }
 
     void UnlockTrainingAndNextQuest(string message)
     {
-        if (questManager != null && nextQuest != null && questManager.GetState(nextQuest.questId) == QuestState.NotStarted)
-            questManager.AcceptQuest(nextQuest);
+        // the rematch only; Bà's delivery was already opened by Ông and is NOT tied to taking the chicken back
+        QuestDefinition firstQuest = nextQuest;
+        if (questManager != null && firstQuest != null && questManager.GetState(firstQuest.questId) == QuestState.NotStarted)
+            questManager.AcceptQuest(firstQuest);
         if (banner != null && !string.IsNullOrEmpty(message)) banner.Show(message, 6f);
     }
 

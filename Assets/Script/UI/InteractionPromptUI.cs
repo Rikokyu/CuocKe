@@ -16,6 +16,9 @@ public class InteractionPromptUI : MonoBehaviour
 
     public bool IsVisible => panel != null && panel.activeSelf;
 
+    /// <summary>The text of the current prompt (e.g. "Nhấn E để nói chuyện").</summary>
+    public string Text => label != null ? label.text : "";
+
     void Awake()
     {
         owner = null;

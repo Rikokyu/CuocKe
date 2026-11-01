@@ -13,18 +13,19 @@ MonoBehaviour:
   m_Name: Quest_GardenProtein
   m_EditorClassIdentifier: Assembly-CSharp::QuestDefinition
   questId: garden_protein
-  title: "Rau nh\xE0 tr\u1ED3ng"
-  description: "B\xE0 nh\u1EDD b\xF3n ph\xE2n cho rau, h\xE1i rau \u0111\u1EB7t cho
-    g\xE0 \u0103n r\u1ED3i \u0111i ng\u1EE7."
-  objective: "B\xF3n bao ph\xE2n cho rau, h\xE1i rau, \u0111\u1EB7t rau cho g\xE0
-    \u0103n (theo th\u1EE9 t\u1EF1)"
+  title: "Cho g\xE0 \u0103n"
+  description: "\xD4ng nh\u1EDD cho g\xE0 \u0103n: h\xE1i rau, \u0111\u1EB7t l\xEAn
+    \u0111\u0129a, tr\u1ED9n th\xEAm b\u1ED9t c\xE1m r\u1ED3i xin ph\xE9p \u0111i
+    ng\u1EE7 tr\u01B0a."
+  objective: "H\xE1i rau, \u0111\u1EB7t l\xEAn \u0111\u0129a, l\u1EA5y b\u1ED9t c\xE1m
+    trong h\u0169 tr\u1ED9n v\xE0o cho g\xE0 \u0103n (theo th\u1EE9 t\u1EF1)"
   objectiveKey: garden_step
   progressLabel: "Vi\u1EC7c v\u01B0\u1EDDn"
-  requiredAmount: 3
+  requiredAmount: 4
   rewardMoney: 0
   repeatable: 0
-  turnInObjective: "V\xE0o nh\xE0 \xF4ng b\xE0, \u0111\u1EBFn gi\u01B0\u1EDDng \u0111\u1EC3
-    \u0111i ng\u1EE7"
+  turnInObjective: "V\xE0o gi\u01B0\u1EDDng trong ph\xF2ng \xF4ng b\xE0 \u0111\u1EC3
+    ng\u1EE7 tr\u01B0a"
   objectiveCompletedMessage: 
   silentCompletion: 1
   offerLines: []

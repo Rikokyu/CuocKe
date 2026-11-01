@@ -24,6 +24,9 @@ public class DialogueUI : MonoBehaviour
     [SerializeField] TMP_Text primaryButtonLabel;
     [SerializeField] Button closeButton;
     [SerializeField] TMP_Text closeButtonLabel;
+    [Tooltip("Optional second choice on the last line. Empty = cloned from Primary Button at runtime and placed left of Close Button.")]
+    [SerializeField] Button secondaryButton;
+    [SerializeField] TMP_Text secondaryButtonLabel;
 
     [Header("Input / texts")]
     [SerializeField] KeyCode confirmKey = KeyCode.E;
@@ -44,6 +47,16 @@ public class DialogueUI : MonoBehaviour
     [SerializeField] Color playerNameColor = new Color(0.45f, 0.85f, 1f, 1f);
     [SerializeField] Color playerPanelColor = new Color(0.05f, 0.10f, 0.18f, 0.93f);
 
+    [System.Serializable]
+    public struct SpeakerDisplayName
+    {
+        public string speaker;
+        public string displayName;
+    }
+
+    [Header("Display names: shown on the panel instead of the name passed to Open(). The original name still drives animations / sounds.")]
+    [SerializeField] SpeakerDisplayName[] speakerDisplayNames;
+
     [Header("Frozen while the dialogue is open (e.g. PlayerMovement, MouseMovement)")]
     [SerializeField] Behaviour[] disableWhileOpen;
 
@@ -51,6 +64,8 @@ public class DialogueUI : MonoBehaviour
     int lineIndex;
     Action primaryAction;
     string actionLabel;
+    Action secondaryAction;
+    string secondaryLabel;
     bool[] wasEnabled;
     CursorLockMode previousLockState;
     bool previousCursorVisible;
@@ -70,6 +85,9 @@ public class DialogueUI : MonoBehaviour
     /// <summary>Raised when a line is shown. true = the Player speaks it, false = an NPC (used by GameAudio).</summary>
     public event Action<bool> LineShown;
 
+    /// <summary>Raised when a line is shown, with the speaker's display name and the line text (the Player prefix already removed). Read-only hook for line-triggered sounds.</summary>
+    public event Action<string, string> LineTextShown;
+
     /// <summary>Raised when a line starts typing out (true = the Player speaks it). The NPC voice starts on this.</summary>
     public event Action<bool> TypingStarted;
     /// <summary>Raised once whenever typing ends: the line finished, was skipped (E / click) or the dialogue closed. The voice stops on this.</summary>
@@ -87,6 +105,7 @@ public class DialogueUI : MonoBehaviour
         if (panel != null) panel.SetActive(false);
         if (primaryButton != null) primaryButton.onClick.AddListener(OnPrimaryPressed);
         if (closeButton != null) closeButton.onClick.AddListener(Close);
+        EnsureSecondaryButton();
         if (closeButtonLabel != null) closeButtonLabel.text = closeText;
         if (revealTextButton != null) revealTextButton.onClick.AddListener(CompleteLine);
         if (speakerLabel != null) npcNameColor = speakerLabel.color;
@@ -98,13 +117,24 @@ public class DialogueUI : MonoBehaviour
     /// Opens the dialogue. primaryLabel/primaryAction are used on the LAST line only; pass null for a
     /// plain conversation (the last line then just offers to close).
     /// </summary>
-    public void Open(string speaker, string[] dialogueLines, string primaryLabel, Action action)
+public void Open(string speaker, string[] dialogueLines, string primaryLabel, Action action)
+    {
+        Open(speaker, dialogueLines, primaryLabel, action, null, null);
+    }
+
+    /// <summary>
+    /// Same as above plus an optional SECOND choice on the last line (e.g. "Xin lại gà" / "Đồng ý"). The two choices are exclusive:
+    /// whichever is pressed closes the panel first and clears the other action, so only one can ever run. The secondary button needs a primary action.
+    /// </summary>
+    public void Open(string speaker, string[] dialogueLines, string primaryLabel, Action action, string secondaryLabelText, Action secondary)
     {
         if (IsOpen || dialogueLines == null || dialogueLines.Length == 0) return;
 
         lines = dialogueLines;
         primaryAction = action;
         actionLabel = primaryLabel;
+        secondaryAction = action != null ? secondary : null;
+        secondaryLabel = secondaryLabelText;
 
         IsOpen = true;
         openedOnFrame = Time.frameCount;
@@ -115,7 +145,7 @@ public class DialogueUI : MonoBehaviour
         ShowLine(0);
     }
 
-    void ShowLine(int index)
+void ShowLine(int index)
     {
         lineIndex = index;
         ApplyLine(lines[index]);
@@ -127,6 +157,8 @@ public class DialogueUI : MonoBehaviour
             SetPrimary(true, actionLabel);
         else
             SetPrimary(false, null);
+
+        SetSecondary(isLast && primaryAction != null && secondaryAction != null, secondaryLabel);
     }
 
     /// <summary>Picks the speaker (Player or the NPC), colours the name / panel and starts the typewriter.</summary>
@@ -137,13 +169,14 @@ public class DialogueUI : MonoBehaviour
 
         if (speakerLabel != null)
         {
-            speakerLabel.text = byPlayer ? playerSpeakerName : currentSpeaker;
+            speakerLabel.text = byPlayer ? playerSpeakerName : DisplayNameFor(currentSpeaker);
             speakerLabel.color = byPlayer ? playerNameColor : npcNameColor;
         }
         if (panelImage != null) panelImage.color = byPlayer ? playerPanelColor : npcPanelColor;
 
         EndTyping(); // a line that was still typing (next pressed) stops its voice before the new line starts
         if (LineShown != null) LineShown(byPlayer);
+        if (LineTextShown != null) LineTextShown(byPlayer ? playerSpeakerName : currentSpeaker, text);
         if (bodyLabel == null) return;
         bodyLabel.text = text;
         if (TypewriterEnabled)
@@ -160,6 +193,16 @@ public class DialogueUI : MonoBehaviour
             typing = false;
             bodyLabel.maxVisibleCharacters = int.MaxValue;
         }
+    }
+
+    /// <summary>The name shown on the panel for an NPC speaker (falls back to the speaker name itself).</summary>
+    string DisplayNameFor(string speaker)
+    {
+        if (speaker == null || speakerDisplayNames == null) return speaker;
+        for (int i = 0; i < speakerDisplayNames.Length; i++)
+            if (speakerDisplayNames[i].speaker == speaker && !string.IsNullOrEmpty(speakerDisplayNames[i].displayName))
+                return speakerDisplayNames[i].displayName;
+        return speaker;
     }
 
     /// <summary>Shows the rest of the current line at once (E while typing, or a click on the text).</summary>
@@ -186,6 +229,50 @@ public class DialogueUI : MonoBehaviour
         if (bodyLabel != null) bodyLabel.maxVisibleCharacters = shown;
     }
 
+    void SetSecondary(bool visible, string text)
+    {
+        if (secondaryButton == null) return;
+        secondaryButton.gameObject.SetActive(visible);
+        if (visible && secondaryButtonLabel != null) secondaryButtonLabel.text = text;
+    }
+
+    void OnSecondaryPressed()
+    {
+        if (!IsOpen || secondaryAction == null) return;   // stale click after closing
+        if (lineIndex < lines.Length - 1) return;         // only offered on the last line
+
+        Action action = secondaryAction;
+        secondaryAction = null;
+        primaryAction = null; // the other choice can never run after this one
+        Close();
+        action();
+    }
+
+    /// <summary>Uses the assigned Secondary Button, or clones Primary Button once and puts the clone left of Close Button (same row, same size).</summary>
+    void EnsureSecondaryButton()
+    {
+        if (secondaryButton == null && primaryButton != null)
+        {
+            secondaryButton = Instantiate(primaryButton, primaryButton.transform.parent);
+            secondaryButton.name = "SecondaryButton";
+            secondaryButton.onClick.RemoveAllListeners();
+            secondaryButtonLabel = secondaryButton.GetComponentInChildren<TMP_Text>(true);
+
+            RectTransform p = (RectTransform)primaryButton.transform;
+            RectTransform s = (RectTransform)secondaryButton.transform;
+            if (p.parent.GetComponent<LayoutGroup>() == null) // inside a layout group the group places it
+            {
+                const float gap = 20f;
+                RectTransform reference = closeButton != null ? (RectTransform)closeButton.transform : p;
+                s.anchoredPosition = reference.anchoredPosition - new Vector2(reference.sizeDelta.x + gap, 0f);
+            }
+        }
+
+        if (secondaryButton == null) return;
+        secondaryButton.onClick.AddListener(OnSecondaryPressed);
+        secondaryButton.gameObject.SetActive(false);
+    }
+
     void SetPrimary(bool visible, string text)
     {
         if (primaryButton != null) primaryButton.gameObject.SetActive(visible);
@@ -203,6 +290,7 @@ public class DialogueUI : MonoBehaviour
         }
 
         Action action = primaryAction;
+        secondaryAction = null; // the other choice can never run after this one
         primaryAction = null;
         Close();
         if (action != null) action();
@@ -213,6 +301,8 @@ public class DialogueUI : MonoBehaviour
         if (!IsOpen) return;
 
         IsOpen = false;
+        secondaryAction = null;
+        SetSecondary(false, null);
         EndTyping(); // stops the voice at once (also covers OnDisable)
         if (bodyLabel != null) bodyLabel.maxVisibleCharacters = int.MaxValue;
         if (speakerLabel != null) speakerLabel.color = npcNameColor;

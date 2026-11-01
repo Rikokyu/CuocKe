@@ -5,7 +5,8 @@ using UnityEngine.AI;
 /// <summary>
 /// One training device (push-up mat, treadmill or punching bag). The player presses E next to it; the main chicken walks to
 /// the device's ChickenSpot and really performs the exercise with the EXISTING animator parameters
-/// (IsPushing = push-up, isRunning = run in place, Attack + AttackIndex = kicks at the bag), then the matching stat rises.
+/// (IsPushing = push-up, isRunning = run in place, Attack + AttackIndex = kicks at the bag, IsLifting = barbell lift with the
+/// 'pushweight' clip, the WeightLiftProp barbell follows the hands), then the matching stat rises (weight lifting trains Strength).
 ///
 /// Rules (all checked in TryStart, in this order; every refusal charges nothing and changes nothing):
 ///   - only one session can run at a time (static flag) and a short cooldown follows each session = no E spam
@@ -21,7 +22,7 @@ using UnityEngine.AI;
 /// </summary>
 public class TrainingStation : MonoBehaviour
 {
-    public enum Activity { PushUp, Treadmill, PunchingBag }
+    public enum Activity { PushUp, Treadmill, PunchingBag, WeightLift }
 
     [Header("Activity")]
     [SerializeField] Activity activity = Activity.PushUp;
@@ -29,6 +30,8 @@ public class TrainingStation : MonoBehaviour
     [SerializeField, Min(1)] int cost = 40;
     [SerializeField, Min(1)] int statGain = 2;
     [SerializeField, Min(0.5f)] float sessionSeconds = 4f;
+    [Tooltip("Trainer-driven block only: seconds this exercise lasts inside EVERY trainer hour (run 5, push-up 10, weight lift 10, boxing 5 = 30 s per hour; walking to the station is extra).")]
+    [SerializeField, Min(1f)] float drivenSeconds = 5f;
     [Tooltip("Optional. If set, the player must own this item (checked, not consumed). Leave empty for no requirement.")]
     [SerializeField] ItemDefinition requiredItem;
     [Tooltip("ON: requiredItem must be PLACED at this station first (ItemUseController consumes it and calls Place()); 'placedVisual' stays hidden until then. OFF: the item only has to be in the bag.")]
@@ -42,9 +45,11 @@ public class TrainingStation : MonoBehaviour
     [Tooltip("Punching bag only: the part that swings when hit (a pivot at the top of the bag).")]
     [SerializeField] Transform swingPivot;
     [SerializeField, Min(0.3f)] float hitInterval = 1.1f;
+    [Tooltip("Weight lifting only: the barbell prop that follows the chicken's hands while it lifts (optional).")]
+    [SerializeField] WeightLiftProp liftProp;
 
     [Header("Interaction")]
-    [SerializeField, Min(0.5f)] float interactionDistance = 1.8f;
+    [SerializeField, Min(0.5f)] float interactionDistance = 2.8f;
     [SerializeField] KeyCode interactKey = KeyCode.E;
     [Tooltip("True = the trainer NPC (TrainerNPC) pays for and drives this station: no prompt, no E, no charge here.")]
     [SerializeField] bool paidByTrainer = true;
@@ -113,6 +118,7 @@ public class TrainingStation : MonoBehaviour
             health = stats.GetComponent<HealthSystem>();
             anim = stats.GetComponent<Animator>();
             agent = stats.GetComponent<NavMeshAgent>();
+            hasLiftParam = HasAnimParam("IsLifting");
         }
 
         if (player == null || stats == null || wallet == null || chickenSpot == null)
@@ -125,7 +131,7 @@ public class TrainingStation : MonoBehaviour
         if (paidByTrainer) { SetPrompt(false); return; } // passive prop: the trainer NPC runs it
         if (player == null || stats == null) return;
 
-        bool canInteract = IsPlayerInRange() && !busy && !IsBlockedByUI();
+        bool canInteract = IsPlayerInRange() && !busy && !IsBlockedByUI() && InteractObject.IsAimed(this);
         SetPrompt(canInteract);
 
         if (canInteract && Input.GetKeyDown(interactKey)) TryStart();
@@ -142,7 +148,7 @@ public class TrainingStation : MonoBehaviour
         TrainingRefusal(out string why);
         if (why != null) { Refuse(why); return false; }
 
-        if (!wallet.TrySpend(cost)) { Refuse(string.Format("Không đủ tiền: cần {0}, đang có {1}", cost, wallet.Balance)); return false; }
+        if (!wallet.TrySpend(cost)) { Refuse(string.Format("Không đủ tiền: cần {0} VNĐ, đang có {1} VNĐ", cost, wallet.Balance)); return false; }
 
         paidCost = cost;
         busy = true;
@@ -168,7 +174,7 @@ public class TrainingStation : MonoBehaviour
         string requirement = RequirementProblem();
         if (requirement != null) { why = requirement; return; }
 
-        if (!wallet.CanAfford(cost)) why = string.Format("Không đủ tiền: cần {0}, đang có {1}", cost, wallet.Balance);
+        if (!wallet.CanAfford(cost)) why = string.Format("Không đủ tiền: cần {0} VNĐ, đang có {1} VNĐ", cost, wallet.Balance);
     }
 
     void Refuse(string message)
@@ -192,7 +198,7 @@ public class TrainingStation : MonoBehaviour
             message = string.Format("{0} xong! {1} {2} → {3}", displayName, StatLabel(TrainedStat), before, after);
             if (TrainedStat == ChickenStats.StatType.Strength)
                 message += string.Format("  (Máu tối đa {0} → {1})", hpBefore, stats.Get(ChickenStats.StatType.MaxHP));
-            message += string.Format("  (-{0} tiền)", paidCost);
+            message += string.Format("  (-{0} VNĐ)", paidCost);
             paidCost = 0; // the money stays spent
             Debug.Log("[Training] " + message);
         }
@@ -226,6 +232,8 @@ public class TrainingStation : MonoBehaviour
     {
         // walk to the spot (agent, with the normal run animation), then snap exactly onto it
         if (anim != null) anim.SetBool("IsPushing", false); // a push-up of the previous exercise must not stay on while walking / in the next exercise
+        SetLifting(false);
+        if (liftProp != null) liftProp.Release();
         if (agent != null && agent.enabled && agent.isOnNavMesh)
         {
             if (prevStopping < 0f) prevStopping = agent.stoppingDistance; // save once per block (several stations in a row)
@@ -272,6 +280,10 @@ public class TrainingStation : MonoBehaviour
                 case Activity.Treadmill:
                     if (anim != null) anim.SetBool("isRunning", true);
                     break;
+                case Activity.WeightLift:
+                    SetLifting(true); // Animator: ChickenIdle -> pushweight (loop)
+                    if (liftProp != null && anim != null) liftProp.Hold(anim);
+                    break;
                 case Activity.PunchingBag:
                     hitTimer -= Time.deltaTime;
                     if (hitTimer <= 0f && anim != null)
@@ -296,6 +308,8 @@ public class TrainingStation : MonoBehaviour
         if (anim != null)
         {
             anim.SetBool("IsPushing", false); // the exercise is over: back to normal idle / walk
+            SetLifting(false);
+            if (liftProp != null) liftProp.Release();
             anim.SetBool("isRunning", false);
         }
         exerciseCompleted = remaining <= 0f && !AbortNeeded();
@@ -325,11 +339,15 @@ public class TrainingStation : MonoBehaviour
     {
         if (requiredItem == null) return null;
         if (requiresPlacement)
-            return IsPlaced ? null : string.Format("Chưa có {0} ở khu tập. Mua ở chợ, chọn trên thanh nhanh rồi nhấn F cạnh chỗ {1}", requiredItem.displayName.ToLower(), displayName.ToLower());
+            return IsPlaced ? null : string.Format("Chưa có {0} ở khu tập. Mua ở chợ, chọn trên thanh nhanh rồi nhấn E cạnh chỗ {1}", requiredItem.displayName.ToLower(), displayName.ToLower());
         InventorySystem inv = InventorySystem.Instance;
         return inv != null && inv.Has(requiredItem) ? null : string.Format("Cần có {0} (mua ở chợ) để tập {1}", requiredItem.displayName, displayName.ToLower());
     }
     public string DisplayName => displayName;
+    /// <summary>Seconds this exercise lasts in each trainer-driven hour.</summary>
+    public float DrivenSeconds => Mathf.Max(drivenSeconds, MinDrivenSeconds);
+    /// <summary>Owner rule: weight lift lasts at least 20 s, push-up at least 10 s, running and boxing at least 5 s in every trainer hour (so one hour is never under 40 s). A smaller scene value is ignored.</summary>
+    public float MinDrivenSeconds => activity == Activity.WeightLift ? 20f : (activity == Activity.PushUp ? 10f : 5f);
     public bool LastExerciseCompleted => exerciseCompleted;
     public static bool IsBusy => busy;
 
@@ -374,6 +392,8 @@ public class TrainingStation : MonoBehaviour
             anim.SetBool("IsPushing", false);
             anim.SetBool("isRunning", false);
             anim.ResetTrigger("Attack");
+            SetLifting(false);
+            if (liftProp != null) liftProp.Release();
             anim.applyRootMotion = prevRootMotion;
         }
 
@@ -411,7 +431,14 @@ public class TrainingStation : MonoBehaviour
     void BagImpact()
     {
         if (swingPivot == null) return;
-        Renderer r = swingPivot.GetComponentInChildren<Renderer>();
+        Renderer r = null;
+        float bestVolume = -1f; // the bag body is the biggest renderer (a multi-part model starts with small chain links)
+        foreach (Renderer candidate in swingPivot.GetComponentsInChildren<Renderer>())
+        {
+            Vector3 size = candidate.bounds.size;
+            float volume = size.x * size.y * size.z;
+            if (volume > bestVolume) { bestVolume = volume; r = candidate; }
+        }
         GameVfx.BagHit(r != null ? r.bounds.center : swingPivot.position);
     }
 
@@ -443,7 +470,7 @@ public class TrainingStation : MonoBehaviour
     string PromptText()
     {
         string tool = requiredItem != null ? "  (cần " + requiredItem.displayName + ")" : "";
-        return string.Format("Nhấn E: {0} (-{1} tiền)  |  {2} {3}{4}", displayName, cost, StatLabel(TrainedStat), stats.Get(TrainedStat), tool);
+        return string.Format("Nhấn E: {0} (-{1} VNĐ)  |  {2} {3}{4}", displayName, cost, StatLabel(TrainedStat), stats.Get(TrainedStat), tool);
     }
 
     void SetPrompt(bool visible)
@@ -486,5 +513,22 @@ public class TrainingStation : MonoBehaviour
             Gizmos.DrawWireSphere(chickenSpot.position, 0.3f);
             Gizmos.DrawLine(chickenSpot.position, chickenSpot.position + chickenSpot.forward);
         }
+    }
+
+
+bool hasLiftParam;
+
+    bool HasAnimParam(string paramName)
+    {
+        if (anim == null || anim.runtimeAnimatorController == null) return false;
+        foreach (AnimatorControllerParameter p in anim.parameters)
+            if (p.name == paramName && p.type == AnimatorControllerParameterType.Bool) return true;
+        return false;
+    }
+
+    /// <summary>Weight-lifting Animator bool; ignored if the chicken's controller does not have it (other exercises never touch it).</summary>
+    void SetLifting(bool on)
+    {
+        if (anim != null && hasLiftParam) anim.SetBool("IsLifting", on);
     }
 }

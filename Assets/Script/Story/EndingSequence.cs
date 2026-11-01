@@ -7,7 +7,7 @@ using TMPro;
 /// <summary>
 /// M13 - the ending. Starts ONCE after the final boss was beaten and the friend's concession dialogue
 /// (FinalBossController.VictoryStoryDone) has been shown and closed:
-///   1. the chicken celebrates (the existing push-up animation, the same Animator bool TrainingStation uses),
+///   1. the chicken celebrates (the 'Sui' animation: Animator trigger "Sui" on Chicken.controller; the old push-up bool is only a fallback),
 ///   2. fade to black, the player and the chicken are put back at the grandparents' house,
 ///   3. a short funny dialogue with Ông and Bà (existing DialogueUI),
 ///   4. a one-line epilogue, then rolling credits and a "Thoát game" button.
@@ -37,10 +37,10 @@ public class EndingSequence : MonoBehaviour
     [SerializeField, Min(0f)] float celebrateSeconds = 4f;
     [SerializeField, Min(0.1f)] float fadeSeconds = 1.2f;
     [SerializeField, Min(0f)] float blackHoldSeconds = 2f;
-    [SerializeField, Min(1f)] float creditsScrollSpeed = 70f;
+    [SerializeField, Min(1f)] float creditsScrollSpeed = 105f;
 
     [Header("Text")]
-    [SerializeField] string celebrateMessage = "Gà ăn mừng chiến thắng bằng... vài chục cái chống đẩy!";
+    [SerializeField] string celebrateMessage = "Gà ăn mừng chiến thắng bằng màn SIUUU!";
     [SerializeField] string timeSkipText = "Vài ngày sau...";
     [SerializeField, TextArea(2, 4)] string[] grandfatherLines =
     {
@@ -69,10 +69,26 @@ public class EndingSequence : MonoBehaviour
         "(Mọi nhân vật đều hư cấu. Không có con gà nào bị thương khi làm game này.)";
     [SerializeField] string quitLabel = "Thoát game";
 
+    [Header("Ending cards (black screen with one line, shown right before the credits)")]
+    [Tooltip("Branch 'Đồng ý' to Ông (the chicken is not kept).")]
+    [SerializeField] string vegetarianEndingTitle = "Vegetariann't Ending";
+    [Tooltip("Branch: the friend was beaten in the final fight (the normal ending).")]
+    [SerializeField] string falseEndingTitle = "Falsen't Ending";
+    [SerializeField, Min(0f)] float endingCardSeconds = 3.5f;
+    [Tooltip("Font size of the ending title (the normal centre text is 48).")]
+    [SerializeField, Min(1f)] float endingCardFontSize = 140f;
+    [Tooltip("Font size of the Zoro death ending title (a long sentence, so smaller than the normal ending titles).")]
+    [SerializeField, Min(1f)] float deathCardFontSize = 90f;
+
     /// <summary>True from the moment the ending started (one-shot, this play session).</summary>
     public static bool Started { get; private set; }
     public static bool CreditsShown { get; private set; }
     public static EndingSequence Instance { get; private set; }
+
+    // Chicken celebration (Sui). The clip carries root motion (jump + turn), so the chicken's facing is put back while the screen is black.
+    const string SuiTrigger = "Sui";
+    Quaternion chickenRotationBeforeCelebrate;
+    bool hasSavedChickenRotation;
 
     GameObject overlay;
     CanvasGroup overlayGroup;
@@ -119,6 +135,66 @@ public class EndingSequence : MonoBehaviour
         return true;
     }
 
+/// <summary>
+    /// Bad ending ('Đồng ý' to Ông cook the chicken): only the rolling credits and the 'Thoát game' button, on a black screen.
+    /// Called by GrandfatherChickenRescue after the endgame video. Safe to call twice (the second call does nothing).
+    /// </summary>
+    public bool BeginCreditsOnly()
+    {
+        if (Started) return false;
+        Started = true;
+        StartCoroutine(RunCreditsOnly());
+        return true;
+    }
+
+    /// <summary>
+    /// Death ending (the player walked into Zoro Tsunami's whirlwind): fade to black, one ending card with the given title, then the
+    /// rolling credits and the quit button. Called by ZoroTsunamiDanger. Safe to call twice (the second call does nothing).
+    /// </summary>
+    public bool BeginDeathEnding(string title)
+    {
+        if (Started) return false;
+        Started = true;
+        StartCoroutine(RunDeathEnding(title));
+        return true;
+    }
+
+    IEnumerator RunDeathEnding(string title)
+    {
+        Debug.Log("[EndingSequence] The player died to Zoro Tsunami.");
+        LockPlayer();
+        BuildOverlay();
+        yield return Fade(0f, 1f);
+        yield return ShowEndingCard(title, deathCardFontSize);
+        yield return RollCredits();
+    }
+
+    IEnumerator RunCreditsOnly()
+    {
+        Debug.Log("[EndingSequence] Credits after the 'Đồng ý' ending.");
+        LockPlayer();
+        BuildOverlay();
+        overlayGroup.alpha = 1f; // straight to black, there is nothing to fade from
+        yield return ShowEndingCard(vegetarianEndingTitle);
+        yield return RollCredits();
+    }
+
+
+    /// <summary>The black board with a single ending title, shown before the credits. Runs on the overlay that is already black; only reachable through the one-shot Started guard.</summary>
+    IEnumerator ShowEndingCard(string title, float fontSize = -1f)
+    {
+        if (string.IsNullOrEmpty(title) || centerLabel == null) yield break;
+        float normalSize = centerLabel.fontSize;
+        centerLabel.fontSize = fontSize > 0f ? fontSize : endingCardFontSize;
+        centerLabel.fontStyle = TMPro.FontStyles.Bold;
+        centerLabel.text = title;
+        float t = 0f;
+        while (t < endingCardSeconds) { LockPlayer(); t += Time.unscaledDeltaTime; yield return null; }
+        centerLabel.text = "";
+        centerLabel.fontSize = normalSize;
+        centerLabel.fontStyle = TMPro.FontStyles.Normal;
+    }
+
     void LockPlayer()
     {
         if (playerMovement != null) playerMovement.enabled = false;
@@ -151,6 +227,7 @@ public class EndingSequence : MonoBehaviour
         // 2. fade out, go home
         BuildOverlay();
         yield return Fade(0f, 1f);
+        CinematicCamera.ReleaseIfActive(); // the screen is black: give the player's camera back before moving home
         centerLabel.text = timeSkipText;
         MoveToHome();
         yield return new WaitForSeconds(blackHoldSeconds);
@@ -167,24 +244,43 @@ public class EndingSequence : MonoBehaviour
         centerLabel.text = epilogue;
         yield return new WaitForSeconds(blackHoldSeconds * 2.5f);
         centerLabel.text = "";
+        yield return ShowEndingCard(falseEndingTitle);
         yield return RollCredits();
     }
 
-    IEnumerator Celebrate()
+IEnumerator Celebrate()
     {
         if (chicken == null) yield break;
         HealthSystem hp = chicken.GetComponent<HealthSystem>();
         Animator anim = chicken.GetComponent<Animator>();
         PetCombatAI combat = chicken.GetComponent<PetCombatAI>();
         NavMeshAgent agent = chicken.GetComponent<NavMeshAgent>();
-        bool canAnimate = anim != null && (hp == null || !hp.IsDead) && HasBool(anim, "IsPushing");
+
+        // The animation only belongs to a CONFIRMED final victory (never a loss, never another fight).
+        bool victoryConfirmed = FinalBossController.FinalBossDefeated;
+        bool alive = anim != null && (hp == null || !hp.IsDead);
+        bool useSui = victoryConfirmed && alive && HasTrigger(anim, SuiTrigger);
+        bool usePushUp = victoryConfirmed && alive && !useSui && HasBool(anim, "IsPushing"); // fallback if the controller has no Sui
+        bool canAnimate = useSui || usePushUp;
+
+        Vector3 startPosition = chicken.position;
+        chickenRotationBeforeCelebrate = chicken.rotation;
+        hasSavedChickenRotation = true;
+
+        // cutscene shot: the camera moves from the friend (his talk) to the celebrating chicken, with the friend in the background
+        if (victoryConfirmed && alive) CinematicCamera.Get().Focus(chicken, RematchController.Instance != null ? RematchController.Instance.transform : null, CinematicCamera.ShotStyle.Close);
 
         if (banner != null && !string.IsNullOrEmpty(celebrateMessage)) banner.Show(celebrateMessage, celebrateSeconds + 1f);
         if (canAnimate)
         {
             if (combat != null) combat.enabled = false;
             if (agent != null && agent.enabled && agent.isOnNavMesh) agent.isStopped = true;
-            anim.SetBool("IsPushing", true);
+            if (useSui)
+            {
+                if (HasBool(anim, "isRunning")) anim.SetBool("isRunning", false);
+                anim.SetTrigger(SuiTrigger);
+            }
+            else anim.SetBool("IsPushing", true);
         }
 
         float t = 0f;
@@ -192,7 +288,12 @@ public class EndingSequence : MonoBehaviour
 
         if (canAnimate)
         {
-            anim.SetBool("IsPushing", false);
+            if (useSui)
+            {
+                anim.ResetTrigger(SuiTrigger);
+                ReseatChicken(agent, startPosition);
+            }
+            else anim.SetBool("IsPushing", false);
             if (combat != null) { combat.enabled = true; combat.ResumeAfterRecovery(); }
             else if (agent != null && agent.enabled && agent.isOnNavMesh) agent.isStopped = false;
         }
@@ -204,6 +305,22 @@ public class EndingSequence : MonoBehaviour
             if (p.name == name && p.type == AnimatorControllerParameterType.Bool) return true;
         return false;
     }
+
+static bool HasTrigger(Animator a, string name)
+    {
+        foreach (AnimatorControllerParameter p in a.parameters)
+            if (p.name == name && p.type == AnimatorControllerParameterType.Trigger) return true;
+        return false;
+    }
+
+    /// <summary>The Sui clip has root motion: if it left the chicken away from where it stood (or floating), put it back on its spot.</summary>
+    void ReseatChicken(NavMeshAgent agent, Vector3 position)
+    {
+        if (chicken == null) return;
+        if ((chicken.position - position).sqrMagnitude < 0.0025f) return;
+        if (agent != null && agent.enabled) agent.Warp(position); else chicken.position = position;
+    }
+
 
     void MoveToHome()
     {
@@ -230,6 +347,7 @@ public class EndingSequence : MonoBehaviour
             if (NavMesh.SamplePosition(c, out nh, 4f, NavMesh.AllAreas)) c = nh.position;
             NavMeshAgent agent = chicken.GetComponent<NavMeshAgent>();
             if (agent != null && agent.enabled) agent.Warp(c); else chicken.position = c;
+            if (hasSavedChickenRotation) chicken.rotation = chickenRotationBeforeCelebrate; // Sui turns the chicken; same facing as before the celebration (screen is black here)
         }
     }
 

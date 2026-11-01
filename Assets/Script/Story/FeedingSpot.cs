@@ -17,14 +17,24 @@ public class FeedingSpot : MonoBehaviour
     [Header("Quest")]
     [SerializeField] QuestDefinition quest;
     [SerializeField] QuestManager questManager;
-    [Tooltip("Steps that must be done before this one (garden: fertilise + harvest = 2).")]
-    [SerializeField, Min(0)] int minProgress = 2;
+    [Tooltip("Steps that must be done before placing the vegetables (garden: harvest = 1).")]
+    [SerializeField, Min(0)] int minProgress = 1;
+    [Tooltip("The chicken starts eating once the quest has this much progress (garden: after the bran jar = 3). 0 = eat right after placing.")]
+    [SerializeField, Min(0)] int mealStartsAtProgress = 3;
 
     [Header("Item (existing inventory)")]
     [SerializeField] ItemDefinition vegetable;
 
     [Header("Scene")]
-    [SerializeField] GameObject plate;      // hidden until the vegetables are placed
+    [Tooltip("Parent of all the food visuals (the 'Plate' object). With the three objects below assigned it STAYS active: the three states are made by switching its children.")]
+    [SerializeField] GameObject plate;
+    [Header("Food visuals (optional; all three together replace the old 'plate on / off')")]
+    [Tooltip("State 0 and 1: the bare plate (the Sprinkle_Cake child that holds only the Plate mesh). Hidden in state 2 because the finished cake brings its own plate.")]
+    [SerializeField] GameObject emptyPlate;
+    [Tooltip("State 1: the vegetable leaves on the plate (Leaf0, Leaf1, Leaf2).")]
+    [SerializeField] GameObject[] leaves;
+    [Tooltip("State 2: the complete Sprinkle_Cake (cake + its own plate + sprinkles) the chicken eats.")]
+    [SerializeField] GameObject finishedCake;
     [SerializeField] Transform eatPoint;    // where the chicken stands to eat
     [SerializeField] Transform chicken;     // ChienKe_Pet
     [SerializeField] Transform player;
@@ -33,10 +43,12 @@ public class FeedingSpot : MonoBehaviour
     [SerializeField] MessageBannerUI banner;
 
     [Header("Interaction")]
-    [SerializeField, Min(0.5f)] float interactionDistance = 2f;
+    [SerializeField, Min(0.5f)] float interactionDistance = 3f;
     [SerializeField] KeyCode interactKey = KeyCode.E;
     [SerializeField] string promptText = "Nhấn E để đặt rau cho gà ăn";
     [SerializeField] string needVegetableText = "Cần rau đã hái (hái ở luống rau)";
+    [Tooltip("Shown at the plate after the bran / protein jar was used: the Player must press E on the plate to mix the powder in. Only that press turns the plate into the finished cake and sends the chicken to eat.")]
+    [SerializeField] string mixPromptText = "Nhấn E để trộn bột vào rau cho gà ăn";
 
     [Header("Eating")]
     [SerializeField, Min(1f)] float maxChickenDistance = 15f;
@@ -44,11 +56,13 @@ public class FeedingSpot : MonoBehaviour
     [SerializeField, Min(1f)] float walkTimeout = 12f;
     [SerializeField, Min(0.5f)] float eatSeconds = 3f;
     [SerializeField] string chickenFarMessage = "Gà ở xa quá. Đợi gà lại gần rồi đặt rau nhé.";
-    [SerializeField] string placedMessage = "Đã đặt rau. Gà đang chạy tới...";
+    [SerializeField] string chickenFarMixMessage = "Gà ở xa quá. Đợi gà lại gần rồi trộn bột cho gà ăn nhé.";
+    [SerializeField] string placedMessage = "Đã đặt rau lên đĩa. Giờ lấy thêm bột cám trong hũ để trộn vào nhé.";
     [SerializeField] string ateMessage = "Gà ăn sạch rau rồi! Trông nó hơi lạ lạ...";
 
     bool promptShown;
     string shownText;
+    int mealPendingFrame = -1; // frame in which the plate started waiting for the mixing press (that frame's E belongs to the jar)
     Coroutine routine;
     PetCombatAI combat;
     bool combatWasEnabled;
@@ -59,6 +73,8 @@ public class FeedingSpot : MonoBehaviour
     public bool IsPlaced { get; private set; }
     /// <summary>The chicken finished eating and the step was reported.</summary>
     public bool HasEaten { get; private set; }
+    /// <summary>The chicken was sent to the plate (after the bran step).</summary>
+    public bool MealStarted { get; private set; }
 
     void Start()
     {
@@ -69,15 +85,49 @@ public class FeedingSpot : MonoBehaviour
         }
         if (player == null || quest == null || questManager == null || vegetable == null || chicken == null || prompt == null)
             Debug.LogError("[FeedingSpot] A required reference is missing.", this);
-        if (plate != null) plate.SetActive(false);
+        SetFoodVisual(FoodState.EmptyPlate);
     }
 
-    void Update()
+    // ---------------------------------------------------------------- the three looks of the food
+    enum FoodState { EmptyPlate, PlateWithLeaves, FinishedCake }
+
+    bool HasFoodVisuals { get { return emptyPlate != null && finishedCake != null; } }
+
+    /// <summary>Exactly one look at a time (never two plates on top of each other). Idempotent: calling it again changes nothing.</summary>
+    void SetFoodVisual(FoodState state)
+    {
+        if (!HasFoodVisuals)
+        {
+            // old scenes without the three references: the plate is hidden until the vegetables are placed
+            if (plate != null) plate.SetActive(state != FoodState.EmptyPlate);
+            return;
+        }
+        if (plate != null && !plate.activeSelf) plate.SetActive(true); // the parent must stay on: it holds all the looks
+        emptyPlate.SetActive(state != FoodState.FinishedCake);
+        if (leaves != null)
+            for (int i = 0; i < leaves.Length; i++)
+                if (leaves[i] != null) leaves[i].SetActive(state == FoodState.PlateWithLeaves);
+        finishedCake.SetActive(state == FoodState.FinishedCake);
+    }
+
+void Update()
     {
         if (player == null || questManager == null || quest == null) return;
 
+        bool inRange = InRange() && (dialogue == null || !dialogue.IsOpen) && !IsInventoryOpen() && InteractObject.IsAimed(this);
+
+        // After the jar (bran / protein) the powder is only in the bag: the Player has to mix it into the plate himself.
+        // The meal never starts by itself - only this E press turns the plate into the finished cake and sends the chicken to eat.
+        if (MealPending)
+        {
+            if (mealPendingFrame < 0) mealPendingFrame = Time.frameCount; // the E press that used the jar must not also count here
+            SetPrompt(inRange, mixPromptText);
+            if (inRange && Time.frameCount > mealPendingFrame && Input.GetKeyDown(interactKey)) TryStartMeal();
+            return;
+        }
+        mealPendingFrame = -1;
+
         bool stepPending = StepPending();
-        bool inRange = InRange() && (dialogue == null || !dialogue.IsOpen) && !IsInventoryOpen();
         bool hasVeg = HasVegetable();
 
         SetPrompt(inRange && stepPending, hasVeg ? promptText : needVegetableText);
@@ -112,12 +162,51 @@ public class FeedingSpot : MonoBehaviour
 
         IsPlaced = true; // flip first: a second press (same frame or later) can never place twice
         InventorySystem.Instance.Remove(vegetable, 1);
-        if (plate != null) plate.SetActive(true);
+        SetFoodVisual(FoodState.PlateWithLeaves);
         SetPrompt(false, null);
         if (banner != null) banner.Show(placedMessage, 3f);
 
-        routine = StartCoroutine(EatRoutine());
+        questManager.ReportProgress(quest.objectiveKey, 1); // step: the vegetables are on the plate
+        if (mealStartsAtProgress <= 0) StartMeal();
         return true;
+    }
+
+/// <summary>True from the moment the jar was used (quest progress reached 'mealStartsAtProgress') until the Player presses E on the plate.</summary>
+    public bool MealPending
+    {
+        get
+        {
+            if (!IsPlaced || MealStarted || mealStartsAtProgress <= 0 || questManager == null || quest == null) return false;
+            QuestStatus s = questManager.GetStatus(quest);
+            return s.State == QuestState.Active && s.Progress >= mealStartsAtProgress;
+        }
+    }
+
+    /// <summary>E on the plate after the jar. Public so a test can drive the same path. Returns true only if the meal started (plate -> cake, chicken goes to eat).</summary>
+    public bool TryStartMeal()
+    {
+        if (!MealPending) return false;
+
+        Vector3 d = chicken.position - transform.position;
+        d.y = 0f;
+        if (d.magnitude > maxChickenDistance)
+        {
+            if (banner != null) banner.Show(chickenFarMixMessage, 3f);
+            return false;
+        }
+
+        SetPrompt(false, null);
+        StartMeal(); // flips MealStarted first, so a second press can never start it twice
+        return true;
+    }
+
+
+    void StartMeal()
+    {
+        if (MealStarted) return; // once
+        MealStarted = true;
+        SetFoodVisual(FoodState.FinishedCake); // the bran / protein is in: the finished cake replaces the plate and the leaves
+        routine = StartCoroutine(EatRoutine());
     }
 
     IEnumerator EatRoutine()
@@ -157,7 +246,7 @@ public class FeedingSpot : MonoBehaviour
 
     void FinishMeal()
     {
-        if (plate != null) plate.SetActive(false);
+        SetFoodVisual(FoodState.EmptyPlate); // eaten: back to the bare plate (old scenes: plate hidden)
         RestoreChicken();
         routine = null;
         if (HasEaten) return;

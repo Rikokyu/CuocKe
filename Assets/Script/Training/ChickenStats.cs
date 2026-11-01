@@ -7,7 +7,7 @@ using UnityEngine.AI;
 ///   Attack   -> PetCombatAI.damage            (+ damagePerAttack per point above the start value)
 ///   Strength -> PetCombatAI.damage            (+ damagePerStrength per point) and HealthSystem.maxHealth (+ maxHpPerStrength per point)
 ///   Speed    -> NavMeshAgent.speed and PetCombatAI.attackCooldown (+speedBonusPerPoint, e.g. 3 % per point: faster moving AND attacking)
-///   MaxHP    -> derived: the chicken's base max health + the Strength bonus; written to HealthSystem.maxHealth
+///   MaxHP    -> derived: (the chicken's base max health + the Strength bonus) x maxHpMultiplierPerTrainingHour^TrainingHours (x1.2 per completed trainer hour, compounding); written to HealthSystem.maxHealth
 ///
 /// An untrained chicken (all stats at the start value) changes NOTHING in combat. The base values (damage, cooldown,
 /// speed, max health) are read from the existing components once in Awake, so the combat scripts stay untouched.
@@ -37,6 +37,8 @@ public class ChickenStats : MonoBehaviour
     [Header("Trainer NPC (prepaid hours)")]
     [Tooltip("Damage added by EACH completed training hour (owner requirement: +7).")]
     [SerializeField, Min(0f)] float damagePerTrainingHour = 7f;
+    [Tooltip("Max health is multiplied by this for EACH completed training hour (owner requirement: x1.2, compounding: 3 hours = x1.728).")]
+    [SerializeField, Min(1f)] float maxHpMultiplierPerTrainingHour = 1.2f;
 
     public int Strength { get; private set; }
     public int Attack { get; private set; }
@@ -45,6 +47,7 @@ public class ChickenStats : MonoBehaviour
     /// <summary>Total completed training hours bought from the trainer NPC (this play session; there is no save system).</summary>
     public int TrainingHours { get; private set; }
     public float DamagePerTrainingHour => damagePerTrainingHour;
+    public float MaxHpMultiplierPerTrainingHour => maxHpMultiplierPerTrainingHour;
 
     /// <summary>Raised after any stat changed (already applied to combat).</summary>
     public event Action Changed;
@@ -60,7 +63,7 @@ public class ChickenStats : MonoBehaviour
 
     public float SpeedFactor => 1f + (Speed - startSpeed) * speedBonusPerPoint;
     public float Damage => baseDamage + (Attack - startAttack) * damagePerAttack + (Strength - startStrength) * damagePerStrength + TrainingHours * damagePerTrainingHour;
-    public float MaxHP => baseMaxHealth + (Strength - startStrength) * maxHpPerStrength;
+    public float MaxHP => (baseMaxHealth + (Strength - startStrength) * maxHpPerStrength) * Mathf.Pow(maxHpMultiplierPerTrainingHour, TrainingHours);
     public int MaxStatValue => maxStatValue;
 
     void Awake()

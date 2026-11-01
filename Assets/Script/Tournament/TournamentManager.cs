@@ -33,7 +33,14 @@ public class TournamentManager : MonoBehaviour
     [SerializeField] MessageBannerUI banner;
     [SerializeField] CurrencyWallet wallet;
     [SerializeField] QuestDefinition rematchQuest;     // chuan_bi_tai_dau - opens the tournament
+    [Tooltip("tai_dau_ban_than: the friend's rematch. Its completion (the scripted loss + his advice) opens the tournament right away; the training quest above then only prepares the chicken.")]
+    [SerializeField] QuestDefinition friendRematchQuest;
     [SerializeField] QuestDefinition tournamentQuest;  // giai_dau_lang - objective key counts won matches
+
+    [Header("Training gate (OpponentDefinition.minTrainingHours)")]
+    [Tooltip("Optional. If empty, the ChickenStats in the scene is found at runtime.")]
+    [SerializeField] ChickenStats chickenStats;
+    [SerializeField] string notTrainedBanner = "Gà chưa đủ giờ tập! Cần tối thiểu {0} giờ tập (hiện có {1}).";
 
     [Header("Opponents (fight order)")]
     [SerializeField] Entry[] opponents;
@@ -52,7 +59,7 @@ public class TournamentManager : MonoBehaviour
     [Header("Messages")]
     [SerializeField] string startMessage = "Trận đấu giải làng bắt đầu!";
     [SerializeField] string lostMessage = "Thua rồi! Luyện thêm rồi thách đấu lại.";
-    [SerializeField] string winMessage = "Thắng! Nhận {0} huy chương và {1} tiền";
+    [SerializeField] string winMessage = "Thắng! Nhận {0} huy chương và {1} VNĐ";
     [SerializeField] string needChickenMessage = "Gà của bạn chưa sẵn sàng để thi đấu";
 
     public static TournamentManager Instance { get; private set; }
@@ -65,7 +72,7 @@ public class TournamentManager : MonoBehaviour
     /// <summary>M10: medals the player can still exchange (Medals - MedalsSpent).</summary>
     public int AvailableMedals { get { return Medals - MedalsSpent; } }
     public int OpponentCount { get { return opponents != null ? opponents.Length : 0; } }
-    public bool IsBusy { get { return fightActive || recovering; } }
+    public bool IsBusy { get { return fightActive || recovering || winSequence; } }
 
     bool[] defeated;
     bool[] lost;
@@ -78,11 +85,32 @@ public class TournamentManager : MonoBehaviour
     HealthSystem savedEnemyHealth;
     RoosterCombatAI savedEnemyCombat;
 
+    [Header("Opponent NPC stands near the arena during the fight (Chi Ba / Chu Tu), then goes back to its place")]
+    [SerializeField] float npcBehindFoeDistance = 2.5f;
+    [SerializeField] float npcSideOffset = 1.8f;
+    [SerializeField, Min(0f)] float winDialogueDelay = 1.5f;
+    [SerializeField, Min(0f)] float npcReturnDelay = 1f;
+    [SerializeField] string winContinueLabel = "Nhận huy chương";
+
+    class NpcHome
+    {
+        public TournamentOpponentNPC npc;
+        public Vector3 pos;
+        public Quaternion rot;
+        public float yOffset; // npc.y - rooster.y at home, so the NPC keeps the same ground relation near the arena
+    }
+
+    NpcHome[] npcHomes;
+    bool winSequence;
+
+
     void Awake()
     {
         Instance = this;
         defeated = new bool[OpponentCount];
         lost = new bool[OpponentCount];
+        CaptureNpcHomes();
+
         Medals = 0;
         MedalsSpent = 0;
 
@@ -110,7 +138,7 @@ public class TournamentManager : MonoBehaviour
 
     void OnQuestCompleted(QuestStatus status)
     {
-        if (status.Definition == rematchQuest) EnsureTournamentQuest();
+        if (status.Definition == rematchQuest || (friendRematchQuest != null && status.Definition == friendRematchQuest)) EnsureTournamentQuest();
     }
 
     void EnsureTournamentQuest()
@@ -122,7 +150,43 @@ public class TournamentManager : MonoBehaviour
     /// <summary>The tournament is open once the rematch was won.</summary>
     public bool IsOpen
     {
-        get { return questManager != null && rematchQuest != null && questManager.GetState(rematchQuest.questId) == QuestState.Completed; }
+        get
+        {
+            if (questManager == null) return false;
+            if (rematchQuest != null && questManager.GetState(rematchQuest.questId) == QuestState.Completed) return true;
+            return friendRematchQuest != null && questManager.GetState(friendRematchQuest.questId) == QuestState.Completed;
+        }
+    }
+
+    ChickenStats Stats
+    {
+        get
+        {
+            if (chickenStats == null) chickenStats = FindFirstObjectByType<ChickenStats>();
+            return chickenStats;
+        }
+    }
+
+    /// <summary>The chicken's total training hours (0 if there is no ChickenStats).</summary>
+    public int TrainingHours { get { return Stats != null ? Stats.TrainingHours : 0; } }
+
+    /// <summary>Training hours opponent i demands before a challenge (OpponentDefinition.minTrainingHours).</summary>
+    public int RequiredTrainingHours(int index)
+    {
+        OpponentDefinition def = GetDefinition(index);
+        return def != null ? def.minTrainingHours : 0;
+    }
+
+    public bool HasEnoughTraining(int index) { return TrainingHours >= RequiredTrainingHours(index); }
+
+    /// <summary>The opponent's 'train more first' lines with {0} = hours needed and {1} = hours trained filled in.</summary>
+    public string[] NeedTrainingLines(int index)
+    {
+        OpponentDefinition def = GetDefinition(index);
+        if (def == null || def.notTrainedLines == null) return new string[0];
+        string[] result = new string[def.notTrainedLines.Length];
+        for (int i = 0; i < result.Length; i++) result[i] = string.Format(def.notTrainedLines[i], def.minTrainingHours, TrainingHours);
+        return result;
     }
 
     /// <summary>M10: spends medals for the Reward NPC. All-or-nothing; false (nothing changes) if amount is not positive or more than AvailableMedals.</summary>
@@ -166,6 +230,11 @@ public class TournamentManager : MonoBehaviour
     public void StartChallenge(int index)
     {
         if (!IsUnlocked(index) || IsBusy) return;
+        if (!HasEnoughTraining(index))
+        {
+            if (banner != null) banner.Show(string.Format(notTrainedBanner, RequiredTrainingHours(index), TrainingHours), 4f);
+            return;
+        }
 
         BattleManager bm = BattleManager.Instance;
         if (bm == null || bm.IsBattleActive) return;
@@ -285,6 +354,8 @@ public class TournamentManager : MonoBehaviour
             return;
         }
 
+        MoveNpcToArena(index, entry);
+
         if (banner != null && !string.IsNullOrEmpty(startMessage)) banner.Show(startMessage, 3f);
     }
 
@@ -339,8 +410,42 @@ public class TournamentManager : MonoBehaviour
     void OnWin(int index)
     {
         if (index < 0 || index >= OpponentCount || defeated[index]) return; // never pays twice
-        defeated[index] = true; // flipped BEFORE paying
+        defeated[index] = true; // flipped BEFORE anything else, so the sequence below can only ever run once
+        StartCoroutine(WinSequence(index));
+    }
 
+    /// <summary>Win flow: the beaten NPC says its defeat lines FIRST, only then the medals/money/quest progress are paid,
+    /// and then the NPC goes back to its usual place.</summary>
+    IEnumerator WinSequence(int index)
+    {
+        winSequence = true;
+        OpponentDefinition def = opponents[index].definition;
+
+        yield return new WaitForSeconds(winDialogueDelay);
+
+        float waited = 0f;
+        while (dialogue != null && dialogue.IsOpen && waited < 10f) { waited += Time.deltaTime; yield return null; }
+
+        bool paid = false;
+        System.Action pay = () => { if (paid) return; paid = true; PayWin(index); };
+
+        if (dialogue != null && def != null && def.defeatedLines != null && def.defeatedLines.Length > 0)
+        {
+            TournamentOpponentNPC npc = GetNpc(index);
+            if (npc != null) npc.FacePlayer();
+            dialogue.Open(def.displayName, def.defeatedLines, winContinueLabel, pay);
+            yield return null;
+            while (dialogue.IsOpen) yield return null;
+        }
+        pay(); // also covers a dialogue closed with Esc or one that could not open
+
+        yield return new WaitForSeconds(npcReturnDelay);
+        ReturnNpcHome(index);
+        winSequence = false;
+    }
+
+    void PayWin(int index)
+    {
         OpponentDefinition def = opponents[index].definition;
         Medals += def.medals;
         if (def.rewardMoney > 0 && wallet != null) wallet.Add(def.rewardMoney);
@@ -359,6 +464,68 @@ public class TournamentManager : MonoBehaviour
     {
         if (index >= 0 && index < OpponentCount) lost[index] = true;
         if (!recovering) StartCoroutine(RecoverAfterLoss());
+        StartCoroutine(ReturnNpcAfterRecovery(index));
+    }
+
+    IEnumerator ReturnNpcAfterRecovery(int index)
+    {
+        while (recovering) yield return null;
+        yield return new WaitForSeconds(npcReturnDelay);
+        ReturnNpcHome(index);
+    }
+
+    void CaptureNpcHomes()
+    {
+        npcHomes = new NpcHome[OpponentCount];
+        TournamentOpponentNPC[] all = FindObjectsByType<TournamentOpponentNPC>(FindObjectsInactive.Include, FindObjectsSortMode.None);
+        for (int i = 0; i < all.Length; i++)
+        {
+            int idx = all[i].OpponentIndex;
+            if (idx < 0 || idx >= OpponentCount) continue;
+            Transform t = all[i].transform;
+            Transform r = opponents[idx].rooster != null ? opponents[idx].rooster.transform : null;
+            npcHomes[idx] = new NpcHome { npc = all[i], pos = t.position, rot = t.rotation, yOffset = r != null ? t.position.y - r.position.y : 0f };
+        }
+    }
+
+    TournamentOpponentNPC GetNpc(int index)
+    {
+        return npcHomes != null && index >= 0 && index < npcHomes.Length && npcHomes[index] != null ? npcHomes[index].npc : null;
+    }
+
+    /// <summary>Puts the opponent's villager next to the arena (behind its rooster, a bit to the side), facing the fight.</summary>
+    void MoveNpcToArena(int index, Entry entry)
+    {
+        if (npcHomes == null || index < 0 || index >= npcHomes.Length || npcHomes[index] == null || npcHomes[index].npc == null) return;
+        NpcHome home = npcHomes[index];
+
+        Vector3 foePos = entry.rooster.transform.position;
+        Vector3 center = BattleArena.Instance != null ? BattleArena.Instance.Center : foePos + Vector3.left;
+        Vector3 toCenter = center - foePos;
+        toCenter.y = 0f;
+        if (toCenter.sqrMagnitude < 0.01f) toCenter = Vector3.left;
+        toCenter.Normalize();
+        Vector3 side = Vector3.Cross(Vector3.up, toCenter);
+
+        Vector3 spot = foePos - toCenter * npcBehindFoeDistance + side * npcSideOffset;
+        NavMeshHit hit;
+        if (NavMesh.SamplePosition(spot, out hit, 3f, NavMesh.AllAreas)) spot = hit.position;
+        else spot.y = foePos.y;
+        spot.y += home.yOffset;
+
+        Transform t = home.npc.transform;
+        t.position = spot;
+        Vector3 look = center - spot;
+        look.y = 0f;
+        if (look.sqrMagnitude > 0.01f) t.rotation = Quaternion.LookRotation(look);
+    }
+
+    void ReturnNpcHome(int index)
+    {
+        if (npcHomes == null || index < 0 || index >= npcHomes.Length || npcHomes[index] == null || npcHomes[index].npc == null) return;
+        Transform t = npcHomes[index].npc.transform;
+        t.position = npcHomes[index].pos;
+        t.rotation = npcHomes[index].rot;
     }
 
     IEnumerator RecoverAfterLoss()

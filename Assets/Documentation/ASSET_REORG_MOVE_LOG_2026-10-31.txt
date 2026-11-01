@@ -1,0 +1,278 @@
+ASSET REORG MOVE LOG - 2026-10-31 (cot trai = vi tri cu, cot phai = vi tri moi). GUID giu nguyen; muon khoi phuc chi can keo lai.
+Assets/Art/Character/NPC/Goku.fbx  ->  Assets/Art/Character/NPC/Goku/Goku.fbx
+Assets/Art/Character/NPC/Material/5_eyes_1.0_0_0.001.mat  ->  Assets/Art/Character/NPC/Goku/Materials/5_eyes_1.0_0_0.001.mat
+Assets/Art/Character/NPC/Material/5_cloth_1.0_0_0.001.mat  ->  Assets/Art/Character/NPC/Goku/Materials/5_cloth_1.0_0_0.001.mat
+Assets/Art/Character/NPC/Material/5_hands_1.0_0_0.001.mat  ->  Assets/Art/Character/NPC/Goku/Materials/5_hands_1.0_0_0.001.mat
+Assets/Art/Character/NPC/Material/7_decal_1.0_0_0.mat  ->  Assets/Art/Character/NPC/Goku/Materials/7_decal_1.0_0_0.mat
+Assets/Art/Character/NPC/Material/5_hair_1.0_0_0.001.mat  ->  Assets/Art/Character/NPC/Goku/Materials/5_hair_1.0_0_0.001.mat
+Assets/Art/Character/NPC/Material/5_belt_1.0_0_0.001.mat  ->  Assets/Art/Character/NPC/Goku/Materials/5_belt_1.0_0_0.001.mat
+Assets/Art/Character/NPC/Material/5_skin_1.0_0_0.001.mat  ->  Assets/Art/Character/NPC/Goku/Materials/5_skin_1.0_0_0.001.mat
+Assets/Art/Character/NPC/Material/5_shoes_1.0_0_0.001.mat  ->  Assets/Art/Character/NPC/Goku/Materials/5_shoes_1.0_0_0.001.mat
+Assets/Art/Character/NPC/Material/5_face_1.0_0_0.001.mat  ->  Assets/Art/Character/NPC/Goku/Materials/5_face_1.0_0_0.001.mat
+Assets/Art/Character/NPC/Texture/T_0000_00_00_00_EYE_00X.png  ->  Assets/Art/Character/NPC/Goku/Textures/T_0000_00_00_00_EYE_00X.png
+Assets/Art/Character/NPC/Texture/Untitled57_20250325182154.png  ->  Assets/Art/Character/NPC/Goku/Textures/Untitled57_20250325182154.png
+Assets/Art/Character/NPC/Texture/Untitled58_20250325182948.png  ->  Assets/Art/Character/NPC/Goku/Textures/Untitled58_20250325182948.png
+Assets/Art/Character/NPC/Texture/T_0000_00_00_00_HIR_00X.png  ->  Assets/Art/Character/NPC/Goku/Textures/T_0000_00_00_00_HIR_00X.png
+Assets/Art/Character/NPC/Trump.fbx  ->  Assets/Art/Character/NPC/Trump/Trump.fbx
+Assets/Art/Character/NPC/Material/hair.mat  ->  Assets/Art/Character/NPC/Trump/Materials/hair.mat
+Assets/Art/Character/NPC/Texture/trump_dif_txt.psd  ->  Assets/Art/Character/NPC/Trump/trump_dif_txt.psd
+Assets/Art/Character/NPC/Material/hands.mat  ->  Assets/Art/Character/NPC/Trump/Materials/hands.mat
+Assets/Art/Character/NPC/Material/cloth.mat  ->  Assets/Art/Character/NPC/Trump/Materials/cloth.mat
+Assets/Art/Character/NPC/Material/tie.mat  ->  Assets/Art/Character/NPC/Trump/Materials/tie.mat
+Assets/Art/Character/NPC/Material/eyes.mat  ->  Assets/Art/Character/NPC/Trump/Materials/eyes.mat
+Assets/Art/Character/NPC/Material/face.mat  ->  Assets/Art/Character/NPC/Trump/Materials/face.mat
+Assets/Art/Character/NPC/Zanis.fbx  ->  Assets/Art/Character/NPC/Zanis/Zanis.fbx
+Assets/Animations/NPC/Zanis.controller  ->  Assets/Art/Character/NPC/Zanis/Zanis.controller
+Assets/Art/Character/NPC/Material/1298_DianWei_ShowVeryHigh.mat  ->  Assets/Art/Character/NPC/Zanis/Materials/1298_DianWei_ShowVeryHigh.mat
+Assets/Art/Character/NPC/Texture/1298_DianWei_N_512.png  ->  Assets/Art/Character/NPC/Zanis/Textures/1298_DianWei_N_512.png
+Assets/Art/Character/NPC/Texture/1298_DianWeiWeapon_N_512.png  ->  Assets/Art/Character/NPC/Zanis/Textures/1298_DianWeiWeapon_N_512.png
+Assets/Art/Character/NPC/Texture/EF_Tex12908wpbuff0101.png  ->  Assets/Art/Character/NPC/Zanis/Textures/EF_Tex12908wpbuff0101.png
+Assets/Art/Character/NPC/Texture/1298_DianWeiWeapon_D_512.png  ->  Assets/Art/Character/NPC/Zanis/Textures/1298_DianWeiWeapon_D_512.png
+Assets/Art/Character/NPC/Texture/1298_DianWei_D_512.png  ->  Assets/Art/Character/NPC/Zanis/Textures/1298_DianWei_D_512.png
+Assets/Art/Character/NPC/Material/1298_DianWeiWeapon_ShowVeryHigh.mat  ->  Assets/Art/Character/NPC/Zanis/Materials/1298_DianWeiWeapon_ShowVeryHigh.mat
+Assets/Art/Character/NPC/Material/EF_LCYJ_A_1298_Mask017.mat  ->  Assets/Art/Character/NPC/Zanis/Materials/EF_LCYJ_A_1298_Mask017.mat
+Assets/Art/Character/NPC/Material/EF_LCYJ_A_1298_Mask016.mat  ->  Assets/Art/Character/NPC/Zanis/Materials/EF_LCYJ_A_1298_Mask016.mat
+Assets/Art/Character/NPC/Material/1298_DianWeiWeapon2_ShowVeryHigh.mat  ->  Assets/Art/Character/NPC/Zanis/Materials/1298_DianWeiWeapon2_ShowVeryHigh.mat
+Assets/Art/Character/NPC/Material/1298_DianWeiWeaponEF_ShowVeryHigh 1.mat  ->  Assets/Art/Character/NPC/Zanis/Materials/1298_DianWeiWeaponEF_ShowVeryHigh 1.mat
+Assets/Animations/NPC/Armature_Idleshow_Base Layer.anim  ->  Assets/Art/Character/NPC/Zanis/Armature_Idleshow_Base Layer.anim
+Assets/Art/Character/NPC/Yubaba.blend  ->  Assets/Art/Character/NPC/Yubaba/Yubaba.blend
+Assets/Art/Character/NPC/Material/wire_134110008.mat  ->  Assets/Art/Character/NPC/Yubaba/Materials/wire_134110008.mat
+Assets/Art/Character/NPC/Material/wire_177028149.mat  ->  Assets/Art/Character/NPC/Yubaba/Materials/wire_177028149.mat
+Assets/Art/Character/NPC/Material/wire_224198087.mat  ->  Assets/Art/Character/NPC/Yubaba/Materials/wire_224198087.mat
+Assets/Art/Character/NPC/Texture/wire_134110008_baseColor.png  ->  Assets/Art/Character/NPC/Yubaba/Textures/wire_134110008_baseColor.png
+Assets/Art/Character/NPC/Texture/wire_177028149_baseColor.png  ->  Assets/Art/Character/NPC/Yubaba/Textures/wire_177028149_baseColor.png
+Assets/Art/Character/NPC/Texture/wire_224198087_baseColor.png  ->  Assets/Art/Character/NPC/Yubaba/Textures/wire_224198087_baseColor.png
+Assets/Art/Character/NPC/Zoro.blend  ->  Assets/Art/Character/NPC/Zoro/Zoro.blend
+Assets/Art/Character/NPC/Zoro Training.blend  ->  Assets/Art/Character/NPC/Zoro/Zoro Training.blend
+Assets/Art/Character/NPC/Zoro Tsunami.blend  ->  Assets/Art/Character/NPC/Zoro/Zoro Tsunami.blend
+Assets/Animations/NPC/ZoroTsunami.controller  ->  Assets/Art/Character/NPC/Zoro/Animations/ZoroTsunami.controller
+Assets/Animations/NPC/ZoroyTraining.controller  ->  Assets/Art/Character/NPC/Zoro/Animations/ZoroyTraining.controller
+Assets/Art/Character/NPC/Material/11027_Weapon.mat  ->  Assets/Art/Character/NPC/Zoro/11027_Weapon.mat
+Assets/Art/Character/NPC/Material/11027_01_Weapon.mat  ->  Assets/Art/Character/NPC/Zoro/11027_01_Weapon.mat
+Assets/Art/Character/NPC/Zoro/11027_Weapon_BC.png  ->  Assets/Art/Character/NPC/Zoro/Textures/11027_Weapon_BC.png
+Assets/Art/Character/NPC/Zoro/11027_Face_BC.png  ->  Assets/Art/Character/NPC/Zoro/Textures/11027_Face_BC.png
+Assets/Art/Character/NPC/Zoro/11027_01_Body_BC.png  ->  Assets/Art/Character/NPC/Zoro/Textures/11027_01_Body_BC.png
+Assets/Art/Character/NPC/Zoro/11027_Body_BC.png  ->  Assets/Art/Character/NPC/Zoro/Textures/11027_Body_BC.png
+Assets/Art/Character/NPC/Zoro/11027_01_Weapon_BC.png  ->  Assets/Art/Character/NPC/Zoro/Textures/11027_01_Weapon_BC.png
+Assets/Art/Character/NPC/Zoro/11027_02_Weapon_BC.png  ->  Assets/Art/Character/NPC/Zoro/Textures/11027_02_Weapon_BC.png
+Assets/Animations/NPC/3134_Low.anim  ->  Assets/Art/Character/NPC/Zoro/Animations/3134_Low.anim
+Assets/Animations/NPC/3051_Low.anim  ->  Assets/Art/Character/NPC/Zoro/Animations/3051_Low.anim
+Assets/Art/Character/NPC/Texture/11027_Weapon_baseColor.png  ->  Assets/Art/Character/NPC/Zoro/Textures/11027_Weapon_baseColor.png
+Assets/Art/Character/NPC/Texture/11027_01_Weapon_baseColor.png  ->  Assets/Art/Character/NPC/Zoro/Textures/11027_01_Weapon_baseColor.png
+Assets/Art/Props/bananaCat.fbx  ->  Assets/Art/Character/NPC/BananaCat/bananaCat.fbx
+Assets/Animations/NPC/banana.controller  ->  Assets/Art/Character/NPC/BananaCat/Animations/banana.controller
+Assets/Art/Props/material/heheBanana.mat  ->  Assets/Art/Character/NPC/BananaCat/heheBanana.mat
+Assets/Animations/NPC/bananaBones_lookAround.anim  ->  Assets/Art/Character/NPC/BananaCat/Animations/bananaBones_lookAround.anim
+Assets/Animations/NPC/bananaBones_sit.anim  ->  Assets/Art/Character/NPC/BananaCat/Animations/bananaBones_sit.anim
+Assets/Art/Props/textures/check_BaseColor.png  ->  Assets/Art/Character/NPC/BananaCat/check_BaseColor.png
+Assets/Art/Props/OngBaOlder.blend  ->  Assets/Art/Character/NPC/OngBaOlder/OngBaOlder.blend
+Assets/Art/Props/material/set1.mat  ->  Assets/Art/Character/NPC/OngBaOlder/Materials/set1.mat
+Assets/Art/Props/material/set4.mat  ->  Assets/Art/Character/NPC/OngBaOlder/Materials/set4.mat
+Assets/Art/Props/material/set3.mat  ->  Assets/Art/Character/NPC/OngBaOlder/Materials/set3.mat
+Assets/Art/Props/material/set5.mat  ->  Assets/Art/Character/NPC/OngBaOlder/Materials/set5.mat
+Assets/Art/Props/textures/set1_baseColor.png  ->  Assets/Art/Character/NPC/OngBaOlder/Textures/set1_baseColor.png
+Assets/Art/Props/textures/set4_baseColor.png  ->  Assets/Art/Character/NPC/OngBaOlder/Textures/set4_baseColor.png
+Assets/Art/Props/textures/set3_baseColor.png  ->  Assets/Art/Character/NPC/OngBaOlder/Textures/set3_baseColor.png
+Assets/Art/Props/textures/set5_baseColor.png  ->  Assets/Art/Character/NPC/OngBaOlder/Textures/set5_baseColor.png
+Assets/Animations/Chicken/Normal_Chicken.controller  ->  Assets/Art/Chicken/normal_chicken/Animations/Normal_Chicken.controller
+Assets/Animations/Chicken/CHICKEN_chicken_start_walk02.anim  ->  Assets/Art/Chicken/normal_chicken/Animations/CHICKEN_chicken_start_walk02.anim
+Assets/Animations/Chicken/CHICKEN_idle01.anim  ->  Assets/Art/Chicken/normal_chicken/Animations/CHICKEN_idle01.anim
+Assets/Animations/Chicken/CHICKEN_bounce_water.anim  ->  Assets/Art/Chicken/normal_chicken/Animations/CHICKEN_bounce_water.anim
+Assets/Animations/Chicken/CHICKEN_ref.anim  ->  Assets/Art/Chicken/normal_chicken/Animations/CHICKEN_ref.anim
+Assets/Animations/Chicken/CHICKEN_chicken_squat_cycle01.anim  ->  Assets/Art/Chicken/normal_chicken/Animations/CHICKEN_chicken_squat_cycle01.anim
+Assets/Animations/Chicken/CHICKEN_walk01_water.anim  ->  Assets/Art/Chicken/normal_chicken/Animations/CHICKEN_walk01_water.anim
+Assets/Animations/Chicken/CHICKEN_idle01_water.anim  ->  Assets/Art/Chicken/normal_chicken/Animations/CHICKEN_idle01_water.anim
+Assets/Animations/Chicken/CHICKEN_bunnyhop.anim  ->  Assets/Art/Chicken/normal_chicken/Animations/CHICKEN_bunnyhop.anim
+Assets/Animations/Chicken/CHICKEN_flap.anim  ->  Assets/Art/Chicken/normal_chicken/Animations/CHICKEN_flap.anim
+Assets/Animations/Chicken/CHICKEN_peck_idle2.anim  ->  Assets/Art/Chicken/normal_chicken/Animations/CHICKEN_peck_idle2.anim
+Assets/Animations/Chicken/CHICKEN_run01flap.anim  ->  Assets/Art/Chicken/normal_chicken/Animations/CHICKEN_run01flap.anim
+Assets/Animations/Chicken/CHICKEN_bounce.anim  ->  Assets/Art/Chicken/normal_chicken/Animations/CHICKEN_bounce.anim
+Assets/Animations/Chicken/CHICKEN_walk01.anim  ->  Assets/Art/Chicken/normal_chicken/Animations/CHICKEN_walk01.anim
+Assets/Animations/Chicken/CHICKEN_chicken_scared01.anim  ->  Assets/Art/Chicken/normal_chicken/Animations/CHICKEN_chicken_scared01.anim
+Assets/Animations/Chicken/CHICKEN_run01flap_water.anim  ->  Assets/Art/Chicken/normal_chicken/Animations/CHICKEN_run01flap_water.anim
+Assets/Animations/Chicken/CHICKEN_flap_falling.anim  ->  Assets/Art/Chicken/normal_chicken/Animations/CHICKEN_flap_falling.anim
+Assets/Animations/Chicken/CHICKEN_chicken_squat_cycle02.anim  ->  Assets/Art/Chicken/normal_chicken/Animations/CHICKEN_chicken_squat_cycle02.anim
+Assets/Animations/Chicken/CHICKEN_chicken_squat_start.anim  ->  Assets/Art/Chicken/normal_chicken/Animations/CHICKEN_chicken_squat_start.anim
+Assets/Animations/Chicken/CHICKEN_chicken_scared02.anim  ->  Assets/Art/Chicken/normal_chicken/Animations/CHICKEN_chicken_scared02.anim
+Assets/Animations/Chicken/CHICKEN_run01.anim  ->  Assets/Art/Chicken/normal_chicken/Animations/CHICKEN_run01.anim
+Assets/Art/Chicken/textures/chicken_catalan_tan_metallicRoughness.png  ->  Assets/Art/Chicken/normal_chicken/chicken_catalan_tan_metallicRoughness.png
+Assets/Art/Chicken/textures/chicken_catalan_tan_baseColor.png  ->  Assets/Art/Chicken/normal_chicken/chicken_catalan_tan_baseColor.png
+Assets/Art/Models/ChienKe_blend.blend  ->  Assets/Art/Chicken/ChienKe/ChienKe_blend.blend
+Assets/Art/Models/Chicken.mat  ->  Assets/Art/Chicken/ChienKe/Chicken.mat
+Assets/Art/Textures/texture_chien_ke.png  ->  Assets/Art/Chicken/ChienKe/texture_chien_ke.png
+Assets/Art/Models/GuguGaga.blend  ->  Assets/Art/Chicken/GuguGaga/GuguGaga.blend
+Assets/Art/Models/GuguGaga.mat  ->  Assets/Art/Chicken/GuguGaga/GuguGaga.mat
+Assets/Art/Textures/texture_gugu_gaga.png  ->  Assets/Art/Chicken/GuguGaga/texture_gugu_gaga.png
+Assets/Art/Models/Rooster.blend  ->  Assets/Art/Chicken/Rooster/Rooster.blend
+Assets/Art/Textures/Rooster 1.png  ->  Assets/Art/Chicken/Rooster/Rooster 1.png
+Assets/Art/Chicken/source/Chicken Warrior with motions.fbx  ->  Assets/Art/Chicken/ChickenWarrior/Chicken Warrior with motions.fbx
+Assets/Animations/ChickenWarrior/ChickenWarrior.controller  ->  Assets/Art/Chicken/ChickenWarrior/ChickenWarrior.controller
+Assets/Art/Chicken/source/Material_0 1.mat  ->  Assets/Art/Chicken/ChickenWarrior/Material_0 1.mat
+Assets/Art/Chicken/textures/Material_0_Diffuse.jpg  ->  Assets/Art/Chicken/ChickenWarrior/Textures/Material_0_Diffuse.jpg
+Assets/Art/Chicken/textures/Material_0_Normal 1.png  ->  Assets/Art/Chicken/ChickenWarrior/Textures/Material_0_Normal 1.png
+Assets/Art/Chicken/textures/Material_0_Specular 1.png  ->  Assets/Art/Chicken/ChickenWarrior/Textures/Material_0_Specular 1.png
+Assets/Art/Chicken/source/jacketBlocky.fbx  ->  Assets/Art/Chicken/JacketBlocky/jacketBlocky.fbx
+Assets/Animations/JacketBlocky/JacketBlocky.controller  ->  Assets/Art/Chicken/JacketBlocky/Animations/JacketBlocky.controller
+Assets/Art/Chicken/textures/t_BlockyJacket.png  ->  Assets/Art/Chicken/JacketBlocky/t_BlockyJacket.png
+Assets/Animations/JacketBlocky/JacketBlocky_Punch_Cross.anim  ->  Assets/Art/Chicken/JacketBlocky/Animations/JacketBlocky_Punch_Cross.anim
+Assets/Animations/JacketBlocky/JacketBlocky_Punch_Jab.anim  ->  Assets/Art/Chicken/JacketBlocky/Animations/JacketBlocky_Punch_Jab.anim
+Assets/Animations/JacketBlocky/JacketBlocky_Idle.anim  ->  Assets/Art/Chicken/JacketBlocky/Animations/JacketBlocky_Idle.anim
+Assets/Animations/JacketBlocky/JacketBlocky_Run.anim  ->  Assets/Art/Chicken/JacketBlocky/Animations/JacketBlocky_Run.anim
+Assets/Animations/JacketBlocky/JacketBlocky_Death.anim  ->  Assets/Art/Chicken/JacketBlocky/Animations/JacketBlocky_Death.anim
+Assets/Animations/JacketBlocky/JacketBlocky_Hit.anim  ->  Assets/Art/Chicken/JacketBlocky/Animations/JacketBlocky_Hit.anim
+Assets/Art/Chicken/source/ROCKY.fbx  ->  Assets/Art/Chicken/Rocky/ROCKY.fbx
+Assets/Art/Chicken/textures/roc_mth1.png  ->  Assets/Art/Chicken/Rocky/Textures/roc_mth1.png
+Assets/Art/Chicken/textures/roc_tlf1.png  ->  Assets/Art/Chicken/Rocky/Textures/roc_tlf1.png
+Assets/Art/Chicken/textures/roc_bfth.png  ->  Assets/Art/Chicken/Rocky/Textures/roc_bfth.png
+Assets/Art/Chicken/textures/roc_scf1.png  ->  Assets/Art/Chicken/Rocky/Textures/roc_scf1.png
+Assets/Art/Chicken/textures/roc_nfth.png  ->  Assets/Art/Chicken/Rocky/Textures/roc_nfth.png
+Assets/Art/Chicken/textures/roc_leg1.png  ->  Assets/Art/Chicken/Rocky/Textures/roc_leg1.png
+Assets/Art/Chicken/textures/roc_hfth.png  ->  Assets/Art/Chicken/Rocky/Textures/roc_hfth.png
+Assets/Art/Chicken/textures/rocky_eyeopen.png  ->  Assets/Art/Chicken/Rocky/Textures/rocky_eyeopen.png
+Assets/Art/UI/bottle/source/PlasticBottle1_LP.fbx  ->  Assets/Art/Items/PlasticBottle/PlasticBottle1_LP.fbx
+Assets/Art/Materials/ScrapReal_PlasticBottle.mat  ->  Assets/Art/Items/PlasticBottle/ScrapReal_PlasticBottle.mat
+Assets/Art/UI/bottle/textures/PlasticBottle1_LP_Mat_Bottle1_AlbedoTransp.png  ->  Assets/Art/Items/PlasticBottle/PlasticBottle1_LP_Mat_Bottle1_AlbedoTransp.png
+Assets/Art/UI/box/source/CardboardBox_LP.fbx  ->  Assets/Art/Items/CardboardBox/CardboardBox_LP.fbx
+Assets/Art/Materials/ScrapReal_Cardboard.mat  ->  Assets/Art/Items/CardboardBox/ScrapReal_Cardboard.mat
+Assets/Art/UI/box/textures/CardboardBox_LP_lambert1_AlbedoTransparency.png  ->  Assets/Art/Items/CardboardBox/CardboardBox_LP_lambert1_AlbedoTransparency.png
+Assets/Art/UI/water can/source/Watering_can_lp.fbx  ->  Assets/Art/Items/WateringCan/Watering_can_lp.fbx
+Assets/Art/Materials/ScrapReal_WateringCan.mat  ->  Assets/Art/Items/WateringCan/ScrapReal_WateringCan.mat
+Assets/Art/UI/water can/textures/watering_can_Normal_OpenGL.jpg  ->  Assets/Art/Items/WateringCan/Textures/watering_can_Normal_OpenGL.jpg
+Assets/Art/UI/water can/textures/watering_can_Roughness.jpg  ->  Assets/Art/Items/WateringCan/Textures/watering_can_Roughness.jpg
+Assets/Art/UI/water can/textures/watering_can_Base_color.jpg  ->  Assets/Art/Items/WateringCan/Textures/watering_can_Base_color.jpg
+Assets/Art/UI/water can/textures/watering_can_Metallic.jpg  ->  Assets/Art/Items/WateringCan/Textures/watering_can_Metallic.jpg
+Assets/Art/UI/plant/source/MonsterPlantv23.fbx  ->  Assets/Art/Items/MonsterPlant/MonsterPlantv23.fbx
+Assets/Art/Materials/QuestPlant_Leaves.mat  ->  Assets/Art/Items/MonsterPlant/QuestPlant_Leaves.mat
+Assets/Art/Materials/QuestPlant_Pot.mat  ->  Assets/Art/Items/MonsterPlant/QuestPlant_Pot.mat
+Assets/Art/UI/plant/textures/Plant_Normal_OpenGL.png  ->  Assets/Art/Items/MonsterPlant/Textures/Plant_Normal_OpenGL.png
+Assets/Art/UI/plant/textures/Pot_Base_Color.png  ->  Assets/Art/Items/MonsterPlant/Textures/Pot_Base_Color.png
+Assets/Art/UI/plant/textures/Pot_Normal_OpenGL.png  ->  Assets/Art/Items/MonsterPlant/Textures/Pot_Normal_OpenGL.png
+Assets/Art/UI/plant/textures/Plant_Base_Color.png  ->  Assets/Art/Items/MonsterPlant/Textures/Plant_Base_Color.png
+Assets/Art/Props/big Weights.fbx  ->  Assets/Art/Props/Training/BigWeights/big Weights.fbx
+Assets/Art/Props/material/mtl_chr_prop1086_00.mat  ->  Assets/Art/Props/Training/BigWeights/mtl_chr_prop1086_00.mat
+Assets/Art/Props/textures/tex_chr_prop1086_00_diff.png  ->  Assets/Art/Props/Training/BigWeights/tex_chr_prop1086_00_diff.png
+Assets/Art/Props/punchingbag chainclean stitches.fbx  ->  Assets/Art/Props/Training/PunchingBag/punchingbag chainclean stitches.fbx
+Assets/Art/Props/material/maetlchains.mat  ->  Assets/Art/Props/Training/PunchingBag/maetlchains.mat
+Assets/Art/Props/textures/FINAL PUNCHING BAG MODEL FBX_lambert1_BaseColor 1.png  ->  Assets/Art/Props/Training/PunchingBag/Textures/FINAL PUNCHING BAG MODEL FBX_lambert1_BaseColor 1.png
+Assets/Art/Props/textures/FINAL PUNCHING BAG MODEL FBX_lambert1_Height.png  ->  Assets/Art/Props/Training/PunchingBag/Textures/FINAL PUNCHING BAG MODEL FBX_lambert1_Height.png
+Assets/Art/Props/material/punchingbag.mat  ->  Assets/Art/Props/Training/PunchingBag/punchingbag.mat
+Assets/Art/Props/textures/FINAL PUNCHING BAG MODEL FBX_lambert1_Roughness.png  ->  Assets/Art/Props/Training/PunchingBag/Textures/FINAL PUNCHING BAG MODEL FBX_lambert1_Roughness.png
+Assets/Art/UI/Training/treadmill.fbx  ->  Assets/Art/Props/Training/Treadmill/treadmill.fbx
+Assets/Art/UI/Training/treadmill/ESTEIRA_X___TELA_2.png  ->  Assets/Art/Props/Training/Treadmill/Textures/ESTEIRA_X___TELA_2.png
+Assets/Art/UI/Training/treadmill/ESTEIRA_X___TELA.png  ->  Assets/Art/Props/Training/Treadmill/Textures/ESTEIRA_X___TELA.png
+Assets/Art/UI/Training/treadmill/ESTEIRA_X___ADESIVO_LATERAL.png  ->  Assets/Art/Props/Training/Treadmill/Textures/ESTEIRA_X___ADESIVO_LATERAL.png
+Assets/Art/UI/Training/treadmill/ESTEIRA_X___ADESIVO_LATERAL1.png  ->  Assets/Art/Props/Training/Treadmill/Textures/ESTEIRA_X___ADESIVO_LATERAL1.png
+Assets/Art/Props/bread.fbx  ->  Assets/Art/Props/Food/Bread/bread.fbx
+Assets/Art/Props/material/lambert2.mat  ->  Assets/Art/Props/Food/Bread/lambert2.mat
+Assets/Art/Props/textures/BreadItems_Diff.png  ->  Assets/Art/Props/Food/Bread/BreadItems_Diff.png
+Assets/Art/Props/MoonCake.blend  ->  Assets/Art/Props/Food/MoonCake/MoonCake.blend
+Assets/Art/Props/textures/Material.001_baseColor.png  ->  Assets/Art/Props/Food/MoonCake/Textures/Material.001_baseColor.png
+Assets/Art/Props/textures/Material.002_baseColor.jpeg  ->  Assets/Art/Props/Food/MoonCake/Textures/Material.002_baseColor.jpeg
+Assets/Art/Props/textures/Material_baseColor.png  ->  Assets/Art/Props/Food/MoonCake/Textures/Material_baseColor.png
+Assets/Art/Props/source/Sprinkle_Cake.blend  ->  Assets/Art/Props/Food/SprinkleCake/Sprinkle_Cake.blend
+Assets/Art/Props/source/Material/Sprinkle_Blue.mat  ->  Assets/Art/Props/Food/SprinkleCake/Materials/Sprinkle_Blue.mat
+Assets/Art/Props/source/Material/SprinkleLong_Cream.mat  ->  Assets/Art/Props/Food/SprinkleCake/Materials/SprinkleLong_Cream.mat
+Assets/Art/Props/source/Material/SprinkleBall_Orange.mat  ->  Assets/Art/Props/Food/SprinkleCake/Materials/SprinkleBall_Orange.mat
+Assets/Art/Props/source/Material/OUTLINE_Plate.mat  ->  Assets/Art/Props/Food/SprinkleCake/Materials/OUTLINE_Plate.mat
+Assets/Art/Props/source/Material/SprinkleBall_Cream.mat  ->  Assets/Art/Props/Food/SprinkleCake/Materials/SprinkleBall_Cream.mat
+Assets/Art/Props/source/Material/SprinkleLong_Blue.mat  ->  Assets/Art/Props/Food/SprinkleCake/Materials/SprinkleLong_Blue.mat
+Assets/Art/Props/source/Material/Sprinkle_Green.mat  ->  Assets/Art/Props/Food/SprinkleCake/Materials/Sprinkle_Green.mat
+Assets/Art/Props/source/Material/SprinkleLong_Red.mat  ->  Assets/Art/Props/Food/SprinkleCake/Materials/SprinkleLong_Red.mat
+Assets/Art/Props/source/Material/Sparklies.mat  ->  Assets/Art/Props/Food/SprinkleCake/Materials/Sparklies.mat
+Assets/Art/Props/source/Material/SprinkleLong_Orange.mat  ->  Assets/Art/Props/Food/SprinkleCake/Materials/SprinkleLong_Orange.mat
+Assets/Art/Props/source/Material/SprinkleBall_Red.mat  ->  Assets/Art/Props/Food/SprinkleCake/Materials/SprinkleBall_Red.mat
+Assets/Art/Props/source/Material/SprinkleLong_Green.mat  ->  Assets/Art/Props/Food/SprinkleCake/Materials/SprinkleLong_Green.mat
+Assets/Art/Props/source/Material/Plate.mat  ->  Assets/Art/Props/Food/SprinkleCake/Materials/Plate.mat
+Assets/Art/Props/source/Material/Cake.mat  ->  Assets/Art/Props/Food/SprinkleCake/Materials/Cake.mat
+Assets/Art/Props/source/Material/OUTLINE_Cake.mat  ->  Assets/Art/Props/Food/SprinkleCake/Materials/OUTLINE_Cake.mat
+Assets/Art/Props/textures/Sprinkle_Blue 512p.png  ->  Assets/Art/Props/Food/SprinkleCake/Textures/Sprinkle_Blue 512p.png
+Assets/Art/Props/textures/SprinkleLong Cream 512p.png  ->  Assets/Art/Props/Food/SprinkleCake/Textures/SprinkleLong Cream 512p.png
+Assets/Art/Props/textures/SprinkleBall Orange 512p.png  ->  Assets/Art/Props/Food/SprinkleCake/Textures/SprinkleBall Orange 512p.png
+Assets/Art/Props/textures/SprinkleBall Cream 512p.png  ->  Assets/Art/Props/Food/SprinkleCake/Textures/SprinkleBall Cream 512p.png
+Assets/Art/Props/textures/SprinkleLong Blue 512p.png  ->  Assets/Art/Props/Food/SprinkleCake/Textures/SprinkleLong Blue 512p.png
+Assets/Art/Props/textures/Sprinkle_Green 512p.png  ->  Assets/Art/Props/Food/SprinkleCake/Textures/Sprinkle_Green 512p.png
+Assets/Art/Props/textures/SprinkleLong_Red 512p.png  ->  Assets/Art/Props/Food/SprinkleCake/Textures/SprinkleLong_Red 512p.png
+Assets/Art/Props/textures/Sparklies.png  ->  Assets/Art/Props/Food/SprinkleCake/Textures/Sparklies.png
+Assets/Art/Props/textures/SprinkleLong Orange 512p.png  ->  Assets/Art/Props/Food/SprinkleCake/Textures/SprinkleLong Orange 512p.png
+Assets/Art/Props/textures/SprinkleBall Red 512p.png  ->  Assets/Art/Props/Food/SprinkleCake/Textures/SprinkleBall Red 512p.png
+Assets/Art/Props/textures/SprinkleLong Green 512p.png  ->  Assets/Art/Props/Food/SprinkleCake/Textures/SprinkleLong Green 512p.png
+Assets/Art/Props/textures/Plate.png  ->  Assets/Art/Props/Food/SprinkleCake/Textures/Plate.png
+Assets/Art/Props/textures/Cake.png  ->  Assets/Art/Props/Food/SprinkleCake/Textures/Cake.png
+Assets/Art/Props/police+truck.fbx  ->  Assets/Art/Props/Vehicles/PoliceTruck/police+truck.fbx
+Assets/Art/Props/material/Material.mat  ->  Assets/Art/Props/Vehicles/PoliceTruck/Materials/Material.mat
+Assets/Art/Props/material/Material.010.mat  ->  Assets/Art/Props/Vehicles/PoliceTruck/Materials/Material.010.mat
+Assets/Art/Props/material/WoodFineDark004_2K.001.mat  ->  Assets/Art/Props/Vehicles/PoliceTruck/Materials/WoodFineDark004_2K.001.mat
+Assets/Art/Props/material/Material.001.mat  ->  Assets/Art/Props/Vehicles/PoliceTruck/Materials/Material.001.mat
+Assets/Art/Props/material/Material.019.mat  ->  Assets/Art/Props/Vehicles/PoliceTruck/Materials/Material.019.mat
+Assets/Art/Props/material/Material.016.mat  ->  Assets/Art/Props/Vehicles/PoliceTruck/Materials/Material.016.mat
+Assets/Art/Props/material/Material.012.mat  ->  Assets/Art/Props/Vehicles/PoliceTruck/Materials/Material.012.mat
+Assets/Art/Props/material/xe.mat  ->  Assets/Art/Props/Vehicles/PoliceTruck/Materials/xe.mat
+Assets/Art/Props/material/Material.004.mat  ->  Assets/Art/Props/Vehicles/PoliceTruck/Materials/Material.004.mat
+Assets/Art/Props/material/Material.003.mat  ->  Assets/Art/Props/Vehicles/PoliceTruck/Materials/Material.003.mat
+Assets/Art/Props/material/Material.007.mat  ->  Assets/Art/Props/Vehicles/PoliceTruck/Materials/Material.007.mat
+Assets/Art/Props/material/Material.022.mat  ->  Assets/Art/Props/Vehicles/PoliceTruck/Materials/Material.022.mat
+Assets/Art/Props/material/Material.009.mat  ->  Assets/Art/Props/Vehicles/PoliceTruck/Materials/Material.009.mat
+Assets/Art/Props/material/Material.006.mat  ->  Assets/Art/Props/Vehicles/PoliceTruck/Materials/Material.006.mat
+Assets/Art/Props/material/Material.005.mat  ->  Assets/Art/Props/Vehicles/PoliceTruck/Materials/Material.005.mat
+Assets/Art/Props/material/Material.014.mat  ->  Assets/Art/Props/Vehicles/PoliceTruck/Materials/Material.014.mat
+Assets/Art/Props/material/Material.015.mat  ->  Assets/Art/Props/Vehicles/PoliceTruck/Materials/Material.015.mat
+Assets/Art/Props/material/WoodFineDark004_2K.mat  ->  Assets/Art/Props/Vehicles/PoliceTruck/Materials/WoodFineDark004_2K.mat
+Assets/Art/Props/material/Material.013.mat  ->  Assets/Art/Props/Vehicles/PoliceTruck/Materials/Material.013.mat
+Assets/Art/Props/material/Material.002.mat  ->  Assets/Art/Props/Vehicles/PoliceTruck/Materials/Material.002.mat
+Assets/Art/Props/material/Material.011.mat  ->  Assets/Art/Props/Vehicles/PoliceTruck/Materials/Material.011.mat
+Assets/Art/Props/material/Material.008.mat  ->  Assets/Art/Props/Vehicles/PoliceTruck/Materials/Material.008.mat
+Assets/Art/Props/material/Material.017.mat  ->  Assets/Art/Props/Vehicles/PoliceTruck/Materials/Material.017.mat
+Assets/Art/Props/GoingMerry.blend  ->  Assets/Art/Props/Vehicles/GoingMerry/GoingMerry.blend
+Assets/Art/Props/material/None.mat  ->  Assets/Art/Props/Vehicles/GoingMerry/None.mat
+Assets/Art/Props/textures/None_baseColor.png  ->  Assets/Art/Props/Vehicles/GoingMerry/None_baseColor.png
+Assets/Art/Props/CoVietNam.blend  ->  Assets/Art/Props/VanHoaVN/CoVietNam/CoVietNam.blend
+Assets/Animations/Flag.controller  ->  Assets/Art/Props/VanHoaVN/CoVietNam/Flag.controller
+Assets/Art/Props/material/brazil_0.mat  ->  Assets/Art/Props/VanHoaVN/CoVietNam/brazil_0.mat
+Assets/Art/Props/material/brazil.mat  ->  Assets/Art/Props/VanHoaVN/CoVietNam/brazil.mat
+Assets/Animations/flag.anim  ->  Assets/Art/Props/VanHoaVN/CoVietNam/flag.anim
+Assets/Art/Props/textures/brazil_0_baseColor.png  ->  Assets/Art/Props/VanHoaVN/CoVietNam/brazil_0_baseColor.png
+Assets/Art/Props/NonLa.fbx  ->  Assets/Art/Props/VanHoaVN/NonLa/NonLa.fbx
+Assets/Art/Props/material/cay.mat  ->  Assets/Art/Props/VanHoaVN/NonLa/Materials/cay.mat
+Assets/Art/Props/material/fRONT.mat  ->  Assets/Art/Props/VanHoaVN/NonLa/Materials/fRONT.mat
+Assets/Art/Props/material/BACK.mat  ->  Assets/Art/Props/VanHoaVN/NonLa/Materials/BACK.mat
+Assets/Art/Props/textures/Front_BC.jpg  ->  Assets/Art/Props/VanHoaVN/NonLa/Front_BC.jpg
+Assets/Art/Props/VN.obj  ->  Assets/Art/Props/VanHoaVN/VNHelmet/VN.obj
+Assets/Art/Props/material/Vietnam_VT_HelmetShapeMat.mat  ->  Assets/Art/Props/VanHoaVN/VNHelmet/Vietnam_VT_HelmetShapeMat.mat
+Assets/Art/Props/textures/Vietnam_VT_Helmet.tga.png  ->  Assets/Art/Props/VanHoaVN/VNHelmet/Vietnam_VT_Helmet.tga.png
+Assets/Art/Props/Vietnamese Coin.fbx  ->  Assets/Art/Props/VanHoaVN/VietnameseCoin/Vietnamese Coin.fbx
+Assets/Art/Props/material/Material.002 1.mat  ->  Assets/Art/Props/VanHoaVN/VietnameseCoin/Material.002 1.mat
+Assets/Art/Props/material/Material.001 1.mat  ->  Assets/Art/Props/VanHoaVN/VietnameseCoin/Material.001 1.mat
+Assets/Art/Props/textures/Vietnamese Coin.jpg  ->  Assets/Art/Props/VanHoaVN/VietnameseCoin/Vietnamese Coin.jpg
+Assets/Art/Props/VanHoaVN/source/vegetable stands.fbx  ->  Assets/Art/Props/VanHoaVN/VegetableStands/vegetable stands.fbx
+Assets/Art/Props/VanHoaVN/source/Vietnamese Lantern.fbx  ->  Assets/Art/Props/VanHoaVN/VietnameseLantern/Vietnamese Lantern.fbx
+Assets/Art/Props/bed.fbx  ->  Assets/Art/Props/Decor/StoryBed/bed.fbx
+Assets/Art/Props/cat.fbx  ->  Assets/Art/Props/Decor/StoryBed/cat.fbx
+Assets/Art/Props/material/material_0.mat  ->  Assets/Art/Props/Decor/StoryBed/material_0.mat
+Assets/Art/Props/textures/maxwell_baseColor.png  ->  Assets/Art/Props/Decor/StoryBed/maxwell_baseColor.png
+Assets/Art/Props/textures/material_0_baseColor.png  ->  Assets/Art/Props/Decor/StoryBed/material_0_baseColor.png
+Assets/Art/Props/GheNhua.blend  ->  Assets/Art/Props/Decor/GheNhua/GheNhua.blend
+Assets/Art/Props/textures/Layer0_001_baseColor.jpeg  ->  Assets/Art/Props/Decor/GheNhua/Layer0_001_baseColor.jpeg
+Assets/Art/Props/source/doggy_sp.blend  ->  Assets/Art/Props/Decor/Doggy/doggy_sp.blend
+Assets/Art/Props/source/Material/Material.001.mat  ->  Assets/Art/Props/Decor/Doggy/Material.001.mat
+Assets/Art/Props/textures/doggy_sp_DefaultMaterial_BaseColor.png  ->  Assets/Art/Props/Decor/Doggy/doggy_sp_DefaultMaterial_BaseColor.png
+Assets/Art/Textures/TL_RicePaddy.terrainlayer  ->  Assets/Environment/Terrain/Layers/TL_RicePaddy.terrainlayer
+Assets/Art/Textures/TL_VillageDirt.terrainlayer  ->  Assets/Environment/Terrain/Layers/TL_VillageDirt.terrainlayer
+Assets/Art/Textures/TL_VillageGrass.terrainlayer  ->  Assets/Environment/Terrain/Layers/TL_VillageGrass.terrainlayer
+Assets/Art/Textures/Village_Grass.png  ->  Assets/Environment/Terrain/Layers/Village_Grass.png
+Assets/Animations/Chicken/Sui.anim  ->  Assets/Animations/FunnyChicken/Sui.anim
+Assets/Animations/Chicken/pushweight.anim  ->  Assets/Animations/FunnyChicken/pushweight.anim
+[FOLDER] Assets/Art/Character/OngBaBanThan  ->  Assets/Art/Character/NPC/OngBaBanThan
+[FOLDER] Assets/Art/Equipment  ->  Assets/Art/Items/Equipment
+[FOLDER] Assets/Art/ui_art  ->  Assets/Art/UI/ui_art
+[FOLDER] Assets/Art/Icons  ->  Assets/Art/UI/Icons
+[EMPTY FOLDER] Assets/Animations/ChickenWarrior  ->  Assets/Delete/_EmptyFolders_Reorg/Animations__ChickenWarrior
+[EMPTY FOLDER] Assets/Animations/JacketBlocky  ->  Assets/Delete/_EmptyFolders_Reorg/Animations__JacketBlocky
+[EMPTY FOLDER] Assets/Art/Models  ->  Assets/Delete/_EmptyFolders_Reorg/Art__Models
+[EMPTY FOLDER] Assets/Art/Props/material  ->  Assets/Delete/_EmptyFolders_Reorg/Art__Props__material
+[EMPTY FOLDER] Assets/Art/Props/VanHoaVN/source  ->  Assets/Delete/_EmptyFolders_Reorg/Art__Props__VanHoaVN__source
+[EMPTY FOLDER] Assets/Art/Textures  ->  Assets/Delete/_EmptyFolders_Reorg/Art__Textures
+[EMPTY FOLDER] Assets/Art/UI/bottle  ->  Assets/Delete/_EmptyFolders_Reorg/Art__UI__bottle
+[EMPTY FOLDER] Assets/Art/UI/box  ->  Assets/Delete/_EmptyFolders_Reorg/Art__UI__box
+[EMPTY FOLDER] Assets/Art/UI/plant  ->  Assets/Delete/_EmptyFolders_Reorg/Art__UI__plant
+[EMPTY FOLDER] Assets/Art/UI/Training  ->  Assets/Delete/_EmptyFolders_Reorg/Art__UI__Training
+[EMPTY FOLDER] Assets/Art/UI/water can  ->  Assets/Delete/_EmptyFolders_Reorg/Art__UI__water can

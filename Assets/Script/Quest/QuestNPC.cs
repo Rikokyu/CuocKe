@@ -22,11 +22,23 @@ public class QuestNPC : MonoBehaviour
 
 
     [Header("Interaction")]
-    [SerializeField, Min(0.5f)] float interactionDistance = 3f;
+    [SerializeField, Min(0.5f)] float interactionDistance = 4f;
     [SerializeField] KeyCode interactKey = KeyCode.E;
     [SerializeField] string promptText = "Nhấn E để nói chuyện";
     [Tooltip("Only offer the quest after the first battle was lost (an already started quest stays available).")]
     [SerializeField] bool requireFirstBattleLoss = true;
+    [Tooltip("Optional. When set, this NPC offers nothing until that quest is Completed (an already started quest stays available). Used to keep the money / training quests closed until the rematch with the friend is won.")]
+    [SerializeField] QuestDefinition requiredCompletedQuest;
+    [Tooltip("Optional. Quests this NPC reminds about and pays, but NEVER offers (they are started by the story, e.g. the delivery that starts when the chicken is taken back). While such a quest is NotStarted the NPC ignores it.")]
+    [SerializeField] QuestDefinition[] startedByStory;
+    [Tooltip("Optional. Quests in 'Started By Story' are paid only after THIS quest is Completed (e.g. Bà pays the delivery only after the friend's fight is over). Before that she says 'Pay Later Lines' and pays nothing.")]
+    [SerializeField] QuestDefinition storyPayAfterCompleted;
+    [SerializeField, TextArea(2, 4)] string[] payLaterLines =
+    {
+        "Cháu giao hàng xong rồi à? Giỏi lắm! Nhưng lo xong chuyện với thằng bạn đã, rồi quay lại đây bà trả công nhé."
+    };
+    [Tooltip("Optional. This NPC also offers nothing until ALL of these quests are Completed (in addition to 'Required Completed Quest'). An already started quest stays available.")]
+    [SerializeField] QuestDefinition[] alsoRequiredCompletedQuests;
     [Tooltip("Optional. If empty, the GameObject tagged 'Player' is used.")]
     [SerializeField] Transform player;
     [Tooltip("Optional. Rotated toward the player when a conversation starts.")]
@@ -49,7 +61,7 @@ public class QuestNPC : MonoBehaviour
     };
     [SerializeField, TextArea(2, 4)] string[] readyLines =
     {
-        "Đủ {1} món rồi à? Giỏi lắm! Tiền công của cậu là {2} tiền."
+        "Đủ {1} món rồi à? Giỏi lắm! Tiền công của cậu là {2} VNĐ."
     };
     [SerializeField, TextArea(2, 4)] string[] completedLines =
     {
@@ -59,7 +71,7 @@ public class QuestNPC : MonoBehaviour
     [SerializeField, TextArea(2, 4)] string[] idleLines;
     
 [SerializeField] string acceptLabel = "Nhận nhiệm vụ";
-    [SerializeField] string claimLabel = "Nhận tiền công (+{2})";
+    [SerializeField] string claimLabel = "Nhận tiền công (+{2} VNĐ)";
 
     bool promptShown;
 
@@ -72,15 +84,15 @@ public class QuestNPC : MonoBehaviour
         }
 
         if (player == null) Debug.LogError("[QuestNPC] No player assigned and no GameObject tagged 'Player' found.", this);
-        if (quest == null || questManager == null || dialogue == null || prompt == null)
+        if (questManager == null || dialogue == null || prompt == null)
             Debug.LogError("[QuestNPC] Quest / QuestManager / DialogueUI / InteractionPromptUI reference missing.", this);
     }
 
 void Update()
     {
-        if (player == null || quest == null || questManager == null || dialogue == null) return;
+        if (player == null || questManager == null || dialogue == null) return;
 
-        bool canInteract = IsPlayerInRange() && CanTalk() && !dialogue.IsOpen && !IsInventoryOpen();
+        bool canInteract = IsPlayerInRange() && CanTalk() && !dialogue.IsOpen && !IsInventoryOpen() && InteractObject.IsAimed(this);
         SetPromptVisible(canInteract);
 
         if (canInteract && Input.GetKeyDown(interactKey))
@@ -88,13 +100,51 @@ void Update()
     }
 
     /// <summary>Opens the dialogue that matches the quest state. Returns false if it cannot be opened right now.</summary>
-public bool Interact()
+public bool Interact() { return Interact(false); }
+
+    /// <summary>
+    /// Same as Interact(). skipLottery = true is used by the lottery dialogue's "Nói chuyện khác" choice, so the player can still
+    /// reach the normal quest talk of MrBeast while holding lottery tickets.
+    /// </summary>
+    public bool Interact(bool skipLottery)
     {
-        if (quest == null || questManager == null || dialogue == null) return false;
+        if (questManager == null || dialogue == null) return false;
         if (dialogue.IsOpen) return false;
 
+        // MrBeast with lottery tickets in the bag: redeem offer first (LotteryRedeem). False for every other NPC / moment.
+        if (!skipLottery && LotteryRedeem.Instance != null && LotteryRedeem.Instance.TryHandle(this))
+        {
+            SetPromptVisible(false);
+            FacePlayer();
+            return true;
+        }
+
         // Morning after the garden quest: Bà answers 'where is my chicken' (MissingChickenStory). False for every other NPC / moment.
+        // After the watering: Bà only points to Ông (GardenFlowStory). False for every other NPC / moment.
+        if (GardenFlowStory.Instance != null && GardenFlowStory.Instance.TryHandleGrandparent(transform))
+        {
+            SetPromptVisible(false);
+            FacePlayer();
+            return true;
+        }
+
         if (MissingChickenStory.Instance != null && MissingChickenStory.Instance.TryHandleGrandparent(transform))
+        {
+            SetPromptVisible(false);
+            FacePlayer();
+            return true;
+        }
+
+        // After the tournament: Bà tells the player to rest, and answers 'where is my chicken' the second time (ZoroReunionStory). False otherwise.
+        if (ZoroReunionStory.Instance != null && ZoroReunionStory.Instance.TryHandleGrandparent(transform))
+        {
+            SetPromptVisible(false);
+            FacePlayer();
+            return true;
+        }
+
+        // Bà hands out the delivery right after Ông kept the chicken (before the friend). False for every other NPC / moment.
+        if (GrandfatherChickenRescue.Instance != null && GrandfatherChickenRescue.Instance.TryHandleGrandmother(transform))
         {
             SetPromptVisible(false);
             FacePlayer();
@@ -111,7 +161,14 @@ public bool Interact()
         }
 
         QuestDefinition offered = GetOfferedQuest();
-        if (offered == null) return false;
+        if (offered == null)
+        {
+            if (!HasIdleLines()) return false;
+            dialogue.Open(npcName, idleLines, null, null);
+            SetPromptVisible(false);
+            FacePlayer();
+            return true;
+        }
 
         QuestStatus status = questManager.GetStatus(offered);
         object[] args = { status.Progress, offered.requiredAmount, offered.rewardMoney };
@@ -126,7 +183,8 @@ public bool Interact()
                 dialogue.Open(npcName, Format(Pick(offered.activeLines, activeLines), args), null, null);
                 break;
             case QuestState.ReadyToTurnIn:
-                dialogue.Open(npcName, Format(Pick(offered.readyLines, readyLines), args), string.Format(claimLabel, args), () => questManager.TurnIn(offered));
+                if (PayIsWaiting(offered)) dialogue.Open(npcName, payLaterLines, null, null); // a story quest that is paid only later: no button, no money
+                else dialogue.Open(npcName, Format(Pick(offered.readyLines, readyLines), args), string.Format(claimLabel, args), () => questManager.TurnIn(offered));
                 break;
             default: // Completed
                 dialogue.Open(npcName, Format(Pick(offered.completedLines, completedLines), args), null, null);
@@ -144,6 +202,12 @@ public bool Interact()
 
 bool IsOfferAvailable()
     {
+        if (!RequiredQuestsCompleted())
+        {
+            foreach (QuestDefinition started in ConfiguredQuests())
+                if (questManager.GetState(started.questId) != QuestState.NotStarted) return true; // an already started quest stays available
+            return false;
+        }
         if (!requireFirstBattleLoss) return true;
         // after the loss the story first plays the friend's taunt; quests open only once that dialogue is finished
         if (ChildhoodFriendBattleTaunt.Instance != null) { if (ChildhoodFriendBattleTaunt.AfterLossStoryDone) return true; }
@@ -155,8 +219,33 @@ bool IsOfferAvailable()
         return false;
     }
 
+    bool RequiredQuestsCompleted()
+    {
+        if (requiredCompletedQuest != null && questManager.GetState(requiredCompletedQuest.questId) != QuestState.Completed) return false;
+        if (alsoRequiredCompletedQuests != null)
+            for (int i = 0; i < alsoRequiredCompletedQuests.Length; i++)
+                if (alsoRequiredCompletedQuests[i] != null && questManager.GetState(alsoRequiredCompletedQuests[i].questId) != QuestState.Completed) return false;
+        return true;
+    }
+
+    /// <summary>A 'started by story' quest that is ready, but whose payment must wait for 'Story Pay After Completed'.</summary>
+    bool PayIsWaiting(QuestDefinition q)
+    {
+        return storyPayAfterCompleted != null && IsStartedByStory(q) && questManager.GetState(storyPayAfterCompleted.questId) != QuestState.Completed;
+    }
+
+
+    bool IsStartedByStory(QuestDefinition q)
+    {
+        if (startedByStory == null) return false;
+        for (int i = 0; i < startedByStory.Length; i++) if (startedByStory[i] == q) return true;
+        return false;
+    }
+
 bool CanTalk()
     {
+        if (GrandfatherChickenRescue.Instance != null && GrandfatherChickenRescue.Instance.HasGrandmotherTask(transform)) return true;
+        if (LotteryRedeem.Instance != null && LotteryRedeem.Instance.CanRedeemWith(this)) return true;
         return IsOfferAvailable() || HasIdleLines();
     }
 
@@ -184,7 +273,9 @@ bool CanTalk()
         int bestRank = -1;
         foreach (QuestDefinition q in ConfiguredQuests())
         {
-            int rank = Rank(questManager.GetState(q.questId));
+            QuestState qs = questManager.GetState(q.questId);
+            if (qs == QuestState.NotStarted && IsStartedByStory(q)) continue; // never offered here
+            int rank = Rank(qs);
             if (rank > bestRank)
             {
                 best = q;

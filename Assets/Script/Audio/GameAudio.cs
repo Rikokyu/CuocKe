@@ -49,13 +49,13 @@ public class GameAudio : MonoBehaviour
     [Range(0.1f, 1f)] public float dialogueDuck = 0.5f;
     [Min(0.1f)] public float fadeSeconds = 2.5f;
 
-    [Header("Music (Assets/Sound)")]
+    [Header("Music (Assets/Audio/Music)")]
     public AudioClip exploreMusic;   // normal exploring
     public AudioClip sadMusic;       // after the first lost fight, until the chicken transforms
     public AudioClip battleMusic;    // any fight
     public AudioClip endingMusic;    // ending / credits
 
-    [Header("Ambience (Assets/Sound)")]
+    [Header("Ambience (Assets/Audio/Music)")]
     public AudioClip dayAmbience;
     public AudioClip eveningAmbience; // after the first lost fight, until the chicken transforms
     public AudioClip nightAmbience;   // while sleeping in the bed
@@ -100,6 +100,12 @@ public class GameAudio : MonoBehaviour
 
     public static GameAudio Instance { get; private set; }
 
+    /// <summary>Pauses or resumes the music channel without restarting the current track.</summary>
+    public void SetMusicPaused(bool paused)
+    {
+        if (music != null) music.SetPaused(paused);
+    }
+
     // ---- diagnostics (read by tests) ----
     public AudioClip CurrentMusic { get { return music.clip; } }
     public AudioClip CurrentAmbience { get { return ambience.clip; } }
@@ -119,6 +125,7 @@ public class GameAudio : MonoBehaviour
         readonly float[] vol = new float[2];
         int cur = -1;
         public AudioClip clip;
+        bool paused;
 
         public Channel(GameObject host, string label)
         {
@@ -137,8 +144,27 @@ public class GameAudio : MonoBehaviour
             clip = c;
             if (cur >= 0 && src[cur].clip == c) return;
             int next = cur < 0 ? 0 : 1 - cur;
-            if (c != null) { src[next].clip = c; src[next].time = 0f; src[next].Play(); vol[next] = 0f; src[next].volume = 0f; }
+            if (c != null)
+            {
+                src[next].clip = c;
+                src[next].time = 0f;
+                src[next].Play();
+                if (paused) src[next].Pause();
+                vol[next] = 0f;
+                src[next].volume = 0f;
+            }
             cur = next;
+        }
+
+        public void SetPaused(bool value)
+        {
+            if (paused == value) return;
+            paused = value;
+            for (int i = 0; i < src.Length; i++)
+            {
+                if (paused) src[i].Pause();
+                else src[i].UnPause();
+            }
         }
 
         public void Tick(float dt, float fade, float target)

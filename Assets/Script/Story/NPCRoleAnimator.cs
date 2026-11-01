@@ -22,6 +22,7 @@ public class NPCRoleAnimator : MonoBehaviour
     [Tooltip("The talk pose only shows while the player is this close (several villagers share the speaker name 'Dân làng').")]
     [SerializeField, Min(1f)] float talkRange = 7f;
     Transform player;
+    TrainerNPC trainer; // set automatically when this model sits under a TrainerNPC (Goku): talk pose while its window is open
 
     Animator animator;
     int gestureHash, doGestureHash, talkingHash;
@@ -42,6 +43,7 @@ public class NPCRoleAnimator : MonoBehaviour
     {
         if (dialogue == null) dialogue = FindFirstObjectByType<DialogueUI>(FindObjectsInactive.Include);
         if (dialogue != null) dialogue.LineShown += OnLineShown;
+        if (trainer == null) trainer = GetComponentInParent<TrainerNPC>();
         hasGesture = Has("gesture", AnimatorControllerParameterType.Int) && Has("doGesture", AnimatorControllerParameterType.Trigger);
         hasTalking = Has("isTalking", AnimatorControllerParameterType.Bool);
         nextGesture = Time.time + Random.Range(0f, secondsBetweenGestures.y); // NPCs do not move in sync
@@ -78,8 +80,13 @@ public class NPCRoleAnimator : MonoBehaviour
     void Update()
     {
         bool dialogueOpen = dialogue != null && dialogue.IsOpen;
-        if (speakerNames != null && speakerNames.Length > 0)
-            SetTalking(dialogueOpen && !playerLine && System.Array.IndexOf(speakerNames, dialogue.CurrentSpeaker) >= 0 && PlayerNear());
+        bool hasSpeakers = speakerNames != null && speakerNames.Length > 0;
+        if (hasSpeakers || trainer != null)
+        {
+            bool talk = hasSpeakers && dialogueOpen && !playerLine && System.Array.IndexOf(speakerNames, dialogue.CurrentSpeaker) >= 0 && PlayerNear();
+            if (trainer != null && trainer.IsOpen) talk = true;
+            SetTalking(talk);
+        }
 
         if (!hasGesture || gestureIds == null || gestureIds.Length == 0 || dialogueOpen) return;
         if (Time.time < nextGesture) return;

@@ -12,7 +12,7 @@ public class QuestFeedback : MonoBehaviour
     [Header("Texts ({0} = quest title / reward)")]
     [SerializeField] string acceptedText = "Đã nhận nhiệm vụ: {0}";
     [SerializeField] string objectiveCompletedText = "Hoàn thành mục tiêu! Quay lại gặp NPC để nhận tiền công.";
-    [SerializeField] string rewardText = "Nhận thưởng: +{0} tiền";
+    [SerializeField] string rewardText = "Nhận thưởng: +{0} VNĐ";
 
     void OnEnable()
     {

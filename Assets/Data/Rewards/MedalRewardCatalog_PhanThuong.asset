@@ -23,7 +23,7 @@ MonoBehaviour:
     rewardMoney: 0
   - rewardId: prize_money
     displayName: "Ti\u1EC1n th\u01B0\u1EDFng"
-    description: "Nh\u1EADn 300 ti\u1EC1n \u0111\u1EC3 luy\u1EC7n g\xE0 ti\u1EBFp."
+    description: "Nh\u1EADn 300 VN\u0110 \u0111\u1EC3 luy\u1EC7n g\xE0 ti\u1EBFp."
     medalCost: 1
     item: {fileID: 0}
     itemCount: 1

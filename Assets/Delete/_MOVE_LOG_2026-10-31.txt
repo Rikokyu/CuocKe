@@ -1,0 +1,170 @@
+# Nhóm A (2026-10-31, lượt 2) — scene recovery + tài liệu mẫu URP
+Assets/_Recovery/0 (23).unity  ->  Assets/Delete/_Recovery/0 (23).unity
+Assets/Readme.asset  ->  Assets/Delete/Readme.asset
+Assets/TutorialInfo/Layout.wlt  ->  Assets/Delete/TutorialInfo/Layout.wlt
+Assets/TutorialInfo/Icons/URP.png  ->  Assets/Delete/TutorialInfo/Icons/URP.png
+
+# Nhóm B - audio không dùng (2026-10-31, lượt 2)
+Assets/Audio/Audio/impactGlass_light_000.ogg  ->  Assets/Delete/Audio/Audio/impactGlass_light_000.ogg
+Assets/Audio/Audio/impactGlass_light_001.ogg  ->  Assets/Delete/Audio/Audio/impactGlass_light_001.ogg
+Assets/Audio/Audio/impactGlass_light_002.ogg  ->  Assets/Delete/Audio/Audio/impactGlass_light_002.ogg
+Assets/Audio/Audio/impactMetal_heavy_000.ogg  ->  Assets/Delete/Audio/Audio/impactMetal_heavy_000.ogg
+Assets/Audio/Audio/impactMetal_heavy_001.ogg  ->  Assets/Delete/Audio/Audio/impactMetal_heavy_001.ogg
+Assets/Audio/Audio/impactMining_002.ogg  ->  Assets/Delete/Audio/Audio/impactMining_002.ogg
+Assets/Audio/Audio/impactWood_heavy_000.ogg  ->  Assets/Delete/Audio/Audio/impactWood_heavy_000.ogg
+Assets/Audio/Audio/impactWood_heavy_001.ogg  ->  Assets/Delete/Audio/Audio/impactWood_heavy_001.ogg
+Assets/Audio/Audio/impactWood_heavy_002.ogg  ->  Assets/Delete/Audio/Audio/impactWood_heavy_002.ogg
+Assets/Sound/soul_serenity_sounds-distant-village-243574.mp3  ->  Assets/Delete/Sound/soul_serenity_sounds-distant-village-243574.mp3
+
+# Nhóm C - material không dùng (2026-10-31, lượt 2)
+Assets/Art/Character/NPC/Material/11027_01_Body.mat  ->  Assets/Delete/Art/Character/NPC/Material/11027_01_Body.mat
+Assets/Art/Character/NPC/Material/11027_02_Weapon.mat  ->  Assets/Delete/Art/Character/NPC/Material/11027_02_Weapon.mat
+Assets/Art/Character/NPC/Material/11027_Body.mat  ->  Assets/Delete/Art/Character/NPC/Material/11027_Body.mat
+Assets/Art/Character/NPC/Material/11027_Face.mat  ->  Assets/Delete/Art/Character/NPC/Material/11027_Face.mat
+Assets/Art/Character/NPC/Material/Ch03_Body.mat  ->  Assets/Delete/Art/Character/NPC/Material/Ch03_Body.mat
+Assets/Art/Character/NPC/Material/Ch39_Body.mat  ->  Assets/Delete/Art/Character/NPC/Material/Ch39_Body.mat
+Assets/Art/Character/NPC/Material/Ch43_Body.mat  ->  Assets/Delete/Art/Character/NPC/Material/Ch43_Body.mat
+Assets/Art/Character/NPC/Material/Character_Fat_Elvis_body_color1.mat  ->  Assets/Delete/Art/Character/NPC/Material/Character_Fat_Elvis_body_color1.mat
+Assets/Art/Character/NPC/Material/Character_Rasta_boy_body.mat  ->  Assets/Delete/Art/Character/NPC/Material/Character_Rasta_boy_body.mat
+Assets/Art/Character/NPC/Material/Elvis_Brows_MAT1.mat  ->  Assets/Delete/Art/Character/NPC/Material/Elvis_Brows_MAT1.mat
+Assets/Art/Character/NPC/Material/Elvis_Eyes_MAT1.mat  ->  Assets/Delete/Art/Character/NPC/Material/Elvis_Eyes_MAT1.mat
+Assets/Art/Character/NPC/Material/Elvis_Mouth_MAT1.mat  ->  Assets/Delete/Art/Character/NPC/Material/Elvis_Mouth_MAT1.mat
+Assets/Art/Character/NPC/Material/Guard_02.mat  ->  Assets/Delete/Art/Character/NPC/Material/Guard_02.mat
+Assets/Art/Character/NPC/Material/Mdea_MAT.mat  ->  Assets/Delete/Art/Character/NPC/Material/Mdea_MAT.mat
+Assets/Art/Character/NPC/Material/Mdea_MAT_.mat  ->  Assets/Delete/Art/Character/NPC/Material/Mdea_MAT_.mat
+Assets/Art/Character/NPC/Material/Rasta_Brows_MAT1.mat  ->  Assets/Delete/Art/Character/NPC/Material/Rasta_Brows_MAT1.mat
+Assets/Art/Character/NPC/Material/Rasta_Eyes_MAT1.mat  ->  Assets/Delete/Art/Character/NPC/Material/Rasta_Eyes_MAT1.mat
+Assets/Art/Character/NPC/Material/Rasta_Mouth_MAT1.mat  ->  Assets/Delete/Art/Character/NPC/Material/Rasta_Mouth_MAT1.mat
+Assets/Art/Character/OngBaBanThan/Ch13_body.mat  ->  Assets/Delete/Art/Character/OngBaBanThan/Ch13_body.mat
+Assets/Art/Character/OngBaBanThan/Ch13_hair.mat  ->  Assets/Delete/Art/Character/OngBaBanThan/Ch13_hair.mat
+Assets/Art/Character/OngBaBanThan/Cigar_Mat.mat  ->  Assets/Delete/Art/Character/OngBaBanThan/Cigar_Mat.mat
+Assets/Art/Character/OngBaBanThan/Clothes_MAT.mat  ->  Assets/Delete/Art/Character/OngBaBanThan/Clothes_MAT.mat
+Assets/Art/Character/OngBaBanThan/Eyes_MAT.mat  ->  Assets/Delete/Art/Character/OngBaBanThan/Eyes_MAT.mat
+Assets/Art/Character/OngBaBanThan/Skin_MAT.mat  ->  Assets/Delete/Art/Character/OngBaBanThan/Skin_MAT.mat
+Assets/Materials/NPC_Placeholder.mat  ->  Assets/Delete/Materials/NPC_Placeholder.mat
+Assets/Materials/QuestBed.mat  ->  Assets/Delete/Materials/QuestBed.mat
+Assets/Materials/QuestPlate.mat  ->  Assets/Delete/Materials/QuestPlate.mat
+Assets/Materials/Training_BagRed.mat  ->  Assets/Delete/Materials/Training_BagRed.mat
+Assets/Materials/Training_MatGreen.mat  ->  Assets/Delete/Materials/Training_MatGreen.mat
+Assets/Materials/Village/VNM_ArecaCrown.mat  ->  Assets/Delete/Materials/Village/VNM_ArecaCrown.mat
+Assets/Materials/Village/VNM_ArecaNut.mat  ->  Assets/Delete/Materials/Village/VNM_ArecaNut.mat
+Assets/Materials/Village/VNM_ArecaTrunk.mat  ->  Assets/Delete/Materials/Village/VNM_ArecaTrunk.mat
+Assets/Materials/Village/VNM_BambooLeaf.mat  ->  Assets/Delete/Materials/Village/VNM_BambooLeaf.mat
+Assets/Materials/Village/VNM_BambooStalk.mat  ->  Assets/Delete/Materials/Village/VNM_BambooStalk.mat
+Assets/Materials/Village/VNM_BananaBud.mat  ->  Assets/Delete/Materials/Village/VNM_BananaBud.mat
+Assets/Materials/Village/VNM_BananaFruit.mat  ->  Assets/Delete/Materials/Village/VNM_BananaFruit.mat
+Assets/Materials/Village/VNM_BananaLeaf.mat  ->  Assets/Delete/Materials/Village/VNM_BananaLeaf.mat
+Assets/Materials/Village/VNM_BananaStem.mat  ->  Assets/Delete/Materials/Village/VNM_BananaStem.mat
+Assets/Materials/Village/VNM_Bark.mat  ->  Assets/Delete/Materials/Village/VNM_Bark.mat
+Assets/Materials/Village/VNM_DirtLane.mat  ->  Assets/Delete/Materials/Village/VNM_DirtLane.mat
+Assets/Materials/Village/VNM_FruitCanopy.mat  ->  Assets/Delete/Materials/Village/VNM_FruitCanopy.mat
+Assets/Materials/Village/VNM_FruitCanopyDark.mat  ->  Assets/Delete/Materials/Village/VNM_FruitCanopyDark.mat
+Assets/Materials/Village/VNM_FruitOrange.mat  ->  Assets/Delete/Materials/Village/VNM_FruitOrange.mat
+Assets/Materials/Village/VNM_FruitYellow.mat  ->  Assets/Delete/Materials/Village/VNM_FruitYellow.mat
+Assets/Materials/Village/VNM_GateBrick.mat  ->  Assets/Delete/Materials/Village/VNM_GateBrick.mat
+Assets/Materials/Village/VNM_Paddy.mat  ->  Assets/Delete/Materials/Village/VNM_Paddy.mat
+Assets/Materials/Village/VNM_Water.mat  ->  Assets/Delete/Materials/Village/VNM_Water.mat
+Assets/Materials/Village_FlagRed.mat  ->  Assets/Delete/Materials/Village_FlagRed.mat
+Assets/Materials/Village_Wood.mat  ->  Assets/Delete/Materials/Village_Wood.mat
+
+# Nhóm D - texture/model/UI không dùng (2026-10-31, lượt 2)
+Assets/Art/Character/NPC/Texture/11027_01_Body_baseColor.png  ->  Assets/Delete/Art/Character/NPC/Texture/11027_01_Body_baseColor.png
+Assets/Art/Character/NPC/Texture/11027_02_Weapon_baseColor.png  ->  Assets/Delete/Art/Character/NPC/Texture/11027_02_Weapon_baseColor.png
+Assets/Art/Character/NPC/Texture/11027_Body_baseColor.png  ->  Assets/Delete/Art/Character/NPC/Texture/11027_Body_baseColor.png
+Assets/Art/Character/NPC/Texture/11027_Face_baseColor.png  ->  Assets/Delete/Art/Character/NPC/Texture/11027_Face_baseColor.png
+Assets/Art/Character/NPC/Texture/body diffuse.png  ->  Assets/Delete/Art/Character/NPC/Texture/body diffuse.png
+Assets/Art/Character/NPC/Texture/Ch03_1001_Diffuse.png  ->  Assets/Delete/Art/Character/NPC/Texture/Ch03_1001_Diffuse.png
+Assets/Art/Character/NPC/Texture/Ch39_1001_Diffuse.png  ->  Assets/Delete/Art/Character/NPC/Texture/Ch39_1001_Diffuse.png
+Assets/Art/Character/NPC/Texture/Ch43_1001_Diffuse.png  ->  Assets/Delete/Art/Character/NPC/Texture/Ch43_1001_Diffuse.png
+Assets/Art/Character/NPC/Texture/Elvis_FaceAnimMap.png  ->  Assets/Delete/Art/Character/NPC/Texture/Elvis_FaceAnimMap.png
+Assets/Art/Character/NPC/Texture/FatElvis_diffuse.jpg  ->  Assets/Delete/Art/Character/NPC/Texture/FatElvis_diffuse.jpg
+Assets/Art/Character/NPC/Texture/Guard_02__diffuse.png  ->  Assets/Delete/Art/Character/NPC/Texture/Guard_02__diffuse.png
+Assets/Art/Character/NPC/Texture/MEDEA diffuse.png  ->  Assets/Delete/Art/Character/NPC/Texture/MEDEA diffuse.png
+Assets/Art/Character/NPC/Texture/MEDEA glow.png  ->  Assets/Delete/Art/Character/NPC/Texture/MEDEA glow.png
+Assets/Art/Character/NPC/Texture/OccupyGuy_diffuse.jpg  ->  Assets/Delete/Art/Character/NPC/Texture/OccupyGuy_diffuse.jpg
+Assets/Art/Character/NPC/Texture/OccupyGuy_FaceAnimMap.png  ->  Assets/Delete/Art/Character/NPC/Texture/OccupyGuy_FaceAnimMap.png
+Assets/Art/Character/OngBaBanThan/Ch13_nonPBR (1).fbx  ->  Assets/Delete/Art/Character/OngBaBanThan/Ch13_nonPBR (1).fbx
+Assets/Art/Character/OngBaBanThan/textures/Boss_diffuse.png  ->  Assets/Delete/Art/Character/OngBaBanThan/textures/Boss_diffuse.png
+Assets/Art/Character/OngBaBanThan/textures/Ch13_1001_Diffuse.png  ->  Assets/Delete/Art/Character/OngBaBanThan/textures/Ch13_1001_Diffuse.png
+Assets/Art/Character/OngBaBanThan/textures/Ch13_1001_Glossiness.png  ->  Assets/Delete/Art/Character/OngBaBanThan/textures/Ch13_1001_Glossiness.png
+Assets/Art/Character/OngBaBanThan/textures/Ch13_1001_Specular.png  ->  Assets/Delete/Art/Character/OngBaBanThan/textures/Ch13_1001_Specular.png
+Assets/Art/Character/OngBaBanThan/textures/Ch13_1002_Diffuse.png  ->  Assets/Delete/Art/Character/OngBaBanThan/textures/Ch13_1002_Diffuse.png
+Assets/Art/Character/OngBaBanThan/The Boss (1).fbx  ->  Assets/Delete/Art/Character/OngBaBanThan/The Boss (1).fbx
+Assets/Art/Props/VanHoaVN/source/NonLa.fbx  ->  Assets/Delete/Art/Props/VanHoaVN/source/NonLa.fbx
+Assets/Art/Props/VanHoaVN/textures/Front_BC.jpg  ->  Assets/Delete/Art/Props/VanHoaVN/textures/Front_BC.jpg
+Assets/UI/UI/PNG/Black/1x/locked.png  ->  Assets/Delete/UI/UI/PNG/Black/1x/locked.png
+Assets/UI/UI/PNG/Black/1x/target.png  ->  Assets/Delete/UI/UI/PNG/Black/1x/target.png
+Assets/UI/UI/PNG/Black/1x/video.png  ->  Assets/Delete/UI/UI/PNG/Black/1x/video.png
+Assets/UI/UI/PNG/Black/2x/locked.png  ->  Assets/Delete/UI/UI/PNG/Black/2x/locked.png
+Assets/UI/UI/PNG/Black/2x/target.png  ->  Assets/Delete/UI/UI/PNG/Black/2x/target.png
+Assets/UI/UI/PNG/Black/2x/video.png  ->  Assets/Delete/UI/UI/PNG/Black/2x/video.png
+Assets/UI/UI/PNG/White/1x/locked.png  ->  Assets/Delete/UI/UI/PNG/White/1x/locked.png
+Assets/UI/UI/PNG/White/1x/target.png  ->  Assets/Delete/UI/UI/PNG/White/1x/target.png
+Assets/UI/UI/PNG/White/1x/video.png  ->  Assets/Delete/UI/UI/PNG/White/1x/video.png
+Assets/UI/UI/PNG/White/2x/locked.png  ->  Assets/Delete/UI/UI/PNG/White/2x/locked.png
+Assets/UI/UI/PNG/White/2x/target.png  ->  Assets/Delete/UI/UI/PNG/White/2x/target.png
+Assets/UI/UI/PNG/White/2x/video.png  ->  Assets/Delete/UI/UI/PNG/White/2x/video.png
+
+# Nhóm E - sắp xếp cấu trúc asset (2026-10-31, lượt 2)
+Assets/Audio/Audio  ->  Assets/Audio/SFX
+Assets/Sound/arunangshubanerjee-fussing-rooster-in-indian-village-natural-ambience-330927.mp3  ->  Assets/Audio/Music/arunangshubanerjee-fussing-rooster-in-indian-village-natural-ambience-330927.mp3
+Assets/Sound/audiobay_bgm-audiobay-vietnamese-rivers-melody-mood-sad-slowly-150276.mp3  ->  Assets/Audio/Music/audiobay_bgm-audiobay-vietnamese-rivers-melody-mood-sad-slowly-150276.mp3
+Assets/Sound/audiobay_bgm-vietnamese-spring-festival-bgm-for-youtube-video-245127.mp3  ->  Assets/Audio/Music/audiobay_bgm-vietnamese-spring-festival-bgm-for-youtube-video-245127.mp3
+Assets/Sound/audiobay_bgm-vietnamese-traditional-happy-melodies-nhac-nen-video-245101.mp3  ->  Assets/Audio/Music/audiobay_bgm-vietnamese-traditional-happy-melodies-nhac-nen-video-245101.mp3
+Assets/Sound/chieuk-minecraft-villager-289282.mp3  ->  Assets/Audio/Music/chieuk-minecraft-villager-289282.mp3
+Assets/Sound/freesound_community-014264_tradicional-village-carnival-brass-band-57285.mp3  ->  Assets/Audio/Music/freesound_community-014264_tradicional-village-carnival-brass-band-57285.mp3
+Assets/Sound/freesound_community-summer-village-atmosphere-at-nightdog-barking-cicadas-24164.mp3  ->  Assets/Audio/Music/freesound_community-summer-village-atmosphere-at-nightdog-barking-cicadas-24164.mp3
+Assets/Sound/freesound_community-village-at-morning-78119.mp3  ->  Assets/Audio/Music/freesound_community-village-at-morning-78119.mp3
+Assets/Sound/subhamita-evening-sound-effect-in-village-348670.mp3  ->  Assets/Audio/Music/subhamita-evening-sound-effect-in-village-348670.mp3
+Assets/Sound/uia-uia-uia-cat.mp3  ->  Assets/Audio/Music/uia-uia-uia-cat.mp3
+Assets/Sound/AhSh_t,HereWeGoAgain(GreenScreen).mp4  ->  Assets/Video/AhSh_t,HereWeGoAgain(GreenScreen).mp4
+Assets/Materials  ->  Assets/Art/Materials
+Assets/New Terrain.asset  ->  Assets/Environment/Terrain/New Terrain.asset
+Assets/TerrainData_273c1395-2a37-4d70-ad41-6354cfb05d0b.asset  ->  Assets/Environment/Terrain/TerrainData_273c1395-2a37-4d70-ad41-6354cfb05d0b.asset
+Assets/TerrainData_44dd4570-fbad-4d35-85b7-feb1bc5f8ad2.asset  ->  Assets/Environment/Terrain/TerrainData_44dd4570-fbad-4d35-85b7-feb1bc5f8ad2.asset
+Assets/TerrainData_ce7a393f-a8b0-4a81-a2d0-d299fb0d8e65.asset  ->  Assets/Environment/Terrain/TerrainData_ce7a393f-a8b0-4a81-a2d0-d299fb0d8e65.asset
+Assets/TerrainData_VillageSingle.asset  ->  Assets/Environment/Terrain/TerrainData_VillageSingle.asset
+Assets/UI/UI/PNG  ->  Assets/Art/Icons/PNG
+Assets/Univeral FX Shader  ->  Assets/Art/VFX/UniversalFX
+Assets/Documentation/_ScriptMoveLog.tmp.txt  ->  Assets/Delete/Documentation/_ScriptMoveLog.tmp.txt
+
+# Nhóm F - thư mục rỗng (2026-10-31, lượt 2)
+Assets/_Recovery  ->  Assets/Delete/_EmptyFolders/_Recovery
+Assets/Screenshots  ->  Assets/Delete/_EmptyFolders/Screenshots
+Assets/Sound  ->  Assets/Delete/_EmptyFolders/Sound
+Assets/UI  ->  Assets/Delete/_EmptyFolders/UI
+Assets/VFX  ->  Assets/Delete/_EmptyFolders/VFX
+Assets/TutorialInfo/Icons  ->  Assets/Delete/_EmptyFolders/TutorialInfo/Icons
+Assets/Art/Character/Blends  ->  Assets/Delete/_EmptyFolders/Art/Character/Blends
+Assets/Art/Character/CJ_Friend  ->  Assets/Delete/_EmptyFolders/Art/Character/CJ_Friend
+Assets/Art/Character/FBX  ->  Assets/Delete/_EmptyFolders/Art/Character/FBX
+Assets/Art/Character/OBJ  ->  Assets/Delete/_EmptyFolders/Art/Character/OBJ
+Assets/Art/Character/source  ->  Assets/Delete/_EmptyFolders/Art/Character/source
+Assets/Art/Icons/Items  ->  Assets/Delete/_EmptyFolders/Art/Icons/Items
+Assets/Art/UI/source  ->  Assets/Delete/_EmptyFolders/Art/UI/source
+Assets/Art/UI/textures  ->  Assets/Delete/_EmptyFolders/Art/UI/textures
+Assets/Art/Icons/PNG/Black  ->  Assets/Delete/_EmptyFolders/Art/Icons/PNG/Black
+Assets/Art/Props/VanHoaVN/textures  ->  Assets/Delete/_EmptyFolders/Art/Props/VanHoaVN/textures
+
+# Nhóm G - gom thư mục script (2026-10-31, lượt 2)
+Assets/Script/Pet/OpponentModelMotion.cs  ->  Assets/Script/Chicken/OpponentModelMotion.cs
+Assets/Script/Pet/PetEquipment.cs  ->  Assets/Script/Chicken/PetEquipment.cs
+Assets/Script/Skills/HurricaneFinisher.cs  ->  Assets/Script/Chicken/HurricaneFinisher.cs
+Assets/Script/Skills/HurricaneSkill.cs  ->  Assets/Script/Chicken/HurricaneSkill.cs
+Assets/Script/Scrap/ScrapCollector.cs  ->  Assets/Script/Economy/ScrapCollector.cs
+Assets/Script/Scrap/ScrapPickup.cs  ->  Assets/Script/Economy/ScrapPickup.cs
+Assets/Script/Scrap/ScrapSparkleController.cs  ->  Assets/Script/Economy/ScrapSparkleController.cs
+Assets/Script/Scrap/ScrapTypeDefinition.cs  ->  Assets/Script/Economy/ScrapTypeDefinition.cs
+Assets/Script/Shop/LotteryRedeem.cs  ->  Assets/Script/Economy/LotteryRedeem.cs
+Assets/Script/Shop/ShopCatalog.cs  ->  Assets/Script/Economy/ShopCatalog.cs
+Assets/Script/Shop/ShopItemRow.cs  ->  Assets/Script/Economy/ShopItemRow.cs
+Assets/Script/Shop/ShopNPC.cs  ->  Assets/Script/Economy/ShopNPC.cs
+Assets/Script/Shop/ShopUI.cs  ->  Assets/Script/Economy/ShopUI.cs
+Assets/Script/Reward/MedalRewardCatalog.cs  ->  Assets/Script/Economy/MedalRewardCatalog.cs
+Assets/Script/Reward/RewardNPC.cs  ->  Assets/Script/Economy/RewardNPC.cs
+Assets/Script/Reward/RewardUI.cs  ->  Assets/Script/Economy/RewardUI.cs
+
+# Nhóm G (tiếp) - thư mục script rỗng -> Delete/_EmptyFolders
+
+# Sửa nhãn Header trong GameAudio.cs (chỉ chuỗi hiển thị Inspector): Assets/Sound -> Assets/Audio/Music (2 chỗ)
+

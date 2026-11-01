@@ -14,14 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::OpponentDefinition
   opponentId: chutu
   displayName: "Ch\xFA T\u01B0"
-  maxHealth: 190
+  maxHealth: 1140
   damage: 18
   attackCooldown: 1.5
   rewardMoney: 350
   medals: 1
+  minTrainingHours: 7
+  notTrainedLines:
+  - "M\u1EDBi t\u1EADp {1} gi\u1EDD m\xE0 \u0111\xF2i \u0111\u1EA5u v\u1EDBi ch\xFA
+    \xE0? T\u1EADp \u0111\u1EE7 {0} gi\u1EDD r\u1ED3i quay l\u1EA1i \u0111\xE2y."
   introLines:
-  - "Ch\xFA T\u01B0 nghe ti\u1EBFng g\xE0 m\xE0y r\u1ED3i. Th\u1EAFng \u0111\u01B0\u1EE3c
-    ch\u1ECB Ba th\xEC c\u0169ng kh\xE1 \u0111\u1EA5y."
+  - "Ch\xFA V\u1ECBt nh\u1EA3y nghe ti\u1EBFng g\xE0 m\xE0y r\u1ED3i. Th\u1EAFng
+    \u0111\u01B0\u1EE3c EndminGaGa th\xEC c\u0169ng kh\xE1 \u0111\u1EA5y."
   - "G\xE0 ch\xFA to x\xE1c v\xE0 \u0111\xE1nh \u0111au l\u1EAFm. D\xE1m \u0111\u1EA5u
     kh\xF4ng?"
   retryLines:
@@ -31,6 +35,6 @@ MonoBehaviour:
   - "Ch\xFA thua r\u1ED3i. M\xE0y v\xF4 \u0111\u1ECBch gi\u1EA3i l\xE0ng \u0111\xFAng
     ngh\u0129a!"
   lockedLines:
-  - "Mu\u1ED1n \u0111\u1EA5u v\u1EDBi ch\xFA th\xEC ph\u1EA3i th\u1EAFng ch\u1ECB
-    Ba tr\u01B0\u1EDBc \u0111\xE3."
+  - "Mu\u1ED1n \u0111\u1EA5u v\u1EDBi ch\xFA th\xEC ph\u1EA3i th\u1EAFng EndminGaGa
+    tr\u01B0\u1EDBc \u0111\xE3."
   challengeLabel: "Th\xE1ch \u0111\u1EA5u!"

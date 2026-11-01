@@ -6,8 +6,8 @@ using UnityEngine.UI;
 
 /// <summary>
 /// The trainer NPC (replaces paying each training station separately). E next to him opens a small window: the player picks a
-/// number of hours, pays up front (CurrencyWallet.TrySpend, once) and the chicken does the circuit run -> push-up -> boxing on the
-/// three existing TrainingStation props, each exercise exactly 1/3 of an hour; one hour = secondsPerHour seconds. Every COMPLETED
+/// number of hours, pays up front (CurrencyWallet.TrySpend, once) and the chicken does the circuit run -> push-up -> weight lift -> boxing on the
+/// four existing TrainingStation props, each exercise lasting its own TrainingStation.DrivenSeconds; one hour = the sum of them (run 5 + push-up 10 + weight lift 10 + boxing 5 = 30 s). Every COMPLETED
 /// hour adds +damagePerTrainingHour damage through ChickenStats.AddTrainingHours (one Changed event per session = one 'buổi tập'
 /// for the rematch quest).
 ///
@@ -24,14 +24,13 @@ public class TrainerNPC : MonoBehaviour
     [SerializeField, Min(0)] int extraHourIncrease = 50;
     [SerializeField, Range(1, 8)] int maxHoursPerSession = 5;
 
-    [Header("Training time")]
-    [Tooltip("Real seconds of ONE paid hour. It is split into equal thirds: run, push-up, boxing.")]
-    [SerializeField, Min(3f)] float secondsPerHour = 12f;
-    [Tooltip("Circuit order. Each station gets exactly 1/3 of every hour.")]
+    // Training time: every TrainingStation has its own drivenSeconds; one paid hour = the sum over the circuit.
+    [Header("Training time (every station runs for its own drivenSeconds)")]
+    [Tooltip("Circuit order. One paid hour = the sum of the stations' durations.")]
     [SerializeField] TrainingStation[] circuit;
 
     [Header("Interaction")]
-    [SerializeField, Min(0.5f)] float interactionDistance = 2.2f;
+    [SerializeField, Min(0.5f)] float interactionDistance = 3.2f;
     [SerializeField] KeyCode interactKey = KeyCode.E;
     [SerializeField] KeyCode closeKey = KeyCode.Escape;
     [SerializeField] string promptText = "Nhấn E để nói chuyện với Huấn luyện viên";
@@ -65,10 +64,22 @@ public class TrainerNPC : MonoBehaviour
     int bookedHours;
     int completedHours;
     int paidTotal;
+    int hpBefore;
 
     public bool IsOpen { get; private set; }
     public bool IsSessionActive { get; private set; }
     public int MaxHours => maxHoursPerSession;
+
+    /// <summary>Real seconds of ONE paid hour = the sum of every circuit station's DrivenSeconds (walking not counted).</summary>
+    public float SecondsPerHour
+    {
+        get
+        {
+            float sum = 0f;
+            if (circuit != null) foreach (TrainingStation s in circuit) if (s != null) sum += s.DrivenSeconds;
+            return sum;
+        }
+    }
 
     /// <summary>The Button of the 'hours' option (1-based), or null. Lets a test press the real button.</summary>
     public Button GetHourButton(int hours) { return hours >= 1 && hours <= hourButtons.Count ? hourButtons[hours - 1] : null; }
@@ -120,7 +131,7 @@ public class TrainerNPC : MonoBehaviour
             return;
         }
 
-        bool canInteract = IsPlayerInRange() && !IsSessionActive && !IsBlockedByUI();
+        bool canInteract = IsPlayerInRange() && !IsSessionActive && !IsBlockedByUI() && InteractObject.IsAimed(this);
         SetPrompt(canInteract);
         if (canInteract && Input.GetKeyDown(interactKey)) Open();
     }
@@ -160,14 +171,14 @@ public class TrainerNPC : MonoBehaviour
     void RefreshWindow()
     {
         if (infoLabel != null && wallet != null && stats != null)
-            infoLabel.text = string.Format("Tiền: {0}      Tổng giờ tập: {1}      Sát thương gà: {2}", wallet.Balance, stats.TrainingHours, Mathf.RoundToInt(stats.Damage));
+            infoLabel.text = string.Format("Tiền: {0} VNĐ      Tổng giờ tập: {1}      Sát thương gà: {2}", wallet.Balance, stats.TrainingHours, Mathf.RoundToInt(stats.Damage));
         for (int i = 0; i < hourButtons.Count; i++)
         {
             int hours = i + 1;
             int cost = CostForHours(hours);
             bool afford = wallet != null && wallet.CanAfford(cost);
             hourButtons[i].interactable = afford && !IsSessionActive;
-            hourLabels[i].text = string.Format("{0} giờ  -  {1} tiền   (+{2} sát thương){3}", hours, cost, Mathf.RoundToInt(hours * stats.DamagePerTrainingHour), afford ? "" : "   [thiếu tiền]");
+            hourLabels[i].text = string.Format("{0} giờ  -  {1} VNĐ   (+{2} sát thương){3}", hours, cost, Mathf.RoundToInt(hours * stats.DamagePerTrainingHour), afford ? "" : "   [thiếu tiền]");
         }
     }
 
@@ -192,7 +203,7 @@ public class TrainerNPC : MonoBehaviour
         }
 
         int cost = CostForHours(hours);
-        if (wallet == null || !wallet.CanAfford(cost)) return string.Format("Không đủ tiền: {0} giờ cần {1}, bạn có {2}.", hours, cost, wallet != null ? wallet.Balance : 0);
+        if (wallet == null || !wallet.CanAfford(cost)) return string.Format("Không đủ tiền: {0} giờ cần {1} VNĐ, bạn có {2} VNĐ.", hours, cost, wallet != null ? wallet.Balance : 0);
         return null;
     }
 
@@ -233,16 +244,17 @@ public class TrainerNPC : MonoBehaviour
             yield break;
         }
 
-        float perExercise = secondsPerHour / circuit.Length;
+        // every station runs for its own DrivenSeconds (see TrainingStation)
         int damageBefore = Mathf.RoundToInt(stats.Damage);
+        hpBefore = Mathf.RoundToInt(stats.MaxHP);
         bool aborted = false;
 
         for (int hour = 1; hour <= bookedHours && !aborted; hour++)
         {
             for (int i = 0; i < circuit.Length; i++)
             {
-                if (banner != null) banner.Show(string.Format("Giờ {0}/{1}: {2}", hour, bookedHours, circuit[i].DisplayName), perExercise + 0.5f);
-                yield return circuit[i].PerformDriven(perExercise);
+                if (banner != null) banner.Show(string.Format("Giờ {0}/{1}: {2}", hour, bookedHours, circuit[i].DisplayName), circuit[i].DrivenSeconds + 0.5f);
+                yield return circuit[i].PerformDriven(circuit[i].DrivenSeconds);
                 if (!circuit[i].LastExerciseCompleted) { aborted = true; break; }
             }
             if (!aborted) completedHours++;
@@ -262,9 +274,9 @@ public class TrainerNPC : MonoBehaviour
 
         int paidNet = paidTotal - refund;
         string message = completedHours > 0
-            ? string.Format("Tập xong {0} giờ! Sát thương {1} → {2}  |  Tổng giờ tập: {3}  (-{4} tiền)", completedHours, damageBefore, Mathf.RoundToInt(stats.Damage), stats.TrainingHours, paidNet)
+            ? string.Format("Tập xong {0} giờ! Sát thương {1} → {2}, Máu tối đa {5} → {6}  |  Tổng giờ tập: {3}  (-{4} VNĐ)", completedHours, damageBefore, Mathf.RoundToInt(stats.Damage), stats.TrainingHours, paidNet, hpBefore, Mathf.RoundToInt(stats.MaxHP))
             : "Buổi tập bị gián đoạn, đã hoàn tiền.";
-        if (aborted && completedHours > 0) message += string.Format("  [bị gián đoạn, hoàn {0} tiền]", refund);
+        if (aborted && completedHours > 0) message += string.Format("  [bị gián đoạn, hoàn {0} VNĐ]", refund);
         if (banner != null) banner.Show(message, 7f);
         Debug.Log("[Trainer] " + message);
 
@@ -283,6 +295,24 @@ public class TrainerNPC : MonoBehaviour
     }
 
     // ---------------------------------------------------------------- helpers
+
+    /// <summary>The window's one-line description, built from the real circuit so it can never disagree with the scene.</summary>
+    string TrainingSummary()
+    {
+        var sb = new System.Text.StringBuilder();
+        float total = 0f;
+        if (circuit != null)
+            for (int i = 0; i < circuit.Length; i++)
+            {
+                if (circuit[i] == null) continue;
+                total += circuit[i].DrivenSeconds;
+                if (sb.Length > 0) sb.Append(", ");
+                sb.Append(circuit[i].DisplayName.ToLower()).Append(' ').Append(Mathf.RoundToInt(circuit[i].DrivenSeconds)).Append("s");
+            }
+        float damage = stats != null ? stats.DamagePerTrainingHour : 0f;
+        float hp = stats != null ? stats.MaxHpMultiplierPerTrainingHour : 1f;
+        return string.Format("Mỗi giờ tập = {0} giây: {1}. Mỗi giờ: +{2} sát thương, máu tối đa x{3}.", Mathf.RoundToInt(total), sb, Mathf.RoundToInt(damage), hp.ToString("0.##"));
+    }
 
     bool IsPlayerInRange()
     {
@@ -374,7 +404,7 @@ public class TrainerNPC : MonoBehaviour
 
         MakeLabel(panelGO.transform, "Huấn luyện viên - Tập luyện cho gà", 44, TextAlignmentOptions.Center, new Color(1f, 0.85f, 0.3f), new Vector2(0f, 300f), new Vector2(860f, 70f));
         infoLabel = MakeLabel(panelGO.transform, "", 28, TextAlignmentOptions.Center, Color.white, new Vector2(0f, 235f), new Vector2(860f, 50f));
-        MakeLabel(panelGO.transform, "Mỗi giờ gà chạy bộ, hít đất và đấm bao cát (mỗi môn 1/3 giờ). Mỗi giờ +7 sát thương.", 24, TextAlignmentOptions.Center, new Color(0.8f, 0.8f, 0.8f), new Vector2(0f, 185f), new Vector2(860f, 60f));
+        MakeLabel(panelGO.transform, TrainingSummary(), 24, TextAlignmentOptions.Center, new Color(0.8f, 0.8f, 0.8f), new Vector2(0f, 185f), new Vector2(860f, 60f));
 
         float y = 110f;
         for (int h = 1; h <= maxHoursPerSession; h++)

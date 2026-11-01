@@ -14,22 +14,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::OpponentDefinition
   opponentId: chiba
   displayName: "Ch\u1ECB Ba"
-  maxHealth: 130
+  maxHealth: 260
   damage: 14
   attackCooldown: 1.5
   rewardMoney: 200
   medals: 1
+  minTrainingHours: 5
+  notTrainedLines:
+  - "G\xE0 m\xE0y m\u1EDBi t\u1EADp {1} gi\u1EDD th\xF4i \xE0? Ph\u1EA3i t\u1EADp
+    t\u1ED1i thi\u1EC3u {0} gi\u1EDD r\u1ED3i h\u1EB5ng th\xE1ch \u0111\u1EA5u tao."
   introLines:
   - "Nghe n\xF3i g\xE0 m\xE0y v\u1EEBa h\u1EA1 \u0111\u01B0\u1EE3c g\xE0 th\u1EB1ng
     b\u1EA1n m\xE0y h\u1EA3?"
-  - "G\xE0 ch\u1ECB Ba nu\xF4i b\u1EB1ng c\xE1m x\u1ECBn \u0111\u1EA5y. \u0110\u1EA5u
+  - "G\xE0 EndminGaGa nu\xF4i b\u1EB1ng c\xE1m x\u1ECBn \u0111\u1EA5y. \u0110\u1EA5u
     m\u1ED9t tr\u1EADn gi\u1EA3i l\xE0ng kh\xF4ng?"
   retryLines:
   - "Ch\u01B0a ph\u1EE5c h\u1EA3? Luy\u1EC7n th\xEAm r\u1ED3i th\xE1ch \u0111\u1EA5u
     l\u1EA1i, ch\u1ECB kh\xF4ng ch\u1EA1y \u0111\xE2u."
   defeatedLines:
   - "Ch\u1ECB ch\u1ECBu thua r\u1ED3i. G\xE0 em kh\xE1 th\u1EADt! Sang g\u1EB7p Ch\xFA
-    T\u01B0 \u0111i, \u1ED5ng \u0111ang ch\u1EDD."
+    V\u1ECBt nh\u1EA3y \u0111i, \u1ED5ng \u0111ang ch\u1EDD."
   lockedLines:
   - "Ch\u01B0a \u0111\u1EBFn l\u01B0\u1EE3t em \u0111\xE2u."
   challengeLabel: "Th\xE1ch \u0111\u1EA5u!"

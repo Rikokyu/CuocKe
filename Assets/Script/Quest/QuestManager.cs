@@ -102,6 +102,21 @@ public class QuestManager : MonoBehaviour
         return statuses.TryGetValue(questId, out status) ? status.State : QuestState.NotStarted;
     }
 
+    /// <summary>
+    /// Puts the HUD and the guide arrow on a quest that is already running (Active or ReadyToTurnIn). Changes no quest state,
+    /// pays nothing. Returns false for any other state.
+    /// </summary>
+    public bool Track(QuestDefinition quest)
+    {
+        QuestStatus status = GetStatus(quest);
+        if (status == null || (status.State != QuestState.Active && status.State != QuestState.ReadyToTurnIn)) return false;
+        if (TrackedQuest == status) return true;
+
+        TrackedQuest = status;
+        QuestChanged?.Invoke(status); // refresh HUD / guide
+        return true;
+    }
+
     /// <summary>Starts the quest. Only works from NotStarted; returns false otherwise.</summary>
 public bool AcceptQuest(QuestDefinition quest)
     {

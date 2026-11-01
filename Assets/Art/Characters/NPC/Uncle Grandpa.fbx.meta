@@ -1,0 +1,503 @@
+fileFormatVersion: 2
+guid: af464ce967eac0146b47997179a1c378
+ModelImporter:
+  serializedVersion: 24200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EyeL
+    second: {fileID: 2100000, guid: 1a8704c4bb85f9941853a03891de6b01, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EyeR
+    second: {fileID: 2100000, guid: 5e7f6cd295ddc9441a9378cf20c3ff45, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Uncle_grandpa
+    second: {fileID: 2100000, guid: eee4ca2dfad17a84e88ce4c92a33034f, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    generateMeshLods: 0
+    meshLodGenerationFlags: 0
+    maximumMeshLod: -1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human:
+    - boneName: Pelvis
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Leg2_left
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Leg2_right
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Leg3_left
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Leg3_right
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foot_left
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foot_right
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Head
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Propeller
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Toe_left
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Toe_right
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: Uncle Grandpa(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: uncle grandpa.qc_skeleton
+      parentName: Uncle Grandpa(Clone)
+      position: {x: -0, y: 0, z: 0.019701036}
+      rotation: {x: 0.4974288, y: 0.50255805, z: 0.5025554, w: -0.49743152}
+      scale: {x: 22.262644, y: 22.262644, z: 22.26264}
+    - name: Pelvis
+      parentName: uncle grandpa.qc_skeleton
+      position: {x: -0.00001938805, y: 0.0018907905, z: 0.16725458}
+      rotation: {x: -0.70710665, y: -0.000000059604645, z: -0.000000059604645, w: -0.7071069}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: Head
+      parentName: Pelvis
+      position: {x: -0.000032822103, y: 0.05480768, z: -0.0011645376}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0125971, y: 1.0081363, z: 1.0316685}
+    - name: Propeller
+      parentName: Head
+      position: {x: -2.5145708e-10, y: 0.32559013, z: -0.08468614}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0042664, y: 1.0000001, z: 0.9958149}
+    - name: Propeller_end
+      parentName: Propeller
+      position: {x: -0, y: 0.001796646, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Arm1_left
+      parentName: Pelvis
+      position: {x: -0, y: 0, z: -2.1316282e-16}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1.000002, y: 0.99999994, z: 1.000002}
+    - name: Arm2_left
+      parentName: Arm1_left
+      position: {x: -0.05570075, y: 0.047887538, z: -0.009944396}
+      rotation: {x: -0, y: -0.000000042146855, z: -8.881784e-15, w: 1}
+      scale: {x: 1.0000006, y: 1.0000001, z: 1.0000013}
+    - name: Arm3_left
+      parentName: Arm2_left
+      position: {x: -0.03335221, y: 0.000000037029384, z: -0.000000001490116}
+      rotation: {x: -0.00000017881393, y: -0, z: -6.6744096e-15, w: 1}
+      scale: {x: 1.0000005, y: 0.99999964, z: 1.0000004}
+    - name: Arm4_left
+      parentName: Arm3_left
+      position: {x: -0.04333337, y: -0.000000027827918, z: -0.000000004172325}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000005, y: 0.9999993, z: 1.0000006}
+    - name: ValveBiped.Bip01_L_Hand
+      parentName: Arm4_left
+      position: {x: -0.03943409, y: -0.000000008791685, z: -0.000000002980232}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000002, y: 0.99999994, z: 1.0000004}
+    - name: ValveBiped.Bip01_L_Finger0
+      parentName: ValveBiped.Bip01_L_Hand
+      position: {x: -0.020083781, y: -0.0057359166, z: 0.01045294}
+      rotation: {x: 0.00000035762787, y: -0, z: 1.3348819e-14, w: 1}
+      scale: {x: 1, y: 0.99999994, z: 1.0000007}
+    - name: ValveBiped.Bip01_L_Finger01
+      parentName: ValveBiped.Bip01_L_Finger0
+      position: {x: -0.008036965, y: -0.0011805786, z: 0.0027807474}
+      rotation: {x: -0.00000017881393, y: -0, z: -6.6744096e-15, w: 1}
+      scale: {x: 1.0000007, y: 0.9999999, z: 0.99999994}
+    - name: ValveBiped.Bip01_L_Finger01_end
+      parentName: ValveBiped.Bip01_L_Finger01
+      position: {x: -0, y: 0.001796627, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ValveBiped.Bip01_L_Finger1
+      parentName: ValveBiped.Bip01_L_Hand
+      position: {x: -0.029944241, y: 0.0056472234, z: 0.0019298213}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000002, y: 0.99999994, z: 1.0000007}
+    - name: ValveBiped.Bip01_L_Finger11
+      parentName: ValveBiped.Bip01_L_Finger1
+      position: {x: -0.011676411, y: 0.00024843655, z: 0.00016287803}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000007, y: 0.9999999, z: 0.99999994}
+    - name: ValveBiped.Bip01_L_Finger11_end
+      parentName: ValveBiped.Bip01_L_Finger11
+      position: {x: -0, y: 0.001796627, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ValveBiped.Bip01_L_Finger2
+      parentName: ValveBiped.Bip01_L_Hand
+      position: {x: -0.030423306, y: 0.0070331534, z: -0.005427606}
+      rotation: {x: 0.00000035762787, y: -0, z: 1.3348819e-14, w: 1}
+      scale: {x: 1, y: 0.99999994, z: 1.0000007}
+    - name: ValveBiped.Bip01_L_Finger21
+      parentName: ValveBiped.Bip01_L_Finger2
+      position: {x: -0.011197363, y: 0.00024847372, z: -0.00057287037}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000007, y: 0.9999999, z: 0.99999994}
+    - name: ValveBiped.Bip01_L_Finger21_end
+      parentName: ValveBiped.Bip01_L_Finger21
+      position: {x: -0, y: 0.001796627, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ValveBiped.Bip01_L_Finger3
+      parentName: ValveBiped.Bip01_L_Hand
+      position: {x: -0.03071422, y: 0.005647224, z: -0.012528377}
+      rotation: {x: 0.00000035762787, y: -0, z: 1.3348819e-14, w: 1}
+      scale: {x: 1, y: 0.99999994, z: 1.0000007}
+    - name: ValveBiped.Bip01_L_Finger31
+      parentName: ValveBiped.Bip01_L_Finger3
+      position: {x: -0.01090648, y: 0.00024847424, z: -0.0003504306}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000007, y: 0.9999999, z: 0.99999994}
+    - name: ValveBiped.Bip01_L_Finger31_end
+      parentName: ValveBiped.Bip01_L_Finger31
+      position: {x: -0, y: 0.001796627, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Arm1_right
+      parentName: Pelvis
+      position: {x: -0, y: 0, z: -2.1316282e-16}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1.000002, y: 0.99999994, z: 1.000002}
+    - name: Arm2_right
+      parentName: Arm1_right
+      position: {x: 0.056092396, y: 0.04778315, z: -0.015358598}
+      rotation: {x: -0, y: -0.000000042146855, z: -8.881784e-15, w: 1}
+      scale: {x: 1.0000006, y: 1.0000001, z: 1.0000011}
+    - name: Arm3_right
+      parentName: Arm2_right
+      position: {x: 0.033352207, y: 0.000000009313226, z: 0.0000000017881393}
+      rotation: {x: -0.00000014901161, y: 0.000000042146855, z: 9.513002e-16, w: 1}
+      scale: {x: 1.0000005, y: 0.99999994, z: 1.0000005}
+    - name: Arm4_right
+      parentName: Arm3_right
+      position: {x: 0.04333338, y: 0.000000008493662, z: 5.9604643e-10}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000018, y: 1.0000001, z: 1.0000012}
+    - name: ValveBiped.Bip01_R_Hand
+      parentName: Arm4_right
+      position: {x: 0.039434105, y: 0.000000013262033, z: -0.000000002980232}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000013, y: 0.99999994, z: 1.0000013}
+    - name: ValveBiped.Bip01_R_Finger0
+      parentName: ValveBiped.Bip01_R_Hand
+      position: {x: 0.020083785, y: -0.005735877, z: 0.010452948}
+      rotation: {x: 3.8507277e-14, y: 1, z: 0.00000032782555, w: 0.00000021073424}
+      scale: {x: 1.0000017, y: 1.0000001, z: 1.0000019}
+    - name: ValveBiped.Bip01_R_Finger01
+      parentName: ValveBiped.Bip01_R_Finger0
+      position: {x: -0.008036968, y: -0.0011805982, z: -0.0027807462}
+      rotation: {x: -8.881784e-15, y: -0, z: -0.000000042146848, w: 1}
+      scale: {x: 1.0000005, y: 0.99999976, z: 1.0000011}
+    - name: ValveBiped.Bip01_R_Finger01_end
+      parentName: ValveBiped.Bip01_R_Finger01
+      position: {x: -0, y: 0.001796627, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ValveBiped.Bip01_R_Finger1
+      parentName: ValveBiped.Bip01_R_Hand
+      position: {x: 0.029944247, y: 0.005647249, z: 0.0019298315}
+      rotation: {x: 3.8507277e-14, y: 1, z: 0.00000032782555, w: 0.00000021073424}
+      scale: {x: 1.0000017, y: 1.0000001, z: 1.0000019}
+    - name: ValveBiped.Bip01_R_Finger11
+      parentName: ValveBiped.Bip01_R_Finger1
+      position: {x: -0.011676429, y: 0.00024845428, z: -0.00016287327}
+      rotation: {x: -8.881784e-15, y: -0, z: -0.000000042146848, w: 1}
+      scale: {x: 1.0000005, y: 0.99999976, z: 1.0000011}
+    - name: ValveBiped.Bip01_R_Finger11_end
+      parentName: ValveBiped.Bip01_R_Finger11
+      position: {x: -0, y: 0.001796627, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ValveBiped.Bip01_R_Finger2
+      parentName: ValveBiped.Bip01_R_Hand
+      position: {x: 0.030423326, y: 0.0070331763, z: -0.005427595}
+      rotation: {x: 3.8507277e-14, y: 1, z: 0.00000032782555, w: 0.00000021073424}
+      scale: {x: 1.0000017, y: 1.0000001, z: 1.0000019}
+    - name: ValveBiped.Bip01_R_Finger21
+      parentName: ValveBiped.Bip01_R_Finger2
+      position: {x: -0.011197371, y: 0.00024847127, z: 0.00057287334}
+      rotation: {x: -8.881784e-15, y: -0, z: -0.000000042146848, w: 1}
+      scale: {x: 1.0000005, y: 0.99999976, z: 1.0000011}
+    - name: ValveBiped.Bip01_R_Finger21_end
+      parentName: ValveBiped.Bip01_R_Finger21
+      position: {x: -0, y: 0.001796627, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ValveBiped.Bip01_R_Finger3
+      parentName: ValveBiped.Bip01_R_Hand
+      position: {x: 0.030714205, y: 0.0056472514, z: -0.012528365}
+      rotation: {x: 3.8507277e-14, y: 1, z: 0.00000032782555, w: 0.00000021073424}
+      scale: {x: 1.0000017, y: 1.0000001, z: 1.0000019}
+    - name: ValveBiped.Bip01_R_Finger31
+      parentName: ValveBiped.Bip01_R_Finger3
+      position: {x: -0.010906473, y: 0.0002484508, z: 0.0003504342}
+      rotation: {x: -8.881784e-15, y: -0, z: -0.000000042146848, w: 1}
+      scale: {x: 1.0000005, y: 0.99999976, z: 1.0000011}
+    - name: ValveBiped.Bip01_R_Finger31_end
+      parentName: ValveBiped.Bip01_R_Finger31
+      position: {x: -0, y: 0.001796627, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leg1_left
+      parentName: Pelvis
+      position: {x: -0, y: 0, z: -2.1316282e-16}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1.000002, y: 0.99999994, z: 1.000002}
+    - name: Leg2_left
+      parentName: Leg1_left
+      position: {x: -0.030457411, y: -0.053408355, z: 0.0018903587}
+      rotation: {x: 0.00000026822093, y: -0, z: 1.776357e-14, w: 1}
+      scale: {x: 1.0000008, y: 1.0000001, z: 1.0000011}
+    - name: Leg3_left
+      parentName: Leg2_left
+      position: {x: 0.00085743156, y: -0.05812457, z: -0.0009165258}
+      rotation: {x: -0.00000032782557, y: -1.7999456e-21, z: -2.8421713e-14, w: 1}
+      scale: {x: 1.0000014, y: 1, z: 1.0000018}
+    - name: Foot_left
+      parentName: Leg3_left
+      position: {x: 0.0017247127, y: -0.044571757, z: -0.0000000019131403}
+      rotation: {x: 0.000000018384782, y: 0.5885708, z: -0.0000029451505, w: 0.8084457}
+      scale: {x: 1.0000015, y: 1.0000001, z: 1.0000018}
+    - name: Toe_left
+      parentName: Foot_left
+      position: {x: 0.0000000011827797, y: -0.007833951, z: 0.011112286}
+      rotation: {x: -0.0000003576279, y: 6.058452e-28, z: -2.8421713e-14, w: 1}
+      scale: {x: 1.0000014, y: 1.0000001, z: 1.0000019}
+    - name: Toe_left_end
+      parentName: Toe_left
+      position: {x: -0, y: 0.0017966282, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leg1_right
+      parentName: Pelvis
+      position: {x: -0, y: 0, z: -2.1316282e-16}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1.000002, y: 0.99999994, z: 1.000002}
+    - name: Leg2_right
+      parentName: Leg1_right
+      position: {x: 0.030457411, y: -0.053408355, z: 0.0018903587}
+      rotation: {x: 0.00000026822093, y: -0, z: 1.776357e-14, w: 1}
+      scale: {x: 1.000001, y: 1.0000001, z: 1.0000011}
+    - name: Leg3_right
+      parentName: Leg2_right
+      position: {x: -0.00085743016, y: -0.058124553, z: -0.0009165253}
+      rotation: {x: -0.00000032782557, y: -1.7999456e-21, z: -2.8421713e-14, w: 1}
+      scale: {x: 1.0000011, y: 0.9999998, z: 1.0000014}
+    - name: Foot_right
+      parentName: Leg3_right
+      position: {x: -0.0017247078, y: -0.044571757, z: -0.0000000019458821}
+      rotation: {x: 0.000000076083765, y: 0.63014984, z: -0.0000031512886, w: 0.77647364}
+      scale: {x: 1.0000018, y: 0.9999999, z: 1.0000012}
+    - name: Toe_right
+      parentName: Foot_right
+      position: {x: 0.000000001899898, y: -0.00783395, z: 0.011112285}
+      rotation: {x: -0.0000003576279, y: 6.058452e-28, z: -2.8421713e-14, w: 1}
+      scale: {x: 1.0000012, y: 0.9999999, z: 1.0000012}
+    - name: Toe_right_end
+      parentName: Toe_right
+      position: {x: -0, y: 0.0017966282, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: uncle_grandpa
+      parentName: Uncle Grandpa(Clone)
+      position: {x: -1.7006308e-11, y: 0, z: 0.019701038}
+      rotation: {x: 0.4974288, y: 0.50255805, z: 0.5025554, w: -0.49743152}
+      scale: {x: 22.262644, y: 22.262644, z: 22.26264}
+    - name: moustache
+      parentName: Uncle Grandpa(Clone)
+      position: {x: -1.7006308e-11, y: 0, z: 0.019701038}
+      rotation: {x: 0.4974288, y: 0.50255805, z: 0.5025554, w: -0.49743152}
+      scale: {x: 22.262644, y: 22.262644, z: 22.26264}
+    - name: Hat
+      parentName: Uncle Grandpa(Clone)
+      position: {x: -1.7006308e-11, y: 0, z: 0.019701038}
+      rotation: {x: 0.4974288, y: 0.50255805, z: 0.5025554, w: -0.49743152}
+      scale: {x: 22.262644, y: 22.262644, z: 22.26264}
+    - name: Hair
+      parentName: Uncle Grandpa(Clone)
+      position: {x: -1.7006308e-11, y: 0, z: 0.019701038}
+      rotation: {x: 0.4974288, y: 0.50255805, z: 0.5025554, w: -0.49743152}
+      scale: {x: 22.262644, y: 22.262644, z: 22.26264}
+    - name: bellybag
+      parentName: Uncle Grandpa(Clone)
+      position: {x: -1.7006308e-11, y: 0, z: 0.019701038}
+      rotation: {x: 0.4974288, y: 0.50255805, z: 0.5025554, w: -0.49743152}
+      scale: {x: 22.262644, y: 22.262644, z: 22.26264}
+    - name: Uncle_grandpa
+      parentName: Uncle Grandpa(Clone)
+      position: {x: -1.7006308e-11, y: 0, z: 0.019701038}
+      rotation: {x: 0.4974288, y: 0.50255805, z: 0.5025554, w: -0.49743152}
+      scale: {x: 22.262644, y: 22.262644, z: 22.26264}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

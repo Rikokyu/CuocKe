@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ItemDefinition
   itemId: watering_can
   displayName: "B\xECnh t\u01B0\u1EDBi c\xE2y"
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: a4cbd16330e8ea44290e73e384e46261, type: 3}
   placeholderColor: {r: 0.2, g: 0.75, b: 0.45, a: 1}
   maxStack: 20

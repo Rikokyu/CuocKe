@@ -1,12 +1,12 @@
 using TMPro;
 using UnityEngine;
 
-/// <summary>Money HUD: always shows the wallet balance ("Tiền: 0") and refreshes whenever it changes.</summary>
+/// <summary>Money HUD: always shows the wallet balance ("Tiền: 0 VNĐ") and refreshes whenever it changes.</summary>
 public class MoneyHUD : MonoBehaviour
 {
     [SerializeField] CurrencyWallet wallet;
     [SerializeField] TMP_Text label;
-    [SerializeField] string format = "Tiền: {0}";
+    [SerializeField] string format = "Tiền: {0} VNĐ";
 
     void OnEnable()
     {

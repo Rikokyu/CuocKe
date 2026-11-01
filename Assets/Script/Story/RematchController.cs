@@ -24,7 +24,13 @@ public class RematchController : MonoBehaviour
     [SerializeField] QuestManager questManager;
     [SerializeField] DialogueUI dialogue;
     [SerializeField] MessageBannerUI banner;
-    [SerializeField] QuestDefinition rematchQuest; // chuan_bi_tai_dau
+    [SerializeField] QuestDefinition rematchQuest; // tai_dau_ban_than: the rematch itself (starts when the chicken is taken back)
+    [Tooltip("chuan_bi_tai_dau: earn money + train. Opened ONLY after the rematch quest is Completed; completes by itself at the required training hours.")]
+    [SerializeField] QuestDefinition trainingQuest;
+    [Tooltip("village_delivery (Bà's delivery to the friend, handed out by Bà after Ông keeps the chicken). Used here only to keep the money / training quest closed until Bà has paid it, and to put the HUD back on it after a fight. The thanks + first challenge live in ChildhoodFriendBattleTaunt.")]
+    [SerializeField] QuestDefinition deliveryQuest;
+    [Tooltip("The friend's rooster (GuguGaga). Hidden together with the friend while he is away. Its GameObject stays active.")]
+    [SerializeField] GameObject friendRooster;
     [SerializeField] ChickenStats chickenStats;
 
     [Header("Rematch")]
@@ -34,6 +40,15 @@ public class RematchController : MonoBehaviour
     [SerializeField, Min(0f)] float getUpDelay = 3f;
     [SerializeField, Min(1f)] float getUpTimeout = 8f;
     [SerializeField] string idleStateName = "ChickenIdle";
+
+    [Header("First rematch: lost by script (real damage through BattleManager's first-battle balance)")]
+    [Tooltip("On: the FIRST rematch uses BattleManager's first-battle balance (damage 1 vs 15), so the chicken loses by real damage; then the friend advises training and the rematch quest completes. Off: normal balance (winnable), the old behaviour.")]
+    [SerializeField] bool scriptedLoss = true;
+    [SerializeField, TextArea(2, 4)] string[] adviceLines =
+    {
+        "Thấy chưa? Gà mày còn non lắm.",
+        "Đi huấn luyện thêm đi. Đánh bại Chị Ba và Chú Tư rồi quay lại đấu với tao!"
+    };
 
     [Header("Arrival gate (new): combat does not start until Player AND chicken are both inside this radius of the opponent")]
     [SerializeField, Min(1f)] float arenaRadius = 6f;
@@ -107,6 +122,11 @@ public class RematchController : MonoBehaviour
     Renderer[] friendRenderers;
     QuestObjectiveTarget friendDeliveryTarget;
     bool wonDialogueShown;
+    bool scriptedFight;       // this fight uses BattleManager's first-battle balance
+    bool scriptedLossDone;    // the one scripted rematch has been lost
+    float adviceAt = -1f;     // >= 0 while the friend's advice / completion is pending
+    bool adviceShown;
+    int adviceFrame;
 
     void Awake()
     {
@@ -135,12 +155,12 @@ public class RematchController : MonoBehaviour
     /// stat-only changes (no new hours) add nothing. Only counts while the quest is Active.</summary>
     void OnStatsChanged()
     {
-        if (questManager == null || rematchQuest == null || chickenStats == null) return;
-        QuestStatus status = questManager.GetStatus(rematchQuest);
+        if (questManager == null || trainingQuest == null || chickenStats == null) return;
+        QuestStatus status = questManager.GetStatus(trainingQuest);
         if (status == null || status.State != QuestState.Active) return;
-        int target = Mathf.Min(chickenStats.TrainingHours, rematchQuest.requiredAmount);
+        int target = Mathf.Min(chickenStats.TrainingHours, trainingQuest.requiredAmount);
         int missing = target - status.Progress;
-        if (missing > 0) questManager.ReportProgress(rematchQuest.objectiveKey, missing);
+        if (missing > 0) questManager.ReportProgress(trainingQuest.objectiveKey, missing);
     }
 
     /// <summary>
@@ -158,22 +178,19 @@ public class RematchController : MonoBehaviour
                 return false;
 
             case QuestState.Active:
-            {
-                QuestStatus status = questManager.GetStatus(rematchQuest);
-                string[] prep = Format(notReadyLines, status.Progress, rematchQuest.requiredAmount);
-                if (!transformCommentShown && ChickenTransformationTrigger.Transformed)
-                {
-                    transformCommentShown = true; // one-time reaction to the transformed chicken
-                    prep = Concat(transformedLines, prep);
-                }
-                dialogue.Open("Bạn thân", prep, null, null);
-                return true;
-            }
-
             case QuestState.ReadyToTurnIn:
                 if (fightActive || (bm != null && bm.IsBattleActive)) dialogue.Open("Bạn thân", fightingLines, null, null);
                 else if (recovering) dialogue.Open("Bạn thân", recoveringLines, null, null);
-                else dialogue.Open("Bạn thân", lostOnce ? retryLines : readyLines, rematchLabel, StartRematch);
+                else
+                {
+                    string[] offer = lostOnce ? retryLines : readyLines;
+                    if (!transformCommentShown && ChickenTransformationTrigger.Transformed)
+                    {
+                        transformCommentShown = true; // one-time reaction to the transformed chicken
+                        offer = Concat(transformedLines, offer);
+                    }
+                    dialogue.Open("Bạn thân", offer, rematchLabel, StartRematch);
+                }
                 return true;
 
             default: // Completed: the lines follow the real tournament state, then M12 takes over once eligible
@@ -191,8 +208,9 @@ public class RematchController : MonoBehaviour
     {
         BattleManager bm = BattleManager.Instance;
         if (bm == null || questManager == null || rematchQuest == null) return;
-        if (fightActive || recovering || bm.IsBattleActive) return;
-        if (questManager.GetState(rematchQuest.questId) != QuestState.ReadyToTurnIn) return; // requirement not met / already won
+        if (fightActive || recovering || bm.IsBattleActive || adviceAt >= 0f) return; // adviceAt: the scripted loss is still being wrapped up
+        QuestState rematchState = questManager.GetState(rematchQuest.questId);
+        if (rematchState != QuestState.Active && rematchState != QuestState.ReadyToTurnIn) return; // quest not started yet / already won
 
         MainChickenAcquire mc = MainChickenAcquire.Instance;
         HealthSystem pet = bm.mainChickenHealth;
@@ -276,7 +294,8 @@ public class RematchController : MonoBehaviour
         if (BattleArena.Instance != null) BattleArena.Instance.BringFoe(foe);
         PlaceChickenAtArena(pet, foe);
 
-        bm.isFirstBattle = false; // normal balance: trained stats decide the fight
+        scriptedFight = scriptedLoss && !scriptedLossDone;
+        bm.isFirstBattle = scriptedFight; // true: BattleManager's first-battle balance, the chicken loses by REAL damage; false: normal balance, trained stats decide
         fightActive = true;
         bm.StartBattle();
         if (!bm.IsBattleActive) { fightActive = false; return; }
@@ -315,7 +334,60 @@ public class RematchController : MonoBehaviour
             wonDialogueFrame = Time.frameCount;
             dialogue.Open("Bạn thân", wonLines, null, null);
         }
+        UpdateAdvice();
         UpdateFriendPresence();
+        UpdateTrainingQuest();
+    }
+
+    /// <summary>The money / training quest exists only AFTER the rematch is won: it is opened once the victory talk is over,
+    /// and completes by itself at the required training hours (the friend is away, so nobody can take the turn-in).
+    /// Derived from the real quest states every frame (AcceptQuest / TurnIn only act on NotStarted / ReadyToTurnIn), so
+    /// it can neither open early nor twice.</summary>
+    void UpdateTrainingQuest()
+    {
+        if (questManager == null || rematchQuest == null || trainingQuest == null) return;
+        if (questManager.GetState(rematchQuest.questId) != QuestState.Completed) return;
+        if (VictoryTalkPending()) return;
+        if (deliveryQuest != null && questManager.GetState(deliveryQuest.questId) != QuestState.Completed) return; // Bà must have paid the delivery first
+
+        QuestState s = questManager.GetState(trainingQuest.questId);
+        if (s == QuestState.NotStarted)
+        {
+            questManager.AcceptQuest(trainingQuest);
+            OnStatsChanged(); // hours already trained count at once
+        }
+        else if (s == QuestState.ReadyToTurnIn)
+        {
+            questManager.TurnIn(trainingQuest); // opens the village tournament (TournamentManager watches this quest)
+        }
+    }
+
+    bool VictoryTalkPending()
+    {
+        return wonAt >= 0f && !(wonDialogueShown && dialogue != null && Time.frameCount > wonDialogueFrame && !dialogue.IsOpen);
+    }
+
+    Renderer[] roosterRenderers;
+    Collider[] roosterColliders;
+    bool[] roosterColliderWasOn;
+
+    /// <summary>Hides / shows the friend's rooster (renderers + colliders it had on). The GameObject stays active.</summary>
+    void SetRoosterHidden(bool hidden)
+    {
+        if (friendRooster == null) return;
+        if (roosterRenderers == null)
+        {
+            roosterRenderers = friendRooster.GetComponentsInChildren<Renderer>(true);
+            roosterColliders = friendRooster.GetComponentsInChildren<Collider>(true);
+            roosterColliderWasOn = new bool[roosterColliders.Length];
+        }
+        for (int i = 0; i < roosterRenderers.Length; i++) if (roosterRenderers[i] != null) roosterRenderers[i].enabled = !hidden;
+        for (int i = 0; i < roosterColliders.Length; i++)
+        {
+            if (roosterColliders[i] == null) continue;
+            if (hidden) { roosterColliderWasOn[i] = roosterColliders[i].enabled; roosterColliders[i].enabled = false; }
+            else roosterColliders[i].enabled = roosterColliderWasOn[i] || roosterColliders[i].enabled;
+        }
     }
 
     // After the first rematch is won (and its victory talk is over) the friend leaves; he comes back only when the
@@ -336,6 +408,7 @@ public class RematchController : MonoBehaviour
         for (int i = 0; i < friendRenderers.Length; i++) if (friendRenderers[i] != null) friendRenderers[i].enabled = !away;
         if (friendDeliveryTarget == null) friendDeliveryTarget = GetComponent<QuestObjectiveTarget>();
         if (friendDeliveryTarget != null) friendDeliveryTarget.enabled = !away; // the delivery point is paused while he is away
+        SetRoosterHidden(away); // his chicken leaves with him
     }
 
     void PollFight()
@@ -345,8 +418,12 @@ public class RematchController : MonoBehaviour
         if (bm.CurrentBattleState != BattleManager.BattleState.Completed) return;
 
         fightActive = false;
-        if (bm.enemyCombat != null) bm.enemyCombat.autoEngage = false; // defensive, see StartRematch's pending-arrival branch
-        if (bm.enemyHealth != null && bm.enemyHealth.IsDead) OnVictory();
+        bool wasScripted = scriptedFight;
+        scriptedFight = false;
+        bm.isFirstBattle = false; // BattleManager already restored the damage values; never leave the first-battle flag on for other fights
+        bool foeDead = bm.enemyHealth != null && bm.enemyHealth.IsDead;
+        if (foeDead) OnVictory();
+        else if (wasScripted) OnScriptedLoss();
         else OnDefeat();
     }
 
@@ -354,6 +431,7 @@ public class RematchController : MonoBehaviour
     {
         RematchWon = true;
         wonAt = Time.time;
+        questManager.ReportProgress(rematchQuest.objectiveKey, 1); // the single objective of the rematch quest
         questManager.TurnIn(rematchQuest); // one-shot: the state flips before anything else happens
     }
 
@@ -402,6 +480,35 @@ public class RematchController : MonoBehaviour
 
         if (combat != null) combat.ResumeAfterRecovery();
         recovering = false;
+    }
+
+    /// <summary>The first rematch is over (lost by script, with real damage): the chicken gets up as after any loss, then the friend advises training;
+    /// only after his dialogue is closed does the rematch quest complete (that opens the tournament, and the training quest once Bà has paid).</summary>
+    void OnScriptedLoss()
+    {
+        lostOnce = true;
+        scriptedLossDone = true;
+        adviceAt = Time.time;
+        adviceShown = false;
+        if (!recovering) StartCoroutine(RecoverAfterLoss());
+    }
+
+    void UpdateAdvice()
+    {
+        if (adviceAt < 0f || dialogue == null) return;
+        if (!adviceShown)
+        {
+            if (dialogue.IsOpen || Time.time - adviceAt < victoryDialogueDelay) return;
+            adviceShown = true;
+            adviceFrame = Time.frameCount;
+            dialogue.Open("Bạn thân", adviceLines, null, null);
+            return;
+        }
+        if (Time.frameCount <= adviceFrame || dialogue.IsOpen) return;
+        adviceAt = -1f; // once: the advice was shown and closed
+        if (questManager == null || rematchQuest == null) return;
+        questManager.ReportProgress(rematchQuest.objectiveKey, 1); // the single objective of the rematch quest
+        questManager.TurnIn(rematchQuest); // one-shot; opens the tournament (TournamentManager)
     }
 
     string[] CompletedLines()

@@ -18,7 +18,7 @@ using UnityEngine;
 public class ChildhoodFriendBattleTaunt : MonoBehaviour
 {
     [Header("Interaction")]
-    [SerializeField] float interactionDistance = 3f;
+    [SerializeField] float interactionDistance = 4f;
     [SerializeField] KeyCode interactKey = KeyCode.E;
     [SerializeField] string promptText = "Nhấn E để nói chuyện với Bạn thân";
     [SerializeField] Transform player;
@@ -30,6 +30,20 @@ public class ChildhoodFriendBattleTaunt : MonoBehaviour
     [SerializeField] QuestDefinition questBattle; // thu_suc_voi_ban_cu
     [Tooltip("Optional. The delivery target on the same NPC; when it wants the E key this script stays quiet. Empty = looked up on this object.")]
     [SerializeField] QuestObjectiveTarget deliveryTarget;
+
+    [Header("Bà's package comes first (the challenge only follows the delivery)")]
+    [Tooltip("village_delivery. When set and started (or about to be handed out by Bà): the friend does not challenge before the package is delivered; right after it he thanks the Player and THEN challenges him (same dialogue, the existing 'Nhận lời thách đấu' button starts the fight). Empty = the old behaviour.")]
+    [SerializeField] QuestDefinition deliveryQuest;
+    [SerializeField, TextArea(2, 4)] string[] needDeliveryLines =
+    {
+        "Ơ, thằng IT về làng rồi à? Mà sao tay không thế? Bà mày bảo gửi gói hàng cho tao, đâu rồi?"
+    };
+    [SerializeField, TextArea(2, 4)] string[] thanksLines =
+    {
+        "Ồ, gói hàng của bà mày gửi đấy hả? Cảm ơn nhé, đúng cái tao đang chờ!"
+    };
+    [SerializeField, Min(0f)] float thanksDelaySeconds = 1f;
+    [SerializeField, Min(1f)] float thanksAutoDistance = 6f;
 
     [Header("Timing")]
     [Tooltip("Seconds after the loss before he taunts (the chicken is still getting up).")]
@@ -67,6 +81,21 @@ public class ChildhoodFriendBattleTaunt : MonoBehaviour
         "Mày đợi đó!"
     };
 
+    [Header("Player's line during the FIRST fight (the chicken has not transformed yet and only runs)")]
+    [SerializeField, TextArea(1, 3)] string[] firstFightPlayerLines =
+    {
+        "Ơ đá nó đi chứ, sao chạy không vậy?"
+    };
+    [Tooltip("Seconds after the first fight starts before the player says it (long enough to see the chicken only running).")]
+    [SerializeField, Min(0f)] float firstFightLineDelaySeconds = 4f;
+    [Tooltip("The line is shown on this toast (MessageBannerUI), NOT in the DialogueUI, so the fight is never interrupted. Empty = the banner found in the scene.")]
+    [SerializeField] MessageBannerUI banner;
+    [Tooltip("How long the line stays on the banner.")]
+    [SerializeField, Min(0.5f)] float firstFightLineSeconds = 4f;
+
+    bool firstFightLineShown;
+    float firstFightStartedAt = -1f;
+
     /// <summary>Instance of the taunt NPC in the scene (null if the scene has none).</summary>
     public static ChildhoodFriendBattleTaunt Instance { get; private set; }
 
@@ -82,6 +111,8 @@ public class ChildhoodFriendBattleTaunt : MonoBehaviour
 
     bool promptShown;
     float lossSeenAt = -1f;
+    bool thanksShown;
+    float deliveredSeenAt = -1f;
 
     void Awake()
     {
@@ -102,6 +133,7 @@ public class ChildhoodFriendBattleTaunt : MonoBehaviour
             if (p != null) player = p.transform;
         }
         if (deliveryTarget == null) deliveryTarget = GetComponent<QuestObjectiveTarget>();
+        if (banner == null) banner = FindFirstObjectByType<MessageBannerUI>(FindObjectsInactive.Include);
         if (player == null) Debug.LogError("[ChildhoodFriendBattleTaunt] No Player found.", this);
         if (dialogue == null || prompt == null || questManager == null || questBattle == null)
             Debug.LogError("[ChildhoodFriendBattleTaunt] Missing a required reference.", this);
@@ -113,14 +145,32 @@ public class ChildhoodFriendBattleTaunt : MonoBehaviour
 
         UpdateAutoTaunt();
         UpdateTauntSequence();
+        UpdateThanksAuto();
+        UpdateFirstFightLine();
 
         bool inSequence = phase == TauntPhase.FriendSpeaking || phase == TauntPhase.PlayerReplying;
         if (RematchController.FriendAway) { SetPrompt(false); return; } // the friend is away: no prompt, no E
         bool deliveryOwnsE = deliveryTarget != null && deliveryTarget.ClaimsInteraction;
         // no new interaction while the scene runs, nor on the frame it advanced (the same E press that closed a dialogue must not reopen one)
-        bool canInteract = InRange() && !dialogue.IsOpen && !deliveryOwnsE && !inSequence && sequenceAdvancedFrame != Time.frameCount;
+        bool canInteract = InRange() && !dialogue.IsOpen && !deliveryOwnsE && !inSequence && sequenceAdvancedFrame != Time.frameCount && InteractObject.IsAimed(this);
         SetPrompt(canInteract);
         if (canInteract && Input.GetKeyDown(interactKey)) Interact();
+    }
+
+    /// <summary>Once, in the first (scripted) fight while the chicken has not transformed: the player wonders why it only runs.</summary>
+void UpdateFirstFightLine()
+    {
+        if (firstFightLineShown || firstFightPlayerLines == null || firstFightPlayerLines.Length == 0) return;
+        BattleManager bm = BattleManager.Instance;
+        bool applies = bm != null && bm.IsBattleActive && bm.isFirstBattle && !BattleManager.firstBattleCompleted && !ChickenTransformationTrigger.Transformed;
+        if (!applies) { firstFightStartedAt = -1f; return; }
+        if (firstFightStartedAt < 0f) firstFightStartedAt = Time.time;
+        if (Time.time - firstFightStartedAt < firstFightLineDelaySeconds) return;
+
+        // The player's line goes on the banner (one toast), never into the DialogueUI: no dialogue opens and the fight keeps running.
+        firstFightLineShown = true; // once only
+        if (banner == null) { Debug.LogWarning("[ChildhoodFriendBattleTaunt] No MessageBannerUI - the player's line is not shown.", this); return; }
+        banner.Show(playerSpeakerName + ": " + string.Join(" ", firstFightPlayerLines), firstFightLineSeconds);
     }
 
     /// <summary>True only after a REAL first-battle loss in this play session (the static flag alone could be stale).</summary>
@@ -153,16 +203,19 @@ public class ChildhoodFriendBattleTaunt : MonoBehaviour
         QuestState state = questManager.GetState(questBattle.questId);
         if (state == QuestState.NotStarted)
         {
+            // Bà's package first: until it is delivered the friend only asks for it (no challenge, no fight)
+            if (DeliveryPending()) { dialogue.Open("Bạn thân", needDeliveryLines, null, null); SetPrompt(false); return; }
             // the challenge (and its quest) only starts once the Main Chicken is awake
             if (MainChickenAcquire.Instance != null && MainChickenAcquire.Instance.IsAcquired) questManager.AcceptQuest(questBattle);
-            OpenChallenge();
+            if (!(Delivered() && OpenThanksAndChallenge())) OpenChallenge(); // after Bà's package: thanks first, then the challenge
         }
         else if (state == QuestState.Active)
         {
             if (LostFirstBattle()) ShowAfterLoss();                       // the automatic taunt was missed
             else if (BattleManager.Instance != null && BattleManager.Instance.IsBattleActive)
                 dialogue.Open("Bạn thân", fightingLines, null, null);
-            else OpenChallenge();
+            else if (DeliveryPending()) dialogue.Open("Bạn thân", needDeliveryLines, null, null);
+            else if (!(Delivered() && OpenThanksAndChallenge())) OpenChallenge();
         }
         else
         {
@@ -185,6 +238,7 @@ public class ChildhoodFriendBattleTaunt : MonoBehaviour
     void StartFight()
     {
         if (BattleManager.Instance == null) { Debug.LogError("[ChildhoodFriendBattleTaunt] No BattleManager.", this); return; }
+        if (DeliveryPending()) return; // no fight before Bà's package is delivered
         if (questManager.GetState(questBattle.questId) != QuestState.Active) return;
         if (LostFirstBattle() || BattleManager.Instance.IsBattleActive) return;
         if (BattleArena.Instance != null) { BattleArena.Instance.RequestStart(BeginFirstFight, null); return; } // the fight starts once chicken + player are in the arena
@@ -239,6 +293,63 @@ public class ChildhoodFriendBattleTaunt : MonoBehaviour
         questManager.ReportProgress(questBattle.objectiveKey, 1);
         questManager.TurnIn(questBattle);
         AfterLossStoryDone = true;
+        if (deliveryQuest != null && questManager.GetState(deliveryQuest.questId) == QuestState.ReadyToTurnIn) questManager.Track(deliveryQuest); // HUD + guide go back to Bà: she pays now
+    }
+
+    bool Delivered()
+    {
+        if (deliveryQuest == null) return false;
+        QuestState s = questManager.GetState(deliveryQuest.questId);
+        return s == QuestState.ReadyToTurnIn || s == QuestState.Completed;
+    }
+
+    /// <summary>Bà's package was taken on but is not delivered yet.</summary>
+    bool DeliveryPending()
+    {
+        if (deliveryQuest == null) return false;
+        QuestState s = questManager.GetState(deliveryQuest.questId);
+        if (s == QuestState.Active) return true;
+        // Ông kept the chicken but Bà has not handed the package out yet: no challenge / fight before the delivery
+        MainChickenAcquire mc = MainChickenAcquire.Instance;
+        return s == QuestState.NotStarted && mc != null && mc.IsAcquired;
+    }
+
+
+
+    /// <summary>After the delivery: the friend thanks the Player FIRST, then (same dialogue) challenges him. The fight starts only from the dialogue's button
+    /// (the existing StartFight, arena rules unchanged). Once only.</summary>
+    bool OpenThanksAndChallenge()
+    {
+        if (thanksShown || dialogue == null || dialogue.IsOpen || RematchController.FriendAway) return false;
+        if (LostFirstBattle() || (BattleManager.Instance != null && BattleManager.Instance.IsBattleActive)) return false;
+        MainChickenAcquire mc = MainChickenAcquire.Instance;
+        bool chickenReady = mc != null && mc.IsAcquired;
+        if (chickenReady && questManager.GetState(questBattle.questId) == QuestState.NotStarted) questManager.AcceptQuest(questBattle);
+        thanksShown = true; // flip first: never twice
+        string[] tail = chickenReady ? challengeLines : needChickenLines;
+        string[] all = new string[thanksLines.Length + tail.Length];
+        thanksLines.CopyTo(all, 0);
+        tail.CopyTo(all, thanksLines.Length);
+        if (chickenReady) dialogue.Open("Bạn thân", all, acceptLabel, StartFight);
+        else dialogue.Open("Bạn thân", all, null, null);
+        if (!dialogue.IsOpen) { thanksShown = false; return false; } // could not open: nothing changed
+        SetPrompt(false);
+        return true;
+    }
+
+    /// <summary>The package reached him: the first quest (HUD + guide) moves to him at once; if the Player is near he thanks him by himself after a short delay.</summary>
+    void UpdateThanksAuto()
+    {
+        if (deliveryQuest == null || thanksShown || !Delivered()) { deliveredSeenAt = -1f; return; }
+        if (LostFirstBattle() || questManager.GetState(questBattle.questId) == QuestState.Completed) { thanksShown = true; return; } // past that point
+        MainChickenAcquire mc = MainChickenAcquire.Instance;
+        if (mc != null && mc.IsAcquired && questManager.GetState(questBattle.questId) == QuestState.NotStarted) questManager.AcceptQuest(questBattle);
+        if (deliveredSeenAt < 0f) deliveredSeenAt = Time.time;
+        if (Time.time - deliveredSeenAt < thanksDelaySeconds || dialogue.IsOpen || phase != TauntPhase.None || RematchController.FriendAway) return;
+        Vector3 d = player.position - transform.position;
+        d.y = 0f;
+        if (d.magnitude > thanksAutoDistance) return; // walked away: he says it when talked to
+        OpenThanksAndChallenge();
     }
 
     bool InRange()

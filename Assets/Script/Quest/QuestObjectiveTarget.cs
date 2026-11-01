@@ -25,7 +25,7 @@ public class QuestObjectiveTarget : MonoBehaviour
 
     [Header("Interaction")]
     [Tooltip("Keep this >= the interaction distance of a VillagerFlavorNPC on the same object.")]
-    [SerializeField, Min(0.5f)] float interactionDistance = 3.2f;
+    [SerializeField, Min(0.5f)] float interactionDistance = 4.2f;
     [SerializeField] KeyCode interactKey = KeyCode.E;
     [SerializeField] string promptText = "Nhấn E";
     [SerializeField, TextArea(1, 3)] string doneMessage = "Xong!";
@@ -114,7 +114,7 @@ public class QuestObjectiveTarget : MonoBehaviour
             return;
         }
 
-        bool inRange = IsPlayerInRange() && (dialogue == null || !dialogue.IsOpen) && !IsInventoryOpen();
+        bool inRange = IsPlayerInRange() && (dialogue == null || !dialogue.IsOpen) && !IsInventoryOpen() && InteractObject.IsAimed(this);
         bool hasItem = HasRequiredItem;
         bool orderOk = OrderOk;
         // Earlier steps missing / required item missing: only a hint is shown (or nothing) and E does nothing.

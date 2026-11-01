@@ -10,7 +10,7 @@ public class TournamentOpponentNPC : MonoBehaviour
     [SerializeField, Min(0)] int opponentIndex;
 
     [Header("Interaction")]
-    [SerializeField, Min(0.5f)] float interactionDistance = 3f;
+    [SerializeField, Min(0.5f)] float interactionDistance = 4f;
     [SerializeField] KeyCode interactKey = KeyCode.E;
     [SerializeField] string promptText = "Nhấn E để nói chuyện";
     [SerializeField] Transform player;
@@ -28,6 +28,10 @@ public class TournamentOpponentNPC : MonoBehaviour
 
     bool promptShown;
 
+    /// <summary>Index of this NPC's opponent in TournamentManager (read-only).</summary>
+    public int OpponentIndex { get { return opponentIndex; } }
+
+
     void Start()
     {
         if (player == null)
@@ -42,7 +46,7 @@ public class TournamentOpponentNPC : MonoBehaviour
     void Update()
     {
         if (player == null || dialogue == null) return;
-        bool can = InRange() && !dialogue.IsOpen;
+        bool can = InRange() && !dialogue.IsOpen && InteractObject.IsAimed(this);
         SetPrompt(can);
         if (can && Input.GetKeyDown(interactKey)) Interact();
     }
@@ -66,6 +70,7 @@ public class TournamentOpponentNPC : MonoBehaviour
         else if (def == null || !manager.IsOpen) dialogue.Open(who, flavorLines, null, null);
         else if (manager.IsDefeated(opponentIndex)) dialogue.Open(who, def.defeatedLines, null, null);
         else if (!manager.IsUnlocked(opponentIndex)) dialogue.Open(who, def.lockedLines, null, null);
+        else if (!manager.HasEnoughTraining(opponentIndex)) dialogue.Open(who, manager.NeedTrainingLines(opponentIndex), null, null);
         else
         {
             int index = opponentIndex;
@@ -77,7 +82,8 @@ public class TournamentOpponentNPC : MonoBehaviour
         return true;
     }
 
-    void FacePlayer()
+    /// <summary>Turns the NPC toward the player (also used by TournamentManager for the post-fight dialogue).</summary>
+    public void FacePlayer()
     {
         Transform t = modelRoot != null ? modelRoot : transform;
         Vector3 to = player.position - t.position;

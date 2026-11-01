@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4890830c199e76340babb0b205329a7d, type: 3}
+  m_Name: Quest_TaiDauBanThan
+  m_EditorClassIdentifier: Assembly-CSharp::QuestDefinition
+  questId: tai_dau_ban_than
+  title: "\u0110\u1EA5u l\u1EA1i v\u1EDBi b\u1EA1n th\xE2n"
+  description: "G\xE0 \u0111\xE3 to kho\u1EBB h\u01A1n. \u0110\u1EBFn g\u1EB7p ng\u01B0\u1EDDi
+    b\u1EA1n th\u1EDDi th\u01A1 \u1EA5u v\xE0 t\xE1i \u0111\u1EA5u th\u1EED m\u1ED9t
+    tr\u1EADn."
+  objective: "\u0110\u1EBFn g\u1EB7p b\u1EA1n th\xE2n v\xE0 t\xE1i \u0111\u1EA5u"
+  objectiveKey: rematch_win
+  progressLabel: "Tr\u1EADn t\xE1i \u0111\u1EA5u"
+  requiredAmount: 1
+  rewardMoney: 0
+  repeatable: 0
+  turnInObjective: "Nghe b\u1EA1n th\xE2n khuy\xEAn"
+  objectiveCompletedMessage: "G\xE0 c\xF2n non! \u0110\xE1nh b\u1EA1i EndminGaGa
+    v\xE0 Ch\xFA V\u1ECBt nh\u1EA3y \u1EDF gi\u1EA3i l\xE0ng r\u1ED3i quay l\u1EA1i
+    \u0111\u1EA5u v\u1EDBi b\u1EA1n th\xE2n."
+  silentCompletion: 0
+  offerLines:
+  - 
+  activeLines:
+  - 
+  readyLines:
+  - 
+  completedLines:
+  - 

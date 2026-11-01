@@ -17,8 +17,8 @@ MonoBehaviour:
   description: "Th\u1EAFng l\u1EA7n l\u01B0\u1EE3t c\xE1c \u0111\u1ED1i th\u1EE7
     c\u1EE7a gi\u1EA3i \u0111\u1EA5u l\xE0ng \u0111\u1EC3 nh\u1EADn huy ch\u01B0\u01A1ng
     v\xE0 ti\u1EC1n th\u01B0\u1EDFng."
-  objective: "Th\xE1ch \u0111\u1EA5u Ch\u1ECB Ba r\u1ED3i Ch\xFA T\u01B0 (NPC \u1EDF
-    xa l\xE0ng) v\xE0 th\u1EAFng c\u1EA3 hai"
+  objective: "Th\xE1ch \u0111\u1EA5u EndminGaGa r\u1ED3i Ch\xFA V\u1ECBt nh\u1EA3y
+    (NPC \u1EDF xa l\xE0ng) v\xE0 th\u1EAFng c\u1EA3 hai"
   objectiveKey: win_tournament_match
   progressLabel: "Tr\u1EADn th\u1EAFng"
   requiredAmount: 2

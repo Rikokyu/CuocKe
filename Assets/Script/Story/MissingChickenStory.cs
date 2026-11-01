@@ -49,7 +49,7 @@ public class MissingChickenStory : MonoBehaviour
     [SerializeField, Range(20f, 90f)] float viewHalfAngle = 60f;
 
     [Header("Take it back")]
-    [SerializeField, Min(0.5f)] float takeDistance = 2.5f;
+    [SerializeField, Min(0.5f)] float takeDistance = 3.5f;
     [SerializeField] KeyCode interactKey = KeyCode.E;
     [SerializeField] string takePrompt = "Nhấn E để nhận lại con gà";
 
@@ -257,7 +257,7 @@ public class MissingChickenStory : MonoBehaviour
     void UpdateWake()
     {
         if (wakeShown) return;
-        if (bed != null && bed.IsSleeping) return; // the screen is still black
+        if (bed != null && bed.IsBusy) return; // the sleep sequence (dialogue, video, wake line) is still running
         wakeShown = true;
         if (banner != null && !string.IsNullOrEmpty(wakeMessage)) banner.Show(wakeMessage, 6f);
     }
@@ -328,7 +328,8 @@ public class MissingChickenStory : MonoBehaviour
     void UpdateFound()
     {
         if (player == null || chicken == null) { SetPrompt(false); return; }
-        bool near = !UiBlocked() && Flat(player.position, chicken.position) <= takeDistance;
+        if (chicken.GetComponent<InteractObject>() == null) chicken.gameObject.AddComponent<InteractObject>().SetDisplayName("Gà");
+        bool near = !UiBlocked() && Flat(player.position, chicken.position) <= takeDistance && InteractObject.IsAimedAtObject(chicken.gameObject);
         SetPrompt(near);
         if (near && Input.GetKeyDown(interactKey)) TryTakeBack();
     }

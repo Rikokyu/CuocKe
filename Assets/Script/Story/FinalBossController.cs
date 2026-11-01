@@ -29,9 +29,21 @@ public class FinalBossController : MonoBehaviour
     [Header("Gate")]
     [SerializeField, Min(1)] int requiredMedals = 2;
 
-    [Header("Stronger opponent (GAME_DESIGN 4.9: HP 300-360, dmg 30-38; restored after the fight either way)")]
-    [SerializeField, Min(1f)] float bossMaxHealth = 330f;
+    [Header("Stronger opponent (owner: HP 330 -> 660 (x2) -> 990 (x1.5 more) -> 1980 (x2 more), dmg 34; restored after the fight either way)")]
+    [SerializeField, Min(1f)] float bossMaxHealth = 1980f;
     [SerializeField, Min(1f)] float bossDamage = 34f;
+
+    [Header("Training gate (final fight needs this many total training hours)")]
+    [SerializeField, Min(0)] int requiredTrainingHours = 10;
+    [Tooltip("Optional. If empty, the ChickenStats in the scene is found at runtime.")]
+    [SerializeField] ChickenStats chickenStats;
+    [Tooltip("{0} = hours needed, {1} = hours the chicken has trained.")]
+    [SerializeField, TextArea(2, 4)] string[] notTrainedLines =
+    {
+        "Gà mày mới tập {1} giờ thôi à? Phải tập tối thiểu {0} giờ mới đủ đô đấu với tao.",
+        "Đi tập thêm đi rồi quay lại đây!"
+    };
+    [SerializeField] string notTrainedBanner = "Gà chưa đủ giờ tập! Cần tối thiểu {0} giờ tập (hiện có {1}).";
 
     [Header("Fight")]
     [SerializeField, Min(1f)] float arenaStartDistance = 4f;
@@ -111,9 +123,36 @@ public class FinalBossController : MonoBehaviour
     /// friend is back exactly when the final boss can be started.</summary>
     public bool GateOpen { get { return IsUnlocked(); } }
 
-    bool IsUnlocked()
+    ChickenStats Stats
     {
-        return tournamentManager != null && tournamentManager.Medals >= requiredMedals;
+        get
+        {
+            if (chickenStats == null) chickenStats = FindFirstObjectByType<ChickenStats>();
+            return chickenStats;
+        }
+    }
+
+    public int TrainingHours { get { return Stats != null ? Stats.TrainingHours : 0; } }
+
+    public bool HasEnoughTraining() { return TrainingHours >= requiredTrainingHours; }
+
+    string[] NotTrainedLines()
+    {
+        string[] result = new string[notTrainedLines.Length];
+        for (int i = 0; i < result.Length; i++) result[i] = string.Format(notTrainedLines[i], requiredTrainingHours, TrainingHours);
+        return result;
+    }
+
+    /// <summary>True from the moment the final fight really started (BeginFight) until its result was handled. HurricaneFinisher reads it so the finishing move can only happen in THIS fight.</summary>
+    public bool FightActive { get { return fightActive; } }
+
+
+bool IsUnlocked()
+    {
+        if (tournamentManager == null || tournamentManager.Medals < requiredMedals) return false;
+        // The Hurricane skill is learned in the Zoro Tsunami reunion that follows the tournament. When the scene has that story the
+        // final rematch waits for it; a scene without HurricaneSkill keeps the old behaviour (medals only).
+        return HurricaneSkill.Instance == null || HurricaneSkill.Unlocked;
     }
 
     /// <summary>
@@ -124,6 +163,14 @@ public class FinalBossController : MonoBehaviour
     {
         if (dialogue == null || questManager == null || finalBossQuest == null) return false;
         if (!IsUnlocked()) return false;
+
+        QuestState bossState = questManager.GetState(finalBossQuest.questId);
+        if (bossState != QuestState.Completed && !HasEnoughTraining())
+        {
+            if (bossState == QuestState.NotStarted) questManager.AcceptQuest(finalBossQuest);
+            dialogue.Open("Bạn thân", NotTrainedLines(), null, null);
+            return true;
+        }
 
         switch (questManager.GetState(finalBossQuest.questId))
         {
@@ -157,6 +204,11 @@ public class FinalBossController : MonoBehaviour
         if (bm == null || questManager == null || finalBossQuest == null) return;
         if (fightActive || recovering || bm.IsBattleActive) return;
         if (!IsUnlocked() || questManager.GetState(finalBossQuest.questId) != QuestState.Active) return;
+        if (!HasEnoughTraining())
+        {
+            if (banner != null) banner.Show(string.Format(notTrainedBanner, requiredTrainingHours, TrainingHours), 4f);
+            return;
+        }
 
         MainChickenAcquire mc = MainChickenAcquire.Instance;
         HealthSystem pet = bm.mainChickenHealth;
@@ -301,10 +353,19 @@ public class FinalBossController : MonoBehaviour
         {
             wonDialogueShown = true;
             wonDialogueFrame = Time.frameCount;
+            FocusCameraOnFriend(); // cutscene shot: the friend while he talks; EndingSequence then moves the shot to the chicken (Sui)
             dialogue.Open("Bạn thân", wonLines, null, null);
         }
 
         if (wonDialogueShown && !VictoryStoryDone && dialogue != null && Time.frameCount > wonDialogueFrame && !dialogue.IsOpen) VictoryStoryDone = true;
+    }
+
+    void FocusCameraOnFriend()
+    {
+        BattleManager bm = BattleManager.Instance;
+        Transform chicken = bm != null && bm.mainChickenHealth != null ? bm.mainChickenHealth.transform : null;
+        Transform friend = RematchController.Instance != null ? RematchController.Instance.transform : (bm != null && bm.enemyHealth != null ? bm.enemyHealth.transform : null);
+        CinematicCamera.Get().Focus(friend, chicken, CinematicCamera.ShotStyle.Face); // CJ lost: straight at his face
     }
 
     void PollFight()
