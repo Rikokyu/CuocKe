@@ -1,0 +1,847 @@
+{
+ "blender_origin": [
+  938.8252563476562,
+  0.0,
+  0.0
+ ],
+ "builder": "build_construction_site",
+ "cameras": [],
+ "exposure": -0.20000000298023224,
+ "lights": [],
+ "look": "AgX - Medium High Contrast",
+ "markers": [],
+ "name": "ConstructionSite_3",
+ "placements": [
+  {
+   "coll": "VKX_ST_ConstructionSite_3",
+   "mat": {
+    "10": "M_VK_Shutter_Green"
+   },
+   "name": "SM_VK_Wall_Stone_Window_inst.261",
+   "p": [
+    3.0,
+    0.0,
+    3.0
+   ],
+   "piece": "SM_VK_Wall_Stone_Window",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_ConstructionSite_3",
+   "mat": {},
+   "name": "SM_VK_Wall_Stone_Door_inst.082",
+   "p": [
+    0.0,
+    0.0,
+    3.0
+   ],
+   "piece": "SM_VK_Wall_Stone_Door",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_ConstructionSite_3",
+   "mat": {
+    "10": "M_VK_Shutter_Green"
+   },
+   "name": "SM_VK_Wall_Stone_Window_inst.262",
+   "p": [
+    -3.0,
+    0.0,
+    3.0
+   ],
+   "piece": "SM_VK_Wall_Stone_Window",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_ConstructionSite_3",
+   "mat": {},
+   "name": "SM_VK_Wall_Stone_inst.309",
+   "p": [
+    3.0,
+    0.0,
+    -3.0
+   ],
+   "piece": "SM_VK_Wall_Stone",
+   "props": {},
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_ConstructionSite_3",
+   "mat": {},
+   "name": "SM_VK_Wall_Stone_inst.310",
+   "p": [
+    0.0,
+    0.0,
+    -3.0
+   ],
+   "piece": "SM_VK_Wall_Stone",
+   "props": {},
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_ConstructionSite_3",
+   "mat": {
+    "10": "M_VK_Shutter_Green"
+   },
+   "name": "SM_VK_Wall_Stone_Window_inst.263",
+   "p": [
+    -3.0,
+    0.0,
+    -3.0
+   ],
+   "piece": "SM_VK_Wall_Stone_Window",
+   "props": {},
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_ConstructionSite_3",
+   "mat": {
+    "10": "M_VK_Shutter_Green"
+   },
+   "name": "SM_VK_Wall_Stone_Window_inst.264",
+   "p": [
+    4.5,
+    0.0,
+    1.5
+   ],
+   "piece": "SM_VK_Wall_Stone_Window",
+   "props": {},
+   "r": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_ConstructionSite_3",
+   "mat": {},
+   "name": "SM_VK_Wall_Stone_inst.311",
+   "p": [
+    4.5,
+    0.0,
+    -1.5
+   ],
+   "piece": "SM_VK_Wall_Stone",
+   "props": {},
+   "r": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_ConstructionSite_3",
+   "mat": {},
+   "name": "SM_VK_Wall_Stone_inst.312",
+   "p": [
+    -4.5,
+    0.0,
+    -1.5
+   ],
+   "piece": "SM_VK_Wall_Stone",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_ConstructionSite_3",
+   "mat": {
+    "10": "M_VK_Shutter_Green"
+   },
+   "name": "SM_VK_Wall_Stone_Window_inst.265",
+   "p": [
+    -4.5,
+    0.0,
+    1.5
+   ],
+   "piece": "SM_VK_Wall_Stone_Window",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_ConstructionSite_3",
+   "mat": {},
+   "name": "SM_VK_Corner_Stone_inst.283",
+   "p": [
+    4.5,
+    0.0,
+    3.0
+   ],
+   "piece": "SM_VK_Corner_Stone",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_ConstructionSite_3",
+   "mat": {},
+   "name": "SM_VK_Corner_Stone_inst.284",
+   "p": [
+    -4.5,
+    0.0,
+    3.0
+   ],
+   "piece": "SM_VK_Corner_Stone",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_ConstructionSite_3",
+   "mat": {},
+   "name": "SM_VK_Corner_Stone_inst.285",
+   "p": [
+    -4.5,
+    0.0,
+    -3.0
+   ],
+   "piece": "SM_VK_Corner_Stone",
+   "props": {},
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_ConstructionSite_3",
+   "mat": {},
+   "name": "SM_VK_Corner_Stone_inst.286",
+   "p": [
+    4.5,
+    0.0,
+    -3.0
+   ],
+   "piece": "SM_VK_Corner_Stone",
+   "props": {},
+   "r": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_ConstructionSite_3",
+   "mat": {
+    "1": "M_VK_Plaster_Ochre"
+   },
+   "name": "SM_VK_Wall_Timber_Window_inst.466",
+   "p": [
+    3.0,
+    3.0,
+    3.0
+   ],
+   "piece": "SM_VK_Wall_Timber_Window",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_ConstructionSite_3",
+   "mat": {
+    "1": "M_VK_Plaster_Ochre"
+   },
+   "name": "SM_VK_Wall_Timber_Window_inst.467",
+   "p": [
+    0.0,
+    3.0,
+    3.0
+   ],
+   "piece": "SM_VK_Wall_Timber_Window",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_ConstructionSite_3",
+   "mat": {
+    "1": "M_VK_Plaster_Ochre"
+   },
+   "name": "SM_VK_Wall_Timber_Window_inst.468",
+   "p": [
+    -3.0,
+    3.0,
+    3.0
+   ],
+   "piece": "SM_VK_Wall_Timber_Window",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_ConstructionSite_3",
+   "mat": {
+    "1": "M_VK_Plaster_Ochre"
+   },
+   "name": "SM_VK_Wall_Timber_X_inst.075",
+   "p": [
+    3.0,
+    3.0,
+    -3.0
+   ],
+   "piece": "SM_VK_Wall_Timber_X",
+   "props": {},
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_ConstructionSite_3",
+   "mat": {
+    "1": "M_VK_Plaster_Ochre"
+   },
+   "name": "SM_VK_Wall_Timber_K_inst.093",
+   "p": [
+    0.0,
+    3.0,
+    -3.0
+   ],
+   "piece": "SM_VK_Wall_Timber_K",
+   "props": {},
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_ConstructionSite_3",
+   "mat": {
+    "1": "M_VK_Plaster_Ochre"
+   },
+   "name": "SM_VK_Wall_Timber_Window_inst.469",
+   "p": [
+    -3.0,
+    3.0,
+    -3.0
+   ],
+   "piece": "SM_VK_Wall_Timber_Window",
+   "props": {},
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_ConstructionSite_3",
+   "mat": {
+    "1": "M_VK_Plaster_Ochre"
+   },
+   "name": "SM_VK_Wall_Timber_Window_inst.470",
+   "p": [
+    4.5,
+    3.0,
+    1.5
+   ],
+   "piece": "SM_VK_Wall_Timber_Window",
+   "props": {},
+   "r": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_ConstructionSite_3",
+   "mat": {
+    "1": "M_VK_Plaster_Ochre"
+   },
+   "name": "SM_VK_Wall_Timber_K_inst.094",
+   "p": [
+    4.5,
+    3.0,
+    -1.5
+   ],
+   "piece": "SM_VK_Wall_Timber_K",
+   "props": {},
+   "r": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_ConstructionSite_3",
+   "mat": {
+    "1": "M_VK_Plaster_Ochre"
+   },
+   "name": "SM_VK_Wall_Timber_K_inst.095",
+   "p": [
+    -4.5,
+    3.0,
+    -1.5
+   ],
+   "piece": "SM_VK_Wall_Timber_K",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_ConstructionSite_3",
+   "mat": {
+    "1": "M_VK_Plaster_Ochre"
+   },
+   "name": "SM_VK_Wall_Timber_Window_inst.471",
+   "p": [
+    -4.5,
+    3.0,
+    1.5
+   ],
+   "piece": "SM_VK_Wall_Timber_Window",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_ConstructionSite_3",
+   "mat": {},
+   "name": "SM_VK_Corner_Timber_inst.288",
+   "p": [
+    4.5,
+    3.0,
+    3.0
+   ],
+   "piece": "SM_VK_Corner_Timber",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_ConstructionSite_3",
+   "mat": {},
+   "name": "SM_VK_Corner_Timber_inst.289",
+   "p": [
+    -4.5,
+    3.0,
+    3.0
+   ],
+   "piece": "SM_VK_Corner_Timber",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_ConstructionSite_3",
+   "mat": {},
+   "name": "SM_VK_Corner_Timber_inst.290",
+   "p": [
+    -4.5,
+    3.0,
+    -3.0
+   ],
+   "piece": "SM_VK_Corner_Timber",
+   "props": {},
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_ConstructionSite_3",
+   "mat": {},
+   "name": "SM_VK_Corner_Timber_inst.291",
+   "p": [
+    4.5,
+    3.0,
+    -3.0
+   ],
+   "piece": "SM_VK_Corner_Timber",
+   "props": {},
+   "r": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_ConstructionSite_3",
+   "mat": {
+    "1": "M_VK_Plaster_Ochre"
+   },
+   "name": "SM_VK_Roof_Gable_inst.113",
+   "p": [
+    3.0,
+    5.8,
+    0.0
+   ],
+   "piece": "SM_VK_Roof_Gable",
+   "props": {},
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_ConstructionSite_3",
+   "mat": {},
+   "name": "SM_VK_Roof_Mid_inst.069",
+   "p": [
+    0.0,
+    5.8,
+    0.0
+   ],
+   "piece": "SM_VK_Roof_Mid",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_ConstructionSite_3",
+   "mat": {
+    "1": "M_VK_Plaster_Ochre"
+   },
+   "name": "SM_VK_Roof_Gable_inst.114",
+   "p": [
+    -3.0,
+    5.8,
+    0.0
+   ],
+   "piece": "SM_VK_Roof_Gable",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_ConstructionSite_3",
+   "mat": {},
+   "name": "SM_VK_Chimney_inst.080",
+   "p": [
+    -3.0,
+    5.8,
+    0.0
+   ],
+   "piece": "SM_VK_Chimney",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_ConstructionSite_3",
+   "mat": {},
+   "name": "SM_VK_Prop_FlowerBox_inst.174",
+   "p": [
+    3.0,
+    0.78,
+    3.55
+   ],
+   "piece": "SM_VK_Prop_FlowerBox",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_ConstructionSite_3",
+   "mat": {},
+   "name": "SM_VK_Prop_FlowerBox_inst.175",
+   "p": [
+    -3.0,
+    0.78,
+    3.55
+   ],
+   "piece": "SM_VK_Prop_FlowerBox",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  }
+ ],
+ "preset": null,
+ "root": {},
+ "scene": "VKX_Structures",
+ "structure": "ConstructionSite_3",
+ "version": "2026-09-30 slice",
+ "view_transform": "AgX",
+ "world": {
+  "color": [
+   0.42,
+   0.55,
+   0.75
+  ],
+  "linked": false,
+  "strength": 0.35
+ }
+}

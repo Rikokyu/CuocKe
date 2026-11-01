@@ -1,0 +1,330 @@
+{
+ "blender_origin": [
+  536.758056640625,
+  0.0,
+  0.0
+ ],
+ "builder": "build_apiary",
+ "cameras": [],
+ "exposure": -0.20000000298023224,
+ "lights": [],
+ "look": "AgX - Medium High Contrast",
+ "markers": [],
+ "name": "Apiary",
+ "placements": [
+  {
+   "coll": "VKX_ST_Apiary",
+   "mat": {},
+   "name": "SM_VK_Crop_Lavender_inst.009",
+   "p": [
+    2.59998,
+    0.0,
+    -3.0
+   ],
+   "piece": "SM_VK_Crop_Lavender",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Apiary",
+   "mat": {},
+   "name": "SM_VK_Prop_Dovecote_inst.001",
+   "p": [
+    -2.5,
+    0.0,
+    -2.35
+   ],
+   "piece": "SM_VK_Prop_Dovecote",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Apiary",
+   "mat": {},
+   "name": "SM_VK_Prop_BeeBench_inst.002",
+   "p": [
+    3.04999,
+    0.0,
+    -0.1
+   ],
+   "piece": "SM_VK_Prop_BeeBench",
+   "props": {},
+   "r": [
+    0.0,
+    -0.030052,
+    0.0,
+    0.999548
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Apiary",
+   "mat": {},
+   "name": "SM_VK_Prop_BeeBench_inst.003",
+   "p": [
+    0.04999,
+    0.0,
+    0.45
+   ],
+   "piece": "SM_VK_Prop_BeeBench",
+   "props": {},
+   "r": [
+    0.0,
+    -0.022509,
+    0.0,
+    0.999747
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Apiary",
+   "mat": {},
+   "name": "SM_VK_Prop_Stool_inst.045",
+   "p": [
+    3.90002,
+    0.0,
+    2.1
+   ],
+   "piece": "SM_VK_Prop_Stool",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Apiary",
+   "mat": {},
+   "name": "SM_VK_Prop_Skep_inst.003",
+   "p": [
+    3.90002,
+    0.54,
+    2.1
+   ],
+   "piece": "SM_VK_Prop_Skep",
+   "props": {},
+   "r": [
+    -0.0,
+    -0.969028,
+    -0.0,
+    0.24695
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Apiary",
+   "mat": {},
+   "name": "SM_VK_Prop_Stool_inst.046",
+   "p": [
+    2.40002,
+    0.0,
+    2.1
+   ],
+   "piece": "SM_VK_Prop_Stool",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Apiary",
+   "mat": {},
+   "name": "SM_VK_Prop_Skep_inst.004",
+   "p": [
+    2.40002,
+    0.54,
+    2.1
+   ],
+   "piece": "SM_VK_Prop_Skep",
+   "props": {},
+   "r": [
+    -0.0,
+    -0.726635,
+    -0.0,
+    0.687024
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Apiary",
+   "mat": {},
+   "name": "SM_VK_Prop_Stool_inst.047",
+   "p": [
+    0.90002,
+    0.0,
+    2.1
+   ],
+   "piece": "SM_VK_Prop_Stool",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Apiary",
+   "mat": {},
+   "name": "SM_VK_Prop_Skep_inst.005",
+   "p": [
+    0.90002,
+    0.54,
+    2.1
+   ],
+   "piece": "SM_VK_Prop_Skep",
+   "props": {},
+   "r": [
+    0.0,
+    0.999373,
+    0.0,
+    0.035413
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Apiary",
+   "mat": {},
+   "name": "SM_VK_Prop_DryingRack_Herbs_inst.001",
+   "p": [
+    -4.0,
+    0.0,
+    1.9
+   ],
+   "piece": "SM_VK_Prop_DryingRack_Herbs",
+   "props": {},
+   "r": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Apiary",
+   "mat": {},
+   "name": "SM_VK_Prop_HerbBundles_inst.001",
+   "p": [
+    -1.29999,
+    0.0,
+    3.6
+   ],
+   "piece": "SM_VK_Prop_HerbBundles",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Apiary",
+   "mat": {},
+   "name": "SM_VK_Prop_Bench_inst.027",
+   "p": [
+    2.0,
+    0.0,
+    3.7
+   ],
+   "piece": "SM_VK_Prop_Bench",
+   "props": {},
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  }
+ ],
+ "preset": null,
+ "root": {},
+ "scene": "VKX_Structures",
+ "structure": "Apiary",
+ "version": "2026-09-30 slice",
+ "view_transform": "AgX",
+ "world": {
+  "color": [
+   0.42,
+   0.55,
+   0.75
+  ],
+  "linked": false,
+  "strength": 0.35
+ }
+}

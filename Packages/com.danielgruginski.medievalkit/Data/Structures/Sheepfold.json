@@ -1,0 +1,612 @@
+{
+ "blender_origin": [
+  405.0626525878906,
+  0.0,
+  0.0
+ ],
+ "builder": "build_sheepfold",
+ "cameras": [],
+ "exposure": -0.20000000298023224,
+ "lights": [],
+ "look": "AgX - Medium High Contrast",
+ "markers": [],
+ "name": "Sheepfold",
+ "placements": [
+  {
+   "coll": "VKX_ST_Sheepfold",
+   "mat": {
+    "1": "M_VK_Plaster_Daub"
+   },
+   "name": "SM_VK_Wall_Wattle_inst.055",
+   "p": [
+    3.0,
+    0.0,
+    -4.5
+   ],
+   "piece": "SM_VK_Wall_Wattle",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Sheepfold",
+   "mat": {
+    "1": "M_VK_Plaster_Daub"
+   },
+   "name": "SM_VK_Wall_Wattle_inst.056",
+   "p": [
+    0.0,
+    0.0,
+    -4.5
+   ],
+   "piece": "SM_VK_Wall_Wattle",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Sheepfold",
+   "mat": {
+    "1": "M_VK_Plaster_Daub"
+   },
+   "name": "SM_VK_Wall_Wattle_inst.057",
+   "p": [
+    -3.0,
+    0.0,
+    -4.5
+   ],
+   "piece": "SM_VK_Wall_Wattle",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Sheepfold",
+   "mat": {},
+   "name": "SM_VK_LeanTo_Thatch_Low_inst.008",
+   "p": [
+    0.0,
+    0.0,
+    -4.5
+   ],
+   "piece": "SM_VK_LeanTo_Thatch_Low",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Sheepfold",
+   "mat": {},
+   "name": "SM_VK_LeanTo_Thatch_Low_inst.009",
+   "p": [
+    -3.0,
+    0.0,
+    -4.5
+   ],
+   "piece": "SM_VK_LeanTo_Thatch_Low",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Sheepfold",
+   "mat": {},
+   "name": "SM_VK_Corner_Wattle_inst.034",
+   "p": [
+    4.5,
+    0.0,
+    -4.5
+   ],
+   "piece": "SM_VK_Corner_Wattle",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Sheepfold",
+   "mat": {},
+   "name": "SM_VK_Corner_Wattle_inst.035",
+   "p": [
+    -4.5,
+    0.0,
+    -4.5
+   ],
+   "piece": "SM_VK_Corner_Wattle",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Sheepfold",
+   "mat": {},
+   "name": "SM_VK_Prop_Fence_inst.213",
+   "p": [
+    4.5,
+    0.0,
+    -2.75
+   ],
+   "piece": "SM_VK_Prop_Fence",
+   "props": {},
+   "r": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Sheepfold",
+   "mat": {},
+   "name": "SM_VK_Prop_Fence_inst.214",
+   "p": [
+    4.5,
+    0.0,
+    0.15
+   ],
+   "piece": "SM_VK_Prop_Fence",
+   "props": {},
+   "r": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Sheepfold",
+   "mat": {},
+   "name": "SM_VK_Prop_Fence_inst.215",
+   "p": [
+    4.5,
+    0.0,
+    3.05
+   ],
+   "piece": "SM_VK_Prop_Fence",
+   "props": {},
+   "r": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Sheepfold",
+   "mat": {},
+   "name": "SM_VK_Prop_Fence_inst.216",
+   "p": [
+    -4.5,
+    0.0,
+    3.05
+   ],
+   "piece": "SM_VK_Prop_Fence",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Sheepfold",
+   "mat": {},
+   "name": "SM_VK_Prop_Fence_inst.217",
+   "p": [
+    -4.5,
+    0.0,
+    0.15
+   ],
+   "piece": "SM_VK_Prop_Fence",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Sheepfold",
+   "mat": {},
+   "name": "SM_VK_Prop_Fence_inst.218",
+   "p": [
+    -4.5,
+    0.0,
+    -2.75
+   ],
+   "piece": "SM_VK_Prop_Fence",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Sheepfold",
+   "mat": {},
+   "name": "SM_VK_Prop_Fence_inst.219",
+   "p": [
+    3.0,
+    0.0,
+    4.5
+   ],
+   "piece": "SM_VK_Prop_Fence",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Sheepfold",
+   "mat": {},
+   "name": "SM_VK_Prop_FenceGate_inst.031",
+   "p": [
+    0.0,
+    0.0,
+    4.5
+   ],
+   "piece": "SM_VK_Prop_FenceGate",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Sheepfold",
+   "mat": {},
+   "name": "SM_VK_Prop_Fence_inst.220",
+   "p": [
+    -3.0,
+    0.0,
+    4.5
+   ],
+   "piece": "SM_VK_Prop_Fence",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Sheepfold",
+   "mat": {},
+   "name": "SM_VK_Prop_HayRack_inst.003",
+   "p": [
+    3.0,
+    0.0,
+    -2.65
+   ],
+   "piece": "SM_VK_Prop_HayRack",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Sheepfold",
+   "mat": {},
+   "name": "SM_VK_Prop_Trough_inst.020",
+   "p": [
+    -2.20001,
+    0.0,
+    3.3
+   ],
+   "piece": "SM_VK_Prop_Trough",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Sheepfold",
+   "mat": {},
+   "name": "SM_VK_Animal_Sheep_inst.009",
+   "p": [
+    1.79999,
+    0.0,
+    1.2
+   ],
+   "piece": "SM_VK_Animal_Sheep",
+   "props": {},
+   "r": [
+    0.0,
+    0.469534,
+    0.0,
+    0.882914
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Sheepfold",
+   "mat": {},
+   "name": "SM_VK_Animal_Sheep_inst.010",
+   "p": [
+    -0.39999,
+    0.0,
+    0.2
+   ],
+   "piece": "SM_VK_Animal_Sheep",
+   "props": {},
+   "r": [
+    0.0,
+    0.689218,
+    0.0,
+    0.724554
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Sheepfold",
+   "mat": {},
+   "name": "SM_VK_Animal_Sheep_inst.011",
+   "p": [
+    -1.60001,
+    0.0,
+    2.0
+   ],
+   "piece": "SM_VK_Animal_Sheep",
+   "props": {},
+   "r": [
+    -0.0,
+    -0.969028,
+    -0.0,
+    0.24695
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Sheepfold",
+   "mat": {},
+   "name": "SM_VK_Animal_Sheep_inst.012",
+   "p": [
+    0.60001,
+    0.0,
+    -1.4
+   ],
+   "piece": "SM_VK_Animal_Sheep",
+   "props": {},
+   "r": [
+    -0.0,
+    -0.726635,
+    -0.0,
+    0.687024
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Sheepfold",
+   "mat": {},
+   "name": "SM_VK_Animal_Sheep_inst.013",
+   "p": [
+    -2.39999,
+    0.0,
+    -2.3
+   ],
+   "piece": "SM_VK_Animal_Sheep",
+   "props": {},
+   "r": [
+    0.0,
+    0.999373,
+    0.0,
+    0.035413
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Sheepfold",
+   "mat": {},
+   "name": "SM_VK_Animal_Goat_inst.001",
+   "p": [
+    3.10001,
+    0.0,
+    2.8
+   ],
+   "piece": "SM_VK_Animal_Goat",
+   "props": {},
+   "r": [
+    -0.0,
+    -0.955732,
+    -0.0,
+    0.294238
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Sheepfold",
+   "mat": {},
+   "name": "SM_VK_Prop_HayBale_inst.018",
+   "p": [
+    -3.29999,
+    0.0,
+    -1.2
+   ],
+   "piece": "SM_VK_Prop_HayBale",
+   "props": {},
+   "r": [
+    0.0,
+    -0.087156,
+    0.0,
+    0.996195
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  }
+ ],
+ "preset": null,
+ "root": {},
+ "scene": "VKX_Structures",
+ "structure": "Sheepfold",
+ "version": "2026-09-30 slice",
+ "view_transform": "AgX",
+ "world": {
+  "color": [
+   0.42,
+   0.55,
+   0.75
+  ],
+  "linked": false,
+  "strength": 0.35
+ }
+}

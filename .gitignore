@@ -72,10 +72,9 @@ sysinfo.txt
 /Assets/AddressableAssetsData/*/*.json
 
 # ============================================
-# Package manager generated files
+# Package manager
 # ============================================
-
-packages-lock.json
+# Packages/packages-lock.json MUST be committed (do not ignore)
 
 # ============================================
 # Rider
@@ -96,3 +95,9 @@ plastic.sln
 
 *.pidb.meta
 *.pdb.meta
+# ============================================
+# Local captures / recovery / review (not shared)
+# ============================================
+/Captures/
+/Assets/_Recovery/
+/Assets/_Recovery.meta

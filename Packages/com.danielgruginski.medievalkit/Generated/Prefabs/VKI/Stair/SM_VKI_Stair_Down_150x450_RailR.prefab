@@ -1,0 +1,249 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8028088845386104986
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 975517429342544313}
+  - component: {fileID: 6585104133459898807}
+  - component: {fileID: 3117601347999709904}
+  - component: {fileID: 5659291545041456898}
+  - component: {fileID: 4208951993774478766}
+  - component: {fileID: 5885365301708630247}
+  - component: {fileID: 2757940944349165870}
+  m_Layer: 0
+  m_Name: SM_VKI_Stair_Down_150x450_RailR
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &975517429342544313
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8028088845386104986}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &6585104133459898807
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8028088845386104986}
+  m_Mesh: {fileID: 3933093119313908459, guid: e4f7b7a386cfd334d938f7dea80fde64, type: 3}
+--- !u!23 &3117601347999709904
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8028088845386104986}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: aaed61e7d756d604d954ba1469be9372, type: 2}
+  - {fileID: 2100000, guid: 6c22d04606e5c064282d5adf343ba2c8, type: 2}
+  - {fileID: 2100000, guid: aac63d1415a75cf4bbc8083b7bd7214a, type: 2}
+  - {fileID: 2100000, guid: 624dadd43ba831f449ac33fd84b6f0a1, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &5659291545041456898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8028088845386104986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 938fa78bf5505094496c8540c0c28540, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: MedievalKit.Runtime::MedievalKit.KitPiece
+  props:
+  - key: grid_m
+    value: 1.5
+  - key: kit
+    value: VillageInterior
+  - key: vki_cells
+    value: '[[0, 0], [0, 1], [0, 2]]'
+  - key: vki_class
+    value: link
+  - key: vki_collider
+    value: '[[0.8, 1.86, 0.5, 0.94, 3.52, 1.0], [0.8875, 0.05, 0.5, 1.085, 0.1, 1.0],
+      [1.385, 1.5, 0.5, 0.1, 2.99, 1.0]]'
+  - key: vki_collider_note
+    value: 'blocked boxes: the hole and the two rails; trimmers and landing walk
+      at z 0'
+  - key: vki_depth
+    value: 4.5
+  - key: vki_facing_min
+    value: 60
+  - key: vki_floor_under
+    value: 'none: the piece covers its footprint (trimmers, landing); no FLOOR faces'
+  - key: vki_footprint
+    value: 0.285,0,1.5,4.2151
+  - key: vki_fp_cells
+    value: 1,3
+  - key: vki_going
+    value: 0.25857
+  - key: vki_hole
+    value: '[0.33, 0.1, 1.27, 3.62]'
+  - key: vki_kind
+    value: Down
+  - key: vki_len
+    value: 1.5
+  - key: vki_link
+    value: stair_down
+  - key: vki_nav
+    value: walk
+  - key: vki_needs_walls
+    value: '["local x = 0 (y 0..4.5)", "local y = 4.5 (x 0..1.5)"]'
+  - key: vki_no_wall
+    value: local x = 1.5 side (the open / rail side)
+  - key: vki_nominal
+    value: 0,0,1.5,4.5
+  - key: vki_origin
+    value: min_corner
+  - key: vki_pair
+    value: SM_VKI_Stair_Up_150x450_RailR
+  - key: vki_piece
+    value: SM_VKI_Stair_Down_150x450_RailR
+  - key: vki_post_rule
+    value: '{"allowed": "Mid post at local (0, 0); Corner post at local (0, 4.5)",
+      "forbidden": [[0.0, 1.5], [0.0, 3.0], [1.5, 4.5]], "note": "rhythm posts are
+      skipped along the stair''s walls (\u00a72.3)"}'
+  - key: vki_prompt_local
+    value: '[1.485, 3.555, 1.4]'
+  - key: vki_rise
+    value: 0.2
+  - key: vki_risers
+    value: 15
+  - key: vki_rot_allowed
+    value: '[0, 90, -90]'
+  - key: vki_rot_lock
+    value: no180
+  - key: vki_spawn_facing
+    value: 90
+  - key: vki_spawn_local
+    value: '[2.25, 3.75]'
+  - key: vki_trigger
+    value: '[1.485, 3.555, 1.0, 0.43, 1.31, 2.0]'
+  - key: vki_uv_lock
+    value: local
+  - key: vki_var
+    value: RailR
+  piece: SM_VKI_Stair_Down_150x450_RailR
+  blenderSlots: 3600000002000000170000001b000000
+--- !u!65 &4208951993774478766
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8028088845386104986}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.94, y: 1, z: 3.52}
+  m_Center: {x: -0.8, y: 0.5, z: -1.86}
+--- !u!65 &5885365301708630247
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8028088845386104986}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.085, y: 1, z: 0.1}
+  m_Center: {x: -0.8875, y: 0.5, z: -0.05}
+--- !u!65 &2757940944349165870
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8028088845386104986}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.1, y: 1, z: 2.99}
+  m_Center: {x: -1.385, y: 0.5, z: -1.5}

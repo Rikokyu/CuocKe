@@ -1,0 +1,656 @@
+{
+ "blender_origin": [
+  387.273193359375,
+  0.0,
+  0.0
+ ],
+ "builder": "build_pigsty",
+ "cameras": [],
+ "exposure": -0.20000000298023224,
+ "lights": [],
+ "look": "AgX - Medium High Contrast",
+ "markers": [],
+ "name": "Pigsty",
+ "placements": [
+  {
+   "coll": "VKX_ST_Pigsty",
+   "mat": {
+    "1": "M_VK_Plaster_Daub"
+   },
+   "name": "SM_VK_Wall_Wattle_inst.053",
+   "p": [
+    1.5,
+    0.0,
+    -3.0
+   ],
+   "piece": "SM_VK_Wall_Wattle",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Pigsty",
+   "mat": {},
+   "name": "SM_VK_LeanTo_Thatch_Low_inst.006",
+   "p": [
+    1.5,
+    0.0,
+    -3.0
+   ],
+   "piece": "SM_VK_LeanTo_Thatch_Low",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Pigsty",
+   "mat": {
+    "1": "M_VK_Plaster_Daub"
+   },
+   "name": "SM_VK_Wall_Wattle_inst.054",
+   "p": [
+    -1.5,
+    0.0,
+    -3.0
+   ],
+   "piece": "SM_VK_Wall_Wattle",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Pigsty",
+   "mat": {},
+   "name": "SM_VK_LeanTo_Thatch_Low_inst.007",
+   "p": [
+    -1.5,
+    0.0,
+    -3.0
+   ],
+   "piece": "SM_VK_LeanTo_Thatch_Low",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Pigsty",
+   "mat": {},
+   "name": "SM_VK_LowWall_inst.037",
+   "p": [
+    3.0,
+    0.0,
+    -1.5
+   ],
+   "piece": "SM_VK_LowWall",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Pigsty",
+   "mat": {},
+   "name": "SM_VK_LowWall_inst.038",
+   "p": [
+    3.0,
+    0.0,
+    1.5
+   ],
+   "piece": "SM_VK_LowWall",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Pigsty",
+   "mat": {},
+   "name": "SM_VK_LowWall_inst.039",
+   "p": [
+    -3.0,
+    0.0,
+    -1.5
+   ],
+   "piece": "SM_VK_LowWall",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Pigsty",
+   "mat": {},
+   "name": "SM_VK_LowWall_inst.040",
+   "p": [
+    -3.0,
+    0.0,
+    1.5
+   ],
+   "piece": "SM_VK_LowWall",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Pigsty",
+   "mat": {},
+   "name": "SM_VK_LowWall_inst.041",
+   "p": [
+    1.5,
+    0.0,
+    3.0
+   ],
+   "piece": "SM_VK_LowWall",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Pigsty",
+   "mat": {},
+   "name": "SM_VK_Prop_FenceGate_inst.030",
+   "p": [
+    -1.5,
+    0.0,
+    3.0
+   ],
+   "piece": "SM_VK_Prop_FenceGate",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Pigsty",
+   "mat": {},
+   "name": "SM_VK_LowWall_Post_inst.023",
+   "p": [
+    3.0,
+    0.0,
+    -3.0
+   ],
+   "piece": "SM_VK_LowWall_Post",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Pigsty",
+   "mat": {},
+   "name": "SM_VK_LowWall_Post_inst.024",
+   "p": [
+    -3.0,
+    0.0,
+    -3.0
+   ],
+   "piece": "SM_VK_LowWall_Post",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Pigsty",
+   "mat": {},
+   "name": "SM_VK_LowWall_Post_inst.025",
+   "p": [
+    3.0,
+    0.0,
+    3.0
+   ],
+   "piece": "SM_VK_LowWall_Post",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Pigsty",
+   "mat": {},
+   "name": "SM_VK_LowWall_Post_inst.026",
+   "p": [
+    -3.0,
+    0.0,
+    3.0
+   ],
+   "piece": "SM_VK_LowWall_Post",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Pigsty",
+   "mat": {},
+   "name": "SM_VK_LowWall_Post_inst.027",
+   "p": [
+    0.0,
+    0.0,
+    3.0
+   ],
+   "piece": "SM_VK_LowWall_Post",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Pigsty",
+   "mat": {},
+   "name": "SM_VK_LowWall_Post_inst.028",
+   "p": [
+    3.0,
+    0.0,
+    0.0
+   ],
+   "piece": "SM_VK_LowWall_Post",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Pigsty",
+   "mat": {},
+   "name": "SM_VK_LowWall_Post_inst.029",
+   "p": [
+    -3.0,
+    0.0,
+    0.0
+   ],
+   "piece": "SM_VK_LowWall_Post",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Pigsty",
+   "mat": {},
+   "name": "SM_VK_Deco_MudWallow_inst.001",
+   "p": [
+    -0.29999,
+    0.0,
+    0.9
+   ],
+   "piece": "SM_VK_Deco_MudWallow",
+   "props": {},
+   "r": [
+    0.0,
+    -0.090047,
+    0.0,
+    0.995938
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Pigsty",
+   "mat": {},
+   "name": "SM_VK_Animal_Pig_inst.003",
+   "p": [
+    0.5,
+    0.0,
+    1.2
+   ],
+   "piece": "SM_VK_Animal_Pig",
+   "props": {},
+   "r": [
+    0.0,
+    -0.2615,
+    0.0,
+    0.965203
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Pigsty",
+   "mat": {},
+   "name": "SM_VK_Animal_Pig_inst.004",
+   "p": [
+    -1.29999,
+    0.0,
+    0.3
+   ],
+   "piece": "SM_VK_Animal_Pig",
+   "props": {},
+   "r": [
+    -0.0,
+    -0.95838,
+    -0.0,
+    0.285497
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Pigsty",
+   "mat": {},
+   "name": "SM_VK_Animal_Pig_inst.005",
+   "p": [
+    1.0,
+    0.0,
+    -1.7
+   ],
+   "piece": "SM_VK_Animal_Pig",
+   "props": {},
+   "r": [
+    0.0,
+    0.817363,
+    0.0,
+    0.576123
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Pigsty",
+   "mat": {},
+   "name": "SM_VK_Prop_Trough_inst.019",
+   "p": [
+    1.54999,
+    0.0,
+    2.05
+   ],
+   "piece": "SM_VK_Prop_Trough",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Pigsty",
+   "mat": {},
+   "name": "SM_VK_Prop_Sacks_inst.019",
+   "p": [
+    -3.89999,
+    0.0,
+    2.2
+   ],
+   "piece": "SM_VK_Prop_Sacks",
+   "props": {},
+   "r": [
+    0.0,
+    -0.258819,
+    0.0,
+    0.965926
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Pigsty",
+   "mat": {},
+   "name": "SM_VK_Prop_HayBale_inst.017",
+   "p": [
+    -3.89999,
+    0.0,
+    -1.9
+   ],
+   "piece": "SM_VK_Prop_HayBale",
+   "props": {},
+   "r": [
+    0.0,
+    -0.642788,
+    0.0,
+    0.766044
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Pigsty",
+   "mat": {},
+   "name": "SM_VK_Deco_Weeds_inst.236",
+   "p": [
+    1.5,
+    0.0,
+    3.4
+   ],
+   "piece": "SM_VK_Deco_Weeds",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Pigsty",
+   "mat": {},
+   "name": "SM_VK_Deco_Weeds_inst.237",
+   "p": [
+    3.39999,
+    0.0,
+    -1.5
+   ],
+   "piece": "SM_VK_Deco_Weeds",
+   "props": {},
+   "r": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Pigsty",
+   "mat": {},
+   "name": "SM_VK_Deco_Weeds_inst.238",
+   "p": [
+    -3.39999,
+    0.0,
+    1.5
+   ],
+   "piece": "SM_VK_Deco_Weeds",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  }
+ ],
+ "preset": null,
+ "root": {},
+ "scene": "VKX_Structures",
+ "structure": "Pigsty",
+ "version": "2026-09-30 slice",
+ "view_transform": "AgX",
+ "world": {
+  "color": [
+   0.42,
+   0.55,
+   0.75
+  ],
+  "linked": false,
+  "strength": 0.35
+ }
+}

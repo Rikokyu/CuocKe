@@ -1,0 +1,788 @@
+{
+ "blender_origin": [
+  221.11265563964844,
+  0.0,
+  0.0
+ ],
+ "builder": "build_woodcutter",
+ "cameras": [],
+ "exposure": -0.20000000298023224,
+ "lights": [],
+ "look": "AgX - Medium High Contrast",
+ "markers": [],
+ "name": "Woodcutter",
+ "placements": [
+  {
+   "coll": "VKX_ST_Woodcutter",
+   "mat": {
+    "0": "M_VK_Stone_Field",
+    "1": "M_VK_Plaster_Daub"
+   },
+   "name": "SM_VK_Wall_Log_Door_inst.002",
+   "p": [
+    3.0,
+    0.0,
+    1.5
+   ],
+   "piece": "SM_VK_Wall_Log_Door",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Woodcutter",
+   "mat": {},
+   "name": "SM_VK_Deco_Weeds_inst.217",
+   "p": [
+    3.0,
+    0.0,
+    1.5
+   ],
+   "piece": "SM_VK_Deco_Weeds",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Woodcutter",
+   "mat": {},
+   "name": "SM_VK_Prop_Lantern_inst.056",
+   "p": [
+    2.0,
+    2.3,
+    1.76
+   ],
+   "piece": "SM_VK_Prop_Lantern",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Woodcutter",
+   "mat": {
+    "0": "M_VK_Stone_Field",
+    "1": "M_VK_Plaster_Daub",
+    "10": "M_VK_Shutter_Natural"
+   },
+   "name": "SM_VK_Wall_Log_Window_inst.005",
+   "p": [
+    0.0,
+    0.0,
+    1.5
+   ],
+   "piece": "SM_VK_Wall_Log_Window",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Woodcutter",
+   "mat": {},
+   "name": "SM_VK_Prop_FlowerBox_inst.154",
+   "p": [
+    0.0,
+    1.0,
+    1.97
+   ],
+   "piece": "SM_VK_Prop_FlowerBox",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Woodcutter",
+   "mat": {},
+   "name": "SM_VK_Deco_Weeds_inst.218",
+   "p": [
+    0.0,
+    0.0,
+    1.5
+   ],
+   "piece": "SM_VK_Deco_Weeds",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Woodcutter",
+   "mat": {
+    "0": "M_VK_Stone_Field",
+    "1": "M_VK_Plaster_Daub"
+   },
+   "name": "SM_VK_Wall_Log_inst.005",
+   "p": [
+    0.0,
+    0.0,
+    -4.5
+   ],
+   "piece": "SM_VK_Wall_Log",
+   "props": {},
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Woodcutter",
+   "mat": {
+    "0": "M_VK_Stone_Field",
+    "1": "M_VK_Plaster_Daub",
+    "10": "M_VK_Shutter_Natural"
+   },
+   "name": "SM_VK_Wall_Log_Window_inst.006",
+   "p": [
+    3.0,
+    0.0,
+    -4.5
+   ],
+   "piece": "SM_VK_Wall_Log_Window",
+   "props": {},
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Woodcutter",
+   "mat": {},
+   "name": "SM_VK_Prop_FlowerBox_inst.155",
+   "p": [
+    3.0,
+    1.0,
+    -4.97
+   ],
+   "piece": "SM_VK_Prop_FlowerBox",
+   "props": {},
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Woodcutter",
+   "mat": {
+    "0": "M_VK_Stone_Field",
+    "1": "M_VK_Plaster_Daub"
+   },
+   "name": "SM_VK_Wall_Log_B_inst.010",
+   "p": [
+    4.5,
+    0.0,
+    -3.0
+   ],
+   "piece": "SM_VK_Wall_Log_B",
+   "props": {},
+   "r": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Woodcutter",
+   "mat": {},
+   "name": "SM_VK_Deco_Weeds_inst.219",
+   "p": [
+    4.5,
+    0.0,
+    -3.0
+   ],
+   "piece": "SM_VK_Deco_Weeds",
+   "props": {},
+   "r": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Woodcutter",
+   "mat": {
+    "0": "M_VK_Stone_Field",
+    "1": "M_VK_Plaster_Daub"
+   },
+   "name": "SM_VK_Wall_Log_B_inst.011",
+   "p": [
+    4.5,
+    0.0,
+    0.0
+   ],
+   "piece": "SM_VK_Wall_Log_B",
+   "props": {},
+   "r": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Woodcutter",
+   "mat": {
+    "0": "M_VK_Stone_Field",
+    "1": "M_VK_Plaster_Daub"
+   },
+   "name": "SM_VK_Wall_Log_B_inst.012",
+   "p": [
+    -1.5,
+    0.0,
+    0.0
+   ],
+   "piece": "SM_VK_Wall_Log_B",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Woodcutter",
+   "mat": {},
+   "name": "SM_VK_Deco_Weeds_inst.220",
+   "p": [
+    -1.5,
+    0.0,
+    0.0
+   ],
+   "piece": "SM_VK_Deco_Weeds",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Woodcutter",
+   "mat": {
+    "0": "M_VK_Stone_Field",
+    "1": "M_VK_Plaster_Daub"
+   },
+   "name": "SM_VK_Wall_Log_B_inst.013",
+   "p": [
+    -1.5,
+    0.0,
+    -3.0
+   ],
+   "piece": "SM_VK_Wall_Log_B",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Woodcutter",
+   "mat": {
+    "0": "M_VK_Stone_Field"
+   },
+   "name": "SM_VK_Corner_Log_inst.006",
+   "p": [
+    4.5,
+    0.0,
+    1.5
+   ],
+   "piece": "SM_VK_Corner_Log",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Woodcutter",
+   "mat": {
+    "0": "M_VK_Stone_Field"
+   },
+   "name": "SM_VK_Corner_Log_B_inst.006",
+   "p": [
+    -1.5,
+    0.0,
+    1.5
+   ],
+   "piece": "SM_VK_Corner_Log_B",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Woodcutter",
+   "mat": {
+    "0": "M_VK_Stone_Field"
+   },
+   "name": "SM_VK_Corner_Log_inst.007",
+   "p": [
+    -1.5,
+    0.0,
+    -4.5
+   ],
+   "piece": "SM_VK_Corner_Log",
+   "props": {},
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Woodcutter",
+   "mat": {
+    "0": "M_VK_Stone_Field"
+   },
+   "name": "SM_VK_Corner_Log_B_inst.007",
+   "p": [
+    4.5,
+    0.0,
+    -4.5
+   ],
+   "piece": "SM_VK_Corner_Log_B",
+   "props": {},
+   "r": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Woodcutter",
+   "mat": {
+    "1": "M_VK_Plaster_Daub",
+    "3": "M_VK_Roof_Shingle"
+   },
+   "name": "SM_VK_Roof_Gable_Logs_inst.006",
+   "p": [
+    3.0,
+    3.0,
+    -1.5
+   ],
+   "piece": "SM_VK_Roof_Gable_Logs",
+   "props": {},
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Woodcutter",
+   "mat": {
+    "1": "M_VK_Plaster_Daub",
+    "3": "M_VK_Roof_Shingle"
+   },
+   "name": "SM_VK_Roof_Gable_Logs_inst.007",
+   "p": [
+    0.0,
+    3.0,
+    -1.5
+   ],
+   "piece": "SM_VK_Roof_Gable_Logs",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Woodcutter",
+   "mat": {
+    "0": "M_VK_Stone_Field"
+   },
+   "name": "SM_VK_Chimney_Gable_H30_inst.005",
+   "p": [
+    4.5,
+    0.0,
+    -1.5
+   ],
+   "piece": "SM_VK_Chimney_Gable_H30",
+   "props": {},
+   "r": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Woodcutter",
+   "mat": {
+    "3": "M_VK_Roof_Shingle"
+   },
+   "name": "SM_VK_LeanTo_inst.010",
+   "p": [
+    -1.5,
+    0.0,
+    -1.5
+   ],
+   "piece": "SM_VK_LeanTo",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Woodcutter",
+   "mat": {},
+   "name": "SM_VK_Pile_Logs_3_inst.003",
+   "p": [
+    -3.10001,
+    0.0,
+    -1.5
+   ],
+   "piece": "SM_VK_Pile_Logs_3",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Woodcutter",
+   "mat": {},
+   "name": "SM_VK_Prop_Sawhorse_inst.003",
+   "p": [
+    0.7,
+    0.0,
+    3.6
+   ],
+   "piece": "SM_VK_Prop_Sawhorse",
+   "props": {},
+   "r": [
+    0.0,
+    -0.104528,
+    0.0,
+    0.994522
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Woodcutter",
+   "mat": {},
+   "name": "SM_VK_Log_Fallen_inst.002",
+   "p": [
+    -2.39999,
+    0.0,
+    3.7
+   ],
+   "piece": "SM_VK_Log_Fallen",
+   "props": {},
+   "r": [
+    0.0,
+    -0.031659,
+    0.0,
+    0.999499
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Woodcutter",
+   "mat": {},
+   "name": "SM_VK_Prop_ChoppingBlock_inst.006",
+   "p": [
+    -3.3,
+    0.0,
+    1.9
+   ],
+   "piece": "SM_VK_Prop_ChoppingBlock",
+   "props": {},
+   "r": [
+    0.0,
+    0.904124,
+    0.0,
+    0.427271
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Woodcutter",
+   "mat": {},
+   "name": "SM_VK_Stump_inst.006",
+   "p": [
+    4.0,
+    0.0,
+    4.0
+   ],
+   "piece": "SM_VK_Stump",
+   "props": {},
+   "r": [
+    0.0,
+    0.836781,
+    0.0,
+    0.547538
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Woodcutter",
+   "mat": {},
+   "name": "SM_VK_Plant_TallGrass_inst.199",
+   "p": [
+    4.2,
+    0.0,
+    2.3
+   ],
+   "piece": "SM_VK_Plant_TallGrass",
+   "props": {},
+   "r": [
+    0.0,
+    0.761888,
+    0.0,
+    0.647708
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Woodcutter",
+   "mat": {},
+   "name": "SM_VK_Plant_TallGrass_inst.200",
+   "p": [
+    -4.2,
+    0.0,
+    4.3
+   ],
+   "piece": "SM_VK_Plant_TallGrass",
+   "props": {},
+   "r": [
+    0.0,
+    -0.418778,
+    0.0,
+    0.908089
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Woodcutter",
+   "mat": {},
+   "name": "SM_VK_Plant_TallGrass_inst.201",
+   "p": [
+    -1.0,
+    0.0,
+    4.4
+   ],
+   "piece": "SM_VK_Plant_TallGrass",
+   "props": {},
+   "r": [
+    0.0,
+    0.987099,
+    0.0,
+    0.160109
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  }
+ ],
+ "preset": null,
+ "root": {},
+ "scene": "VKX_Structures",
+ "structure": "Woodcutter",
+ "version": "2026-09-30 slice",
+ "view_transform": "AgX",
+ "world": {
+  "color": [
+   0.42,
+   0.55,
+   0.75
+  ],
+  "linked": false,
+  "strength": 0.35
+ }
+}

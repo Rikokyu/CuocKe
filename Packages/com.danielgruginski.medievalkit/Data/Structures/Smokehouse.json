@@ -1,0 +1,373 @@
+{
+ "blender_origin": [
+  720.4528198242188,
+  0.0,
+  0.0
+ ],
+ "builder": "build_smokehouse",
+ "cameras": [],
+ "exposure": -0.20000000298023224,
+ "lights": [],
+ "look": "AgX - Medium High Contrast",
+ "markers": [],
+ "name": "Smokehouse",
+ "placements": [
+  {
+   "coll": "VKX_ST_Smokehouse",
+   "mat": {
+    "0": "M_VK_Stone_Dark"
+   },
+   "name": "SM_VK_Wall_Stone_Door_inst.077",
+   "p": [
+    0.0,
+    0.0,
+    1.5
+   ],
+   "piece": "SM_VK_Wall_Stone_Door",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Smokehouse",
+   "mat": {
+    "0": "M_VK_Stone_Dark"
+   },
+   "name": "SM_VK_Wall_Stone_inst.285",
+   "p": [
+    0.0,
+    0.0,
+    -1.5
+   ],
+   "piece": "SM_VK_Wall_Stone",
+   "props": {},
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Smokehouse",
+   "mat": {
+    "0": "M_VK_Stone_Dark"
+   },
+   "name": "SM_VK_Wall_Stone_inst.286",
+   "p": [
+    1.5,
+    0.0,
+    0.0
+   ],
+   "piece": "SM_VK_Wall_Stone",
+   "props": {},
+   "r": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Smokehouse",
+   "mat": {
+    "0": "M_VK_Stone_Dark"
+   },
+   "name": "SM_VK_Wall_Stone_inst.287",
+   "p": [
+    -1.5,
+    0.0,
+    0.0
+   ],
+   "piece": "SM_VK_Wall_Stone",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Smokehouse",
+   "mat": {
+    "0": "M_VK_Stone_Dark"
+   },
+   "name": "SM_VK_Corner_Stone_inst.263",
+   "p": [
+    1.5,
+    0.0,
+    1.5
+   ],
+   "piece": "SM_VK_Corner_Stone",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Smokehouse",
+   "mat": {
+    "0": "M_VK_Stone_Dark"
+   },
+   "name": "SM_VK_Corner_Stone_inst.264",
+   "p": [
+    -1.5,
+    0.0,
+    1.5
+   ],
+   "piece": "SM_VK_Corner_Stone",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Smokehouse",
+   "mat": {
+    "0": "M_VK_Stone_Dark"
+   },
+   "name": "SM_VK_Corner_Stone_inst.265",
+   "p": [
+    -1.5,
+    0.0,
+    -1.5
+   ],
+   "piece": "SM_VK_Corner_Stone",
+   "props": {},
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Smokehouse",
+   "mat": {
+    "0": "M_VK_Stone_Dark"
+   },
+   "name": "SM_VK_Corner_Stone_inst.266",
+   "p": [
+    1.5,
+    0.0,
+    -1.5
+   ],
+   "piece": "SM_VK_Corner_Stone",
+   "props": {},
+   "r": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Smokehouse",
+   "mat": {
+    "3": "M_VK_Roof_Shingle"
+   },
+   "name": "SM_VK_RoofS_Single_inst.002",
+   "p": [
+    0.0,
+    3.0,
+    0.0
+   ],
+   "piece": "SM_VK_RoofS_Single",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Smokehouse",
+   "mat": {
+    "3": "M_VK_Roof_Shingle"
+   },
+   "name": "SM_VK_Roof_Vent_inst.002",
+   "p": [
+    0.0,
+    5.12,
+    0.0
+   ],
+   "piece": "SM_VK_Roof_Vent",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Smokehouse",
+   "mat": {},
+   "name": "SM_VK_Prop_Woodpile_inst.027",
+   "p": [
+    3.29999,
+    0.0,
+    -0.2
+   ],
+   "piece": "SM_VK_Prop_Woodpile",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Smokehouse",
+   "mat": {},
+   "name": "SM_VK_Prop_FishRack_inst.003",
+   "p": [
+    -0.59998,
+    0.0,
+    4.3
+   ],
+   "piece": "SM_VK_Prop_FishRack",
+   "props": {},
+   "r": [
+    0.0,
+    -0.043619,
+    0.0,
+    0.999048
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Smokehouse",
+   "mat": {},
+   "name": "SM_VK_Pile_Fish_1_inst.003",
+   "p": [
+    -2.40002,
+    0.0,
+    2.6
+   ],
+   "piece": "SM_VK_Pile_Fish_1",
+   "props": {},
+   "r": [
+    0.0,
+    -0.258819,
+    0.0,
+    0.965926
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Smokehouse",
+   "mat": {},
+   "name": "SM_VK_Prop_BarrelStack_inst.037",
+   "p": [
+    -2.90002,
+    0.0,
+    -1.0
+   ],
+   "piece": "SM_VK_Prop_BarrelStack",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  }
+ ],
+ "preset": null,
+ "root": {},
+ "scene": "VKX_Structures",
+ "structure": "Smokehouse",
+ "version": "2026-09-30 slice",
+ "view_transform": "AgX",
+ "world": {
+  "color": [
+   0.42,
+   0.55,
+   0.75
+  ],
+  "linked": false,
+  "strength": 0.35
+ }
+}

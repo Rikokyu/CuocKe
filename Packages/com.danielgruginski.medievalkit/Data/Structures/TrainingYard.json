@@ -1,0 +1,1890 @@
+{
+ "blender_origin": [
+  830.3395385742188,
+  0.0,
+  0.0
+ ],
+ "builder": "build_training_yard",
+ "cameras": [],
+ "exposure": -0.20000000298023224,
+ "lights": [],
+ "look": "AgX - Medium High Contrast",
+ "markers": [],
+ "name": "TrainingYard",
+ "placements": [
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {},
+   "name": "SM_VK_Wall_Stone_inst.298",
+   "p": [
+    4.5,
+    0.0,
+    -1.5
+   ],
+   "piece": "SM_VK_Wall_Stone",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {},
+   "name": "SM_VK_Deco_Weeds_inst.266",
+   "p": [
+    4.5,
+    0.0,
+    -1.5
+   ],
+   "piece": "SM_VK_Deco_Weeds",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {},
+   "name": "SM_VK_Deco_Ivy_B_inst.034",
+   "p": [
+    4.5,
+    0.0,
+    -1.5
+   ],
+   "piece": "SM_VK_Deco_Ivy_B",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {},
+   "name": "SM_VK_Wall_Stone_Door_inst.080",
+   "p": [
+    1.5,
+    0.0,
+    -1.5
+   ],
+   "piece": "SM_VK_Wall_Stone_Door",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {},
+   "name": "SM_VK_Deco_Weeds_inst.267",
+   "p": [
+    1.5,
+    0.0,
+    -1.5
+   ],
+   "piece": "SM_VK_Deco_Weeds",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {},
+   "name": "SM_VK_Prop_Lantern_inst.072",
+   "p": [
+    0.5,
+    2.55,
+    -1.2
+   ],
+   "piece": "SM_VK_Prop_Lantern",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {
+    "10": "M_VK_Shutter_Red"
+   },
+   "name": "SM_VK_Wall_Stone_Window_inst.252",
+   "p": [
+    -1.5,
+    0.0,
+    -1.5
+   ],
+   "piece": "SM_VK_Wall_Stone_Window",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {},
+   "name": "SM_VK_Prop_FlowerBox_inst.171",
+   "p": [
+    -1.5,
+    0.78,
+    -0.95
+   ],
+   "piece": "SM_VK_Prop_FlowerBox",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {},
+   "name": "SM_VK_Wall_Stone_inst.299",
+   "p": [
+    -4.5,
+    0.0,
+    -1.5
+   ],
+   "piece": "SM_VK_Wall_Stone",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {},
+   "name": "SM_VK_Deco_Weeds_inst.268",
+   "p": [
+    -4.5,
+    0.0,
+    -1.5
+   ],
+   "piece": "SM_VK_Deco_Weeds",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {
+    "10": "M_VK_Shutter_Red"
+   },
+   "name": "SM_VK_Wall_Stone_Window_inst.253",
+   "p": [
+    4.5,
+    0.0,
+    -7.5
+   ],
+   "piece": "SM_VK_Wall_Stone_Window",
+   "props": {},
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {},
+   "name": "SM_VK_Prop_FlowerBox_inst.172",
+   "p": [
+    4.5,
+    0.78,
+    -8.05
+   ],
+   "piece": "SM_VK_Prop_FlowerBox",
+   "props": {},
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {},
+   "name": "SM_VK_Wall_Stone_inst.300",
+   "p": [
+    1.5,
+    0.0,
+    -7.5
+   ],
+   "piece": "SM_VK_Wall_Stone",
+   "props": {},
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {},
+   "name": "SM_VK_Wall_Stone_inst.301",
+   "p": [
+    -1.5,
+    0.0,
+    -7.5
+   ],
+   "piece": "SM_VK_Wall_Stone",
+   "props": {},
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {},
+   "name": "SM_VK_Deco_Weeds_inst.269",
+   "p": [
+    -1.5,
+    0.0,
+    -7.5
+   ],
+   "piece": "SM_VK_Deco_Weeds",
+   "props": {},
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {
+    "10": "M_VK_Shutter_Red"
+   },
+   "name": "SM_VK_Wall_Stone_Window_inst.254",
+   "p": [
+    -4.5,
+    0.0,
+    -7.5
+   ],
+   "piece": "SM_VK_Wall_Stone_Window",
+   "props": {},
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {},
+   "name": "SM_VK_Prop_FlowerBox_inst.173",
+   "p": [
+    -4.5,
+    0.78,
+    -8.05
+   ],
+   "piece": "SM_VK_Prop_FlowerBox",
+   "props": {},
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {},
+   "name": "SM_VK_Wall_Stone_inst.302",
+   "p": [
+    6.0,
+    0.0,
+    -3.0
+   ],
+   "piece": "SM_VK_Wall_Stone",
+   "props": {},
+   "r": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {},
+   "name": "SM_VK_Deco_Weeds_inst.270",
+   "p": [
+    6.0,
+    0.0,
+    -3.0
+   ],
+   "piece": "SM_VK_Deco_Weeds",
+   "props": {},
+   "r": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {},
+   "name": "SM_VK_Wall_Stone_inst.303",
+   "p": [
+    6.0,
+    0.0,
+    -6.0
+   ],
+   "piece": "SM_VK_Wall_Stone",
+   "props": {},
+   "r": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {
+    "10": "M_VK_Shutter_Red"
+   },
+   "name": "SM_VK_Wall_Stone_Window_inst.255",
+   "p": [
+    -6.0,
+    0.0,
+    -6.0
+   ],
+   "piece": "SM_VK_Wall_Stone_Window",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {},
+   "name": "SM_VK_Prop_FlowerBox_Daisy_inst.082",
+   "p": [
+    -6.54999,
+    0.78,
+    -6.0
+   ],
+   "piece": "SM_VK_Prop_FlowerBox_Daisy",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {},
+   "name": "SM_VK_Deco_Weeds_inst.271",
+   "p": [
+    -6.0,
+    0.0,
+    -6.0
+   ],
+   "piece": "SM_VK_Deco_Weeds",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {},
+   "name": "SM_VK_Wall_Stone_inst.304",
+   "p": [
+    -6.0,
+    0.0,
+    -3.0
+   ],
+   "piece": "SM_VK_Wall_Stone",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {},
+   "name": "SM_VK_Deco_Ivy_A_inst.022",
+   "p": [
+    -6.0,
+    0.0,
+    -3.0
+   ],
+   "piece": "SM_VK_Deco_Ivy_A",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {},
+   "name": "SM_VK_Corner_Stone_inst.275",
+   "p": [
+    6.0,
+    0.0,
+    -1.5
+   ],
+   "piece": "SM_VK_Corner_Stone",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {},
+   "name": "SM_VK_Corner_Stone_inst.276",
+   "p": [
+    -6.0,
+    0.0,
+    -1.5
+   ],
+   "piece": "SM_VK_Corner_Stone",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {},
+   "name": "SM_VK_Corner_Stone_inst.277",
+   "p": [
+    -6.0,
+    0.0,
+    -7.5
+   ],
+   "piece": "SM_VK_Corner_Stone",
+   "props": {},
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {},
+   "name": "SM_VK_Corner_Stone_inst.278",
+   "p": [
+    6.0,
+    0.0,
+    -7.5
+   ],
+   "piece": "SM_VK_Corner_Stone",
+   "props": {},
+   "r": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {
+    "1": "M_VK_Plaster_White"
+   },
+   "name": "SM_VK_Wall_Timber_K_inst.092",
+   "p": [
+    4.5,
+    3.0,
+    -1.5
+   ],
+   "piece": "SM_VK_Wall_Timber_K",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {
+    "1": "M_VK_Plaster_White"
+   },
+   "name": "SM_VK_Wall_Timber_Window_inst.459",
+   "p": [
+    1.5,
+    3.0,
+    -1.5
+   ],
+   "piece": "SM_VK_Wall_Timber_Window",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {
+    "1": "M_VK_Plaster_White"
+   },
+   "name": "SM_VK_Wall_Timber_Window_inst.460",
+   "p": [
+    -1.5,
+    3.0,
+    -1.5
+   ],
+   "piece": "SM_VK_Wall_Timber_Window",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {
+    "1": "M_VK_Plaster_White"
+   },
+   "name": "SM_VK_Wall_Timber_Window_inst.461",
+   "p": [
+    -4.5,
+    3.0,
+    -1.5
+   ],
+   "piece": "SM_VK_Wall_Timber_Window",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {
+    "1": "M_VK_Plaster_White"
+   },
+   "name": "SM_VK_Wall_Timber_Window_inst.462",
+   "p": [
+    4.5,
+    3.0,
+    -7.5
+   ],
+   "piece": "SM_VK_Wall_Timber_Window",
+   "props": {},
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {
+    "1": "M_VK_Plaster_White"
+   },
+   "name": "SM_VK_Wall_Timber_Window_inst.463",
+   "p": [
+    1.5,
+    3.0,
+    -7.5
+   ],
+   "piece": "SM_VK_Wall_Timber_Window",
+   "props": {},
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {
+    "1": "M_VK_Plaster_White"
+   },
+   "name": "SM_VK_Wall_Timber_X_inst.072",
+   "p": [
+    -1.5,
+    3.0,
+    -7.5
+   ],
+   "piece": "SM_VK_Wall_Timber_X",
+   "props": {},
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {
+    "1": "M_VK_Plaster_White"
+   },
+   "name": "SM_VK_Wall_Timber_Window_inst.464",
+   "p": [
+    -4.5,
+    3.0,
+    -7.5
+   ],
+   "piece": "SM_VK_Wall_Timber_Window",
+   "props": {},
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {
+    "1": "M_VK_Plaster_White"
+   },
+   "name": "SM_VK_Wall_Timber_X_inst.073",
+   "p": [
+    6.0,
+    3.0,
+    -3.0
+   ],
+   "piece": "SM_VK_Wall_Timber_X",
+   "props": {},
+   "r": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {
+    "1": "M_VK_Plaster_White"
+   },
+   "name": "SM_VK_Wall_Timber_X_inst.074",
+   "p": [
+    6.0,
+    3.0,
+    -6.0
+   ],
+   "piece": "SM_VK_Wall_Timber_X",
+   "props": {},
+   "r": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {
+    "1": "M_VK_Plaster_White"
+   },
+   "name": "SM_VK_Wall_Timber_Window_inst.465",
+   "p": [
+    -6.0,
+    3.0,
+    -6.0
+   ],
+   "piece": "SM_VK_Wall_Timber_Window",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {
+    "1": "M_VK_Plaster_White"
+   },
+   "name": "SM_VK_Wall_Timber_inst.078",
+   "p": [
+    -6.0,
+    3.0,
+    -3.0
+   ],
+   "piece": "SM_VK_Wall_Timber",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {},
+   "name": "SM_VK_Corner_Timber_inst.280",
+   "p": [
+    6.0,
+    3.0,
+    -1.5
+   ],
+   "piece": "SM_VK_Corner_Timber",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {},
+   "name": "SM_VK_Corner_Timber_inst.281",
+   "p": [
+    -6.0,
+    3.0,
+    -1.5
+   ],
+   "piece": "SM_VK_Corner_Timber",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {},
+   "name": "SM_VK_Corner_Timber_inst.282",
+   "p": [
+    -6.0,
+    3.0,
+    -7.5
+   ],
+   "piece": "SM_VK_Corner_Timber",
+   "props": {},
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {},
+   "name": "SM_VK_Corner_Timber_inst.283",
+   "p": [
+    6.0,
+    3.0,
+    -7.5
+   ],
+   "piece": "SM_VK_Corner_Timber",
+   "props": {},
+   "r": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {
+    "1": "M_VK_Plaster_White",
+    "3": "M_VK_Roof_Slate"
+   },
+   "name": "SM_VK_Roof_Gable_inst.111",
+   "p": [
+    4.5,
+    5.8,
+    -4.5
+   ],
+   "piece": "SM_VK_Roof_Gable",
+   "props": {},
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {
+    "3": "M_VK_Roof_Slate"
+   },
+   "name": "SM_VK_Roof_Mid_inst.067",
+   "p": [
+    1.5,
+    5.8,
+    -4.5
+   ],
+   "piece": "SM_VK_Roof_Mid",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {
+    "3": "M_VK_Roof_Slate"
+   },
+   "name": "SM_VK_Roof_Mid_inst.068",
+   "p": [
+    -1.5,
+    5.8,
+    -4.5
+   ],
+   "piece": "SM_VK_Roof_Mid",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {
+    "1": "M_VK_Plaster_White",
+    "3": "M_VK_Roof_Slate"
+   },
+   "name": "SM_VK_Roof_Gable_inst.112",
+   "p": [
+    -4.5,
+    5.8,
+    -4.5
+   ],
+   "piece": "SM_VK_Roof_Gable",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {},
+   "name": "SM_VK_Chimney_inst.078",
+   "p": [
+    1.5,
+    5.8,
+    -4.5
+   ],
+   "piece": "SM_VK_Chimney",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {},
+   "name": "SM_VK_Gallery_Timber_inst.007",
+   "p": [
+    4.5,
+    0.0,
+    -1.5
+   ],
+   "piece": "SM_VK_Gallery_Timber",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {},
+   "name": "SM_VK_Gallery_Timber_inst.008",
+   "p": [
+    1.5,
+    0.0,
+    -1.5
+   ],
+   "piece": "SM_VK_Gallery_Timber",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {},
+   "name": "SM_VK_Gallery_Timber_inst.009",
+   "p": [
+    -1.5,
+    0.0,
+    -1.5
+   ],
+   "piece": "SM_VK_Gallery_Timber",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {},
+   "name": "SM_VK_Gallery_End_inst.002",
+   "p": [
+    -4.5,
+    0.0,
+    -1.5
+   ],
+   "piece": "SM_VK_Gallery_End",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {},
+   "name": "SM_VK_Gallery_Side_inst.004",
+   "p": [
+    6.0,
+    0.0,
+    -1.5
+   ],
+   "piece": "SM_VK_Gallery_Side",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {},
+   "name": "SM_VK_Banner_Wall_inst.012",
+   "p": [
+    3.0,
+    5.8,
+    -1.32
+   ],
+   "piece": "SM_VK_Banner_Wall",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {},
+   "name": "SM_VK_Banner_Wall_inst.013",
+   "p": [
+    -3.0,
+    5.8,
+    -1.32
+   ],
+   "piece": "SM_VK_Banner_Wall",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {},
+   "name": "SM_VK_Prop_TrainingDummy_inst.005",
+   "p": [
+    4.20001,
+    0.0,
+    5.6
+   ],
+   "piece": "SM_VK_Prop_TrainingDummy",
+   "props": {},
+   "r": [
+    0.0,
+    -0.119936,
+    0.0,
+    0.992782
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {},
+   "name": "SM_VK_Prop_TrainingDummy_inst.006",
+   "p": [
+    2.0,
+    0.0,
+    5.3
+   ],
+   "piece": "SM_VK_Prop_TrainingDummy",
+   "props": {},
+   "r": [
+    0.0,
+    -0.089921,
+    0.0,
+    0.995949
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {},
+   "name": "SM_VK_Prop_TrainingDummy_inst.007",
+   "p": [
+    -0.20001,
+    0.0,
+    5.6
+   ],
+   "piece": "SM_VK_Prop_TrainingDummy",
+   "props": {},
+   "r": [
+    0.0,
+    0.027722,
+    0.0,
+    0.999616
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {},
+   "name": "SM_VK_Prop_ArcheryButt_inst.002",
+   "p": [
+    -4.79999,
+    0.0,
+    3.6
+   ],
+   "piece": "SM_VK_Prop_ArcheryButt",
+   "props": {},
+   "r": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {},
+   "name": "SM_VK_Prop_ArcheryButt_inst.003",
+   "p": [
+    -4.79999,
+    0.0,
+    0.9
+   ],
+   "piece": "SM_VK_Prop_ArcheryButt",
+   "props": {},
+   "r": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {},
+   "name": "SM_VK_Prop_ArmorStand_inst.001",
+   "p": [
+    4.5,
+    0.0,
+    0.9
+   ],
+   "piece": "SM_VK_Prop_ArmorStand",
+   "props": {},
+   "r": [
+    0.0,
+    0.087156,
+    0.0,
+    0.996195
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {},
+   "name": "SM_VK_Prop_ArmorStand_inst.002",
+   "p": [
+    3.40002,
+    0.0,
+    0.7
+   ],
+   "piece": "SM_VK_Prop_ArmorStand",
+   "props": {},
+   "r": [
+    0.0,
+    -0.130526,
+    0.0,
+    0.991445
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {},
+   "name": "SM_VK_Prop_WeaponRack_inst.011",
+   "p": [
+    1.5,
+    0.0,
+    -0.85
+   ],
+   "piece": "SM_VK_Prop_WeaponRack",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {},
+   "name": "SM_VK_Prop_WeaponRack_inst.012",
+   "p": [
+    -1.5,
+    0.0,
+    -0.85
+   ],
+   "piece": "SM_VK_Prop_WeaponRack",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {},
+   "name": "SM_VK_Prop_Trough_inst.022",
+   "p": [
+    5.20001,
+    0.0,
+    3.0
+   ],
+   "piece": "SM_VK_Prop_Trough",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {},
+   "name": "SM_VK_Prop_BarrelStack_inst.041",
+   "p": [
+    -4.20001,
+    0.0,
+    -0.9
+   ],
+   "piece": "SM_VK_Prop_BarrelStack",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {},
+   "name": "SM_VK_Banner_Pole_inst.004",
+   "p": [
+    5.40002,
+    0.0,
+    7.0
+   ],
+   "piece": "SM_VK_Banner_Pole",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {},
+   "name": "SM_VK_Prop_Fence_inst.221",
+   "p": [
+    4.72498,
+    0.0,
+    7.6
+   ],
+   "piece": "SM_VK_Prop_Fence",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {},
+   "name": "SM_VK_Prop_Fence_inst.222",
+   "p": [
+    1.57501,
+    0.0,
+    7.6
+   ],
+   "piece": "SM_VK_Prop_Fence",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {},
+   "name": "SM_VK_Prop_FenceGate_inst.032",
+   "p": [
+    -1.57501,
+    0.0,
+    7.6
+   ],
+   "piece": "SM_VK_Prop_FenceGate",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {},
+   "name": "SM_VK_Prop_Fence_inst.223",
+   "p": [
+    -4.72498,
+    0.0,
+    7.6
+   ],
+   "piece": "SM_VK_Prop_Fence",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {},
+   "name": "SM_VK_Prop_Fence_inst.224",
+   "p": [
+    6.29999,
+    0.0,
+    6.1
+   ],
+   "piece": "SM_VK_Prop_Fence",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {},
+   "name": "SM_VK_Prop_Fence_inst.225",
+   "p": [
+    6.29999,
+    0.0,
+    3.1
+   ],
+   "piece": "SM_VK_Prop_Fence",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {},
+   "name": "SM_VK_Prop_Fence_inst.226",
+   "p": [
+    6.29999,
+    0.0,
+    0.1
+   ],
+   "piece": "SM_VK_Prop_Fence",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {},
+   "name": "SM_VK_Prop_Fence_inst.227",
+   "p": [
+    -6.29999,
+    0.0,
+    6.1
+   ],
+   "piece": "SM_VK_Prop_Fence",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {},
+   "name": "SM_VK_Prop_Fence_inst.228",
+   "p": [
+    -6.29999,
+    0.0,
+    3.1
+   ],
+   "piece": "SM_VK_Prop_Fence",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_TrainingYard",
+   "mat": {},
+   "name": "SM_VK_Prop_Fence_inst.229",
+   "p": [
+    -6.29999,
+    0.0,
+    0.1
+   ],
+   "piece": "SM_VK_Prop_Fence",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  }
+ ],
+ "preset": null,
+ "root": {},
+ "scene": "VKX_Structures",
+ "structure": "TrainingYard",
+ "version": "2026-09-30 slice",
+ "view_transform": "AgX",
+ "world": {
+  "color": [
+   0.42,
+   0.55,
+   0.75
+  ],
+  "linked": false,
+  "strength": 0.35
+ }
+}

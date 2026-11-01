@@ -1,0 +1,5711 @@
+{
+ "cap_hw": {
+  "O": 0.28,
+  "P": 0.18
+ },
+ "codes": {
+  "Altar_300": "AL",
+  "Altar_Idol": "AI",
+  "Bar_Counter_150": "CT",
+  "Bar_End_150": "CE",
+  "Barrel": "ba",
+  "Barrel_Water": "ba",
+  "Barricade_Stakes": "BA",
+  "Bed_Box": "BX",
+  "Bed_HalfTester": "HT",
+  "Bed_Straw": "bd",
+  "Boulder": "BO",
+  "Boulders": "BD",
+  "Brazier": "BR",
+  "Brazier_Stone": "BZ",
+  "Bucket": "bu",
+  "Burrow": "bw",
+  "Cage": "CG",
+  "CandleStand_Pricket": "cd",
+  "Candles_Floor": "cn",
+  "CaskRack_150": "CK",
+  "Chest": "CH",
+  "Chest_Iron": "CI",
+  "Chest_Treasure": "TR",
+  "CoalBin_150": "CO",
+  "Cocoon": "co",
+  "Coffin": "CF",
+  "Column_Ancient": "CA",
+  "Column_Broken": "cb",
+  "Column_Fallen": "cf",
+  "Crate": "bx",
+  "Crystals": "CR",
+  "Desk_Merchant": "DK",
+  "Dresser": "DR",
+  "EggSacs": "es",
+  "FirePit_Camp": "FP",
+  "Font": "FT",
+  "Form_150": "fm",
+  "Form_300": "fm",
+  "GoodsRack_150": "GR",
+  "Hearth_Open": "HH",
+  "IronStock_150": "ir",
+  "Jars_Cluster": "ja",
+  "LeanTo": "LT",
+  "Lectern": "LC",
+  "LogBasket": "WP",
+  "LootPile": "lp",
+  "Mushrooms_Glow": "MG",
+  "Oven_150": "OV",
+  "Overlay_Bedroll": "br",
+  "Overlay_BladeSlot_150": "bs",
+  "Overlay_Bones": "bo",
+  "Overlay_CrackedFloor": "cr",
+  "Overlay_DrainGrate": "dg",
+  "Overlay_GoldCoins": "gc",
+  "Overlay_Gravel": "gv",
+  "Overlay_PressurePlate": "pp",
+  "Overlay_Puddle": "pd",
+  "Overlay_Refuse": "rf",
+  "Overlay_Spill": "sp",
+  "Overlay_StrawPile": "st",
+  "Overlay_TombSlab": "ts",
+  "Overlay_WebFloor": "wf",
+  "POI_ColossusHead": "KH",
+  "POI_Crucible": "CU",
+  "POI_NecroCircle": "NC",
+  "POI_RatKing": "RK",
+  "POI_SpringShrine": "SP",
+  "POI_Treadwheel": "TW",
+  "POI_WyrmBones": "WY",
+  "Pantry_Shelves_300": "PN",
+  "Pew_300": "PW",
+  "Pillar_Cut": "PI",
+  "Pillar_Full": "PF",
+  "PoleLathe": "PL",
+  "Prop_Anvil": "AN",
+  "Prop_BarrelStack": "BS",
+  "Prop_Bellows": "BL",
+  "Prop_Grindstone": "GS",
+  "Prop_Loom": "LM",
+  "Prop_Sawhorse": "SH",
+  "Prop_SpinningWheel": "SW",
+  "Prop_WeaponRack": "WR",
+  "QuenchTrough_150": "QT",
+  "RatHole_Wall": "rh",
+  "RockPillar_Cut": "rp",
+  "RockPillar_Full": "RP",
+  "RopeBridge_420": "==",
+  "Rubble": "RB",
+  "Rug_300x150": "rg",
+  "Sarcophagus": "SA",
+  "Shelf_Wall_150": "SH",
+  "Skeleton_Fallen": "sf",
+  "Skeleton_Sitting": "sk",
+  "Stalagmites": "SM",
+  "Statue_Broken": "sb",
+  "Statue_Guardian": "SG",
+  "Table_Barrel": "tb",
+  "Table_Small": "tb",
+  "Table_Trestle_150": "TB",
+  "Table_Trestle_300": "TB",
+  "Totem_Goblin": "TO",
+  "Urns": "ur",
+  "Vein_Crystal": "CY",
+  "Vein_Gold": "AU",
+  "Vein_Iron": "FE",
+  "VotiveRack": "vr",
+  "Web_Corner": "wb",
+  "Workbench_300": "WB",
+  "Workbench_Carpenter": "WB",
+  "Worktable_150": "KW"
+ },
+ "cut_h": 1.0,
+ "families": {
+  "Ancient": {
+   "H": 3.0,
+   "cls": "O",
+   "rake": true,
+   "rhythm": false,
+   "wall_a": "AncientIn"
+  },
+  "Ashlar": {
+   "H": 4.5,
+   "cls": "O",
+   "rake": false,
+   "rhythm": false,
+   "wall_a": "AshlarIn"
+  },
+  "Bars": {
+   "H": 3.0,
+   "cls": "P",
+   "rake": false,
+   "rhythm": false,
+   "wall_a": "DungeonIn"
+  },
+  "Board": {
+   "H": 3.0,
+   "cls": "P",
+   "rake": false,
+   "rhythm": true,
+   "wall_a": "BoardsV"
+  },
+  "Cave": {
+   "H": 3.0,
+   "cls": "O",
+   "rake": true,
+   "rhythm": false,
+   "wall_a": "CaveRock"
+  },
+  "Dungeon": {
+   "H": 3.0,
+   "cls": "O",
+   "rake": true,
+   "rhythm": false,
+   "wall_a": "DungeonIn"
+  },
+  "Dwarf": {
+   "H": 3.0,
+   "cls": "O",
+   "rake": true,
+   "rhythm": false,
+   "wall_a": "DwarfIn"
+  },
+  "Mine": {
+   "H": 3.0,
+   "cls": "O",
+   "rake": false,
+   "rhythm": true,
+   "wall_a": "CaveRock"
+  },
+  "Sewer": {
+   "H": 3.0,
+   "cls": "O",
+   "rake": true,
+   "rhythm": false,
+   "wall_a": "SewerBrick"
+  },
+  "Stone": {
+   "H": 3.0,
+   "cls": "O",
+   "rake": true,
+   "rhythm": false,
+   "wall_a": "StoneIn"
+  },
+  "Timber": {
+   "H": 3.0,
+   "cls": "O",
+   "rake": true,
+   "rhythm": true,
+   "wall_a": "PlasterCream"
+  },
+  "Wattle": {
+   "H": 2.4,
+   "cls": "P",
+   "rake": true,
+   "rhythm": true,
+   "wall_a": "PlasterDaub"
+  }
+ },
+ "gate_deg": 90.0,
+ "ig": 1.5,
+ "mid_hw": {
+  "O": [
+   0.12,
+   0.31
+  ],
+  "P": [
+   0.1,
+   0.21
+  ]
+ },
+ "night_style": {
+  "stained": "Stained_Night",
+  "window": "Window_Night"
+ },
+ "own_family": {
+  "Bars": "Bars",
+  "BarsGate": "Bars"
+ },
+ "plans": {
+  "VKI_Cave_Breach": "\n       0  1  2  3  4  5  6  7  8  9 10 11 12 13\n     +##+##+##+##+##+##+##+##+##+##+##+##+##+##+\n   8 ### ## MG .. .. .. .. ## cn AI .. ## ## ###\n     +                                         +\n   7 ### ## .. .. ## ## .. ## .. .. CR ## ## ###\n     +   ##+XX+XX+##+##+   s2+s1+s1+s2+        +\n   6 ####.. .. .. .. sk#.. .. .. .. .. .. CR ###\n     +                                         +\n   5 ####.. .. .. .. ..#.. .. KH .. .. .. .. ..#\n     +                                         +\n   4 ####.. SA SA .. ..X.. .. .. .. .. .. .. Sx#\n     +                                         +\n   3 ####.. .. .. .. cn#.. .. .. .. SM .. .. Sx#\n     +   ==+==+dd+==+==+                       +\n   2 ### ## ##:..:## ## ## MG .. .. gv .. ## ###\n     +            ==+==+==+                    +\n   1 ### ## ##:.. .. .. sp .. BD ~~ ~~ MG ## ###\n     +         ==+==+==+==+                    +\n   0 t## ## ## ## ## ## ## ## .. ~~ ~~ .. ## ##t\n     +==+==+==+==+==+==+==+==+==+==+==+==+==+==+\n",
+  "VKI_Cave_Falls": "\n       0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15\n     +##+##+##+##+##+##+##+##+##+##+##+##+##+##+##+##+\n   9 ### ## ## ## ## ## ## ## ## ## ## ## ## ## ## ###\n     +                                               +\n   8 ### ## ## .. ss .. ## ## ## ## ## ## vv ## ## ###\n     +                                               +\n   7 ### ## MG .. ss .. CR .. ## ## .. .. vv vv gv ..#\n     +                                               +\n   6 ### .. .. .. ss ss .. .. .. .. MG .. == == .. ..#\n     +                                               +\n   5 ### ss ss ss ss ss ss .. .. .. .. .. vv vv .. Sx#\n     +                                               +\n   4 ### .. .. .. .. .. ss ss ss ss ss ss vv .. .. Sx#\n     +                                               +\n   3 #Ss .. .. .. .. .. .. .. SP .. .. .. vv .. CR ###\n     +                                               +\n   2 #Ss .. ~~ ~~ .. .. CR .. .. .. .. .. vv .. ## ###\n     +                                               +\n   1 #.. .. ~~ ~~ .. .. .. .. SM .. BD .. vv .. .. ###\n     +                                               +\n   0 t## ## .. .. .. .. .. .. .. .. .. .. vv ## ## ##t\n     +==+==+==+==+==+==+==+==+==+==+==+==+==+==+==+==+\n",
+  "VKI_Chapel_F0": "\n      0  1  2  3  4  5  6  7\n     +##+##+LL+LT+LT+LL+##+##+\n   5 #CH .. cd .. .. cd .. ..#\n     +                       +\n   4 #.. .. .. AL AL LC .. ..#\n     +rr+rr+rr+     +rr+rr+rr+\n   3 L.. PW PW .. .. PW PW ..L\n     +                       +\n   2 #.. PW PW .. .. PW PW vr#\n     +                       +\n   1 L.. PW PW .. .. PW PW ..L\n     +                       +\n   0 #FT .. .. EE EE .. .. ..#\n     +==+ll+==+EE+EE+==+ll+==+\n",
+  "VKI_Cottage_F0": "\n      0  1  2  3  4  5\n     +##+##+FF+FF+##+##+\n   4 #LM LM fp fp:BX BX#\n     +           +     +\n   3 #LM LM rg rg:.. CH#\n     +           +     +\n   2 #SH .. .. ..d.. ..W\n     +           +==+==+\n   1 #PN TB TB .. .. ..W\n     +                 +\n   0 tPN TB TB Sf .. WPt\n     +==+ww+==+ee+==+ww+\n",
+  "VKI_Dungeon_B1": "\n      0  1  2  3  4  5  6  7  8  9\n     +##+##+WW+##+##+WW+##+##+##+##+\n   5 #^^rCG:st ..:sk st:ba vv vv vv#\n     +                             +\n   4 #^^r..:bu ..:bo ..:.. .. .. Sd#\n     +      ||+gg+||+gg+           +\n   3 #^^r.. .. .. .. .. .. .. .. ..P\n     +                        ||+||+\n   2 #Ss .. .. .. BR .. .. pd|.. sk#\n     +                             +\n   1 #WR .. tb .. .. .. .. ..g.. ..#\n     +                             +\n   0 tba .. .. pd dg .. RB ..:bu stt\n     +==+==+==+==+==+==+==+==+==+==+\n",
+  "VKI_Dungeon_B2": "\n      0  1  2  3  4  5  6  7  8  9\n     +##+NN+##+NN+##+NN+##+##+##+##+\n   5 N.. .. sk .. .. cn Su ^^ ^^ ^^#\n     +                             +\n   4 #.. bo .. PI .. .. .. PI cn ..N\n     +                             +\n   3 N.. ts .. .. NC NC .. .. ts ..P\n     +                             +\n   2 #.. .. .. PI .. .. .. PI .. ..N\n     +||+gg+                       +\n   1 #TR ..|.. CF CF .. CF CF .. ..#\n     +                             +\n   0 tcn ..:.. .. .. .. .. pd RB RBt\n     +==+==+==+==+==+==+==+==+==+==+\n",
+  "VKI_Dungeon_B3": "\n      0  1  2  3  4  5  6  7  8  9\n     +##+##+S1+##+##+##+S2+S4+##+##+\n   5 #BO .. .. ..#CI lp2.. .. .. SG#\n     +                             +\n   4 #.. cr pp ..#gc ..2.. CA BZ AI#\n     +            ==+==+           +\n   3 PSs .. vv ..1.. .. .. .. BZ AI#\n     +                             +\n   2 #.. .. vv ..1.. .. .. cr .. SG#\n     +                             +\n   1 #.. sf bs ..:sb .. .. cb .. SxP\n     +                             +\n   0 tur .. .. BZ:.. cf cf .. .. urt\n     +==+s1+==+==+==+==+==+s1+==+==+\n",
+  "VKI_Dungeon_B4": "\n      0  1  2  3  4  5  6  7  8  9  10 11\n     +##+##+##+##+##+##+##+##+##+##+##+##+\n   6 ### ## .. ## CR SM .. .. .. .. co wb#\n     +                                   +\n   5 ### MG .. .. .. .. gv .. .. .. es Sx#\n     +                                   +\n   4 #vv vv .. sf .. .. vv == vv .. .. ..#\n     +                                   +\n   3 #vv vv vv vv vv vv vv == vv vv vv vv#\n     +                                   +\n   2 #.. .. .. vv vv vv .. .. .. .. vv vv#\n     +                                   +\n   1 #Ss .. .. .. .. .. .. ~~ ~~ CR .. ..#\n     +                                   +\n   0 t.. .. .. gv MG .. .. ~~ ~~ .. .. ##t\n     +==+==+==+==+==+==+==+==+==+==+==+==+\n",
+  "VKI_Dungeon_B5": "\n      0  1  2  3  4  5  6  7  8  9\n     +##+##+##+##+##+##+##+##+##+##+\n   5 #Ss .. TO ## .. LT .. ## .. lp#\n     +                             +\n   4 #.. .. .. ## br .. br ## gc sk#\n     +                             +\n   3 #.. BA .. .. .. FP .. .. CI ..#\n     +                             +\n   2 #.. .. BR .. .. .. .. .. .. BR#\n     +                             +\n   1 #rh rf .. ## ## .. ba ## bo ..#\n     +                             +\n   0 tbw .. .. ## ## br .. ## ## urt\n     +==+==+==+==+==+==+==+==+==+==+\n",
+  "VKI_Dwarf_Hall": "\n       0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18\n     +##+##+##+##+##+##+##+##+##+##+##+##+##+##+##+##+##+##+##+\n  10 ### ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ###\n     +                                                        +\n   9 ### ## vv vv ## ## ## ## ## ## ## ## ## ## ## ## ## ## ###\n     +                  ##+S2+##+S1+S1+##+S2+##+              +\n   8 #.. SM vv vv .. MG#.. .. .. .. .. .. .. ..### ## ## ## ###\n     +                                          ##+##+##+##+  +\n   7 #.. .. vv vv .. ..#.. ll .. .. .. .. ll ..#.. .. .. ..####\n     +                                                        +\n   6 #Sx .. == == .. ..X.. ll .. .. .. .. ll ..#.. .. CU ..####\n     +                                                        +\n   5 #Sx .. vv vv .. ..#.. ll .. .. .. .. ll ..1.. .. .. ..####\n     +                                                        +\n   4 #.. .. vv vv .. ..#.. ll .. .. .. .. ll ..#.. .. .. ..####\n     +                                          ==+==+==+==+  +\n   3 ### ## vv vv .. ..#.. .. .. .. .. .. .. ..### ## ## ## ###\n     +                  ==+==+==+s1+s1+==+==+s2+==+==+        +\n   2 ### ## vv vv CR .. ## ###.. .. .. ..:CI .. TR ..### ## ###\n     +                                                        +\n   1 ### ## ## ## ## ## ## ##P.. .. .. ..:ur gc .. lp### ## ###\n     +                        ==+==+==+==+==+==+==+==+        +\n   0 t## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ##t\n     +==+==+==+==+==+==+==+==+==+==+==+==+==+==+==+==+==+==+==+\n",
+  "VKI_Hovel_F0": "\n      0  1  2  3  4\n     +##+##+WW+##+##+\n   4 #BX BX CH PN PN#\n     +              +\n   3 #.. .. .. .. ..#\n     +              +\n   2 Wbd .. HH .. ..#\n     +              +\n   1 #bd .. .. TB TB#\n     +              +\n   0 tWP .. Sf .. jat\n     +==+==+ee+==+ww+\n",
+  "VKI_Mine_M1": "\n        0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21\n     +##+##+##+##+##+##+##+##+##+##+##+##+##+##+##+##+##+##+##+##+##+##+\n  12 ### ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ###\n     +                                                                 +\n  11 #.. .. .. .. .. AU .. .. .. ## ## ## ## ## ## SM .. CY .. ## ## ###\n     +                                                                 +\n  10 #.. .. .. .. .. .. .. .. .. .. ## ## ## ## .. .. .. .. .. .. ## ###\n     +                                                                 +\n   9 ### ## ## ## .. .. .. .. .. .. ## ## ## ## CR .. .. .. .. MG ## ###\n     +                                                                 +\n   8 ### ## ## ## ##:.. ..:## ## ## ## ## ## ## ## ##:.. ..:## ## ## ###\n     +==+==+==+==+==+      ==+==+==+##+##+##+##+==+==+      ==+==+##+##+\n   7 #Sx .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. Sx#\n     +                                                                 +\n   6 #Sx .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. Sx#\n     +==+==+      ==+==+==+==+                     ==+==+==+==+      ==+\n   5 ### ##:.. ..:## ## ## ## .. .. .. .. .. .. .. ## ## ## ##:.. ..:###\n     +                                                                 +\n   4 ### .. .. .. .. .. ## ## .. TW .. ms ms .. bx ## ## ## ##:.. ..:###\n     +                                             ==+==+==+==+        +\n   3 ### .. .. .. .. .. ## ## .. .. .. ms ms .. .. .. .. .. .. .. FE ###\n     +                                                                 +\n   2 ### ba ba .. .. bx ## ## .. .. .. .. Ss .. .. .. .. .. .. .. .. ###\n     +                                             ==+==+==+==+==+==+  +\n   1 ### ## ## ## ## ## ## ## .. .. .. .. .. .. .. ## ## ## ## ## ## ###\n     +                                                                 +\n   0 t## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ##t\n     +==+==+==+==+==+==+==+==+==+==+==+==+==+==+==+==+==+==+==+==+==+==+\n",
+  "VKI_Sewer_S1": "\n       0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15\n     +##+##+##+##+##+##+##+##+##+##+##+##+##+##+##+##+\n   9 ### ## ## ## ## ## ## ## ## ## ## ## ## ## ## ###\n     +                        ##+S2+##+              +\n   8 ### ## ## ## ## ## ## ###.. ww ..### ## .. .. ###\n     +                                               +\n   7 ### ## ## ## ## ## ## ###.. ww ..### ## MG .. Sx#\n     +   ##+##+S1+##+##+##+##+         ##+##+        +\n   6 ###P.. .. .. .. ..d.. .. .. ww .. .. ..X.. .. Sx#\n     +                                               +\n   5 ####ww ww ww ww ww1ww ww ww ww ww ww ww1ww ww ..#\n     +                                               +\n   4 ####pd .. .. .. ..#.. .. .. .. .. .. ..#.. .. ###\n     +   ==+==+==+xx+xx+==+==+==+==+==+==+==+        +\n   3 ### ## .. .. .. .. .. .. ## ## ## .. .. .. .. ###\n     +                                               +\n   2 ### .. RK .. .. .. .. .. .. ## .. .. .. CR .. ###\n     +                                               +\n   1 ### .. .. CR .. .. ~~ ~~ .. .. .. BD ## ## ## ###\n     +                                               +\n   0 t## ## .. .. .. .. ~~ ~~ MG .. .. ## ## ## ## ##t\n     +==+==+==+==+==+==+==+==+==+==+==+==+==+==+==+==+\n",
+  "VKI_Smithy_F0": "\n      0  1  2  3  4  5  6\n     +##+##+##+FF+FF+WW+##+\n   4 #WR .. BL fg fg CO GR#\n     +                    +\n   3 #GS .. AN .. .. QT ..#\n     +                    +\n   2 W.. .. .. .. .. .. WB#\n     +==+==+              +\n   1 #ir ..d.. .. .. .. WB#\n     +     +              +\n   0 tbx bx:.. EE EE .. ..t\n     +==+==+==+EE+EE+ww+==+\n",
+  "VKI_Tavern_F0": "\n      0  1  2  3  4  5  6  7  8\n     +##+##+FF+FF+WW+##+##+##+##+\n   5 #^^rWP fp fp .. BS BS:OV KW#\n     +  +                 +     +\n   4 #^^r.. fm fm tb ba ..d.. ..W\n     +  +                 +==+==+\n   3 #^^r.. .. .. .. .. .. CE ..#\n     +                          +\n   2 #Ss TB TB .. TB TB .. CT CK#\n     +                          +\n   1 W.. TB TB .. TB TB .. CT CK#\n     +                          +\n   0 tbx .. .. Sf .. .. .. .. bxt\n     +==+ww+==+ee+==+==+ww+==+==+\n",
+  "VKI_Tavern_F1": "\n      0  1  2  3  4  5  6  7  8\n     +##+##+##+##+WW+##+WW+##+##+\n   5 #vv Ss:BX BX CH:DR CH HT HT#\n     +  +  +        +           +\n   4 #vvr..:tb .. ..:.. .. HT HT#\n     +  +  +==+dd+==+dd+==+==+==+\n   3 #vvr.. .. .. .. .. .. .. ..W\n     +  +==+dd+==+==+dd+==+==+dd+\n   2 #bd .. bd:bd .. bd:bd .. bd#\n     +        +        +        +\n   1 Wbd .. bd:bd .. bd:bd .. bdW\n     +        +        +        +\n   0 t.. CH ..:.. CH ..:.. CH ..t\n     +==+ww+==+==+ww+==+==+ww+==+\n",
+  "VKI_Townhouse_F0": "\n      0  1  2  3  4  5  6\n     +##+WW+FF+FF+##+##+##+\n   4 #^^rWP fp fp DR:OV ..#\n     +  +           +     +\n   3 #^^r.. rg rg ..d.. KWW\n     +  +           +     +\n   2 #^^r.. TB TB ..:ba ba#\n     +  +           +==+==+\n   1 #Ss .. TB TB .. DK DK#\n     +                    +\n   0 tCH Sf .. .. .. .. bxt\n     +==+ee+==+==+ww+==+ww+\n",
+  "VKI_Townhouse_F1": "\n      0  1  2  3  4  5  6\n     +##+WW+##+##+WW+##+##+\n   4 #vv Ss LM LM CH:HT HT#\n     +  +           +     +\n   3 #vvr.. LM LM ..:HT HT#\n     +  +           +     +\n   2 #vvr.. .. .. ..drg rgW\n     +rr+           +     +\n   1 #SW .. tb .. ..:.. CH#\n     +              +     +\n   0 t.. .. .. .. ..:.. ..t\n     +==+ww+==+==+==+ww+==+\n",
+  "VKI_Workshop_F0": "\n      0  1  2  3  4  5\n     +##+WW+##+WW+##+##+\n   4 #WB WB GR .. PL PL#\n     +                 +\n   3 #.. .. .. .. .. ..W\n     +                 +\n   2 W.. SH .. HH .. ..#\n     +                 +\n   1 #ba .. .. .. .. bx#\n     +                 +\n   0 tbx .. Sf .. WP bxt\n     +==+ww+ee+==+ww+==+\n"
+ },
+ "post_hw": {
+  "O": 0.31,
+  "P": 0.21
+ },
+ "post_prio": [
+  "Cave",
+  "Ancient",
+  "Dwarf",
+  "Dungeon",
+  "Sewer",
+  "Mine",
+  "Stone",
+  "Ashlar",
+  "Timber",
+  "Wattle",
+  "Board",
+  "Bars"
+ ],
+ "post_top": 0.04,
+ "post_z0": -0.3,
+ "proud_line": {
+  "O": 0.285,
+  "P": 0.185
+ },
+ "reuse": {
+  "SM_VK_Prop_Anvil": {
+   "fp": [
+    1,
+    1
+   ],
+   "mount": "floor"
+  },
+  "SM_VK_Prop_BarrelStack": {
+   "fp": [
+    2,
+    1
+   ],
+   "mount": "wall_floor"
+  },
+  "SM_VK_Prop_Bellows": {
+   "fp": [
+    2,
+    1
+   ],
+   "mount": "floor"
+  },
+  "SM_VK_Prop_Grindstone": {
+   "fp": [
+    1,
+    1
+   ],
+   "mount": "wall_floor"
+  },
+  "SM_VK_Prop_Loom": {
+   "fp": [
+    2,
+    2
+   ],
+   "mount": "wall_floor"
+  },
+  "SM_VK_Prop_Sawhorse": {
+   "fp": [
+    1,
+    1
+   ],
+   "mount": "floor"
+  },
+  "SM_VK_Prop_SpinningWheel": {
+   "fp": [
+    1,
+    1
+   ],
+   "mount": "floor"
+  },
+  "SM_VK_Prop_Stool": {
+   "fp": [
+    1,
+    1
+   ],
+   "mount": "floor"
+  },
+  "SM_VK_Prop_WeaponRack": {
+   "fp": [
+    1,
+    1
+   ],
+   "mount": "wall_floor"
+  }
+ },
+ "reuse_style": {
+  "glow": "GlowIn",
+  "window": "Window_Day"
+ },
+ "reuse_style_night": {
+  "glow": "GlowIn",
+  "window": "Window_Night"
+ },
+ "rooms": {
+  "VKI_Cave_Breach": {
+   "building": "Dungeon",
+   "cave": true,
+   "debris": {
+    "density": 0.4,
+    "seed": 16
+   },
+   "family": {
+    "partition": "Dungeon",
+    "perimeter": "Cave"
+   },
+   "floor": -4,
+   "links": [
+    [
+     "east",
+     "passage",
+     "@return"
+    ]
+   ],
+   "partition_wall": "zone",
+   "pits": [
+    [
+     "Pit_Pool_300x300",
+     13.5,
+     0.0
+    ]
+   ],
+   "pools": false,
+   "preset": "Cavern",
+   "props": [
+    [
+     "Torch_Wall",
+     2.25,
+     6.75,
+     90,
+     null,
+     "wall_hung"
+    ],
+    [
+     "Torch_Wall",
+     2.25,
+     9.75,
+     0,
+     null,
+     "wall_hung"
+    ],
+    [
+     "Candles_Floor",
+     8.0,
+     5.2,
+     0,
+     null,
+     null
+    ],
+    [
+     "Skeleton_Sitting",
+     8.25,
+     9.75,
+     0,
+     null,
+     null
+    ],
+    [
+     "Mushrooms_Glow",
+     3.9,
+     12.4,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Sarcophagus",
+     4.5,
+     6.75,
+     0,
+     null,
+     null
+    ],
+    [
+     "Overlay_Spill",
+     10.5,
+     2.25,
+     -90,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Mushrooms_Glow",
+     11.3,
+     3.8,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Stalagmites",
+     15.75,
+     5.25,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Overlay_Gravel",
+     16.0,
+     3.9,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Boulders",
+     12.9,
+     2.5,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Mushrooms_Glow",
+     17.25,
+     1.9,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Crystals",
+     18.3,
+     9.5,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Crystals",
+     15.75,
+     11.4,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Altar_Idol",
+     14.25,
+     12.5,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Candles_Floor",
+     12.75,
+     12.6,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "POI_ColossusHead",
+     13.2,
+     7.3,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ]
+   ],
+   "specials": {
+    "s1": "Wall_Ancient_Breach_300_Cut",
+    "s2": "Wall_Ancient_Collapsed_150_Cut"
+   },
+   "tunnels": {
+    "14|4": "east"
+   },
+   "zone_order": [
+    "hall",
+    "corridor",
+    "shrine",
+    "cave"
+   ],
+   "zones": {
+    "cave": {
+     "cells": "rest",
+     "floor": "CaveFloor"
+    },
+    "corridor": {
+     "cells": [
+      [
+       3,
+       3,
+       1,
+       2
+      ],
+      [
+       4,
+       6,
+       1,
+       1
+      ]
+     ],
+     "floor": "DungeonFlag",
+     "wall": "DungeonIn"
+    },
+    "hall": {
+     "cells": [
+      [
+       1,
+       5,
+       3,
+       6
+      ]
+     ],
+     "floor": "DungeonFlag",
+     "wall": "DungeonIn"
+    },
+    "shrine": {
+     "cells": [
+      [
+       8,
+       10,
+       7,
+       8
+      ]
+     ],
+     "floor": "AncientFlag",
+     "wall": "AncientIn"
+    }
+   }
+  },
+  "VKI_Cave_Falls": {
+   "building": "Dungeon",
+   "cave": true,
+   "debris": {
+    "density": 0.38,
+    "seed": 18
+   },
+   "family": {
+    "partition": "Cave",
+    "perimeter": "Cave"
+   },
+   "floor": -4,
+   "links": [
+    [
+     "west",
+     "passage",
+     "VKI_Dungeon_B4"
+    ],
+    [
+     "east",
+     "passage",
+     "VK_ValleyTown"
+    ]
+   ],
+   "pits": [
+    [
+     "Pit_Pool_300x300",
+     3.0,
+     1.5
+    ]
+   ],
+   "pools": false,
+   "preset": "Cavern",
+   "props": [
+    [
+     "Waterfall_Rock",
+     6.75,
+     13.5,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Waterfall_Rock",
+     1.5,
+     8.25,
+     90,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "SteppingStones",
+     3.75,
+     8.25,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "SteppingStones",
+     11.25,
+     6.75,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "RopeBridge_420",
+     19.5,
+     9.75,
+     90,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Mushrooms_Glow",
+     3.9,
+     11.4,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Crystals",
+     9.9,
+     11.0,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Mushrooms_Glow",
+     15.6,
+     9.9,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Crystals",
+     9.6,
+     3.9,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Stalagmites",
+     12.6,
+     2.4,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Boulders",
+     15.5,
+     2.1,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Crystals",
+     21.6,
+     5.1,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Overlay_Gravel",
+     21.6,
+     11.0,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "POI_SpringShrine",
+     13.5,
+     4.6,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ]
+   ],
+   "tunnels": {
+    "0|3": "west",
+    "16|5": "east"
+   },
+   "zone_order": [
+    "cave"
+   ],
+   "zones": {
+    "cave": {
+     "cells": "rest",
+     "floor": "CaveFloor"
+    }
+   }
+  },
+  "VKI_Chapel_F0": {
+   "building": "Chapel",
+   "corners": "pillar",
+   "dais": [
+    [
+     0.0,
+     6.0
+    ],
+    [
+     3.0,
+     6.0
+    ],
+    [
+     6.0,
+     6.0
+    ],
+    [
+     9.0,
+     6.0
+    ]
+   ],
+   "family": {
+    "partition": "Ashlar",
+    "perimeter": "Ashlar"
+   },
+   "floor": 0,
+   "links": [
+    [
+     "front",
+     "exit",
+     "@return"
+    ]
+   ],
+   "preset": "Day",
+   "props": [
+    [
+     "Pew_300",
+     3.0,
+     1.5,
+     180,
+     null,
+     null
+    ],
+    [
+     "Pew_300",
+     3.0,
+     3.0,
+     180,
+     null,
+     null
+    ],
+    [
+     "Pew_300",
+     3.0,
+     4.5,
+     180,
+     null,
+     null
+    ],
+    [
+     "Pew_300",
+     9.0,
+     1.5,
+     180,
+     null,
+     null
+    ],
+    [
+     "Pew_300",
+     9.0,
+     3.0,
+     180,
+     null,
+     null
+    ],
+    [
+     "Pew_300",
+     9.0,
+     4.5,
+     180,
+     null,
+     null
+    ],
+    [
+     "AltarRail_150",
+     0.0,
+     6.0,
+     0,
+     null,
+     "edge",
+     {
+      "z": 0.2
+     }
+    ],
+    [
+     "AltarRail_150",
+     1.5,
+     6.0,
+     0,
+     null,
+     "edge",
+     {
+      "z": 0.2
+     }
+    ],
+    [
+     "AltarRail_150",
+     3.0,
+     6.0,
+     0,
+     null,
+     "edge",
+     {
+      "z": 0.2
+     }
+    ],
+    [
+     "AltarRail_150",
+     7.5,
+     6.0,
+     0,
+     null,
+     "edge",
+     {
+      "z": 0.2
+     }
+    ],
+    [
+     "AltarRail_150",
+     9.0,
+     6.0,
+     0,
+     null,
+     "edge",
+     {
+      "z": 0.2
+     }
+    ],
+    [
+     "AltarRail_150",
+     10.5,
+     6.0,
+     0,
+     null,
+     "edge",
+     {
+      "z": 0.2
+     }
+    ],
+    [
+     "Altar_300",
+     6.0,
+     7.5,
+     0,
+     null,
+     null,
+     {
+      "warn_ok": "window",
+      "z": 0.2
+     }
+    ],
+    [
+     "CandleStand_Pricket",
+     3.75,
+     8.25,
+     0,
+     null,
+     null,
+     {
+      "z": 0.2
+     }
+    ],
+    [
+     "CandleStand_Pricket",
+     8.25,
+     8.25,
+     0,
+     null,
+     null,
+     {
+      "z": 0.2
+     }
+    ],
+    [
+     "Lectern",
+     9.0,
+     6.75,
+     180,
+     null,
+     null,
+     {
+      "z": 0.2
+     }
+    ],
+    [
+     "Chest",
+     0.75,
+     8.25,
+     90,
+     null,
+     null,
+     {
+      "z": 0.2
+     }
+    ],
+    [
+     "Font",
+     0.75,
+     0.75,
+     90,
+     null,
+     null,
+     {
+      "hug": true
+     }
+    ],
+    [
+     "VotiveRack",
+     11.25,
+     3.75,
+     -90,
+     null,
+     null
+    ],
+    [
+     "Runner_150",
+     6.0,
+     2.25,
+     90,
+     null,
+     null
+    ],
+    [
+     "Runner_300",
+     6.0,
+     4.5,
+     90,
+     null,
+     null
+    ]
+   ],
+   "rhythm_sides": true,
+   "spawns": {
+    "front": [
+     6.0,
+     1.6,
+     0
+    ]
+   },
+   "zone_order": [
+    "dais",
+    "nave"
+   ],
+   "zones": {
+    "dais": {
+     "cells": [
+      [
+       0,
+       7,
+       4,
+       5
+      ]
+     ],
+     "dais": true,
+     "floor": "Flag",
+     "wall": "AshlarIn"
+    },
+    "nave": {
+     "cells": "rest",
+     "floor": "FlagWarm",
+     "wall": "AshlarIn"
+    }
+   }
+  },
+  "VKI_Cottage_F0": {
+   "building": "Cottage",
+   "family": {
+    "partition": "Board",
+    "perimeter": "Timber"
+   },
+   "floor": 0,
+   "links": [
+    [
+     "front",
+     "exit",
+     "@return"
+    ]
+   ],
+   "partition_wall": "zone",
+   "preset": "Day",
+   "props": [
+    [
+     "Prop_Loom",
+     1.5,
+     6.0,
+     0,
+     null,
+     "wall_floor"
+    ],
+    [
+     "Rug_300x150",
+     4.5,
+     5.25,
+     0,
+     null,
+     null
+    ],
+    [
+     "Prop_Stool",
+     3.75,
+     5.25,
+     0,
+     null,
+     null
+    ],
+    [
+     "Prop_Stool",
+     5.25,
+     5.25,
+     0,
+     null,
+     null
+    ],
+    [
+     "Bed_Box",
+     7.5,
+     6.75,
+     0,
+     null,
+     null
+    ],
+    [
+     "Chest",
+     8.25,
+     5.25,
+     -90,
+     null,
+     null
+    ],
+    [
+     "Shelf_Wall_150",
+     0.75,
+     3.75,
+     90,
+     null,
+     "wall_hung"
+    ],
+    [
+     "Pantry_Shelves_300",
+     0.75,
+     1.5,
+     90,
+     null,
+     null
+    ],
+    [
+     "Table_Trestle_300",
+     3.0,
+     1.5,
+     0,
+     null,
+     null
+    ],
+    [
+     "Form_300",
+     3.0,
+     0.75,
+     0,
+     null,
+     null
+    ],
+    [
+     "Form_300",
+     3.0,
+     2.25,
+     0,
+     null,
+     null
+    ],
+    [
+     "TableDress_Meal_A",
+     3.0,
+     1.5,
+     0,
+     null,
+     "table",
+     {
+      "on": true
+     }
+    ],
+    [
+     "LogBasket",
+     8.25,
+     0.75,
+     180,
+     null,
+     null
+    ]
+   ],
+   "spawns": {
+    "front": [
+     5.25,
+     1.6,
+     0
+    ]
+   },
+   "special": "Fireplace_300",
+   "zone_order": [
+    "bed",
+    "hall"
+   ],
+   "zones": {
+    "bed": {
+     "cells": [
+      [
+       4,
+       5,
+       2,
+       4
+      ]
+     ],
+     "floor": "Boards_NS",
+     "wall": "PlasterCream"
+    },
+    "hall": {
+     "cells": "rest",
+     "floor": "FlagRustic",
+     "wall": "PlasterCream"
+    }
+   }
+  },
+  "VKI_Dungeon_B1": {
+   "building": "Dungeon",
+   "debris": {
+    "density": 0.26,
+    "seed": 11,
+    "themes": {
+     "cells": "dungeon"
+    }
+   },
+   "family": {
+    "partition": "Dungeon",
+    "perimeter": "Dungeon"
+   },
+   "floor": -1,
+   "links": [
+    [
+     "surface",
+     "stair_up",
+     "VK_ValleyTown"
+    ],
+    [
+     "crypt",
+     "stair_down",
+     "VKI_Dungeon_B2"
+    ],
+    [
+     "sewer",
+     "passage",
+     "VKI_Sewer_S1"
+    ]
+   ],
+   "partition_wall": "zone",
+   "passages": {
+    "NS|3|10": "sewer"
+   },
+   "pools": false,
+   "preset": "Dungeon",
+   "props": [
+    [
+     "Cage",
+     2.25,
+     7.5,
+     0,
+     null,
+     null
+    ],
+    [
+     "Torch_Wall",
+     2.25,
+     8.25,
+     0,
+     null,
+     "wall_hung"
+    ],
+    [
+     "Overlay_StrawPile",
+     3.75,
+     8.25,
+     0,
+     null,
+     null
+    ],
+    [
+     "Chains_Wall",
+     5.25,
+     8.25,
+     0,
+     null,
+     "wall_hung"
+    ],
+    [
+     "Bucket",
+     3.75,
+     6.75,
+     0,
+     null,
+     null
+    ],
+    [
+     "Skeleton_Sitting",
+     6.75,
+     8.25,
+     0,
+     null,
+     null
+    ],
+    [
+     "Chains_Wall",
+     6.75,
+     8.25,
+     0,
+     null,
+     "wall_hung"
+    ],
+    [
+     "Overlay_Bones",
+     6.75,
+     6.75,
+     0,
+     null,
+     null
+    ],
+    [
+     "Overlay_StrawPile",
+     8.25,
+     8.25,
+     0,
+     null,
+     null
+    ],
+    [
+     "Barrel",
+     9.75,
+     8.25,
+     0,
+     null,
+     null
+    ],
+    [
+     "Torch_Wall",
+     9.75,
+     8.25,
+     0,
+     null,
+     "wall_hung"
+    ],
+    [
+     "Prop_WeaponRack",
+     0.75,
+     2.25,
+     90,
+     null,
+     "wall_floor",
+     {
+      "hug": true
+     }
+    ],
+    [
+     "Barrel",
+     0.75,
+     0.75,
+     90,
+     null,
+     null
+    ],
+    [
+     "Table_Small",
+     3.75,
+     2.25,
+     0,
+     null,
+     null
+    ],
+    [
+     "TableDress_Guard",
+     3.75,
+     2.25,
+     0,
+     null,
+     "table",
+     {
+      "on": true
+     }
+    ],
+    [
+     "Prop_Stool",
+     3.0,
+     2.25,
+     0,
+     null,
+     null
+    ],
+    [
+     "Prop_Stool",
+     4.5,
+     2.25,
+     0,
+     null,
+     null
+    ],
+    [
+     "Brazier",
+     6.75,
+     3.75,
+     0,
+     null,
+     null
+    ],
+    [
+     "Overlay_Puddle",
+     5.25,
+     0.75,
+     0,
+     null,
+     null
+    ],
+    [
+     "Overlay_DrainGrate",
+     6.75,
+     0.75,
+     0,
+     null,
+     null
+    ],
+    [
+     "Rubble",
+     9.75,
+     0.75,
+     0,
+     null,
+     null
+    ],
+    [
+     "Overlay_Puddle",
+     11.25,
+     3.75,
+     0,
+     null,
+     null
+    ],
+    [
+     "Torch_Wall",
+     0.75,
+     3.75,
+     90,
+     null,
+     "wall_hung"
+    ],
+    [
+     "Torch_Wall",
+     14.25,
+     6.75,
+     -90,
+     null,
+     "wall_hung"
+    ],
+    [
+     "Skeleton_Sitting",
+     14.25,
+     3.75,
+     -90,
+     null,
+     null
+    ],
+    [
+     "Overlay_StrawPile",
+     14.25,
+     0.75,
+     0,
+     null,
+     null
+    ],
+    [
+     "Bucket",
+     12.75,
+     0.75,
+     0,
+     null,
+     null
+    ],
+    [
+     "Torch_Wall",
+     14.25,
+     2.25,
+     -90,
+     null,
+     "wall_hung"
+    ]
+   ],
+   "spawns": {
+    "crypt": [
+     14.25,
+     6.75,
+     180
+    ],
+    "surface": [
+     0.75,
+     3.75,
+     180
+    ]
+   },
+   "stairs": [
+    [
+     "Up",
+     0.0,
+     4.5,
+     0,
+     "surface",
+     "Stone"
+    ],
+    [
+     "Down",
+     10.5,
+     9.0,
+     -90,
+     "crypt",
+     "Stone"
+    ]
+   ],
+   "zone_order": [
+    "cells",
+    "hall"
+   ],
+   "zones": {
+    "cells": {
+     "cells": [
+      [
+       2,
+       5,
+       4,
+       5
+      ],
+      [
+       8,
+       9,
+       0,
+       2
+      ]
+     ],
+     "floor": "EarthDamp",
+     "wall": "DungeonInDamp"
+    },
+    "hall": {
+     "cells": "rest",
+     "floor": "DungeonFlag",
+     "wall": "DungeonIn"
+    }
+   }
+  },
+  "VKI_Dungeon_B2": {
+   "building": "Dungeon",
+   "debris": {
+    "density": 0.26,
+    "seed": 12
+   },
+   "family": {
+    "partition": "Dungeon",
+    "perimeter": "Dungeon"
+   },
+   "floor": -2,
+   "gates": {
+    "EW|1|2": -90.0
+   },
+   "links": [
+    [
+     "above",
+     "stair_up",
+     "VKI_Dungeon_B1"
+    ],
+    [
+     "temple",
+     "passage",
+     "VKI_Dungeon_B3"
+    ]
+   ],
+   "partition_wall": "zone",
+   "passages": {
+    "NS|3|10": "temple"
+   },
+   "pools": false,
+   "preset": "Dungeon",
+   "props": [
+    [
+     "Skeleton_Sitting",
+     3.75,
+     8.25,
+     0,
+     null,
+     null
+    ],
+    [
+     "Candles_Floor",
+     8.25,
+     8.25,
+     0,
+     null,
+     null
+    ],
+    [
+     "Overlay_Bones",
+     2.25,
+     6.75,
+     0,
+     null,
+     null
+    ],
+    [
+     "Pillar_Cut",
+     4.5,
+     6.0,
+     0,
+     null,
+     null
+    ],
+    [
+     "Pillar_Cut",
+     4.5,
+     3.0,
+     0,
+     null,
+     null
+    ],
+    [
+     "Pillar_Cut",
+     10.5,
+     6.0,
+     0,
+     null,
+     null
+    ],
+    [
+     "Pillar_Cut",
+     10.5,
+     3.0,
+     0,
+     null,
+     null
+    ],
+    [
+     "POI_NecroCircle",
+     7.5,
+     4.5,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Coffin",
+     6.0,
+     2.25,
+     0,
+     null,
+     null
+    ],
+    [
+     "Coffin",
+     10.5,
+     2.25,
+     0,
+     null,
+     null
+    ],
+    [
+     "Overlay_TombSlab",
+     1.5,
+     4.5,
+     90,
+     null,
+     null
+    ],
+    [
+     "Overlay_TombSlab",
+     13.5,
+     4.5,
+     90,
+     null,
+     null
+    ],
+    [
+     "Rubble",
+     13.5,
+     0.75,
+     0,
+     null,
+     null
+    ],
+    [
+     "Overlay_Puddle",
+     11.25,
+     0.75,
+     0,
+     null,
+     null
+    ],
+    [
+     "Torch_Wall",
+     0.75,
+     3.75,
+     90,
+     null,
+     "wall_hung"
+    ],
+    [
+     "Torch_Wall",
+     0.75,
+     6.75,
+     90,
+     null,
+     "wall_hung"
+    ],
+    [
+     "Torch_Wall",
+     14.25,
+     2.25,
+     -90,
+     null,
+     "wall_hung"
+    ],
+    [
+     "Torch_Wall",
+     6.75,
+     8.25,
+     0,
+     null,
+     "wall_hung"
+    ],
+    [
+     "Candles_Floor",
+     12.9,
+     6.6,
+     0,
+     null,
+     null
+    ],
+    [
+     "Chest_Treasure",
+     0.75,
+     2.25,
+     90,
+     null,
+     null
+    ],
+    [
+     "Candles_Floor",
+     0.75,
+     0.75,
+     0,
+     null,
+     null
+    ]
+   ],
+   "spawns": {
+    "above": [
+     9.75,
+     8.25,
+     270
+    ]
+   },
+   "stairs": [
+    [
+     "Up",
+     10.5,
+     9.0,
+     -90,
+     "above",
+     "Stone"
+    ]
+   ],
+   "zone_order": [
+    "vault",
+    "crypt"
+   ],
+   "zones": {
+    "crypt": {
+     "cells": "rest",
+     "floor": "DungeonFlagWarm",
+     "wall": "DungeonInWarm"
+    },
+    "vault": {
+     "cells": [
+      [
+       0,
+       1,
+       0,
+       1
+      ]
+     ],
+     "floor": "DungeonFlag",
+     "wall": "DungeonIn"
+    }
+   }
+  },
+  "VKI_Dungeon_B3": {
+   "building": "Dungeon",
+   "debris": {
+    "density": 0.4,
+    "seed": 13
+   },
+   "door_leaves": {
+    "NS|2|4": {
+     "piece": "Leaf_Portcullis_300",
+     "state": "raised",
+     "z": 0.75
+    },
+    "NS|4|6": {
+     "piece": "Leaf_VaultDisc_300",
+     "socket": [
+      0.5,
+      -0.42,
+      0.0
+     ],
+     "state": "ajar"
+    }
+   },
+   "family": {
+    "partition": "Ancient",
+    "perimeter": "Ancient"
+   },
+   "floor": -3,
+   "links": [
+    [
+     "crypt",
+     "passage",
+     "VKI_Dungeon_B2"
+    ],
+    [
+     "caverns",
+     "passage",
+     "VKI_Dungeon_B4"
+    ]
+   ],
+   "partition_wall": "zone",
+   "passages": {
+    "NS|1|10": "caverns",
+    "NS|3|0": "crypt"
+   },
+   "pits": [
+    [
+     "Pit_SpikePit_150",
+     3.0,
+     3.0
+    ],
+    [
+     "Pit_SpikePit_150",
+     3.0,
+     4.5
+    ]
+   ],
+   "pools": false,
+   "preset": "Dungeon",
+   "props": [
+    [
+     "Boulder",
+     0.8,
+     8.2,
+     0,
+     null,
+     null
+    ],
+    [
+     "Overlay_CrackedFloor",
+     2.25,
+     6.75,
+     0,
+     null,
+     null
+    ],
+    [
+     "Overlay_PressurePlate",
+     3.75,
+     6.75,
+     0,
+     null,
+     null
+    ],
+    [
+     "Overlay_BladeSlot_150",
+     3.75,
+     2.25,
+     0,
+     null,
+     null
+    ],
+    [
+     "Skeleton_Fallen",
+     2.25,
+     2.25,
+     0,
+     null,
+     null
+    ],
+    [
+     "Urns",
+     0.75,
+     0.75,
+     0,
+     null,
+     null
+    ],
+    [
+     "Brazier_Stone",
+     5.25,
+     0.75,
+     0,
+     null,
+     null
+    ],
+    [
+     "Lever_Wall",
+     0.75,
+     2.25,
+     90,
+     null,
+     "wall_hung"
+    ],
+    [
+     "Torch_Wall",
+     0.75,
+     6.75,
+     90,
+     null,
+     "wall_hung"
+    ],
+    [
+     "Roots_Wall",
+     2.0,
+     8.25,
+     0,
+     null,
+     "wall_hung"
+    ],
+    [
+     "Statue_Broken",
+     6.9,
+     2.25,
+     0,
+     null,
+     null
+    ],
+    [
+     "Column_Fallen",
+     9.0,
+     0.9,
+     0,
+     null,
+     null
+    ],
+    [
+     "Column_Ancient",
+     11.25,
+     6.75,
+     0,
+     null,
+     null
+    ],
+    [
+     "Column_Broken",
+     11.25,
+     2.25,
+     0,
+     null,
+     null
+    ],
+    [
+     "Overlay_CrackedFloor",
+     12.75,
+     3.75,
+     0,
+     null,
+     null
+    ],
+    [
+     "Altar_Idol",
+     14.0,
+     6.0,
+     -90,
+     null,
+     null
+    ],
+    [
+     "Statue_Guardian",
+     14.2,
+     8.25,
+     -90,
+     null,
+     null
+    ],
+    [
+     "Statue_Guardian",
+     14.2,
+     3.75,
+     -90,
+     null,
+     null
+    ],
+    [
+     "Brazier_Stone",
+     12.75,
+     6.9,
+     0,
+     null,
+     null
+    ],
+    [
+     "Brazier_Stone",
+     12.75,
+     5.1,
+     0,
+     null,
+     null
+    ],
+    [
+     "Urns",
+     14.25,
+     0.75,
+     0,
+     null,
+     null
+    ],
+    [
+     "Roots_Wall",
+     12.75,
+     8.25,
+     0,
+     null,
+     "wall_hung"
+    ],
+    [
+     "Chest_Iron",
+     6.85,
+     8.3,
+     0,
+     null,
+     null
+    ],
+    [
+     "LootPile",
+     8.0,
+     8.1,
+     0,
+     null,
+     null
+    ],
+    [
+     "Overlay_GoldCoins",
+     7.4,
+     6.9,
+     0,
+     null,
+     null
+    ]
+   ],
+   "specials": {
+    "1": "Wall_Ancient_DoorWide_300_Full",
+    "2": "Wall_Ancient_Vault_300_Full",
+    "S1": "Wall_Dungeon_DartTrap_150_Full",
+    "S2": "Wall_Ancient_Relief_150_Full",
+    "S4": "Wall_Ancient_Broken_150_Full",
+    "s1": "Wall_Ancient_Collapsed_150_Cut"
+   },
+   "zone_order": [
+    "gallery",
+    "vault",
+    "sanctum"
+   ],
+   "zones": {
+    "gallery": {
+     "cap": "AncientCap",
+     "cells": [
+      [
+       0,
+       3,
+       0,
+       5
+      ]
+     ],
+     "floor": "AncientFlag",
+     "wall": "AncientIn"
+    },
+    "sanctum": {
+     "cells": "rest",
+     "floor": "AncientFlag",
+     "wall": "AncientIn"
+    },
+    "vault": {
+     "cells": [
+      [
+       4,
+       5,
+       4,
+       5
+      ]
+     ],
+     "floor": "AncientFlag",
+     "wall": "AncientIn"
+    }
+   }
+  },
+  "VKI_Dungeon_B4": {
+   "building": "Dungeon",
+   "cave": true,
+   "debris": {
+    "density": 0.5,
+    "seed": 14
+   },
+   "family": {
+    "partition": "Cave",
+    "perimeter": "Cave"
+   },
+   "floor": -4,
+   "links": [
+    [
+     "temple",
+     "passage",
+     "VKI_Dungeon_B3"
+    ],
+    [
+     "warren",
+     "passage",
+     "VKI_Dungeon_B5"
+    ],
+    [
+     "falls",
+     "passage",
+     "VKI_Cave_Falls"
+    ],
+    [
+     "sewer",
+     "passage",
+     "VKI_Sewer_S1"
+    ]
+   ],
+   "pits": [
+    [
+     "Pit_Pool_300x300",
+     10.5,
+     0.0
+    ]
+   ],
+   "pools": false,
+   "preset": "Cavern",
+   "props": [
+    [
+     "RopeBridge_420",
+     11.25,
+     6.0,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Overlay_Gravel",
+     5.9,
+     1.0,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Mushrooms_Glow",
+     6.75,
+     1.0,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Crystals",
+     14.25,
+     2.2,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Mushrooms_Glow",
+     2.6,
+     8.0,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Skeleton_Fallen",
+     5.0,
+     7.4,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Crystals",
+     7.3,
+     9.3,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Stalagmites",
+     8.25,
+     9.4,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Overlay_Gravel",
+     9.75,
+     8.4,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Web_Corner",
+     17.25,
+     9.75,
+     -90,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Cocoon",
+     15.75,
+     10.15,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "EggSacs",
+     15.0,
+     8.0,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Overlay_WebFloor",
+     16.3,
+     7.6,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ]
+   ],
+   "tunnels": {
+    "0|1": "temple",
+    "12|6": "warren",
+    "7|7": "falls",
+    "9|7": "sewer"
+   },
+   "zone_order": [
+    "cavern"
+   ],
+   "zones": {
+    "cavern": {
+     "cells": "rest",
+     "floor": "CaveFloor"
+    }
+   }
+  },
+  "VKI_Dungeon_B5": {
+   "building": "Dungeon",
+   "cave": true,
+   "debris": {
+    "density": 0.38,
+    "seed": 15
+   },
+   "family": {
+    "partition": "Cave",
+    "perimeter": "Cave"
+   },
+   "floor": -5,
+   "links": [
+    [
+     "caverns",
+     "passage",
+     "VKI_Dungeon_B4"
+    ]
+   ],
+   "pools": false,
+   "preset": "Cavern",
+   "props": [
+    [
+     "Totem_Goblin",
+     3.2,
+     7.8,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Barricade_Stakes",
+     2.2,
+     5.0,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Burrow",
+     1.4,
+     1.3,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "RatHole_Wall",
+     0.15,
+     2.25,
+     90,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Overlay_Refuse",
+     2.4,
+     2.6,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Brazier",
+     3.3,
+     3.0,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "FirePit_Camp",
+     8.25,
+     4.5,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "LeanTo",
+     8.25,
+     7.8,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Overlay_Bedroll",
+     7.2,
+     6.5,
+     90,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Overlay_Bedroll",
+     9.4,
+     6.4,
+     90,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Overlay_Bedroll",
+     9.0,
+     1.4,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Barrel",
+     9.4,
+     2.7,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "LootPile",
+     13.5,
+     7.8,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Skeleton_Sitting",
+     14.0,
+     6.9,
+     -90,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Chest_Iron",
+     13.2,
+     5.0,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Overlay_GoldCoins",
+     13.5,
+     6.4,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Overlay_Bones",
+     12.8,
+     2.3,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Urns",
+     14.1,
+     1.0,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Brazier",
+     13.8,
+     3.2,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ]
+   ],
+   "tunnels": {
+    "0|5": "caverns"
+   },
+   "zone_order": [
+    "warren",
+    "cave"
+   ],
+   "zones": {
+    "cave": {
+     "cells": "rest",
+     "floor": "CaveFloor"
+    },
+    "warren": {
+     "cells": [
+      [
+       0,
+       2,
+       0,
+       5
+      ]
+     ],
+     "floor": "EarthDamp"
+    }
+   }
+  },
+  "VKI_Dwarf_Hall": {
+   "building": "Dwarf",
+   "cave": true,
+   "debris": {
+    "density": 0.4,
+    "seed": 19,
+    "themes": {
+     "foundry": "forge"
+    },
+    "zones": {
+     "foundry": 0.6,
+     "hall": 0.08,
+     "runner": 0.0
+    }
+   },
+   "door_leaves": {
+    "EW|9|9": {
+     "piece": "Leaf_DwarfGate_300",
+     "state": "closed"
+    }
+   },
+   "family": {
+    "partition": "Dwarf",
+    "perimeter": "Cave"
+   },
+   "floor": -1,
+   "lava_sinks": {
+    "12|4": [
+     0,
+     -1
+    ],
+    "7|4": [
+     0,
+     -1
+    ]
+   },
+   "links": [
+    [
+     "gate",
+     "passage",
+     "VK_ValleyTown"
+    ],
+    [
+     "mines",
+     "passage",
+     "VKI_Mine_M1"
+    ]
+   ],
+   "partition_wall": "zone",
+   "passages": {
+    "NS|1|8": "gate"
+   },
+   "pools": false,
+   "preset": "Hall",
+   "props": [
+    [
+     "Throne_Dwarf",
+     15.0,
+     11.0,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Statue_DwarfKing",
+     9.85,
+     12.6,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Statue_DwarfKing",
+     20.13,
+     12.6,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Pillar_Dwarf_Cut",
+     12.6,
+     7.5,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Pillar_Dwarf_Cut",
+     17.4,
+     7.5,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Pillar_Dwarf_Cut",
+     12.6,
+     10.5,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Pillar_Dwarf_Cut",
+     17.4,
+     10.5,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Overlay_RuneCircle",
+     15.0,
+     7.5,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Brazier_Dwarf",
+     13.6,
+     9.55,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Brazier_Dwarf",
+     16.4,
+     9.55,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Banner_Dwarf",
+     12.75,
+     13.2,
+     0,
+     null,
+     "wall_hung",
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Banner_Dwarf",
+     17.25,
+     13.2,
+     0,
+     null,
+     "wall_hung",
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Brazier_Dwarf",
+     12.9,
+     3.8,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Brazier_Dwarf",
+     17.1,
+     3.8,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Chest_Iron",
+     18.85,
+     3.9,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Chest_Treasure",
+     22.1,
+     3.68,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "LootPile",
+     23.15,
+     2.5,
+     -90,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Overlay_GoldCoins",
+     19.9,
+     2.5,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Urns",
+     18.75,
+     2.25,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Brazier_Dwarf",
+     23.3,
+     3.9,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "POI_Crucible",
+     24.3,
+     10.27,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Forge_Dwarf",
+     26.1,
+     7.2,
+     -90,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Anvil_Dwarf",
+     24.3,
+     7.55,
+     -90,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Bridge_Dwarf",
+     4.5,
+     9.75,
+     90,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Crystals",
+     6.9,
+     3.9,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Mushrooms_Glow",
+     7.7,
+     12.2,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Stalagmites",
+     2.3,
+     12.0,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ]
+   ],
+   "specials": {
+    "1": "Wall_Dwarf_Door_150_Full",
+    "S1": "Wall_Dwarf_DoorWide_300_Full",
+    "S2": "Wall_Dwarf_Plain_150B_Full",
+    "s1": "Wall_Dwarf_DoorWide_300_Cut",
+    "s2": "Wall_Dwarf_Door_150_Cut"
+   },
+   "tunnels": {
+    "0|6": "mines"
+   },
+   "zone_order": [
+    "runner",
+    "foundry",
+    "hall",
+    "cave"
+   ],
+   "zones": {
+    "cave": {
+     "cells": "rest",
+     "floor": "CaveFloor"
+    },
+    "foundry": {
+     "cells": [
+      [
+       14,
+       17,
+       4,
+       7
+      ]
+     ],
+     "floor": "DwarfFlag",
+     "wall": "DwarfIn"
+    },
+    "hall": {
+     "cells": [
+      [
+       6,
+       13,
+       3,
+       8
+      ],
+      [
+       8,
+       11,
+       1,
+       2
+      ],
+      [
+       12,
+       15,
+       1,
+       2
+      ]
+     ],
+     "floor": "DwarfFlag",
+     "wall": "DwarfIn"
+    },
+    "runner": {
+     "cells": [
+      [
+       9,
+       10,
+       3,
+       8
+      ]
+     ],
+     "floor": "DwarfFloor",
+     "wall": "DwarfIn"
+    }
+   }
+  },
+  "VKI_Hovel_F0": {
+   "apron_style": {
+    "floor": "ApronDirt"
+   },
+   "building": "Hovel",
+   "family": {
+    "partition": "Wattle",
+    "perimeter": "Wattle"
+   },
+   "floor": 0,
+   "links": [
+    [
+     "front",
+     "exit",
+     "@return"
+    ]
+   ],
+   "preset": "Day",
+   "props": [
+    [
+     "Bed_Box",
+     1.5,
+     6.75,
+     0,
+     null,
+     null
+    ],
+    [
+     "Chest",
+     3.75,
+     6.75,
+     0,
+     null,
+     null
+    ],
+    [
+     "Pantry_Shelves_300",
+     6.0,
+     6.75,
+     0,
+     null,
+     null,
+     {
+      "hug": true
+     }
+    ],
+    [
+     "Bed_Straw",
+     0.75,
+     3.0,
+     0,
+     null,
+     null
+    ],
+    [
+     "Hearth_Open",
+     3.75,
+     3.75,
+     0,
+     null,
+     null
+    ],
+    [
+     "Table_Trestle_150",
+     6.0,
+     2.25,
+     0,
+     null,
+     null
+    ],
+    [
+     "Form_150",
+     6.0,
+     1.5,
+     0,
+     null,
+     null
+    ],
+    [
+     "Form_150",
+     6.0,
+     3.0,
+     0,
+     null,
+     null
+    ],
+    [
+     "TableDress_Meal_A",
+     6.0,
+     2.25,
+     0,
+     null,
+     "table",
+     {
+      "on": true
+     }
+    ],
+    [
+     "LogBasket",
+     0.75,
+     0.75,
+     180,
+     null,
+     null
+    ],
+    [
+     "Jars_Cluster",
+     6.75,
+     0.75,
+     180,
+     null,
+     null
+    ]
+   ],
+   "spawns": {
+    "front": [
+     3.75,
+     1.6,
+     0
+    ]
+   },
+   "zone_order": [
+    "all"
+   ],
+   "zones": {
+    "all": {
+     "cells": "rest",
+     "floor": "Earth",
+     "wall": "PlasterDaub"
+    }
+   }
+  },
+  "VKI_Mine_M1": {
+   "building": "Mine",
+   "cave": true,
+   "debris": {
+    "density": 0.36,
+    "seed": 23,
+    "themes": {
+     "mine": "mine",
+     "store": "mine"
+    },
+    "zones": {
+     "store": 0.18
+    }
+   },
+   "family": {
+    "partition": "Mine",
+    "perimeter": "Cave"
+   },
+   "floor": -1,
+   "links": [
+    [
+     "surface",
+     "passage",
+     "VK_ValleyTown"
+    ],
+    [
+     "hall",
+     "passage",
+     "VKI_Dwarf_Hall"
+    ],
+    [
+     "deep",
+     "lift",
+     "@deep"
+    ]
+   ],
+   "pits": [
+    [
+     "Pit_Shaft_300x300",
+     16.5,
+     4.5
+    ]
+   ],
+   "pools": false,
+   "preset": "Mine",
+   "props": [
+    [
+     "Mine_Set_Lamp",
+     3.0,
+     10.5,
+     90,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Mine_Set",
+     6.0,
+     10.5,
+     90,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Mine_Set_Lamp",
+     12.0,
+     10.5,
+     90,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Mine_Set",
+     15.0,
+     10.5,
+     90,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Mine_Set_Lamp",
+     21.0,
+     10.5,
+     90,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Mine_Set",
+     24.0,
+     10.5,
+     90,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Mine_Set_Lamp",
+     27.0,
+     10.5,
+     90,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Mine_Set",
+     32.25,
+     10.5,
+     90,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Mine_Set",
+     9.0,
+     12.75,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Mine_Set_Lamp",
+     25.5,
+     12.75,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Mine_Set",
+     30.0,
+     7.5,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Mine_Set_Lamp",
+     4.5,
+     7.75,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Mine_Set_Broken",
+     22.5,
+     4.5,
+     90,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "POI_Treadwheel",
+     18.0,
+     6.0,
+     0,
+     null,
+     null,
+     {
+      "hug": false,
+      "link": "deep"
+     }
+    ],
+    [
+     "Mine_Cart_Ore",
+     18.0,
+     9.3,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Mine_LanternPole",
+     21.6,
+     2.4,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Crate",
+     21.5,
+     6.6,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Mine_OrePile",
+     20.6,
+     4.2,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Mine_ToolRack",
+     12.3,
+     3.4,
+     90,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Mine_SleeperStack",
+     14.2,
+     2.5,
+     20,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Vein_Gold",
+     8.25,
+     17.75,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Mine_Cart_Ore",
+     9.0,
+     13.95,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Mine_OrePile",
+     11.6,
+     16.4,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Mine_Wheelbarrow",
+     12.2,
+     15.2,
+     -30,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Mine_LanternPole",
+     7.0,
+     14.8,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Mine_CaveIn",
+     1.25,
+     16.5,
+     90,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Mine_Barricade",
+     3.0,
+     16.5,
+     90,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Vein_Crystal",
+     26.25,
+     17.75,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Crystals",
+     22.4,
+     14.4,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Mushrooms_Glow",
+     29.0,
+     14.3,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Stalagmites",
+     23.4,
+     16.7,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Vein_Iron",
+     31.25,
+     4.5,
+     -90,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Mine_Cart",
+     30.0,
+     7.5,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Mine_OrePile",
+     28.0,
+     4.4,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Mine_Cart_Tipped",
+     24.3,
+     4.6,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Mine_LanternPole",
+     26.3,
+     4.5,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Barrel",
+     2.3,
+     4.0,
+     180,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Barrel",
+     3.2,
+     4.1,
+     180,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Mine_Bench",
+     5.6,
+     4.2,
+     180,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Crate",
+     7.7,
+     4.1,
+     -90,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Mine_ToolRack",
+     1.8,
+     5.6,
+     90,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Mine_SleeperStack",
+     7.9,
+     6.4,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Mine_LanternPole",
+     4.2,
+     6.0,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ]
+   ],
+   "tracks": [
+    [
+     [
+      0.0,
+      10.5,
+      "open"
+     ],
+     [
+      30.0,
+      10.5
+     ],
+     [
+      30.0,
+      4.5
+     ]
+    ],
+    [
+     [
+      9.0,
+      10.5
+     ],
+     [
+      9.0,
+      15.0
+     ]
+    ],
+    [
+     [
+      18.0,
+      10.5
+     ],
+     [
+      18.0,
+      9.0
+     ]
+    ]
+   ],
+   "tunnel_kinds": {
+    "surface": "Adit"
+   },
+   "tunnels": {
+    "0|7": "surface",
+    "22|7": "hall"
+   },
+   "zone_order": [
+    "crystal",
+    "store",
+    "mine"
+   ],
+   "zones": {
+    "crystal": {
+     "cells": [
+      [
+       14,
+       19,
+       9,
+       11
+      ]
+     ],
+     "floor": "CaveFloor"
+    },
+    "mine": {
+     "cells": "rest",
+     "floor": "EarthDamp"
+    },
+    "store": {
+     "cells": [
+      [
+       1,
+       5,
+       2,
+       4
+      ],
+      [
+       2,
+       3,
+       5,
+       5
+      ]
+     ],
+     "floor": "EarthDamp"
+    }
+   }
+  },
+  "VKI_Sewer_S1": {
+   "building": "Sewer",
+   "cave": true,
+   "channel_sinks": {
+    "14|5": [
+     1,
+     0
+    ]
+   },
+   "debris": {
+    "density": 0.36,
+    "seed": 17
+   },
+   "family": {
+    "partition": "Sewer",
+    "perimeter": "Cave"
+   },
+   "floor": -1,
+   "links": [
+    [
+     "gaol",
+     "passage",
+     "VKI_Dungeon_B1"
+    ],
+    [
+     "street",
+     "passage",
+     "VK_ValleyTown"
+    ],
+    [
+     "caverns",
+     "passage",
+     "VKI_Dungeon_B4"
+    ]
+   ],
+   "partition_wall": "zone",
+   "passages": {
+    "EW|3|7": "street",
+    "NS|6|1": "gaol"
+   },
+   "pits": [
+    [
+     "Pit_Pool_300x300",
+     9.0,
+     0.0
+    ]
+   ],
+   "pools": false,
+   "preset": "Sewer",
+   "props": [
+    [
+     "Bridge_Sewer",
+     5.25,
+     8.25,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Bridge_Sewer",
+     17.25,
+     8.25,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Bridge_Sewer",
+     14.25,
+     9.75,
+     90,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Sluice",
+     14.25,
+     11.25,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Torch_Wall",
+     2.25,
+     9.75,
+     0,
+     null,
+     "wall_hung"
+    ],
+    [
+     "Torch_Wall",
+     11.25,
+     9.75,
+     0,
+     null,
+     "wall_hung"
+    ],
+    [
+     "Torch_Wall",
+     18.75,
+     9.75,
+     0,
+     null,
+     "wall_hung"
+    ],
+    [
+     "Torch_Wall",
+     12.75,
+     12.75,
+     90,
+     null,
+     "wall_hung"
+    ],
+    [
+     "Overlay_Puddle",
+     2.6,
+     6.9,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Overlay_Sludge",
+     11.0,
+     6.7,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Overlay_Sludge",
+     17.9,
+     9.55,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Crystals",
+     5.2,
+     2.2,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Mushrooms_Glow",
+     12.9,
+     1.0,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "POI_RatKing",
+     3.1,
+     2.75,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Boulders",
+     16.6,
+     2.3,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Crystals",
+     20.6,
+     3.9,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ],
+    [
+     "Mushrooms_Glow",
+     20.4,
+     11.4,
+     0,
+     null,
+     null,
+     {
+      "hug": false
+     }
+    ]
+   ],
+   "rush_mats": false,
+   "specials": {
+    "1": "Wall_Sewer_Culvert_150_Full",
+    "S1": "Wall_Sewer_Ladder_150_Full",
+    "S2": "Wall_Sewer_Outfall_150_Full"
+   },
+   "tunnels": {
+    "16|7": "caverns"
+   },
+   "zone_order": [
+    "sewer",
+    "cave"
+   ],
+   "zones": {
+    "cave": {
+     "cells": "rest",
+     "floor": "CaveFloor"
+    },
+    "sewer": {
+     "cells": [
+      [
+       1,
+       12,
+       4,
+       6
+      ],
+      [
+       8,
+       10,
+       7,
+       8
+      ]
+     ],
+     "floor": "SewerFloor",
+     "wall": "SewerBrick"
+    }
+   }
+  },
+  "VKI_Smithy_F0": {
+   "building": "Smithy",
+   "family": {
+    "partition": "Board",
+    "perimeter": "Stone"
+   },
+   "floor": 0,
+   "links": [
+    [
+     "front",
+     "exit",
+     "@return"
+    ]
+   ],
+   "partition_wall": null,
+   "preset": "Day",
+   "props": [
+    [
+     "Prop_WeaponRack",
+     0.75,
+     6.75,
+     0,
+     null,
+     "wall_floor",
+     {
+      "hug": true
+     }
+    ],
+    [
+     "Prop_Bellows",
+     3.75,
+     6.75,
+     180,
+     null,
+     null
+    ],
+    [
+     "CoalBin_150",
+     8.25,
+     6.75,
+     0,
+     null,
+     null
+    ],
+    [
+     "GoodsRack_150",
+     9.75,
+     6.75,
+     0,
+     null,
+     null,
+     {
+      "hug": true
+     }
+    ],
+    [
+     "Prop_Anvil",
+     3.75,
+     5.25,
+     0,
+     null,
+     null
+    ],
+    [
+     "QuenchTrough_150",
+     8.25,
+     5.25,
+     0,
+     null,
+     null
+    ],
+    [
+     "Prop_Grindstone",
+     0.75,
+     5.25,
+     90,
+     null,
+     "wall_floor"
+    ],
+    [
+     "Workbench_300",
+     9.75,
+     3.0,
+     -90,
+     null,
+     null
+    ],
+    [
+     "ToolWall_150",
+     9.75,
+     2.25,
+     -90,
+     null,
+     "wall_hung"
+    ],
+    [
+     "ToolWall_150",
+     9.75,
+     3.75,
+     -90,
+     null,
+     "wall_hung"
+    ],
+    [
+     "IronStock_150",
+     0.75,
+     2.25,
+     90,
+     null,
+     null
+    ],
+    [
+     "Crate",
+     0.75,
+     0.75,
+     90,
+     null,
+     null
+    ],
+    [
+     "Crate",
+     2.25,
+     0.75,
+     180,
+     null,
+     null
+    ]
+   ],
+   "spawns": {
+    "front": [
+     6.0,
+     1.6,
+     0
+    ]
+   },
+   "special": "Forge_300",
+   "zone_order": [
+    "forge",
+    "store",
+    "main"
+   ],
+   "zones": {
+    "forge": {
+     "cells": [
+      [
+       3,
+       4,
+       2,
+       4
+      ]
+     ],
+     "floor": "FlagRustic",
+     "wall": "StoneIn"
+    },
+    "main": {
+     "cells": "rest",
+     "floor": "EarthSooty",
+     "wall": "StoneIn"
+    },
+    "store": {
+     "cells": [
+      [
+       0,
+       1,
+       0,
+       1
+      ]
+     ],
+     "floor": "EarthSooty",
+     "wall": "StoneIn"
+    }
+   }
+  },
+  "VKI_Tavern_F0": {
+   "building": "Tavern",
+   "family": {
+    "partition": "Stone",
+    "perimeter": "Stone"
+   },
+   "floor": 0,
+   "links": [
+    [
+     "front",
+     "exit",
+     "@return"
+    ],
+    [
+     "stairA",
+     "stair_up",
+     "VKI_Tavern_F1"
+    ]
+   ],
+   "partition_wall": "zone",
+   "preset": "Night",
+   "props": [
+    [
+     "LogBasket",
+     2.25,
+     8.25,
+     0,
+     null,
+     null
+    ],
+    [
+     "Form_300",
+     4.5,
+     6.0,
+     0,
+     null,
+     null
+    ],
+    [
+     "Prop_BarrelStack",
+     9.0,
+     8.25,
+     0,
+     null,
+     "wall_floor"
+    ],
+    [
+     "Table_Barrel",
+     6.75,
+     6.75,
+     90,
+     null,
+     null
+    ],
+    [
+     "TableDress_Tavern_C",
+     6.75,
+     6.75,
+     90,
+     null,
+     "table",
+     {
+      "on": true
+     }
+    ],
+    [
+     "Table_Trestle_300",
+     3.0,
+     3.0,
+     0,
+     null,
+     null
+    ],
+    [
+     "Table_Trestle_300",
+     7.5,
+     3.0,
+     0,
+     null,
+     null
+    ],
+    [
+     "Form_300",
+     3.0,
+     2.25,
+     0,
+     null,
+     null
+    ],
+    [
+     "Form_300",
+     3.0,
+     3.75,
+     0,
+     null,
+     null
+    ],
+    [
+     "Form_300",
+     7.5,
+     2.25,
+     0,
+     null,
+     null
+    ],
+    [
+     "Form_300",
+     7.5,
+     3.75,
+     0,
+     null,
+     null
+    ],
+    [
+     "TableDress_Tavern_A",
+     3.0,
+     3.0,
+     0,
+     null,
+     "table",
+     {
+      "on": true
+     }
+    ],
+    [
+     "TableDress_Tavern_B",
+     7.5,
+     3.0,
+     0,
+     null,
+     "table",
+     {
+      "on": true
+     }
+    ],
+    [
+     "Bar_Counter_150",
+     11.25,
+     2.25,
+     -90,
+     null,
+     null
+    ],
+    [
+     "Bar_Counter_150",
+     11.25,
+     3.75,
+     -90,
+     null,
+     null
+    ],
+    [
+     "Bar_End_150",
+     11.25,
+     5.25,
+     -90,
+     null,
+     null
+    ],
+    [
+     "CaskRack_150",
+     12.75,
+     2.25,
+     -90,
+     null,
+     null
+    ],
+    [
+     "CaskRack_150",
+     12.75,
+     3.75,
+     -90,
+     null,
+     null
+    ],
+    [
+     "Crate",
+     0.75,
+     0.75,
+     180,
+     null,
+     null
+    ],
+    [
+     "Crate",
+     12.75,
+     0.75,
+     -90,
+     null,
+     null
+    ],
+    [
+     "Oven_150",
+     11.25,
+     8.25,
+     0,
+     null,
+     null,
+     {
+      "hug": true,
+      "pull": 0.03
+     }
+    ],
+    [
+     "Worktable_150",
+     12.75,
+     8.25,
+     0,
+     null,
+     null,
+     {
+      "hug": true,
+      "pull": 0.03
+     }
+    ],
+    [
+     "Barrel_Water",
+     8.25,
+     6.75,
+     0,
+     null,
+     null
+    ],
+    [
+     "Lantern_Wall",
+     2.25,
+     8.25,
+     0,
+     null,
+     "wall_hung"
+    ],
+    [
+     "Lantern_Wall",
+     8.25,
+     8.25,
+     0,
+     null,
+     "wall_hung"
+    ],
+    [
+     "Lantern_Wall",
+     0.75,
+     3.75,
+     90,
+     null,
+     "wall_hung"
+    ],
+    [
+     "Lantern_Wall",
+     12.75,
+     2.25,
+     -90,
+     null,
+     "wall_hung"
+    ],
+    [
+     "Lantern_Wall",
+     12.75,
+     3.75,
+     -90,
+     null,
+     "wall_hung"
+    ]
+   ],
+   "sills": [
+    [
+     3.0,
+     6.0,
+     90,
+     0.002
+    ],
+    [
+     3.0,
+     7.5,
+     90,
+     0.0
+    ],
+    [
+     6.0,
+     6.0,
+     90,
+     0.002
+    ],
+    [
+     6.0,
+     7.5,
+     90,
+     0.0
+    ],
+    [
+     3.0,
+     6.0,
+     0,
+     0.0
+    ],
+    [
+     4.5,
+     6.0,
+     0,
+     0.0
+    ],
+    [
+     10.5,
+     0.0,
+     90,
+     0.0
+    ],
+    [
+     10.5,
+     1.5,
+     90,
+     0.0
+    ],
+    [
+     10.5,
+     3.0,
+     90,
+     0.0
+    ],
+    [
+     10.5,
+     4.5,
+     90,
+     0.0
+    ]
+   ],
+   "spawns": {
+    "front": [
+     5.25,
+     1.6,
+     0
+    ],
+    "stairA": [
+     0.75,
+     3.75,
+     180
+    ]
+   },
+   "special": "Hearth_300",
+   "special_style": {
+    "wall_a": "StoneInWarm"
+   },
+   "stairs": [
+    [
+     "Up",
+     0.0,
+     4.5,
+     0,
+     "stairA"
+    ]
+   ],
+   "zone_order": [
+    "hearth",
+    "bar",
+    "kitchen",
+    "hall"
+   ],
+   "zones": {
+    "bar": {
+     "cells": [
+      [
+       7,
+       8,
+       0,
+       3
+      ]
+     ],
+     "floor": "Flag",
+     "wall": "PlasterOchre"
+    },
+    "hall": {
+     "cells": "rest",
+     "floor": "Boards_EW",
+     "wall": "PlasterOchre"
+    },
+    "hearth": {
+     "cells": [
+      [
+       2,
+       3,
+       4,
+       5
+      ]
+     ],
+     "floor": "Flag",
+     "wall": "PlasterOchre"
+    },
+    "kitchen": {
+     "cells": [
+      [
+       7,
+       8,
+       4,
+       5
+      ]
+     ],
+     "floor": "FlagRustic",
+     "wall": "PlasterOchre"
+    }
+   }
+  },
+  "VKI_Tavern_F1": {
+   "building": "Tavern",
+   "exterior": "PlasterOchre",
+   "family": {
+    "partition": "Board",
+    "perimeter": "Timber"
+   },
+   "floor": 1,
+   "links": [
+    [
+     "stairA",
+     "stair_down",
+     "VKI_Tavern_F0"
+    ]
+   ],
+   "partition_wall": null,
+   "preset": "Night",
+   "props": [
+    [
+     "Bed_Box",
+     4.5,
+     8.25,
+     0,
+     null,
+     null
+    ],
+    [
+     "Chest",
+     6.75,
+     8.25,
+     0,
+     null,
+     null
+    ],
+    [
+     "Table_Small",
+     3.75,
+     6.75,
+     0,
+     null,
+     null
+    ],
+    [
+     "Candle_Plate",
+     3.75,
+     6.75,
+     0,
+     null,
+     "table",
+     {
+      "on": true
+     }
+    ],
+    [
+     "Dresser",
+     8.25,
+     8.25,
+     0,
+     null,
+     null,
+     {
+      "hug": true
+     }
+    ],
+    [
+     "Chest",
+     9.75,
+     8.25,
+     0,
+     null,
+     null
+    ],
+    [
+     "Bed_HalfTester",
+     12.0,
+     7.5,
+     0,
+     null,
+     null
+    ],
+    [
+     "Bed_Straw",
+     0.75,
+     3.0,
+     0,
+     null,
+     null
+    ],
+    [
+     "Bed_Straw",
+     3.75,
+     1.5,
+     0,
+     null,
+     null
+    ],
+    [
+     "Bed_Straw",
+     5.25,
+     1.5,
+     0,
+     null,
+     null
+    ],
+    [
+     "Bed_Straw",
+     8.25,
+     1.5,
+     0,
+     null,
+     null
+    ],
+    [
+     "Bed_Straw",
+     9.75,
+     1.5,
+     0,
+     null,
+     null
+    ],
+    [
+     "Bed_Straw",
+     12.75,
+     1.5,
+     0,
+     null,
+     null
+    ],
+    [
+     "Chest",
+     2.25,
+     0.75,
+     180,
+     null,
+     null
+    ],
+    [
+     "Candle_Plate",
+     2.25,
+     0.75,
+     0,
+     null,
+     "table",
+     {
+      "on": true
+     }
+    ],
+    [
+     "Chest",
+     6.75,
+     0.75,
+     180,
+     null,
+     null
+    ],
+    [
+     "Candle_Plate",
+     6.75,
+     0.75,
+     0,
+     null,
+     "table",
+     {
+      "on": true
+     }
+    ],
+    [
+     "Chest",
+     11.25,
+     0.75,
+     180,
+     null,
+     null
+    ],
+    [
+     "Candle_Plate",
+     11.25,
+     0.75,
+     0,
+     null,
+     "table",
+     {
+      "on": true
+     }
+    ],
+    [
+     "Lantern_Wall",
+     3.75,
+     8.25,
+     0,
+     null,
+     "wall_hung"
+    ],
+    [
+     "Lantern_Wall",
+     8.25,
+     8.25,
+     0,
+     null,
+     "wall_hung"
+    ]
+   ],
+   "spawns": {
+    "stairA": [
+     2.25,
+     8.25,
+     90
+    ]
+   },
+   "stairs": [
+    [
+     "Down",
+     0.0,
+     4.5,
+     0,
+     "stairA"
+    ]
+   ],
+   "window_style": {
+    "shutter": "Red"
+   },
+   "zone_order": [
+    "corridor",
+    "rooms"
+   ],
+   "zones": {
+    "corridor": {
+     "cells": [
+      [
+       1,
+       8,
+       3,
+       3
+      ],
+      [
+       1,
+       1,
+       4,
+       5
+      ]
+     ],
+     "floor": "Boards_EW",
+     "wall": "PlasterOchre"
+    },
+    "rooms": {
+     "cells": "rest",
+     "floor": "Boards_NS",
+     "wall": "PlasterOchre"
+    }
+   }
+  },
+  "VKI_Townhouse_F0": {
+   "building": "Townhouse",
+   "family": {
+    "partition": "Stone",
+    "perimeter": "Stone"
+   },
+   "floor": 0,
+   "links": [
+    [
+     "front",
+     "exit",
+     "@return"
+    ],
+    [
+     "stairA",
+     "stair_up",
+     "VKI_Townhouse_F1"
+    ]
+   ],
+   "partition_wall": "zone",
+   "preset": "Day",
+   "props": [
+    [
+     "Chest",
+     0.75,
+     0.75,
+     90,
+     null,
+     null
+    ],
+    [
+     "LogBasket",
+     2.25,
+     6.75,
+     0,
+     null,
+     null
+    ],
+    [
+     "Table_Trestle_300",
+     4.5,
+     3.0,
+     0,
+     null,
+     null
+    ],
+    [
+     "Form_300",
+     4.5,
+     2.25,
+     0,
+     null,
+     null
+    ],
+    [
+     "Form_300",
+     4.5,
+     3.75,
+     0,
+     null,
+     null
+    ],
+    [
+     "TableDress_Meal_B",
+     4.5,
+     3.0,
+     0,
+     null,
+     "table",
+     {
+      "on": true
+     }
+    ],
+    [
+     "Rug_300x150",
+     4.5,
+     5.25,
+     0,
+     null,
+     null
+    ],
+    [
+     "Dresser",
+     6.75,
+     6.75,
+     0,
+     null,
+     null,
+     {
+      "hug": true
+     }
+    ],
+    [
+     "Desk_Merchant",
+     9.0,
+     2.25,
+     0,
+     null,
+     null
+    ],
+    [
+     "Crate",
+     9.75,
+     0.75,
+     180,
+     null,
+     null
+    ],
+    [
+     "Oven_150",
+     8.25,
+     6.75,
+     0,
+     null,
+     null,
+     {
+      "hug": true
+     }
+    ],
+    [
+     "Barrel_Water",
+     8.25,
+     3.75,
+     90,
+     null,
+     null
+    ],
+    [
+     "Worktable_150",
+     9.75,
+     5.25,
+     -90,
+     null,
+     null
+    ],
+    [
+     "Barrel",
+     9.75,
+     3.75,
+     -90,
+     null,
+     null
+    ]
+   ],
+   "spawns": {
+    "front": [
+     2.25,
+     1.6,
+     0
+    ],
+    "stairA": [
+     0.75,
+     2.25,
+     180
+    ]
+   },
+   "special": "Hearth_300",
+   "stairs": [
+    [
+     "Up",
+     0.0,
+     3.0,
+     0,
+     "stairA"
+    ]
+   ],
+   "zone_order": [
+    "kitchen",
+    "hall"
+   ],
+   "zones": {
+    "hall": {
+     "cells": "rest",
+     "floor": "Flag",
+     "wall": "PlasterWhite"
+    },
+    "kitchen": {
+     "cells": [
+      [
+       5,
+       6,
+       2,
+       4
+      ]
+     ],
+     "floor": "FlagRustic",
+     "wall": "StoneIn"
+    }
+   }
+  },
+  "VKI_Townhouse_F1": {
+   "building": "Townhouse",
+   "family": {
+    "partition": "Board",
+    "perimeter": "Timber"
+   },
+   "floor": 1,
+   "links": [
+    [
+     "stairA",
+     "stair_down",
+     "VKI_Townhouse_F0"
+    ]
+   ],
+   "partition_wall": "zone",
+   "preset": "Day",
+   "props": [
+    [
+     "Prop_Loom",
+     4.5,
+     6.0,
+     0,
+     null,
+     "wall_floor"
+    ],
+    [
+     "Chest",
+     6.75,
+     6.75,
+     0,
+     null,
+     null,
+     {
+      "hug": true
+     }
+    ],
+    [
+     "Bed_HalfTester",
+     8.25,
+     6.0,
+     0,
+     null,
+     null
+    ],
+    [
+     "Rug_300x150",
+     8.25,
+     3.0,
+     90,
+     null,
+     null,
+     {
+      "hug": true
+     }
+    ],
+    [
+     "Chest",
+     9.75,
+     2.25,
+     -90,
+     null,
+     null
+    ],
+    [
+     "Prop_SpinningWheel",
+     0.75,
+     2.25,
+     0,
+     null,
+     null
+    ],
+    [
+     "Table_Small",
+     3.75,
+     2.25,
+     0,
+     null,
+     null
+    ],
+    [
+     "Prop_Stool",
+     3.75,
+     1.5,
+     0,
+     null,
+     null
+    ],
+    [
+     "Prop_Stool",
+     3.75,
+     3.0,
+     0,
+     null,
+     null
+    ],
+    [
+     "Candle_Plate",
+     3.75,
+     2.25,
+     0,
+     null,
+     "table",
+     {
+      "on": true
+     }
+    ]
+   ],
+   "spawns": {
+    "stairA": [
+     2.25,
+     6.75,
+     90
+    ]
+   },
+   "stairs": [
+    [
+     "Down",
+     0.0,
+     3.0,
+     0,
+     "stairA"
+    ]
+   ],
+   "zone_order": [
+    "chamber",
+    "solar"
+   ],
+   "zones": {
+    "chamber": {
+     "cells": [
+      [
+       5,
+       6,
+       0,
+       4
+      ]
+     ],
+     "floor": "Boards_NS",
+     "wall": "PlasterCream"
+    },
+    "solar": {
+     "cells": "rest",
+     "floor": "Boards_NS",
+     "wall": "PlasterCream"
+    }
+   }
+  },
+  "VKI_Workshop_F0": {
+   "building": "Workshop",
+   "family": {
+    "partition": "Timber",
+    "perimeter": "Timber"
+   },
+   "floor": 0,
+   "links": [
+    [
+     "front",
+     "exit",
+     "@return"
+    ]
+   ],
+   "preset": "Day",
+   "props": [
+    [
+     "Workbench_Carpenter",
+     1.5,
+     6.75,
+     0,
+     null,
+     null,
+     {
+      "hug": true
+     }
+    ],
+    [
+     "ToolWall_150",
+     0.75,
+     6.75,
+     0,
+     null,
+     "wall_hung"
+    ],
+    [
+     "ToolWall_150",
+     0.75,
+     5.25,
+     90,
+     null,
+     "wall_hung"
+    ],
+    [
+     "GoodsRack_150",
+     3.75,
+     6.75,
+     0,
+     null,
+     null
+    ],
+    [
+     "PoleLathe",
+     7.5,
+     6.75,
+     0,
+     null,
+     null,
+     {
+      "hug": true
+     }
+    ],
+    [
+     "Prop_Sawhorse",
+     2.25,
+     3.75,
+     0,
+     null,
+     null
+    ],
+    [
+     "Hearth_Open",
+     5.25,
+     3.75,
+     0,
+     null,
+     null
+    ],
+    [
+     "Barrel",
+     0.75,
+     2.25,
+     0,
+     null,
+     null
+    ],
+    [
+     "Crate",
+     0.75,
+     0.75,
+     180,
+     null,
+     null
+    ],
+    [
+     "Crate",
+     8.25,
+     2.25,
+     0,
+     null,
+     null
+    ],
+    [
+     "Crate",
+     8.25,
+     0.75,
+     180,
+     null,
+     null
+    ],
+    [
+     "LogBasket",
+     6.75,
+     0.75,
+     180,
+     null,
+     null
+    ]
+   ],
+   "spawns": {
+    "front": [
+     3.75,
+     1.6,
+     0
+    ]
+   },
+   "zone_order": [
+    "all"
+   ],
+   "zones": {
+    "all": {
+     "cells": "rest",
+     "floor": "FlagRustic",
+     "wall": "PlasterWhite"
+    }
+   }
+  }
+ },
+ "slots": {
+  "cap": 58,
+  "cloth": 11,
+  "cloth_b": 12,
+  "floor": 55,
+  "glow": 9,
+  "infill": 66,
+  "planks": 23,
+  "shutter": 10,
+  "stained": 20,
+  "wall_a": 56,
+  "wall_b": 57,
+  "water": 18,
+  "window": 4,
+  "wood": 2
+ },
+ "source": "vki_rooms.vki_parse_plan / vki_rooms_layout / vki_build_scene",
+ "styles": {
+  "cap": {
+   "AncientBlock": "M_VKI_AncientBlock",
+   "AncientCap": "M_VKI_AncientCap",
+   "CaveCut": "M_VKI_CaveCut",
+   "Dress": "M_VKI_Dress",
+   "DungeonBlock": "M_VKI_DungeonBlock",
+   "DungeonCap": "M_VKI_DungeonCap",
+   "DwarfBlock": "M_VKI_DwarfBlock",
+   "DwarfCap": "M_VKI_DwarfCap",
+   "Hewn": "M_VK_Hewn",
+   "PlasterDaub": "M_VKI_PlasterDaub",
+   "SewerBlock": "M_VKI_SewerBlock",
+   "SewerCap": "M_VKI_SewerCap",
+   "StoneBlockIn": "M_VKI_StoneBlockIn"
+  },
+  "cloth": {
+   "Blue": "M_VK_Cloth_Blue",
+   "Green": "M_VK_Cloth_Green",
+   "Purple": "M_VK_Cloth_Purple",
+   "Red": "M_VK_Cloth_Red",
+   "White": "M_VK_Cloth_White",
+   "Yellow": "M_VK_Cloth_Yellow"
+  },
+  "cloth_b": {
+   "Blue": "M_VK_Cloth_Blue",
+   "Green": "M_VK_Cloth_Green",
+   "Purple": "M_VK_Cloth_Purple",
+   "Red": "M_VK_Cloth_Red",
+   "White": "M_VK_Cloth_White",
+   "Yellow": "M_VK_Cloth_Yellow"
+  },
+  "floor": {
+   "AncientFlag": "M_VKI_AncientFlag",
+   "ApronCobble": "M_VKI_ApronCobble",
+   "ApronDirt": "M_VKI_ApronDirt",
+   "ApronGrass": "M_VKI_ApronGrass",
+   "BoardsDark_EW": "M_VKI_BoardsDark_EW",
+   "BoardsDark_NS": "M_VKI_BoardsDark_NS",
+   "BoardsPale_EW": "M_VKI_BoardsPale_EW",
+   "BoardsPale_NS": "M_VKI_BoardsPale_NS",
+   "Boards_EW": "M_VKI_Boards_EW",
+   "Boards_NS": "M_VKI_Boards_NS",
+   "CaveFloor": "M_VKI_CaveFloor",
+   "DungeonFlag": "M_VKI_DungeonFlag",
+   "DungeonFlagWarm": "M_VKI_DungeonFlagWarm",
+   "DwarfFlag": "M_VKI_DwarfFlag",
+   "DwarfFloor": "M_VKI_DwarfFloor",
+   "Earth": "M_VKI_Earth",
+   "EarthDamp": "M_VKI_EarthDamp",
+   "EarthSooty": "M_VKI_EarthSooty",
+   "Flag": "M_VKI_Flag",
+   "FlagRustic": "M_VKI_FlagRustic",
+   "FlagWarm": "M_VKI_FlagWarm",
+   "SewerFloor": "M_VKI_SewerFloor"
+  },
+  "glow": {
+   "Glow": "M_VK_Glow",
+   "GlowIn": "M_VKI_GlowIn"
+  },
+  "infill": {
+   "AncientIn": "M_VKI_AncientIn",
+   "AshlarIn": "M_VKI_AshlarIn",
+   "BoardsV": "M_VKI_BoardsV",
+   "Brick": "M_VKI_Brick",
+   "CaveRock": "M_VKI_CaveRock",
+   "CaveRockDamp": "M_VKI_CaveRockDamp",
+   "DungeonIn": "M_VKI_DungeonIn",
+   "DungeonInDamp": "M_VKI_DungeonInDamp",
+   "DungeonInWarm": "M_VKI_DungeonInWarm",
+   "DwarfIn": "M_VKI_DwarfIn",
+   "PlasterCream": "M_VKI_PlasterCream",
+   "PlasterDaub": "M_VKI_PlasterDaub",
+   "PlasterOchre": "M_VKI_PlasterOchre",
+   "PlasterRed": "M_VKI_PlasterRed",
+   "PlasterWhite": "M_VKI_PlasterWhite",
+   "SewerBrick": "M_VKI_SewerBrick",
+   "StoneIn": "M_VKI_StoneIn",
+   "StoneInCool": "M_VKI_StoneInCool",
+   "StoneInWarm": "M_VKI_StoneInWarm",
+   "WattleIn": "M_VKI_WattleIn"
+  },
+  "planks": {
+   "Planks": "M_VK_Planks",
+   "Scrubbed": "M_VKI_WoodScrubbed"
+  },
+  "shutter": {
+   "Blue": "M_VK_Shutter_Blue",
+   "BlueWorn": "M_VK_Shutter_BlueWorn",
+   "Green": "M_VK_Shutter_Green",
+   "GreenWorn": "M_VK_Shutter_GreenWorn",
+   "Natural": "M_VK_Shutter_Natural",
+   "Red": "M_VK_Shutter_Red",
+   "RedWorn": "M_VK_Shutter_RedWorn",
+   "Teal": "M_VK_Shutter_Teal",
+   "TealWorn": "M_VK_Shutter_TealWorn"
+  },
+  "stained": {
+   "In": "M_VKI_Stained_In",
+   "Night": "M_VKI_Stained_Night",
+   "Stained_In": "M_VKI_Stained_In",
+   "Stained_Night": "M_VKI_Stained_Night"
+  },
+  "wall_a": {
+   "AncientIn": "M_VKI_AncientIn",
+   "AshlarIn": "M_VKI_AshlarIn",
+   "BoardsV": "M_VKI_BoardsV",
+   "Brick": "M_VKI_Brick",
+   "CaveRock": "M_VKI_CaveRock",
+   "CaveRockDamp": "M_VKI_CaveRockDamp",
+   "DungeonIn": "M_VKI_DungeonIn",
+   "DungeonInDamp": "M_VKI_DungeonInDamp",
+   "DungeonInWarm": "M_VKI_DungeonInWarm",
+   "DwarfIn": "M_VKI_DwarfIn",
+   "PlasterCream": "M_VKI_PlasterCream",
+   "PlasterDaub": "M_VKI_PlasterDaub",
+   "PlasterOchre": "M_VKI_PlasterOchre",
+   "PlasterRed": "M_VKI_PlasterRed",
+   "PlasterWhite": "M_VKI_PlasterWhite",
+   "SewerBrick": "M_VKI_SewerBrick",
+   "StoneIn": "M_VKI_StoneIn",
+   "StoneInCool": "M_VKI_StoneInCool",
+   "StoneInWarm": "M_VKI_StoneInWarm",
+   "WattleIn": "M_VKI_WattleIn"
+  },
+  "wall_b": {
+   "AncientIn": "M_VKI_AncientIn",
+   "AshlarIn": "M_VKI_AshlarIn",
+   "BoardsV": "M_VKI_BoardsV",
+   "Brick": "M_VKI_Brick",
+   "CaveRock": "M_VKI_CaveRock",
+   "CaveRockDamp": "M_VKI_CaveRockDamp",
+   "DungeonIn": "M_VKI_DungeonIn",
+   "DungeonInDamp": "M_VKI_DungeonInDamp",
+   "DungeonInWarm": "M_VKI_DungeonInWarm",
+   "DwarfIn": "M_VKI_DwarfIn",
+   "PlasterCream": "M_VKI_PlasterCream",
+   "PlasterDaub": "M_VKI_PlasterDaub",
+   "PlasterOchre": "M_VKI_PlasterOchre",
+   "PlasterRed": "M_VKI_PlasterRed",
+   "PlasterWhite": "M_VKI_PlasterWhite",
+   "SewerBrick": "M_VKI_SewerBrick",
+   "StoneIn": "M_VKI_StoneIn",
+   "StoneInCool": "M_VKI_StoneInCool",
+   "StoneInWarm": "M_VKI_StoneInWarm",
+   "WattleIn": "M_VKI_WattleIn"
+  },
+  "water": {
+   "Ale": "M_VKI_Ale",
+   "Lava": "M_VKI_Lava",
+   "Puddle": "M_VKI_Puddle",
+   "SewerWater": "M_VKI_SewerWater",
+   "Sludge": "M_VKI_Sludge",
+   "StreamWater": "M_VKI_StreamWater",
+   "Water": "M_VK_Water",
+   "WaterFall": "M_VKI_WaterFall",
+   "WaterMurky": "M_VKI_WaterMurky"
+  },
+  "window": {
+   "Day": "M_VKI_Window_Day",
+   "Daylight": "M_VKI_Daylight",
+   "Night": "M_VKI_Window_Night",
+   "Plain": "M_VK_Window",
+   "Window_Day": "M_VKI_Window_Day",
+   "Window_Night": "M_VKI_Window_Night"
+  },
+  "wood": {
+   "Dark": "M_VKI_WoodDark",
+   "Oak": "M_VK_Wood"
+  }
+ },
+ "t": {
+  "O": 0.5,
+  "P": 0.3
+ },
+ "tok_ew": {
+  "  ": [
+   null,
+   null
+  ],
+  "##": [
+   "Plain",
+   "Full"
+  ],
+  "==": [
+   "Plain",
+   "Cut"
+  ],
+  "EE": [
+   "ExitWide",
+   "Cut"
+  ],
+  "FF": [
+   "Special",
+   "Full"
+  ],
+  "LL": [
+   "Lancet",
+   "Full"
+  ],
+  "LT": [
+   "LancetTall",
+   "Full"
+  ],
+  "NN": [
+   "Niche",
+   "Full"
+  ],
+  "OO": [
+   "Gap",
+   "Full"
+  ],
+  "PP": [
+   "Passage",
+   "Full"
+  ],
+  "S1": [
+   "Named",
+   "Full"
+  ],
+  "S2": [
+   "Named",
+   "Full"
+  ],
+  "S3": [
+   "Named",
+   "Full"
+  ],
+  "S4": [
+   "Named",
+   "Full"
+  ],
+  "WW": [
+   "Window",
+   "Full"
+  ],
+  "XX": [
+   "Breach",
+   "Full"
+  ],
+  "dd": [
+   "Door",
+   "Cut"
+  ],
+  "ee": [
+   "Exit",
+   "Cut"
+  ],
+  "gg": [
+   "BarsGate",
+   "Full"
+  ],
+  "ll": [
+   "Lancet",
+   "Cut"
+  ],
+  "nn": [
+   "Niche",
+   "Cut"
+  ],
+  "oo": [
+   "Gap",
+   "Cut"
+  ],
+  "rr": [
+   "Rail",
+   null
+  ],
+  "s1": [
+   "Named",
+   "Cut"
+  ],
+  "s2": [
+   "Named",
+   "Cut"
+  ],
+  "ww": [
+   "Window",
+   "Cut"
+  ],
+  "xx": [
+   "Breach",
+   "Cut"
+  ],
+  "||": [
+   "Bars",
+   "Full"
+  ]
+ },
+ "tok_ns": {
+  " ": [
+   null,
+   null
+  ],
+  "#": [
+   "Plain",
+   "Full"
+  ],
+  "1": [
+   "Named",
+   "Full"
+  ],
+  "2": [
+   "Named",
+   "Full"
+  ],
+  "3": [
+   "Named",
+   "Full"
+  ],
+  "4": [
+   "Named",
+   "Full"
+  ],
+  ":": [
+   "Plain",
+   "Cut"
+  ],
+  "L": [
+   "Lancet",
+   "Full"
+  ],
+  "N": [
+   "Niche",
+   "Full"
+  ],
+  "O": [
+   "Gap",
+   "Full"
+  ],
+  "P": [
+   "Passage",
+   "Full"
+  ],
+  "W": [
+   "Window",
+   "Full"
+  ],
+  "X": [
+   "Breach",
+   "Full"
+  ],
+  "d": [
+   "Door",
+   "Cut"
+  ],
+  "g": [
+   "BarsGate",
+   "Full"
+  ],
+  "l": [
+   "Lancet",
+   "Cut"
+  ],
+  "n": [
+   "Niche",
+   "Cut"
+  ],
+  "o": [
+   "Gap",
+   "Cut"
+  ],
+  "r": [
+   "Rail",
+   null
+  ],
+  "t": [
+   "Rake",
+   "Rake"
+  ],
+  "w": [
+   "Window",
+   "Cut"
+  ],
+  "x": [
+   "Breach",
+   "Cut"
+  ],
+  "|": [
+   "Bars",
+   "Full"
+  ]
+ },
+ "version": "2026-09-30 slice"
+}

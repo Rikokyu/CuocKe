@@ -1,0 +1,524 @@
+{
+ "blender_origin": [
+  77.08659362792969,
+  0.0,
+  0.0
+ ],
+ "builder": "build_chapel",
+ "cameras": [],
+ "exposure": -0.20000000298023224,
+ "lights": [],
+ "look": "AgX - Medium High Contrast",
+ "markers": [],
+ "name": "Chapel",
+ "placements": [
+  {
+   "coll": "VKX_ST_Chapel",
+   "mat": {},
+   "name": "SM_VK_Chapel_Wall_inst.026",
+   "p": [
+    4.5,
+    0.0,
+    3.0
+   ],
+   "piece": "SM_VK_Chapel_Wall",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Chapel",
+   "mat": {},
+   "name": "SM_VK_Chapel_Wall_inst.027",
+   "p": [
+    4.5,
+    0.0,
+    -3.0
+   ],
+   "piece": "SM_VK_Chapel_Wall",
+   "props": {},
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Chapel",
+   "mat": {},
+   "name": "SM_VK_Chapel_Wall_inst.028",
+   "p": [
+    1.5,
+    0.0,
+    3.0
+   ],
+   "piece": "SM_VK_Chapel_Wall",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Chapel",
+   "mat": {},
+   "name": "SM_VK_Chapel_Wall_Door_inst.004",
+   "p": [
+    1.5,
+    0.0,
+    -3.0
+   ],
+   "piece": "SM_VK_Chapel_Wall_Door",
+   "props": {},
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Chapel",
+   "mat": {},
+   "name": "SM_VK_Chapel_Wall_inst.029",
+   "p": [
+    -1.5,
+    0.0,
+    3.0
+   ],
+   "piece": "SM_VK_Chapel_Wall",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Chapel",
+   "mat": {},
+   "name": "SM_VK_Chapel_Wall_inst.030",
+   "p": [
+    -1.5,
+    0.0,
+    -3.0
+   ],
+   "piece": "SM_VK_Chapel_Wall",
+   "props": {},
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Chapel",
+   "mat": {},
+   "name": "SM_VK_Chapel_Wall_inst.031",
+   "p": [
+    -4.5,
+    0.0,
+    3.0
+   ],
+   "piece": "SM_VK_Chapel_Wall",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Chapel",
+   "mat": {},
+   "name": "SM_VK_Chapel_Wall_inst.032",
+   "p": [
+    -4.5,
+    0.0,
+    -3.0
+   ],
+   "piece": "SM_VK_Chapel_Wall",
+   "props": {},
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Chapel",
+   "mat": {},
+   "name": "SM_VK_Chapel_Wall_Plain_inst.016",
+   "p": [
+    6.0,
+    0.0,
+    1.5
+   ],
+   "piece": "SM_VK_Chapel_Wall_Plain",
+   "props": {},
+   "r": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Chapel",
+   "mat": {},
+   "name": "SM_VK_Chapel_Wall_Plain_inst.017",
+   "p": [
+    -6.0,
+    0.0,
+    -1.5
+   ],
+   "piece": "SM_VK_Chapel_Wall_Plain",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Chapel",
+   "mat": {},
+   "name": "SM_VK_Chapel_Wall_Plain_inst.018",
+   "p": [
+    6.0,
+    0.0,
+    -1.5
+   ],
+   "piece": "SM_VK_Chapel_Wall_Plain",
+   "props": {},
+   "r": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Chapel",
+   "mat": {},
+   "name": "SM_VK_Chapel_Wall_Plain_inst.019",
+   "p": [
+    -6.0,
+    0.0,
+    1.5
+   ],
+   "piece": "SM_VK_Chapel_Wall_Plain",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Chapel",
+   "mat": {},
+   "name": "SM_VK_Chapel_Corner_inst.016",
+   "p": [
+    6.0,
+    0.0,
+    3.0
+   ],
+   "piece": "SM_VK_Chapel_Corner",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Chapel",
+   "mat": {},
+   "name": "SM_VK_Chapel_Corner_inst.017",
+   "p": [
+    -6.0,
+    0.0,
+    3.0
+   ],
+   "piece": "SM_VK_Chapel_Corner",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Chapel",
+   "mat": {},
+   "name": "SM_VK_Chapel_Corner_inst.018",
+   "p": [
+    -6.0,
+    0.0,
+    -3.0
+   ],
+   "piece": "SM_VK_Chapel_Corner",
+   "props": {},
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Chapel",
+   "mat": {},
+   "name": "SM_VK_Chapel_Corner_inst.019",
+   "p": [
+    6.0,
+    0.0,
+    -3.0
+   ],
+   "piece": "SM_VK_Chapel_Corner",
+   "props": {},
+   "r": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Chapel",
+   "mat": {
+    "3": "M_VK_Roof_Blue"
+   },
+   "name": "SM_VK_Roof_Gable_Stone_inst.008",
+   "p": [
+    4.5,
+    4.5,
+    0.0
+   ],
+   "piece": "SM_VK_Roof_Gable_Stone",
+   "props": {},
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Chapel",
+   "mat": {
+    "3": "M_VK_Roof_Blue"
+   },
+   "name": "SM_VK_Roof_Mid_inst.058",
+   "p": [
+    1.5,
+    4.5,
+    0.0
+   ],
+   "piece": "SM_VK_Roof_Mid",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Chapel",
+   "mat": {
+    "3": "M_VK_Roof_Blue"
+   },
+   "name": "SM_VK_Roof_Mid_inst.059",
+   "p": [
+    -1.5,
+    4.5,
+    0.0
+   ],
+   "piece": "SM_VK_Roof_Mid",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Chapel",
+   "mat": {
+    "3": "M_VK_Roof_Blue"
+   },
+   "name": "SM_VK_Roof_Gable_Stone_inst.009",
+   "p": [
+    -4.5,
+    4.5,
+    0.0
+   ],
+   "piece": "SM_VK_Roof_Gable_Stone",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Chapel",
+   "mat": {
+    "3": "M_VK_Roof_Blue"
+   },
+   "name": "SM_VK_BellTower_inst.003",
+   "p": [
+    -8.2,
+    0.0,
+    0.0
+   ],
+   "piece": "SM_VK_BellTower",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  }
+ ],
+ "preset": null,
+ "root": {},
+ "scene": "VKX_Structures",
+ "structure": "Chapel",
+ "version": "2026-09-30 slice",
+ "view_transform": "AgX",
+ "world": {
+  "color": [
+   0.42,
+   0.55,
+   0.75
+  ],
+  "linked": false,
+  "strength": 0.35
+ }
+}

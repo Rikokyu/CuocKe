@@ -1,0 +1,238 @@
+{
+ "blender_origin": [
+  555.755615234375,
+  0.0,
+  0.0
+ ],
+ "builder": "build_pottery",
+ "cameras": [],
+ "exposure": -0.20000000298023224,
+ "lights": [],
+ "look": "AgX - Medium High Contrast",
+ "markers": [],
+ "name": "Pottery",
+ "placements": [
+  {
+   "coll": "VKX_ST_Pottery",
+   "mat": {},
+   "name": "SM_VK_Prop_BottleKiln_inst.001",
+   "p": [
+    2.0,
+    0.0,
+    -1.6
+   ],
+   "piece": "SM_VK_Prop_BottleKiln",
+   "props": {},
+   "r": [
+    0.0,
+    -0.119936,
+    0.0,
+    0.992782
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Pottery",
+   "mat": {},
+   "name": "SM_VK_Prop_ClayPit_inst.001",
+   "p": [
+    -3.0,
+    0.0,
+    -3.0
+   ],
+   "piece": "SM_VK_Prop_ClayPit",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Pottery",
+   "mat": {},
+   "name": "SM_VK_Prop_PottersWheel_inst.001",
+   "p": [
+    -2.40002,
+    0.0,
+    1.0
+   ],
+   "piece": "SM_VK_Prop_PottersWheel",
+   "props": {},
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Pottery",
+   "mat": {},
+   "name": "SM_VK_Prop_Table_inst.012",
+   "p": [
+    -3.40002,
+    0.0,
+    2.9
+   ],
+   "piece": "SM_VK_Prop_Table",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Pottery",
+   "mat": {},
+   "name": "SM_VK_Pile_Bricks_3_inst.001",
+   "p": [
+    2.40002,
+    0.0,
+    3.4
+   ],
+   "piece": "SM_VK_Pile_Bricks_3",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Pottery",
+   "mat": {},
+   "name": "SM_VK_Pile_Bricks_1_inst.001",
+   "p": [
+    -0.40002,
+    0.0,
+    3.6
+   ],
+   "piece": "SM_VK_Pile_Bricks_1",
+   "props": {},
+   "r": [
+    0.0,
+    -0.173648,
+    0.0,
+    0.984808
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Pottery",
+   "mat": {},
+   "name": "SM_VK_Pile_Coal_2_inst.005",
+   "p": [
+    4.59998,
+    0.0,
+    1.6
+   ],
+   "piece": "SM_VK_Pile_Coal_2",
+   "props": {},
+   "r": [
+    0.0,
+    -0.573576,
+    0.0,
+    0.819152
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Pottery",
+   "mat": {},
+   "name": "SM_VK_Prop_Woodpile_inst.025",
+   "p": [
+    5.0,
+    0.0,
+    -3.4
+   ],
+   "piece": "SM_VK_Prop_Woodpile",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Pottery",
+   "mat": {},
+   "name": "SM_VK_Prop_ShopGoods_Pots_inst.002",
+   "p": [
+    -4.59998,
+    0.0,
+    0.6
+   ],
+   "piece": "SM_VK_Prop_ShopGoods_Pots",
+   "props": {},
+   "r": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  }
+ ],
+ "preset": null,
+ "root": {},
+ "scene": "VKX_Structures",
+ "structure": "Pottery",
+ "version": "2026-09-30 slice",
+ "view_transform": "AgX",
+ "world": {
+  "color": [
+   0.42,
+   0.55,
+   0.75
+  ],
+  "linked": false,
+  "strength": 0.35
+ }
+}

@@ -1,0 +1,1167 @@
+{
+ "blender_origin": [
+  361.40216064453125,
+  0.0,
+  0.0
+ ],
+ "builder": "build_longhouse",
+ "cameras": [],
+ "exposure": -0.20000000298023224,
+ "lights": [],
+ "look": "AgX - Medium High Contrast",
+ "markers": [],
+ "name": "Longhouse",
+ "placements": [
+  {
+   "coll": "VKX_ST_Longhouse",
+   "mat": {
+    "1": "M_VK_Plaster_Daub"
+   },
+   "name": "SM_VK_Wall_Wattle_inst.044",
+   "p": [
+    6.0,
+    0.0,
+    3.0
+   ],
+   "piece": "SM_VK_Wall_Wattle",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Longhouse",
+   "mat": {
+    "1": "M_VK_Plaster_Daub"
+   },
+   "name": "SM_VK_Wall_Wattle_Window_inst.015",
+   "p": [
+    3.0,
+    0.0,
+    3.0
+   ],
+   "piece": "SM_VK_Wall_Wattle_Window",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Longhouse",
+   "mat": {
+    "1": "M_VK_Plaster_Daub"
+   },
+   "name": "SM_VK_Wall_Wattle_inst.045",
+   "p": [
+    0.0,
+    0.0,
+    3.0
+   ],
+   "piece": "SM_VK_Wall_Wattle",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Longhouse",
+   "mat": {
+    "1": "M_VK_Plaster_Daub"
+   },
+   "name": "SM_VK_Wall_Wattle_Window_inst.016",
+   "p": [
+    -3.0,
+    0.0,
+    3.0
+   ],
+   "piece": "SM_VK_Wall_Wattle_Window",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Longhouse",
+   "mat": {
+    "1": "M_VK_Plaster_Daub"
+   },
+   "name": "SM_VK_Wall_Wattle_inst.046",
+   "p": [
+    -6.0,
+    0.0,
+    3.0
+   ],
+   "piece": "SM_VK_Wall_Wattle",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Longhouse",
+   "mat": {
+    "1": "M_VK_Plaster_Daub"
+   },
+   "name": "SM_VK_Wall_Wattle_inst.047",
+   "p": [
+    -6.0,
+    0.0,
+    -3.0
+   ],
+   "piece": "SM_VK_Wall_Wattle",
+   "props": {},
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Longhouse",
+   "mat": {
+    "1": "M_VK_Plaster_Daub"
+   },
+   "name": "SM_VK_Wall_Wattle_inst.048",
+   "p": [
+    -3.0,
+    0.0,
+    -3.0
+   ],
+   "piece": "SM_VK_Wall_Wattle",
+   "props": {},
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Longhouse",
+   "mat": {
+    "1": "M_VK_Plaster_Daub"
+   },
+   "name": "SM_VK_Wall_Wattle_inst.049",
+   "p": [
+    0.0,
+    0.0,
+    -3.0
+   ],
+   "piece": "SM_VK_Wall_Wattle",
+   "props": {},
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Longhouse",
+   "mat": {
+    "1": "M_VK_Plaster_Daub"
+   },
+   "name": "SM_VK_Wall_Wattle_inst.050",
+   "p": [
+    3.0,
+    0.0,
+    -3.0
+   ],
+   "piece": "SM_VK_Wall_Wattle",
+   "props": {},
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Longhouse",
+   "mat": {
+    "1": "M_VK_Plaster_Daub"
+   },
+   "name": "SM_VK_Wall_Wattle_Window_inst.017",
+   "p": [
+    6.0,
+    0.0,
+    -3.0
+   ],
+   "piece": "SM_VK_Wall_Wattle_Window",
+   "props": {},
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Longhouse",
+   "mat": {
+    "1": "M_VK_Plaster_Daub"
+   },
+   "name": "SM_VK_Wall_Wattle_Door_inst.007",
+   "p": [
+    7.5,
+    0.0,
+    -1.5
+   ],
+   "piece": "SM_VK_Wall_Wattle_Door",
+   "props": {},
+   "r": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Longhouse",
+   "mat": {
+    "1": "M_VK_Plaster_Daub"
+   },
+   "name": "SM_VK_Wall_Wattle_inst.051",
+   "p": [
+    7.5,
+    0.0,
+    1.5
+   ],
+   "piece": "SM_VK_Wall_Wattle",
+   "props": {},
+   "r": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Longhouse",
+   "mat": {
+    "1": "M_VK_Plaster_Daub"
+   },
+   "name": "SM_VK_Wall_Wattle_Byre_inst.001",
+   "p": [
+    -7.5,
+    0.0,
+    1.5
+   ],
+   "piece": "SM_VK_Wall_Wattle_Byre",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Longhouse",
+   "mat": {
+    "1": "M_VK_Plaster_Daub"
+   },
+   "name": "SM_VK_Wall_Wattle_inst.052",
+   "p": [
+    -7.5,
+    0.0,
+    -1.5
+   ],
+   "piece": "SM_VK_Wall_Wattle",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Longhouse",
+   "mat": {},
+   "name": "SM_VK_Corner_Wattle_inst.030",
+   "p": [
+    7.5,
+    0.0,
+    3.0
+   ],
+   "piece": "SM_VK_Corner_Wattle",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Longhouse",
+   "mat": {},
+   "name": "SM_VK_Corner_Wattle_inst.031",
+   "p": [
+    -7.5,
+    0.0,
+    3.0
+   ],
+   "piece": "SM_VK_Corner_Wattle",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Longhouse",
+   "mat": {},
+   "name": "SM_VK_Corner_Wattle_inst.032",
+   "p": [
+    -7.5,
+    0.0,
+    -3.0
+   ],
+   "piece": "SM_VK_Corner_Wattle",
+   "props": {},
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Longhouse",
+   "mat": {},
+   "name": "SM_VK_Corner_Wattle_inst.033",
+   "p": [
+    7.5,
+    0.0,
+    -3.0
+   ],
+   "piece": "SM_VK_Corner_Wattle",
+   "props": {},
+   "r": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Longhouse",
+   "mat": {
+    "1": "M_VK_Plaster_Daub"
+   },
+   "name": "SM_VK_RoofThatch_Gable_Cruck_inst.011",
+   "p": [
+    6.0,
+    2.4,
+    0.0
+   ],
+   "piece": "SM_VK_RoofThatch_Gable_Cruck",
+   "props": {},
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Longhouse",
+   "mat": {},
+   "name": "SM_VK_RoofThatch_Mid_inst.016",
+   "p": [
+    3.0,
+    2.4,
+    0.0
+   ],
+   "piece": "SM_VK_RoofThatch_Mid",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Longhouse",
+   "mat": {},
+   "name": "SM_VK_RoofThatch_Mid_inst.017",
+   "p": [
+    0.0,
+    2.4,
+    0.0
+   ],
+   "piece": "SM_VK_RoofThatch_Mid",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Longhouse",
+   "mat": {},
+   "name": "SM_VK_RoofThatch_Mid_inst.018",
+   "p": [
+    -3.0,
+    2.4,
+    0.0
+   ],
+   "piece": "SM_VK_RoofThatch_Mid",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Longhouse",
+   "mat": {},
+   "name": "SM_VK_RoofThatch_Gable_Planks_inst.015",
+   "p": [
+    -6.0,
+    2.4,
+    0.0
+   ],
+   "piece": "SM_VK_RoofThatch_Gable_Planks",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Longhouse",
+   "mat": {},
+   "name": "SM_VK_RoofThatch_Vent_inst.009",
+   "p": [
+    3.0,
+    6.58982,
+    0.0
+   ],
+   "piece": "SM_VK_RoofThatch_Vent",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Longhouse",
+   "mat": {},
+   "name": "SM_VK_RoofThatch_Vent_inst.010",
+   "p": [
+    -3.0,
+    6.58982,
+    0.0
+   ],
+   "piece": "SM_VK_RoofThatch_Vent",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Longhouse",
+   "mat": {},
+   "name": "SM_VK_Prop_Fence_inst.206",
+   "p": [
+    -9.0,
+    0.0,
+    6.0
+   ],
+   "piece": "SM_VK_Prop_Fence",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Longhouse",
+   "mat": {},
+   "name": "SM_VK_Prop_Fence_inst.207",
+   "p": [
+    -12.0,
+    0.0,
+    6.0
+   ],
+   "piece": "SM_VK_Prop_Fence",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Longhouse",
+   "mat": {},
+   "name": "SM_VK_Prop_Fence_inst.208",
+   "p": [
+    -9.0,
+    0.0,
+    -3.0
+   ],
+   "piece": "SM_VK_Prop_Fence",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Longhouse",
+   "mat": {},
+   "name": "SM_VK_Prop_Fence_inst.209",
+   "p": [
+    -12.0,
+    0.0,
+    -3.0
+   ],
+   "piece": "SM_VK_Prop_Fence",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Longhouse",
+   "mat": {},
+   "name": "SM_VK_Prop_Fence_inst.210",
+   "p": [
+    -13.5,
+    0.0,
+    4.5
+   ],
+   "piece": "SM_VK_Prop_Fence",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Longhouse",
+   "mat": {},
+   "name": "SM_VK_Prop_FenceGate_inst.029",
+   "p": [
+    -13.5,
+    0.0,
+    1.5
+   ],
+   "piece": "SM_VK_Prop_FenceGate",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Longhouse",
+   "mat": {},
+   "name": "SM_VK_Prop_Fence_inst.211",
+   "p": [
+    -13.5,
+    0.0,
+    -1.5
+   ],
+   "piece": "SM_VK_Prop_Fence",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Longhouse",
+   "mat": {},
+   "name": "SM_VK_Prop_Fence_inst.212",
+   "p": [
+    -7.5,
+    0.0,
+    4.5
+   ],
+   "piece": "SM_VK_Prop_Fence",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Longhouse",
+   "mat": {},
+   "name": "SM_VK_Prop_HayRack_inst.002",
+   "p": [
+    -10.60001,
+    0.0,
+    -1.75
+   ],
+   "piece": "SM_VK_Prop_HayRack",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Longhouse",
+   "mat": {},
+   "name": "SM_VK_Prop_Trough_inst.018",
+   "p": [
+    -12.75,
+    0.0,
+    3.9
+   ],
+   "piece": "SM_VK_Prop_Trough",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Longhouse",
+   "mat": {},
+   "name": "SM_VK_Prop_HayBale_inst.016",
+   "p": [
+    -8.70001,
+    0.0,
+    5.05
+   ],
+   "piece": "SM_VK_Prop_HayBale",
+   "props": {},
+   "r": [
+    0.0,
+    -0.104528,
+    0.0,
+    0.994522
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Longhouse",
+   "mat": {},
+   "name": "SM_VK_Animal_Cow_inst.001",
+   "p": [
+    -9.89999,
+    0.0,
+    2.7
+   ],
+   "piece": "SM_VK_Animal_Cow",
+   "props": {},
+   "r": [
+    0.0,
+    0.979459,
+    0.0,
+    0.201643
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Longhouse",
+   "mat": {},
+   "name": "SM_VK_Animal_Horse_inst.001",
+   "p": [
+    -11.89999,
+    0.0,
+    0.3
+   ],
+   "piece": "SM_VK_Animal_Horse",
+   "props": {},
+   "r": [
+    0.0,
+    0.792507,
+    0.0,
+    0.609862
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Longhouse",
+   "mat": {},
+   "name": "SM_VK_Animal_Sheep_inst.007",
+   "p": [
+    -10.89999,
+    0.0,
+    4.9
+   ],
+   "piece": "SM_VK_Animal_Sheep",
+   "props": {},
+   "r": [
+    0.0,
+    -0.14628,
+    0.0,
+    0.989243
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Longhouse",
+   "mat": {},
+   "name": "SM_VK_Animal_Sheep_inst.008",
+   "p": [
+    -12.39999,
+    0.0,
+    1.9
+   ],
+   "piece": "SM_VK_Animal_Sheep",
+   "props": {},
+   "r": [
+    0.0,
+    0.991034,
+    0.0,
+    0.133611
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Longhouse",
+   "mat": {},
+   "name": "SM_VK_Prop_Bench_inst.026",
+   "p": [
+    8.04999,
+    0.0,
+    0.4
+   ],
+   "piece": "SM_VK_Prop_Bench",
+   "props": {},
+   "r": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Longhouse",
+   "mat": {},
+   "name": "SM_VK_Prop_ChickenCoop_Wattle_inst.007",
+   "p": [
+    9.35001,
+    0.0,
+    2.6
+   ],
+   "piece": "SM_VK_Prop_ChickenCoop_Wattle",
+   "props": {},
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Longhouse",
+   "mat": {},
+   "name": "SM_VK_Animal_Chickens_inst.007",
+   "p": [
+    9.29999,
+    0.0,
+    4.9
+   ],
+   "piece": "SM_VK_Animal_Chickens",
+   "props": {},
+   "r": [
+    0.0,
+    0.999373,
+    0.0,
+    0.035413
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Longhouse",
+   "mat": {},
+   "name": "SM_VK_Prop_GardenBed_inst.007",
+   "p": [
+    4.5,
+    0.0,
+    5.0
+   ],
+   "piece": "SM_VK_Prop_GardenBed",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Longhouse",
+   "mat": {
+    "3": "M_VK_Roof_Thatch"
+   },
+   "name": "SM_VK_Prop_Woodpile_inst.022",
+   "p": [
+    -1.5,
+    0.0,
+    4.95
+   ],
+   "piece": "SM_VK_Prop_Woodpile",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Longhouse",
+   "mat": {},
+   "name": "SM_VK_Deco_Bush_inst.011",
+   "p": [
+    8.89999,
+    0.0,
+    -2.3
+   ],
+   "piece": "SM_VK_Deco_Bush",
+   "props": {},
+   "r": [
+    -0.0,
+    -0.955732,
+    -0.0,
+    0.294238
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Longhouse",
+   "mat": {},
+   "name": "SM_VK_Deco_Weeds_inst.234",
+   "p": [
+    -4.5,
+    0.0,
+    3.05
+   ],
+   "piece": "SM_VK_Deco_Weeds",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Longhouse",
+   "mat": {},
+   "name": "SM_VK_Deco_Weeds_inst.235",
+   "p": [
+    3.0,
+    0.0,
+    -3.05
+   ],
+   "piece": "SM_VK_Deco_Weeds",
+   "props": {},
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  }
+ ],
+ "preset": null,
+ "root": {},
+ "scene": "VKX_Structures",
+ "structure": "Longhouse",
+ "version": "2026-09-30 slice",
+ "view_transform": "AgX",
+ "world": {
+  "color": [
+   0.42,
+   0.55,
+   0.75
+  ],
+  "linked": false,
+  "strength": 0.35
+ }
+}

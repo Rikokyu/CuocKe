@@ -1,0 +1,651 @@
+{
+ "blender_origin": [
+  300.3511962890625,
+  0.0,
+  0.0
+ ],
+ "builder": "build_hovel",
+ "cameras": [],
+ "exposure": -0.20000000298023224,
+ "lights": [],
+ "look": "AgX - Medium High Contrast",
+ "markers": [],
+ "name": "Hovel_Cruck",
+ "placements": [
+  {
+   "coll": "VKX_ST_Hovel_Cruck",
+   "mat": {
+    "1": "M_VK_Plaster_Daub"
+   },
+   "name": "SM_VK_Wall_Wattle_inst.029",
+   "p": [
+    1.5,
+    0.0,
+    3.0
+   ],
+   "piece": "SM_VK_Wall_Wattle",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Hovel_Cruck",
+   "mat": {
+    "1": "M_VK_Plaster_Daub"
+   },
+   "name": "SM_VK_Wall_Wattle_Window_inst.009",
+   "p": [
+    -1.5,
+    0.0,
+    3.0
+   ],
+   "piece": "SM_VK_Wall_Wattle_Window",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Hovel_Cruck",
+   "mat": {
+    "1": "M_VK_Plaster_Daub"
+   },
+   "name": "SM_VK_Wall_Wattle_inst.030",
+   "p": [
+    -1.5,
+    0.0,
+    -3.0
+   ],
+   "piece": "SM_VK_Wall_Wattle",
+   "props": {},
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Hovel_Cruck",
+   "mat": {
+    "1": "M_VK_Plaster_Daub"
+   },
+   "name": "SM_VK_Wall_Wattle_inst.031",
+   "p": [
+    1.5,
+    0.0,
+    -3.0
+   ],
+   "piece": "SM_VK_Wall_Wattle",
+   "props": {},
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Hovel_Cruck",
+   "mat": {
+    "1": "M_VK_Plaster_Daub"
+   },
+   "name": "SM_VK_Wall_Wattle_inst.032",
+   "p": [
+    3.0,
+    0.0,
+    -1.5
+   ],
+   "piece": "SM_VK_Wall_Wattle",
+   "props": {},
+   "r": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Hovel_Cruck",
+   "mat": {
+    "1": "M_VK_Plaster_Daub"
+   },
+   "name": "SM_VK_Wall_Wattle_inst.033",
+   "p": [
+    3.0,
+    0.0,
+    1.5
+   ],
+   "piece": "SM_VK_Wall_Wattle",
+   "props": {},
+   "r": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Hovel_Cruck",
+   "mat": {
+    "1": "M_VK_Plaster_Daub"
+   },
+   "name": "SM_VK_Wall_Wattle_Door_inst.004",
+   "p": [
+    -3.0,
+    0.0,
+    1.5
+   ],
+   "piece": "SM_VK_Wall_Wattle_Door",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Hovel_Cruck",
+   "mat": {
+    "1": "M_VK_Plaster_Daub"
+   },
+   "name": "SM_VK_Wall_Wattle_Window_inst.010",
+   "p": [
+    -3.0,
+    0.0,
+    -1.5
+   ],
+   "piece": "SM_VK_Wall_Wattle_Window",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Hovel_Cruck",
+   "mat": {},
+   "name": "SM_VK_Corner_Wattle_inst.018",
+   "p": [
+    3.0,
+    0.0,
+    3.0
+   ],
+   "piece": "SM_VK_Corner_Wattle",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Hovel_Cruck",
+   "mat": {},
+   "name": "SM_VK_Corner_Wattle_inst.019",
+   "p": [
+    -3.0,
+    0.0,
+    3.0
+   ],
+   "piece": "SM_VK_Corner_Wattle",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Hovel_Cruck",
+   "mat": {},
+   "name": "SM_VK_Corner_Wattle_inst.020",
+   "p": [
+    -3.0,
+    0.0,
+    -3.0
+   ],
+   "piece": "SM_VK_Corner_Wattle",
+   "props": {},
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Hovel_Cruck",
+   "mat": {},
+   "name": "SM_VK_Corner_Wattle_inst.021",
+   "p": [
+    3.0,
+    0.0,
+    -3.0
+   ],
+   "piece": "SM_VK_Corner_Wattle",
+   "props": {},
+   "r": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Hovel_Cruck",
+   "mat": {
+    "1": "M_VK_Plaster_Daub"
+   },
+   "name": "SM_VK_RoofThatch_Gable_Cruck_inst.006",
+   "p": [
+    1.5,
+    2.4,
+    0.0
+   ],
+   "piece": "SM_VK_RoofThatch_Gable_Cruck",
+   "props": {},
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Hovel_Cruck",
+   "mat": {
+    "1": "M_VK_Plaster_Daub"
+   },
+   "name": "SM_VK_RoofThatch_Gable_Cruck_inst.007",
+   "p": [
+    -1.5,
+    2.4,
+    0.0
+   ],
+   "piece": "SM_VK_RoofThatch_Gable_Cruck",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Hovel_Cruck",
+   "mat": {},
+   "name": "SM_VK_RoofThatch_Vent_inst.006",
+   "p": [
+    1.5,
+    6.58982,
+    0.0
+   ],
+   "piece": "SM_VK_RoofThatch_Vent",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Hovel_Cruck",
+   "mat": {
+    "3": "M_VK_Roof_Thatch"
+   },
+   "name": "SM_VK_Prop_Woodpile_inst.020",
+   "p": [
+    4.45001,
+    0.0,
+    -0.35
+   ],
+   "piece": "SM_VK_Prop_Woodpile",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Hovel_Cruck",
+   "mat": {},
+   "name": "SM_VK_Prop_ChickenCoop_Wattle_inst.004",
+   "p": [
+    5.5,
+    0.0,
+    2.55
+   ],
+   "piece": "SM_VK_Prop_ChickenCoop_Wattle",
+   "props": {},
+   "r": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Hovel_Cruck",
+   "mat": {},
+   "name": "SM_VK_Animal_Chickens_inst.004",
+   "p": [
+    4.5,
+    0.0,
+    4.75
+   ],
+   "piece": "SM_VK_Animal_Chickens",
+   "props": {},
+   "r": [
+    0.0,
+    0.469534,
+    0.0,
+    0.882914
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Hovel_Cruck",
+   "mat": {},
+   "name": "SM_VK_Prop_GardenBed_inst.004",
+   "p": [
+    0.89999,
+    0.0,
+    5.0
+   ],
+   "piece": "SM_VK_Prop_GardenBed",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Hovel_Cruck",
+   "mat": {},
+   "name": "SM_VK_Prop_Bench_inst.023",
+   "p": [
+    -1.35001,
+    0.0,
+    3.62
+   ],
+   "piece": "SM_VK_Prop_Bench",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Hovel_Cruck",
+   "mat": {},
+   "name": "SM_VK_Prop_Planter_inst.044",
+   "p": [
+    -2.64999,
+    0.0,
+    3.5
+   ],
+   "piece": "SM_VK_Prop_Planter",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Hovel_Cruck",
+   "mat": {},
+   "name": "SM_VK_Deco_Bush_inst.008",
+   "p": [
+    -2.20001,
+    0.0,
+    5.1
+   ],
+   "piece": "SM_VK_Deco_Bush",
+   "props": {},
+   "r": [
+    0.0,
+    0.689218,
+    0.0,
+    0.724554
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Hovel_Cruck",
+   "mat": {},
+   "name": "SM_VK_Deco_Weeds_inst.222",
+   "p": [
+    1.5,
+    0.0,
+    3.05
+   ],
+   "piece": "SM_VK_Deco_Weeds",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Hovel_Cruck",
+   "mat": {},
+   "name": "SM_VK_Deco_Weeds_inst.223",
+   "p": [
+    1.5,
+    0.0,
+    -3.05
+   ],
+   "piece": "SM_VK_Deco_Weeds",
+   "props": {},
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Hovel_Cruck",
+   "mat": {},
+   "name": "SM_VK_Deco_Weeds_inst.224",
+   "p": [
+    -1.5,
+    0.0,
+    -3.05
+   ],
+   "piece": "SM_VK_Deco_Weeds",
+   "props": {},
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Hovel_Cruck",
+   "mat": {},
+   "name": "SM_VK_Deco_Weeds_inst.225",
+   "p": [
+    -3.04999,
+    0.0,
+    -1.5
+   ],
+   "piece": "SM_VK_Deco_Weeds",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  }
+ ],
+ "preset": null,
+ "root": {},
+ "scene": "VKX_Structures",
+ "structure": "Hovel_Cruck",
+ "version": "2026-09-30 slice",
+ "view_transform": "AgX",
+ "world": {
+  "color": [
+   0.42,
+   0.55,
+   0.75
+  ],
+  "linked": false,
+  "strength": 0.35
+ }
+}

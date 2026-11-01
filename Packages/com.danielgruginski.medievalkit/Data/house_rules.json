@@ -1,0 +1,165 @@
+{
+ "cell": 3.0,
+ "depth": 6.0,
+ "h1": 3.0,
+ "h2": 2.8,
+ "random_style": {
+  "ground": {
+   "Plaster": 0.4,
+   "Stone": 0.6
+  },
+  "plaster": [
+   "Cream",
+   "White",
+   "Ochre",
+   "Rose",
+   "Cream"
+  ],
+  "roof": [
+   "Red",
+   "Blue",
+   "Green",
+   "Red"
+  ],
+  "roof_thatch_plaster": 2,
+  "roof_thatch_stone": 1,
+  "shutter": [
+   "Teal",
+   "Red",
+   "Green",
+   "Blue",
+   "Natural"
+  ],
+  "shutter_worn": 0.2
+ },
+ "roles": {
+  "chimney": [
+   "SM_VK_Chimney"
+  ],
+  "dormer": [
+   "SM_VK_Roof_Dormer"
+  ],
+  "flower_box": [
+   "SM_VK_Prop_FlowerBox",
+   "SM_VK_Prop_FlowerBox_Daisy"
+  ],
+  "ground_corner": {
+   "Plaster": "SM_VK_Corner_Plaster",
+   "Stone": "SM_VK_Corner_Stone"
+  },
+  "ground_inner_corner": {
+   "Plaster": "SM_VK_InnerCorner_Plaster",
+   "Stone": "SM_VK_InnerCorner_Stone"
+  },
+  "ground_wall": {
+   "Plaster": {
+    ".": "SM_VK_Wall_Plaster",
+    "D": "SM_VK_Wall_Plaster_Door",
+    "W": "SM_VK_Wall_Plaster_Window"
+   },
+   "Stone": {
+    ".": "SM_VK_Wall_Stone",
+    "D": "SM_VK_Wall_Stone_Door",
+    "W": "SM_VK_Wall_Stone_Window"
+   }
+  },
+  "ivy": [
+   "SM_VK_Deco_Ivy_A",
+   "SM_VK_Deco_Ivy_B"
+  ],
+  "lantern": [
+   "SM_VK_Prop_Lantern"
+  ],
+  "planter": [
+   "SM_VK_Prop_Planter"
+  ],
+  "porch": [
+   "SM_VK_Porch"
+  ],
+  "roof": {
+   "thatch": {
+    "gable": "SM_VK_RoofThatch_Gable",
+    "hip": "SM_VK_RoofThatch_Hip",
+    "mid": "SM_VK_RoofThatch_Mid"
+   },
+   "tile": {
+    "gable": "SM_VK_Roof_Gable",
+    "hip": "SM_VK_Roof_Hip",
+    "lcorner": "SM_VK_Roof_LCorner",
+    "mid": "SM_VK_Roof_Mid"
+   }
+  },
+  "upper_corner": [
+   "SM_VK_Corner_Timber"
+  ],
+  "upper_inner_corner": [
+   "SM_VK_InnerCorner_Timber"
+  ],
+  "upper_wall_plain": [
+   "SM_VK_Wall_Timber",
+   "SM_VK_Wall_Timber_X",
+   "SM_VK_Wall_Timber_K"
+  ],
+  "upper_wall_window": [
+   "SM_VK_Wall_Timber_Window"
+  ],
+  "weeds": [
+   "SM_VK_Deco_Weeds"
+  ]
+ },
+ "slots": {
+  "cloth": 11,
+  "plaster": 1,
+  "roof": 3,
+  "shutter": 10,
+  "stone": 0,
+  "window": 4
+ },
+ "source": "vk_helpers.build_house_v / build_L_v / _assemble / _dress / random_style",
+ "variants": {
+  "cloth": {
+   "Blue": "M_VK_Cloth_Blue",
+   "Green": "M_VK_Cloth_Green",
+   "Purple": "M_VK_Cloth_Purple",
+   "Red": null,
+   "White": "M_VK_Cloth_White",
+   "Yellow": "M_VK_Cloth_Yellow"
+  },
+  "plaster": {
+   "Cream": null,
+   "Daub": "M_VK_Plaster_Daub",
+   "Ochre": "M_VK_Plaster_Ochre",
+   "Rose": "M_VK_Plaster_Rose",
+   "Sage": "M_VK_Plaster_Sage",
+   "Sky": "M_VK_Plaster_Sky",
+   "White": "M_VK_Plaster_White"
+  },
+  "roof": {
+   "Blue": "M_VK_Roof_Blue",
+   "Green": "M_VK_Roof_Green",
+   "Red": null,
+   "Shingle": "M_VK_Roof_Shingle",
+   "Slate": "M_VK_Roof_Slate",
+   "Thatch": "M_VK_Roof_Thatch"
+  },
+  "shutter": {
+   "Blue": "M_VK_Shutter_Blue",
+   "BlueWorn": "M_VK_Shutter_BlueWorn",
+   "Green": "M_VK_Shutter_Green",
+   "GreenWorn": "M_VK_Shutter_GreenWorn",
+   "Natural": "M_VK_Shutter_Natural",
+   "Red": "M_VK_Shutter_Red",
+   "RedWorn": "M_VK_Shutter_RedWorn",
+   "Teal": null,
+   "TealWorn": "M_VK_Shutter_TealWorn"
+  },
+  "stone": {
+   "Cool": "M_VK_Stone_Cool",
+   "Dark": "M_VK_Stone_Dark",
+   "Field": "M_VK_Stone_Field",
+   "Rubble": null,
+   "Warm": "M_VK_Stone_Warm"
+  }
+ },
+ "version": "2026-09-30 slice"
+}

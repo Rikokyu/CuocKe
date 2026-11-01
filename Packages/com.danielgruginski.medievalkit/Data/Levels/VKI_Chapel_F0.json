@@ -1,0 +1,4723 @@
+{
+ "blender_origin": [
+  0.0,
+  0.0,
+  0.0
+ ],
+ "cameras": [
+  {
+   "active": true,
+   "aspect": 1.77778,
+   "clip": [
+    0.5,
+    80.0
+   ],
+   "fov_deg": 29.83937,
+   "name": "VKI_Cam_Chapel_F0",
+   "ortho_scale": 6.0,
+   "p": [
+    -6.0,
+    16.80625,
+    9.33612
+   ],
+   "r": [
+    0.34202,
+    0.0,
+    0.0,
+    0.939693
+   ],
+   "type": "PERSP"
+  }
+ ],
+ "exposure": -0.20000000298023224,
+ "lights": [
+  {
+   "coll": "Scene Collection",
+   "color": [
+    1.0,
+    0.95,
+    0.88
+   ],
+   "energy": 1.0,
+   "name": "VKI_Key",
+   "p": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "props": {},
+   "r": [
+    0.237315,
+    0.189306,
+    -0.047208,
+    0.951639
+   ],
+   "radius": 0.0,
+   "shadow": true,
+   "spot_blend": null,
+   "spot_size": null,
+   "type": "SUN"
+  },
+  {
+   "coll": "Scene Collection",
+   "color": [
+    0.85,
+    0.9,
+    1.0
+   ],
+   "energy": 0.6,
+   "name": "VKI_Fill",
+   "p": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "props": {},
+   "r": [
+    0.342038,
+    0.0,
+    0.0,
+    0.939686
+   ],
+   "radius": 0.0,
+   "shadow": false,
+   "spot_blend": null,
+   "spot_size": null,
+   "type": "SUN"
+  },
+  {
+   "coll": "VKI_Chapel_F0_Lights",
+   "color": [
+    0.8,
+    0.87,
+    1.0
+   ],
+   "energy": 60.0,
+   "name": "LIT_Chapel_F0_00_apron",
+   "p": [
+    -6.0,
+    2.6,
+    1.1
+   ],
+   "props": {
+    "vki_color_day": "[0.8, 0.87, 1.0]",
+    "vki_color_night": "[0.62, 0.7, 1.0]",
+    "vki_lgt": "LGT_Chapel_F0_00_apron",
+    "vki_w_day": 60.0,
+    "vki_w_night": 25.0
+   },
+   "r": [
+    0.165852,
+    0.0,
+    0.0,
+    0.986151
+   ],
+   "radius": 0.0,
+   "shadow": true,
+   "spot_blend": null,
+   "spot_size": null,
+   "type": "AREA"
+  },
+  {
+   "coll": "VKI_Chapel_F0_Lights",
+   "color": [
+    1.0,
+    0.86,
+    0.72
+   ],
+   "energy": 800.0,
+   "name": "LIT_Chapel_F0_01_lancet",
+   "p": [
+    -3.75,
+    5.0,
+    -11.2
+   ],
+   "props": {
+    "vki_color_day": "[1.0, 0.86, 0.72]",
+    "vki_color_night": "[0.66, 0.62, 0.95]",
+    "vki_lgt": "LGT_Chapel_F0_01_lancet",
+    "vki_w_day": 800.0,
+    "vki_w_night": 120.0
+   },
+   "r": [
+    -0.0,
+    -0.947671,
+    0.319247,
+    0.0
+   ],
+   "radius": 0.05,
+   "shadow": true,
+   "spot_blend": 0.15,
+   "spot_size": 24.0,
+   "type": "SPOT"
+  },
+  {
+   "coll": "VKI_Chapel_F0_Lights",
+   "color": [
+    1.0,
+    0.86,
+    0.72
+   ],
+   "energy": 800.0,
+   "name": "LIT_Chapel_F0_02_lancet",
+   "p": [
+    -5.25,
+    5.0,
+    -11.2
+   ],
+   "props": {
+    "vki_color_day": "[1.0, 0.86, 0.72]",
+    "vki_color_night": "[0.66, 0.62, 0.95]",
+    "vki_lgt": "LGT_Chapel_F0_02_lancet",
+    "vki_w_day": 800.0,
+    "vki_w_night": 120.0
+   },
+   "r": [
+    -0.0,
+    -0.947671,
+    0.319247,
+    0.0
+   ],
+   "radius": 0.05,
+   "shadow": true,
+   "spot_blend": 0.15,
+   "spot_size": 24.0,
+   "type": "SPOT"
+  },
+  {
+   "coll": "VKI_Chapel_F0_Lights",
+   "color": [
+    1.0,
+    0.86,
+    0.72
+   ],
+   "energy": 800.0,
+   "name": "LIT_Chapel_F0_03_lancet",
+   "p": [
+    -6.75,
+    5.0,
+    -11.2
+   ],
+   "props": {
+    "vki_color_day": "[1.0, 0.86, 0.72]",
+    "vki_color_night": "[0.66, 0.62, 0.95]",
+    "vki_lgt": "LGT_Chapel_F0_03_lancet",
+    "vki_w_day": 800.0,
+    "vki_w_night": 120.0
+   },
+   "r": [
+    -0.0,
+    -0.947671,
+    0.319247,
+    0.0
+   ],
+   "radius": 0.05,
+   "shadow": true,
+   "spot_blend": 0.15,
+   "spot_size": 24.0,
+   "type": "SPOT"
+  },
+  {
+   "coll": "VKI_Chapel_F0_Lights",
+   "color": [
+    1.0,
+    0.86,
+    0.72
+   ],
+   "energy": 800.0,
+   "name": "LIT_Chapel_F0_04_lancet",
+   "p": [
+    -8.25,
+    5.0,
+    -11.2
+   ],
+   "props": {
+    "vki_color_day": "[1.0, 0.86, 0.72]",
+    "vki_color_night": "[0.66, 0.62, 0.95]",
+    "vki_lgt": "LGT_Chapel_F0_04_lancet",
+    "vki_w_day": 800.0,
+    "vki_w_night": 120.0
+   },
+   "r": [
+    -0.0,
+    -0.947671,
+    0.319247,
+    0.0
+   ],
+   "radius": 0.05,
+   "shadow": true,
+   "spot_blend": 0.15,
+   "spot_size": 24.0,
+   "type": "SPOT"
+  },
+  {
+   "coll": "VKI_Chapel_F0_Lights",
+   "color": [
+    1.0,
+    0.86,
+    0.72
+   ],
+   "energy": 800.0,
+   "name": "LIT_Chapel_F0_05_lancet",
+   "p": [
+    2.2,
+    5.0,
+    -2.25
+   ],
+   "props": {
+    "vki_color_day": "[1.0, 0.86, 0.72]",
+    "vki_color_night": "[0.66, 0.62, 0.95]",
+    "vki_lgt": "LGT_Chapel_F0_05_lancet",
+    "vki_w_day": 800.0,
+    "vki_w_night": 120.0
+   },
+   "r": [
+    0.225742,
+    0.670105,
+    -0.225742,
+    0.670105
+   ],
+   "radius": 0.05,
+   "shadow": true,
+   "spot_blend": 0.15,
+   "spot_size": 24.0,
+   "type": "SPOT"
+  },
+  {
+   "coll": "VKI_Chapel_F0_Lights",
+   "color": [
+    1.0,
+    0.86,
+    0.72
+   ],
+   "energy": 800.0,
+   "name": "LIT_Chapel_F0_06_lancet",
+   "p": [
+    2.2,
+    5.0,
+    -5.25
+   ],
+   "props": {
+    "vki_color_day": "[1.0, 0.86, 0.72]",
+    "vki_color_night": "[0.66, 0.62, 0.95]",
+    "vki_lgt": "LGT_Chapel_F0_06_lancet",
+    "vki_w_day": 800.0,
+    "vki_w_night": 120.0
+   },
+   "r": [
+    0.225742,
+    0.670105,
+    -0.225742,
+    0.670105
+   ],
+   "radius": 0.05,
+   "shadow": true,
+   "spot_blend": 0.15,
+   "spot_size": 24.0,
+   "type": "SPOT"
+  },
+  {
+   "coll": "VKI_Chapel_F0_Lights",
+   "color": [
+    1.0,
+    0.86,
+    0.72
+   ],
+   "energy": 800.0,
+   "name": "LIT_Chapel_F0_07_lancet",
+   "p": [
+    -14.2,
+    5.0,
+    -2.25
+   ],
+   "props": {
+    "vki_color_day": "[1.0, 0.86, 0.72]",
+    "vki_color_night": "[0.66, 0.62, 0.95]",
+    "vki_lgt": "LGT_Chapel_F0_07_lancet",
+    "vki_w_day": 800.0,
+    "vki_w_night": 120.0
+   },
+   "r": [
+    0.225742,
+    -0.670105,
+    0.225742,
+    0.670105
+   ],
+   "radius": 0.05,
+   "shadow": true,
+   "spot_blend": 0.15,
+   "spot_size": 24.0,
+   "type": "SPOT"
+  },
+  {
+   "coll": "VKI_Chapel_F0_Lights",
+   "color": [
+    1.0,
+    0.86,
+    0.72
+   ],
+   "energy": 800.0,
+   "name": "LIT_Chapel_F0_08_lancet",
+   "p": [
+    -14.2,
+    5.0,
+    -5.25
+   ],
+   "props": {
+    "vki_color_day": "[1.0, 0.86, 0.72]",
+    "vki_color_night": "[0.66, 0.62, 0.95]",
+    "vki_lgt": "LGT_Chapel_F0_08_lancet",
+    "vki_w_day": 800.0,
+    "vki_w_night": 120.0
+   },
+   "r": [
+    0.225742,
+    -0.670105,
+    0.225742,
+    0.670105
+   ],
+   "radius": 0.05,
+   "shadow": true,
+   "spot_blend": 0.15,
+   "spot_size": 24.0,
+   "type": "SPOT"
+  },
+  {
+   "coll": "VKI_Chapel_F0_Lights",
+   "color": [
+    1.0,
+    0.58,
+    0.26
+   ],
+   "energy": 15.0,
+   "name": "LIT_Chapel_F0_09_candle",
+   "p": [
+    -5.42,
+    1.79,
+    -7.75
+   ],
+   "props": {
+    "vki_color_day": "[1.0, 0.58, 0.26]",
+    "vki_color_night": "[1.0, 0.58, 0.26]",
+    "vki_lgt": "LGT_Chapel_F0_09_candle",
+    "vki_w_day": 15.0,
+    "vki_w_night": 15.0
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "radius": 0.02,
+   "shadow": false,
+   "spot_blend": null,
+   "spot_size": null,
+   "type": "POINT"
+  },
+  {
+   "coll": "VKI_Chapel_F0_Lights",
+   "color": [
+    1.0,
+    0.58,
+    0.26
+   ],
+   "energy": 15.0,
+   "name": "LIT_Chapel_F0_10_candle",
+   "p": [
+    -6.58,
+    1.79,
+    -7.75
+   ],
+   "props": {
+    "vki_color_day": "[1.0, 0.58, 0.26]",
+    "vki_color_night": "[1.0, 0.58, 0.26]",
+    "vki_lgt": "LGT_Chapel_F0_10_candle",
+    "vki_w_day": 15.0,
+    "vki_w_night": 15.0
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "radius": 0.02,
+   "shadow": false,
+   "spot_blend": null,
+   "spot_size": null,
+   "type": "POINT"
+  },
+  {
+   "coll": "VKI_Chapel_F0_Lights",
+   "color": [
+    1.0,
+    0.58,
+    0.26
+   ],
+   "energy": 30.0,
+   "name": "LIT_Chapel_F0_11_candle",
+   "p": [
+    -3.75,
+    1.63,
+    -8.25
+   ],
+   "props": {
+    "vki_color_day": "[1.0, 0.58, 0.26]",
+    "vki_color_night": "[1.0, 0.58, 0.26]",
+    "vki_lgt": "LGT_Chapel_F0_11_candle",
+    "vki_w_day": 30.0,
+    "vki_w_night": 30.0
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "radius": 0.02,
+   "shadow": false,
+   "spot_blend": null,
+   "spot_size": null,
+   "type": "POINT"
+  },
+  {
+   "coll": "VKI_Chapel_F0_Lights",
+   "color": [
+    1.0,
+    0.58,
+    0.26
+   ],
+   "energy": 30.0,
+   "name": "LIT_Chapel_F0_12_candle",
+   "p": [
+    -8.25,
+    1.63,
+    -8.25
+   ],
+   "props": {
+    "vki_color_day": "[1.0, 0.58, 0.26]",
+    "vki_color_night": "[1.0, 0.58, 0.26]",
+    "vki_lgt": "LGT_Chapel_F0_12_candle",
+    "vki_w_day": 30.0,
+    "vki_w_night": 30.0
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "radius": 0.02,
+   "shadow": false,
+   "spot_blend": null,
+   "spot_size": null,
+   "type": "POINT"
+  },
+  {
+   "coll": "VKI_Chapel_F0_Lights",
+   "color": [
+    1.0,
+    0.58,
+    0.26
+   ],
+   "energy": 30.0,
+   "name": "LIT_Chapel_F0_13_candle",
+   "p": [
+    -11.515,
+    1.06,
+    -3.75
+   ],
+   "props": {
+    "vki_color_day": "[1.0, 0.58, 0.26]",
+    "vki_color_night": "[1.0, 0.58, 0.26]",
+    "vki_lgt": "LGT_Chapel_F0_13_candle",
+    "vki_w_day": 30.0,
+    "vki_w_night": 30.0
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "radius": 0.02,
+   "shadow": false,
+   "spot_blend": null,
+   "spot_size": null,
+   "type": "POINT"
+  }
+ ],
+ "look": "AgX - Medium High Contrast",
+ "markers": [
+  {
+   "coll": "VKI_Chapel_F0_Logic",
+   "name": "SPN_front.007",
+   "p": [
+    -6.0,
+    0.0,
+    -1.6
+   ],
+   "props": {
+    "vki_facing_deg": 0,
+    "vki_link_obj": "Chapel_F0_Wall_Ashlar_DoorWide_300_Cut",
+    "vki_spawn_id": "front"
+   },
+   "r": [
+    -0.707107,
+    0.0,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Logic",
+   "name": "VKI_Root.009",
+   "p": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "props": {
+    "vki_bounds": "[0.0, 0.0, 12.0, 9.0]",
+    "vki_building": "Chapel",
+    "vki_cam_dist": 21.939,
+    "vki_cam_h_fit": 3.97,
+    "vki_cam_margin": 0.0,
+    "vki_cam_mode": "fit",
+    "vki_cam_pitch": 50,
+    "vki_cam_target": "[6.0, 4.766, 0.0]",
+    "vki_cam_yaw": 0,
+    "vki_default_spawn": "front",
+    "vki_family": "Ashlar",
+    "vki_floor": 0,
+    "vki_links": "[{\"id\": \"front\", \"kind\": \"exit\", \"target\": \"@return\", \"obj\": \"Chapel_F0_Wall_Ashlar_DoorWide_300_Cut\", \"spawn\": \"SPN_front.007\"}]",
+    "vki_preset": "Day",
+    "vki_rooms_version": "2026-09-26 r1",
+    "vki_scene": "VKI_Chapel_F0"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Logic",
+   "name": "LGT_Chapel_F0_00_apron",
+   "p": [
+    -6.0,
+    2.6,
+    1.1
+   ],
+   "props": {
+    "vki_light": "{\"type\": \"AREA\", \"role\": \"apron\", \"color\": [0.8, 0.87, 1.0], \"intensity\": 60.0, \"flicker\": 0, \"shadows\": 1, \"blender_w\": 60.0, \"w_day\": 60.0, \"w_night\": 25.0, \"color_day\": [0.8, 0.87, 1.0], \"color_night\": [0.62, 0.7, 1.0], \"size\": 1.6, \"host\": \"Chapel_F0_Apron_Wide_300x150\", \"piece\": \"SM_VKI_Apron_Wide_300x150\"}"
+   },
+   "r": [
+    0.165852,
+    0.0,
+    0.0,
+    0.986151
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Logic",
+   "name": "LGT_Chapel_F0_01_lancet",
+   "p": [
+    -3.75,
+    5.0,
+    -11.2
+   ],
+   "props": {
+    "vki_light": "{\"type\": \"SPOT\", \"role\": \"lancet\", \"color\": [1.0, 0.86, 0.72], \"intensity\": 800.0, \"flicker\": 0, \"shadows\": 1, \"blender_w\": 800.0, \"w_day\": 800.0, \"w_night\": 120.0, \"color_day\": [1.0, 0.86, 0.72], \"color_night\": [0.66, 0.62, 0.95], \"cone\": 24.0, \"blend\": 0.15, \"radius\": 0.05, \"host\": \"Chapel_F0_Wall_Ashlar_Lancet_150_Full\", \"piece\": \"SM_VKI_Wall_Ashlar_Lancet_150_Full\"}"
+   },
+   "r": [
+    -0.0,
+    -0.947671,
+    0.319247,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Logic",
+   "name": "LGT_Chapel_F0_02_lancet",
+   "p": [
+    -5.25,
+    5.0,
+    -11.2
+   ],
+   "props": {
+    "vki_light": "{\"type\": \"SPOT\", \"role\": \"lancet\", \"color\": [1.0, 0.86, 0.72], \"intensity\": 800.0, \"flicker\": 0, \"shadows\": 1, \"blender_w\": 800.0, \"w_day\": 800.0, \"w_night\": 120.0, \"color_day\": [1.0, 0.86, 0.72], \"color_night\": [0.66, 0.62, 0.95], \"cone\": 24.0, \"blend\": 0.15, \"radius\": 0.05, \"host\": \"Chapel_F0_Wall_Ashlar_LancetTall_150_Full\", \"piece\": \"SM_VKI_Wall_Ashlar_LancetTall_150_Full\"}"
+   },
+   "r": [
+    -0.0,
+    -0.947671,
+    0.319247,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Logic",
+   "name": "LGT_Chapel_F0_03_lancet",
+   "p": [
+    -6.75,
+    5.0,
+    -11.2
+   ],
+   "props": {
+    "vki_light": "{\"type\": \"SPOT\", \"role\": \"lancet\", \"color\": [1.0, 0.86, 0.72], \"intensity\": 800.0, \"flicker\": 0, \"shadows\": 1, \"blender_w\": 800.0, \"w_day\": 800.0, \"w_night\": 120.0, \"color_day\": [1.0, 0.86, 0.72], \"color_night\": [0.66, 0.62, 0.95], \"cone\": 24.0, \"blend\": 0.15, \"radius\": 0.05, \"host\": \"Chapel_F0_Wall_Ashlar_LancetTall_150_Full.001\", \"piece\": \"SM_VKI_Wall_Ashlar_LancetTall_150_Full\"}"
+   },
+   "r": [
+    -0.0,
+    -0.947671,
+    0.319247,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Logic",
+   "name": "LGT_Chapel_F0_04_lancet",
+   "p": [
+    -8.25,
+    5.0,
+    -11.2
+   ],
+   "props": {
+    "vki_light": "{\"type\": \"SPOT\", \"role\": \"lancet\", \"color\": [1.0, 0.86, 0.72], \"intensity\": 800.0, \"flicker\": 0, \"shadows\": 1, \"blender_w\": 800.0, \"w_day\": 800.0, \"w_night\": 120.0, \"color_day\": [1.0, 0.86, 0.72], \"color_night\": [0.66, 0.62, 0.95], \"cone\": 24.0, \"blend\": 0.15, \"radius\": 0.05, \"host\": \"Chapel_F0_Wall_Ashlar_Lancet_150_Full.001\", \"piece\": \"SM_VKI_Wall_Ashlar_Lancet_150_Full\"}"
+   },
+   "r": [
+    -0.0,
+    -0.947671,
+    0.319247,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Logic",
+   "name": "LGT_Chapel_F0_05_lancet",
+   "p": [
+    2.2,
+    5.0,
+    -2.25
+   ],
+   "props": {
+    "vki_light": "{\"type\": \"SPOT\", \"role\": \"lancet\", \"color\": [1.0, 0.86, 0.72], \"intensity\": 800.0, \"flicker\": 0, \"shadows\": 1, \"blender_w\": 800.0, \"w_day\": 800.0, \"w_night\": 120.0, \"color_day\": [1.0, 0.86, 0.72], \"color_night\": [0.66, 0.62, 0.95], \"cone\": 24.0, \"blend\": 0.15, \"radius\": 0.05, \"host\": \"Chapel_F0_Wall_Ashlar_Lancet_150_Full.002\", \"piece\": \"SM_VKI_Wall_Ashlar_Lancet_150_Full\"}"
+   },
+   "r": [
+    0.225742,
+    0.670105,
+    -0.225742,
+    0.670105
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Logic",
+   "name": "LGT_Chapel_F0_06_lancet",
+   "p": [
+    2.2,
+    5.0,
+    -5.25
+   ],
+   "props": {
+    "vki_light": "{\"type\": \"SPOT\", \"role\": \"lancet\", \"color\": [1.0, 0.86, 0.72], \"intensity\": 800.0, \"flicker\": 0, \"shadows\": 1, \"blender_w\": 800.0, \"w_day\": 800.0, \"w_night\": 120.0, \"color_day\": [1.0, 0.86, 0.72], \"color_night\": [0.66, 0.62, 0.95], \"cone\": 24.0, \"blend\": 0.15, \"radius\": 0.05, \"host\": \"Chapel_F0_Wall_Ashlar_Lancet_150_Full.003\", \"piece\": \"SM_VKI_Wall_Ashlar_Lancet_150_Full\"}"
+   },
+   "r": [
+    0.225742,
+    0.670105,
+    -0.225742,
+    0.670105
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Logic",
+   "name": "LGT_Chapel_F0_07_lancet",
+   "p": [
+    -14.2,
+    5.0,
+    -2.25
+   ],
+   "props": {
+    "vki_light": "{\"type\": \"SPOT\", \"role\": \"lancet\", \"color\": [1.0, 0.86, 0.72], \"intensity\": 800.0, \"flicker\": 0, \"shadows\": 1, \"blender_w\": 800.0, \"w_day\": 800.0, \"w_night\": 120.0, \"color_day\": [1.0, 0.86, 0.72], \"color_night\": [0.66, 0.62, 0.95], \"cone\": 24.0, \"blend\": 0.15, \"radius\": 0.05, \"host\": \"Chapel_F0_Wall_Ashlar_Lancet_150_Full.004\", \"piece\": \"SM_VKI_Wall_Ashlar_Lancet_150_Full\"}"
+   },
+   "r": [
+    0.225742,
+    -0.670105,
+    0.225742,
+    0.670105
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Logic",
+   "name": "LGT_Chapel_F0_08_lancet",
+   "p": [
+    -14.2,
+    5.0,
+    -5.25
+   ],
+   "props": {
+    "vki_light": "{\"type\": \"SPOT\", \"role\": \"lancet\", \"color\": [1.0, 0.86, 0.72], \"intensity\": 800.0, \"flicker\": 0, \"shadows\": 1, \"blender_w\": 800.0, \"w_day\": 800.0, \"w_night\": 120.0, \"color_day\": [1.0, 0.86, 0.72], \"color_night\": [0.66, 0.62, 0.95], \"cone\": 24.0, \"blend\": 0.15, \"radius\": 0.05, \"host\": \"Chapel_F0_Wall_Ashlar_Lancet_150_Full.005\", \"piece\": \"SM_VKI_Wall_Ashlar_Lancet_150_Full\"}"
+   },
+   "r": [
+    0.225742,
+    -0.670105,
+    0.225742,
+    0.670105
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Logic",
+   "name": "LGT_Chapel_F0_09_candle",
+   "p": [
+    -5.42,
+    1.79,
+    -7.75
+   ],
+   "props": {
+    "vki_light": "{\"type\": \"POINT\", \"role\": \"candle\", \"color\": [1.0, 0.58, 0.26], \"intensity\": 15.0, \"range\": 3.0, \"flicker\": 1, \"shadows\": 0, \"blender_w\": 15.0, \"w_day\": 15.0, \"w_night\": 15.0, \"color_day\": [1.0, 0.58, 0.26], \"color_night\": [1.0, 0.58, 0.26], \"radius\": 0.02, \"host\": \"Chapel_F0_Prop_Altar_300\", \"piece\": \"SM_VKI_Prop_Altar_300\"}"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Logic",
+   "name": "LGT_Chapel_F0_10_candle",
+   "p": [
+    -6.58,
+    1.79,
+    -7.75
+   ],
+   "props": {
+    "vki_light": "{\"type\": \"POINT\", \"role\": \"candle\", \"color\": [1.0, 0.58, 0.26], \"intensity\": 15.0, \"range\": 3.0, \"flicker\": 1, \"shadows\": 0, \"blender_w\": 15.0, \"w_day\": 15.0, \"w_night\": 15.0, \"color_day\": [1.0, 0.58, 0.26], \"color_night\": [1.0, 0.58, 0.26], \"radius\": 0.02, \"host\": \"Chapel_F0_Prop_Altar_300\", \"piece\": \"SM_VKI_Prop_Altar_300\"}"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Logic",
+   "name": "FXA_Chapel_F0_00_candle",
+   "p": [
+    -5.42,
+    1.79,
+    -7.75
+   ],
+   "props": {
+    "vki_fx": "{\"fx\": \"candle\", \"pos\": [-0.58, 0.25, 1.59], \"host\": \"Chapel_F0_Prop_Altar_300\", \"piece\": \"SM_VKI_Prop_Altar_300\"}"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Logic",
+   "name": "FXA_Chapel_F0_01_candle",
+   "p": [
+    -6.58,
+    1.79,
+    -7.75
+   ],
+   "props": {
+    "vki_fx": "{\"fx\": \"candle\", \"pos\": [0.58, 0.25, 1.59], \"host\": \"Chapel_F0_Prop_Altar_300\", \"piece\": \"SM_VKI_Prop_Altar_300\"}"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Logic",
+   "name": "LGT_Chapel_F0_11_candle",
+   "p": [
+    -3.75,
+    1.63,
+    -8.25
+   ],
+   "props": {
+    "vki_light": "{\"type\": \"POINT\", \"role\": \"candle\", \"color\": [1.0, 0.58, 0.26], \"intensity\": 30.0, \"range\": 3.0, \"flicker\": 1, \"shadows\": 0, \"blender_w\": 30.0, \"w_day\": 30.0, \"w_night\": 30.0, \"color_day\": [1.0, 0.58, 0.26], \"color_night\": [1.0, 0.58, 0.26], \"radius\": 0.02, \"host\": \"Chapel_F0_Prop_CandleStand_Pricket\", \"piece\": \"SM_VKI_Prop_CandleStand_Pricket\"}"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Logic",
+   "name": "FXA_Chapel_F0_02_candle",
+   "p": [
+    -3.75,
+    1.63,
+    -8.25
+   ],
+   "props": {
+    "vki_fx": "{\"fx\": \"candle\", \"pos\": [0, 0, 1.43], \"host\": \"Chapel_F0_Prop_CandleStand_Pricket\", \"piece\": \"SM_VKI_Prop_CandleStand_Pricket\"}"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Logic",
+   "name": "LGT_Chapel_F0_12_candle",
+   "p": [
+    -8.25,
+    1.63,
+    -8.25
+   ],
+   "props": {
+    "vki_light": "{\"type\": \"POINT\", \"role\": \"candle\", \"color\": [1.0, 0.58, 0.26], \"intensity\": 30.0, \"range\": 3.0, \"flicker\": 1, \"shadows\": 0, \"blender_w\": 30.0, \"w_day\": 30.0, \"w_night\": 30.0, \"color_day\": [1.0, 0.58, 0.26], \"color_night\": [1.0, 0.58, 0.26], \"radius\": 0.02, \"host\": \"Chapel_F0_Prop_CandleStand_Pricket.001\", \"piece\": \"SM_VKI_Prop_CandleStand_Pricket\"}"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Logic",
+   "name": "FXA_Chapel_F0_03_candle",
+   "p": [
+    -8.25,
+    1.63,
+    -8.25
+   ],
+   "props": {
+    "vki_fx": "{\"fx\": \"candle\", \"pos\": [0, 0, 1.43], \"host\": \"Chapel_F0_Prop_CandleStand_Pricket.001\", \"piece\": \"SM_VKI_Prop_CandleStand_Pricket\"}"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Logic",
+   "name": "LGT_Chapel_F0_13_candle",
+   "p": [
+    -11.515,
+    1.06,
+    -3.75
+   ],
+   "props": {
+    "vki_light": "{\"type\": \"POINT\", \"role\": \"candle\", \"color\": [1.0, 0.58, 0.26], \"intensity\": 30.0, \"range\": 3.0, \"flicker\": 1, \"shadows\": 0, \"blender_w\": 30.0, \"w_day\": 30.0, \"w_night\": 30.0, \"color_day\": [1.0, 0.58, 0.26], \"color_night\": [1.0, 0.58, 0.26], \"radius\": 0.02, \"host\": \"Chapel_F0_Prop_VotiveRack\", \"piece\": \"SM_VKI_Prop_VotiveRack\"}"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Logic",
+   "name": "FXA_Chapel_F0_04_candle",
+   "p": [
+    -11.425,
+    0.8935,
+    -4.125
+   ],
+   "props": {
+    "vki_fx": "{\"fx\": \"candle\", \"pos\": [-0.375, -0.09, 0.8935], \"host\": \"Chapel_F0_Prop_VotiveRack\", \"piece\": \"SM_VKI_Prop_VotiveRack\"}"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Logic",
+   "name": "FXA_Chapel_F0_05_candle",
+   "p": [
+    -11.425,
+    0.8635,
+    -3.975
+   ],
+   "props": {
+    "vki_fx": "{\"fx\": \"candle\", \"pos\": [-0.225, -0.09, 0.8635], \"host\": \"Chapel_F0_Prop_VotiveRack\", \"piece\": \"SM_VKI_Prop_VotiveRack\"}"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Logic",
+   "name": "FXA_Chapel_F0_06_candle",
+   "p": [
+    -11.425,
+    0.9135,
+    -3.825
+   ],
+   "props": {
+    "vki_fx": "{\"fx\": \"candle\", \"pos\": [-0.075, -0.09, 0.9135], \"host\": \"Chapel_F0_Prop_VotiveRack\", \"piece\": \"SM_VKI_Prop_VotiveRack\"}"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Logic",
+   "name": "FXA_Chapel_F0_07_candle",
+   "p": [
+    -11.425,
+    0.8835,
+    -3.675
+   ],
+   "props": {
+    "vki_fx": "{\"fx\": \"candle\", \"pos\": [0.075, -0.09, 0.8835], \"host\": \"Chapel_F0_Prop_VotiveRack\", \"piece\": \"SM_VKI_Prop_VotiveRack\"}"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Logic",
+   "name": "FXA_Chapel_F0_08_candle",
+   "p": [
+    -11.425,
+    0.9235,
+    -3.525
+   ],
+   "props": {
+    "vki_fx": "{\"fx\": \"candle\", \"pos\": [0.225, -0.09, 0.9235], \"host\": \"Chapel_F0_Prop_VotiveRack\", \"piece\": \"SM_VKI_Prop_VotiveRack\"}"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Logic",
+   "name": "FXA_Chapel_F0_09_candle",
+   "p": [
+    -11.425,
+    0.8735,
+    -3.375
+   ],
+   "props": {
+    "vki_fx": "{\"fx\": \"candle\", \"pos\": [0.375, -0.09, 0.8735], \"host\": \"Chapel_F0_Prop_VotiveRack\", \"piece\": \"SM_VKI_Prop_VotiveRack\"}"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Logic",
+   "name": "FXA_Chapel_F0_10_candle",
+   "p": [
+    -11.605,
+    1.0235,
+    -4.05
+   ],
+   "props": {
+    "vki_fx": "{\"fx\": \"candle\", \"pos\": [-0.3, 0.09, 1.0235], \"host\": \"Chapel_F0_Prop_VotiveRack\", \"piece\": \"SM_VKI_Prop_VotiveRack\"}"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Logic",
+   "name": "FXA_Chapel_F0_11_candle",
+   "p": [
+    -11.605,
+    0.9735,
+    -3.9
+   ],
+   "props": {
+    "vki_fx": "{\"fx\": \"candle\", \"pos\": [-0.15, 0.09, 0.9735], \"host\": \"Chapel_F0_Prop_VotiveRack\", \"piece\": \"SM_VKI_Prop_VotiveRack\"}"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Logic",
+   "name": "FXA_Chapel_F0_12_candle",
+   "p": [
+    -11.605,
+    1.0335,
+    -3.75
+   ],
+   "props": {
+    "vki_fx": "{\"fx\": \"candle\", \"pos\": [-0.0, 0.09, 1.0335], \"host\": \"Chapel_F0_Prop_VotiveRack\", \"piece\": \"SM_VKI_Prop_VotiveRack\"}"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Logic",
+   "name": "FXA_Chapel_F0_13_candle",
+   "p": [
+    -11.605,
+    1.0135,
+    -3.6
+   ],
+   "props": {
+    "vki_fx": "{\"fx\": \"candle\", \"pos\": [0.15, 0.09, 1.0135], \"host\": \"Chapel_F0_Prop_VotiveRack\", \"piece\": \"SM_VKI_Prop_VotiveRack\"}"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Logic",
+   "name": "FXA_Chapel_F0_14_candle",
+   "p": [
+    -11.605,
+    0.9935,
+    -3.45
+   ],
+   "props": {
+    "vki_fx": "{\"fx\": \"candle\", \"pos\": [0.3, 0.09, 0.9935], \"host\": \"Chapel_F0_Prop_VotiveRack\", \"piece\": \"SM_VKI_Prop_VotiveRack\"}"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Logic",
+   "name": "FXA_Chapel_F0_15_candle",
+   "p": [
+    -11.605,
+    1.0435,
+    -3.3
+   ],
+   "props": {
+    "vki_fx": "{\"fx\": \"candle\", \"pos\": [0.45, 0.09, 1.0435], \"host\": \"Chapel_F0_Prop_VotiveRack\", \"piece\": \"SM_VKI_Prop_VotiveRack\"}"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Logic",
+   "name": "FXA_Chapel_F0_16_window_pool",
+   "p": [
+    -3.75,
+    0.2,
+    -7.85
+   ],
+   "props": {
+    "vki_fx": "{\"fx\": \"window_pool\", \"pos\": [0.75, -1.15, 0.0], \"host\": \"Chapel_F0_FX_WindowPool\", \"piece\": \"SM_VKI_FX_WindowPool\"}"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Logic",
+   "name": "FXA_Chapel_F0_17_window_pool",
+   "p": [
+    -5.25,
+    0.2,
+    -7.85
+   ],
+   "props": {
+    "vki_fx": "{\"fx\": \"window_pool\", \"pos\": [0.75, -1.15, 0.0], \"host\": \"Chapel_F0_FX_WindowPool.001\", \"piece\": \"SM_VKI_FX_WindowPool\"}"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Logic",
+   "name": "FXA_Chapel_F0_18_window_pool",
+   "p": [
+    -6.75,
+    0.2,
+    -7.85
+   ],
+   "props": {
+    "vki_fx": "{\"fx\": \"window_pool\", \"pos\": [0.75, -1.15, 0.0], \"host\": \"Chapel_F0_FX_WindowPool.002\", \"piece\": \"SM_VKI_FX_WindowPool\"}"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Logic",
+   "name": "FXA_Chapel_F0_19_window_pool",
+   "p": [
+    -8.25,
+    0.2,
+    -7.85
+   ],
+   "props": {
+    "vki_fx": "{\"fx\": \"window_pool\", \"pos\": [0.75, -1.15, 0.0], \"host\": \"Chapel_F0_FX_WindowPool.003\", \"piece\": \"SM_VKI_FX_WindowPool\"}"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Logic",
+   "name": "FXA_Chapel_F0_20_window_pool",
+   "p": [
+    -1.15,
+    0.0,
+    -2.25
+   ],
+   "props": {
+    "vki_fx": "{\"fx\": \"window_pool\", \"pos\": [0.75, -1.15, 0.0], \"host\": \"Chapel_F0_FX_WindowPool.004\", \"piece\": \"SM_VKI_FX_WindowPool\"}"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Logic",
+   "name": "FXA_Chapel_F0_21_window_pool",
+   "p": [
+    -1.15,
+    0.0,
+    -5.25
+   ],
+   "props": {
+    "vki_fx": "{\"fx\": \"window_pool\", \"pos\": [0.75, -1.15, 0.0], \"host\": \"Chapel_F0_FX_WindowPool.005\", \"piece\": \"SM_VKI_FX_WindowPool\"}"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Logic",
+   "name": "FXA_Chapel_F0_22_window_pool",
+   "p": [
+    -10.85,
+    0.0,
+    -2.25
+   ],
+   "props": {
+    "vki_fx": "{\"fx\": \"window_pool\", \"pos\": [0.75, -1.15, 0.0], \"host\": \"Chapel_F0_FX_WindowPool.006\", \"piece\": \"SM_VKI_FX_WindowPool\"}"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Logic",
+   "name": "FXA_Chapel_F0_23_window_pool",
+   "p": [
+    -10.85,
+    0.0,
+    -5.25
+   ],
+   "props": {
+    "vki_fx": "{\"fx\": \"window_pool\", \"pos\": [0.75, -1.15, 0.0], \"host\": \"Chapel_F0_FX_WindowPool.007\", \"piece\": \"SM_VKI_FX_WindowPool\"}"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  }
+ ],
+ "name": "VKI_Chapel_F0",
+ "placements": [
+  {
+   "coll": "VKI_Chapel_F0_Shell",
+   "mat": {},
+   "name": "Chapel_F0_Wall_Ashlar_Plain_150A_Cut",
+   "p": [
+    -1.5,
+    0.0,
+    0.0
+   ],
+   "piece": "SM_VKI_Wall_Ashlar_Plain_150A_Cut",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[1.5, 0.0]",
+    "vki_class": "wall",
+    "vki_collider": "[[0.75, 0.0, 1.1, 1.5, 0.5, 2.2]]",
+    "vki_cut_pair": "SM_VKI_Wall_Ashlar_Plain_150A_Full",
+    "vki_family": "Ashlar",
+    "vki_footprint": "0,-0.2801,1.5,0.2801",
+    "vki_fp_cells": "1,1",
+    "vki_height": "Cut",
+    "vki_kind": "Plain",
+    "vki_len": 1.5,
+    "vki_nav": "block",
+    "vki_open_ends": 1,
+    "vki_origin": "start_node",
+    "vki_piece": "SM_VKI_Wall_Ashlar_Plain_150A_Cut",
+    "vki_room_role": "S",
+    "vki_rot": 180,
+    "vki_rot_lock": "none",
+    "vki_thick": 0.5,
+    "vki_uv_lock": "world",
+    "vki_var": "A"
+   },
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Shell",
+   "mat": {},
+   "name": "Chapel_F0_Wall_Ashlar_Lancet_150_Cut",
+   "p": [
+    -3.0,
+    0.0,
+    0.0
+   ],
+   "piece": "SM_VKI_Wall_Ashlar_Lancet_150_Cut",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[3.0, 0.0]",
+    "vki_class": "wall",
+    "vki_collider": "[[0.75, 0.0, 1.1, 1.5, 0.5, 2.2]]",
+    "vki_cut_pair": "SM_VKI_Wall_Ashlar_Lancet_150_Full",
+    "vki_family": "Ashlar",
+    "vki_footprint": "0,-0.2801,1.5,0.2801",
+    "vki_fp_cells": "1,1",
+    "vki_height": "Cut",
+    "vki_kind": "Lancet",
+    "vki_len": 1.5,
+    "vki_light_pool": "[0.75, -1.2, 0.0]",
+    "vki_nav": "block",
+    "vki_open_ends": 1,
+    "vki_opening": "{\"x0\": 0.33, \"x1\": 1.17, \"z0\": 1.0, \"z1\": 3.651, \"cut\": 1}",
+    "vki_origin": "start_node",
+    "vki_piece": "SM_VKI_Wall_Ashlar_Lancet_150_Cut",
+    "vki_room_role": "S",
+    "vki_rot": 180,
+    "vki_rot_lock": "none",
+    "vki_thick": 0.5,
+    "vki_uv_lock": "world"
+   },
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Shell",
+   "mat": {},
+   "name": "Chapel_F0_Wall_Ashlar_Plain_150A_Cut.001",
+   "p": [
+    -4.5,
+    0.0,
+    0.0
+   ],
+   "piece": "SM_VKI_Wall_Ashlar_Plain_150A_Cut",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[4.5, 0.0]",
+    "vki_class": "wall",
+    "vki_collider": "[[0.75, 0.0, 1.1, 1.5, 0.5, 2.2]]",
+    "vki_cut_pair": "SM_VKI_Wall_Ashlar_Plain_150A_Full",
+    "vki_family": "Ashlar",
+    "vki_footprint": "0,-0.2801,1.5,0.2801",
+    "vki_fp_cells": "1,1",
+    "vki_height": "Cut",
+    "vki_kind": "Plain",
+    "vki_len": 1.5,
+    "vki_nav": "block",
+    "vki_open_ends": 1,
+    "vki_origin": "start_node",
+    "vki_piece": "SM_VKI_Wall_Ashlar_Plain_150A_Cut",
+    "vki_room_role": "S",
+    "vki_rot": 180,
+    "vki_rot_lock": "none",
+    "vki_thick": 0.5,
+    "vki_uv_lock": "world",
+    "vki_var": "A"
+   },
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Shell",
+   "mat": {},
+   "name": "Chapel_F0_Wall_Ashlar_DoorWide_300_Cut",
+   "p": [
+    -7.5,
+    0.0,
+    0.0
+   ],
+   "piece": "SM_VKI_Wall_Ashlar_DoorWide_300_Cut",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[7.5, 0.0]",
+    "vki_class": "wall",
+    "vki_collider": "[[0.35, 0.0, 1.1, 0.7, 0.5, 2.2], [2.65, 0.0, 1.1, 0.7000000000000002, 0.5, 2.2]]",
+    "vki_cut_pair": "SM_VKI_Wall_Ashlar_DoorWide_300_Full",
+    "vki_facing_min": 60,
+    "vki_family": "Ashlar",
+    "vki_footprint": "0,-0.2801,3,0.2801",
+    "vki_fp_cells": "2,1",
+    "vki_height": "Cut",
+    "vki_kind": "DoorWide",
+    "vki_leaf": "[\"SM_VKI_Leaf_Wide_Cut_L\", \"SM_VKI_Leaf_Wide_Cut_R\"]",
+    "vki_leaf_open_deg": 90,
+    "vki_leaf_socket": "[[0.7, -0.09, 0.0], [2.3, -0.09, 0.0]]",
+    "vki_leaf_width_max": 0.795,
+    "vki_len": 3.0,
+    "vki_link": "exit",
+    "vki_link_id": "front",
+    "vki_nav": "door",
+    "vki_nav_open": "[0.7, 2.3]",
+    "vki_open_ends": 1,
+    "vki_opening": "{\"x0\": 0.7, \"x1\": 2.3, \"z0\": 0.0, \"z1\": 1.0, \"spring\": 2.2, \"pointed\": 1}",
+    "vki_origin": "start_node",
+    "vki_piece": "SM_VKI_Wall_Ashlar_DoorWide_300_Cut",
+    "vki_prompt": "Leave",
+    "vki_prompt_local": "[1.5, -0.3, 1.4]",
+    "vki_room_role": "S",
+    "vki_rot": 180,
+    "vki_rot_lock": "none",
+    "vki_spawn_local": "[1.5, -1.6]",
+    "vki_target": "@return",
+    "vki_thick": 0.5,
+    "vki_trigger": "[1.5, -0.65, 1.0, 1.9, 0.8, 2.0]",
+    "vki_uv_lock": "world"
+   },
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Shell",
+   "mat": {},
+   "name": "Chapel_F0_Leaf_Wide_Cut_L",
+   "p": [
+    -6.8,
+    0.0,
+    -0.09
+   ],
+   "piece": "SM_VKI_Leaf_Wide_Cut_L",
+   "props": {
+    "grid_m": 1.5,
+    "hinge_axis": "local Z",
+    "kit": "VillageInterior",
+    "vki_at": "[6.8, 0.09]",
+    "vki_class": "leaf",
+    "vki_collider": "[[0.45, 0.0306, 0.51, 0.89, 0.1309, 0.95]]",
+    "vki_footprint": "0.005,-0.0349,0.895,0.0961",
+    "vki_fp_cells": "1,1",
+    "vki_height": "Cut",
+    "vki_hinge": "[0.0, 0.0, 0.0]",
+    "vki_kind": "Wide",
+    "vki_leaf_clearance": 0.005,
+    "vki_leaf_deg": 0.0,
+    "vki_leaf_door": "Chapel_F0_Wall_Ashlar_DoorWide_300_Cut",
+    "vki_leaf_fits": "SM_VKI_Wall_Stone_DoorWide_300_Cut at vki_leaf_socket[0], same rotation",
+    "vki_leaf_height": 0.95,
+    "vki_leaf_open_deg": 90,
+    "vki_leaf_open_dir": "rotation -deg about local Z (toward the room, -Y)",
+    "vki_leaf_side": "L",
+    "vki_leaf_state": "closed",
+    "vki_leaf_width": 0.89,
+    "vki_nav": "block",
+    "vki_origin": "hinge",
+    "vki_piece": "SM_VKI_Leaf_Wide_Cut_L",
+    "vki_rot": 180,
+    "vki_rot_lock": "none",
+    "vki_uv_lock": "local",
+    "vki_var": "L"
+   },
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Shell",
+   "mat": {},
+   "name": "Chapel_F0_Leaf_Wide_Cut_R",
+   "p": [
+    -5.2,
+    0.0,
+    -0.09
+   ],
+   "piece": "SM_VKI_Leaf_Wide_Cut_R",
+   "props": {
+    "grid_m": 1.5,
+    "hinge_axis": "local Z",
+    "kit": "VillageInterior",
+    "vki_at": "[5.2, 0.09]",
+    "vki_class": "leaf",
+    "vki_collider": "[[-0.45, 0.0306, 0.51, 0.89, 0.1309, 0.95]]",
+    "vki_footprint": "-0.895,-0.0349,-0.005,0.0961",
+    "vki_fp_cells": "1,1",
+    "vki_height": "Cut",
+    "vki_hinge": "[0.0, 0.0, 0.0]",
+    "vki_kind": "Wide",
+    "vki_leaf_clearance": 0.005,
+    "vki_leaf_deg": 0.0,
+    "vki_leaf_door": "Chapel_F0_Wall_Ashlar_DoorWide_300_Cut",
+    "vki_leaf_fits": "SM_VKI_Wall_Stone_DoorWide_300_Cut at vki_leaf_socket[1], same rotation",
+    "vki_leaf_height": 0.95,
+    "vki_leaf_open_deg": 90,
+    "vki_leaf_open_dir": "rotation +deg about local Z (toward the room, -Y)",
+    "vki_leaf_side": "R",
+    "vki_leaf_state": "closed",
+    "vki_leaf_width": 0.89,
+    "vki_nav": "block",
+    "vki_origin": "hinge",
+    "vki_piece": "SM_VKI_Leaf_Wide_Cut_R",
+    "vki_rot": 180,
+    "vki_rot_lock": "none",
+    "vki_uv_lock": "local",
+    "vki_var": "R"
+   },
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Shell",
+   "mat": {},
+   "name": "Chapel_F0_Apron_Wide_300x150",
+   "p": [
+    -7.5,
+    0.0,
+    0.0
+   ],
+   "piece": "SM_VKI_Apron_Wide_300x150",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[7.5, 0.0]",
+    "vki_class": "link",
+    "vki_collider": "[[1.5, 0.9, -0.0338, 3.0, 1.5, 0.1325]]",
+    "vki_footprint": "0,0.1499,3,1.6501",
+    "vki_fp_cells": "2,1",
+    "vki_kind": "ApronWide",
+    "vki_len": 3.0,
+    "vki_lights": "[{\"type\": \"AREA\", \"role\": \"apron\", \"pos\": [1.5, 1.1, 2.6], \"aim\": [1.5, 0.2, 0.0], \"size\": 1.6, \"w_day\": 60.0, \"w_night\": 25.0, \"color_day\": [0.8, 0.87, 1.0], \"color_night\": [0.62, 0.7, 1.0], \"shadows\": 1}]",
+    "vki_nav": "walk",
+    "vki_origin": "door_origin",
+    "vki_piece": "SM_VKI_Apron_Wide_300x150",
+    "vki_place_rule": "same origin and rotation as its DoorWide_300 piece",
+    "vki_rot": 180,
+    "vki_rot_lock": "none",
+    "vki_styles": "[\"ApronCobble\", \"ApronDirt\", \"ApronGrass\"]",
+    "vki_uv_lock": "own_t4"
+   },
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Shell",
+   "mat": {},
+   "name": "Chapel_F0_Wall_Ashlar_Plain_150A_Cut.002",
+   "p": [
+    -9.0,
+    0.0,
+    0.0
+   ],
+   "piece": "SM_VKI_Wall_Ashlar_Plain_150A_Cut",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[9.0, 0.0]",
+    "vki_class": "wall",
+    "vki_collider": "[[0.75, 0.0, 1.1, 1.5, 0.5, 2.2]]",
+    "vki_cut_pair": "SM_VKI_Wall_Ashlar_Plain_150A_Full",
+    "vki_family": "Ashlar",
+    "vki_footprint": "0,-0.2801,1.5,0.2801",
+    "vki_fp_cells": "1,1",
+    "vki_height": "Cut",
+    "vki_kind": "Plain",
+    "vki_len": 1.5,
+    "vki_nav": "block",
+    "vki_open_ends": 1,
+    "vki_origin": "start_node",
+    "vki_piece": "SM_VKI_Wall_Ashlar_Plain_150A_Cut",
+    "vki_room_role": "S",
+    "vki_rot": 180,
+    "vki_rot_lock": "none",
+    "vki_thick": 0.5,
+    "vki_uv_lock": "world",
+    "vki_var": "A"
+   },
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Shell",
+   "mat": {},
+   "name": "Chapel_F0_Wall_Ashlar_Lancet_150_Cut.001",
+   "p": [
+    -10.5,
+    0.0,
+    0.0
+   ],
+   "piece": "SM_VKI_Wall_Ashlar_Lancet_150_Cut",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[10.5, 0.0]",
+    "vki_class": "wall",
+    "vki_collider": "[[0.75, 0.0, 1.1, 1.5, 0.5, 2.2]]",
+    "vki_cut_pair": "SM_VKI_Wall_Ashlar_Lancet_150_Full",
+    "vki_family": "Ashlar",
+    "vki_footprint": "0,-0.2801,1.5,0.2801",
+    "vki_fp_cells": "1,1",
+    "vki_height": "Cut",
+    "vki_kind": "Lancet",
+    "vki_len": 1.5,
+    "vki_light_pool": "[0.75, -1.2, 0.0]",
+    "vki_nav": "block",
+    "vki_open_ends": 1,
+    "vki_opening": "{\"x0\": 0.33, \"x1\": 1.17, \"z0\": 1.0, \"z1\": 3.651, \"cut\": 1}",
+    "vki_origin": "start_node",
+    "vki_piece": "SM_VKI_Wall_Ashlar_Lancet_150_Cut",
+    "vki_room_role": "S",
+    "vki_rot": 180,
+    "vki_rot_lock": "none",
+    "vki_thick": 0.5,
+    "vki_uv_lock": "world"
+   },
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Shell",
+   "mat": {},
+   "name": "Chapel_F0_Wall_Ashlar_Plain_150A_Cut.003",
+   "p": [
+    -12.0,
+    0.0,
+    0.0
+   ],
+   "piece": "SM_VKI_Wall_Ashlar_Plain_150A_Cut",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[12.0, 0.0]",
+    "vki_class": "wall",
+    "vki_collider": "[[0.75, 0.0, 1.1, 1.5, 0.5, 2.2]]",
+    "vki_cut_pair": "SM_VKI_Wall_Ashlar_Plain_150A_Full",
+    "vki_family": "Ashlar",
+    "vki_footprint": "0,-0.2801,1.5,0.2801",
+    "vki_fp_cells": "1,1",
+    "vki_height": "Cut",
+    "vki_kind": "Plain",
+    "vki_len": 1.5,
+    "vki_nav": "block",
+    "vki_open_ends": 1,
+    "vki_origin": "start_node",
+    "vki_piece": "SM_VKI_Wall_Ashlar_Plain_150A_Cut",
+    "vki_room_role": "S",
+    "vki_rot": 180,
+    "vki_rot_lock": "none",
+    "vki_thick": 0.5,
+    "vki_uv_lock": "world",
+    "vki_var": "A"
+   },
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Shell",
+   "mat": {},
+   "name": "Chapel_F0_Wall_Ashlar_Plain_300_Full",
+   "p": [
+    0.0,
+    0.0,
+    -9.0
+   ],
+   "piece": "SM_VKI_Wall_Ashlar_Plain_300_Full",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[0.0, 9.0]",
+    "vki_class": "wall",
+    "vki_collider": "[[1.5, 0.0, 1.1, 3.0, 0.5, 2.2]]",
+    "vki_cut_pair": "SM_VKI_Wall_Ashlar_Plain_300_Cut",
+    "vki_family": "Ashlar",
+    "vki_footprint": "0,-0.2801,3,0.2801",
+    "vki_fp_cells": "2,1",
+    "vki_height": "Full",
+    "vki_kind": "Plain",
+    "vki_len": 3.0,
+    "vki_nav": "block",
+    "vki_open_ends": 1,
+    "vki_origin": "start_node",
+    "vki_piece": "SM_VKI_Wall_Ashlar_Plain_300_Full",
+    "vki_room_role": "N",
+    "vki_rot": 0,
+    "vki_rot_lock": "none",
+    "vki_thick": 0.5,
+    "vki_uv_lock": "world"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Shell",
+   "mat": {},
+   "name": "Chapel_F0_Wall_Ashlar_Lancet_150_Full",
+   "p": [
+    -3.0,
+    0.0,
+    -9.0
+   ],
+   "piece": "SM_VKI_Wall_Ashlar_Lancet_150_Full",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[3.0, 9.0]",
+    "vki_class": "wall",
+    "vki_collider": "[[0.75, 0.0, 1.1, 1.5, 0.5, 2.2]]",
+    "vki_cut_pair": "SM_VKI_Wall_Ashlar_Lancet_150_Cut",
+    "vki_family": "Ashlar",
+    "vki_footprint": "0,-0.2801,1.5,0.2801",
+    "vki_fp_cells": "1,1",
+    "vki_height": "Full",
+    "vki_kind": "Lancet",
+    "vki_len": 1.5,
+    "vki_lights": "[{\"type\": \"SPOT\", \"role\": \"lancet\", \"pos\": [0.75, 2.2, 5.0], \"aim\": [0.75, -1.6, 0.0], \"cone\": 24.0, \"blend\": 0.15, \"radius\": 0.05, \"w_day\": 800.0, \"w_night\": 120.0, \"color_day\": [1.0, 0.86, 0.72], \"color_night\": [0.66, 0.62, 0.95], \"shadows\": 1}]",
+    "vki_nav": "block",
+    "vki_open_ends": 1,
+    "vki_opening": "{\"x0\": 0.33, \"x1\": 1.17, \"z0\": 1.0, \"z1\": 3.651, \"glass\": [0.45, 1.05, 3.465], \"spring\": 3.0}",
+    "vki_origin": "start_node",
+    "vki_piece": "SM_VKI_Wall_Ashlar_Lancet_150_Full",
+    "vki_room_role": "N",
+    "vki_rot": 0,
+    "vki_rot_lock": "none",
+    "vki_thick": 0.5,
+    "vki_uv_lock": "world"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Shell",
+   "mat": {},
+   "name": "Chapel_F0_Wall_Ashlar_LancetTall_150_Full",
+   "p": [
+    -4.5,
+    0.0,
+    -9.0
+   ],
+   "piece": "SM_VKI_Wall_Ashlar_LancetTall_150_Full",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[4.5, 9.0]",
+    "vki_class": "wall",
+    "vki_collider": "[[0.75, 0.0, 1.1, 1.5, 0.5, 2.2]]",
+    "vki_cut_to": "SM_VKI_Wall_Ashlar_Lancet_150_Cut",
+    "vki_family": "Ashlar",
+    "vki_footprint": "0,-0.2801,1.5,0.2801",
+    "vki_fp_cells": "1,1",
+    "vki_height": "Full",
+    "vki_kind": "LancetTall",
+    "vki_len": 1.5,
+    "vki_lights": "[{\"type\": \"SPOT\", \"role\": \"lancet\", \"pos\": [0.75, 2.2, 5.0], \"aim\": [0.75, -1.6, 0.0], \"cone\": 24.0, \"blend\": 0.15, \"radius\": 0.05, \"w_day\": 800.0, \"w_night\": 120.0, \"color_day\": [1.0, 0.86, 0.72], \"color_night\": [0.66, 0.62, 0.95], \"shadows\": 1}]",
+    "vki_nav": "block",
+    "vki_open_ends": 1,
+    "vki_opening": "{\"x0\": 0.33, \"x1\": 1.17, \"z0\": 1.0, \"z1\": 3.951, \"glass\": [0.45, 1.05, 3.765], \"spring\": 3.3}",
+    "vki_origin": "start_node",
+    "vki_piece": "SM_VKI_Wall_Ashlar_LancetTall_150_Full",
+    "vki_room_role": "N",
+    "vki_rot": 0,
+    "vki_rot_lock": "none",
+    "vki_thick": 0.5,
+    "vki_uv_lock": "world"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Shell",
+   "mat": {},
+   "name": "Chapel_F0_Wall_Ashlar_LancetTall_150_Full.001",
+   "p": [
+    -6.0,
+    0.0,
+    -9.0
+   ],
+   "piece": "SM_VKI_Wall_Ashlar_LancetTall_150_Full",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[6.0, 9.0]",
+    "vki_class": "wall",
+    "vki_collider": "[[0.75, 0.0, 1.1, 1.5, 0.5, 2.2]]",
+    "vki_cut_to": "SM_VKI_Wall_Ashlar_Lancet_150_Cut",
+    "vki_family": "Ashlar",
+    "vki_footprint": "0,-0.2801,1.5,0.2801",
+    "vki_fp_cells": "1,1",
+    "vki_height": "Full",
+    "vki_kind": "LancetTall",
+    "vki_len": 1.5,
+    "vki_lights": "[{\"type\": \"SPOT\", \"role\": \"lancet\", \"pos\": [0.75, 2.2, 5.0], \"aim\": [0.75, -1.6, 0.0], \"cone\": 24.0, \"blend\": 0.15, \"radius\": 0.05, \"w_day\": 800.0, \"w_night\": 120.0, \"color_day\": [1.0, 0.86, 0.72], \"color_night\": [0.66, 0.62, 0.95], \"shadows\": 1}]",
+    "vki_nav": "block",
+    "vki_open_ends": 1,
+    "vki_opening": "{\"x0\": 0.33, \"x1\": 1.17, \"z0\": 1.0, \"z1\": 3.951, \"glass\": [0.45, 1.05, 3.765], \"spring\": 3.3}",
+    "vki_origin": "start_node",
+    "vki_piece": "SM_VKI_Wall_Ashlar_LancetTall_150_Full",
+    "vki_room_role": "N",
+    "vki_rot": 0,
+    "vki_rot_lock": "none",
+    "vki_thick": 0.5,
+    "vki_uv_lock": "world"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Shell",
+   "mat": {},
+   "name": "Chapel_F0_Wall_Ashlar_Lancet_150_Full.001",
+   "p": [
+    -7.5,
+    0.0,
+    -9.0
+   ],
+   "piece": "SM_VKI_Wall_Ashlar_Lancet_150_Full",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[7.5, 9.0]",
+    "vki_class": "wall",
+    "vki_collider": "[[0.75, 0.0, 1.1, 1.5, 0.5, 2.2]]",
+    "vki_cut_pair": "SM_VKI_Wall_Ashlar_Lancet_150_Cut",
+    "vki_family": "Ashlar",
+    "vki_footprint": "0,-0.2801,1.5,0.2801",
+    "vki_fp_cells": "1,1",
+    "vki_height": "Full",
+    "vki_kind": "Lancet",
+    "vki_len": 1.5,
+    "vki_lights": "[{\"type\": \"SPOT\", \"role\": \"lancet\", \"pos\": [0.75, 2.2, 5.0], \"aim\": [0.75, -1.6, 0.0], \"cone\": 24.0, \"blend\": 0.15, \"radius\": 0.05, \"w_day\": 800.0, \"w_night\": 120.0, \"color_day\": [1.0, 0.86, 0.72], \"color_night\": [0.66, 0.62, 0.95], \"shadows\": 1}]",
+    "vki_nav": "block",
+    "vki_open_ends": 1,
+    "vki_opening": "{\"x0\": 0.33, \"x1\": 1.17, \"z0\": 1.0, \"z1\": 3.651, \"glass\": [0.45, 1.05, 3.465], \"spring\": 3.0}",
+    "vki_origin": "start_node",
+    "vki_piece": "SM_VKI_Wall_Ashlar_Lancet_150_Full",
+    "vki_room_role": "N",
+    "vki_rot": 0,
+    "vki_rot_lock": "none",
+    "vki_thick": 0.5,
+    "vki_uv_lock": "world"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Shell",
+   "mat": {},
+   "name": "Chapel_F0_Wall_Ashlar_Plain_300_Full.001",
+   "p": [
+    -9.0,
+    0.0,
+    -9.0
+   ],
+   "piece": "SM_VKI_Wall_Ashlar_Plain_300_Full",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[9.0, 9.0]",
+    "vki_class": "wall",
+    "vki_collider": "[[1.5, 0.0, 1.1, 3.0, 0.5, 2.2]]",
+    "vki_cut_pair": "SM_VKI_Wall_Ashlar_Plain_300_Cut",
+    "vki_family": "Ashlar",
+    "vki_footprint": "0,-0.2801,3,0.2801",
+    "vki_fp_cells": "2,1",
+    "vki_height": "Full",
+    "vki_kind": "Plain",
+    "vki_len": 3.0,
+    "vki_nav": "block",
+    "vki_open_ends": 1,
+    "vki_origin": "start_node",
+    "vki_piece": "SM_VKI_Wall_Ashlar_Plain_300_Full",
+    "vki_room_role": "N",
+    "vki_rot": 0,
+    "vki_rot_lock": "none",
+    "vki_thick": 0.5,
+    "vki_uv_lock": "world"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Shell",
+   "mat": {},
+   "name": "Chapel_F0_Wall_Ashlar_Plain_150A_Full",
+   "p": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "piece": "SM_VKI_Wall_Ashlar_Plain_150A_Full",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[0.0, 0.0]",
+    "vki_class": "wall",
+    "vki_collider": "[[0.75, 0.0, 1.1, 1.5, 0.5, 2.2]]",
+    "vki_cut_pair": "SM_VKI_Wall_Ashlar_Plain_150A_Cut",
+    "vki_family": "Ashlar",
+    "vki_footprint": "0,-0.2801,1.5,0.2801",
+    "vki_fp_cells": "1,1",
+    "vki_height": "Full",
+    "vki_kind": "Plain",
+    "vki_len": 1.5,
+    "vki_nav": "block",
+    "vki_open_ends": 1,
+    "vki_origin": "start_node",
+    "vki_piece": "SM_VKI_Wall_Ashlar_Plain_150A_Full",
+    "vki_room_role": "W",
+    "vki_rot": 90,
+    "vki_rot_lock": "none",
+    "vki_thick": 0.5,
+    "vki_uv_lock": "world",
+    "vki_var": "A"
+   },
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Shell",
+   "mat": {},
+   "name": "Chapel_F0_Wall_Ashlar_Lancet_150_Full.002",
+   "p": [
+    0.0,
+    0.0,
+    -1.5
+   ],
+   "piece": "SM_VKI_Wall_Ashlar_Lancet_150_Full",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[0.0, 1.5]",
+    "vki_class": "wall",
+    "vki_collider": "[[0.75, 0.0, 1.1, 1.5, 0.5, 2.2]]",
+    "vki_cut_pair": "SM_VKI_Wall_Ashlar_Lancet_150_Cut",
+    "vki_family": "Ashlar",
+    "vki_footprint": "0,-0.2801,1.5,0.2801",
+    "vki_fp_cells": "1,1",
+    "vki_height": "Full",
+    "vki_kind": "Lancet",
+    "vki_len": 1.5,
+    "vki_lights": "[{\"type\": \"SPOT\", \"role\": \"lancet\", \"pos\": [0.75, 2.2, 5.0], \"aim\": [0.75, -1.6, 0.0], \"cone\": 24.0, \"blend\": 0.15, \"radius\": 0.05, \"w_day\": 800.0, \"w_night\": 120.0, \"color_day\": [1.0, 0.86, 0.72], \"color_night\": [0.66, 0.62, 0.95], \"shadows\": 1}]",
+    "vki_nav": "block",
+    "vki_open_ends": 1,
+    "vki_opening": "{\"x0\": 0.33, \"x1\": 1.17, \"z0\": 1.0, \"z1\": 3.651, \"glass\": [0.45, 1.05, 3.465], \"spring\": 3.0}",
+    "vki_origin": "start_node",
+    "vki_piece": "SM_VKI_Wall_Ashlar_Lancet_150_Full",
+    "vki_room_role": "W",
+    "vki_rot": 90,
+    "vki_rot_lock": "none",
+    "vki_thick": 0.5,
+    "vki_uv_lock": "world"
+   },
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Shell",
+   "mat": {},
+   "name": "Chapel_F0_Wall_Ashlar_Plain_150A_Full.001",
+   "p": [
+    0.0,
+    0.0,
+    -3.0
+   ],
+   "piece": "SM_VKI_Wall_Ashlar_Plain_150A_Full",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[0.0, 3.0]",
+    "vki_class": "wall",
+    "vki_collider": "[[0.75, 0.0, 1.1, 1.5, 0.5, 2.2]]",
+    "vki_cut_pair": "SM_VKI_Wall_Ashlar_Plain_150A_Cut",
+    "vki_family": "Ashlar",
+    "vki_footprint": "0,-0.2801,1.5,0.2801",
+    "vki_fp_cells": "1,1",
+    "vki_height": "Full",
+    "vki_kind": "Plain",
+    "vki_len": 1.5,
+    "vki_nav": "block",
+    "vki_open_ends": 1,
+    "vki_origin": "start_node",
+    "vki_piece": "SM_VKI_Wall_Ashlar_Plain_150A_Full",
+    "vki_room_role": "W",
+    "vki_rot": 90,
+    "vki_rot_lock": "none",
+    "vki_thick": 0.5,
+    "vki_uv_lock": "world",
+    "vki_var": "A"
+   },
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Shell",
+   "mat": {},
+   "name": "Chapel_F0_Wall_Ashlar_Lancet_150_Full.003",
+   "p": [
+    0.0,
+    0.0,
+    -4.5
+   ],
+   "piece": "SM_VKI_Wall_Ashlar_Lancet_150_Full",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[0.0, 4.5]",
+    "vki_class": "wall",
+    "vki_collider": "[[0.75, 0.0, 1.1, 1.5, 0.5, 2.2]]",
+    "vki_cut_pair": "SM_VKI_Wall_Ashlar_Lancet_150_Cut",
+    "vki_family": "Ashlar",
+    "vki_footprint": "0,-0.2801,1.5,0.2801",
+    "vki_fp_cells": "1,1",
+    "vki_height": "Full",
+    "vki_kind": "Lancet",
+    "vki_len": 1.5,
+    "vki_lights": "[{\"type\": \"SPOT\", \"role\": \"lancet\", \"pos\": [0.75, 2.2, 5.0], \"aim\": [0.75, -1.6, 0.0], \"cone\": 24.0, \"blend\": 0.15, \"radius\": 0.05, \"w_day\": 800.0, \"w_night\": 120.0, \"color_day\": [1.0, 0.86, 0.72], \"color_night\": [0.66, 0.62, 0.95], \"shadows\": 1}]",
+    "vki_nav": "block",
+    "vki_open_ends": 1,
+    "vki_opening": "{\"x0\": 0.33, \"x1\": 1.17, \"z0\": 1.0, \"z1\": 3.651, \"glass\": [0.45, 1.05, 3.465], \"spring\": 3.0}",
+    "vki_origin": "start_node",
+    "vki_piece": "SM_VKI_Wall_Ashlar_Lancet_150_Full",
+    "vki_room_role": "W",
+    "vki_rot": 90,
+    "vki_rot_lock": "none",
+    "vki_thick": 0.5,
+    "vki_uv_lock": "world"
+   },
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Shell",
+   "mat": {},
+   "name": "Chapel_F0_Wall_Ashlar_Plain_300_Full.002",
+   "p": [
+    0.0,
+    0.0,
+    -6.0
+   ],
+   "piece": "SM_VKI_Wall_Ashlar_Plain_300_Full",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[0.0, 6.0]",
+    "vki_class": "wall",
+    "vki_collider": "[[1.5, 0.0, 1.1, 3.0, 0.5, 2.2]]",
+    "vki_cut_pair": "SM_VKI_Wall_Ashlar_Plain_300_Cut",
+    "vki_family": "Ashlar",
+    "vki_footprint": "0,-0.2801,3,0.2801",
+    "vki_fp_cells": "2,1",
+    "vki_height": "Full",
+    "vki_kind": "Plain",
+    "vki_len": 3.0,
+    "vki_nav": "block",
+    "vki_open_ends": 1,
+    "vki_origin": "start_node",
+    "vki_piece": "SM_VKI_Wall_Ashlar_Plain_300_Full",
+    "vki_room_role": "W",
+    "vki_rot": 90,
+    "vki_rot_lock": "none",
+    "vki_thick": 0.5,
+    "vki_uv_lock": "world"
+   },
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Shell",
+   "mat": {},
+   "name": "Chapel_F0_Wall_Ashlar_Plain_150A_Full.002",
+   "p": [
+    -12.0,
+    0.0,
+    -1.5
+   ],
+   "piece": "SM_VKI_Wall_Ashlar_Plain_150A_Full",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[12.0, 1.5]",
+    "vki_class": "wall",
+    "vki_collider": "[[0.75, 0.0, 1.1, 1.5, 0.5, 2.2]]",
+    "vki_cut_pair": "SM_VKI_Wall_Ashlar_Plain_150A_Cut",
+    "vki_family": "Ashlar",
+    "vki_footprint": "0,-0.2801,1.5,0.2801",
+    "vki_fp_cells": "1,1",
+    "vki_height": "Full",
+    "vki_kind": "Plain",
+    "vki_len": 1.5,
+    "vki_nav": "block",
+    "vki_open_ends": 1,
+    "vki_origin": "start_node",
+    "vki_piece": "SM_VKI_Wall_Ashlar_Plain_150A_Full",
+    "vki_room_role": "E",
+    "vki_rot": -90,
+    "vki_rot_lock": "none",
+    "vki_thick": 0.5,
+    "vki_uv_lock": "world",
+    "vki_var": "A"
+   },
+   "r": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Shell",
+   "mat": {},
+   "name": "Chapel_F0_Wall_Ashlar_Lancet_150_Full.004",
+   "p": [
+    -12.0,
+    0.0,
+    -3.0
+   ],
+   "piece": "SM_VKI_Wall_Ashlar_Lancet_150_Full",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[12.0, 3.0]",
+    "vki_class": "wall",
+    "vki_collider": "[[0.75, 0.0, 1.1, 1.5, 0.5, 2.2]]",
+    "vki_cut_pair": "SM_VKI_Wall_Ashlar_Lancet_150_Cut",
+    "vki_family": "Ashlar",
+    "vki_footprint": "0,-0.2801,1.5,0.2801",
+    "vki_fp_cells": "1,1",
+    "vki_height": "Full",
+    "vki_kind": "Lancet",
+    "vki_len": 1.5,
+    "vki_lights": "[{\"type\": \"SPOT\", \"role\": \"lancet\", \"pos\": [0.75, 2.2, 5.0], \"aim\": [0.75, -1.6, 0.0], \"cone\": 24.0, \"blend\": 0.15, \"radius\": 0.05, \"w_day\": 800.0, \"w_night\": 120.0, \"color_day\": [1.0, 0.86, 0.72], \"color_night\": [0.66, 0.62, 0.95], \"shadows\": 1}]",
+    "vki_nav": "block",
+    "vki_open_ends": 1,
+    "vki_opening": "{\"x0\": 0.33, \"x1\": 1.17, \"z0\": 1.0, \"z1\": 3.651, \"glass\": [0.45, 1.05, 3.465], \"spring\": 3.0}",
+    "vki_origin": "start_node",
+    "vki_piece": "SM_VKI_Wall_Ashlar_Lancet_150_Full",
+    "vki_room_role": "E",
+    "vki_rot": -90,
+    "vki_rot_lock": "none",
+    "vki_thick": 0.5,
+    "vki_uv_lock": "world"
+   },
+   "r": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Shell",
+   "mat": {},
+   "name": "Chapel_F0_Wall_Ashlar_Plain_150A_Full.003",
+   "p": [
+    -12.0,
+    0.0,
+    -4.5
+   ],
+   "piece": "SM_VKI_Wall_Ashlar_Plain_150A_Full",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[12.0, 4.5]",
+    "vki_class": "wall",
+    "vki_collider": "[[0.75, 0.0, 1.1, 1.5, 0.5, 2.2]]",
+    "vki_cut_pair": "SM_VKI_Wall_Ashlar_Plain_150A_Cut",
+    "vki_family": "Ashlar",
+    "vki_footprint": "0,-0.2801,1.5,0.2801",
+    "vki_fp_cells": "1,1",
+    "vki_height": "Full",
+    "vki_kind": "Plain",
+    "vki_len": 1.5,
+    "vki_nav": "block",
+    "vki_open_ends": 1,
+    "vki_origin": "start_node",
+    "vki_piece": "SM_VKI_Wall_Ashlar_Plain_150A_Full",
+    "vki_room_role": "E",
+    "vki_rot": -90,
+    "vki_rot_lock": "none",
+    "vki_thick": 0.5,
+    "vki_uv_lock": "world",
+    "vki_var": "A"
+   },
+   "r": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Shell",
+   "mat": {},
+   "name": "Chapel_F0_Wall_Ashlar_Lancet_150_Full.005",
+   "p": [
+    -12.0,
+    0.0,
+    -6.0
+   ],
+   "piece": "SM_VKI_Wall_Ashlar_Lancet_150_Full",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[12.0, 6.0]",
+    "vki_class": "wall",
+    "vki_collider": "[[0.75, 0.0, 1.1, 1.5, 0.5, 2.2]]",
+    "vki_cut_pair": "SM_VKI_Wall_Ashlar_Lancet_150_Cut",
+    "vki_family": "Ashlar",
+    "vki_footprint": "0,-0.2801,1.5,0.2801",
+    "vki_fp_cells": "1,1",
+    "vki_height": "Full",
+    "vki_kind": "Lancet",
+    "vki_len": 1.5,
+    "vki_lights": "[{\"type\": \"SPOT\", \"role\": \"lancet\", \"pos\": [0.75, 2.2, 5.0], \"aim\": [0.75, -1.6, 0.0], \"cone\": 24.0, \"blend\": 0.15, \"radius\": 0.05, \"w_day\": 800.0, \"w_night\": 120.0, \"color_day\": [1.0, 0.86, 0.72], \"color_night\": [0.66, 0.62, 0.95], \"shadows\": 1}]",
+    "vki_nav": "block",
+    "vki_open_ends": 1,
+    "vki_opening": "{\"x0\": 0.33, \"x1\": 1.17, \"z0\": 1.0, \"z1\": 3.651, \"glass\": [0.45, 1.05, 3.465], \"spring\": 3.0}",
+    "vki_origin": "start_node",
+    "vki_piece": "SM_VKI_Wall_Ashlar_Lancet_150_Full",
+    "vki_room_role": "E",
+    "vki_rot": -90,
+    "vki_rot_lock": "none",
+    "vki_thick": 0.5,
+    "vki_uv_lock": "world"
+   },
+   "r": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Shell",
+   "mat": {},
+   "name": "Chapel_F0_Wall_Ashlar_Plain_300_Full.003",
+   "p": [
+    -12.0,
+    0.0,
+    -9.0
+   ],
+   "piece": "SM_VKI_Wall_Ashlar_Plain_300_Full",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[12.0, 9.0]",
+    "vki_class": "wall",
+    "vki_collider": "[[1.5, 0.0, 1.1, 3.0, 0.5, 2.2]]",
+    "vki_cut_pair": "SM_VKI_Wall_Ashlar_Plain_300_Cut",
+    "vki_family": "Ashlar",
+    "vki_footprint": "0,-0.2801,3,0.2801",
+    "vki_fp_cells": "2,1",
+    "vki_height": "Full",
+    "vki_kind": "Plain",
+    "vki_len": 3.0,
+    "vki_nav": "block",
+    "vki_open_ends": 1,
+    "vki_origin": "start_node",
+    "vki_piece": "SM_VKI_Wall_Ashlar_Plain_300_Full",
+    "vki_room_role": "E",
+    "vki_rot": -90,
+    "vki_rot_lock": "none",
+    "vki_thick": 0.5,
+    "vki_uv_lock": "world"
+   },
+   "r": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Shell",
+   "mat": {},
+   "name": "Chapel_F0_Post_Ashlar_Corner_Full",
+   "p": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "piece": "SM_VKI_Post_Ashlar_Corner_Full",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[0.0, 0.0]",
+    "vki_class": "post",
+    "vki_collider": "[[0.0, 0.0, 1.1, 0.62, 0.62, 2.2]]",
+    "vki_cut_pair": "SM_VKI_Post_Ashlar_Corner_Cut",
+    "vki_family": "Ashlar",
+    "vki_footprint": "-0.3101,-0.3101,0.3101,0.3101",
+    "vki_fp_cells": "1,1",
+    "vki_height": "Full",
+    "vki_kind": "Corner",
+    "vki_nav": "block",
+    "vki_origin": "node_centre",
+    "vki_piece": "SM_VKI_Post_Ashlar_Corner_Full",
+    "vki_post_rule": "{\"role\": \"corner\", \"height\": \"Full\", \"rule\": \"L/T/X junction (required, T12 error if missing); SW/SE pillars of the chapel (Ashlar uses pillars, never rakes, \\u00a72.4); height = tallest wall-end height present\", \"toggle_to\": \"SM_VKI_Post_Ashlar_Corner_Cut\", \"orient\": \"any\"}",
+    "vki_rot": 0,
+    "vki_rot_lock": "none",
+    "vki_thick": 0.5,
+    "vki_uv_lock": "local"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Shell",
+   "mat": {},
+   "name": "Chapel_F0_Post_Ashlar_Corner_Full.001",
+   "p": [
+    0.0,
+    0.0,
+    -9.0
+   ],
+   "piece": "SM_VKI_Post_Ashlar_Corner_Full",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[0.0, 9.0]",
+    "vki_class": "post",
+    "vki_collider": "[[0.0, 0.0, 1.1, 0.62, 0.62, 2.2]]",
+    "vki_cut_pair": "SM_VKI_Post_Ashlar_Corner_Cut",
+    "vki_family": "Ashlar",
+    "vki_footprint": "-0.3101,-0.3101,0.3101,0.3101",
+    "vki_fp_cells": "1,1",
+    "vki_height": "Full",
+    "vki_kind": "Corner",
+    "vki_nav": "block",
+    "vki_origin": "node_centre",
+    "vki_piece": "SM_VKI_Post_Ashlar_Corner_Full",
+    "vki_post_rule": "{\"role\": \"corner\", \"height\": \"Full\", \"rule\": \"L/T/X junction (required, T12 error if missing); SW/SE pillars of the chapel (Ashlar uses pillars, never rakes, \\u00a72.4); height = tallest wall-end height present\", \"toggle_to\": \"SM_VKI_Post_Ashlar_Corner_Cut\", \"orient\": \"any\"}",
+    "vki_rot": 0,
+    "vki_rot_lock": "none",
+    "vki_thick": 0.5,
+    "vki_uv_lock": "local"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Shell",
+   "mat": {},
+   "name": "Chapel_F0_Post_Ashlar_Corner_Full.002",
+   "p": [
+    -12.0,
+    0.0,
+    0.0
+   ],
+   "piece": "SM_VKI_Post_Ashlar_Corner_Full",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[12.0, 0.0]",
+    "vki_class": "post",
+    "vki_collider": "[[0.0, 0.0, 1.1, 0.62, 0.62, 2.2]]",
+    "vki_cut_pair": "SM_VKI_Post_Ashlar_Corner_Cut",
+    "vki_family": "Ashlar",
+    "vki_footprint": "-0.3101,-0.3101,0.3101,0.3101",
+    "vki_fp_cells": "1,1",
+    "vki_height": "Full",
+    "vki_kind": "Corner",
+    "vki_nav": "block",
+    "vki_origin": "node_centre",
+    "vki_piece": "SM_VKI_Post_Ashlar_Corner_Full",
+    "vki_post_rule": "{\"role\": \"corner\", \"height\": \"Full\", \"rule\": \"L/T/X junction (required, T12 error if missing); SW/SE pillars of the chapel (Ashlar uses pillars, never rakes, \\u00a72.4); height = tallest wall-end height present\", \"toggle_to\": \"SM_VKI_Post_Ashlar_Corner_Cut\", \"orient\": \"any\"}",
+    "vki_rot": 0,
+    "vki_rot_lock": "none",
+    "vki_thick": 0.5,
+    "vki_uv_lock": "local"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Shell",
+   "mat": {},
+   "name": "Chapel_F0_Post_Ashlar_Corner_Full.003",
+   "p": [
+    -12.0,
+    0.0,
+    -9.0
+   ],
+   "piece": "SM_VKI_Post_Ashlar_Corner_Full",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[12.0, 9.0]",
+    "vki_class": "post",
+    "vki_collider": "[[0.0, 0.0, 1.1, 0.62, 0.62, 2.2]]",
+    "vki_cut_pair": "SM_VKI_Post_Ashlar_Corner_Cut",
+    "vki_family": "Ashlar",
+    "vki_footprint": "-0.3101,-0.3101,0.3101,0.3101",
+    "vki_fp_cells": "1,1",
+    "vki_height": "Full",
+    "vki_kind": "Corner",
+    "vki_nav": "block",
+    "vki_origin": "node_centre",
+    "vki_piece": "SM_VKI_Post_Ashlar_Corner_Full",
+    "vki_post_rule": "{\"role\": \"corner\", \"height\": \"Full\", \"rule\": \"L/T/X junction (required, T12 error if missing); SW/SE pillars of the chapel (Ashlar uses pillars, never rakes, \\u00a72.4); height = tallest wall-end height present\", \"toggle_to\": \"SM_VKI_Post_Ashlar_Corner_Cut\", \"orient\": \"any\"}",
+    "vki_rot": 0,
+    "vki_rot_lock": "none",
+    "vki_thick": 0.5,
+    "vki_uv_lock": "local"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Shell",
+   "mat": {
+    "55": "M_VKI_Flag"
+   },
+   "name": "Chapel_F0_Floor_Dais_300",
+   "p": [
+    0.0,
+    0.0,
+    -6.0
+   ],
+   "piece": "SM_VKI_Floor_Dais_300",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[0.0, 6.0]",
+    "vki_class": "floor",
+    "vki_collider": "[[1.5, 1.5, 0.05, 3.0, 3.0, 0.3]]",
+    "vki_footprint": "0,0,3,3",
+    "vki_fp_cells": "2,2",
+    "vki_kind": "Dais",
+    "vki_len": 3.0,
+    "vki_nav": "walk",
+    "vki_note": "top FLOOR takes the zone's floor style (e.g. Flag); props on it stand at z 0.20",
+    "vki_origin": "min_corner",
+    "vki_piece": "SM_VKI_Floor_Dais_300",
+    "vki_place_rule": "even nodes only (x, y multiples of 3.0); nosing on the -Y edge",
+    "vki_rot": 0,
+    "vki_rot_lock": "world0",
+    "vki_step": 0.2,
+    "vki_style": "{\"floor\": \"Flag\"}",
+    "vki_uv_lock": "world"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Shell",
+   "mat": {
+    "55": "M_VKI_Flag"
+   },
+   "name": "Chapel_F0_Floor_Dais_300.001",
+   "p": [
+    -3.0,
+    0.0,
+    -6.0
+   ],
+   "piece": "SM_VKI_Floor_Dais_300",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[3.0, 6.0]",
+    "vki_class": "floor",
+    "vki_collider": "[[1.5, 1.5, 0.05, 3.0, 3.0, 0.3]]",
+    "vki_footprint": "0,0,3,3",
+    "vki_fp_cells": "2,2",
+    "vki_kind": "Dais",
+    "vki_len": 3.0,
+    "vki_nav": "walk",
+    "vki_note": "top FLOOR takes the zone's floor style (e.g. Flag); props on it stand at z 0.20",
+    "vki_origin": "min_corner",
+    "vki_piece": "SM_VKI_Floor_Dais_300",
+    "vki_place_rule": "even nodes only (x, y multiples of 3.0); nosing on the -Y edge",
+    "vki_rot": 0,
+    "vki_rot_lock": "world0",
+    "vki_step": 0.2,
+    "vki_style": "{\"floor\": \"Flag\"}",
+    "vki_uv_lock": "world"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Shell",
+   "mat": {
+    "55": "M_VKI_Flag"
+   },
+   "name": "Chapel_F0_Floor_Dais_300.002",
+   "p": [
+    -6.0,
+    0.0,
+    -6.0
+   ],
+   "piece": "SM_VKI_Floor_Dais_300",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[6.0, 6.0]",
+    "vki_class": "floor",
+    "vki_collider": "[[1.5, 1.5, 0.05, 3.0, 3.0, 0.3]]",
+    "vki_footprint": "0,0,3,3",
+    "vki_fp_cells": "2,2",
+    "vki_kind": "Dais",
+    "vki_len": 3.0,
+    "vki_nav": "walk",
+    "vki_note": "top FLOOR takes the zone's floor style (e.g. Flag); props on it stand at z 0.20",
+    "vki_origin": "min_corner",
+    "vki_piece": "SM_VKI_Floor_Dais_300",
+    "vki_place_rule": "even nodes only (x, y multiples of 3.0); nosing on the -Y edge",
+    "vki_rot": 0,
+    "vki_rot_lock": "world0",
+    "vki_step": 0.2,
+    "vki_style": "{\"floor\": \"Flag\"}",
+    "vki_uv_lock": "world"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Shell",
+   "mat": {
+    "55": "M_VKI_Flag"
+   },
+   "name": "Chapel_F0_Floor_Dais_300.003",
+   "p": [
+    -9.0,
+    0.0,
+    -6.0
+   ],
+   "piece": "SM_VKI_Floor_Dais_300",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[9.0, 6.0]",
+    "vki_class": "floor",
+    "vki_collider": "[[1.5, 1.5, 0.05, 3.0, 3.0, 0.3]]",
+    "vki_footprint": "0,0,3,3",
+    "vki_fp_cells": "2,2",
+    "vki_kind": "Dais",
+    "vki_len": 3.0,
+    "vki_nav": "walk",
+    "vki_note": "top FLOOR takes the zone's floor style (e.g. Flag); props on it stand at z 0.20",
+    "vki_origin": "min_corner",
+    "vki_piece": "SM_VKI_Floor_Dais_300",
+    "vki_place_rule": "even nodes only (x, y multiples of 3.0); nosing on the -Y edge",
+    "vki_rot": 0,
+    "vki_rot_lock": "world0",
+    "vki_step": 0.2,
+    "vki_style": "{\"floor\": \"Flag\"}",
+    "vki_uv_lock": "world"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Shell",
+   "mat": {
+    "55": "M_VKI_FlagWarm"
+   },
+   "name": "Chapel_F0_Floor_600",
+   "p": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "piece": "SM_VKI_Floor_600",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[0.0, 0.0]",
+    "vki_class": "floor",
+    "vki_collider": "[[3.0, 3.0, -0.05, 6.0, 6.0, 0.1]]",
+    "vki_footprint": "0,0,6,6",
+    "vki_fp_cells": "4,4",
+    "vki_kind": "Slab",
+    "vki_len": 6.0,
+    "vki_nav": "walk",
+    "vki_origin": "min_corner",
+    "vki_piece": "SM_VKI_Floor_600",
+    "vki_place_rule": "even nodes only (x, y multiples of 3.0)",
+    "vki_rot": 0,
+    "vki_rot_lock": "world0",
+    "vki_style": "{\"floor\": \"FlagWarm\"}",
+    "vki_uv_lock": "world"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Shell",
+   "mat": {
+    "55": "M_VKI_FlagWarm"
+   },
+   "name": "Chapel_F0_Floor_600.001",
+   "p": [
+    -6.0,
+    0.0,
+    0.0
+   ],
+   "piece": "SM_VKI_Floor_600",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[6.0, 0.0]",
+    "vki_class": "floor",
+    "vki_collider": "[[3.0, 3.0, -0.05, 6.0, 6.0, 0.1]]",
+    "vki_footprint": "0,0,6,6",
+    "vki_fp_cells": "4,4",
+    "vki_kind": "Slab",
+    "vki_len": 6.0,
+    "vki_nav": "walk",
+    "vki_origin": "min_corner",
+    "vki_piece": "SM_VKI_Floor_600",
+    "vki_place_rule": "even nodes only (x, y multiples of 3.0)",
+    "vki_rot": 0,
+    "vki_rot_lock": "world0",
+    "vki_style": "{\"floor\": \"FlagWarm\"}",
+    "vki_uv_lock": "world"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Shell",
+   "mat": {},
+   "name": "Chapel_F0_Post_Ashlar_Mid_Full",
+   "p": [
+    0.0,
+    0.0,
+    -3.0
+   ],
+   "piece": "SM_VKI_Post_Ashlar_Mid_Full",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[0.0, 3.0]",
+    "vki_class": "post",
+    "vki_collider": "[[0.0, 0.0, 1.1, 0.24, 0.62, 2.2]]",
+    "vki_family": "Ashlar",
+    "vki_footprint": "-0.12,-0.3101,0.12,0.3101",
+    "vki_fp_cells": "1,1",
+    "vki_height": "Full",
+    "vki_kind": "Mid",
+    "vki_nav": "block",
+    "vki_origin": "node_centre",
+    "vki_piece": "SM_VKI_Post_Ashlar_Mid_Full",
+    "vki_post_rule": "{\"role\": \"mid\", \"height\": \"Full\", \"rule\": \"Full only: height/family/class step or free end at a Full wall (required); rhythm on the chapel's side walls (y 3.0 / 6.0, \\u00a72.3)\", \"toggle_to\": \"SM_VKI_Post_Ashlar_Corner_Cut\", \"orient\": \"along local x\"}",
+    "vki_rot": 90,
+    "vki_rot_lock": "none",
+    "vki_thick": 0.5,
+    "vki_uv_lock": "local"
+   },
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Shell",
+   "mat": {},
+   "name": "Chapel_F0_Post_Ashlar_Mid_Full.001",
+   "p": [
+    0.0,
+    0.0,
+    -6.0
+   ],
+   "piece": "SM_VKI_Post_Ashlar_Mid_Full",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[0.0, 6.0]",
+    "vki_class": "post",
+    "vki_collider": "[[0.0, 0.0, 1.1, 0.24, 0.62, 2.2]]",
+    "vki_family": "Ashlar",
+    "vki_footprint": "-0.12,-0.3101,0.12,0.3101",
+    "vki_fp_cells": "1,1",
+    "vki_height": "Full",
+    "vki_kind": "Mid",
+    "vki_nav": "block",
+    "vki_origin": "node_centre",
+    "vki_piece": "SM_VKI_Post_Ashlar_Mid_Full",
+    "vki_post_rule": "{\"role\": \"mid\", \"height\": \"Full\", \"rule\": \"Full only: height/family/class step or free end at a Full wall (required); rhythm on the chapel's side walls (y 3.0 / 6.0, \\u00a72.3)\", \"toggle_to\": \"SM_VKI_Post_Ashlar_Corner_Cut\", \"orient\": \"along local x\"}",
+    "vki_rot": 90,
+    "vki_rot_lock": "none",
+    "vki_thick": 0.5,
+    "vki_uv_lock": "local"
+   },
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Shell",
+   "mat": {},
+   "name": "Chapel_F0_Post_Ashlar_Mid_Full.002",
+   "p": [
+    -12.0,
+    0.0,
+    -3.0
+   ],
+   "piece": "SM_VKI_Post_Ashlar_Mid_Full",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[12.0, 3.0]",
+    "vki_class": "post",
+    "vki_collider": "[[0.0, 0.0, 1.1, 0.24, 0.62, 2.2]]",
+    "vki_family": "Ashlar",
+    "vki_footprint": "-0.12,-0.3101,0.12,0.3101",
+    "vki_fp_cells": "1,1",
+    "vki_height": "Full",
+    "vki_kind": "Mid",
+    "vki_nav": "block",
+    "vki_origin": "node_centre",
+    "vki_piece": "SM_VKI_Post_Ashlar_Mid_Full",
+    "vki_post_rule": "{\"role\": \"mid\", \"height\": \"Full\", \"rule\": \"Full only: height/family/class step or free end at a Full wall (required); rhythm on the chapel's side walls (y 3.0 / 6.0, \\u00a72.3)\", \"toggle_to\": \"SM_VKI_Post_Ashlar_Corner_Cut\", \"orient\": \"along local x\"}",
+    "vki_rot": 90,
+    "vki_rot_lock": "none",
+    "vki_thick": 0.5,
+    "vki_uv_lock": "local"
+   },
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Shell",
+   "mat": {},
+   "name": "Chapel_F0_Post_Ashlar_Mid_Full.003",
+   "p": [
+    -12.0,
+    0.0,
+    -6.0
+   ],
+   "piece": "SM_VKI_Post_Ashlar_Mid_Full",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[12.0, 6.0]",
+    "vki_class": "post",
+    "vki_collider": "[[0.0, 0.0, 1.1, 0.24, 0.62, 2.2]]",
+    "vki_family": "Ashlar",
+    "vki_footprint": "-0.12,-0.3101,0.12,0.3101",
+    "vki_fp_cells": "1,1",
+    "vki_height": "Full",
+    "vki_kind": "Mid",
+    "vki_nav": "block",
+    "vki_origin": "node_centre",
+    "vki_piece": "SM_VKI_Post_Ashlar_Mid_Full",
+    "vki_post_rule": "{\"role\": \"mid\", \"height\": \"Full\", \"rule\": \"Full only: height/family/class step or free end at a Full wall (required); rhythm on the chapel's side walls (y 3.0 / 6.0, \\u00a72.3)\", \"toggle_to\": \"SM_VKI_Post_Ashlar_Corner_Cut\", \"orient\": \"along local x\"}",
+    "vki_rot": 90,
+    "vki_rot_lock": "none",
+    "vki_thick": 0.5,
+    "vki_uv_lock": "local"
+   },
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Props",
+   "mat": {},
+   "name": "Chapel_F0_RushMat",
+   "p": [
+    -6.0,
+    0.0,
+    -0.75
+   ],
+   "piece": "SM_VKI_RushMat",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[6.0, 0.75]",
+    "vki_class": "overlay",
+    "vki_collider": "[[0.0, 0.0, 0.0125, 1.2, 0.8, 0.025]]",
+    "vki_footprint": "-0.6001,-0.4001,0.6001,0.4001",
+    "vki_fp_cells": "1,1",
+    "vki_kind": "RushMat",
+    "vki_mount": "floor",
+    "vki_nav": "none",
+    "vki_note": "inside every exit; never across a sill or threshold",
+    "vki_origin": "footprint_centre",
+    "vki_piece": "SM_VKI_RushMat",
+    "vki_rot": 0,
+    "vki_rot_lock": "none",
+    "vki_tier": "dressing",
+    "vki_uv_lock": "local"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Props",
+   "mat": {},
+   "name": "Chapel_F0_Prop_Pew_300",
+   "p": [
+    -3.0,
+    0.0,
+    -1.5
+   ],
+   "piece": "SM_VKI_Prop_Pew_300",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[3.0, 1.5]",
+    "vki_class": "prop",
+    "vki_collider": "[[0.0, -0.0075, 0.4729, 2.74, 0.535, 0.9458]]",
+    "vki_footprint": "-1.3701,-0.2751,1.3701,0.26",
+    "vki_fp_cells": "2,1",
+    "vki_kind": "Pew",
+    "vki_len": 3.0,
+    "vki_mount": "floor",
+    "vki_nav": "block",
+    "vki_note": "chapel: rot 180 so the seat faces north (the altar)",
+    "vki_origin": "footprint_centre",
+    "vki_piece": "SM_VKI_Prop_Pew_300",
+    "vki_prop_index": 0,
+    "vki_rot": 180,
+    "vki_rot_lock": "none",
+    "vki_seat_z": 0.46,
+    "vki_tier": "furniture",
+    "vki_use": "[[-0.9, -0.5, 0], [0.0, -0.5, 0], [0.9, -0.5, 0]]",
+    "vki_use_note": "stand points in front of the seat, facing the pew (local compass 0 = +Y); the sitter faces local -Y",
+    "vki_uv_lock": "local"
+   },
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Props",
+   "mat": {},
+   "name": "Chapel_F0_Prop_Pew_300.001",
+   "p": [
+    -3.0,
+    0.0,
+    -3.0
+   ],
+   "piece": "SM_VKI_Prop_Pew_300",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[3.0, 3.0]",
+    "vki_class": "prop",
+    "vki_collider": "[[0.0, -0.0075, 0.4729, 2.74, 0.535, 0.9458]]",
+    "vki_footprint": "-1.3701,-0.2751,1.3701,0.26",
+    "vki_fp_cells": "2,1",
+    "vki_kind": "Pew",
+    "vki_len": 3.0,
+    "vki_mount": "floor",
+    "vki_nav": "block",
+    "vki_note": "chapel: rot 180 so the seat faces north (the altar)",
+    "vki_origin": "footprint_centre",
+    "vki_piece": "SM_VKI_Prop_Pew_300",
+    "vki_prop_index": 1,
+    "vki_rot": 180,
+    "vki_rot_lock": "none",
+    "vki_seat_z": 0.46,
+    "vki_tier": "furniture",
+    "vki_use": "[[-0.9, -0.5, 0], [0.0, -0.5, 0], [0.9, -0.5, 0]]",
+    "vki_use_note": "stand points in front of the seat, facing the pew (local compass 0 = +Y); the sitter faces local -Y",
+    "vki_uv_lock": "local"
+   },
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Props",
+   "mat": {},
+   "name": "Chapel_F0_Prop_Pew_300.002",
+   "p": [
+    -3.0,
+    0.0,
+    -4.5
+   ],
+   "piece": "SM_VKI_Prop_Pew_300",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[3.0, 4.5]",
+    "vki_class": "prop",
+    "vki_collider": "[[0.0, -0.0075, 0.4729, 2.74, 0.535, 0.9458]]",
+    "vki_footprint": "-1.3701,-0.2751,1.3701,0.26",
+    "vki_fp_cells": "2,1",
+    "vki_kind": "Pew",
+    "vki_len": 3.0,
+    "vki_mount": "floor",
+    "vki_nav": "block",
+    "vki_note": "chapel: rot 180 so the seat faces north (the altar)",
+    "vki_origin": "footprint_centre",
+    "vki_piece": "SM_VKI_Prop_Pew_300",
+    "vki_prop_index": 2,
+    "vki_rot": 180,
+    "vki_rot_lock": "none",
+    "vki_seat_z": 0.46,
+    "vki_tier": "furniture",
+    "vki_use": "[[-0.9, -0.5, 0], [0.0, -0.5, 0], [0.9, -0.5, 0]]",
+    "vki_use_note": "stand points in front of the seat, facing the pew (local compass 0 = +Y); the sitter faces local -Y",
+    "vki_uv_lock": "local"
+   },
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Props",
+   "mat": {},
+   "name": "Chapel_F0_Prop_Pew_300.003",
+   "p": [
+    -9.0,
+    0.0,
+    -1.5
+   ],
+   "piece": "SM_VKI_Prop_Pew_300",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[9.0, 1.5]",
+    "vki_class": "prop",
+    "vki_collider": "[[0.0, -0.0075, 0.4729, 2.74, 0.535, 0.9458]]",
+    "vki_footprint": "-1.3701,-0.2751,1.3701,0.26",
+    "vki_fp_cells": "2,1",
+    "vki_kind": "Pew",
+    "vki_len": 3.0,
+    "vki_mount": "floor",
+    "vki_nav": "block",
+    "vki_note": "chapel: rot 180 so the seat faces north (the altar)",
+    "vki_origin": "footprint_centre",
+    "vki_piece": "SM_VKI_Prop_Pew_300",
+    "vki_prop_index": 3,
+    "vki_rot": 180,
+    "vki_rot_lock": "none",
+    "vki_seat_z": 0.46,
+    "vki_tier": "furniture",
+    "vki_use": "[[-0.9, -0.5, 0], [0.0, -0.5, 0], [0.9, -0.5, 0]]",
+    "vki_use_note": "stand points in front of the seat, facing the pew (local compass 0 = +Y); the sitter faces local -Y",
+    "vki_uv_lock": "local"
+   },
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Props",
+   "mat": {},
+   "name": "Chapel_F0_Prop_Pew_300.004",
+   "p": [
+    -9.0,
+    0.0,
+    -3.0
+   ],
+   "piece": "SM_VKI_Prop_Pew_300",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[9.0, 3.0]",
+    "vki_class": "prop",
+    "vki_collider": "[[0.0, -0.0075, 0.4729, 2.74, 0.535, 0.9458]]",
+    "vki_footprint": "-1.3701,-0.2751,1.3701,0.26",
+    "vki_fp_cells": "2,1",
+    "vki_kind": "Pew",
+    "vki_len": 3.0,
+    "vki_mount": "floor",
+    "vki_nav": "block",
+    "vki_note": "chapel: rot 180 so the seat faces north (the altar)",
+    "vki_origin": "footprint_centre",
+    "vki_piece": "SM_VKI_Prop_Pew_300",
+    "vki_prop_index": 4,
+    "vki_rot": 180,
+    "vki_rot_lock": "none",
+    "vki_seat_z": 0.46,
+    "vki_tier": "furniture",
+    "vki_use": "[[-0.9, -0.5, 0], [0.0, -0.5, 0], [0.9, -0.5, 0]]",
+    "vki_use_note": "stand points in front of the seat, facing the pew (local compass 0 = +Y); the sitter faces local -Y",
+    "vki_uv_lock": "local"
+   },
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Props",
+   "mat": {},
+   "name": "Chapel_F0_Prop_Pew_300.005",
+   "p": [
+    -9.0,
+    0.0,
+    -4.5
+   ],
+   "piece": "SM_VKI_Prop_Pew_300",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[9.0, 4.5]",
+    "vki_class": "prop",
+    "vki_collider": "[[0.0, -0.0075, 0.4729, 2.74, 0.535, 0.9458]]",
+    "vki_footprint": "-1.3701,-0.2751,1.3701,0.26",
+    "vki_fp_cells": "2,1",
+    "vki_kind": "Pew",
+    "vki_len": 3.0,
+    "vki_mount": "floor",
+    "vki_nav": "block",
+    "vki_note": "chapel: rot 180 so the seat faces north (the altar)",
+    "vki_origin": "footprint_centre",
+    "vki_piece": "SM_VKI_Prop_Pew_300",
+    "vki_prop_index": 5,
+    "vki_rot": 180,
+    "vki_rot_lock": "none",
+    "vki_seat_z": 0.46,
+    "vki_tier": "furniture",
+    "vki_use": "[[-0.9, -0.5, 0], [0.0, -0.5, 0], [0.9, -0.5, 0]]",
+    "vki_use_note": "stand points in front of the seat, facing the pew (local compass 0 = +Y); the sitter faces local -Y",
+    "vki_uv_lock": "local"
+   },
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Props",
+   "mat": {},
+   "name": "Chapel_F0_Prop_AltarRail_150",
+   "p": [
+    0.0,
+    0.2,
+    -6.0
+   ],
+   "piece": "SM_VKI_Prop_AltarRail_150",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[0.0, 6.0]",
+    "vki_chain": "local x: pieces butt at their end nodes",
+    "vki_class": "prop",
+    "vki_collider": "[[0.75, 0.17, 0.375, 1.5, 0.26, 0.75]]",
+    "vki_edge": 1,
+    "vki_edge_let_in": 0.32,
+    "vki_edge_piece": 1,
+    "vki_footprint": "0,0.0399,1.5,0.3001",
+    "vki_fp_cells": "1,1",
+    "vki_kind": "AltarRail",
+    "vki_len": 1.5,
+    "vki_mount": "floor",
+    "vki_nav": "block",
+    "vki_note": "place along the dais edge at z 0.20 (rot 0: rail on the dais, kneelers on the nave side); at a wall line the first / last 0.32 m is let into the wall / respond (T12 clash exemption for vki_edge pieces)",
+    "vki_origin": "start_node",
+    "vki_piece": "SM_VKI_Prop_AltarRail_150",
+    "vki_place_z": 0.2,
+    "vki_prop_index": 6,
+    "vki_rot": 0,
+    "vki_rot_lock": "none",
+    "vki_tier": "furniture",
+    "vki_use": "[[0.375, -0.35, 0], [1.125, -0.35, 0]]",
+    "vki_uv_lock": "local"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Props",
+   "mat": {},
+   "name": "Chapel_F0_Prop_AltarRail_150.001",
+   "p": [
+    -1.5,
+    0.2,
+    -6.0
+   ],
+   "piece": "SM_VKI_Prop_AltarRail_150",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[1.5, 6.0]",
+    "vki_chain": "local x: pieces butt at their end nodes",
+    "vki_class": "prop",
+    "vki_collider": "[[0.75, 0.17, 0.375, 1.5, 0.26, 0.75]]",
+    "vki_edge": 1,
+    "vki_edge_let_in": 0.32,
+    "vki_edge_piece": 1,
+    "vki_footprint": "0,0.0399,1.5,0.3001",
+    "vki_fp_cells": "1,1",
+    "vki_kind": "AltarRail",
+    "vki_len": 1.5,
+    "vki_mount": "floor",
+    "vki_nav": "block",
+    "vki_note": "place along the dais edge at z 0.20 (rot 0: rail on the dais, kneelers on the nave side); at a wall line the first / last 0.32 m is let into the wall / respond (T12 clash exemption for vki_edge pieces)",
+    "vki_origin": "start_node",
+    "vki_piece": "SM_VKI_Prop_AltarRail_150",
+    "vki_place_z": 0.2,
+    "vki_prop_index": 7,
+    "vki_rot": 0,
+    "vki_rot_lock": "none",
+    "vki_tier": "furniture",
+    "vki_use": "[[0.375, -0.35, 0], [1.125, -0.35, 0]]",
+    "vki_uv_lock": "local"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Props",
+   "mat": {},
+   "name": "Chapel_F0_Prop_AltarRail_150.002",
+   "p": [
+    -3.0,
+    0.2,
+    -6.0
+   ],
+   "piece": "SM_VKI_Prop_AltarRail_150",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[3.0, 6.0]",
+    "vki_chain": "local x: pieces butt at their end nodes",
+    "vki_class": "prop",
+    "vki_collider": "[[0.75, 0.17, 0.375, 1.5, 0.26, 0.75]]",
+    "vki_edge": 1,
+    "vki_edge_let_in": 0.32,
+    "vki_edge_piece": 1,
+    "vki_footprint": "0,0.0399,1.5,0.3001",
+    "vki_fp_cells": "1,1",
+    "vki_kind": "AltarRail",
+    "vki_len": 1.5,
+    "vki_mount": "floor",
+    "vki_nav": "block",
+    "vki_note": "place along the dais edge at z 0.20 (rot 0: rail on the dais, kneelers on the nave side); at a wall line the first / last 0.32 m is let into the wall / respond (T12 clash exemption for vki_edge pieces)",
+    "vki_origin": "start_node",
+    "vki_piece": "SM_VKI_Prop_AltarRail_150",
+    "vki_place_z": 0.2,
+    "vki_prop_index": 8,
+    "vki_rot": 0,
+    "vki_rot_lock": "none",
+    "vki_tier": "furniture",
+    "vki_use": "[[0.375, -0.35, 0], [1.125, -0.35, 0]]",
+    "vki_uv_lock": "local"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Props",
+   "mat": {},
+   "name": "Chapel_F0_Prop_AltarRail_150.003",
+   "p": [
+    -7.5,
+    0.2,
+    -6.0
+   ],
+   "piece": "SM_VKI_Prop_AltarRail_150",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[7.5, 6.0]",
+    "vki_chain": "local x: pieces butt at their end nodes",
+    "vki_class": "prop",
+    "vki_collider": "[[0.75, 0.17, 0.375, 1.5, 0.26, 0.75]]",
+    "vki_edge": 1,
+    "vki_edge_let_in": 0.32,
+    "vki_edge_piece": 1,
+    "vki_footprint": "0,0.0399,1.5,0.3001",
+    "vki_fp_cells": "1,1",
+    "vki_kind": "AltarRail",
+    "vki_len": 1.5,
+    "vki_mount": "floor",
+    "vki_nav": "block",
+    "vki_note": "place along the dais edge at z 0.20 (rot 0: rail on the dais, kneelers on the nave side); at a wall line the first / last 0.32 m is let into the wall / respond (T12 clash exemption for vki_edge pieces)",
+    "vki_origin": "start_node",
+    "vki_piece": "SM_VKI_Prop_AltarRail_150",
+    "vki_place_z": 0.2,
+    "vki_prop_index": 9,
+    "vki_rot": 0,
+    "vki_rot_lock": "none",
+    "vki_tier": "furniture",
+    "vki_use": "[[0.375, -0.35, 0], [1.125, -0.35, 0]]",
+    "vki_uv_lock": "local"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Props",
+   "mat": {},
+   "name": "Chapel_F0_Prop_AltarRail_150.004",
+   "p": [
+    -9.0,
+    0.2,
+    -6.0
+   ],
+   "piece": "SM_VKI_Prop_AltarRail_150",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[9.0, 6.0]",
+    "vki_chain": "local x: pieces butt at their end nodes",
+    "vki_class": "prop",
+    "vki_collider": "[[0.75, 0.17, 0.375, 1.5, 0.26, 0.75]]",
+    "vki_edge": 1,
+    "vki_edge_let_in": 0.32,
+    "vki_edge_piece": 1,
+    "vki_footprint": "0,0.0399,1.5,0.3001",
+    "vki_fp_cells": "1,1",
+    "vki_kind": "AltarRail",
+    "vki_len": 1.5,
+    "vki_mount": "floor",
+    "vki_nav": "block",
+    "vki_note": "place along the dais edge at z 0.20 (rot 0: rail on the dais, kneelers on the nave side); at a wall line the first / last 0.32 m is let into the wall / respond (T12 clash exemption for vki_edge pieces)",
+    "vki_origin": "start_node",
+    "vki_piece": "SM_VKI_Prop_AltarRail_150",
+    "vki_place_z": 0.2,
+    "vki_prop_index": 10,
+    "vki_rot": 0,
+    "vki_rot_lock": "none",
+    "vki_tier": "furniture",
+    "vki_use": "[[0.375, -0.35, 0], [1.125, -0.35, 0]]",
+    "vki_uv_lock": "local"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Props",
+   "mat": {},
+   "name": "Chapel_F0_Prop_AltarRail_150.005",
+   "p": [
+    -10.5,
+    0.2,
+    -6.0
+   ],
+   "piece": "SM_VKI_Prop_AltarRail_150",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[10.5, 6.0]",
+    "vki_chain": "local x: pieces butt at their end nodes",
+    "vki_class": "prop",
+    "vki_collider": "[[0.75, 0.17, 0.375, 1.5, 0.26, 0.75]]",
+    "vki_edge": 1,
+    "vki_edge_let_in": 0.32,
+    "vki_edge_piece": 1,
+    "vki_footprint": "0,0.0399,1.5,0.3001",
+    "vki_fp_cells": "1,1",
+    "vki_kind": "AltarRail",
+    "vki_len": 1.5,
+    "vki_mount": "floor",
+    "vki_nav": "block",
+    "vki_note": "place along the dais edge at z 0.20 (rot 0: rail on the dais, kneelers on the nave side); at a wall line the first / last 0.32 m is let into the wall / respond (T12 clash exemption for vki_edge pieces)",
+    "vki_origin": "start_node",
+    "vki_piece": "SM_VKI_Prop_AltarRail_150",
+    "vki_place_z": 0.2,
+    "vki_prop_index": 11,
+    "vki_rot": 0,
+    "vki_rot_lock": "none",
+    "vki_tier": "furniture",
+    "vki_use": "[[0.375, -0.35, 0], [1.125, -0.35, 0]]",
+    "vki_uv_lock": "local"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Props",
+   "mat": {},
+   "name": "Chapel_F0_Prop_Altar_300",
+   "p": [
+    -6.0,
+    0.2,
+    -7.5
+   ],
+   "piece": "SM_VKI_Prop_Altar_300",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[6.0, 7.5]",
+    "vki_class": "prop",
+    "vki_collider": "[[0.0, 0.0, 0.819, 1.8, 0.9, 1.638]]",
+    "vki_footprint": "-0.9,-0.45,0.9,0.45",
+    "vki_fp_cells": "2,1",
+    "vki_fx": "[{\"fx\": \"candle\", \"pos\": [-0.58, 0.25, 1.59]}, {\"fx\": \"candle\", \"pos\": [0.58, 0.25, 1.59]}]",
+    "vki_kind": "Altar",
+    "vki_len": 3.0,
+    "vki_lights": "[{\"type\": \"POINT\", \"role\": \"candle\", \"pos\": [-0.58, 0.25, 1.59], \"w\": 15.0, \"color\": [1.0, 0.58, 0.26], \"range\": 3.0, \"flicker\": 1, \"shadows\": 0, \"radius\": 0.02}, {\"type\": \"POINT\", \"role\": \"candle\", \"pos\": [0.58, 0.25, 1.59], \"w\": 15.0, \"color\": [1.0, 0.58, 0.26], \"range\": 3.0, \"flicker\": 1, \"shadows\": 0, \"radius\": 0.02}]",
+    "vki_mensa_z": 1.065,
+    "vki_mount": "floor",
+    "vki_nav": "block",
+    "vki_note": "chapel: (6.0, 7.5) rot 0 on the dais (z 0.20), vki_warn_ok='window' on the instance",
+    "vki_origin": "footprint_centre",
+    "vki_piece": "SM_VKI_Prop_Altar_300",
+    "vki_prop_index": 12,
+    "vki_rot": 0,
+    "vki_rot_lock": "none",
+    "vki_textile": "altar_frontal",
+    "vki_tier": "furniture",
+    "vki_use": "[[0.0, -0.8, 0]]",
+    "vki_uv_lock": "local",
+    "vki_warn_ok": "window"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Props",
+   "mat": {},
+   "name": "Chapel_F0_Prop_CandleStand_Pricket",
+   "p": [
+    -3.75,
+    0.2,
+    -8.25
+   ],
+   "piece": "SM_VKI_Prop_CandleStand_Pricket",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[3.75, 8.25]",
+    "vki_class": "prop",
+    "vki_collider": "[[0.0, 0.0637, 0.7455, 0.5117, 0.4525, 1.491]]",
+    "vki_footprint": "-0.2559,-0.1625,0.2559,0.29",
+    "vki_fp_cells": "1,1",
+    "vki_fx": "[{\"fx\": \"candle\", \"pos\": [0, 0, 1.43]}]",
+    "vki_kind": "CandleStand",
+    "vki_lights": "[{\"type\": \"POINT\", \"role\": \"candle\", \"pos\": [0, 0, 1.43], \"w\": 30.0, \"color\": [1.0, 0.58, 0.26], \"range\": 3.0, \"flicker\": 1, \"shadows\": 0, \"radius\": 0.02}]",
+    "vki_mount": "floor",
+    "vki_nav": "block",
+    "vki_origin": "footprint_centre",
+    "vki_piece": "SM_VKI_Prop_CandleStand_Pricket",
+    "vki_prop_index": 13,
+    "vki_rot": 0,
+    "vki_rot_lock": "none",
+    "vki_tier": "furniture",
+    "vki_use": "[[0.0, -0.55, 0]]",
+    "vki_uv_lock": "local",
+    "vki_var": "Pricket"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Props",
+   "mat": {},
+   "name": "Chapel_F0_Prop_CandleStand_Pricket.001",
+   "p": [
+    -8.25,
+    0.2,
+    -8.25
+   ],
+   "piece": "SM_VKI_Prop_CandleStand_Pricket",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[8.25, 8.25]",
+    "vki_class": "prop",
+    "vki_collider": "[[0.0, 0.0637, 0.7455, 0.5117, 0.4525, 1.491]]",
+    "vki_footprint": "-0.2559,-0.1625,0.2559,0.29",
+    "vki_fp_cells": "1,1",
+    "vki_fx": "[{\"fx\": \"candle\", \"pos\": [0, 0, 1.43]}]",
+    "vki_kind": "CandleStand",
+    "vki_lights": "[{\"type\": \"POINT\", \"role\": \"candle\", \"pos\": [0, 0, 1.43], \"w\": 30.0, \"color\": [1.0, 0.58, 0.26], \"range\": 3.0, \"flicker\": 1, \"shadows\": 0, \"radius\": 0.02}]",
+    "vki_mount": "floor",
+    "vki_nav": "block",
+    "vki_origin": "footprint_centre",
+    "vki_piece": "SM_VKI_Prop_CandleStand_Pricket",
+    "vki_prop_index": 14,
+    "vki_rot": 0,
+    "vki_rot_lock": "none",
+    "vki_tier": "furniture",
+    "vki_use": "[[0.0, -0.55, 0]]",
+    "vki_uv_lock": "local",
+    "vki_var": "Pricket"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Props",
+   "mat": {},
+   "name": "Chapel_F0_Prop_Lectern",
+   "p": [
+    -9.0,
+    0.2,
+    -6.75
+   ],
+   "piece": "SM_VKI_Prop_Lectern",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[9.0, 6.75]",
+    "vki_class": "prop",
+    "vki_collider": "[[0.0, 0.0, 0.6362, 0.58, 0.48, 1.2724]]",
+    "vki_footprint": "-0.29,-0.24,0.29,0.24",
+    "vki_fp_cells": "1,1",
+    "vki_kind": "Lectern",
+    "vki_mount": "floor",
+    "vki_nav": "block",
+    "vki_origin": "footprint_centre",
+    "vki_piece": "SM_VKI_Prop_Lectern",
+    "vki_prop_index": 15,
+    "vki_rot": 180,
+    "vki_rot_lock": "none",
+    "vki_tier": "furniture",
+    "vki_use": "[[0.0, -0.5, 0]]",
+    "vki_uv_lock": "local"
+   },
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Props",
+   "mat": {},
+   "name": "Chapel_F0_Prop_Chest",
+   "p": [
+    -0.585,
+    0.2,
+    -8.135
+   ],
+   "piece": "SM_VKI_Prop_Chest",
+   "props": {
+    "grid_m": 1.5,
+    "hinge_axis": "local X",
+    "kit": "VillageInterior",
+    "vki_at": "[0.75, 8.25]",
+    "vki_back_line": "[\"x\", 0.285]",
+    "vki_back_y": 0.3,
+    "vki_class": "prop",
+    "vki_collider": "[[0.0, 0.0015, 0.326, 1.1, 0.597, 0.652]]",
+    "vki_footprint": "-0.5501,-0.2971,0.5501,0.3",
+    "vki_fp_cells": "1,1",
+    "vki_host": "Chapel_F0_Wall_Ashlar_Plain_300_Full.002",
+    "vki_hug": -0.115,
+    "vki_hug_limit": "Chapel_F0_Post_Ashlar_Corner_Full.001",
+    "vki_kind": "Chest",
+    "vki_lid_box": "[-0.56, -0.31, 0.52, 0.56, 0.31, 0.66]",
+    "vki_lid_hinge": "[0.0, 0.29, 0.555]",
+    "vki_lid_open_deg": 100,
+    "vki_lid_open_dir": "rotation -deg about local X through vki_lid_hinge (the front lifts)",
+    "vki_lid_rule": "the lid = every loose part whose bbox centre lies inside vki_lid_box",
+    "vki_mount": "wall_floor",
+    "vki_nav": "block",
+    "vki_origin": "footprint_centre",
+    "vki_piece": "SM_VKI_Prop_Chest",
+    "vki_prop_index": 16,
+    "vki_rot": 90,
+    "vki_rot_lock": "none",
+    "vki_tier": "furniture",
+    "vki_use": "[[0.0, -0.75, 0]]",
+    "vki_uv_lock": "local"
+   },
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Props",
+   "mat": {},
+   "name": "Chapel_F0_Prop_Font",
+   "p": [
+    -0.78389,
+    0.0,
+    -0.78389
+   ],
+   "piece": "SM_VKI_Prop_Font",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[0.75, 0.75]",
+    "vki_class": "prop",
+    "vki_collider": "[[0.0, 0.0, 0.55, 0.9978, 0.9978, 1.1]]",
+    "vki_footprint": "-0.4989,-0.4989,0.4989,0.4989",
+    "vki_fp_cells": "1,1",
+    "vki_hug": "[0.0339, 0.0339]",
+    "vki_kind": "Font",
+    "vki_mount": "floor",
+    "vki_nav": "block",
+    "vki_note": "chapel: (0.75, 0.75) with hug",
+    "vki_origin": "footprint_centre",
+    "vki_piece": "SM_VKI_Prop_Font",
+    "vki_prop_index": 17,
+    "vki_rot": 90,
+    "vki_rot_lock": "none",
+    "vki_tier": "furniture",
+    "vki_use": "[[0.0, -0.75, 0]]",
+    "vki_uv_lock": "local",
+    "vki_water_z": 1.0
+   },
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Props",
+   "mat": {},
+   "name": "Chapel_F0_Prop_VotiveRack",
+   "p": [
+    -11.515,
+    0.0,
+    -3.75
+   ],
+   "piece": "SM_VKI_Prop_VotiveRack",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[11.25, 3.75]",
+    "vki_back_line": "[\"x\", 11.715]",
+    "vki_back_y": 0.2,
+    "vki_class": "prop",
+    "vki_collider": "[[0.0, 0.0075, 0.536, 0.99, 0.385, 1.072]]",
+    "vki_footprint": "-0.4951,-0.1851,0.4951,0.2001",
+    "vki_fp_cells": "1,1",
+    "vki_fx": "[{\"fx\": \"candle\", \"pos\": [-0.375, -0.09, 0.8935]}, {\"fx\": \"candle\", \"pos\": [-0.225, -0.09, 0.8635]}, {\"fx\": \"candle\", \"pos\": [-0.075, -0.09, 0.9135]}, {\"fx\": \"candle\", \"pos\": [0.075, -0.09, 0.8835]}, {\"fx\": \"candle\", \"pos\": [0.225, -0.09, 0.9235]}, {\"fx\": \"candle\", \"pos\": [0.375, -0.09, 0.8735]}, {\"fx\": \"candle\", \"pos\": [-0.3, 0.09, 1.0235]}, {\"fx\": \"candle\", \"pos\": [-0.15, 0.09, 0.9735]}, {\"fx\": \"candle\", \"pos\": [-0.0, 0.09, 1.0335]}, {\"fx\": \"candle\", \"pos\": [0.15, 0.09, 1.0135]}, {\"fx\": \"candle\", \"pos\": [0.3, 0.09, 0.9935]}, {\"fx\": \"candle\", \"pos\": [0.45, 0.09, 1.0435]}]",
+    "vki_host": "Chapel_F0_Wall_Ashlar_Plain_150A_Full.003",
+    "vki_kind": "VotiveRack",
+    "vki_lights": "[{\"type\": \"POINT\", \"role\": \"candle\", \"pos\": [0.0, 0.0, 1.06], \"w\": 30.0, \"color\": [1.0, 0.58, 0.26], \"range\": 3.0, \"flicker\": 1, \"shadows\": 0, \"radius\": 0.02}]",
+    "vki_mount": "wall_floor",
+    "vki_nav": "block",
+    "vki_note": "chapel: (11.25, 3.75) rot -90 against the east wall",
+    "vki_origin": "footprint_centre",
+    "vki_piece": "SM_VKI_Prop_VotiveRack",
+    "vki_prop_index": 18,
+    "vki_rot": -90,
+    "vki_rot_lock": "none",
+    "vki_tier": "furniture",
+    "vki_use": "[[0.0, -0.5, 0]]",
+    "vki_uv_lock": "local"
+   },
+   "r": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Props",
+   "mat": {},
+   "name": "Chapel_F0_Runner_150",
+   "p": [
+    -6.0,
+    0.0,
+    -2.25
+   ],
+   "piece": "SM_VKI_Runner_150",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[6.0, 2.25]",
+    "vki_chain": "local x: runners butt end to end (lengths are whole periods)",
+    "vki_class": "overlay",
+    "vki_collider": "[[0.0, 0.0, 0.0125, 1.5, 1.0, 0.025]]",
+    "vki_footprint": "-0.75,-0.5,0.75,0.5",
+    "vki_fp_cells": "1,1",
+    "vki_kind": "Runner",
+    "vki_len": 1.5,
+    "vki_mount": "floor",
+    "vki_nav": "none",
+    "vki_note": "never across a sill or threshold; the chapel aisle uses rot 90 (Runner_150 (6.0, 2.25) + Runner_300 (6.0, 4.5) chain along y 1.5-6.0)",
+    "vki_origin": "footprint_centre",
+    "vki_piece": "SM_VKI_Runner_150",
+    "vki_prop_index": 19,
+    "vki_rot": 90,
+    "vki_rot_lock": "none",
+    "vki_textile": "runner",
+    "vki_tier": "dressing",
+    "vki_uv_lock": "local"
+   },
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Props",
+   "mat": {},
+   "name": "Chapel_F0_Runner_300",
+   "p": [
+    -6.0,
+    0.0,
+    -4.5
+   ],
+   "piece": "SM_VKI_Runner_300",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[6.0, 4.5]",
+    "vki_chain": "local x: runners butt end to end (lengths are whole periods)",
+    "vki_class": "overlay",
+    "vki_collider": "[[0.0, 0.0, 0.0125, 3.0, 1.0, 0.025]]",
+    "vki_footprint": "-1.5,-0.5,1.5,0.5",
+    "vki_fp_cells": "2,1",
+    "vki_kind": "Runner",
+    "vki_len": 3.0,
+    "vki_mount": "floor",
+    "vki_nav": "none",
+    "vki_note": "never across a sill or threshold; the chapel aisle uses rot 90 (Runner_150 (6.0, 2.25) + Runner_300 (6.0, 4.5) chain along y 1.5-6.0)",
+    "vki_origin": "footprint_centre",
+    "vki_piece": "SM_VKI_Runner_300",
+    "vki_prop_index": 20,
+    "vki_rot": 90,
+    "vki_rot_lock": "none",
+    "vki_textile": "runner",
+    "vki_tier": "dressing",
+    "vki_uv_lock": "local"
+   },
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Props",
+   "mat": {},
+   "name": "Chapel_F0_FX_WindowPool",
+   "p": [
+    -3.0,
+    0.2,
+    -9.0
+   ],
+   "piece": "SM_VKI_FX_WindowPool",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[3.0, 9.0]",
+    "vki_class": "fx",
+    "vki_collider": "[[0.75, -1.15, -0.0225, 1.1, 1.4, 0.055]]",
+    "vki_footprint": "0.2,-1.8501,1.3,-0.4499",
+    "vki_fp_cells": "1,1",
+    "vki_fx": "[{\"fx\": \"window_pool\", \"pos\": [0.75, -1.15, 0.0]}]",
+    "vki_fx_presets": "[\"Day\"]",
+    "vki_kind": "WindowPool",
+    "vki_nav": "none",
+    "vki_note": "Day only (the Night floor is darker: the rim would show)",
+    "vki_origin": "window_origin",
+    "vki_piece": "SM_VKI_FX_WindowPool",
+    "vki_place_rule": "same origin and rotation as its Window piece (room on local -Y); on a dais add z 0.20",
+    "vki_rot": 0,
+    "vki_rot_lock": "none",
+    "vki_uv_lock": "local"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Props",
+   "mat": {},
+   "name": "Chapel_F0_FX_WindowPool.001",
+   "p": [
+    -4.5,
+    0.2,
+    -9.0
+   ],
+   "piece": "SM_VKI_FX_WindowPool",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[4.5, 9.0]",
+    "vki_class": "fx",
+    "vki_collider": "[[0.75, -1.15, -0.0225, 1.1, 1.4, 0.055]]",
+    "vki_footprint": "0.2,-1.8501,1.3,-0.4499",
+    "vki_fp_cells": "1,1",
+    "vki_fx": "[{\"fx\": \"window_pool\", \"pos\": [0.75, -1.15, 0.0]}]",
+    "vki_fx_presets": "[\"Day\"]",
+    "vki_kind": "WindowPool",
+    "vki_nav": "none",
+    "vki_note": "Day only (the Night floor is darker: the rim would show)",
+    "vki_origin": "window_origin",
+    "vki_piece": "SM_VKI_FX_WindowPool",
+    "vki_place_rule": "same origin and rotation as its Window piece (room on local -Y); on a dais add z 0.20",
+    "vki_rot": 0,
+    "vki_rot_lock": "none",
+    "vki_uv_lock": "local"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Props",
+   "mat": {},
+   "name": "Chapel_F0_FX_WindowPool.002",
+   "p": [
+    -6.0,
+    0.2,
+    -9.0
+   ],
+   "piece": "SM_VKI_FX_WindowPool",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[6.0, 9.0]",
+    "vki_class": "fx",
+    "vki_collider": "[[0.75, -1.15, -0.0225, 1.1, 1.4, 0.055]]",
+    "vki_footprint": "0.2,-1.8501,1.3,-0.4499",
+    "vki_fp_cells": "1,1",
+    "vki_fx": "[{\"fx\": \"window_pool\", \"pos\": [0.75, -1.15, 0.0]}]",
+    "vki_fx_presets": "[\"Day\"]",
+    "vki_kind": "WindowPool",
+    "vki_nav": "none",
+    "vki_note": "Day only (the Night floor is darker: the rim would show)",
+    "vki_origin": "window_origin",
+    "vki_piece": "SM_VKI_FX_WindowPool",
+    "vki_place_rule": "same origin and rotation as its Window piece (room on local -Y); on a dais add z 0.20",
+    "vki_rot": 0,
+    "vki_rot_lock": "none",
+    "vki_uv_lock": "local"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Props",
+   "mat": {},
+   "name": "Chapel_F0_FX_WindowPool.003",
+   "p": [
+    -7.5,
+    0.2,
+    -9.0
+   ],
+   "piece": "SM_VKI_FX_WindowPool",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[7.5, 9.0]",
+    "vki_class": "fx",
+    "vki_collider": "[[0.75, -1.15, -0.0225, 1.1, 1.4, 0.055]]",
+    "vki_footprint": "0.2,-1.8501,1.3,-0.4499",
+    "vki_fp_cells": "1,1",
+    "vki_fx": "[{\"fx\": \"window_pool\", \"pos\": [0.75, -1.15, 0.0]}]",
+    "vki_fx_presets": "[\"Day\"]",
+    "vki_kind": "WindowPool",
+    "vki_nav": "none",
+    "vki_note": "Day only (the Night floor is darker: the rim would show)",
+    "vki_origin": "window_origin",
+    "vki_piece": "SM_VKI_FX_WindowPool",
+    "vki_place_rule": "same origin and rotation as its Window piece (room on local -Y); on a dais add z 0.20",
+    "vki_rot": 0,
+    "vki_rot_lock": "none",
+    "vki_uv_lock": "local"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Props",
+   "mat": {},
+   "name": "Chapel_F0_FX_WindowPool.004",
+   "p": [
+    0.0,
+    0.0,
+    -1.5
+   ],
+   "piece": "SM_VKI_FX_WindowPool",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[0.0, 1.5]",
+    "vki_class": "fx",
+    "vki_collider": "[[0.75, -1.15, -0.0225, 1.1, 1.4, 0.055]]",
+    "vki_footprint": "0.2,-1.8501,1.3,-0.4499",
+    "vki_fp_cells": "1,1",
+    "vki_fx": "[{\"fx\": \"window_pool\", \"pos\": [0.75, -1.15, 0.0]}]",
+    "vki_fx_presets": "[\"Day\"]",
+    "vki_kind": "WindowPool",
+    "vki_nav": "none",
+    "vki_note": "Day only (the Night floor is darker: the rim would show)",
+    "vki_origin": "window_origin",
+    "vki_piece": "SM_VKI_FX_WindowPool",
+    "vki_place_rule": "same origin and rotation as its Window piece (room on local -Y); on a dais add z 0.20",
+    "vki_rot": 90,
+    "vki_rot_lock": "none",
+    "vki_uv_lock": "local"
+   },
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Props",
+   "mat": {},
+   "name": "Chapel_F0_FX_WindowPool.005",
+   "p": [
+    0.0,
+    0.0,
+    -4.5
+   ],
+   "piece": "SM_VKI_FX_WindowPool",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[0.0, 4.5]",
+    "vki_class": "fx",
+    "vki_collider": "[[0.75, -1.15, -0.0225, 1.1, 1.4, 0.055]]",
+    "vki_footprint": "0.2,-1.8501,1.3,-0.4499",
+    "vki_fp_cells": "1,1",
+    "vki_fx": "[{\"fx\": \"window_pool\", \"pos\": [0.75, -1.15, 0.0]}]",
+    "vki_fx_presets": "[\"Day\"]",
+    "vki_kind": "WindowPool",
+    "vki_nav": "none",
+    "vki_note": "Day only (the Night floor is darker: the rim would show)",
+    "vki_origin": "window_origin",
+    "vki_piece": "SM_VKI_FX_WindowPool",
+    "vki_place_rule": "same origin and rotation as its Window piece (room on local -Y); on a dais add z 0.20",
+    "vki_rot": 90,
+    "vki_rot_lock": "none",
+    "vki_uv_lock": "local"
+   },
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Props",
+   "mat": {},
+   "name": "Chapel_F0_FX_WindowPool.006",
+   "p": [
+    -12.0,
+    0.0,
+    -3.0
+   ],
+   "piece": "SM_VKI_FX_WindowPool",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[12.0, 3.0]",
+    "vki_class": "fx",
+    "vki_collider": "[[0.75, -1.15, -0.0225, 1.1, 1.4, 0.055]]",
+    "vki_footprint": "0.2,-1.8501,1.3,-0.4499",
+    "vki_fp_cells": "1,1",
+    "vki_fx": "[{\"fx\": \"window_pool\", \"pos\": [0.75, -1.15, 0.0]}]",
+    "vki_fx_presets": "[\"Day\"]",
+    "vki_kind": "WindowPool",
+    "vki_nav": "none",
+    "vki_note": "Day only (the Night floor is darker: the rim would show)",
+    "vki_origin": "window_origin",
+    "vki_piece": "SM_VKI_FX_WindowPool",
+    "vki_place_rule": "same origin and rotation as its Window piece (room on local -Y); on a dais add z 0.20",
+    "vki_rot": -90,
+    "vki_rot_lock": "none",
+    "vki_uv_lock": "local"
+   },
+   "r": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Chapel_F0_Props",
+   "mat": {},
+   "name": "Chapel_F0_FX_WindowPool.007",
+   "p": [
+    -12.0,
+    0.0,
+    -6.0
+   ],
+   "piece": "SM_VKI_FX_WindowPool",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[12.0, 6.0]",
+    "vki_class": "fx",
+    "vki_collider": "[[0.75, -1.15, -0.0225, 1.1, 1.4, 0.055]]",
+    "vki_footprint": "0.2,-1.8501,1.3,-0.4499",
+    "vki_fp_cells": "1,1",
+    "vki_fx": "[{\"fx\": \"window_pool\", \"pos\": [0.75, -1.15, 0.0]}]",
+    "vki_fx_presets": "[\"Day\"]",
+    "vki_kind": "WindowPool",
+    "vki_nav": "none",
+    "vki_note": "Day only (the Night floor is darker: the rim would show)",
+    "vki_origin": "window_origin",
+    "vki_piece": "SM_VKI_FX_WindowPool",
+    "vki_place_rule": "same origin and rotation as its Window piece (room on local -Y); on a dais add z 0.20",
+    "vki_rot": -90,
+    "vki_rot_lock": "none",
+    "vki_uv_lock": "local"
+   },
+   "r": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  }
+ ],
+ "preset": "Day",
+ "root": {
+  "vki_bounds": "[0.0, 0.0, 12.0, 9.0]",
+  "vki_building": "Chapel",
+  "vki_cam_dist": 21.939,
+  "vki_cam_h_fit": 3.97,
+  "vki_cam_margin": 0.0,
+  "vki_cam_mode": "fit",
+  "vki_cam_pitch": 50,
+  "vki_cam_target": "[6.0, 4.766, 0.0]",
+  "vki_cam_yaw": 0,
+  "vki_default_spawn": "front",
+  "vki_family": "Ashlar",
+  "vki_floor": 0,
+  "vki_links": "[{\"id\": \"front\", \"kind\": \"exit\", \"target\": \"@return\", \"obj\": \"Chapel_F0_Wall_Ashlar_DoorWide_300_Cut\", \"spawn\": \"SPN_front.007\"}]",
+  "vki_preset": "Day",
+  "vki_rooms_version": "2026-09-26 r1",
+  "vki_scene": "VKI_Chapel_F0"
+ },
+ "scene": "VKI_Chapel_F0",
+ "version": "2026-09-30 slice",
+ "view_transform": "AgX",
+ "world": {
+  "camera_color": [
+   0.0118,
+   0.0098,
+   0.009
+  ],
+  "color": [
+   0.52,
+   0.5,
+   0.46
+  ],
+  "linked": false,
+  "strength": 0.65
+ }
+}

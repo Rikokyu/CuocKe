@@ -1,0 +1,2559 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ddcce1d8e1ca7c48831a364aa8b6144, type: 3}
+  m_Name: KitInteriorRules
+  m_EditorClassIdentifier: MedievalKit.Runtime::MedievalKit.KitInteriorRules
+  rulesJson: {fileID: 4900000, guid: 7bf4d1663925fed4690f38372a3c6744, type: 3}
+  pieces:
+  - name: SM_VKI_Apron_300x150
+    prefab: {fileID: 5953621868457904509, guid: 87c83a5f87d35244caf3e6a7bd2c2dc4, type: 3}
+  - name: SM_VKI_Apron_Wide_300x150
+    prefab: {fileID: 1484442337333829087, guid: 7e5472b4bfaddf544a45c271a1111e71, type: 3}
+  - name: SM_VKI_FX_WindowPool
+    prefab: {fileID: 1836716769755434225, guid: c4a299386b5b07b4e9dbd024db4aacbe, type: 3}
+  - name: SM_VKI_Floor_075_R00
+    prefab: {fileID: 1205949441491620328, guid: fb041f1d622cccc4593ace2f6ae3bd34, type: 3}
+  - name: SM_VKI_Floor_075_R01
+    prefab: {fileID: 6567073722507615387, guid: 7d578ad0f885e30438c534cbb56e447e, type: 3}
+  - name: SM_VKI_Floor_075_R02
+    prefab: {fileID: 6557409476457201820, guid: 8ade8c3ddf344c144995d24212ff1a13, type: 3}
+  - name: SM_VKI_Floor_075_R03
+    prefab: {fileID: 6795566666235587205, guid: 3a67bccad4157e7438024279642585e0, type: 3}
+  - name: SM_VKI_Floor_075_R10
+    prefab: {fileID: 4392465306157660158, guid: 4323cb5fc791a3e4e8e1ac0e56d42907, type: 3}
+  - name: SM_VKI_Floor_075_R11
+    prefab: {fileID: 3363226868210092126, guid: 555811ec0ab597c47b507c470170d4b9, type: 3}
+  - name: SM_VKI_Floor_075_R12
+    prefab: {fileID: 9003864840559210965, guid: af65944b56add7b4eb00075eb504d5dc, type: 3}
+  - name: SM_VKI_Floor_075_R13
+    prefab: {fileID: 3752101137958673277, guid: 697769fd90319d64eada2e2f10579813, type: 3}
+  - name: SM_VKI_Floor_075_R20
+    prefab: {fileID: 8757894497291924230, guid: ffe8bca6117c93f429d5d08d4bd71f56, type: 3}
+  - name: SM_VKI_Floor_075_R21
+    prefab: {fileID: 5749857602509814847, guid: eef1965ff50894849ac5ad073bd9f53c, type: 3}
+  - name: SM_VKI_Floor_075_R22
+    prefab: {fileID: 4055376681027023531, guid: 3e9526c8fa42f6a43ab4259fe5fb034b, type: 3}
+  - name: SM_VKI_Floor_075_R23
+    prefab: {fileID: 7119967635437864651, guid: 856b779b657aa884b911001a403dde4f, type: 3}
+  - name: SM_VKI_Floor_075_R30
+    prefab: {fileID: 5835240732420198546, guid: 6803e2277addc9143a3273e663b0633e, type: 3}
+  - name: SM_VKI_Floor_075_R31
+    prefab: {fileID: 6795269719824240442, guid: a740adb31062b074698693380557cb25, type: 3}
+  - name: SM_VKI_Floor_075_R32
+    prefab: {fileID: 8835442361829263044, guid: df9586725e6e83742b4a1757c6471e5f, type: 3}
+  - name: SM_VKI_Floor_075_R33
+    prefab: {fileID: 8474965566634589113, guid: 4442bed9a01af314a9cbde822ca18974, type: 3}
+  - name: SM_VKI_Floor_150_Q00
+    prefab: {fileID: 4637727426481549319, guid: f2f93cb9397de1649be4511aace04021, type: 3}
+  - name: SM_VKI_Floor_150_Q01
+    prefab: {fileID: 2979820820647600242, guid: ad6897ab1cfa8d7418d555ee25c90c57, type: 3}
+  - name: SM_VKI_Floor_150_Q10
+    prefab: {fileID: 992393347131890567, guid: 8d6bb798669a11742a95f6424761c512, type: 3}
+  - name: SM_VKI_Floor_150_Q11
+    prefab: {fileID: 7173896884554809698, guid: 30d01e016c02caa4b9fe9d2a1986be0a, type: 3}
+  - name: SM_VKI_Floor_300
+    prefab: {fileID: 5658292521793110419, guid: 6ca46c0d4248a144d87c132312f6c5fe, type: 3}
+  - name: SM_VKI_Floor_600
+    prefab: {fileID: 5443409695236076322, guid: c4fc9dba53e00dc4e814b9115551701f, type: 3}
+  - name: SM_VKI_Floor_Dais_300
+    prefab: {fileID: 7656434795977958742, guid: a6b24651e906d8146909183af8caed38, type: 3}
+  - name: SM_VKI_Floor_Sill_150
+    prefab: {fileID: 3706251520441903900, guid: 8684d06a0c8dbd349a358c67f87e8354, type: 3}
+  - name: SM_VKI_Ground_Cave_OOOX_Q00
+    prefab: {fileID: 2866076135939964619, guid: b2cfe94477bf28742897ae5c89e1881a, type: 3}
+  - name: SM_VKI_Ground_Cave_OOOX_Q01
+    prefab: {fileID: 1736562245268874041, guid: 52b9beaafcbea13409fdb292276746e6, type: 3}
+  - name: SM_VKI_Ground_Cave_OOOX_Q10
+    prefab: {fileID: 1782910147317549663, guid: c1427fc7a763d754d80c3b47d152bfac, type: 3}
+  - name: SM_VKI_Ground_Cave_OOOX_Q11
+    prefab: {fileID: 3275661004279859810, guid: 20dab7421832c704b824c2d445c8bb83, type: 3}
+  - name: SM_VKI_Ground_Cave_OOXO_Q00
+    prefab: {fileID: 4587803737175679532, guid: 06880c151bc75534ebad5c263ba7d1b6, type: 3}
+  - name: SM_VKI_Ground_Cave_OOXO_Q01
+    prefab: {fileID: 3222417193303657333, guid: 8e08b378dcb314c4fb6a44d522fffae3, type: 3}
+  - name: SM_VKI_Ground_Cave_OOXO_Q10
+    prefab: {fileID: 3434207264098041374, guid: ccd6d82d111d75141b6d4df028fe4fc4, type: 3}
+  - name: SM_VKI_Ground_Cave_OOXO_Q11
+    prefab: {fileID: 1425995483060046576, guid: ade0c0114540b1744ba1c340ac08a31a, type: 3}
+  - name: SM_VKI_Ground_Cave_OOXX_Q00
+    prefab: {fileID: 3273202412699713771, guid: a02ae34da08737f4eb8a2d446a0e0866, type: 3}
+  - name: SM_VKI_Ground_Cave_OOXX_Q01
+    prefab: {fileID: 5443935271305373553, guid: f4decead702b37a48a5869753682ac48, type: 3}
+  - name: SM_VKI_Ground_Cave_OOXX_Q10
+    prefab: {fileID: 6387461991416518216, guid: b95ce53eb82323d49a1955fcd33a2590, type: 3}
+  - name: SM_VKI_Ground_Cave_OOXX_Q11
+    prefab: {fileID: 2602050711375928173, guid: d28c4fec1c30e7349a9f9f18363c5b28, type: 3}
+  - name: SM_VKI_Ground_Cave_OXOO_Q00
+    prefab: {fileID: 2112356989338175931, guid: 18f2149ed41b5fb4cbf2de44aa3d837b, type: 3}
+  - name: SM_VKI_Ground_Cave_OXOO_Q01
+    prefab: {fileID: 2585433494747877656, guid: b21bc7f3581dad94d9fac2b6baaaed84, type: 3}
+  - name: SM_VKI_Ground_Cave_OXOO_Q10
+    prefab: {fileID: 5530587247828088648, guid: d40c92a701732774d9e40e90af4176e2, type: 3}
+  - name: SM_VKI_Ground_Cave_OXOO_Q11
+    prefab: {fileID: 3168895525913967455, guid: 5fbe27862ee4d064c8c2668d58223383, type: 3}
+  - name: SM_VKI_Ground_Cave_OXOX_Q00
+    prefab: {fileID: 7042498394703764596, guid: 5a36e490bbd59d14a91d06d79019db80, type: 3}
+  - name: SM_VKI_Ground_Cave_OXOX_Q01
+    prefab: {fileID: 7021763357282438521, guid: 5e300ac77bbbb9a429234fc681babac7, type: 3}
+  - name: SM_VKI_Ground_Cave_OXOX_Q10
+    prefab: {fileID: 1799353406594546474, guid: 0c4b1f5f63c10a64aae9bb2509b71b57, type: 3}
+  - name: SM_VKI_Ground_Cave_OXOX_Q11
+    prefab: {fileID: 3068215082015791508, guid: 8ed05968ca33c9d40b51a2317dbf227f, type: 3}
+  - name: SM_VKI_Ground_Cave_OXXO_Q00
+    prefab: {fileID: 8405647641995610814, guid: a70b3154793ae9041941f598b4724fb0, type: 3}
+  - name: SM_VKI_Ground_Cave_OXXO_Q01
+    prefab: {fileID: 3857048835296161521, guid: d0bfb06859cb4324eba5d29e99cb760b, type: 3}
+  - name: SM_VKI_Ground_Cave_OXXO_Q10
+    prefab: {fileID: 7261818957199611086, guid: d9bab100ef280864fadf4688c7e25ebf, type: 3}
+  - name: SM_VKI_Ground_Cave_OXXO_Q11
+    prefab: {fileID: 2157961603815179935, guid: 402ed3f9e4663bd4a97653049488a4a6, type: 3}
+  - name: SM_VKI_Ground_Cave_OXXX_Q00
+    prefab: {fileID: 5621459899004074404, guid: 3bec2cae8f9d2e348bc0d7d768aec533, type: 3}
+  - name: SM_VKI_Ground_Cave_OXXX_Q01
+    prefab: {fileID: 8910244809920231124, guid: 909513f93f4be0145a457b4018f8589c, type: 3}
+  - name: SM_VKI_Ground_Cave_OXXX_Q10
+    prefab: {fileID: 3195281423668218716, guid: 89251c9c70b7a5c46b2f73643ad87fde, type: 3}
+  - name: SM_VKI_Ground_Cave_OXXX_Q11
+    prefab: {fileID: 3067206417982770478, guid: a95ecc25903963c4aaa1c2684b88c403, type: 3}
+  - name: SM_VKI_Ground_Cave_XOOO_Q00
+    prefab: {fileID: 6602377864863553167, guid: f4a149d1b2773ec42bbafac833d92192, type: 3}
+  - name: SM_VKI_Ground_Cave_XOOO_Q01
+    prefab: {fileID: 2176508399073083047, guid: 9d5f9a4063279314689b88e3b5ba87a8, type: 3}
+  - name: SM_VKI_Ground_Cave_XOOO_Q10
+    prefab: {fileID: 4623524224441863286, guid: a95a157475e1bb441942ac67565d8d90, type: 3}
+  - name: SM_VKI_Ground_Cave_XOOO_Q11
+    prefab: {fileID: 4387309968572350096, guid: 7a182c570a107d24d9cb731555a14df9, type: 3}
+  - name: SM_VKI_Ground_Cave_XOOX_Q00
+    prefab: {fileID: 6034729178492025477, guid: 48921b5c111ad8f41aaf30440a440de3, type: 3}
+  - name: SM_VKI_Ground_Cave_XOOX_Q01
+    prefab: {fileID: 1941790162666788397, guid: 7aaef7f11877220499fa77cde2a7eb66, type: 3}
+  - name: SM_VKI_Ground_Cave_XOOX_Q10
+    prefab: {fileID: 5832033073914499909, guid: 8e6a0a9cfc9c7a542bb7bdcafb7b363c, type: 3}
+  - name: SM_VKI_Ground_Cave_XOOX_Q11
+    prefab: {fileID: 7681598892355577490, guid: 3f70d4d2b6ed68a4886e72aeba44953a, type: 3}
+  - name: SM_VKI_Ground_Cave_XOXO_Q00
+    prefab: {fileID: 4242389465834882389, guid: 71c276841ae4caf4f9177e3077a56bb0, type: 3}
+  - name: SM_VKI_Ground_Cave_XOXO_Q01
+    prefab: {fileID: 5816802692383088804, guid: de9b1e0223cd55f41a13de89f5872510, type: 3}
+  - name: SM_VKI_Ground_Cave_XOXO_Q10
+    prefab: {fileID: 2548871350862812391, guid: d16b35afbf925fe489248c9875155c47, type: 3}
+  - name: SM_VKI_Ground_Cave_XOXO_Q11
+    prefab: {fileID: 1308100133790333758, guid: 700e5bba2b493314183e078a7c0bc981, type: 3}
+  - name: SM_VKI_Ground_Cave_XOXX_Q00
+    prefab: {fileID: 3051536113159155557, guid: 4fdd7a1dd5ea0c74aa0abe4101b2399f, type: 3}
+  - name: SM_VKI_Ground_Cave_XOXX_Q01
+    prefab: {fileID: 1472186377765993405, guid: eaac02d4bfa206344a887ae8ad1d5680, type: 3}
+  - name: SM_VKI_Ground_Cave_XOXX_Q10
+    prefab: {fileID: 5285628500154177380, guid: 78533ed98a1022f4fa549bd1c1d684b4, type: 3}
+  - name: SM_VKI_Ground_Cave_XOXX_Q11
+    prefab: {fileID: 8957950608873879738, guid: c17031864293a55498f93d12e2193039, type: 3}
+  - name: SM_VKI_Ground_Cave_XXOO_Q00
+    prefab: {fileID: 120362236486484502, guid: b470a376841064143b183c35e873470f, type: 3}
+  - name: SM_VKI_Ground_Cave_XXOO_Q01
+    prefab: {fileID: 3909227010616437719, guid: 9de77debf3672f74d820357fb3ec6b23, type: 3}
+  - name: SM_VKI_Ground_Cave_XXOO_Q10
+    prefab: {fileID: 395394705993635341, guid: 7381325e71af98d47addc3d34971dc58, type: 3}
+  - name: SM_VKI_Ground_Cave_XXOO_Q11
+    prefab: {fileID: 775628011369875400, guid: 725b870eb030be646a3aad69ff3a2d00, type: 3}
+  - name: SM_VKI_Ground_Cave_XXOX_Q00
+    prefab: {fileID: 8176110265550443234, guid: cc2a38ca2945b174587dfca30c935372, type: 3}
+  - name: SM_VKI_Ground_Cave_XXOX_Q01
+    prefab: {fileID: 182048222902365630, guid: cd1245641cdff7f4693d63901720306e, type: 3}
+  - name: SM_VKI_Ground_Cave_XXOX_Q10
+    prefab: {fileID: 6367569558726487735, guid: 343f97dad104d4e4f8c0f007e6c09da3, type: 3}
+  - name: SM_VKI_Ground_Cave_XXOX_Q11
+    prefab: {fileID: 403487852800925851, guid: a073de0d98a4c8742b33caa3771f3f5b, type: 3}
+  - name: SM_VKI_Ground_Cave_XXXO_Q00
+    prefab: {fileID: 3007305617811949684, guid: 96a2f683760eebd429357d9eb983f1c9, type: 3}
+  - name: SM_VKI_Ground_Cave_XXXO_Q01
+    prefab: {fileID: 4998546505607537314, guid: 292c35cf3628ecd4e912d85af9532253, type: 3}
+  - name: SM_VKI_Ground_Cave_XXXO_Q10
+    prefab: {fileID: 7599563745527578308, guid: 67c0c00e12b18d4439ddef43b13ba99e, type: 3}
+  - name: SM_VKI_Ground_Cave_XXXO_Q11
+    prefab: {fileID: 804833394531161055, guid: 661a6673c1196804897c4d57b91929d0, type: 3}
+  - name: SM_VKI_Ground_Cave_XXXX
+    prefab: {fileID: 1633634681261417254, guid: 995d247857e2f0e498fdc26b6b78ad46, type: 3}
+  - name: SM_VKI_Ground_Lava_OOOX
+    prefab: {fileID: 8972114207532357013, guid: 0272d8137ae6bd3469041ae817d09b96, type: 3}
+  - name: SM_VKI_Ground_Lava_OOXX
+    prefab: {fileID: 3075745436544847626, guid: 68852cbbec27ab8479946aa819096547, type: 3}
+  - name: SM_VKI_Ground_Lava_OXOX
+    prefab: {fileID: 5321210625660574712, guid: c3b5ac16ca8afd14884d248afdd4dc2e, type: 3}
+  - name: SM_VKI_Ground_Lava_OXXX
+    prefab: {fileID: 3438189093516129788, guid: 99ab4e72ebbad3843b3b00cf103abc68, type: 3}
+  - name: SM_VKI_Ground_Lava_XXXX
+    prefab: {fileID: 2853098391654086601, guid: 5f05a7cd4735332478ad39bae3de403f, type: 3}
+  - name: SM_VKI_Ground_Sewer_OOOX
+    prefab: {fileID: 7279659243948367709, guid: 726bd1aad55613444b8a899c441749e2, type: 3}
+  - name: SM_VKI_Ground_Sewer_OOXX
+    prefab: {fileID: 6352720975266123242, guid: 4d4ff94c2a6df2d4191514521427ba9f, type: 3}
+  - name: SM_VKI_Ground_Sewer_OXOX
+    prefab: {fileID: 1968615936647438712, guid: 51f2d18aa2c1fec42bf86f2754090ff8, type: 3}
+  - name: SM_VKI_Ground_Sewer_OXXX
+    prefab: {fileID: 1837080643234885090, guid: 00f68aeb11133ec41b704d0b5627922b, type: 3}
+  - name: SM_VKI_Ground_Sewer_XXXX
+    prefab: {fileID: 3197699386510797664, guid: e212cdca43d0f9c4cbb7c3681b94a552, type: 3}
+  - name: SM_VKI_Ground_Stream_OOOX_Q00
+    prefab: {fileID: 5153137395045108527, guid: 84c3eca6b8db4e1418731e314aa919f5, type: 3}
+  - name: SM_VKI_Ground_Stream_OOOX_Q01
+    prefab: {fileID: 4903055005809904287, guid: 771956b7c5eb52a44a732702f1787346, type: 3}
+  - name: SM_VKI_Ground_Stream_OOOX_Q10
+    prefab: {fileID: 4991483317044195063, guid: c8f4e7c9f9fe48644a6b724c31d7f0a7, type: 3}
+  - name: SM_VKI_Ground_Stream_OOOX_Q11
+    prefab: {fileID: 5658890969235375700, guid: b56820abbee2ae24693c7be74c3d2c45, type: 3}
+  - name: SM_VKI_Ground_Stream_OOXO_Q00
+    prefab: {fileID: 4953921905970085861, guid: f0491463051cfd345abc9b082aaa8f36, type: 3}
+  - name: SM_VKI_Ground_Stream_OOXO_Q01
+    prefab: {fileID: 452424604686301692, guid: fc1e69f1b7d12ce439f72cea13eec1d3, type: 3}
+  - name: SM_VKI_Ground_Stream_OOXO_Q10
+    prefab: {fileID: 3596671166314438231, guid: 762c3274d874bfb4088630fd4ec58583, type: 3}
+  - name: SM_VKI_Ground_Stream_OOXO_Q11
+    prefab: {fileID: 4533080982889998181, guid: 136b38ded9c5cf049864ee861c519e86, type: 3}
+  - name: SM_VKI_Ground_Stream_OOXX_Q00
+    prefab: {fileID: 7134014743082067644, guid: 6ee29bcc09389cc4eb726e23fe65a7cd, type: 3}
+  - name: SM_VKI_Ground_Stream_OOXX_Q01
+    prefab: {fileID: 7025137032084539528, guid: b452dcae6b1ea9943a331cc1f44b9906, type: 3}
+  - name: SM_VKI_Ground_Stream_OOXX_Q10
+    prefab: {fileID: 1973101299802050663, guid: 3a153efa0058e1c46918315f3453c14e, type: 3}
+  - name: SM_VKI_Ground_Stream_OOXX_Q11
+    prefab: {fileID: 5383068330886028474, guid: a48fead0d466f694689cb2329dbc6505, type: 3}
+  - name: SM_VKI_Ground_Stream_OXOO_Q00
+    prefab: {fileID: 4787135732169710057, guid: 105779786a4f9014d88280f2f7e3e5c7, type: 3}
+  - name: SM_VKI_Ground_Stream_OXOO_Q01
+    prefab: {fileID: 2475395375167239168, guid: 9ab0dda3366dcbc4e88dec8fce38302a, type: 3}
+  - name: SM_VKI_Ground_Stream_OXOO_Q10
+    prefab: {fileID: 3647868511971819919, guid: 6ed15b26cbf3316409f788244f7ccf77, type: 3}
+  - name: SM_VKI_Ground_Stream_OXOO_Q11
+    prefab: {fileID: 3896843142565899438, guid: a10048ee699d4b04ba94c4144f59a495, type: 3}
+  - name: SM_VKI_Ground_Stream_OXOX_Q00
+    prefab: {fileID: 1243066851550327906, guid: 9931d30d92450164aba4d9d74380445e, type: 3}
+  - name: SM_VKI_Ground_Stream_OXOX_Q01
+    prefab: {fileID: 9156859353741421185, guid: fec16ec3a86347c48b196f7708a10263, type: 3}
+  - name: SM_VKI_Ground_Stream_OXOX_Q10
+    prefab: {fileID: 5299421955278575683, guid: e9ccd427c0fc72847af1ef225db7e8ca, type: 3}
+  - name: SM_VKI_Ground_Stream_OXOX_Q11
+    prefab: {fileID: 882466664905143140, guid: 1eb3dde375f807f408d6b3fbc966f02b, type: 3}
+  - name: SM_VKI_Ground_Stream_OXXO_Q00
+    prefab: {fileID: 4115487208651010793, guid: d685534c5bf374446bd5a47246c2132d, type: 3}
+  - name: SM_VKI_Ground_Stream_OXXO_Q01
+    prefab: {fileID: 6742680988883207908, guid: 841a2db766ffac64ab7bc1b0ae54217c, type: 3}
+  - name: SM_VKI_Ground_Stream_OXXO_Q10
+    prefab: {fileID: 1954341886044672529, guid: 3c354be5323316f458e8d6748d0b489e, type: 3}
+  - name: SM_VKI_Ground_Stream_OXXO_Q11
+    prefab: {fileID: 7572354483168464283, guid: ee029e3c61b70fc41a3dbc7023c4272d, type: 3}
+  - name: SM_VKI_Ground_Stream_OXXX_Q00
+    prefab: {fileID: 5323438220199433347, guid: 0a501d6e04afac94bb04c4d12e7d3e14, type: 3}
+  - name: SM_VKI_Ground_Stream_OXXX_Q01
+    prefab: {fileID: 6580474268575624293, guid: 189b0b9c365b46e40a54eab9591d550a, type: 3}
+  - name: SM_VKI_Ground_Stream_OXXX_Q10
+    prefab: {fileID: 1111340501303549171, guid: 36685d33bd2a1444b9bb01c6730d84c9, type: 3}
+  - name: SM_VKI_Ground_Stream_OXXX_Q11
+    prefab: {fileID: 1796995110506918101, guid: 0e6065ae939af264799ba91b960cf570, type: 3}
+  - name: SM_VKI_Ground_Stream_XOOO_Q00
+    prefab: {fileID: 3610862428381110473, guid: f8227e355039b6b40afca192f99baddb, type: 3}
+  - name: SM_VKI_Ground_Stream_XOOO_Q01
+    prefab: {fileID: 6956969522685835089, guid: e756f8ffbfdeb1543ac99b06b02d2689, type: 3}
+  - name: SM_VKI_Ground_Stream_XOOO_Q10
+    prefab: {fileID: 6981568479693855217, guid: 5675edf79e9890141a3dcaf5f5e29395, type: 3}
+  - name: SM_VKI_Ground_Stream_XOOO_Q11
+    prefab: {fileID: 4606593843605794692, guid: 4268c9bd1f524694487b1c926ff09f3c, type: 3}
+  - name: SM_VKI_Ground_Stream_XOOX_Q00
+    prefab: {fileID: 4368965767153480725, guid: ac5978664363693458f252a1aa5a503d, type: 3}
+  - name: SM_VKI_Ground_Stream_XOOX_Q01
+    prefab: {fileID: 2858519939931767541, guid: e60a63a48be457449a409047b3defca0, type: 3}
+  - name: SM_VKI_Ground_Stream_XOOX_Q10
+    prefab: {fileID: 780778685421557642, guid: 09f6573c169d6004aaa9604bbb132843, type: 3}
+  - name: SM_VKI_Ground_Stream_XOOX_Q11
+    prefab: {fileID: 8071422030413302708, guid: b7174334d106b1e44bca3047b54a04a9, type: 3}
+  - name: SM_VKI_Ground_Stream_XOXO_Q00
+    prefab: {fileID: 3544478121721711579, guid: d391d1f19c5c241449ddb47883816b23, type: 3}
+  - name: SM_VKI_Ground_Stream_XOXO_Q01
+    prefab: {fileID: 1658845967837117978, guid: 75c0222ec66694a47bfb8697a68dc09b, type: 3}
+  - name: SM_VKI_Ground_Stream_XOXO_Q10
+    prefab: {fileID: 49508861301457339, guid: 48ba3ab15f3086e4b9481286e8863e01, type: 3}
+  - name: SM_VKI_Ground_Stream_XOXO_Q11
+    prefab: {fileID: 3380011204834121178, guid: c76a0d177f61b3e43a902a433b43fc84, type: 3}
+  - name: SM_VKI_Ground_Stream_XOXX_Q00
+    prefab: {fileID: 2507482058334761708, guid: ddd72977c6de69f46a6c00536b9567c5, type: 3}
+  - name: SM_VKI_Ground_Stream_XOXX_Q01
+    prefab: {fileID: 5632003655354484982, guid: a3eccb100194eca4998646856a60a685, type: 3}
+  - name: SM_VKI_Ground_Stream_XOXX_Q10
+    prefab: {fileID: 1564315216945068664, guid: 9787ea1e73496824baeb913afb7f8d38, type: 3}
+  - name: SM_VKI_Ground_Stream_XOXX_Q11
+    prefab: {fileID: 2435250593348869915, guid: 4a097ef1093993c4099add331607df83, type: 3}
+  - name: SM_VKI_Ground_Stream_XXOO_Q00
+    prefab: {fileID: 3877539414979868655, guid: 1782c7bc99329974e8b8080d1e9cd369, type: 3}
+  - name: SM_VKI_Ground_Stream_XXOO_Q01
+    prefab: {fileID: 532336196061780098, guid: 3f1fe40df02eeb6438df1458f8c7ff28, type: 3}
+  - name: SM_VKI_Ground_Stream_XXOO_Q10
+    prefab: {fileID: 1380577228279941476, guid: 26ffd645e569cea429cc7dd7ce5e86ec, type: 3}
+  - name: SM_VKI_Ground_Stream_XXOO_Q11
+    prefab: {fileID: 1789032166384809866, guid: f466dca506592eb488ca855f850a30fc, type: 3}
+  - name: SM_VKI_Ground_Stream_XXOX_Q00
+    prefab: {fileID: 3095360716403256647, guid: cd9da802d13e48d4cb11b6c148fc2f9f, type: 3}
+  - name: SM_VKI_Ground_Stream_XXOX_Q01
+    prefab: {fileID: 219760515364833189, guid: e81d26d59c6e36a46bf3a3c305cef59d, type: 3}
+  - name: SM_VKI_Ground_Stream_XXOX_Q10
+    prefab: {fileID: 4340582505201975370, guid: f41b0ead10902494287ac6de6c92c619, type: 3}
+  - name: SM_VKI_Ground_Stream_XXOX_Q11
+    prefab: {fileID: 8754881695605950906, guid: f52cb1c74fe995e49aae793339e5d9e9, type: 3}
+  - name: SM_VKI_Ground_Stream_XXXO_Q00
+    prefab: {fileID: 4429862642258289004, guid: 8b90d15e0c67bb243b510f5e9ad270bc, type: 3}
+  - name: SM_VKI_Ground_Stream_XXXO_Q01
+    prefab: {fileID: 863058102492603037, guid: 4524331006457164b915e48ea0afd404, type: 3}
+  - name: SM_VKI_Ground_Stream_XXXO_Q10
+    prefab: {fileID: 2774409298286890648, guid: 8189a5247ba50ca4aab5e3ba3f9a1672, type: 3}
+  - name: SM_VKI_Ground_Stream_XXXO_Q11
+    prefab: {fileID: 3295613731650576166, guid: 087755da29d437242bc34ce840208f38, type: 3}
+  - name: SM_VKI_Ground_Stream_XXXX
+    prefab: {fileID: 6267505226746259292, guid: 79bad58d406d4324e8e943269d6715cf, type: 3}
+  - name: SM_VKI_Leaf_BarsGate_Full
+    prefab: {fileID: 1476583998268150508, guid: 0b0965502c180ae448ba67fac38bfe5f, type: 3}
+  - name: SM_VKI_Leaf_DwarfGate_300
+    prefab: {fileID: 8260847727627638113, guid: 3f2d9b78c1d44e943aed98527271dc16, type: 3}
+  - name: SM_VKI_Leaf_Iron_Cut
+    prefab: {fileID: 878427885071232853, guid: 7e372dc16d614f842ae3241dc08a3b5d, type: 3}
+  - name: SM_VKI_Leaf_Iron_Full
+    prefab: {fileID: 8749846727597504338, guid: c6987d1cacbc76a45bd46d7413046181, type: 3}
+  - name: SM_VKI_Leaf_Plank_Cut
+    prefab: {fileID: 7648231954314622476, guid: e0adfbcd8932431419d1bb0c941c0870, type: 3}
+  - name: SM_VKI_Leaf_Plank_Full
+    prefab: {fileID: 6920727362935766961, guid: f1c73f7d2350d034dbcbf0599e50228c, type: 3}
+  - name: SM_VKI_Leaf_Portcullis_300
+    prefab: {fileID: 7045274610750001865, guid: 52082d6facc22b44ba9f3ef9f612b48b, type: 3}
+  - name: SM_VKI_Leaf_SecretStone_Full
+    prefab: {fileID: 8276682824322439012, guid: 51c96898a77687f4db6a2442b540b29d, type: 3}
+  - name: SM_VKI_Leaf_VaultDisc_300
+    prefab: {fileID: 4231519113846613016, guid: 9fc4f55fb95eebe4aa890d159331494a, type: 3}
+  - name: SM_VKI_Leaf_Wide160_Cut_L
+    prefab: {fileID: 4645427878586323590, guid: 912d679b474faf4488aa8bfa0b546416, type: 3}
+  - name: SM_VKI_Leaf_Wide160_Cut_R
+    prefab: {fileID: 3279593687179695042, guid: cb2a6185643580242abee2f91a1bc5b0, type: 3}
+  - name: SM_VKI_Leaf_Wide_Cut_L
+    prefab: {fileID: 83973466274602954, guid: afba704591a416d43ac49c1c062cb293, type: 3}
+  - name: SM_VKI_Leaf_Wide_Cut_R
+    prefab: {fileID: 5523967244678905651, guid: 35d00e4e1ae7e584f9bf0235bd15d441, type: 3}
+  - name: SM_VKI_Overlay_Bedroll
+    prefab: {fileID: 8221359157495158508, guid: c116af4d015a90f43ac8159d51fb0364, type: 3}
+  - name: SM_VKI_Overlay_BladeSlot_150
+    prefab: {fileID: 1167978697637575671, guid: 1e69a82dd30720e42be813698d1cb2df, type: 3}
+  - name: SM_VKI_Overlay_Bones
+    prefab: {fileID: 4613312283450413936, guid: 4e6fb990461a7c546ad4950f9abb3c9b, type: 3}
+  - name: SM_VKI_Overlay_CrackedFloor
+    prefab: {fileID: 4284345934537159363, guid: fbe0d213dd5796f44801615ee3bbc765, type: 3}
+  - name: SM_VKI_Overlay_Debris_Barrel
+    prefab: {fileID: 259973415289665149, guid: 17a65da84c008004dac541519778b4b2, type: 3}
+  - name: SM_VKI_Overlay_Debris_Campfire
+    prefab: {fileID: 3141051795484249700, guid: a4d06b4b342a70c48948e63ac3e9c02e, type: 3}
+  - name: SM_VKI_Overlay_Debris_Crate
+    prefab: {fileID: 4239564897187654647, guid: 5be55c7ad21447f4e8397347c298d175, type: 3}
+  - name: SM_VKI_Overlay_Debris_Masonry_A
+    prefab: {fileID: 6498839424222738879, guid: 0779a5974dd24ce438a2972dd1dd501b, type: 3}
+  - name: SM_VKI_Overlay_Debris_Masonry_B
+    prefab: {fileID: 2426772433720934758, guid: aed4e934a85839a4da57273d72581703, type: 3}
+  - name: SM_VKI_Overlay_Debris_Ore
+    prefab: {fileID: 817636403210303271, guid: 0e081aa0e5915b741bee4239799f9891, type: 3}
+  - name: SM_VKI_Overlay_Debris_Planks
+    prefab: {fileID: 4878122638157992698, guid: 84e8caa73518b214c8daa65764efd589, type: 3}
+  - name: SM_VKI_Overlay_Debris_PotPile
+    prefab: {fileID: 6398592814608861912, guid: b823c03496c514d4ebf3307c678c2a3f, type: 3}
+  - name: SM_VKI_Overlay_Debris_Pottery_A
+    prefab: {fileID: 4467871527263207042, guid: 2d0d7784fe804f34fb1eab0ff0bbcfb2, type: 3}
+  - name: SM_VKI_Overlay_Debris_Pottery_B
+    prefab: {fileID: 6421402185559821339, guid: af7cec0f1fb11404fb6b03a10086e99f, type: 3}
+  - name: SM_VKI_Overlay_Debris_Pottery_C
+    prefab: {fileID: 3268321281398279745, guid: 2e78f1b72281c8e459569ec7652edfd1, type: 3}
+  - name: SM_VKI_Overlay_Debris_Rags
+    prefab: {fileID: 7114128209347300813, guid: cd4fd00eea673d94d89576b9ac041ac3, type: 3}
+  - name: SM_VKI_Overlay_Debris_Rail
+    prefab: {fileID: 6603633110962687157, guid: 0f2798bb65bd01546813fce1bfc7a393, type: 3}
+  - name: SM_VKI_Overlay_Debris_Rocks_A
+    prefab: {fileID: 8030194112911907479, guid: fc9355bdb99efbc4881532b07f772c3e, type: 3}
+  - name: SM_VKI_Overlay_Debris_Rocks_B
+    prefab: {fileID: 8508747845614084542, guid: 176079675c335554eab7639966f744cc, type: 3}
+  - name: SM_VKI_Overlay_Debris_Rocks_C
+    prefab: {fileID: 3844188796209357295, guid: f95a24220073f9c41805d3607c7af688, type: 3}
+  - name: SM_VKI_Overlay_Debris_Rubble
+    prefab: {fileID: 3389546080153843690, guid: ff42fc5409456d643ac68bef2e4e157e, type: 3}
+  - name: SM_VKI_Overlay_Debris_Sack
+    prefab: {fileID: 6973016256888622820, guid: 746a44a183800cc49824771197ca565f, type: 3}
+  - name: SM_VKI_Overlay_Debris_Slag
+    prefab: {fileID: 9122251714760113843, guid: 8f84ca839d2e6c041a9b305342aecaa6, type: 3}
+  - name: SM_VKI_Overlay_Debris_Stalactite
+    prefab: {fileID: 3205751250807487764, guid: a4fb2188284145242963974d6c28738b, type: 3}
+  - name: SM_VKI_Overlay_Debris_Tools
+    prefab: {fileID: 8026720517653192275, guid: 5efe8898c0603c84988379a220bd29d5, type: 3}
+  - name: SM_VKI_Overlay_Debris_Weapons
+    prefab: {fileID: 4141448634777493507, guid: da3506a433a53e74ead758a941ccd75d, type: 3}
+  - name: SM_VKI_Overlay_DrainGrate
+    prefab: {fileID: 1777008815825197125, guid: a625fd8c802963d44ad8c070f1b9198a, type: 3}
+  - name: SM_VKI_Overlay_GoldCoins
+    prefab: {fileID: 2726758227907074056, guid: 0872b833d5924424daacb19dee45a699, type: 3}
+  - name: SM_VKI_Overlay_Gravel
+    prefab: {fileID: 142627169568939515, guid: 0fc1c84e980482f4aaff1d972af019d1, type: 3}
+  - name: SM_VKI_Overlay_PressurePlate
+    prefab: {fileID: 993138480389178914, guid: 3d7773c79fb1b9e418563e2cf65127d0, type: 3}
+  - name: SM_VKI_Overlay_Puddle
+    prefab: {fileID: 5468998655694824907, guid: 84154c61deb7c534f8b837f4d33e03d3, type: 3}
+  - name: SM_VKI_Overlay_Refuse
+    prefab: {fileID: 5044797542792112526, guid: 8d8be8eeac3fffb4283431fc4fdbb122, type: 3}
+  - name: SM_VKI_Overlay_RuneCircle
+    prefab: {fileID: 4544118682290358701, guid: 80251f27f882bcc41afb691a50fd7447, type: 3}
+  - name: SM_VKI_Overlay_Sludge
+    prefab: {fileID: 9144906551356843086, guid: 4e0c0374558833a4fab69b3dac1f96e9, type: 3}
+  - name: SM_VKI_Overlay_Spill
+    prefab: {fileID: 3049690880432684573, guid: a1e905ad2be1b6448bf2f21ddf22c23b, type: 3}
+  - name: SM_VKI_Overlay_StrawPile
+    prefab: {fileID: 7238429096039505969, guid: 0747169d13862c0428f1f00bbf32814e, type: 3}
+  - name: SM_VKI_Overlay_TombSlab
+    prefab: {fileID: 4044417993443814210, guid: b4b665c95375ee74f8723cec01bdd12c, type: 3}
+  - name: SM_VKI_Overlay_Track_Cross
+    prefab: {fileID: 632278353899636778, guid: 4ec01b3b8e8ee6948936bd5e62550640, type: 3}
+  - name: SM_VKI_Overlay_Track_Curve
+    prefab: {fileID: 1393593149706471273, guid: b7f87eb04f034df479b9de4813a3116c, type: 3}
+  - name: SM_VKI_Overlay_Track_End
+    prefab: {fileID: 6105816966590696711, guid: aefac4d70f28f8e42a24813c8fbbe39f, type: 3}
+  - name: SM_VKI_Overlay_Track_Straight
+    prefab: {fileID: 1257356818395589553, guid: 986dbe9fe0009ee48ae495c7a3eb8f09, type: 3}
+  - name: SM_VKI_Overlay_Track_Tee
+    prefab: {fileID: 6791824680069766572, guid: cc916e1a3cd9ace4fbd45e0c6f537b45, type: 3}
+  - name: SM_VKI_Overlay_WebFloor
+    prefab: {fileID: 7958002992335715908, guid: f1634ec7c069a5c4e9a67f0365842ffc, type: 3}
+  - name: SM_VKI_Pit_ChasmBridge_150x300
+    prefab: {fileID: 3050931939289060890, guid: daaeae4b65a2ceb4690a92cbeba224b2, type: 3}
+  - name: SM_VKI_Pit_Chasm_150x300
+    prefab: {fileID: 1537174402722499849, guid: 2dc1e6a8447ace242ade1e617324e4f2, type: 3}
+  - name: SM_VKI_Pit_Pool_300x300
+    prefab: {fileID: 3545670536094125310, guid: 2ebbd1e947d8cef468cb052af79f37bc, type: 3}
+  - name: SM_VKI_Pit_Shaft_300x300
+    prefab: {fileID: 3197071780292023772, guid: a9c4fbf5fcd1068448278aef6a0ce9f9, type: 3}
+  - name: SM_VKI_Pit_SpikePit_150
+    prefab: {fileID: 4074983774735860574, guid: 35fc12212d8890f498e258007fc80271, type: 3}
+  - name: SM_VKI_Post_Ancient_Corner_Cut
+    prefab: {fileID: 7039358558826066303, guid: e35d184830b0f6640895c17f001ccde5, type: 3}
+  - name: SM_VKI_Post_Ancient_Corner_Full
+    prefab: {fileID: 2927173720097206850, guid: 52730470886fffb4eb026e3850a8131e, type: 3}
+  - name: SM_VKI_Post_Ancient_Mid_Cut
+    prefab: {fileID: 8984769783449916021, guid: c16f5f3868c13a148aea5b14de8ecf67, type: 3}
+  - name: SM_VKI_Post_Ancient_Mid_Full
+    prefab: {fileID: 4422223790116211494, guid: 40d94cada0bdb7b46b2d712a51d5398c, type: 3}
+  - name: SM_VKI_Post_Ashlar_Corner_Cut
+    prefab: {fileID: 7430474606880040565, guid: 97d8ced4d34487a468d0bb21ea2b65ec, type: 3}
+  - name: SM_VKI_Post_Ashlar_Corner_Full
+    prefab: {fileID: 5632950001095459572, guid: 3f5aae41dca39d5468aca2737483b374, type: 3}
+  - name: SM_VKI_Post_Ashlar_Mid_Full
+    prefab: {fileID: 6758990264798941961, guid: 7625d0468759bc041a72ca52409f35c6, type: 3}
+  - name: SM_VKI_Post_Bars_Corner_Full
+    prefab: {fileID: 136569158140399357, guid: a5cf4826c8a6d394482e4adde73570b5, type: 3}
+  - name: SM_VKI_Post_Bars_Mid_Full
+    prefab: {fileID: 7608013449820680380, guid: 7aa1012cc5b3d0143aad7c819eb97254, type: 3}
+  - name: SM_VKI_Post_Board_Corner_Cut
+    prefab: {fileID: 2794048683485989807, guid: e2bb85ed8095c194f9b934d4433d2631, type: 3}
+  - name: SM_VKI_Post_Board_Corner_Full
+    prefab: {fileID: 3771496317788263020, guid: c856f09949df1694c98c8e3480aa7070, type: 3}
+  - name: SM_VKI_Post_Board_Mid_Cut
+    prefab: {fileID: 6968104708953679725, guid: 3cb1eeade70c3e042a1ba0c0fc5e542e, type: 3}
+  - name: SM_VKI_Post_Board_Mid_Full
+    prefab: {fileID: 6317424177033883765, guid: f4018f1cece90e24c9ce6da693f90a27, type: 3}
+  - name: SM_VKI_Post_Cave_Corner_Cut
+    prefab: {fileID: 7179900284596387972, guid: 40756211374f13f4fb5d6e0a25dd4a00, type: 3}
+  - name: SM_VKI_Post_Cave_Corner_Full
+    prefab: {fileID: 5391710251005482651, guid: 78538d6ac8968a2489509e8a2ea17a29, type: 3}
+  - name: SM_VKI_Post_Cave_Mid_Cut
+    prefab: {fileID: 368791839710658671, guid: 1b0350b162b98564e85aac128b3d9207, type: 3}
+  - name: SM_VKI_Post_Cave_Mid_Full
+    prefab: {fileID: 3593169076201505758, guid: a354b4a2b0cf46e44915169f3d8b296c, type: 3}
+  - name: SM_VKI_Post_Dungeon_Corner_Cut
+    prefab: {fileID: 511757369328890682, guid: f2bbfb91b11c93444a8030d9cb6c2a2d, type: 3}
+  - name: SM_VKI_Post_Dungeon_Corner_Full
+    prefab: {fileID: 4023658807721248730, guid: 28827dc30d223da45a04f38be622806b, type: 3}
+  - name: SM_VKI_Post_Dungeon_Mid_Cut
+    prefab: {fileID: 7563265188537264750, guid: 367e511ddd0d73e48b6b7a3c74e2f07b, type: 3}
+  - name: SM_VKI_Post_Dungeon_Mid_Full
+    prefab: {fileID: 4419073265698137389, guid: 599e22e9d1775a0478101802d2bc0f75, type: 3}
+  - name: SM_VKI_Post_Dwarf_Corner_Cut
+    prefab: {fileID: 4824454342815996829, guid: 7fcb61ffc0afddd4fa9710162385e29a, type: 3}
+  - name: SM_VKI_Post_Dwarf_Corner_Full
+    prefab: {fileID: 5132861643434914217, guid: 1b528659f359b1943a5b88b8a6126803, type: 3}
+  - name: SM_VKI_Post_Dwarf_Mid_Cut
+    prefab: {fileID: 8426407261991921974, guid: fc08b470964e4584dbea5ccfe0263611, type: 3}
+  - name: SM_VKI_Post_Dwarf_Mid_Full
+    prefab: {fileID: 3844789033864668289, guid: fb38f57901c18204cbe6c034b37b8b9b, type: 3}
+  - name: SM_VKI_Post_Mine_Corner_Cut
+    prefab: {fileID: 4761114861202206049, guid: 398d3fa8f0e458f4597cba82a6bdfc14, type: 3}
+  - name: SM_VKI_Post_Mine_Corner_Full
+    prefab: {fileID: 7569973861349903880, guid: 13761e00785580a4586ed55bd88ec532, type: 3}
+  - name: SM_VKI_Post_Mine_Mid_Cut
+    prefab: {fileID: 5289847658376376443, guid: 45f2cd167c4bbc4438bf44068d20b08c, type: 3}
+  - name: SM_VKI_Post_Mine_Mid_Full
+    prefab: {fileID: 6263467603568878838, guid: 06c901703645a854c9816617fc4f8297, type: 3}
+  - name: SM_VKI_Post_Sewer_Corner_Cut
+    prefab: {fileID: 4922059680666140632, guid: e4127be5403ec5e4d80893a306af3cc3, type: 3}
+  - name: SM_VKI_Post_Sewer_Corner_Full
+    prefab: {fileID: 1760782422070158541, guid: 8252e21765cba23458e8296571a976f0, type: 3}
+  - name: SM_VKI_Post_Sewer_Mid_Cut
+    prefab: {fileID: 2784690104944285674, guid: 5aefc3d837a1c904f8aa6730229ae7d0, type: 3}
+  - name: SM_VKI_Post_Sewer_Mid_Full
+    prefab: {fileID: 5004192441907085879, guid: d515e9b2da325c847bcbbb3bd227cbdd, type: 3}
+  - name: SM_VKI_Post_Stone_Corner_Cut
+    prefab: {fileID: 5444735949748807732, guid: 84096a0c736fe1d4c947ce4e0fd114f3, type: 3}
+  - name: SM_VKI_Post_Stone_Corner_Full
+    prefab: {fileID: 4581491166243050772, guid: 1b50c3458deed1b479aec2291b87e06e, type: 3}
+  - name: SM_VKI_Post_Stone_Mid_Cut
+    prefab: {fileID: 761303495849900047, guid: 25d904a74c81ab0448bce2ff25dd5c50, type: 3}
+  - name: SM_VKI_Post_Stone_Mid_Full
+    prefab: {fileID: 2621381048413477363, guid: e8913e22891b7e041867704ce29c52fe, type: 3}
+  - name: SM_VKI_Post_Timber_Corner_Cut
+    prefab: {fileID: 3589174399627906444, guid: e87e6a00799cf6740a45fccb54bda300, type: 3}
+  - name: SM_VKI_Post_Timber_Corner_Full
+    prefab: {fileID: 8533360119643909637, guid: 7070a54121e44b547a5ecb47ab36a0b8, type: 3}
+  - name: SM_VKI_Post_Timber_Mid_Cut
+    prefab: {fileID: 7432070203946236383, guid: 67020c81f136a0643bb79516811641fe, type: 3}
+  - name: SM_VKI_Post_Timber_Mid_Full
+    prefab: {fileID: 7454500172349127290, guid: d0da7abdaa81a1848bf089679ecbfb46, type: 3}
+  - name: SM_VKI_Post_Wattle_Corner_Cut
+    prefab: {fileID: 7411503432367515822, guid: 92cbe47fad2502d4cbd8a7e8d3b03981, type: 3}
+  - name: SM_VKI_Post_Wattle_Corner_Full
+    prefab: {fileID: 3890146168280821026, guid: f17cf18f049189743941223702103373, type: 3}
+  - name: SM_VKI_Post_Wattle_Mid_Cut
+    prefab: {fileID: 6374736696437976035, guid: 6e4cc669743eb41439f9190159393909, type: 3}
+  - name: SM_VKI_Post_Wattle_Mid_Full
+    prefab: {fileID: 1054123364498313298, guid: 51aba1f376a076841ab05dde6c9f1450, type: 3}
+  - name: SM_VKI_Prop_AltarRail_150
+    prefab: {fileID: 2732491263095906144, guid: 8db1ac101e96d5d4b8b47104d4972000, type: 3}
+  - name: SM_VKI_Prop_Altar_300
+    prefab: {fileID: 6478269075310340541, guid: 97d5db7674da73c4bbafb688e216869b, type: 3}
+  - name: SM_VKI_Prop_Altar_Idol
+    prefab: {fileID: 7612624948844393876, guid: e1e4ebc212059504f9bb8dcf7869c816, type: 3}
+  - name: SM_VKI_Prop_Anvil_Dwarf
+    prefab: {fileID: 3359124729930195752, guid: 273c9f8c3e580c345b3c0ffc4d5b3c86, type: 3}
+  - name: SM_VKI_Prop_Banner_Dwarf
+    prefab: {fileID: 8286569693662396824, guid: aa27270f74fa3f746ba5484e1cdf6849, type: 3}
+  - name: SM_VKI_Prop_Bar_Counter_150
+    prefab: {fileID: 43620393493236896, guid: 033b4e41c3d26cf438dc194d058d105a, type: 3}
+  - name: SM_VKI_Prop_Bar_End_150
+    prefab: {fileID: 7858242104101245001, guid: 452d3c09759546248b918c48fbeac46f, type: 3}
+  - name: SM_VKI_Prop_Barrel
+    prefab: {fileID: 598427737042998688, guid: e8f8a09e8a1c0cb4391608d7ca979604, type: 3}
+  - name: SM_VKI_Prop_Barrel_Water
+    prefab: {fileID: 3016597888890412402, guid: 8fc86b30e5e3e3644a6ca5ee332f15ab, type: 3}
+  - name: SM_VKI_Prop_Barricade_Stakes
+    prefab: {fileID: 7960506796720719854, guid: bdd5986324b29394392358f174692966, type: 3}
+  - name: SM_VKI_Prop_Bed_Box
+    prefab: {fileID: 4866057375350890344, guid: 0e98a597e65b81c4d9b5688729c63ced, type: 3}
+  - name: SM_VKI_Prop_Bed_HalfTester
+    prefab: {fileID: 4839342443421791797, guid: 449520c402f06e248ad5ce783d0639c6, type: 3}
+  - name: SM_VKI_Prop_Bed_Straw
+    prefab: {fileID: 7810344936567434878, guid: 20f70f4e09bf8e542846192cc77d8520, type: 3}
+  - name: SM_VKI_Prop_Boulder
+    prefab: {fileID: 1381882140826601429, guid: 2ca189463f18e5345b27cc163d4a2388, type: 3}
+  - name: SM_VKI_Prop_Boulders
+    prefab: {fileID: 4388725634336090597, guid: 894a7fc2116cd1742a8ed65d3a446a92, type: 3}
+  - name: SM_VKI_Prop_Brazier
+    prefab: {fileID: 1680048134082362485, guid: 4559e8efa745430469edbc7a3ab5e20a, type: 3}
+  - name: SM_VKI_Prop_Brazier_Dwarf
+    prefab: {fileID: 8789419493664816894, guid: a90523e660d2eca479c287d9af08d7d6, type: 3}
+  - name: SM_VKI_Prop_Brazier_Stone
+    prefab: {fileID: 6973911827773824633, guid: 4877fe9d79d2b80438738f7272e7505e, type: 3}
+  - name: SM_VKI_Prop_Bridge_Dwarf
+    prefab: {fileID: 8450386789440630635, guid: c81fd97baa40f1f43b81749826f9f335, type: 3}
+  - name: SM_VKI_Prop_Bridge_Sewer
+    prefab: {fileID: 2605350757626043429, guid: 550783cfaef7ca34e85409c38fc842f2, type: 3}
+  - name: SM_VKI_Prop_Bucket
+    prefab: {fileID: 405010781898308399, guid: d09ce42b07c136c4ab70a26c36bab38a, type: 3}
+  - name: SM_VKI_Prop_Burrow
+    prefab: {fileID: 535156203949756390, guid: f3b1994c49294aa4fbf1e3bf8c5710e2, type: 3}
+  - name: SM_VKI_Prop_Cage
+    prefab: {fileID: 3321793805232567783, guid: 9438a4c72e2617b419ff440d9fd2fe3d, type: 3}
+  - name: SM_VKI_Prop_CandleStand_Pricket
+    prefab: {fileID: 7510297130556541271, guid: 1acfbe5e995dbd242a324b2b64662494, type: 3}
+  - name: SM_VKI_Prop_Candle_Plate
+    prefab: {fileID: 1037916099454525919, guid: 2edbdd9700069d04c9c516edf8e1e7c0, type: 3}
+  - name: SM_VKI_Prop_Candles_Floor
+    prefab: {fileID: 3343408793639485164, guid: 6994b90b90baba54da83f34b25ee51a7, type: 3}
+  - name: SM_VKI_Prop_Candlestick
+    prefab: {fileID: 6167715069698688282, guid: e8637edbb7558d6498f87a6dc1a6eff5, type: 3}
+  - name: SM_VKI_Prop_CaskRack_150
+    prefab: {fileID: 5309379839233059509, guid: 86daaf3be4488644e9ff2447d72682fc, type: 3}
+  - name: SM_VKI_Prop_Chains_Wall
+    prefab: {fileID: 3800968757352266611, guid: 3a4a3a2cfa94b44429c84492a6c06d79, type: 3}
+  - name: SM_VKI_Prop_Chest
+    prefab: {fileID: 5469180487738560884, guid: a118c47b682ccc84bbfe74ac6fd2d687, type: 3}
+  - name: SM_VKI_Prop_Chest_Iron
+    prefab: {fileID: 1305784544116505860, guid: 12d583c48bf6d954581526f0d9f47ad0, type: 3}
+  - name: SM_VKI_Prop_Chest_Treasure
+    prefab: {fileID: 323305530390658662, guid: 84522b9a4e2c95c418623749e66813be, type: 3}
+  - name: SM_VKI_Prop_CoalBin_150
+    prefab: {fileID: 1313946156637645437, guid: 56a4af5b723b70549a044ae3a74dd048, type: 3}
+  - name: SM_VKI_Prop_Cocoon
+    prefab: {fileID: 842700768016260812, guid: 8aef48aedbe6a22469d1d2c348d58227, type: 3}
+  - name: SM_VKI_Prop_Coffin
+    prefab: {fileID: 5812109461171705477, guid: 96f6fa1cb48f30547aaba06bd9284ac6, type: 3}
+  - name: SM_VKI_Prop_Column_Ancient
+    prefab: {fileID: 4330717893398055334, guid: c05845b9475dcb54493fae5e17dfe0b5, type: 3}
+  - name: SM_VKI_Prop_Column_Broken
+    prefab: {fileID: 6976505099163190374, guid: f82c6e5697ca08a4c8a2b02af134f839, type: 3}
+  - name: SM_VKI_Prop_Column_Fallen
+    prefab: {fileID: 1703756842636269911, guid: eca5bd94a26d5a1458784e49d0b59542, type: 3}
+  - name: SM_VKI_Prop_Crate
+    prefab: {fileID: 1922388413384781449, guid: 38b13411217758b4f8e2a154f0ff9a02, type: 3}
+  - name: SM_VKI_Prop_Crystals
+    prefab: {fileID: 5698817375180335720, guid: fa61f7ffd5efc1a4981022a4239e42f4, type: 3}
+  - name: SM_VKI_Prop_Desk_Merchant
+    prefab: {fileID: 3971518024250124001, guid: 928696d0c36e68e4086d22cf50556a96, type: 3}
+  - name: SM_VKI_Prop_Dresser
+    prefab: {fileID: 4319200275929832858, guid: 18104057f7f08aa40a8c7dccc574c137, type: 3}
+  - name: SM_VKI_Prop_EggSacs
+    prefab: {fileID: 7785653195132692577, guid: 3dc324a457d885c4faa89452c60967aa, type: 3}
+  - name: SM_VKI_Prop_FirePit_Camp
+    prefab: {fileID: 6043314832620895587, guid: 20f521fdd7a4db6409b6c87bb8846352, type: 3}
+  - name: SM_VKI_Prop_Font
+    prefab: {fileID: 8340100307856485549, guid: 274cf6f38c5375646b5bbcbbccd37198, type: 3}
+  - name: SM_VKI_Prop_Forge_Dwarf
+    prefab: {fileID: 1583777130154669494, guid: 4ef7ae3e049cdc041aaa6c24a26d0a8b, type: 3}
+  - name: SM_VKI_Prop_Form_150
+    prefab: {fileID: 8932072971310724738, guid: 39bdd4f25a141c942b76c8aa42d55cdd, type: 3}
+  - name: SM_VKI_Prop_Form_300
+    prefab: {fileID: 3833165807147519760, guid: f77491ff8e7e5874e80f5ab55c406cda, type: 3}
+  - name: SM_VKI_Prop_Goblin_Bonfire
+    prefab: {fileID: 9221273917214925535, guid: 6aa80834b8c94dc46ada5dbde255abbc, type: 3}
+  - name: SM_VKI_Prop_Goblin_ChiefTent
+    prefab: {fileID: 873684201429781878, guid: c0709b3c282da454ebc2a32409f7aa84, type: 3}
+  - name: SM_VKI_Prop_Goblin_Gate
+    prefab: {fileID: 5002658565663505575, guid: 721612dd4a3f97d48972557845aa870e, type: 3}
+  - name: SM_VKI_Prop_Goblin_Gate_Broken
+    prefab: {fileID: 4123184161712918902, guid: 441f85b4a81418e44b049bc4dcb5ed43, type: 3}
+  - name: SM_VKI_Prop_Goblin_Tent
+    prefab: {fileID: 4293384292730501876, guid: 3c8186e056a2e3941be19bef0863eb60, type: 3}
+  - name: SM_VKI_Prop_Goblin_Watchtower
+    prefab: {fileID: 6565054244920107098, guid: a5ac02e86a2f06c46bc86f3e72b819ff, type: 3}
+  - name: SM_VKI_Prop_GoodsRack_150
+    prefab: {fileID: 4467684188714659612, guid: 4286d14add7416a40b1e9ecbfe3c932d, type: 3}
+  - name: SM_VKI_Prop_Hearth_Open
+    prefab: {fileID: 8047861900658964974, guid: 55cea660eb41b9f4784c85cc1528ebb8, type: 3}
+  - name: SM_VKI_Prop_IronStock_150
+    prefab: {fileID: 8348301016644702149, guid: be6616b6efcb3b941be964752cd69945, type: 3}
+  - name: SM_VKI_Prop_Jars_Cluster
+    prefab: {fileID: 1060301503799585176, guid: 5dffcf0de5829d348ba93e5daa068485, type: 3}
+  - name: SM_VKI_Prop_Lantern_Wall
+    prefab: {fileID: 4067590395193075802, guid: e27b7440e10bade48888789a79434998, type: 3}
+  - name: SM_VKI_Prop_LeanTo
+    prefab: {fileID: 1100528440796491711, guid: 33a5686f3a686de4db6ff5f0feaa888a, type: 3}
+  - name: SM_VKI_Prop_Lectern
+    prefab: {fileID: 4397263018972331901, guid: 14a9627c2d4826a44af9fb18eb08368c, type: 3}
+  - name: SM_VKI_Prop_Lever_Wall
+    prefab: {fileID: 4895913726677281773, guid: 1915860f8fe04f549b129bfd832c3b79, type: 3}
+  - name: SM_VKI_Prop_LogBasket
+    prefab: {fileID: 3098451701417687607, guid: 5b2dd630ea8af5a42b577513aef9496e, type: 3}
+  - name: SM_VKI_Prop_LootPile
+    prefab: {fileID: 1201003063824945793, guid: f16458e3c12916442a134b85947636b9, type: 3}
+  - name: SM_VKI_Prop_Mine_Barricade
+    prefab: {fileID: 9130282110161044827, guid: d9a0b431e252c61408f12da56856a80a, type: 3}
+  - name: SM_VKI_Prop_Mine_Bench
+    prefab: {fileID: 2159185717789823693, guid: a6f177d3911738441ba945c3d01b7fc7, type: 3}
+  - name: SM_VKI_Prop_Mine_Cart
+    prefab: {fileID: 7456179991005726006, guid: b77cc87ae07d7964b9b4f0f7365f06d3, type: 3}
+  - name: SM_VKI_Prop_Mine_Cart_Ore
+    prefab: {fileID: 6856991510775991021, guid: 3a46301bf123dee489fdaccf862a3335, type: 3}
+  - name: SM_VKI_Prop_Mine_Cart_Tipped
+    prefab: {fileID: 3212289598113016442, guid: 3072a32150fd2624ab81460e542c16bf, type: 3}
+  - name: SM_VKI_Prop_Mine_CaveIn
+    prefab: {fileID: 2033784485464436680, guid: ba49d5913edae3547871a3e92968f70e, type: 3}
+  - name: SM_VKI_Prop_Mine_LanternPole
+    prefab: {fileID: 6865302089533124806, guid: 5c10ad85c8daac04797dd3c91be974f0, type: 3}
+  - name: SM_VKI_Prop_Mine_OrePile
+    prefab: {fileID: 9170224346747995643, guid: 1e51df2f929247842a687eab44e641a9, type: 3}
+  - name: SM_VKI_Prop_Mine_Set
+    prefab: {fileID: 746278623282555380, guid: fb8c82fb80f830340854452cd695b147, type: 3}
+  - name: SM_VKI_Prop_Mine_Set_Broken
+    prefab: {fileID: 1655391341771075137, guid: 320e9d30ef20c154a82ca005ed3df747, type: 3}
+  - name: SM_VKI_Prop_Mine_Set_Lamp
+    prefab: {fileID: 1585870970782039203, guid: e6f4014eed97d534b98bfb44e8c911ef, type: 3}
+  - name: SM_VKI_Prop_Mine_SleeperStack
+    prefab: {fileID: 6690223370972011635, guid: c170cc42d31b7f5478943a7e3d4dc8f2, type: 3}
+  - name: SM_VKI_Prop_Mine_ToolRack
+    prefab: {fileID: 5364915165742218119, guid: 643e7eed623482d4c85093e3959b7106, type: 3}
+  - name: SM_VKI_Prop_Mine_Wheelbarrow
+    prefab: {fileID: 4880389706615406343, guid: 1270d60e470cf594e9ecc5e0d767bb80, type: 3}
+  - name: SM_VKI_Prop_Mushrooms_Glow
+    prefab: {fileID: 6044545588166852722, guid: a94c4ab8f0eb6a84fa3281eccd4d35bc, type: 3}
+  - name: SM_VKI_Prop_Oven_150
+    prefab: {fileID: 1335348749001899443, guid: d05c53dae490b5842932378436df894a, type: 3}
+  - name: SM_VKI_Prop_POI_ColossusHead
+    prefab: {fileID: 2548915082363332101, guid: acca9888f8b8d464882bde4b65abda82, type: 3}
+  - name: SM_VKI_Prop_POI_Crucible
+    prefab: {fileID: 4933119546657544185, guid: bd4034aed7bf3354ca154420bfe612a7, type: 3}
+  - name: SM_VKI_Prop_POI_NecroCircle
+    prefab: {fileID: 3750451684873142712, guid: 7a52ac8488fa93342be7e918a05347d7, type: 3}
+  - name: SM_VKI_Prop_POI_RatKing
+    prefab: {fileID: 4785952796849846900, guid: a58c85e1c2762ad438d24ea3140d3c6d, type: 3}
+  - name: SM_VKI_Prop_POI_SpringShrine
+    prefab: {fileID: 213921818448946447, guid: 2250ec28c63afd34abcc9a7adc404bd7, type: 3}
+  - name: SM_VKI_Prop_POI_Treadwheel
+    prefab: {fileID: 8005148311904659888, guid: 2b65c2410d954554d8540f5037175ee0, type: 3}
+  - name: SM_VKI_Prop_POI_WyrmBones
+    prefab: {fileID: 4960133835263221780, guid: 3cd4dd8a416615240a9e7a7fa80ac3c5, type: 3}
+  - name: SM_VKI_Prop_Pantry_Shelves_300
+    prefab: {fileID: 6477535455180880098, guid: 8a64636e341548b4ea48f0abd50ee58f, type: 3}
+  - name: SM_VKI_Prop_Pew_300
+    prefab: {fileID: 8512144748972021146, guid: eba62176a0f93db40bbbb9cc7b7ee2f9, type: 3}
+  - name: SM_VKI_Prop_Pillar_Cut
+    prefab: {fileID: 8767588477016191742, guid: bc2988972b7b1514c902b8f9f0892006, type: 3}
+  - name: SM_VKI_Prop_Pillar_Dwarf_Cut
+    prefab: {fileID: 2450930371724686663, guid: eae5038274296a246b1ce74f2d0c7f5b, type: 3}
+  - name: SM_VKI_Prop_Pillar_Dwarf_Full
+    prefab: {fileID: 3505960311513791003, guid: 39b29700c95cbd942ae7dea73542b513, type: 3}
+  - name: SM_VKI_Prop_Pillar_Full
+    prefab: {fileID: 4446683739090022762, guid: 758852f79a316bd4087632aff046f6f3, type: 3}
+  - name: SM_VKI_Prop_PoleLathe
+    prefab: {fileID: 4112241146771556152, guid: 5f36d3c2da5b30649bb0b724da4c5bee, type: 3}
+  - name: SM_VKI_Prop_QuenchTrough_150
+    prefab: {fileID: 4083642332300631076, guid: 79fd71bee87d7904fad393262e1c9d9d, type: 3}
+  - name: SM_VKI_Prop_RatHole_Wall
+    prefab: {fileID: 4812830884031145944, guid: f11ca6c53bad312458c5ffc307305c8e, type: 3}
+  - name: SM_VKI_Prop_RockPillar_Cut
+    prefab: {fileID: 7054998209802431593, guid: cd939fed9b4f13b4e9f988881ae4aa90, type: 3}
+  - name: SM_VKI_Prop_RockPillar_Full
+    prefab: {fileID: 2052694317648706626, guid: 48ed159a965800c47b502cec2a8159b7, type: 3}
+  - name: SM_VKI_Prop_Roots_Floor
+    prefab: {fileID: 555432468585613918, guid: 9e7c448873abd0a46b1e93344c99f068, type: 3}
+  - name: SM_VKI_Prop_Roots_Wall
+    prefab: {fileID: 1746252764079244019, guid: dfd988938a1c53840ae4a2b1f3171895, type: 3}
+  - name: SM_VKI_Prop_RopeBridge_420
+    prefab: {fileID: 8793900896797302249, guid: 22b817b70dea7104e9bfa15a105ed72b, type: 3}
+  - name: SM_VKI_Prop_Rubble
+    prefab: {fileID: 1841083709457862284, guid: 960e33a377ca8154898a74eda12942f2, type: 3}
+  - name: SM_VKI_Prop_Sarcophagus
+    prefab: {fileID: 7726816436195082148, guid: 499ca430986eea74cb7fb7f0a3b47adc, type: 3}
+  - name: SM_VKI_Prop_Shelf_Wall_150
+    prefab: {fileID: 2761165409063503267, guid: 1ca64ee1f8f2e694db57fa554b3a0a6a, type: 3}
+  - name: SM_VKI_Prop_Skeleton_Fallen
+    prefab: {fileID: 72508366477512613, guid: 3b0c68f7dd3ebf04e9921ff72e80af62, type: 3}
+  - name: SM_VKI_Prop_Skeleton_Sitting
+    prefab: {fileID: 427605862235022045, guid: 44aee971ffb50c746bf9f5614958e245, type: 3}
+  - name: SM_VKI_Prop_Sluice
+    prefab: {fileID: 1456248581167921657, guid: 65b6cede357e67f499c3a520a3016312, type: 3}
+  - name: SM_VKI_Prop_Stalagmites
+    prefab: {fileID: 7268486645314652831, guid: 046222b0b46723a4898a7f8b2acf6a27, type: 3}
+  - name: SM_VKI_Prop_Statue_Broken
+    prefab: {fileID: 384978371319713596, guid: 07a2d131aa6a4dc499c462ab73dc1ea5, type: 3}
+  - name: SM_VKI_Prop_Statue_DwarfKing
+    prefab: {fileID: 2967495440170075160, guid: 9ebb5def0c44d3a46a9e4ae42d7a0429, type: 3}
+  - name: SM_VKI_Prop_Statue_Guardian
+    prefab: {fileID: 6473894605080884451, guid: 47864bf8f81f5ec428e314d52c1467ed, type: 3}
+  - name: SM_VKI_Prop_SteppingStones
+    prefab: {fileID: 8237651529453294491, guid: 584ddeee315e6a542b589917c230fb44, type: 3}
+  - name: SM_VKI_Prop_TableDress_Guard
+    prefab: {fileID: 8344859317936621352, guid: 0c7852f5898e5fc438833b261521fa83, type: 3}
+  - name: SM_VKI_Prop_TableDress_Meal_A
+    prefab: {fileID: 8894204749721142393, guid: e98091c4f054f444081c74be83f588b9, type: 3}
+  - name: SM_VKI_Prop_TableDress_Meal_B
+    prefab: {fileID: 1868588516472875975, guid: 1a41e5c602d23c74b8308270652b29bb, type: 3}
+  - name: SM_VKI_Prop_TableDress_Tavern_A
+    prefab: {fileID: 1213335905823396041, guid: 202def3bf7388434f8fb85c6c567187c, type: 3}
+  - name: SM_VKI_Prop_TableDress_Tavern_B
+    prefab: {fileID: 5155672400439206194, guid: 6ab4316771b5a624c90a872be4ab0f8b, type: 3}
+  - name: SM_VKI_Prop_TableDress_Tavern_C
+    prefab: {fileID: 1370993620572843275, guid: 692e989307cb37e4799737f9e5406e84, type: 3}
+  - name: SM_VKI_Prop_Table_Barrel
+    prefab: {fileID: 5280127550226973552, guid: 39ebcb66cf5ccbd4babcfa7cdc5e0a89, type: 3}
+  - name: SM_VKI_Prop_Table_Small
+    prefab: {fileID: 8502074566452787060, guid: 9449d6cb7cf8ff24abcb11c2842b087a, type: 3}
+  - name: SM_VKI_Prop_Table_Trestle_150
+    prefab: {fileID: 6444078498412904156, guid: f3f0c565e90b0d04e857db58e805334c, type: 3}
+  - name: SM_VKI_Prop_Table_Trestle_300
+    prefab: {fileID: 4461544876936958547, guid: fbb67ac4199ac454c961397d33fd4b81, type: 3}
+  - name: SM_VKI_Prop_Throne_Dwarf
+    prefab: {fileID: 6979011410770320975, guid: 3c8462910f72f7c4db4eb3634017a020, type: 3}
+  - name: SM_VKI_Prop_ToolWall_150
+    prefab: {fileID: 1658854458955269577, guid: 2ea9ce76bef4c29488d7e13c9e63fa59, type: 3}
+  - name: SM_VKI_Prop_Torch_Wall
+    prefab: {fileID: 8343838060569277790, guid: 198bb37ee9215d545906ea68a5c85902, type: 3}
+  - name: SM_VKI_Prop_Totem_Goblin
+    prefab: {fileID: 9185158024778860283, guid: eab107c1b90951246ac91d74035a714c, type: 3}
+  - name: SM_VKI_Prop_Urns
+    prefab: {fileID: 6757184986594678072, guid: 053dece1a8f4f614aa9a3bc37a727e11, type: 3}
+  - name: SM_VKI_Prop_Vein_Crystal
+    prefab: {fileID: 6042316440487418877, guid: 00d0a3be5c05b344bb7f2a4c4a5697b2, type: 3}
+  - name: SM_VKI_Prop_Vein_Gold
+    prefab: {fileID: 85893195258940433, guid: 9ce9c4d77bf24e34fab2ef2e6d88d23f, type: 3}
+  - name: SM_VKI_Prop_Vein_Iron
+    prefab: {fileID: 8262353464102466689, guid: f9c3f11e0f786e142adab25b5185b510, type: 3}
+  - name: SM_VKI_Prop_VotiveRack
+    prefab: {fileID: 3514581091495009134, guid: 6f895399a09728d4a92376ba5fd8bd14, type: 3}
+  - name: SM_VKI_Prop_Waterfall_Chasm
+    prefab: {fileID: 7257810912410807101, guid: 88ebaa9117584b44dbdce2fb210cdc5c, type: 3}
+  - name: SM_VKI_Prop_Waterfall_Rock
+    prefab: {fileID: 475706730696512104, guid: e4dc4d4bc35a420409ee26693496a576, type: 3}
+  - name: SM_VKI_Prop_Waterfall_RockLow
+    prefab: {fileID: 7030237597526138403, guid: 4b76c290e7c4dda4ab59705bd441cc2b, type: 3}
+  - name: SM_VKI_Prop_Web_Corner
+    prefab: {fileID: 2604361757109129792, guid: a5918f83188c50b4e8c1f9072fdef149, type: 3}
+  - name: SM_VKI_Prop_Workbench_300
+    prefab: {fileID: 7587153816249074412, guid: d08f8c2ff841fd14ead6ae5c3e3aec83, type: 3}
+  - name: SM_VKI_Prop_Workbench_Carpenter
+    prefab: {fileID: 2625726474570608493, guid: d83a8302b2282f54cad3e0cac84683e0, type: 3}
+  - name: SM_VKI_Prop_Worktable_150
+    prefab: {fileID: 8348179400866535269, guid: 797061b69374cea4789cef324fac4147, type: 3}
+  - name: SM_VKI_Rock_Cave_CCCC_A
+    prefab: {fileID: 1536488688411378390, guid: 6b288a630054c504cbb69bc5e19a76c3, type: 3}
+  - name: SM_VKI_Rock_Cave_CCCC_B
+    prefab: {fileID: 4546568265656972815, guid: 06c4a3999142d3d47958f3b8fe309bc4, type: 3}
+  - name: SM_VKI_Rock_Cave_CCCF_A
+    prefab: {fileID: 516797135749806436, guid: bedd0c5244ee74949bd3ba5fa89d7ba3, type: 3}
+  - name: SM_VKI_Rock_Cave_CCCF_B
+    prefab: {fileID: 4218140275422128060, guid: a9f7be1a98757484e8ddf42f3537a919, type: 3}
+  - name: SM_VKI_Rock_Cave_CCCO_A
+    prefab: {fileID: 5667690870694557350, guid: 15fc645144dc55d4ebc9253c14e26876, type: 3}
+  - name: SM_VKI_Rock_Cave_CCCO_B
+    prefab: {fileID: 6828201534955503360, guid: ec8260851ea5ae74d8a651fd084fe3b8, type: 3}
+  - name: SM_VKI_Rock_Cave_CCCO_WallN
+    prefab: {fileID: 2527454474851913441, guid: fe1530f81dc82f0408a9bf0ffea74e83, type: 3}
+  - name: SM_VKI_Rock_Cave_CCCO_WallNW
+    prefab: {fileID: 7194758180552809117, guid: 50456a6ee3c756f4fab5b198b0a45d4d, type: 3}
+  - name: SM_VKI_Rock_Cave_CCCO_WallW
+    prefab: {fileID: 4513000338362265336, guid: d7a39b6b7f616b14eb319f66b9523282, type: 3}
+  - name: SM_VKI_Rock_Cave_CCFF_A
+    prefab: {fileID: 895078807876601863, guid: 7b4b9ec3404f8e24c8214ac3b9cd13e6, type: 3}
+  - name: SM_VKI_Rock_Cave_CCFF_B
+    prefab: {fileID: 3219142172240660928, guid: d6625871a33c884419258dbe6d13a5b5, type: 3}
+  - name: SM_VKI_Rock_Cave_CCFO_A
+    prefab: {fileID: 2628953128002364048, guid: 3365f1f28d6dcc94c8e88f0eaad185b0, type: 3}
+  - name: SM_VKI_Rock_Cave_CCFO_B
+    prefab: {fileID: 3011497261967237306, guid: 6fe07a08c266c1c40b500f46651accc1, type: 3}
+  - name: SM_VKI_Rock_Cave_CCFO_WallN
+    prefab: {fileID: 6453733467387631066, guid: dde73b2fd50a5cc479dceb26fbe44371, type: 3}
+  - name: SM_VKI_Rock_Cave_CCFO_WallNW
+    prefab: {fileID: 5119065038690836884, guid: 875eb0a655c17af489d4c964ce659be2, type: 3}
+  - name: SM_VKI_Rock_Cave_CCFO_WallW
+    prefab: {fileID: 3247907859621061867, guid: 84313e3994f1d4e40abd1be22e8a0eae, type: 3}
+  - name: SM_VKI_Rock_Cave_CCOF_A
+    prefab: {fileID: 1856340896513229835, guid: ae5f7913958e453439e6bdceb9fafb5b, type: 3}
+  - name: SM_VKI_Rock_Cave_CCOF_B
+    prefab: {fileID: 5997083309986992308, guid: 5d2ce2e05340e4a49bbff7a6a47aab8b, type: 3}
+  - name: SM_VKI_Rock_Cave_CCOF_WallE
+    prefab: {fileID: 1368812996410307034, guid: 4f79545a107be84448fdfefa58c00dd7, type: 3}
+  - name: SM_VKI_Rock_Cave_CCOF_WallEN
+    prefab: {fileID: 5536979276033733854, guid: f8a7748b342ac094c952088a417ff8d9, type: 3}
+  - name: SM_VKI_Rock_Cave_CCOF_WallN
+    prefab: {fileID: 2452985524077278923, guid: c22cb462c8c363542be6fb79dc697370, type: 3}
+  - name: SM_VKI_Rock_Cave_CCOO_A
+    prefab: {fileID: 1156491408287664035, guid: f2619983546275c438dfe96d66e823c0, type: 3}
+  - name: SM_VKI_Rock_Cave_CCOO_B
+    prefab: {fileID: 4855663188528504833, guid: fdb3db572f6352c45aefb26fe4a82cfb, type: 3}
+  - name: SM_VKI_Rock_Cave_CCOO_C
+    prefab: {fileID: 4415551201220512472, guid: d22253364830c5744a8bee6bdc339cca, type: 3}
+  - name: SM_VKI_Rock_Cave_CCOO_WallE
+    prefab: {fileID: 7136632828862114212, guid: 24bf4a78abda2714f81ccf4d516fa8c1, type: 3}
+  - name: SM_VKI_Rock_Cave_CCOO_WallEN
+    prefab: {fileID: 5478609912333468089, guid: 0229af994864a8a4b911265e9f10a611, type: 3}
+  - name: SM_VKI_Rock_Cave_CCOO_WallENW
+    prefab: {fileID: 83452851247551471, guid: b6e719457b6199c469d753fbafc5eb00, type: 3}
+  - name: SM_VKI_Rock_Cave_CCOO_WallEW
+    prefab: {fileID: 221718731692795629, guid: 7c4e6a5cc3bfce949b593b2d2a27924f, type: 3}
+  - name: SM_VKI_Rock_Cave_CCOO_WallN
+    prefab: {fileID: 6296565875035809857, guid: 9f2e92830a6a93a46bca3bc47b43d628, type: 3}
+  - name: SM_VKI_Rock_Cave_CCOO_WallNW
+    prefab: {fileID: 4550367766138433739, guid: b634920665cf02f44941d951f496d458, type: 3}
+  - name: SM_VKI_Rock_Cave_CCOO_WallW
+    prefab: {fileID: 7746389814496878601, guid: c8a4491c35e022141ac4bdc538fac0d5, type: 3}
+  - name: SM_VKI_Rock_Cave_CFCF_A
+    prefab: {fileID: 2203351081087384072, guid: de2cb67979c8c6548bf640b31d144f2e, type: 3}
+  - name: SM_VKI_Rock_Cave_CFCF_B
+    prefab: {fileID: 3736303587016001600, guid: 213ad16ef6682f74aaaa9d7c72bc8d7d, type: 3}
+  - name: SM_VKI_Rock_Cave_CFCO_A
+    prefab: {fileID: 5503748951682715504, guid: 2c8d0104d1bf5cc44b7efa43c26e454a, type: 3}
+  - name: SM_VKI_Rock_Cave_CFCO_B
+    prefab: {fileID: 5462244671753905733, guid: 289b1a4bdb64ead438ba1b1e6718ce68, type: 3}
+  - name: SM_VKI_Rock_Cave_CFCO_WallN
+    prefab: {fileID: 3640909517949371199, guid: 3e0a0afb0cae7724996221b175ed2194, type: 3}
+  - name: SM_VKI_Rock_Cave_CFCO_WallNW
+    prefab: {fileID: 3567988238412517575, guid: 4532749fdd6cd3f408596c723a32c09d, type: 3}
+  - name: SM_VKI_Rock_Cave_CFCO_WallW
+    prefab: {fileID: 6113377919342996384, guid: f394326b51f470f45b9571f1ee4047b2, type: 3}
+  - name: SM_VKI_Rock_Cave_CFFF_A
+    prefab: {fileID: 6880527853861588258, guid: 1fa8d40d61edc4d4f810b6225ec811e1, type: 3}
+  - name: SM_VKI_Rock_Cave_CFFF_B
+    prefab: {fileID: 201898587359166718, guid: c95c6cf6a67dc864f8a0e1ab2888f126, type: 3}
+  - name: SM_VKI_Rock_Cave_CFFO_A
+    prefab: {fileID: 7836692952771313023, guid: f5ecc7f6d926ddf4791aaf3f3bfa4728, type: 3}
+  - name: SM_VKI_Rock_Cave_CFFO_B
+    prefab: {fileID: 8385976568283691131, guid: aff41f5b4b55c4149bf7a6e547bfb5fa, type: 3}
+  - name: SM_VKI_Rock_Cave_CFFO_WallN
+    prefab: {fileID: 5720995987950761758, guid: d004280f00752864bac0fac782625cb0, type: 3}
+  - name: SM_VKI_Rock_Cave_CFFO_WallNW
+    prefab: {fileID: 4377847599669962700, guid: 61d5c11ea2cc32d45b9f6f1cbd54fa30, type: 3}
+  - name: SM_VKI_Rock_Cave_CFFO_WallW
+    prefab: {fileID: 3475470199340349083, guid: f03ca034b15ee5549a2ca4539e4f9d2c, type: 3}
+  - name: SM_VKI_Rock_Cave_CFOF_A
+    prefab: {fileID: 6725931884319472693, guid: 782704a5944244249be0a9ab32d7e901, type: 3}
+  - name: SM_VKI_Rock_Cave_CFOF_B
+    prefab: {fileID: 2169546640091876401, guid: 1519ac0e62e85274f890dba197ae2920, type: 3}
+  - name: SM_VKI_Rock_Cave_CFOF_WallE
+    prefab: {fileID: 3792995217463566259, guid: 551e0a70919ac8c4294a6ae64c1b0114, type: 3}
+  - name: SM_VKI_Rock_Cave_CFOF_WallEN
+    prefab: {fileID: 3653850761122799079, guid: 321a5305f09dbe145ad52dd614e4a87b, type: 3}
+  - name: SM_VKI_Rock_Cave_CFOF_WallN
+    prefab: {fileID: 2012913935030541762, guid: 93a5239b88bbede4b9ac013fc5ee66bc, type: 3}
+  - name: SM_VKI_Rock_Cave_CFOO_A
+    prefab: {fileID: 5101937173570645492, guid: ddb731504224d5443a1c2610f6efe422, type: 3}
+  - name: SM_VKI_Rock_Cave_CFOO_B
+    prefab: {fileID: 5160865629410552847, guid: fd61e906d5407a946b4fae5557542cd9, type: 3}
+  - name: SM_VKI_Rock_Cave_CFOO_WallE
+    prefab: {fileID: 3051341236933202539, guid: 85c70b008476c654a884fdb682e86ce9, type: 3}
+  - name: SM_VKI_Rock_Cave_CFOO_WallEN
+    prefab: {fileID: 4778234991921710392, guid: b0da30de396df1c4e8f28a55251eeeb4, type: 3}
+  - name: SM_VKI_Rock_Cave_CFOO_WallENW
+    prefab: {fileID: 5353178670510114216, guid: e0088eb0e43ac2048b032cfa8174e775, type: 3}
+  - name: SM_VKI_Rock_Cave_CFOO_WallEW
+    prefab: {fileID: 7672657832670966409, guid: d0e2876fc660e0146bece4632516987b, type: 3}
+  - name: SM_VKI_Rock_Cave_CFOO_WallN
+    prefab: {fileID: 7273858045940766978, guid: 1346e0a7237007e4d84609caf47dcb86, type: 3}
+  - name: SM_VKI_Rock_Cave_CFOO_WallNW
+    prefab: {fileID: 4933299541746455929, guid: 564fbe442a993bb4c860984e6f67609c, type: 3}
+  - name: SM_VKI_Rock_Cave_CFOO_WallW
+    prefab: {fileID: 4406892317781617543, guid: c97b0e9752c4f484d9e5c2733331871e, type: 3}
+  - name: SM_VKI_Rock_Cave_COCO_A
+    prefab: {fileID: 5340228743928230481, guid: 8ab503a1bc13b1647aef5b875927fbca, type: 3}
+  - name: SM_VKI_Rock_Cave_COCO_B
+    prefab: {fileID: 832648121019525164, guid: 1fb6578334f78b6468be4768f8f0ea30, type: 3}
+  - name: SM_VKI_Rock_Cave_COCO_WallE
+    prefab: {fileID: 6476101890316581664, guid: 2a10d7d9cb2de5c4e9f50755437f054f, type: 3}
+  - name: SM_VKI_Rock_Cave_COCO_WallEN
+    prefab: {fileID: 8350952149006033007, guid: 7883659a037422341b83f11d7c428bec, type: 3}
+  - name: SM_VKI_Rock_Cave_COCO_WallENW
+    prefab: {fileID: 4255429423331469163, guid: 755dcb256da3dc14cb908a067404997e, type: 3}
+  - name: SM_VKI_Rock_Cave_COCO_WallEW
+    prefab: {fileID: 3813574304117087434, guid: 9b08b5035478fb04b9134dcb0106a664, type: 3}
+  - name: SM_VKI_Rock_Cave_COCO_WallN
+    prefab: {fileID: 8266161389782538614, guid: 976f90fc494b3714a857eeabb635321b, type: 3}
+  - name: SM_VKI_Rock_Cave_COCO_WallNW
+    prefab: {fileID: 1799550156521307870, guid: 4f8299c1a85e5ca4fbe045cba88f3b9a, type: 3}
+  - name: SM_VKI_Rock_Cave_COCO_WallSEN
+    prefab: {fileID: 535026559706618509, guid: bf258a7ea83e15a4e86483e3f7225701, type: 3}
+  - name: SM_VKI_Rock_Cave_COCO_WallSENW
+    prefab: {fileID: 1936739755339943321, guid: da190f4cc49c2b940b69285b4a5a61d1, type: 3}
+  - name: SM_VKI_Rock_Cave_COCO_WallSN
+    prefab: {fileID: 3545323295016170434, guid: 68ddbdd5d52041e4fbbfaf498dd2c512, type: 3}
+  - name: SM_VKI_Rock_Cave_COFF_A
+    prefab: {fileID: 6360933526637875250, guid: 7d183cc0eb9eb674f842d4a8b1782920, type: 3}
+  - name: SM_VKI_Rock_Cave_COFF_B
+    prefab: {fileID: 37472221464932253, guid: daa5a713a9e051041aa488d52d562e8b, type: 3}
+  - name: SM_VKI_Rock_Cave_COFF_WallE
+    prefab: {fileID: 4684429854615193276, guid: 42f50da736241bf4aa522cb598461092, type: 3}
+  - name: SM_VKI_Rock_Cave_COFF_WallS
+    prefab: {fileID: 7333466889777192201, guid: 4ad2b5259c55fd34eb71df17c3eff36a, type: 3}
+  - name: SM_VKI_Rock_Cave_COFF_WallSE
+    prefab: {fileID: 4360986326227630995, guid: 68c382410432107458c658fd31f34b14, type: 3}
+  - name: SM_VKI_Rock_Cave_COFO_A
+    prefab: {fileID: 8556830760190410074, guid: a74efd7574c0bbc42b321f9370b3aaa3, type: 3}
+  - name: SM_VKI_Rock_Cave_COFO_B
+    prefab: {fileID: 5769500591210245168, guid: ba36f8186386fc54abe882671ab1d529, type: 3}
+  - name: SM_VKI_Rock_Cave_COFO_WallE
+    prefab: {fileID: 2136302936660181125, guid: f7136aa99050533419a6650665fed283, type: 3}
+  - name: SM_VKI_Rock_Cave_COFO_WallEN
+    prefab: {fileID: 9123963202542582002, guid: b46a7cc46fe69ec439f5076830db39a4, type: 3}
+  - name: SM_VKI_Rock_Cave_COFO_WallENW
+    prefab: {fileID: 7898993370098718713, guid: 11c4a7aae20ccff4d9d2b414390a386a, type: 3}
+  - name: SM_VKI_Rock_Cave_COFO_WallEW
+    prefab: {fileID: 5235543311106471770, guid: e826d4a4137c4aa4bab63716cc125c08, type: 3}
+  - name: SM_VKI_Rock_Cave_COFO_WallN
+    prefab: {fileID: 9159074546182864473, guid: c53a19796737e2b40bc74540d594b760, type: 3}
+  - name: SM_VKI_Rock_Cave_COFO_WallNW
+    prefab: {fileID: 6819735346986538383, guid: 877a67a27e41e834692024d1f2f3662f, type: 3}
+  - name: SM_VKI_Rock_Cave_COFO_WallS
+    prefab: {fileID: 4277098594115918439, guid: 910b5b9995bc2a047b815b430ad15014, type: 3}
+  - name: SM_VKI_Rock_Cave_COFO_WallSE
+    prefab: {fileID: 4799113571447788833, guid: 59e9a916deacc8e448d0474b542303e4, type: 3}
+  - name: SM_VKI_Rock_Cave_COFO_WallSEN
+    prefab: {fileID: 8311981559658537141, guid: eefcb2226fd5a2f44addeef6b7e4ff57, type: 3}
+  - name: SM_VKI_Rock_Cave_COFO_WallSENW
+    prefab: {fileID: 9145756396982993595, guid: ffe4ab73818cb3641a3f0ecf2809ea5f, type: 3}
+  - name: SM_VKI_Rock_Cave_COFO_WallSEW
+    prefab: {fileID: 1645936764880410362, guid: fa65c1d6d8390fb40b6bc5fbbec9c717, type: 3}
+  - name: SM_VKI_Rock_Cave_COFO_WallSN
+    prefab: {fileID: 7144889305356362992, guid: 20d7dcb91b7b56f4897aaf475c36c0ba, type: 3}
+  - name: SM_VKI_Rock_Cave_COFO_WallSNW
+    prefab: {fileID: 8016200647531768289, guid: ec5e4e324c17345428305d3a44c8fb82, type: 3}
+  - name: SM_VKI_Rock_Cave_COFO_WallSW
+    prefab: {fileID: 1185084430671146176, guid: b5218a85803925c4bb6343ef184164e0, type: 3}
+  - name: SM_VKI_Rock_Cave_COFO_WallW
+    prefab: {fileID: 8417540133942792875, guid: ab7f954500c57e547b0dfe678aa588f4, type: 3}
+  - name: SM_VKI_Rock_Cave_COOF_A
+    prefab: {fileID: 3544055914479989407, guid: 82b194f5181223146b9e87a8d3e5cc47, type: 3}
+  - name: SM_VKI_Rock_Cave_COOF_B
+    prefab: {fileID: 5429973171676858181, guid: 4cf524558b10035488fe0cfa68430e87, type: 3}
+  - name: SM_VKI_Rock_Cave_COOF_WallE
+    prefab: {fileID: 5534499684817668916, guid: 27036a4eebb15464a89497a59c5d6488, type: 3}
+  - name: SM_VKI_Rock_Cave_COOF_WallEN
+    prefab: {fileID: 1702938204815017646, guid: 194562bb40b30934287e492352fc568c, type: 3}
+  - name: SM_VKI_Rock_Cave_COOF_WallN
+    prefab: {fileID: 5679067657616718807, guid: 474782ff6becd634bba841bd335bc3a9, type: 3}
+  - name: SM_VKI_Rock_Cave_COOF_WallS
+    prefab: {fileID: 4314841127489487674, guid: ad7c3e3e8f5af294da583f083b372a74, type: 3}
+  - name: SM_VKI_Rock_Cave_COOF_WallSE
+    prefab: {fileID: 7282550380159319070, guid: ae120324b8bb25440a3469d041ffe10b, type: 3}
+  - name: SM_VKI_Rock_Cave_COOF_WallSEN
+    prefab: {fileID: 2689843089366647101, guid: e4bd01c983e117a4fb46683d774de428, type: 3}
+  - name: SM_VKI_Rock_Cave_COOF_WallSN
+    prefab: {fileID: 5996647512497232888, guid: a5e8f83406cec8640a0769f7a770dc85, type: 3}
+  - name: SM_VKI_Rock_Cave_COOO_A
+    prefab: {fileID: 3625766422332628215, guid: 1d041d027bca2c84b877f64f6cfd0dac, type: 3}
+  - name: SM_VKI_Rock_Cave_COOO_B
+    prefab: {fileID: 8622040254183610903, guid: 38494cbf238afc24ab88ceed5aaf8eae, type: 3}
+  - name: SM_VKI_Rock_Cave_COOO_WallE
+    prefab: {fileID: 1284727389351585530, guid: bf5093576fd597241afa8ab70a723b23, type: 3}
+  - name: SM_VKI_Rock_Cave_COOO_WallEN
+    prefab: {fileID: 3251809286977423829, guid: ea72e732022c7e04a9636a1b5f2965b1, type: 3}
+  - name: SM_VKI_Rock_Cave_COOO_WallENW
+    prefab: {fileID: 4008004759346099031, guid: 60b41cedca98ead44b158c0a84133a3b, type: 3}
+  - name: SM_VKI_Rock_Cave_COOO_WallEW
+    prefab: {fileID: 2807834729648829359, guid: b193a1a37621c3e449cb1953e4b1c205, type: 3}
+  - name: SM_VKI_Rock_Cave_COOO_WallN
+    prefab: {fileID: 3778319959288783280, guid: b60e642bb19cfe74598d86be0b8d261a, type: 3}
+  - name: SM_VKI_Rock_Cave_COOO_WallNW
+    prefab: {fileID: 4335258101652891146, guid: a27bbefa37a4f694ba7df0e58959dcb6, type: 3}
+  - name: SM_VKI_Rock_Cave_COOO_WallS
+    prefab: {fileID: 8059938806400378559, guid: 09938c1bf8c6d544baae9bc9eadb11a2, type: 3}
+  - name: SM_VKI_Rock_Cave_COOO_WallSE
+    prefab: {fileID: 391341812467896802, guid: 5c447491fbe29444c9da48bc355d5326, type: 3}
+  - name: SM_VKI_Rock_Cave_COOO_WallSEN
+    prefab: {fileID: 6416982459178150844, guid: fc6cb12cdc092ef4d93a04a9aff16b0d, type: 3}
+  - name: SM_VKI_Rock_Cave_COOO_WallSENW
+    prefab: {fileID: 123010798943180690, guid: 6383b70846da21448ae0134b32e2b41a, type: 3}
+  - name: SM_VKI_Rock_Cave_COOO_WallSEW
+    prefab: {fileID: 6129588482750225752, guid: 29c09f1456bdb354fbd2ad5c45fed0a0, type: 3}
+  - name: SM_VKI_Rock_Cave_COOO_WallSN
+    prefab: {fileID: 3456147343385334969, guid: 191fb95116be1d444a67de68c2a7c00f, type: 3}
+  - name: SM_VKI_Rock_Cave_COOO_WallSNW
+    prefab: {fileID: 545949936951174338, guid: 157bb5c7f7d6b6e4ca2782a2ecf54ee2, type: 3}
+  - name: SM_VKI_Rock_Cave_COOO_WallSW
+    prefab: {fileID: 8621072253986010364, guid: 41ce772467fd36a499cc9da4f87af594, type: 3}
+  - name: SM_VKI_Rock_Cave_COOO_WallW
+    prefab: {fileID: 9217864010517743880, guid: f62ea8a682439464bbca5f40e9fe2439, type: 3}
+  - name: SM_VKI_Rock_Cave_FFFF_A
+    prefab: {fileID: 4092602911551828194, guid: 42ff70347c68a734388b7d1bcd638cb6, type: 3}
+  - name: SM_VKI_Rock_Cave_FFFF_B
+    prefab: {fileID: 806265655660212591, guid: 6eaf6f24d5c933444a00647c29eedb16, type: 3}
+  - name: SM_VKI_Rock_Cave_FFFO_A
+    prefab: {fileID: 6246959290287143678, guid: a3fffb1193629674b8dbf844b1be9fd6, type: 3}
+  - name: SM_VKI_Rock_Cave_FFFO_B
+    prefab: {fileID: 8681098455609274591, guid: d7f9703e609f8f14cb14d64e1ccb1448, type: 3}
+  - name: SM_VKI_Rock_Cave_FFFO_WallN
+    prefab: {fileID: 8134815320391616378, guid: b79453b7bbccd204aad1b018f4ba642b, type: 3}
+  - name: SM_VKI_Rock_Cave_FFFO_WallNW
+    prefab: {fileID: 2806232284559013706, guid: e90a98d0719a209458b43e5ccd40c8bd, type: 3}
+  - name: SM_VKI_Rock_Cave_FFFO_WallW
+    prefab: {fileID: 2843502906930710687, guid: 1e26691f6cbb3e54394c11e0d2c5ff4e, type: 3}
+  - name: SM_VKI_Rock_Cave_FFOO_A
+    prefab: {fileID: 3850783661375469652, guid: d2cce63abef9f2845976f4c4d76a5fe9, type: 3}
+  - name: SM_VKI_Rock_Cave_FFOO_B
+    prefab: {fileID: 6917385764674449942, guid: dbc6604653aaaf14c87b2b1ae7da1743, type: 3}
+  - name: SM_VKI_Rock_Cave_FFOO_C
+    prefab: {fileID: 7137865026927806152, guid: aa86a99667641444e90d396e4ad62ddd, type: 3}
+  - name: SM_VKI_Rock_Cave_FFOO_WallE
+    prefab: {fileID: 1175464520963166865, guid: 2a43084d78fea6e4985a8d61c91dffe5, type: 3}
+  - name: SM_VKI_Rock_Cave_FFOO_WallEN
+    prefab: {fileID: 8700112498166519222, guid: 2bb0f680b04b7504aacc81657a0d2631, type: 3}
+  - name: SM_VKI_Rock_Cave_FFOO_WallENW
+    prefab: {fileID: 4443869995255090042, guid: 931ba88ca7ec8ff439d3c8974ec5ad78, type: 3}
+  - name: SM_VKI_Rock_Cave_FFOO_WallEW
+    prefab: {fileID: 2525050949790212769, guid: 1e2836f54ebcea642859c45e5d6348fb, type: 3}
+  - name: SM_VKI_Rock_Cave_FFOO_WallN
+    prefab: {fileID: 3259849739036665945, guid: 9d93fadc4736fb14295c9c541068a251, type: 3}
+  - name: SM_VKI_Rock_Cave_FFOO_WallNW
+    prefab: {fileID: 1013262963846144418, guid: 7377612e1c0cc124ba49191dbe8d96f7, type: 3}
+  - name: SM_VKI_Rock_Cave_FFOO_WallW
+    prefab: {fileID: 5507529354235887370, guid: 5a38346f5ee4b49489b98395b6669903, type: 3}
+  - name: SM_VKI_Rock_Cave_FOFO_A
+    prefab: {fileID: 7083164728147108347, guid: e4068e3062dfd6b4b894c9a7db58b1f8, type: 3}
+  - name: SM_VKI_Rock_Cave_FOFO_B
+    prefab: {fileID: 1345063920216311898, guid: bbf635d7d7a2bef44aa6f70ef969d588, type: 3}
+  - name: SM_VKI_Rock_Cave_FOFO_WallE
+    prefab: {fileID: 3885926161743244415, guid: 134aed0cece52954fa8d5dfba59674b5, type: 3}
+  - name: SM_VKI_Rock_Cave_FOFO_WallEN
+    prefab: {fileID: 9001991720353553389, guid: f4d3011f82f540349bfe9fbdf56a5bcf, type: 3}
+  - name: SM_VKI_Rock_Cave_FOFO_WallENW
+    prefab: {fileID: 5643740794841027723, guid: aab9ea4e7d4822a4680b01eb4c16b7fd, type: 3}
+  - name: SM_VKI_Rock_Cave_FOFO_WallEW
+    prefab: {fileID: 4614515861469020460, guid: 780897499ad829641907264c1b13c029, type: 3}
+  - name: SM_VKI_Rock_Cave_FOFO_WallN
+    prefab: {fileID: 8209390887808366665, guid: 014ab65ae49961f488f25516b5dc38fd, type: 3}
+  - name: SM_VKI_Rock_Cave_FOFO_WallNW
+    prefab: {fileID: 6111844338413883055, guid: a1181f9bb17caf54ca9184116357fe95, type: 3}
+  - name: SM_VKI_Rock_Cave_FOFO_WallSEN
+    prefab: {fileID: 5647643088788293896, guid: 37bcff1c12e53cd4daf368e52a9f2fcb, type: 3}
+  - name: SM_VKI_Rock_Cave_FOFO_WallSENW
+    prefab: {fileID: 6079630339084080863, guid: efdf075972f2e764eb5fc43229a4c952, type: 3}
+  - name: SM_VKI_Rock_Cave_FOFO_WallSN
+    prefab: {fileID: 6397443328139206910, guid: d069ccb45bb5e914f9eab3633bf87e78, type: 3}
+  - name: SM_VKI_Rock_Cave_FOOO_A
+    prefab: {fileID: 5117237712323949691, guid: 9f23d01b753a08547a7faa585a2f0a6a, type: 3}
+  - name: SM_VKI_Rock_Cave_FOOO_B
+    prefab: {fileID: 3159841480735482044, guid: f5f859611e50d0845b2c7a1bd24f486a, type: 3}
+  - name: SM_VKI_Rock_Cave_FOOO_WallE
+    prefab: {fileID: 1976491954588192034, guid: cc7f6229e7e0c9b40bdbcd79e1d2d937, type: 3}
+  - name: SM_VKI_Rock_Cave_FOOO_WallEN
+    prefab: {fileID: 5163330552867851683, guid: beb628ee254f7104f8549069893495f4, type: 3}
+  - name: SM_VKI_Rock_Cave_FOOO_WallENW
+    prefab: {fileID: 7042596001470341994, guid: fa8825da65e15d949bad0367d3a8275b, type: 3}
+  - name: SM_VKI_Rock_Cave_FOOO_WallEW
+    prefab: {fileID: 3709235536944115814, guid: 139a767ff9f03a54d9f074c7d555348a, type: 3}
+  - name: SM_VKI_Rock_Cave_FOOO_WallN
+    prefab: {fileID: 5730285862003020407, guid: 2ae7e40e7e509b946bb57567be1b76a9, type: 3}
+  - name: SM_VKI_Rock_Cave_FOOO_WallNW
+    prefab: {fileID: 6808621123312004802, guid: d170477c7c5910a408035af2088eb074, type: 3}
+  - name: SM_VKI_Rock_Cave_FOOO_WallS
+    prefab: {fileID: 8542153847757209662, guid: 9617ec7921518254aa9de01e3180dbfe, type: 3}
+  - name: SM_VKI_Rock_Cave_FOOO_WallSE
+    prefab: {fileID: 936785300454385544, guid: 13acb53df39062345a898c61d16e507f, type: 3}
+  - name: SM_VKI_Rock_Cave_FOOO_WallSEN
+    prefab: {fileID: 4383309281919155340, guid: 4bfface0c934ce048a891e7fb36e5597, type: 3}
+  - name: SM_VKI_Rock_Cave_FOOO_WallSENW
+    prefab: {fileID: 3786730555003080051, guid: 5641fa22bd3d78c489006bb5e7551116, type: 3}
+  - name: SM_VKI_Rock_Cave_FOOO_WallSEW
+    prefab: {fileID: 8766598290884769355, guid: b79cad3e0d1a25d488dd4e4d2b83790d, type: 3}
+  - name: SM_VKI_Rock_Cave_FOOO_WallSN
+    prefab: {fileID: 9205262254149651283, guid: 7e295e758a42e774387819d73cc61124, type: 3}
+  - name: SM_VKI_Rock_Cave_FOOO_WallSNW
+    prefab: {fileID: 8921910570711975727, guid: c78fff1ad0a759c4c852935bd813f78c, type: 3}
+  - name: SM_VKI_Rock_Cave_FOOO_WallSW
+    prefab: {fileID: 8462307746477243652, guid: 64916113dc2806742837033465977909, type: 3}
+  - name: SM_VKI_Rock_Cave_FOOO_WallW
+    prefab: {fileID: 6703686735320925141, guid: 48c8399feefa9b4498abbc851c5ebabc, type: 3}
+  - name: SM_VKI_Rock_Cave_OOFF_Adit
+    prefab: {fileID: 4570249409747338477, guid: e91f82ea73a65d24989e07c7ba862fa3, type: 3}
+  - name: SM_VKI_Rock_Cave_OOFF_Tunnel
+    prefab: {fileID: 4172089702483337895, guid: 75f6a4208484bdc4ca7d9eb2e03d5772, type: 3}
+  - name: SM_VKI_Rug_300x150
+    prefab: {fileID: 1136163261744759049, guid: 8c215a684912fbf418e627353d1886a0, type: 3}
+  - name: SM_VKI_Runner_150
+    prefab: {fileID: 5152650819541559387, guid: 05bef8b9893b34f4fa5e84f3aef592df, type: 3}
+  - name: SM_VKI_Runner_300
+    prefab: {fileID: 2413908779323462252, guid: 7c061d8a8d3c7c54a843cf19e7241851, type: 3}
+  - name: SM_VKI_RushMat
+    prefab: {fileID: 4560345788338056352, guid: d4a3e3f4bead9d345a5316e091a04fe4, type: 3}
+  - name: SM_VKI_Stair_Down_150x450_RailR
+    prefab: {fileID: 8028088845386104986, guid: 746773725a3d2aa47b29c098c1af1758, type: 3}
+  - name: SM_VKI_Stair_Down_150x450_Stone
+    prefab: {fileID: 170868164937649292, guid: 28a53439b846168478e9a2609ca26b37, type: 3}
+  - name: SM_VKI_Stair_Down_150x450_StoneL
+    prefab: {fileID: 1947439158051562337, guid: f7377454748a88346bc7a8d9aa370078, type: 3}
+  - name: SM_VKI_Stair_Up_150x450_RailR
+    prefab: {fileID: 3283578323963750109, guid: 11e6960da6227d44dbea490e9bfe6132, type: 3}
+  - name: SM_VKI_Stair_Up_150x450_Stone
+    prefab: {fileID: 4913103469397997549, guid: bfe73c6b1d4851942b214665c31aba71, type: 3}
+  - name: SM_VKI_Stair_Up_150x450_StoneL
+    prefab: {fileID: 2549824275066470433, guid: 52a210e304cae8b4fb3da632275558e2, type: 3}
+  - name: SM_VKI_Test_Axis
+    prefab: {fileID: 2408877480452710492, guid: c21c7b0cbca671e4197095fea00db920, type: 3}
+  - name: SM_VKI_Test_Smoke
+    prefab: {fileID: 6736201081327515676, guid: d67fa587b3ddbec4c942de9c9e879956, type: 3}
+  - name: SM_VKI_Wall_Ancient_Breach_150_Cut
+    prefab: {fileID: 1556028272668672159, guid: 9f1351ae876029744a3650c8aeb80e7d, type: 3}
+  - name: SM_VKI_Wall_Ancient_Breach_150_Full
+    prefab: {fileID: 5073239110614252009, guid: c2294c6230f2efe4bb37ee30a08fd89e, type: 3}
+  - name: SM_VKI_Wall_Ancient_Breach_300_Cut
+    prefab: {fileID: 7911056005583234222, guid: 2fe8dff98dd26a04788b756535cef60c, type: 3}
+  - name: SM_VKI_Wall_Ancient_Breach_300_Full
+    prefab: {fileID: 407703924764837177, guid: 468c471dec803c149af52cbcb4da5c35, type: 3}
+  - name: SM_VKI_Wall_Ancient_Broken_150_Full
+    prefab: {fileID: 3943444679469687160, guid: 4774db4d9d499994580726565116e39a, type: 3}
+  - name: SM_VKI_Wall_Ancient_Broken_300_Full
+    prefab: {fileID: 8859757909523777131, guid: 8d5cea6f18062dd4b823391a0ab22210, type: 3}
+  - name: SM_VKI_Wall_Ancient_Collapsed_150_Cut
+    prefab: {fileID: 81712972416260934, guid: 2ccd76f1bf1fc9f4597a16b27f47ff11, type: 3}
+  - name: SM_VKI_Wall_Ancient_DoorWide_300_Cut
+    prefab: {fileID: 3476660983362353381, guid: 4c69981e5fdf99d47bcfe04a92b199a3, type: 3}
+  - name: SM_VKI_Wall_Ancient_DoorWide_300_Full
+    prefab: {fileID: 5243918138586481993, guid: 168a8540be0daac4e9fd257562441d49, type: 3}
+  - name: SM_VKI_Wall_Ancient_Door_150_Cut
+    prefab: {fileID: 5774786999142066738, guid: cbeb1f20bef22da4b995e6e780a56983, type: 3}
+  - name: SM_VKI_Wall_Ancient_Door_150_Full
+    prefab: {fileID: 6141495199408649773, guid: 116e3cd2b6fd09d44b3fb89f078f1b8a, type: 3}
+  - name: SM_VKI_Wall_Ancient_Passage_150_Full
+    prefab: {fileID: 5434832958060780711, guid: b9e274cf20c6ddc45888bcec886cecf3, type: 3}
+  - name: SM_VKI_Wall_Ancient_Plain_150A_Cut
+    prefab: {fileID: 1529126618131088143, guid: dbaefad4987097441b76e28267e8b10c, type: 3}
+  - name: SM_VKI_Wall_Ancient_Plain_150A_Full
+    prefab: {fileID: 8083215264370634880, guid: 88e468f34a9d0e54c84e0c9912f10bd4, type: 3}
+  - name: SM_VKI_Wall_Ancient_Plain_150B_Full
+    prefab: {fileID: 5828481832809788597, guid: e7d0cfd585bb9014f8d0b102bee3667b, type: 3}
+  - name: SM_VKI_Wall_Ancient_Plain_300_Cut
+    prefab: {fileID: 5210998343504840169, guid: 0b3ff3a1a50c3034487c2d1fceeb4632, type: 3}
+  - name: SM_VKI_Wall_Ancient_Plain_300_Full
+    prefab: {fileID: 7556258304875183528, guid: 4915e7c89b9408b47a5d0d9df8955ab2, type: 3}
+  - name: SM_VKI_Wall_Ancient_Rake_150_L
+    prefab: {fileID: 37993602801706934, guid: 27d9ba50d323f1644a47f31eec464f76, type: 3}
+  - name: SM_VKI_Wall_Ancient_Rake_150_R
+    prefab: {fileID: 92581108500605433, guid: 4c4cbf310d8bab344b15dcc02ffe3bca, type: 3}
+  - name: SM_VKI_Wall_Ancient_Relief_150_Full
+    prefab: {fileID: 3246989012242054132, guid: edcedaaa32a04ea48880ad6eeee81042, type: 3}
+  - name: SM_VKI_Wall_Ancient_Vault_300_Full
+    prefab: {fileID: 5228744624492605552, guid: 01fa1c9b03575af4db51c35910cfed05, type: 3}
+  - name: SM_VKI_Wall_Ashlar_DoorWide_300_Cut
+    prefab: {fileID: 1388220129731252134, guid: a253eb0fb3c17ac429cfae8b95b60a5a, type: 3}
+  - name: SM_VKI_Wall_Ashlar_DoorWide_300_Full
+    prefab: {fileID: 6982123632460793759, guid: ba877785a243ef043af684e7db5a1228, type: 3}
+  - name: SM_VKI_Wall_Ashlar_LancetTall_150_Full
+    prefab: {fileID: 5788063045941672293, guid: 60461a371cedd524e8bdb2091a0089ca, type: 3}
+  - name: SM_VKI_Wall_Ashlar_Lancet_150_Cut
+    prefab: {fileID: 4033716381769321137, guid: d5d8038fc0b3d8b498dfa217ea45c2a9, type: 3}
+  - name: SM_VKI_Wall_Ashlar_Lancet_150_Full
+    prefab: {fileID: 7183883266390355762, guid: 09eadd97314437f49830443bdc3dbf37, type: 3}
+  - name: SM_VKI_Wall_Ashlar_Plain_150A_Cut
+    prefab: {fileID: 7866892544730791735, guid: be68bd1ba5cbdd14f9fd91108d3ab9f9, type: 3}
+  - name: SM_VKI_Wall_Ashlar_Plain_150A_Full
+    prefab: {fileID: 2430497842186104205, guid: 227614767f1963948b8de961ecdcd378, type: 3}
+  - name: SM_VKI_Wall_Ashlar_Plain_300_Cut
+    prefab: {fileID: 3084914969463320865, guid: f31b9a256def5634f9727a013929472f, type: 3}
+  - name: SM_VKI_Wall_Ashlar_Plain_300_Full
+    prefab: {fileID: 6196966551238516940, guid: 8daa5c4b00f8fda408e6df94aa09b573, type: 3}
+  - name: SM_VKI_Wall_Bars_Door_150_Full
+    prefab: {fileID: 4615300175971518578, guid: 18014bf5256d62b439217373fcca2e23, type: 3}
+  - name: SM_VKI_Wall_Bars_Plain_150A_Full
+    prefab: {fileID: 1103663271463858665, guid: f47d411f50f3db3428c224c9320f9dff, type: 3}
+  - name: SM_VKI_Wall_Bars_Plain_300_Full
+    prefab: {fileID: 7559306292946352521, guid: ca04757f5d98cfc488992ccf4fc81522, type: 3}
+  - name: SM_VKI_Wall_Board_Door_150_Cut
+    prefab: {fileID: 5527083943879355998, guid: 10b05cd0fc4c52041b5d1be84aca2b8d, type: 3}
+  - name: SM_VKI_Wall_Board_Door_150_Full
+    prefab: {fileID: 371104268503021690, guid: d9f8eed8bebdd3e4cbeebb3bdd57b302, type: 3}
+  - name: SM_VKI_Wall_Board_Plain_150A_Cut
+    prefab: {fileID: 2878643984712367460, guid: 84df2f85c054e8f41976d3908b4732d0, type: 3}
+  - name: SM_VKI_Wall_Board_Plain_150A_Full
+    prefab: {fileID: 2477603972571110207, guid: 3a2ec8b35e0e6914dba1160d9f6203db, type: 3}
+  - name: SM_VKI_Wall_Board_Plain_300_Cut
+    prefab: {fileID: 789029136622596664, guid: cf673b45e2246a64989c7a158e31702f, type: 3}
+  - name: SM_VKI_Wall_Board_Plain_300_Full
+    prefab: {fileID: 1655442211879191, guid: 4cd5fd2e47e1ea941bf75be4ca5a5328, type: 3}
+  - name: SM_VKI_Wall_Cave_Gap_150_Cut
+    prefab: {fileID: 4960445041515577256, guid: 2f2dc988723ce0543a387c742a380f96, type: 3}
+  - name: SM_VKI_Wall_Cave_Gap_150_Full
+    prefab: {fileID: 651570158973228435, guid: c5a7d7ecfbf07d344a630ca60c41d45c, type: 3}
+  - name: SM_VKI_Wall_Cave_Passage_150_Full
+    prefab: {fileID: 7198026127391166406, guid: 615716fa57b6f464fb5d02f841aefae1, type: 3}
+  - name: SM_VKI_Wall_Cave_Plain_150A_Cut
+    prefab: {fileID: 1310342908153497351, guid: 863ff9a9a495ad442a79e2e9086fe2c4, type: 3}
+  - name: SM_VKI_Wall_Cave_Plain_150A_Full
+    prefab: {fileID: 5589092831291310330, guid: 276d8f1cbe31f3146b9d7b248072171e, type: 3}
+  - name: SM_VKI_Wall_Cave_Plain_150B_Full
+    prefab: {fileID: 1533964055240162355, guid: 691f7bf1530d2384488746bee416c1ee, type: 3}
+  - name: SM_VKI_Wall_Cave_Plain_300_Cut
+    prefab: {fileID: 662758769220952955, guid: 090e7bf791137964c9035eb27f1e51ce, type: 3}
+  - name: SM_VKI_Wall_Cave_Plain_300_Full
+    prefab: {fileID: 4895053634560233720, guid: add79e5e7300ce94a931eceaf931ca89, type: 3}
+  - name: SM_VKI_Wall_Cave_Rake_150_L
+    prefab: {fileID: 3373143531509527519, guid: acfece4a89c380141876c9d0baaffbb5, type: 3}
+  - name: SM_VKI_Wall_Cave_Rake_150_R
+    prefab: {fileID: 8455538859683294042, guid: d158bb01d19e9154ca98ccb62b87eec8, type: 3}
+  - name: SM_VKI_Wall_Dungeon_Breach_150_Cut
+    prefab: {fileID: 968363001452536932, guid: edad265a7fd15ab43b86fd4131ad2866, type: 3}
+  - name: SM_VKI_Wall_Dungeon_Breach_150_Full
+    prefab: {fileID: 876409504426906838, guid: 787487a8ec0796548968942867909c82, type: 3}
+  - name: SM_VKI_Wall_Dungeon_Breach_300_Cut
+    prefab: {fileID: 5276089822134284668, guid: 4599b83a3fabc7f40a73ec204dcd39ff, type: 3}
+  - name: SM_VKI_Wall_Dungeon_Breach_300_Full
+    prefab: {fileID: 2914571033594064741, guid: 293bd1837ac8a0e469642cf801ac78b7, type: 3}
+  - name: SM_VKI_Wall_Dungeon_DartTrap_150_Full
+    prefab: {fileID: 784303883528094862, guid: c5a81601e1368dc4c9b277f5c95ac660, type: 3}
+  - name: SM_VKI_Wall_Dungeon_DoorWide_300_Cut
+    prefab: {fileID: 8904488922591301079, guid: e2cef91623b80f74a911d09573afa500, type: 3}
+  - name: SM_VKI_Wall_Dungeon_DoorWide_300_Full
+    prefab: {fileID: 1140375230014167910, guid: 23b403fc82fc9a4438a646b4582dbda2, type: 3}
+  - name: SM_VKI_Wall_Dungeon_Door_150_Cut
+    prefab: {fileID: 6436649846138024617, guid: 3e3d72a3b3f7acb448b8246443a7679e, type: 3}
+  - name: SM_VKI_Wall_Dungeon_Door_150_Full
+    prefab: {fileID: 8007766167797594422, guid: 5ee242e1d990fde4da296b174af0c4c6, type: 3}
+  - name: SM_VKI_Wall_Dungeon_Niche_150_Cut
+    prefab: {fileID: 7910949344196844812, guid: 599b53f3be995784a9642312cb8f8ca8, type: 3}
+  - name: SM_VKI_Wall_Dungeon_Niche_150_Full
+    prefab: {fileID: 5599286950785072045, guid: 42c86b8eaed18bb4583d3a0fc8d74d8a, type: 3}
+  - name: SM_VKI_Wall_Dungeon_Passage_150_Full
+    prefab: {fileID: 2213190031310704943, guid: 9caa16cfac44a44418883d04878f4f65, type: 3}
+  - name: SM_VKI_Wall_Dungeon_Plain_150A_Cut
+    prefab: {fileID: 6227157564909723707, guid: bb14d7b78ef073c41b91133faefd7f48, type: 3}
+  - name: SM_VKI_Wall_Dungeon_Plain_150A_Full
+    prefab: {fileID: 3253978709683260532, guid: f7790d5229e295b48b73991915fb4089, type: 3}
+  - name: SM_VKI_Wall_Dungeon_Plain_150B_Full
+    prefab: {fileID: 667082309588093452, guid: e627727d5b01ae540b99ad313e81be85, type: 3}
+  - name: SM_VKI_Wall_Dungeon_Plain_300_Cut
+    prefab: {fileID: 24390146162115004, guid: e4de2d5bf4cb85844bc12ef00ecae395, type: 3}
+  - name: SM_VKI_Wall_Dungeon_Plain_300_Full
+    prefab: {fileID: 5937041698094312805, guid: c48df90a2fca6f045ac7473f0e52a3eb, type: 3}
+  - name: SM_VKI_Wall_Dungeon_Rake_150_L
+    prefab: {fileID: 1671389048792475149, guid: 6ac6d22bd5ee0ee4e9c36b28b8ea7a48, type: 3}
+  - name: SM_VKI_Wall_Dungeon_Rake_150_R
+    prefab: {fileID: 3363218538720102232, guid: 0abbe991177cb7b4c8d7d1b595453736, type: 3}
+  - name: SM_VKI_Wall_Dungeon_Secret_150_Full
+    prefab: {fileID: 8295927393495903410, guid: 57cfa9bf3fc0f93419be36228822decf, type: 3}
+  - name: SM_VKI_Wall_Dungeon_Window_150_Full
+    prefab: {fileID: 3112203500447031019, guid: 62c9eff02ef67ad41ab7c7d9d0cda842, type: 3}
+  - name: SM_VKI_Wall_Dwarf_Breach_150_Cut
+    prefab: {fileID: 9022759858460292576, guid: 89b5e15427cffd3469d5fc4e24ea57e6, type: 3}
+  - name: SM_VKI_Wall_Dwarf_Breach_150_Full
+    prefab: {fileID: 5150752619024484829, guid: 4b65b089eafdd284eb6605d96dc81b4b, type: 3}
+  - name: SM_VKI_Wall_Dwarf_Breach_300_Cut
+    prefab: {fileID: 410986559593675178, guid: 2f55ce2a6b47d0c4c9c3efc6e88e9ace, type: 3}
+  - name: SM_VKI_Wall_Dwarf_Breach_300_Full
+    prefab: {fileID: 2675056350741121895, guid: 8f9c602ab9307cd4c9b2eebccd60f9be, type: 3}
+  - name: SM_VKI_Wall_Dwarf_DoorWide_300_Cut
+    prefab: {fileID: 5063153508299379093, guid: 2325a056b001184458a5211f27ba29c4, type: 3}
+  - name: SM_VKI_Wall_Dwarf_DoorWide_300_Full
+    prefab: {fileID: 9153418004277541394, guid: 3bac128c64390074ca9313f6b3ea8afc, type: 3}
+  - name: SM_VKI_Wall_Dwarf_Door_150_Cut
+    prefab: {fileID: 3444889334219060840, guid: 3a0bedac9d1267447a7b5396578a3267, type: 3}
+  - name: SM_VKI_Wall_Dwarf_Door_150_Full
+    prefab: {fileID: 7652125374521933472, guid: cfda13b632a52f14cb348b36f8459c1b, type: 3}
+  - name: SM_VKI_Wall_Dwarf_Passage_150_Full
+    prefab: {fileID: 2527669424525206491, guid: 146051d5e1c85014d89955a2385595e9, type: 3}
+  - name: SM_VKI_Wall_Dwarf_Plain_150A_Cut
+    prefab: {fileID: 704467753145051903, guid: ee0d8cdc6ad061040b71bb9113144f25, type: 3}
+  - name: SM_VKI_Wall_Dwarf_Plain_150A_Full
+    prefab: {fileID: 6304552901034603331, guid: 0058a2f3f885d8149a58fb3212974033, type: 3}
+  - name: SM_VKI_Wall_Dwarf_Plain_150B_Full
+    prefab: {fileID: 8452457305550112393, guid: 8d1bbe868b6d10a4f8fa485393bb6ba2, type: 3}
+  - name: SM_VKI_Wall_Dwarf_Plain_300_Cut
+    prefab: {fileID: 8692932453954985100, guid: 6cc9de1926290b544a108050328e108e, type: 3}
+  - name: SM_VKI_Wall_Dwarf_Plain_300_Full
+    prefab: {fileID: 8472543661757174342, guid: 3c2a31f48c6454041a86d0a02cf9fbd4, type: 3}
+  - name: SM_VKI_Wall_Dwarf_Rake_150_L
+    prefab: {fileID: 4987935864093527085, guid: 5b9d3561c028bf54f97ffbc707110234, type: 3}
+  - name: SM_VKI_Wall_Dwarf_Rake_150_R
+    prefab: {fileID: 6131879511186488428, guid: 9aaa12b084047c145be2fe9f78268ed7, type: 3}
+  - name: SM_VKI_Wall_Mine_Plain_150A_Cut
+    prefab: {fileID: 2329031195435239412, guid: d69cb3be602a653488f061905a7c9877, type: 3}
+  - name: SM_VKI_Wall_Mine_Plain_150A_Full
+    prefab: {fileID: 7122440866540196301, guid: 8de8961dd95acf647b6b63ccc66bafbe, type: 3}
+  - name: SM_VKI_Wall_Mine_Plain_300_Cut
+    prefab: {fileID: 2049793061553312676, guid: 9983c685eaec3234d96e20f00386bd05, type: 3}
+  - name: SM_VKI_Wall_Mine_Plain_300_Full
+    prefab: {fileID: 1121246248004849011, guid: 9e4e236fcee257f4985726eac27f15fc, type: 3}
+  - name: SM_VKI_Wall_Sewer_Breach_150_Cut
+    prefab: {fileID: 3534328440837613256, guid: 9f31f0497b95b8b4d831b0f416965b07, type: 3}
+  - name: SM_VKI_Wall_Sewer_Breach_150_Full
+    prefab: {fileID: 4279672359979701920, guid: d88c356aeacda4243b8700afcf711afb, type: 3}
+  - name: SM_VKI_Wall_Sewer_Breach_300_Cut
+    prefab: {fileID: 5926771616787796060, guid: cdfb3ffd1eaf8b84f9fe66e0268129a7, type: 3}
+  - name: SM_VKI_Wall_Sewer_Breach_300_Full
+    prefab: {fileID: 7261824351100108177, guid: dbdd924db0e84a447b0b9ff5d6341aa0, type: 3}
+  - name: SM_VKI_Wall_Sewer_Culvert_150_Cut
+    prefab: {fileID: 7015956653857958608, guid: 9698d2995c82db848ac6d603bd6638d8, type: 3}
+  - name: SM_VKI_Wall_Sewer_Culvert_150_Full
+    prefab: {fileID: 4471375370501986905, guid: 108a938673a93d7439ff538324aae372, type: 3}
+  - name: SM_VKI_Wall_Sewer_Door_150_Cut
+    prefab: {fileID: 6378971566885166464, guid: a23b1d3f3834c144aab31f3280ed2e38, type: 3}
+  - name: SM_VKI_Wall_Sewer_Door_150_Full
+    prefab: {fileID: 2276561865357833161, guid: 4671abc4236867e4dba1d769a2d9c042, type: 3}
+  - name: SM_VKI_Wall_Sewer_Ladder_150_Full
+    prefab: {fileID: 5090259249393896292, guid: 2474346a240d6884a8dc88e40f05a0e1, type: 3}
+  - name: SM_VKI_Wall_Sewer_Outfall_150_Full
+    prefab: {fileID: 6752948862743019373, guid: 9fd32ff781f01fb4e9e5c71662f37070, type: 3}
+  - name: SM_VKI_Wall_Sewer_Passage_150_Full
+    prefab: {fileID: 3628167186045581995, guid: bb6708c06cce12948ba59de28b11af70, type: 3}
+  - name: SM_VKI_Wall_Sewer_Plain_150A_Cut
+    prefab: {fileID: 1149807872001287660, guid: 88d446dcd79566b438a138a3f9551e60, type: 3}
+  - name: SM_VKI_Wall_Sewer_Plain_150A_Full
+    prefab: {fileID: 8662807478656123991, guid: 1737574519928dc4bba364cd9662de39, type: 3}
+  - name: SM_VKI_Wall_Sewer_Plain_150B_Full
+    prefab: {fileID: 8339468380200302417, guid: 6ccd5379e0549494fbdbe26a7cfb5d6a, type: 3}
+  - name: SM_VKI_Wall_Sewer_Plain_300_Cut
+    prefab: {fileID: 2966201698859362998, guid: 81ce98f309e0e3143a8509153852247b, type: 3}
+  - name: SM_VKI_Wall_Sewer_Plain_300_Full
+    prefab: {fileID: 3907839320202844698, guid: f8966bdcce78fa241affe600a9a17ba1, type: 3}
+  - name: SM_VKI_Wall_Sewer_Rake_150_L
+    prefab: {fileID: 4742766993317788090, guid: 0b5b8d63c1af96d40a702015d6b7dead, type: 3}
+  - name: SM_VKI_Wall_Sewer_Rake_150_R
+    prefab: {fileID: 708333318972227307, guid: 1b18deb2f0c669746a5ece1ecb9f2b5d, type: 3}
+  - name: SM_VKI_Wall_Stone_DoorWide_300_Cut
+    prefab: {fileID: 6978674309123273139, guid: c3dc1ae6acae54947ac916e044642a97, type: 3}
+  - name: SM_VKI_Wall_Stone_DoorWide_300_Full
+    prefab: {fileID: 1519802118369904916, guid: 8e3eab00de173ab4db42a9d98c829655, type: 3}
+  - name: SM_VKI_Wall_Stone_Door_150_Cut
+    prefab: {fileID: 1756052566887716439, guid: 67859f70c55530745b47361ee605a0b1, type: 3}
+  - name: SM_VKI_Wall_Stone_Door_150_Full
+    prefab: {fileID: 6927693727812999879, guid: 43bc0d4f986dc5b46978c0ec518ec5b2, type: 3}
+  - name: SM_VKI_Wall_Stone_Forge_300_Cut
+    prefab: {fileID: 1817519964756252878, guid: 7796fecfc9b0f8d44b4362514182e704, type: 3}
+  - name: SM_VKI_Wall_Stone_Forge_300_Full
+    prefab: {fileID: 2518055156706011062, guid: 79be7e3fedbd17c4ab8280a590ac24b7, type: 3}
+  - name: SM_VKI_Wall_Stone_Hearth_300_Cut
+    prefab: {fileID: 3218041082004719822, guid: 6852b4acc70148342af9d1a6245f2daa, type: 3}
+  - name: SM_VKI_Wall_Stone_Hearth_300_Full
+    prefab: {fileID: 7811128916814436354, guid: 5a58ab40eb4f1aa4ba730c809cfa8529, type: 3}
+  - name: SM_VKI_Wall_Stone_Plain_150A_Cut
+    prefab: {fileID: 8076169699247732997, guid: 7281af7f20ac65c488e5d2a8452ed6f7, type: 3}
+  - name: SM_VKI_Wall_Stone_Plain_150A_Full
+    prefab: {fileID: 367038895176920058, guid: 1f6d9ff951d117c44b29d43c6edd5d2b, type: 3}
+  - name: SM_VKI_Wall_Stone_Plain_150B_Full
+    prefab: {fileID: 8626548300033717390, guid: 8081e94ee29ded14cbbebd40bfa5b0a6, type: 3}
+  - name: SM_VKI_Wall_Stone_Plain_300_Cut
+    prefab: {fileID: 6759930087899173559, guid: ae1044a06b9314f48bc7e2b6b628af0c, type: 3}
+  - name: SM_VKI_Wall_Stone_Plain_300_Full
+    prefab: {fileID: 2477336653740988407, guid: c21ecfc1dd7bebc4da8b3158f0b626af, type: 3}
+  - name: SM_VKI_Wall_Stone_Rake_150_L
+    prefab: {fileID: 6435494868359808855, guid: 5573481ddb742074591456df7560180d, type: 3}
+  - name: SM_VKI_Wall_Stone_Rake_150_R
+    prefab: {fileID: 4323750647366057443, guid: cde78f8291d33ac4ab63dffd9528997a, type: 3}
+  - name: SM_VKI_Wall_Stone_Window_150_Cut
+    prefab: {fileID: 5169750680137900602, guid: bcc4261bd7551da4b9c0a62aad98ed0d, type: 3}
+  - name: SM_VKI_Wall_Stone_Window_150_Full
+    prefab: {fileID: 7959573331833180282, guid: 73bcfff4540ba574e93b7a19c491b4e7, type: 3}
+  - name: SM_VKI_Wall_Timber_Door_150_Cut
+    prefab: {fileID: 7692548621212447990, guid: b61bcff31e9921a4591c2b1aed4855ec, type: 3}
+  - name: SM_VKI_Wall_Timber_Door_150_Full
+    prefab: {fileID: 386654885294073758, guid: 3c377023f41f0044cbd9059b4b357ab8, type: 3}
+  - name: SM_VKI_Wall_Timber_Fireplace_300_Cut
+    prefab: {fileID: 7216970930707373961, guid: 128f43e45dc880147b2adc4b3396608f, type: 3}
+  - name: SM_VKI_Wall_Timber_Fireplace_300_Full
+    prefab: {fileID: 8925123939877076051, guid: 8009221ab428e7842909a2319d571644, type: 3}
+  - name: SM_VKI_Wall_Timber_Plain_150A_Cut
+    prefab: {fileID: 7819248801032306883, guid: 6c2fc193973f92241b152a45b099c948, type: 3}
+  - name: SM_VKI_Wall_Timber_Plain_150A_Full
+    prefab: {fileID: 1459650110388740300, guid: 6c97df5ac5b298c4fbba581cc641cb39, type: 3}
+  - name: SM_VKI_Wall_Timber_Plain_150B_Full
+    prefab: {fileID: 1176277784874167003, guid: 37b0a74590f1b0344a11e0433a743d5e, type: 3}
+  - name: SM_VKI_Wall_Timber_Plain_300_Cut
+    prefab: {fileID: 4113226660819499490, guid: 4f65b41d0bc28ef4cb9fd77fb838a593, type: 3}
+  - name: SM_VKI_Wall_Timber_Plain_300_Full
+    prefab: {fileID: 1144863848206544423, guid: 252ec3940e567c24f8168a66f52c2bf9, type: 3}
+  - name: SM_VKI_Wall_Timber_Rake_150_L
+    prefab: {fileID: 4563145162287446941, guid: 74a743a380b45c347be13ffc3db7c0a3, type: 3}
+  - name: SM_VKI_Wall_Timber_Rake_150_R
+    prefab: {fileID: 7269653266837338391, guid: f76445e9b2a03c0408416b3158247e9f, type: 3}
+  - name: SM_VKI_Wall_Timber_Window_150_Cut
+    prefab: {fileID: 548013623729511444, guid: e2c4aed2bd041e646bd942dd38878408, type: 3}
+  - name: SM_VKI_Wall_Timber_Window_150_Full
+    prefab: {fileID: 1770481521559997112, guid: bdd27a4a5a4a7f448a9e4520ec3a0c59, type: 3}
+  - name: SM_VKI_Wall_Wattle_Door_150_Cut
+    prefab: {fileID: 2713107469217681473, guid: 3c940e7a91d8e9342921398f8488f286, type: 3}
+  - name: SM_VKI_Wall_Wattle_Door_150_Full
+    prefab: {fileID: 74082643731338387, guid: 8976e7122df196c4493c3eddd92cd4da, type: 3}
+  - name: SM_VKI_Wall_Wattle_Plain_150A_Cut
+    prefab: {fileID: 4661400323175990377, guid: 4c36618a572fc5c419fb1ddc33273f80, type: 3}
+  - name: SM_VKI_Wall_Wattle_Plain_150A_Full
+    prefab: {fileID: 895574199403753315, guid: 00b1a1900a89412429ae8d3295676105, type: 3}
+  - name: SM_VKI_Wall_Wattle_Plain_150B_Full
+    prefab: {fileID: 325839366760825483, guid: b1039598356b1124ebd60e8a190436c5, type: 3}
+  - name: SM_VKI_Wall_Wattle_Plain_300_Cut
+    prefab: {fileID: 22434289815490920, guid: 87a76fe1a5a4bfd45ac4b3e35d5a7aab, type: 3}
+  - name: SM_VKI_Wall_Wattle_Plain_300_Full
+    prefab: {fileID: 6563339753912068957, guid: 76fc3684aef8d4d4caecea3ba854c71a, type: 3}
+  - name: SM_VKI_Wall_Wattle_Rake_150_L
+    prefab: {fileID: 3664100088445203898, guid: 1042547b7e4bf3546b593d316110259b, type: 3}
+  - name: SM_VKI_Wall_Wattle_Rake_150_R
+    prefab: {fileID: 557211528759825730, guid: 07bdedb18cb6f8a488a96848db66f6e7, type: 3}
+  - name: SM_VKI_Wall_Wattle_Window_150_Cut
+    prefab: {fileID: 44858138740491389, guid: 1edc480a6be69e343940623a2ce26028, type: 3}
+  - name: SM_VKI_Wall_Wattle_Window_150_Full
+    prefab: {fileID: 2187460406503583717, guid: e571a7d3cf1a26946b75c9df9827d356, type: 3}
+  - name: SM_VK_Animal_Chickens
+    prefab: {fileID: 7841335703840878928, guid: 5cfcd5be9b8578e42a5a867c19203626, type: 3}
+  - name: SM_VK_Animal_Cow
+    prefab: {fileID: 1446321235413962494, guid: 1757e603916049f49b60004e4184b32e, type: 3}
+  - name: SM_VK_Animal_Goat
+    prefab: {fileID: 5841230825903849118, guid: c330eb4054f2691418eeef0fd37d09d7, type: 3}
+  - name: SM_VK_Animal_Horse
+    prefab: {fileID: 4270701494475771194, guid: e74c9687e21146a4c9b86c9846a0d965, type: 3}
+  - name: SM_VK_Animal_Pig
+    prefab: {fileID: 2774460544647884466, guid: 17d56ed34ba67a344b6dfeb91b368c0a, type: 3}
+  - name: SM_VK_Animal_Sheep
+    prefab: {fileID: 7700010553663903343, guid: cd44d6adacc625a44bf5cb80ab955400, type: 3}
+  - name: SM_VK_Awning
+    prefab: {fileID: 4577506877543609955, guid: bd25657c056004d428b2c6749595f291, type: 3}
+  - name: SM_VK_Balcony
+    prefab: {fileID: 6710192192303224157, guid: 4108ec35dfacc9e429bbb7fdc2a6995f, type: 3}
+  - name: SM_VK_Banner_Pole
+    prefab: {fileID: 6463466257225180744, guid: c262e2e515aab67429999414d3ccc95c, type: 3}
+  - name: SM_VK_Banner_Roof
+    prefab: {fileID: 6039256711894015596, guid: a3b0bdf03fc14a641b287f7d986be52a, type: 3}
+  - name: SM_VK_Banner_Wall
+    prefab: {fileID: 1754987767996418632, guid: b04573cf9f2588f4cb7a757a59b2e11a, type: 3}
+  - name: SM_VK_BellTower
+    prefab: {fileID: 3562349417369561372, guid: fef65cffec6672042a36b553f6f789a1, type: 3}
+  - name: SM_VK_BreadOven
+    prefab: {fileID: 6386862300858997191, guid: c85e39356fbc7bb4eab60d33e0fcd84e, type: 3}
+  - name: SM_VK_Bridge_Log
+    prefab: {fileID: 7048482111049217822, guid: df94aad34d75502408b2b6b447389c66, type: 3}
+  - name: SM_VK_Bridge_Stone_Pier
+    prefab: {fileID: 6289263308890842892, guid: d359c81a3f022bb4781d44a63a28363f, type: 3}
+  - name: SM_VK_Bridge_Stone_Ramp
+    prefab: {fileID: 6005294427533894787, guid: fa4defe8bde19ca40abeda2a720bc2c3, type: 3}
+  - name: SM_VK_Bridge_Stone_Span
+    prefab: {fileID: 1617311876099175156, guid: b8f8b1cfdb3e1ef40ac3f35b2375d748, type: 3}
+  - name: SM_VK_Bridge_Wood_Bent
+    prefab: {fileID: 2581512509305935061, guid: 2b1c923edb1ef2e468c1a2791e16262b, type: 3}
+  - name: SM_VK_Bridge_Wood_End
+    prefab: {fileID: 2886738272740335751, guid: 881f6ba4f4ecbf74b8ea518a9046b150, type: 3}
+  - name: SM_VK_Bridge_Wood_Mid
+    prefab: {fileID: 80724325605604549, guid: a1a0991bddf247846a5c6cd88030d3c7, type: 3}
+  - name: SM_VK_BuildSite_Cell
+    prefab: {fileID: 6692184612736787731, guid: eab325cbeabd9464dbda9c7b59a6507b, type: 3}
+  - name: SM_VK_Bush_Autumn
+    prefab: {fileID: 7435129172015638376, guid: 3811a650fb076bf478b06a24fb17f167, type: 3}
+  - name: SM_VK_Bush_Berry
+    prefab: {fileID: 2020521085436471420, guid: ef857a4433328db4f933ab2d5e5b9822, type: 3}
+  - name: SM_VK_Bush_Hydrangea
+    prefab: {fileID: 7106687366908338876, guid: 4b0bc7515f978084480f3fb17150bdd3, type: 3}
+  - name: SM_VK_Bush_Large
+    prefab: {fileID: 5569598810093835477, guid: 80335ea1ba03e18448bfbe6225d61fd7, type: 3}
+  - name: SM_VK_Bush_Round
+    prefab: {fileID: 4163372028073051848, guid: ade9a538681ca1249bc85a6f86ae92d0, type: 3}
+  - name: SM_VK_Ceiling_Cell
+    prefab: {fileID: 1966402453617081321, guid: 0ff9465d75928d04ab28a36324f5a30d, type: 3}
+  - name: SM_VK_Chapel_Corner
+    prefab: {fileID: 3438498423906916515, guid: 24169add97b010f4d9559da86b647e00, type: 3}
+  - name: SM_VK_Chapel_Wall
+    prefab: {fileID: 6851231620883052376, guid: f5b0a4bd3b2118b428841233ed27dec7, type: 3}
+  - name: SM_VK_Chapel_Wall_Door
+    prefab: {fileID: 8092607061615786386, guid: 340748dc271d41342bf7f5421fa58b8f, type: 3}
+  - name: SM_VK_Chapel_Wall_Plain
+    prefab: {fileID: 6040272133427846713, guid: 27da54235b2db414686fab49f2c80e27, type: 3}
+  - name: SM_VK_Chimney
+    prefab: {fileID: 77655112667641377, guid: 9f407e67317ed7b4c8f849d555ae3c19, type: 3}
+  - name: SM_VK_Chimney_Gable_H24
+    prefab: {fileID: 3076696491093650436, guid: 8079cd39af23d6d4eb280f1b6f0626a4, type: 3}
+  - name: SM_VK_Chimney_Gable_H30
+    prefab: {fileID: 3280817947905661965, guid: 4d5cacd84b25f89438e18d62a1ea5ea7, type: 3}
+  - name: SM_VK_Chimney_Gable_H58
+    prefab: {fileID: 7803405091739581354, guid: 108e46afc0f8dff478f1ed369f8e0a52, type: 3}
+  - name: SM_VK_Chimney_Party
+    prefab: {fileID: 7629106365447372575, guid: 1c32f728c911420498b5d613431d99f3, type: 3}
+  - name: SM_VK_Corner_Barn
+    prefab: {fileID: 6174866906019743389, guid: a33af85d8a0765344b97da0f64c85d24, type: 3}
+  - name: SM_VK_Corner_Log
+    prefab: {fileID: 8315644078568843174, guid: e42b703579429ac42ad78d89c18223e3, type: 3}
+  - name: SM_VK_Corner_Log_B
+    prefab: {fileID: 8932459207530154643, guid: 96af38d394ad65a44b82a14dc9834ad5, type: 3}
+  - name: SM_VK_Corner_Plaster
+    prefab: {fileID: 2348130747228569832, guid: e622d213fa435e84a89a58ea16dfdfc3, type: 3}
+  - name: SM_VK_Corner_PlasterUp
+    prefab: {fileID: 8401509577556879068, guid: c9135842766692b4ebe444236d0f1274, type: 3}
+  - name: SM_VK_Corner_Posts
+    prefab: {fileID: 7514328111694332210, guid: 4f49a9a3f0590f747977331462a4cdf7, type: 3}
+  - name: SM_VK_Corner_Posts_Barn
+    prefab: {fileID: 8312402952653216255, guid: c8d47e0c8723ead408b468e5ca2f407f, type: 3}
+  - name: SM_VK_Corner_Shed
+    prefab: {fileID: 7856343750750636526, guid: 0d674f63ceb865b4c846db5185922f88, type: 3}
+  - name: SM_VK_Corner_Shed_Raised
+    prefab: {fileID: 9097706845128547789, guid: 1acdd4b1e8bfea04d84770c6ae5b4e22, type: 3}
+  - name: SM_VK_Corner_Stone
+    prefab: {fileID: 4662797469783899418, guid: 4f508acf91d116d43aff031d0796ebea, type: 3}
+  - name: SM_VK_Corner_StoneUp
+    prefab: {fileID: 9038786864904397371, guid: ed7b4ff348c830a4283f92e88371df04, type: 3}
+  - name: SM_VK_Corner_Stone_Half
+    prefab: {fileID: 6343850558067950102, guid: 2d973e4e815bd7343938e81e6879aa08, type: 3}
+  - name: SM_VK_Corner_Timber
+    prefab: {fileID: 5905886845231292220, guid: fdd080371a5419c43b0d8292dda5a714, type: 3}
+  - name: SM_VK_Corner_Wattle
+    prefab: {fileID: 3607552847162373873, guid: d6bcb8bd8605ea9499e82b837896eed9, type: 3}
+  - name: SM_VK_Crop_Cabbage
+    prefab: {fileID: 4286596970918070763, guid: ae502f29fbb6d3742b1e4be86283d532, type: 3}
+  - name: SM_VK_Crop_Carrot
+    prefab: {fileID: 5417095220382947413, guid: 873ba9b523c79e64193e552f66fc81d8, type: 3}
+  - name: SM_VK_Crop_Lavender
+    prefab: {fileID: 485823099225667530, guid: bcf1129d4e0ae074580222ba93958d69, type: 3}
+  - name: SM_VK_Crop_Pumpkin
+    prefab: {fileID: 6754054203583802930, guid: 7c634dd853bc36745b73bfbd5d076c7b, type: 3}
+  - name: SM_VK_Crop_TreeNursery
+    prefab: {fileID: 5136298572989418383, guid: 9cf7250e2cbed61469ce3d9008787f68, type: 3}
+  - name: SM_VK_Crop_Wheat
+    prefab: {fileID: 7671407505066611026, guid: 8a844cc40fbfcc64c8829fb2086bc20c, type: 3}
+  - name: SM_VK_Deco_Bush
+    prefab: {fileID: 4311350470326437162, guid: a3fa60f559e6b8946862be6ec8001dd4, type: 3}
+  - name: SM_VK_Deco_Hedge
+    prefab: {fileID: 4784030005487728301, guid: 8b637cc07680ea141926270664952e02, type: 3}
+  - name: SM_VK_Deco_Ivy_A
+    prefab: {fileID: 5568871759735911064, guid: e561ef186c182db439a704d614e04425, type: 3}
+  - name: SM_VK_Deco_Ivy_B
+    prefab: {fileID: 8760278173395154016, guid: d6d421528eb007c4e84f0641c08c0646, type: 3}
+  - name: SM_VK_Deco_MudWallow
+    prefab: {fileID: 4409243679365965844, guid: 63584a6a498d2c04080beb416fa89635, type: 3}
+  - name: SM_VK_Deco_Weeds
+    prefab: {fileID: 5078425802102687897, guid: 153e49788193cab4f94f7a79bb9364b2, type: 3}
+  - name: SM_VK_Def_Bartizan
+    prefab: {fileID: 2956474949356898211, guid: b20912658b84fbf48b3a71aac3536569, type: 3}
+  - name: SM_VK_Def_CornerUp
+    prefab: {fileID: 6485053748016325516, guid: d996c8bd2620ed14887cd83a5fed67c6, type: 3}
+  - name: SM_VK_Def_Standin_Plateau
+    prefab: {fileID: 1613939219566378206, guid: 0fd445575dcd20d488a41c1316559446, type: 3}
+  - name: SM_VK_Def_Standin_Ramp
+    prefab: {fileID: 5049333993068721760, guid: 770b7f7019a32154180b2713e2a415bb, type: 3}
+  - name: SM_VK_Def_StoneUp
+    prefab: {fileID: 5839648717918895391, guid: d85ea8ee828eb314685aa1f4cb39b30d, type: 3}
+  - name: SM_VK_Def_StoneUp_Door
+    prefab: {fileID: 1079258344633815863, guid: d34fecf6a1db835479955a1dc48c72dc, type: 3}
+  - name: SM_VK_Def_StoneUp_Slit
+    prefab: {fileID: 8167066910171283801, guid: 3a9fa129a5480024fbd00700939dec8e, type: 3}
+  - name: SM_VK_Def_StoneUp_Window
+    prefab: {fileID: 5389750623334956746, guid: 5acbd0448dbc2e94f8ba3ae90dab6a57, type: 3}
+  - name: SM_VK_Emblem_Ridge_Anvil
+    prefab: {fileID: 6012442350258234043, guid: c77912afad582e441b76afbd806db0d8, type: 3}
+  - name: SM_VK_Emblem_Ridge_Axe
+    prefab: {fileID: 7446191444257246834, guid: 95cabd55af33aba49864a0bb0a97f3af, type: 3}
+  - name: SM_VK_Emblem_Ridge_Book
+    prefab: {fileID: 6708984125448148173, guid: e75af159ee89c53449e4bfd8cedd2dc3, type: 3}
+  - name: SM_VK_Emblem_Ridge_Fish
+    prefab: {fileID: 3856159060448150596, guid: 1d422c202f846a74e8919bef562e8e33, type: 3}
+  - name: SM_VK_Emblem_Ridge_Horseshoe
+    prefab: {fileID: 3798951384877188913, guid: f87ed826959a19941825309cc1f2088e, type: 3}
+  - name: SM_VK_Emblem_Ridge_Key
+    prefab: {fileID: 5396320212761733610, guid: 96fcf7f9d9ae8fb4ca838c7d1831a370, type: 3}
+  - name: SM_VK_Emblem_Ridge_Pretzel
+    prefab: {fileID: 9057465740021729551, guid: 82cffef1910426d458b60bdc5517f9c3, type: 3}
+  - name: SM_VK_Emblem_Ridge_Sheaf
+    prefab: {fileID: 8235951182789320799, guid: 86ea507747f098545a0040ab63d9581d, type: 3}
+  - name: SM_VK_Emblem_Ridge_Shield
+    prefab: {fileID: 3112174290012591063, guid: f2094f7553c541f45a30260d3795ce22, type: 3}
+  - name: SM_VK_Emblem_Ridge_Tankard
+    prefab: {fileID: 7577359231118986180, guid: 93431b5688a9a074fb7765cafae98daf, type: 3}
+  - name: SM_VK_Entrance_CaveMouth
+    prefab: {fileID: 6313256464691643587, guid: ebce9c15a9fbd024fb59ec91d7b5e755, type: 3}
+  - name: SM_VK_Entrance_DwarfGate
+    prefab: {fileID: 5360268253807437634, guid: f64945d9f80a1864b8478a881a7facc0, type: 3}
+  - name: SM_VK_Entrance_LockUp
+    prefab: {fileID: 7873010322419381022, guid: 450b0eecc7eff184399c02c5289002d9, type: 3}
+  - name: SM_VK_Entrance_SewerGrate
+    prefab: {fileID: 1185535305836824504, guid: 0ab698630b18c4549ae1ea6b1a3e8283, type: 3}
+  - name: SM_VK_Entrance_SpringCave
+    prefab: {fileID: 3055549765674965015, guid: 963e9a9b7b007614398c0ffa96932b27, type: 3}
+  - name: SM_VK_Foundation_Corner
+    prefab: {fileID: 3866875279993249239, guid: 88277e7c858ccf045a7a52ccc8d7a81e, type: 3}
+  - name: SM_VK_Foundation_Drop
+    prefab: {fileID: 6690165993977312839, guid: 4f4273c2917777346a22966f4723ca46, type: 3}
+  - name: SM_VK_Foundation_Wall
+    prefab: {fileID: 6593349049679494093, guid: 03b87d09465977d48b2c6fdf82b27858, type: 3}
+  - name: SM_VK_Gallery_End
+    prefab: {fileID: 8244509465159060822, guid: 8400814ba885eba46ab6db8f1617861e, type: 3}
+  - name: SM_VK_Gallery_Side
+    prefab: {fileID: 7085664109854583795, guid: 3e1f2767061d3ae49a3006d15950d35b, type: 3}
+  - name: SM_VK_Gallery_Timber
+    prefab: {fileID: 2785973422593487491, guid: 4cafc792d999b374ea438bc9ff420903, type: 3}
+  - name: SM_VK_Gatehouse_Block
+    prefab: {fileID: 592792095010302163, guid: 2dd211b93e78ca0469c482c1efa305b7, type: 3}
+  - name: SM_VK_Gatehouse_GateLeaf
+    prefab: {fileID: 736686671355064132, guid: 43497d1a48efdf24398568823ac319cd, type: 3}
+  - name: SM_VK_Gatehouse_Portcullis
+    prefab: {fileID: 6021360143391188601, guid: 8624325b2280d2240aa61d5507e114f0, type: 3}
+  - name: SM_VK_Grave_A
+    prefab: {fileID: 3164524490659528711, guid: 8bcc855700937104f88387d09ebeb000, type: 3}
+  - name: SM_VK_Grave_Cross
+    prefab: {fileID: 2694451369542092216, guid: 3d34656375ec08845bff531642c0b405, type: 3}
+  - name: SM_VK_Grave_Obelisk
+    prefab: {fileID: 3151775798834600533, guid: 4d106712b9ed14b4ca5f26ae060bdcd8, type: 3}
+  - name: SM_VK_GuardTower
+    prefab: {fileID: 5665008161134739726, guid: ec0e3533415d6f2428cc890b718bbd44, type: 3}
+  - name: SM_VK_InnerCorner_Plaster
+    prefab: {fileID: 7490645924025308715, guid: 17ebcc3fc493eee49b9a08ce40108714, type: 3}
+  - name: SM_VK_InnerCorner_PlasterUp
+    prefab: {fileID: 5263260420111296810, guid: 3d008fde3156e0347b1cf60d67b78e11, type: 3}
+  - name: SM_VK_InnerCorner_Stone
+    prefab: {fileID: 2468191776646235797, guid: 49e90221f96de4349b0ce6ccc415d00e, type: 3}
+  - name: SM_VK_InnerCorner_StoneUp
+    prefab: {fileID: 5328042519049092671, guid: d8916a4a60950844fb846c0634cc71bb, type: 3}
+  - name: SM_VK_InnerCorner_Timber
+    prefab: {fileID: 5550962716213396751, guid: 570c7593c114fd940954625f0455c655, type: 3}
+  - name: SM_VK_InnerCorner_Wattle
+    prefab: {fileID: 6796158005688296113, guid: a40740438080abb408a268e629f46412, type: 3}
+  - name: SM_VK_Kiln_Oast
+    prefab: {fileID: 7727449487454923298, guid: 86a487fdee727fc4cb72d0e5ed7a2b8e, type: 3}
+  - name: SM_VK_LeanTo
+    prefab: {fileID: 2189257279908240887, guid: 87c42c9897fc4b04195a0834c73968d8, type: 3}
+  - name: SM_VK_LeanTo_Thatch
+    prefab: {fileID: 4518759902059060234, guid: 6c9d12c5b7cacc941985a8391b1679ad, type: 3}
+  - name: SM_VK_LeanTo_Thatch_Low
+    prefab: {fileID: 1973096680716099942, guid: 4c1a4ce03ffb38a4eb5a146b6d02d4e9, type: 3}
+  - name: SM_VK_Log_Fallen
+    prefab: {fileID: 8094202485592293799, guid: 273b23e65733e6a4fb631dfb3840fe18, type: 3}
+  - name: SM_VK_LowWall
+    prefab: {fileID: 3546467167912215226, guid: 5aedb8179ddeee54d8b6ac72af11af98, type: 3}
+  - name: SM_VK_LowWall_GateArch
+    prefab: {fileID: 5701227433493040813, guid: a8095acc92b76884480bb25e932178d7, type: 3}
+  - name: SM_VK_LowWall_Lychgate
+    prefab: {fileID: 7750012792947695465, guid: 66e7ce238547e4945afc8c1c7696d933, type: 3}
+  - name: SM_VK_LowWall_Post
+    prefab: {fileID: 6423048686519750369, guid: 7a081f4605d7da24d9cb16f8c2dc35b3, type: 3}
+  - name: SM_VK_MarketStall
+    prefab: {fileID: 4051068290600936531, guid: 6d6b9cced9973c048b82beee985f1885, type: 3}
+  - name: SM_VK_MarketStall_Baker
+    prefab: {fileID: 4661871007905483360, guid: d6f2f196027dccb47a0bb0a10e56b18d, type: 3}
+  - name: SM_VK_MarketStall_Cheese
+    prefab: {fileID: 4168281224675470828, guid: 27b75aea13a0b3347bd2feb77a9ec18e, type: 3}
+  - name: SM_VK_MarketStall_Draper
+    prefab: {fileID: 3486158199493161379, guid: f52d9ad456be7dc4ebc7e286ca91e1dc, type: 3}
+  - name: SM_VK_MarketStall_Fishmonger
+    prefab: {fileID: 5533149519188771897, guid: 26015b79a69c2d544925179a2dacc822, type: 3}
+  - name: SM_VK_MarketStall_Greengrocer
+    prefab: {fileID: 3413490253291777350, guid: 5adf6c369168ddf4691b17a54289975c, type: 3}
+  - name: SM_VK_MarketStall_Potter
+    prefab: {fileID: 711663477617816945, guid: b22311818e70cb940ac93ededc0bdb3a, type: 3}
+  - name: SM_VK_MarketStall_Tinker
+    prefab: {fileID: 359525677917159177, guid: f1934622e67ac654e9f5e37097f8c017, type: 3}
+  - name: SM_VK_Mill_WheelPier
+    prefab: {fileID: 1997609354706874984, guid: ae3a69caf2eadec4b84d06adcbca8bb4, type: 3}
+  - name: SM_VK_Mine_Portal
+    prefab: {fileID: 6640805334081088575, guid: 5ec0b14ea19562245b8f3375af20f0ef, type: 3}
+  - name: SM_VK_Mushrooms_Brown
+    prefab: {fileID: 9151293000657466920, guid: 7ae10affe716ac6428db398e1bd63bd5, type: 3}
+  - name: SM_VK_Mushrooms_Glow
+    prefab: {fileID: 3350091050447560622, guid: ea011af0000a48048a6ee0a8300a4556, type: 3}
+  - name: SM_VK_Mushrooms_Red
+    prefab: {fileID: 4684322615147347320, guid: d674efc06c566cc4ab74e18a31a121f0, type: 3}
+  - name: SM_VK_Palisade_Diag
+    prefab: {fileID: 5082057272190143072, guid: 1cad1005df1878440b5bd15320c1528c, type: 3}
+  - name: SM_VK_Palisade_Gate
+    prefab: {fileID: 175923760659951235, guid: efdc705aaedf8074fa81ca21df10dc74, type: 3}
+  - name: SM_VK_Palisade_GateLeaf
+    prefab: {fileID: 7817125610072741737, guid: 6741700965ffa2948aa8510c9596df26, type: 3}
+  - name: SM_VK_Palisade_Ladder
+    prefab: {fileID: 6150408658782380026, guid: 11467a4b11205694ba40d7d0391bdece, type: 3}
+  - name: SM_VK_Palisade_Post
+    prefab: {fileID: 2173665117722982311, guid: d345f865e4fef524b9de96ab8cb095e5, type: 3}
+  - name: SM_VK_Palisade_Straight
+    prefab: {fileID: 683837731894903865, guid: 99082ae1cf1d3e644a608a9415d9027b, type: 3}
+  - name: SM_VK_Palisade_Tower
+    prefab: {fileID: 6332310633446675420, guid: 36be3eab800dfd643b219ddf01cb50d7, type: 3}
+  - name: SM_VK_Palisade_Walk
+    prefab: {fileID: 466870909089113076, guid: 3af469253e75b7b4bba08f77d03e6b1e, type: 3}
+  - name: SM_VK_Parapet_Corner
+    prefab: {fileID: 7462813635086645506, guid: 9aae985281368bd4d9438d17b1e16ac3, type: 3}
+  - name: SM_VK_Parapet_Crenel
+    prefab: {fileID: 772313957873474568, guid: f66d2a37ac6048547b92bfd18a145676, type: 3}
+  - name: SM_VK_Passage_Vault
+    prefab: {fileID: 8966170428193305083, guid: 7d54b77c3e146484980d966c02433a0d, type: 3}
+  - name: SM_VK_Pier_Deck
+    prefab: {fileID: 4251527363395390214, guid: f4188d451b34fdb42bb2f8364468d41b, type: 3}
+  - name: SM_VK_Pier_End
+    prefab: {fileID: 1469236122893195092, guid: 5192fab612822d54ca93daf61b06cb44, type: 3}
+  - name: SM_VK_Pier_Rail
+    prefab: {fileID: 5199621627325948761, guid: bbcd2800de67b0746a095230a9431db4, type: 3}
+  - name: SM_VK_Pier_Stairs
+    prefab: {fileID: 3032496769776604629, guid: 4ba60ebbbf5cd2f43a9c1b90cba39bc7, type: 3}
+  - name: SM_VK_Pile_Bricks_1
+    prefab: {fileID: 211209143679512027, guid: d4de1ba41a062db47b970d480e24bd05, type: 3}
+  - name: SM_VK_Pile_Bricks_2
+    prefab: {fileID: 1046160025384935675, guid: ac1d2d9719599a24fa40244a34a4f2bb, type: 3}
+  - name: SM_VK_Pile_Bricks_3
+    prefab: {fileID: 2543580365575801000, guid: b22690a50c656064f8b8d79ed07f2a24, type: 3}
+  - name: SM_VK_Pile_Coal_1
+    prefab: {fileID: 8503050006865023053, guid: df23d0f1d34762a43857ec9fdeeaeea8, type: 3}
+  - name: SM_VK_Pile_Coal_2
+    prefab: {fileID: 5131935375545126408, guid: 1c19a920a206a5c4896775646c71a1fa, type: 3}
+  - name: SM_VK_Pile_Coal_3
+    prefab: {fileID: 3384653730169182873, guid: 8f5c347600085d040a2400024ac63be6, type: 3}
+  - name: SM_VK_Pile_Fish_1
+    prefab: {fileID: 3395234675685070809, guid: 4c128bca3c9b5ce48bdc5ad1e7af2997, type: 3}
+  - name: SM_VK_Pile_Fish_2
+    prefab: {fileID: 9129948436913040413, guid: e9fb659867308c84cb10bdbb95842f63, type: 3}
+  - name: SM_VK_Pile_Fish_3
+    prefab: {fileID: 2260117643277226209, guid: a29c43616b6492143b754f2916e164fc, type: 3}
+  - name: SM_VK_Pile_Hides_1
+    prefab: {fileID: 4832181197600138231, guid: fbb5fc88c60864240ba289f1eebc6ef8, type: 3}
+  - name: SM_VK_Pile_Hides_2
+    prefab: {fileID: 1923780656313054955, guid: 757da0a7a2ba6f344a2cb47e67ad929a, type: 3}
+  - name: SM_VK_Pile_Hides_3
+    prefab: {fileID: 5174474527102798919, guid: c80fc34ede41f38418e89cbcf4c52bd9, type: 3}
+  - name: SM_VK_Pile_Logs_1
+    prefab: {fileID: 7200008922188960979, guid: 4fe081bf0fe5033488253e5a9dcb2c21, type: 3}
+  - name: SM_VK_Pile_Logs_2
+    prefab: {fileID: 4140987239683582898, guid: d09986d4ab54f2e4db83a66bcb413070, type: 3}
+  - name: SM_VK_Pile_Logs_3
+    prefab: {fileID: 3459302989761885365, guid: 046caff2e13685241868336005cd8fc4, type: 3}
+  - name: SM_VK_Pile_Ore_1
+    prefab: {fileID: 347474812237206877, guid: b8068372fa01ebd46948dc5de6233d92, type: 3}
+  - name: SM_VK_Pile_Ore_2
+    prefab: {fileID: 754855545244516654, guid: b971e6e8a8196b147a5bb3fd7c7fc1a6, type: 3}
+  - name: SM_VK_Pile_Ore_3
+    prefab: {fileID: 4991785658292014983, guid: addb844aae230ea4cbc6a31718a3f687, type: 3}
+  - name: SM_VK_Pile_Planks_1
+    prefab: {fileID: 3348683220734960097, guid: 5a67458a55f459a42bb47d90ae5219a7, type: 3}
+  - name: SM_VK_Pile_Planks_2
+    prefab: {fileID: 8173246395867773790, guid: 1f78e8ef045eeb14d827ac4fddb4b6f7, type: 3}
+  - name: SM_VK_Pile_Planks_3
+    prefab: {fileID: 4841669988017179254, guid: 4c9cb144fa8fdbe47b57ec185b63676d, type: 3}
+  - name: SM_VK_Pile_Sacks_1
+    prefab: {fileID: 1999125893651218163, guid: c57a3d196d3108b46be658fb8287e2c4, type: 3}
+  - name: SM_VK_Pile_Sacks_2
+    prefab: {fileID: 7076240602794406476, guid: ccff2d697be00634c8881173e707e2b7, type: 3}
+  - name: SM_VK_Pile_Sacks_3
+    prefab: {fileID: 939512223759889507, guid: f325a77f4e87afe44a80ba58b09eeb5f, type: 3}
+  - name: SM_VK_Pile_Stone_1
+    prefab: {fileID: 8286972518845653346, guid: 0a5ef5c9654bede40961d54950842970, type: 3}
+  - name: SM_VK_Pile_Stone_2
+    prefab: {fileID: 4445250724113900516, guid: 26eff7e7e2236994cbdc8567fe5a88cc, type: 3}
+  - name: SM_VK_Pile_Stone_3
+    prefab: {fileID: 9002928675740962510, guid: 788ec0ec12d7bef4cba09845e9b8af68, type: 3}
+  - name: SM_VK_Pile_Wool_1
+    prefab: {fileID: 3822256894995569933, guid: dbfcbe03668d6ac449eab26fb090ca90, type: 3}
+  - name: SM_VK_Pile_Wool_2
+    prefab: {fileID: 339203862692060750, guid: 2ddab37951fc9f44ab12bcfb502955fd, type: 3}
+  - name: SM_VK_Pile_Wool_3
+    prefab: {fileID: 7171914896412013692, guid: a7c0139dba761274ebb8100f1b62fc74, type: 3}
+  - name: SM_VK_Plant_Fern
+    prefab: {fileID: 4452291524418260626, guid: cf27e22c44e0098428cba15349fcc423, type: 3}
+  - name: SM_VK_Plant_Reeds
+    prefab: {fileID: 5741236965595640920, guid: d2c1596159efd5d4782b668141dbd07d, type: 3}
+  - name: SM_VK_Plant_TallGrass
+    prefab: {fileID: 6102258293485509496, guid: abf78c3b2db02c54a95860fa712f365d, type: 3}
+  - name: SM_VK_Plant_Wildflowers
+    prefab: {fileID: 88036054573587098, guid: d66cb84fc4e9cbe40b6ad9d8f63aa1c7, type: 3}
+  - name: SM_VK_Pond
+    prefab: {fileID: 6102640700107882337, guid: 62d2588d4f43b7445ab1ada2095d84bf, type: 3}
+  - name: SM_VK_Porch
+    prefab: {fileID: 4641417904256497384, guid: 4bdf64558c0b8f342ac73554a6615605, type: 3}
+  - name: SM_VK_Prop_AleCask
+    prefab: {fileID: 7788282655996211146, guid: af0e80e2074070741bfc8e2f87b9dc7b, type: 3}
+  - name: SM_VK_Prop_Anvil
+    prefab: {fileID: 7921678910986407661, guid: f3a92de0f9f44544ba591cf906a71607, type: 3}
+  - name: SM_VK_Prop_ArcheryButt
+    prefab: {fileID: 4848412828636250626, guid: c5c3ac356a992fd409e5be1de10d5c68, type: 3}
+  - name: SM_VK_Prop_ArmorStand
+    prefab: {fileID: 7402141693218877896, guid: ce5c9fd86abf39e40b903a8b301a752c, type: 3}
+  - name: SM_VK_Prop_BakerySign
+    prefab: {fileID: 6753299998274126524, guid: 7d59ba9930c936c478708f9ebb8bf068, type: 3}
+  - name: SM_VK_Prop_Banker
+    prefab: {fileID: 1291541089891641244, guid: 2e36445609468f24c9e83e7d1de3c99e, type: 3}
+  - name: SM_VK_Prop_Barge
+    prefab: {fileID: 4843365533889302208, guid: 87b5300983aa6704a848d2f158c7de8b, type: 3}
+  - name: SM_VK_Prop_BarrelStack
+    prefab: {fileID: 9187553842243472665, guid: ffccdc7f1311c0f4a92051bd2ce0e645, type: 3}
+  - name: SM_VK_Prop_Beacon
+    prefab: {fileID: 7090378991124766265, guid: d99c090c259ac1440a627103a8842f76, type: 3}
+  - name: SM_VK_Prop_Bedroll
+    prefab: {fileID: 8255552509781379279, guid: 00d2ff18c243ed64cb46d9d0d3e16127, type: 3}
+  - name: SM_VK_Prop_BeeBench
+    prefab: {fileID: 920177806035935122, guid: 9e6082610db5b46429529ab8e02c4fdb, type: 3}
+  - name: SM_VK_Prop_Bellows
+    prefab: {fileID: 7717465332458374488, guid: ead9e8504ff3a0e4195cfb38551d2e8b, type: 3}
+  - name: SM_VK_Prop_Bench
+    prefab: {fileID: 6984629097138026870, guid: d443f96b875389c44a61237361af00ad, type: 3}
+  - name: SM_VK_Prop_Bloomery
+    prefab: {fileID: 469439184235620006, guid: b36de50d02c64884087199ffc301ba32, type: 3}
+  - name: SM_VK_Prop_BottleKiln
+    prefab: {fileID: 8375075517050416739, guid: f618c2ef8d7c8ea48b1f2963187a80f4, type: 3}
+  - name: SM_VK_Prop_BreadRack
+    prefab: {fileID: 5635942011072836411, guid: d137e03b115434a419a39e40e060c825, type: 3}
+  - name: SM_VK_Prop_Bunting_6
+    prefab: {fileID: 4009077690762131399, guid: d74da22b8ebb1ce4fabaff1da5232eb9, type: 3}
+  - name: SM_VK_Prop_Bunting_9
+    prefab: {fileID: 2281495294912881517, guid: 52dafdba699d4864bab09b79655710d7, type: 3}
+  - name: SM_VK_Prop_Campfire
+    prefab: {fileID: 5023987791550134886, guid: 068d89cf929706b4cb73ab87e573b4fb, type: 3}
+  - name: SM_VK_Prop_Cart
+    prefab: {fileID: 7605501216700454762, guid: 1b2effaddcb507c428ddd063e4b9ad54, type: 3}
+  - name: SM_VK_Prop_Cauldron
+    prefab: {fileID: 3254078696166969303, guid: 7d0f129ccab562a4c9d06a4289444fbd, type: 3}
+  - name: SM_VK_Prop_CellarHatch
+    prefab: {fileID: 7611042706563614104, guid: 36136af43731e0647b8cb18ec070f45b, type: 3}
+  - name: SM_VK_Prop_CharcoalMound
+    prefab: {fileID: 3837857332099303935, guid: c85accb5065e2854383229f82da31b4f, type: 3}
+  - name: SM_VK_Prop_ChickenCoop
+    prefab: {fileID: 3333586705796885296, guid: 4dfa70f39abad194f9435d936a55784d, type: 3}
+  - name: SM_VK_Prop_ChickenCoop_Wattle
+    prefab: {fileID: 8639077447708553016, guid: 0129f4aab538c81489976a378d806149, type: 3}
+  - name: SM_VK_Prop_Chickens
+    prefab: {fileID: 5592113057148012896, guid: 040fadeea7fe87c458f835f22660cc27, type: 3}
+  - name: SM_VK_Prop_ChoppingBlock
+    prefab: {fileID: 3444421393221283072, guid: 0838f2bbde9ccf44eb37c30be78e652f, type: 3}
+  - name: SM_VK_Prop_CiderPress
+    prefab: {fileID: 5115376845024455214, guid: f7995d43bbe8b6540874a9f01fae33ba, type: 3}
+  - name: SM_VK_Prop_ClayPit
+    prefab: {fileID: 1571513339618743697, guid: a68c3114ac313954b9c09e8808609894, type: 3}
+  - name: SM_VK_Prop_ClothRack
+    prefab: {fileID: 5976492080398812225, guid: 1aa55f148b9203a40bb81147e62bbff0, type: 3}
+  - name: SM_VK_Prop_CoalPile
+    prefab: {fileID: 3102194345961888327, guid: 5a3ae0ae132138b48b76a00dbd272b26, type: 3}
+  - name: SM_VK_Prop_Crates
+    prefab: {fileID: 8312842210750167655, guid: 3c506e12b4d6fd1499438a9344d6180a, type: 3}
+  - name: SM_VK_Prop_Creels
+    prefab: {fileID: 1203501296727836297, guid: 11be5d1a4d1847e4da20c2a6bf7bdbd0, type: 3}
+  - name: SM_VK_Prop_Dovecote
+    prefab: {fileID: 365086298156922465, guid: 27ea92d5d3606ab46a415463c64d71f6, type: 3}
+  - name: SM_VK_Prop_DryingRack_Herbs
+    prefab: {fileID: 1822720774743302953, guid: 21d5fbdf06b00ae4d823aed64cee73a1, type: 3}
+  - name: SM_VK_Prop_DryingRack_Meat
+    prefab: {fileID: 3569321667496275681, guid: 17e9ae81b245fd743ad470605d1697f8, type: 3}
+  - name: SM_VK_Prop_DyeVat
+    prefab: {fileID: 9097826390447025010, guid: 95bde44f20a61344eb958b0494936fa9, type: 3}
+  - name: SM_VK_Prop_Fence
+    prefab: {fileID: 4603209305551597814, guid: 9202264c0ea734a45b64d29f90664d97, type: 3}
+  - name: SM_VK_Prop_FenceGate
+    prefab: {fileID: 6167297636161914170, guid: 00d1bfcae5b6b834db3e14ae3ce1b261, type: 3}
+  - name: SM_VK_Prop_Festoon
+    prefab: {fileID: 7181811617968093923, guid: a15af52be29f56d46a27c90c331e346d, type: 3}
+  - name: SM_VK_Prop_FishRack
+    prefab: {fileID: 8885375754376672852, guid: 984cd90adf5a42b479f1ca096e04409b, type: 3}
+  - name: SM_VK_Prop_FlowerBox
+    prefab: {fileID: 332680346745633280, guid: d7a2f726983ce6d4d9336f7ffecfea31, type: 3}
+  - name: SM_VK_Prop_FlowerBox_Daisy
+    prefab: {fileID: 2699321660022431858, guid: c33bcf11d21b7ed43814d402b27cad36, type: 3}
+  - name: SM_VK_Prop_Forge
+    prefab: {fileID: 2600548127974320263, guid: b7970a33a0a696942a822d705bfe643c, type: 3}
+  - name: SM_VK_Prop_Fountain
+    prefab: {fileID: 8820761685570563723, guid: 53c69d77fa39bb344b68b3ea32572696, type: 3}
+  - name: SM_VK_Prop_GardenBed
+    prefab: {fileID: 3609635320172628021, guid: 6d2bd11ad357daa44bd106d178651033, type: 3}
+  - name: SM_VK_Prop_GranaryStep
+    prefab: {fileID: 1227555195711184499, guid: ffc4a000055d8c8419186d7ffbeb3cc6, type: 3}
+  - name: SM_VK_Prop_Grindstone
+    prefab: {fileID: 8552739851132707302, guid: 37c1a60e27f472840bcb72247f6fb2b8, type: 3}
+  - name: SM_VK_Prop_HandPump
+    prefab: {fileID: 6487264286538555828, guid: 3a140690e56d08b4dafddf8b432ee4b8, type: 3}
+  - name: SM_VK_Prop_HayBale
+    prefab: {fileID: 7931085000729750238, guid: 70acab05d454be7439bbe98f360a41dd, type: 3}
+  - name: SM_VK_Prop_HayRack
+    prefab: {fileID: 6433070350653310751, guid: 27409e0e9b0bcc04da1ac148ae0660bb, type: 3}
+  - name: SM_VK_Prop_Haystack
+    prefab: {fileID: 589552285311695923, guid: 795c56f9a7bd91c40ae22d7df19da3ed, type: 3}
+  - name: SM_VK_Prop_HerbBundles
+    prefab: {fileID: 4330476312369290554, guid: 467030b7d03ab204690a8fb71b6b4ed9, type: 3}
+  - name: SM_VK_Prop_HideFrame
+    prefab: {fileID: 1096176974468818306, guid: bd86c116169e3c14283189c02f7cadab, type: 3}
+  - name: SM_VK_Prop_HitchRail
+    prefab: {fileID: 2034847979123703962, guid: 6e40c8b63c2e1c44cb5e9bade977e298, type: 3}
+  - name: SM_VK_Prop_HoistBeam
+    prefab: {fileID: 2252798830123011309, guid: f45324892c32656448ec335c7a361da2, type: 3}
+  - name: SM_VK_Prop_InnSign
+    prefab: {fileID: 6008288019191382360, guid: f0d71da8f73cdd44e8c7158cd2ae2a19, type: 3}
+  - name: SM_VK_Prop_LadderLean
+    prefab: {fileID: 3756847010441531698, guid: 7c46675624a800844a767528ae8561fb, type: 3}
+  - name: SM_VK_Prop_LampPost
+    prefab: {fileID: 6099441321961318807, guid: 2bda908e5d8784641a8fee5f40f8c0d2, type: 3}
+  - name: SM_VK_Prop_Lantern
+    prefab: {fileID: 7151263649408802175, guid: df76f65787acd864eb951808311559ac, type: 3}
+  - name: SM_VK_Prop_Laundry
+    prefab: {fileID: 1132346649915045795, guid: 2793399c7839eb24e93725816f4e4166, type: 3}
+  - name: SM_VK_Prop_LavoirBasin
+    prefab: {fileID: 4340209539528630017, guid: eecb6ddbdc112af4fb08658c5528c570, type: 3}
+  - name: SM_VK_Prop_Loom
+    prefab: {fileID: 8681621236761599185, guid: 73d98a6d93f148040bc5cdc14aeb0911, type: 3}
+  - name: SM_VK_Prop_MarketCross
+    prefab: {fileID: 4231720648138509111, guid: f4651bbf900626a4fa320a44f3f5300e, type: 3}
+  - name: SM_VK_Prop_MashTun
+    prefab: {fileID: 2936939296774855120, guid: bced0c5fa40f2b945b71d2e0c589a093, type: 3}
+  - name: SM_VK_Prop_Maypole
+    prefab: {fileID: 8757217714829415897, guid: f9ee92653210aa848b609e88da4ebc93, type: 3}
+  - name: SM_VK_Prop_Millstone
+    prefab: {fileID: 7131623203954452688, guid: d5d70542937b1d741aaa9fa77af4382d, type: 3}
+  - name: SM_VK_Prop_Minecart
+    prefab: {fileID: 3336218691517444759, guid: 26da9a546785f984293dadeef60e6065, type: 3}
+  - name: SM_VK_Prop_MortarTub
+    prefab: {fileID: 3534169088236504456, guid: 946ee9d3597b1a0418b7ab7249671911, type: 3}
+  - name: SM_VK_Prop_NetRack
+    prefab: {fileID: 4775005699630690683, guid: c69b6dac8af3d07458a3a7005c5601c4, type: 3}
+  - name: SM_VK_Prop_NoticeBoard
+    prefab: {fileID: 3710474433396627186, guid: 95afabcecf8692d44979041de510c323, type: 3}
+  - name: SM_VK_Prop_Pillory
+    prefab: {fileID: 6503485676714066063, guid: dcd1e3b78195d5743bcf15714d155f4c, type: 3}
+  - name: SM_VK_Prop_Planter
+    prefab: {fileID: 5582064987481724833, guid: 04d67ae688c512f4999ab8cf79762ed7, type: 3}
+  - name: SM_VK_Prop_PottersWheel
+    prefab: {fileID: 998181313796551946, guid: d7e941d6e455d0349ae23050bf54bec7, type: 3}
+  - name: SM_VK_Prop_Privy
+    prefab: {fileID: 8756067503228577491, guid: 6b64d57264c252f4f887caa919f6a569, type: 3}
+  - name: SM_VK_Prop_QuenchTub
+    prefab: {fileID: 7720640507194717570, guid: 7c8dd62625527cd4093f81749d37af15, type: 3}
+  - name: SM_VK_Prop_Rowboat
+    prefab: {fileID: 74699354652055482, guid: 2a5ccd486a5ab4846bce71b2d2f513ac, type: 3}
+  - name: SM_VK_Prop_Sacks
+    prefab: {fileID: 2216585743493014362, guid: 0a2e00049dad4204384535f114e77c52, type: 3}
+  - name: SM_VK_Prop_SawPit
+    prefab: {fileID: 2562285492153618689, guid: 033010cacc9633945b07e86eda4f95e4, type: 3}
+  - name: SM_VK_Prop_Sawhorse
+    prefab: {fileID: 6533454407990011431, guid: 18b8019f3799936499885aa7a6bdfc7e, type: 3}
+  - name: SM_VK_Prop_Scarecrow
+    prefab: {fileID: 2371100025165050835, guid: bcb772377159b184fa9600056aa35465, type: 3}
+  - name: SM_VK_Prop_ShearLegs
+    prefab: {fileID: 1486519122553730117, guid: e8da22877586c62429d18609e7988b5d, type: 3}
+  - name: SM_VK_Prop_ShopGoods_Bread
+    prefab: {fileID: 1575750871693529343, guid: a37c11352585c9c4695ab8466886db9d, type: 3}
+  - name: SM_VK_Prop_ShopGoods_Candles
+    prefab: {fileID: 3309980697464872483, guid: 881b4a8b16c057d4bad07621199e4782, type: 3}
+  - name: SM_VK_Prop_ShopGoods_Cloth
+    prefab: {fileID: 82527862303799373, guid: 6d7663542f4293c448697164696acd0d, type: 3}
+  - name: SM_VK_Prop_ShopGoods_Fish
+    prefab: {fileID: 597728933231295132, guid: 7fd9a146b453bd248b6398f0aff46b3f, type: 3}
+  - name: SM_VK_Prop_ShopGoods_Meat
+    prefab: {fileID: 5944631829664263792, guid: fc2641f01d7d5b344a1f6e0afdebed7e, type: 3}
+  - name: SM_VK_Prop_ShopGoods_Pots
+    prefab: {fileID: 7058633058603590517, guid: ce52625cf291b0843b8d13a73a42ec24, type: 3}
+  - name: SM_VK_Prop_ShopGoods_Produce
+    prefab: {fileID: 2948056552736366967, guid: bd3b2e8623b89af4994d81ac26371ce1, type: 3}
+  - name: SM_VK_Prop_ShopGoods_Tools
+    prefab: {fileID: 74138479615392613, guid: 8426b1e0dbf61964e8e63aad3eacd127, type: 3}
+  - name: SM_VK_Prop_Sign
+    prefab: {fileID: 2226566461617819551, guid: 9707045bf641d4248ab6bddaf0490ff8, type: 3}
+  - name: SM_VK_Prop_Signpost
+    prefab: {fileID: 5166959439011167708, guid: ebf4298d0cd5b7f4f80361990ef643d2, type: 3}
+  - name: SM_VK_Prop_Skep
+    prefab: {fileID: 6796412731216226323, guid: 3ab152ed931c4aa44956799a46bfe572, type: 3}
+  - name: SM_VK_Prop_SmithSign
+    prefab: {fileID: 1516865618586071714, guid: aa7508db3cf026c4ca917218113b31f0, type: 3}
+  - name: SM_VK_Prop_SpinningWheel
+    prefab: {fileID: 8264071657127299545, guid: 7312e0cdfa0c4fd449adc14248dcf088, type: 3}
+  - name: SM_VK_Prop_StaddleStone
+    prefab: {fileID: 8619192892568161229, guid: 4d1dc312a5a4f1844899a14444c68717, type: 3}
+  - name: SM_VK_Prop_Stage
+    prefab: {fileID: 8040519529212674150, guid: 48dc5a6cd39b37345ae65a51171f47d1, type: 3}
+  - name: SM_VK_Prop_Stocks
+    prefab: {fileID: 3362916713873702603, guid: 41dc027b8718901458224f44509228e9, type: 3}
+  - name: SM_VK_Prop_Stool
+    prefab: {fileID: 2805379691704502448, guid: c778b6275eae1b746a40176d0f56c877, type: 3}
+  - name: SM_VK_Prop_Table
+    prefab: {fileID: 5880065897720211269, guid: cf4ff7e71c39ccf4fb8bcb5e665806ca, type: 3}
+  - name: SM_VK_Prop_TanningPit
+    prefab: {fileID: 1330766315292940839, guid: 4e35fe265c942e64587e25a2517c14db, type: 3}
+  - name: SM_VK_Prop_TavernSign
+    prefab: {fileID: 1603638405233708619, guid: 753a2d2eea69421479719aaf077a429f, type: 3}
+  - name: SM_VK_Prop_ToolWall
+    prefab: {fileID: 5854580687035998696, guid: 03747319e614b2042bb871824bc735c7, type: 3}
+  - name: SM_VK_Prop_TrainingDummy
+    prefab: {fileID: 5490235071617028489, guid: 07e8aaaf34d2d5d46bb2baca7e4f003a, type: 3}
+  - name: SM_VK_Prop_TreadwheelCrane
+    prefab: {fileID: 6039064173322393756, guid: dfb290945f98da548a49c1c0a028f87b, type: 3}
+  - name: SM_VK_Prop_TreadwheelCrane_Wheel
+    prefab: {fileID: 6427545784414978165, guid: c8079f88974df7f4ea032f57bed98900, type: 3}
+  - name: SM_VK_Prop_Trough
+    prefab: {fileID: 8159668509766815126, guid: 8dfe48563bdca094489506b9c7faffb4, type: 3}
+  - name: SM_VK_Prop_Wagon_Covered
+    prefab: {fileID: 8654736370845427937, guid: e34c58ed4b5c70d458618399494e6d44, type: 3}
+  - name: SM_VK_Prop_WallFountain
+    prefab: {fileID: 3165740476053458732, guid: 958e7877e8acc8541ae328ba901613ea, type: 3}
+  - name: SM_VK_Prop_WaysideShrine
+    prefab: {fileID: 224776595371740475, guid: d1718c008c95c3d448ac2abf24768715, type: 3}
+  - name: SM_VK_Prop_WeaponRack
+    prefab: {fileID: 5690582227478282222, guid: 4734dc5e5ed89c5459ceb258f7b30259, type: 3}
+  - name: SM_VK_Prop_Weathervane
+    prefab: {fileID: 8470659603144727606, guid: 354d5dae4f8cc8a44bdb6b885edcab69, type: 3}
+  - name: SM_VK_Prop_Well
+    prefab: {fileID: 6773022782958198796, guid: e27f6258664f6d443baa7544c7618e45, type: 3}
+  - name: SM_VK_Prop_Wheelbarrow
+    prefab: {fileID: 4025915655744824523, guid: a66b6a6699c060844bc9264b1c81749f, type: 3}
+  - name: SM_VK_Prop_Woodpile
+    prefab: {fileID: 1192740081715575860, guid: 78919ec4bd948d840b9f119d16c3436a, type: 3}
+  - name: SM_VK_Quarry_Face_Corner
+    prefab: {fileID: 8672778808634103591, guid: fd621afbe6350ab418ffc9c6497c4e36, type: 3}
+  - name: SM_VK_Quarry_Face_InnerCorner
+    prefab: {fileID: 6195325157849998534, guid: 455c94bbb58fe724e90986e66a084706, type: 3}
+  - name: SM_VK_Quarry_Face_Straight
+    prefab: {fileID: 3246537545899357280, guid: 2481609c8d8745f4c9da355211af8a98, type: 3}
+  - name: SM_VK_Quarry_Floor
+    prefab: {fileID: 2339263650106395460, guid: 243e7a64f7fb6c3419a2800a978bee20, type: 3}
+  - name: SM_VK_Quay_Post
+    prefab: {fileID: 3610740679400517612, guid: 4bd063bafe8087541b9c08be343b7020, type: 3}
+  - name: SM_VK_Quay_Stair
+    prefab: {fileID: 3992791550511103084, guid: c6de3cde8c4e9404d98747be64b0b34e, type: 3}
+  - name: SM_VK_Quay_Straight
+    prefab: {fileID: 8266417513209227264, guid: 7997d1a4f5c15e543af83ada59d7e20e, type: 3}
+  - name: SM_VK_Rail_Curve
+    prefab: {fileID: 7407371877081951866, guid: 1c99fbbfd1267ed4a907f78fdd2d820d, type: 3}
+  - name: SM_VK_Rail_End
+    prefab: {fileID: 1131799214142237899, guid: 0767122933fef024b90ca07d3393fb67, type: 3}
+  - name: SM_VK_Rail_Straight
+    prefab: {fileID: 565313260519184587, guid: 7a5335d2c46f94643857df75cda420ba, type: 3}
+  - name: SM_VK_RetainingWall
+    prefab: {fileID: 8544696860483659626, guid: bf3a01e35e0091542adc7fed58969d81, type: 3}
+  - name: SM_VK_RetainingWall_End
+    prefab: {fileID: 7035856325422347927, guid: 9a4fcaa03016b064ba93e180068e90b2, type: 3}
+  - name: SM_VK_Rock_Boulder_A
+    prefab: {fileID: 3035783378568235537, guid: cc9ab51a4a1d08a4caaa1d0ec494153a, type: 3}
+  - name: SM_VK_Rock_Boulder_B
+    prefab: {fileID: 3614626469701456419, guid: 78487269986a69a478473c4ad94263fd, type: 3}
+  - name: SM_VK_Rock_Boulder_Flat
+    prefab: {fileID: 2696151389703687075, guid: 8ee61074b8c18c242aabeb2ebe58316a, type: 3}
+  - name: SM_VK_Rock_Cluster
+    prefab: {fileID: 8625946963158898574, guid: 53b4cd26c9ec81c44bc0104f275146fd, type: 3}
+  - name: SM_VK_Rock_Outcrop
+    prefab: {fileID: 4761225700107936863, guid: b5e1799a34c99764bbf05b66bf933e0e, type: 3}
+  - name: SM_VK_Rock_Pebbles
+    prefab: {fileID: 8039603599322630406, guid: 02819c413f0f1ef4aab33b4538b728ec, type: 3}
+  - name: SM_VK_Rock_Small_A
+    prefab: {fileID: 6318573238312428585, guid: 7e518da7e29c07044a3e155d72e0af14, type: 3}
+  - name: SM_VK_Rock_Small_B
+    prefab: {fileID: 7344123487734931592, guid: c91d0a148f479684fac76313e6fa7f2f, type: 3}
+  - name: SM_VK_Rock_Standing
+    prefab: {fileID: 8900972385565382530, guid: 63af5bcc28c98804780b375000deb321, type: 3}
+  - name: SM_VK_Rock_Standing_B
+    prefab: {fileID: 5122461241077338086, guid: b95db0ec724755242878de0907b4aca1, type: 3}
+  - name: SM_VK_Rock_StepStones
+    prefab: {fileID: 5148181788188662525, guid: f94e9b87afe51a44b97bf9e7078bd4c4, type: 3}
+  - name: SM_VK_RoofS_Gable
+    prefab: {fileID: 6688226092222807487, guid: 5839adb677806d44ca64724054cfc724, type: 3}
+  - name: SM_VK_RoofS_Gable_Planks
+    prefab: {fileID: 1529506096188871527, guid: 30fdc82ca6dfdd44c8bb90e407990f5e, type: 3}
+  - name: SM_VK_RoofS_Mid
+    prefab: {fileID: 13605943576685609, guid: b8defe81ca3be7840a9b5a6064cd9a97, type: 3}
+  - name: SM_VK_RoofS_Single
+    prefab: {fileID: 4348964798775387672, guid: 4f41b6557ac1503479a21ef2afcaacb7, type: 3}
+  - name: SM_VK_RoofThatchS_Gable
+    prefab: {fileID: 8236201257738427209, guid: 5ce42ae4e3bc680468bd6827c8502590, type: 3}
+  - name: SM_VK_RoofThatchS_Mid
+    prefab: {fileID: 8922177151501362666, guid: f98455836a1a40842a2d2b4074a3e8fc, type: 3}
+  - name: SM_VK_RoofThatchS_Single
+    prefab: {fileID: 7851162635281722030, guid: 015e3a95c969232468f0f8853586af83, type: 3}
+  - name: SM_VK_RoofThatch_Gable
+    prefab: {fileID: 9022641983190062629, guid: 0faefbed5c56554448c0e4bed0d73cee, type: 3}
+  - name: SM_VK_RoofThatch_Gable_Cruck
+    prefab: {fileID: 5308792662268998323, guid: 21a3a71beff8aac4da1d147de4572b4b, type: 3}
+  - name: SM_VK_RoofThatch_Gable_Planks
+    prefab: {fileID: 2629410093645270397, guid: 11d3d3487496d48449d8e5abcf57c671, type: 3}
+  - name: SM_VK_RoofThatch_HalfHip
+    prefab: {fileID: 6519680370549153873, guid: cae97dd633e2da94ab729e505150a753, type: 3}
+  - name: SM_VK_RoofThatch_Hip
+    prefab: {fileID: 6174875781934095862, guid: 5047c5088cdc9a14e9b161137ddd7b54, type: 3}
+  - name: SM_VK_RoofThatch_Mid
+    prefab: {fileID: 17841862256138297, guid: 84bc819b68243614594092a572a60809, type: 3}
+  - name: SM_VK_RoofThatch_Single
+    prefab: {fileID: 7210086758155417155, guid: 5a3cc64b2d8731646949e05d706db0da, type: 3}
+  - name: SM_VK_RoofThatch_Vent
+    prefab: {fileID: 6745166973334316698, guid: 5795c9a3c28727741921572d513c5bce, type: 3}
+  - name: SM_VK_Roof_Bellcote
+    prefab: {fileID: 4760177368601086137, guid: 11c49d66c91c2394fa8c3154c07360b4, type: 3}
+  - name: SM_VK_Roof_Cone_R2
+    prefab: {fileID: 5132941459655098201, guid: 6ce612f7fc0786c41b1abd15dd85c4cb, type: 3}
+  - name: SM_VK_Roof_CrossGable
+    prefab: {fileID: 8883855006176662016, guid: 7820f9ca4c18e29449b4f0883a2b2f05, type: 3}
+  - name: SM_VK_Roof_Cupola
+    prefab: {fileID: 6924605036927332462, guid: 30e57c448180acb4aab41fd0dfe7ecdd, type: 3}
+  - name: SM_VK_Roof_Dormer
+    prefab: {fileID: 6992294589862009581, guid: 199d49aba622b084c856d04ac12eb00c, type: 3}
+  - name: SM_VK_Roof_Firewall
+    prefab: {fileID: 406957964340033857, guid: 38c50b215ae44cf4a9e939ab15d2a4cc, type: 3}
+  - name: SM_VK_Roof_Gable
+    prefab: {fileID: 8409656657177680979, guid: 586dd287af96eee45a1efeeed517c897, type: 3}
+  - name: SM_VK_Roof_Gable_Flush
+    prefab: {fileID: 4953938492678336287, guid: 09dc4f2e751495b4b98e3e3c6f2a02b0, type: 3}
+  - name: SM_VK_Roof_Gable_Frame
+    prefab: {fileID: 6998320976844596013, guid: 89caa2323a56a2f449b22b1dd552c957, type: 3}
+  - name: SM_VK_Roof_Gable_Hoist
+    prefab: {fileID: 299520757954351838, guid: a78c5b077bffb9942ad28df33a65288a, type: 3}
+  - name: SM_VK_Roof_Gable_Logs
+    prefab: {fileID: 2824923483734436264, guid: d2e2d4486bd25ae4097866dd0e3c3b1a, type: 3}
+  - name: SM_VK_Roof_Gable_Planks
+    prefab: {fileID: 9147762921373532812, guid: 203dc3296b732044289a93fc872c9f5b, type: 3}
+  - name: SM_VK_Roof_Gable_Stepped
+    prefab: {fileID: 3165450234418718866, guid: 6d71daf083d3cb64090ceb7bfcad9b0d, type: 3}
+  - name: SM_VK_Roof_Gable_Stone
+    prefab: {fileID: 8390315696348937408, guid: 24f8cd60ab526234c86a0d33d98f4b3a, type: 3}
+  - name: SM_VK_Roof_HalfHip
+    prefab: {fileID: 2296533263579837423, guid: c5861a0a3fe33a54a8f95af5261d73a6, type: 3}
+  - name: SM_VK_Roof_Hip
+    prefab: {fileID: 6734975002933842380, guid: 8b389636b3aa99e4e8a521ba1a27a87a, type: 3}
+  - name: SM_VK_Roof_Hip_Frame
+    prefab: {fileID: 1074375726792237606, guid: 3b47e6004ce100047af54f6321b8c777, type: 3}
+  - name: SM_VK_Roof_Hip_Plain
+    prefab: {fileID: 7661254322182064300, guid: 37fb49f7fbbdf994f96b811d3e0a3f1d, type: 3}
+  - name: SM_VK_Roof_LCorner
+    prefab: {fileID: 44951824494325941, guid: 924c230981d9b5d479950f2882196b3c, type: 3}
+  - name: SM_VK_Roof_Mid
+    prefab: {fileID: 3735138837761466632, guid: 4f5830c4b6b7a0a47826bac91faa3a50, type: 3}
+  - name: SM_VK_Roof_Mid_CapL
+    prefab: {fileID: 6781598753025703512, guid: f84ff9bd0536cea468fd7f34bfbceec7, type: 3}
+  - name: SM_VK_Roof_Mid_CapR
+    prefab: {fileID: 233035618561132227, guid: ce3d747f204cd5d4a93636372b317d34, type: 3}
+  - name: SM_VK_Roof_Mid_Frame
+    prefab: {fileID: 983739866567396266, guid: 6f93eb5480a32be42ad5bf1a14407393, type: 3}
+  - name: SM_VK_Roof_Mid_Hatch
+    prefab: {fileID: 869157514060281409, guid: a7e3df3034cc0ba4191d402fa34cf61d, type: 3}
+  - name: SM_VK_Roof_Mid_Skylight
+    prefab: {fileID: 4510507757953660707, guid: ca2492306cd6fa64cbaf4a1f7aec50ab, type: 3}
+  - name: SM_VK_Roof_Pent
+    prefab: {fileID: 3961247265909087974, guid: c6678d57712c36548b1d2697091f542d, type: 3}
+  - name: SM_VK_Roof_Pyramid_6
+    prefab: {fileID: 2733534985853880839, guid: 3ef491d9887c92b4aa8f9facb13f7b5e, type: 3}
+  - name: SM_VK_Roof_Single
+    prefab: {fileID: 3672461103609385512, guid: 018ba4d1f4dd8f848b2003ac8115d112, type: 3}
+  - name: SM_VK_Roof_Vent
+    prefab: {fileID: 4614289107859720015, guid: 756753865552e654abe578f42841f5f1, type: 3}
+  - name: SM_VK_Scaffold_Corner
+    prefab: {fileID: 3444464588116169623, guid: c480ab134bc872448aad6b122b971849, type: 3}
+  - name: SM_VK_Scaffold_Corner_Top
+    prefab: {fileID: 6632928796796887360, guid: 2a9c9dfba84c6bc4c840e07e960cd53c, type: 3}
+  - name: SM_VK_Scaffold_Ladder
+    prefab: {fileID: 6181770142583968355, guid: 83e353dff709efe48979d108b99f4674, type: 3}
+  - name: SM_VK_Scaffold_Wall
+    prefab: {fileID: 1985570871386559713, guid: e9fff048553d013478a06b9e3c32af18, type: 3}
+  - name: SM_VK_Scaffold_Wall_Top
+    prefab: {fileID: 2937771138143485132, guid: 71948704fc56d0349918c42a989fb3f8, type: 3}
+  - name: SM_VK_Sign_Anvil
+    prefab: {fileID: 8822555394700048799, guid: 93d41f71afd50d6468eebbe87450dd6f, type: 3}
+  - name: SM_VK_Sign_Boot
+    prefab: {fileID: 6324625591356322333, guid: 79d7fbdf2bbd7d84f91d4156aa094a49, type: 3}
+  - name: SM_VK_Sign_Potion
+    prefab: {fileID: 1139765776374914128, guid: 70183587e0c2b244fa6a256a2c103875, type: 3}
+  - name: SM_VK_Smithy_Canopy
+    prefab: {fileID: 2771179346050914988, guid: fdab14606da4b9f43904a0deeba3708e, type: 3}
+  - name: SM_VK_Smithy_Chimney
+    prefab: {fileID: 4610722734600151673, guid: 6f6a5ddcf9b4c4f4191635f949bf387e, type: 3}
+  - name: SM_VK_Stair_Ext
+    prefab: {fileID: 3684199965240762066, guid: 7b6d84c8d4268fd43a5df4c7a5e998dd, type: 3}
+  - name: SM_VK_Stair_Stone_Ext
+    prefab: {fileID: 3385591970812235887, guid: dc0ff6bebc5ace942aa1c291dc34923a, type: 3}
+  - name: SM_VK_Stockpile_Border
+    prefab: {fileID: 5419348055023421924, guid: 42e10e38283bcd54e85d632ae9a33640, type: 3}
+  - name: SM_VK_Stoop_Stone
+    prefab: {fileID: 1701314815355163608, guid: dbcb8739e778240429e2ba36e3e52797, type: 3}
+  - name: SM_VK_Stump
+    prefab: {fileID: 939588541534718187, guid: 4c2a5c7919b8cdf488f892d09c68791b, type: 3}
+  - name: SM_VK_Tent_A
+    prefab: {fileID: 6456019299104719846, guid: 1cad2f8762b74e844b56e0cc67acc050, type: 3}
+  - name: SM_VK_Tent_Bell
+    prefab: {fileID: 4425557869273684146, guid: 654377ae823dd0d469f55fccd7ec5821, type: 3}
+  - name: SM_VK_TownWall_Corner_In
+    prefab: {fileID: 5832002026244499593, guid: 95f76bfffe6453e4aada9f5f55870cf6, type: 3}
+  - name: SM_VK_TownWall_Corner_Out
+    prefab: {fileID: 1353740514070496882, guid: 26ba0005ad049e24eb0d9639ea262b2b, type: 3}
+  - name: SM_VK_TownWall_Postern
+    prefab: {fileID: 1286683775809359227, guid: b6a7c8f53af472f48a43632e7de482cb, type: 3}
+  - name: SM_VK_TownWall_Ruin
+    prefab: {fileID: 3467312737270113544, guid: 65d9ab78993a4fe499d6abd8ff25b927, type: 3}
+  - name: SM_VK_TownWall_Stair
+    prefab: {fileID: 5402675886684014066, guid: 78afddd1e9a012740bfc5f075bf37f58, type: 3}
+  - name: SM_VK_TownWall_Step
+    prefab: {fileID: 8059278766635844713, guid: 07ec48f256900d14db833759f39fa8d0, type: 3}
+  - name: SM_VK_TownWall_Straight
+    prefab: {fileID: 5651575226773673456, guid: 14af65daf21d5fe47a118cbe16ce539f, type: 3}
+  - name: SM_VK_TownWall_Tower_Round
+    prefab: {fileID: 1098557177339265210, guid: a2f4e31a68e38864c819572c78d694cd, type: 3}
+  - name: SM_VK_Tree_Apple
+    prefab: {fileID: 2617035034875290155, guid: 3bd3d5c66dfffe54c8b9bdddd3930671, type: 3}
+  - name: SM_VK_Tree_Birch
+    prefab: {fileID: 4657092450260188014, guid: 02007078097218f47a940ea7dbe0b5eb, type: 3}
+  - name: SM_VK_Tree_Birch_Single
+    prefab: {fileID: 5705543497752538835, guid: 15599aba3494cef4abb3f7b4abc132a4, type: 3}
+  - name: SM_VK_Tree_Blossom
+    prefab: {fileID: 828873215620825640, guid: 2d01bebd61ff69a45a21c8556d8eafd9, type: 3}
+  - name: SM_VK_Tree_Dead
+    prefab: {fileID: 5040757485310503712, guid: ec31f9aadcc9bc54cb1e7dfab5831883, type: 3}
+  - name: SM_VK_Tree_Oak_A
+    prefab: {fileID: 4632770796244340981, guid: b029603d25015df4f84ed41806f09435, type: 3}
+  - name: SM_VK_Tree_Oak_Autumn
+    prefab: {fileID: 3468255494001560331, guid: b18964ea56bbe414794d31affeb77e89, type: 3}
+  - name: SM_VK_Tree_Oak_B
+    prefab: {fileID: 8416320128298902683, guid: 390c178d51883b6499201fbdd828e125, type: 3}
+  - name: SM_VK_Tree_Pine_A
+    prefab: {fileID: 5597450902478063967, guid: 3d82a59aa13626245a922062a128bdc7, type: 3}
+  - name: SM_VK_Tree_Pine_B
+    prefab: {fileID: 5480028948701429809, guid: c988a2f9b3688e942af6117f661aaa45, type: 3}
+  - name: SM_VK_Tree_Pine_Young
+    prefab: {fileID: 5962589263258119952, guid: d2ebf861116d38148b44b5ea3cf2139a, type: 3}
+  - name: SM_VK_Tree_Sapling
+    prefab: {fileID: 8857394947560152404, guid: 35a11c5ffb5a7c341afd2626be36836c, type: 3}
+  - name: SM_VK_Tree_Willow
+    prefab: {fileID: 2241121990972031062, guid: 3da9d5899f3a79540a74005c55e36f44, type: 3}
+  - name: SM_VK_Turret_Cap
+    prefab: {fileID: 7120052961844493823, guid: 7135f762bdb1a4f42ab22728c588b93e, type: 3}
+  - name: SM_VK_Turret_Corbel
+    prefab: {fileID: 5338410320236216409, guid: b69705498f8dda9439cd137f38ea90ad, type: 3}
+  - name: SM_VK_Turret_Seg
+    prefab: {fileID: 4825273582183633264, guid: 677c31e13a6425349a0d3ead469c3f7b, type: 3}
+  - name: SM_VK_Turret_Seg_Stone
+    prefab: {fileID: 7020586246966264387, guid: 53c122437b94d824f8caed6bb9084f34, type: 3}
+  - name: SM_VK_Wall_Arcade
+    prefab: {fileID: 554179551508956802, guid: d6a833b51f355a24bad56292e564684c, type: 3}
+  - name: SM_VK_Wall_Barn
+    prefab: {fileID: 4418700808445082170, guid: bc03f6bdbaf36bc4a8fbb4c660428dab, type: 3}
+  - name: SM_VK_Wall_Barn_Door
+    prefab: {fileID: 1859101790852856456, guid: 6ecc7f230175f4b42919b6be512fe19d, type: 3}
+  - name: SM_VK_Wall_Log
+    prefab: {fileID: 3501527073479496414, guid: d6b765dd12002d14c8c0151003c26a5f, type: 3}
+  - name: SM_VK_Wall_Log_B
+    prefab: {fileID: 262507716140621768, guid: 6528e0fbbb25a8b4a8650d5a61c55e61, type: 3}
+  - name: SM_VK_Wall_Log_B_Door
+    prefab: {fileID: 3300985099634426851, guid: 504d13b580f752b4a996dde8fc000a89, type: 3}
+  - name: SM_VK_Wall_Log_B_Window
+    prefab: {fileID: 6158938310778498684, guid: 92a6887a155de2440a94503ed3bcf6c6, type: 3}
+  - name: SM_VK_Wall_Log_Door
+    prefab: {fileID: 174043549901621881, guid: f4d7e22554fb91a4bb1d26cd319fc41c, type: 3}
+  - name: SM_VK_Wall_Log_Window
+    prefab: {fileID: 1067638169709205159, guid: 3397e3a9603cd1142ad0dc7dd76c0e24, type: 3}
+  - name: SM_VK_Wall_Plaster
+    prefab: {fileID: 1285894593044796397, guid: 311f34de3e14c914a9ac637a20fc4963, type: 3}
+  - name: SM_VK_Wall_PlasterUp
+    prefab: {fileID: 3540856668348250791, guid: cfb78c74f2ca2bf429780868081f514e, type: 3}
+  - name: SM_VK_Wall_PlasterUp_Oxeye
+    prefab: {fileID: 7300243405392002645, guid: c9c63bb7f8eb2f348ad56c213b3f042e, type: 3}
+  - name: SM_VK_Wall_PlasterUp_Window
+    prefab: {fileID: 2032928258570017001, guid: 886cddf5795474741ac265f50de6b5af, type: 3}
+  - name: SM_VK_Wall_Plaster_Door
+    prefab: {fileID: 472527061549569095, guid: f6e7b917488c9444abe8525b78809bea, type: 3}
+  - name: SM_VK_Wall_Plaster_Frame
+    prefab: {fileID: 5107494711839935149, guid: 95ffc3ca666f86846a5b99bbd9b46163, type: 3}
+  - name: SM_VK_Wall_Plaster_Frame_Door
+    prefab: {fileID: 7421905219147036989, guid: 0caa7b7d1b8ac2642b6273584c749be9, type: 3}
+  - name: SM_VK_Wall_Plaster_Shop
+    prefab: {fileID: 5888200810634138829, guid: a93d7f6299f9909469a1cfd66d1aa1e6, type: 3}
+  - name: SM_VK_Wall_Plaster_Window
+    prefab: {fileID: 9079258264834494558, guid: 87f5b3d12217fab44834ff371bd23301, type: 3}
+  - name: SM_VK_Wall_Posts
+    prefab: {fileID: 7633875135386638857, guid: 7660f56f6a9b0b84cb0b1883fa75f282, type: 3}
+  - name: SM_VK_Wall_Posts_Barn
+    prefab: {fileID: 385047131210685216, guid: 7683ce5d7e75fab4f8ea9d998c57cf37, type: 3}
+  - name: SM_VK_Wall_Shed
+    prefab: {fileID: 4665569914194682179, guid: 47a3fd8aad4c6d14db60a78e5c47f053, type: 3}
+  - name: SM_VK_Wall_Shed_Door
+    prefab: {fileID: 3429098294251951025, guid: 1f490eae9c3491447b2705f37ad2fe41, type: 3}
+  - name: SM_VK_Wall_Shed_Door_Raised
+    prefab: {fileID: 7052283917825496086, guid: bc35568c4db5c024aa7e241eaa9c9fb6, type: 3}
+  - name: SM_VK_Wall_Shed_Raised
+    prefab: {fileID: 8255285946710379945, guid: a88869f5751dd2e409388523983eeaab, type: 3}
+  - name: SM_VK_Wall_Shed_Wide
+    prefab: {fileID: 8654435763496213168, guid: 5b43a6677e00ec44590afc65b0081593, type: 3}
+  - name: SM_VK_Wall_Shed_Window
+    prefab: {fileID: 5059378249181470670, guid: 6a82fb65f42c8b541b4f897bddb5bf1b, type: 3}
+  - name: SM_VK_Wall_Stall
+    prefab: {fileID: 8794006372179432696, guid: d193e60a543d63e46ba9632ae6b93349, type: 3}
+  - name: SM_VK_Wall_Stone
+    prefab: {fileID: 4999453785729648621, guid: ad0497235dbc9774b96634032f7f177c, type: 3}
+  - name: SM_VK_Wall_StoneUp
+    prefab: {fileID: 5753451314405465050, guid: 6ad03d2b68a0e7c4fbb990f24a036734, type: 3}
+  - name: SM_VK_Wall_StoneUp_Door
+    prefab: {fileID: 6269917430390718941, guid: 205f632fc2265d84287c3882832f1c95, type: 3}
+  - name: SM_VK_Wall_StoneUp_Loading
+    prefab: {fileID: 6886910133525966995, guid: b57cfa0035ba2e84ea747f490a4c4101, type: 3}
+  - name: SM_VK_Wall_StoneUp_Slit
+    prefab: {fileID: 9116142006629699378, guid: 2ab30fbd90142464e8236840fe0503ba, type: 3}
+  - name: SM_VK_Wall_StoneUp_Twin
+    prefab: {fileID: 5135521450712519611, guid: f0d99bb5cf35e344a9e09765dcf3e5da, type: 3}
+  - name: SM_VK_Wall_StoneUp_Window
+    prefab: {fileID: 5187996599224758116, guid: d616443882a3b8f4b905705382bc8556, type: 3}
+  - name: SM_VK_Wall_Stone_Axle
+    prefab: {fileID: 9166878548214020185, guid: 9db1c1e514f71184f9b1e0fb455ede2b, type: 3}
+  - name: SM_VK_Wall_Stone_Door
+    prefab: {fileID: 6869664506721782014, guid: 182c09ee7374e614695e04a9797f26fb, type: 3}
+  - name: SM_VK_Wall_Stone_Half
+    prefab: {fileID: 6314780725595833806, guid: 502ead06cf0cb704dbe9d3d0b04bcee0, type: 3}
+  - name: SM_VK_Wall_Stone_Half_Door
+    prefab: {fileID: 3701130628684218071, guid: 8fc1877f64052ca4f9d6c939ab6e4789, type: 3}
+  - name: SM_VK_Wall_Stone_Passage
+    prefab: {fileID: 1981620125776902607, guid: 650396807567f6b469dd5e9873896c73, type: 3}
+  - name: SM_VK_Wall_Stone_Shop
+    prefab: {fileID: 6620367904783278449, guid: 9936a14720c3667419b6b4c6906f742c, type: 3}
+  - name: SM_VK_Wall_Stone_Window
+    prefab: {fileID: 824062747865093361, guid: 8f61817811f872946937fe6bd65f82ae, type: 3}
+  - name: SM_VK_Wall_Timber
+    prefab: {fileID: 2622776076469673873, guid: cd370c84a1b4ffd4880f327f71725cee, type: 3}
+  - name: SM_VK_Wall_Timber_Door
+    prefab: {fileID: 6864452257249288552, guid: 355088de4b2205b4ca6aca9c85eab997, type: 3}
+  - name: SM_VK_Wall_Timber_Frame
+    prefab: {fileID: 5419318286695029230, guid: eec9e34c7cbed9a41b4d26e16a66d14c, type: 3}
+  - name: SM_VK_Wall_Timber_K
+    prefab: {fileID: 2057820502304913953, guid: 12aa671b224d43549ac55749e7808074, type: 3}
+  - name: SM_VK_Wall_Timber_Oriel
+    prefab: {fileID: 2206059975829390534, guid: c095f8bcf34ad234998064da27073f42, type: 3}
+  - name: SM_VK_Wall_Timber_Window
+    prefab: {fileID: 7285501370439485244, guid: 4a215c30ddbbc874d976d79cc3cc5a07, type: 3}
+  - name: SM_VK_Wall_Timber_X
+    prefab: {fileID: 7209916034423795760, guid: f3cae1672566d9340974b49db9318e58, type: 3}
+  - name: SM_VK_Wall_Wattle
+    prefab: {fileID: 5202411152971117496, guid: a570dc6148d4a2e418dea673db6a2596, type: 3}
+  - name: SM_VK_Wall_Wattle_Byre
+    prefab: {fileID: 642760222015053705, guid: 6388df98177e5e64abb0c30270bed5e1, type: 3}
+  - name: SM_VK_Wall_Wattle_Door
+    prefab: {fileID: 4622249568351924351, guid: baeb5d3c2db549c4bb2db387782df4ac, type: 3}
+  - name: SM_VK_Wall_Wattle_Frame
+    prefab: {fileID: 8477482230520242961, guid: f58ab49333d10a04bb2dcaf61b0c0274, type: 3}
+  - name: SM_VK_Wall_Wattle_Window
+    prefab: {fileID: 3807348130096711472, guid: 2cffeffb462abf7439b56de49f14940b, type: 3}
+  - name: SM_VK_WatPosts
+    prefab: {fileID: 6036049366085923386, guid: 89bc397e8ff3a1f478eeb9a607b8c435, type: 3}
+  - name: SM_VK_WatRoofS_Gable
+    prefab: {fileID: 7539560891600789069, guid: 9c84031dca56ab54691d07bba44bafce, type: 3}
+  - name: SM_VK_WatRoofS_Single
+    prefab: {fileID: 8799024855277484724, guid: b4206ceadf112494ab507ecbcd1aaa39, type: 3}
+  - name: SM_VK_WaterWheel
+    prefab: {fileID: 800112430488910916, guid: 4b702df87d078e043a87dd5e98d799c7, type: 3}
+  - name: SM_VK_Windmill
+    prefab: {fileID: 8930527183073742360, guid: bc0f3bd289a68f449ad05c232c29d2fc, type: 3}
+  - name: SM_VK_Windmill_Sails
+    prefab: {fileID: 7218641713892750498, guid: 8fb73818d3f75124fa310e9b7c590d44, type: 3}
+  materials:
+  - name: M_VK_Cloth_Blue
+    material: {fileID: 2100000, guid: b8e4f998441e92247bf42c082e5e3a7e, type: 2}
+  - name: M_VK_Cloth_Green
+    material: {fileID: 2100000, guid: fb12e195a1f7dfe4aa75b39cc1594be8, type: 2}
+  - name: M_VK_Cloth_Purple
+    material: {fileID: 2100000, guid: 550a973a75d6c194ab2cf45cbaf03673, type: 2}
+  - name: M_VK_Cloth_Red
+    material: {fileID: 2100000, guid: 432cfa3721948824fa8b1dc7c7c22295, type: 2}
+  - name: M_VK_Cloth_White
+    material: {fileID: 2100000, guid: 6da565f0073da6245b88558d75437609, type: 2}
+  - name: M_VK_Cloth_Yellow
+    material: {fileID: 2100000, guid: cb09d2424e45fc1489c09ec18ec724ca, type: 2}
+  - name: M_VK_Glow
+    material: {fileID: 2100000, guid: abe0073ff76ae2442a5b4de1a3246377, type: 2}
+  - name: M_VK_Hewn
+    material: {fileID: 2100000, guid: aaed61e7d756d604d954ba1469be9372, type: 2}
+  - name: M_VK_Planks
+    material: {fileID: 2100000, guid: aac63d1415a75cf4bbc8083b7bd7214a, type: 2}
+  - name: M_VK_Shutter_Blue
+    material: {fileID: 2100000, guid: 1b9818504e21a034fbf832b44c7ebc50, type: 2}
+  - name: M_VK_Shutter_BlueWorn
+    material: {fileID: 2100000, guid: 30d38d2f409081848a6ee917e2b728ee, type: 2}
+  - name: M_VK_Shutter_Green
+    material: {fileID: 2100000, guid: 8bc59a40145c4254f8d2a65e8796bd19, type: 2}
+  - name: M_VK_Shutter_GreenWorn
+    material: {fileID: 2100000, guid: 9943cbb39e1788b49892266a8af45973, type: 2}
+  - name: M_VK_Shutter_Natural
+    material: {fileID: 2100000, guid: 0348c0927602f154abb8f1fb764ae2cb, type: 2}
+  - name: M_VK_Shutter_Red
+    material: {fileID: 2100000, guid: 2059e17f5553c674ab5903122007db41, type: 2}
+  - name: M_VK_Shutter_RedWorn
+    material: {fileID: 2100000, guid: db610a209e0daf74094349e76dc8f0d6, type: 2}
+  - name: M_VK_Shutter_Teal
+    material: {fileID: 2100000, guid: 328c79cd728f8af47ad0bc4d0c8d217c, type: 2}
+  - name: M_VK_Shutter_TealWorn
+    material: {fileID: 2100000, guid: c872b84db5e6f91498eb7b2664458f00, type: 2}
+  - name: M_VK_Water
+    material: {fileID: 2100000, guid: 863c842b5d441d340997ed0232df8518, type: 2}
+  - name: M_VK_Window
+    material: {fileID: 2100000, guid: c3234983d19ddb14b96fd77feb083653, type: 2}
+  - name: M_VK_Wood
+    material: {fileID: 2100000, guid: 6c22d04606e5c064282d5adf343ba2c8, type: 2}
+  - name: M_VKI_Ale
+    material: {fileID: 2100000, guid: 1e5f4f2ea37168e449c58d52bd44f58f, type: 2}
+  - name: M_VKI_AncientBlock
+    material: {fileID: 2100000, guid: 17f0ed2d3cefde14aba996bbeee70753, type: 2}
+  - name: M_VKI_AncientCap
+    material: {fileID: 2100000, guid: 7054c31cfbe059e4888f14f86eb27194, type: 2}
+  - name: M_VKI_AncientFlag
+    material: {fileID: 2100000, guid: 580b19e60d8a3684cac2299166567581, type: 2}
+  - name: M_VKI_AncientIn
+    material: {fileID: 2100000, guid: 73dfcce3f4443aa4d9627e16b8e442a3, type: 2}
+  - name: M_VKI_ApronCobble
+    material: {fileID: 2100000, guid: 4213dc3237f69734faf1013bf032ff7c, type: 2}
+  - name: M_VKI_ApronDirt
+    material: {fileID: 2100000, guid: c2c3208bc051c194eba7091533fbd3c0, type: 2}
+  - name: M_VKI_ApronGrass
+    material: {fileID: 2100000, guid: d66c3b35c10a5d644889a5254e8ad719, type: 2}
+  - name: M_VKI_AshlarIn
+    material: {fileID: 2100000, guid: 7cbd6a630631fde49a3c48dc725a6d81, type: 2}
+  - name: M_VKI_Boards_EW
+    material: {fileID: 2100000, guid: 86f4279baf5278a43ae181d92d5355f1, type: 2}
+  - name: M_VKI_Boards_NS
+    material: {fileID: 2100000, guid: 3f96ffda239bb194e8182b00702152a0, type: 2}
+  - name: M_VKI_BoardsDark_EW
+    material: {fileID: 2100000, guid: 9166ec40777ed9d47befd86e3da10c97, type: 2}
+  - name: M_VKI_BoardsDark_NS
+    material: {fileID: 2100000, guid: 2780a515472d888439d08cec14a28d95, type: 2}
+  - name: M_VKI_BoardsPale_EW
+    material: {fileID: 2100000, guid: f14042b6d2a45f54aabf73f930fcda0b, type: 2}
+  - name: M_VKI_BoardsPale_NS
+    material: {fileID: 2100000, guid: eb889746795f4b84db25b3f23877334c, type: 2}
+  - name: M_VKI_BoardsV
+    material: {fileID: 2100000, guid: 0b1042df84ba0e8438afe9a0cd690523, type: 2}
+  - name: M_VKI_Brick
+    material: {fileID: 2100000, guid: f57ccfe56086c1044ab84c23851f6973, type: 2}
+  - name: M_VKI_CaveCut
+    material: {fileID: 2100000, guid: ebaeb174c1091a048816e9a05599ef92, type: 2}
+  - name: M_VKI_CaveFloor
+    material: {fileID: 2100000, guid: 60d6f0966d06c62409a353a8ef918551, type: 2}
+  - name: M_VKI_CaveRock
+    material: {fileID: 2100000, guid: 4c193cebb1ec28d4ba0b5dbbd15b6e68, type: 2}
+  - name: M_VKI_CaveRockDamp
+    material: {fileID: 2100000, guid: ae4444e5f17b8d24f9048cbc50856c58, type: 2}
+  - name: M_VKI_Daylight
+    material: {fileID: 2100000, guid: dd43efb22e2da5649985089da26833ba, type: 2}
+  - name: M_VKI_Dress
+    material: {fileID: 2100000, guid: 9c0171f32c2d1da48a120f30eaa41961, type: 2}
+  - name: M_VKI_DungeonBlock
+    material: {fileID: 2100000, guid: 754d12b4b20264e48a36ad7dca659c67, type: 2}
+  - name: M_VKI_DungeonCap
+    material: {fileID: 2100000, guid: 3bf00921376a21449822055b2ea73c6c, type: 2}
+  - name: M_VKI_DungeonFlag
+    material: {fileID: 2100000, guid: d4421fde39a3fd641b40b1c993363d17, type: 2}
+  - name: M_VKI_DungeonFlagWarm
+    material: {fileID: 2100000, guid: 73bf2ef242671f54f814ca37d133564f, type: 2}
+  - name: M_VKI_DungeonIn
+    material: {fileID: 2100000, guid: 354266e7190e337488ca8f73cdddc85f, type: 2}
+  - name: M_VKI_DungeonInDamp
+    material: {fileID: 2100000, guid: dd0225e3b6a3d41429d8c1769b20ab70, type: 2}
+  - name: M_VKI_DungeonInWarm
+    material: {fileID: 2100000, guid: d6511963dae34754a9ab4552fe3d1271, type: 2}
+  - name: M_VKI_DwarfBlock
+    material: {fileID: 2100000, guid: 017e927319cb72f4caf5f4463aae4c36, type: 2}
+  - name: M_VKI_DwarfCap
+    material: {fileID: 2100000, guid: 161bc47578aad3542927f8231af05314, type: 2}
+  - name: M_VKI_DwarfFlag
+    material: {fileID: 2100000, guid: a987b5751c1dc674e84bbab91e751fd8, type: 2}
+  - name: M_VKI_DwarfFloor
+    material: {fileID: 2100000, guid: b0265234605804149b52dc7040b20b81, type: 2}
+  - name: M_VKI_DwarfIn
+    material: {fileID: 2100000, guid: 713f5c10c16b6a44ab07cfedacbb77e0, type: 2}
+  - name: M_VKI_Earth
+    material: {fileID: 2100000, guid: 34a8bd75fe7e0e14aa25ba61cb45260e, type: 2}
+  - name: M_VKI_EarthDamp
+    material: {fileID: 2100000, guid: 15577f950a69df74189c6cb9e999340d, type: 2}
+  - name: M_VKI_EarthSooty
+    material: {fileID: 2100000, guid: 9356d5dd28b290a49b76bba7ac9ac094, type: 2}
+  - name: M_VKI_Flag
+    material: {fileID: 2100000, guid: 10d72d036c010d142af925517d24e8e4, type: 2}
+  - name: M_VKI_FlagRustic
+    material: {fileID: 2100000, guid: 246185ebeb1122e44b170e10c4374305, type: 2}
+  - name: M_VKI_FlagWarm
+    material: {fileID: 2100000, guid: b8c210c19a1dad240897034f82e23511, type: 2}
+  - name: M_VKI_GlowIn
+    material: {fileID: 2100000, guid: 6a2da17c5eb5e5e4db0c32355cd76ed5, type: 2}
+  - name: M_VKI_Lava
+    material: {fileID: 2100000, guid: c0f59fbd2b2103d4791efdf6a591c7d0, type: 2}
+  - name: M_VKI_PlasterCream
+    material: {fileID: 2100000, guid: 57932791117e0d84b892e673af18572c, type: 2}
+  - name: M_VKI_PlasterDaub
+    material: {fileID: 2100000, guid: 3e8f457baa1150740936dd20e462fbf6, type: 2}
+  - name: M_VKI_PlasterOchre
+    material: {fileID: 2100000, guid: 9bb65ef42f8f6214685101d9a60788f3, type: 2}
+  - name: M_VKI_PlasterRed
+    material: {fileID: 2100000, guid: 78f67ae09bc056f47abea401e22871ae, type: 2}
+  - name: M_VKI_PlasterWhite
+    material: {fileID: 2100000, guid: bddaae1009592064a9546f01499fbd5e, type: 2}
+  - name: M_VKI_Puddle
+    material: {fileID: 2100000, guid: 32fa4960b6464824b97b4d8f9c6db548, type: 2}
+  - name: M_VKI_SewerBlock
+    material: {fileID: 2100000, guid: f88222b91037c5a4b80bd137731a6154, type: 2}
+  - name: M_VKI_SewerBrick
+    material: {fileID: 2100000, guid: ac6f4024a0fb67f47af53285169747f2, type: 2}
+  - name: M_VKI_SewerCap
+    material: {fileID: 2100000, guid: 39cd7a7ba8688d048bdba6a60e4ec0cb, type: 2}
+  - name: M_VKI_SewerFloor
+    material: {fileID: 2100000, guid: ba72febff41b9b44aac6137870ed9207, type: 2}
+  - name: M_VKI_SewerWater
+    material: {fileID: 2100000, guid: 7866eafb8dadb2f4a97c69ebf37dd4b1, type: 2}
+  - name: M_VKI_Sludge
+    material: {fileID: 2100000, guid: 7986a19f94612b641b4b2f35334e83b9, type: 2}
+  - name: M_VKI_Stained_In
+    material: {fileID: 2100000, guid: 4b0f576732af0d848a6fe28f99a10b34, type: 2}
+  - name: M_VKI_Stained_Night
+    material: {fileID: 2100000, guid: 025731bd631ab8240bdc48db74ea954c, type: 2}
+  - name: M_VKI_StoneBlockIn
+    material: {fileID: 2100000, guid: 4128f92a063a6ac47ba0754584805a0c, type: 2}
+  - name: M_VKI_StoneIn
+    material: {fileID: 2100000, guid: 8dcc8e4fa57c3f548881846af79bd4bb, type: 2}
+  - name: M_VKI_StoneInCool
+    material: {fileID: 2100000, guid: 28b2d6017df858947b4e24ecff30d6fc, type: 2}
+  - name: M_VKI_StoneInWarm
+    material: {fileID: 2100000, guid: c6212dd123d8b2a4abcc8b16121499c3, type: 2}
+  - name: M_VKI_StreamWater
+    material: {fileID: 2100000, guid: c660a497601800a41b2abeac6065a436, type: 2}
+  - name: M_VKI_WaterFall
+    material: {fileID: 2100000, guid: b2c147cc6c8d88548907ecc73988ac6e, type: 2}
+  - name: M_VKI_WaterMurky
+    material: {fileID: 2100000, guid: 2376fc4b7764a2a498b4213854639055, type: 2}
+  - name: M_VKI_WattleIn
+    material: {fileID: 2100000, guid: 2528a60f6c99ebe46a2bcda45a23ab43, type: 2}
+  - name: M_VKI_Window_Day
+    material: {fileID: 2100000, guid: 6494f9141986b3e4ba2588be87f81561, type: 2}
+  - name: M_VKI_Window_Night
+    material: {fileID: 2100000, guid: e55533c627c69104fbcf07abe52bf70a, type: 2}
+  - name: M_VKI_WoodDark
+    material: {fileID: 2100000, guid: e77932a1039d76e4481ddcfaed15f713, type: 2}
+  - name: M_VKI_WoodScrubbed
+    material: {fileID: 2100000, guid: 0c1dc1f4a0271e644b7a43b29de89d80, type: 2}

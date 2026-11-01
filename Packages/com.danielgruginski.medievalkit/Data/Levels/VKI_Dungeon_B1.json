@@ -1,0 +1,5915 @@
+{
+ "blender_origin": [
+  0.0,
+  0.0,
+  0.0
+ ],
+ "cameras": [
+  {
+   "active": true,
+   "aspect": 1.77778,
+   "clip": [
+    0.5,
+    80.0
+   ],
+   "fov_deg": 29.83937,
+   "name": "VKI_Cam_Dungeon_B1",
+   "ortho_scale": 6.0,
+   "p": [
+    -7.5,
+    15.78205,
+    8.85871
+   ],
+   "r": [
+    0.34202,
+    0.0,
+    0.0,
+    0.939693
+   ],
+   "type": "PERSP"
+  }
+ ],
+ "exposure": -0.20000000298023224,
+ "lights": [
+  {
+   "coll": "Scene Collection",
+   "color": [
+    1.0,
+    0.95,
+    0.88
+   ],
+   "energy": 1.0,
+   "name": "VKI_Key",
+   "p": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "props": {},
+   "r": [
+    0.237315,
+    0.189306,
+    -0.047208,
+    0.951639
+   ],
+   "radius": 0.0,
+   "shadow": true,
+   "spot_blend": null,
+   "spot_size": null,
+   "type": "SUN"
+  },
+  {
+   "coll": "Scene Collection",
+   "color": [
+    0.85,
+    0.9,
+    1.0
+   ],
+   "energy": 0.6,
+   "name": "VKI_Fill",
+   "p": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "props": {},
+   "r": [
+    0.342038,
+    0.0,
+    0.0,
+    0.939686
+   ],
+   "radius": 0.0,
+   "shadow": false,
+   "spot_blend": null,
+   "spot_size": null,
+   "type": "SUN"
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Lights",
+   "color": [
+    0.78,
+    0.86,
+    1.0
+   ],
+   "energy": 1200.0,
+   "name": "LIT_Dungeon_B1_00_window",
+   "p": [
+    -3.75,
+    2.34,
+    -9.19
+   ],
+   "props": {
+    "vki_color_day": "[0.78, 0.86, 1.0]",
+    "vki_color_night": "[0.62, 0.7, 1.0]",
+    "vki_lgt": "LGT_Dungeon_B1_00_window",
+    "vki_w_day": 1200.0,
+    "vki_w_night": 120.0
+   },
+   "r": [
+    -0.0,
+    -0.930086,
+    0.367341,
+    0.0
+   ],
+   "radius": 0.04,
+   "shadow": true,
+   "spot_blend": 0.3,
+   "spot_size": 60.0,
+   "type": "SPOT"
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Lights",
+   "color": [
+    0.78,
+    0.86,
+    1.0
+   ],
+   "energy": 1200.0,
+   "name": "LIT_Dungeon_B1_01_window",
+   "p": [
+    -8.25,
+    2.34,
+    -9.19
+   ],
+   "props": {
+    "vki_color_day": "[0.78, 0.86, 1.0]",
+    "vki_color_night": "[0.62, 0.7, 1.0]",
+    "vki_lgt": "LGT_Dungeon_B1_01_window",
+    "vki_w_day": 1200.0,
+    "vki_w_night": 120.0
+   },
+   "r": [
+    -0.0,
+    -0.930086,
+    0.367341,
+    0.0
+   ],
+   "radius": 0.04,
+   "shadow": true,
+   "spot_blend": 0.3,
+   "spot_size": 60.0,
+   "type": "SPOT"
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Lights",
+   "color": [
+    1.0,
+    0.55,
+    0.22
+   ],
+   "energy": 110.0,
+   "name": "LIT_Dungeon_B1_02_torch",
+   "p": [
+    -2.25,
+    2.3003,
+    -8.3639
+   ],
+   "props": {
+    "vki_color_day": "[1.0, 0.55, 0.22]",
+    "vki_color_night": "[1.0, 0.55, 0.22]",
+    "vki_lgt": "LGT_Dungeon_B1_02_torch",
+    "vki_w_day": 110.0,
+    "vki_w_night": 110.0
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "radius": 0.08,
+   "shadow": true,
+   "spot_blend": null,
+   "spot_size": null,
+   "type": "POINT"
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Lights",
+   "color": [
+    1.0,
+    0.55,
+    0.22
+   ],
+   "energy": 110.0,
+   "name": "LIT_Dungeon_B1_03_torch",
+   "p": [
+    -9.75,
+    2.3003,
+    -8.3639
+   ],
+   "props": {
+    "vki_color_day": "[1.0, 0.55, 0.22]",
+    "vki_color_night": "[1.0, 0.55, 0.22]",
+    "vki_lgt": "LGT_Dungeon_B1_03_torch",
+    "vki_w_day": 110.0,
+    "vki_w_night": 110.0
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "radius": 0.08,
+   "shadow": true,
+   "spot_blend": null,
+   "spot_size": null,
+   "type": "POINT"
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Lights",
+   "color": [
+    1.0,
+    0.6,
+    0.28
+   ],
+   "energy": 15.0,
+   "name": "LIT_Dungeon_B1_04_candle",
+   "p": [
+    -3.85,
+    0.8845,
+    -2.27
+   ],
+   "props": {
+    "vki_color_day": "[1.0, 0.6, 0.28]",
+    "vki_color_night": "[1.0, 0.6, 0.28]",
+    "vki_lgt": "LGT_Dungeon_B1_04_candle",
+    "vki_w_day": 15.0,
+    "vki_w_night": 15.0
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "radius": 0.03,
+   "shadow": false,
+   "spot_blend": null,
+   "spot_size": null,
+   "type": "POINT"
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Lights",
+   "color": [
+    1.0,
+    0.52,
+    0.2
+   ],
+   "energy": 260.0,
+   "name": "LIT_Dungeon_B1_05_brazier",
+   "p": [
+    -6.75,
+    1.29,
+    -3.69
+   ],
+   "props": {
+    "vki_color_day": "[1.0, 0.52, 0.2]",
+    "vki_color_night": "[1.0, 0.52, 0.2]",
+    "vki_lgt": "LGT_Dungeon_B1_05_brazier",
+    "vki_w_day": 260.0,
+    "vki_w_night": 260.0
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "radius": 0.25,
+   "shadow": true,
+   "spot_blend": null,
+   "spot_size": null,
+   "type": "POINT"
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Lights",
+   "color": [
+    1.0,
+    0.55,
+    0.22
+   ],
+   "energy": 110.0,
+   "name": "LIT_Dungeon_B1_06_torch",
+   "p": [
+    -0.6361,
+    2.3003,
+    -3.75
+   ],
+   "props": {
+    "vki_color_day": "[1.0, 0.55, 0.22]",
+    "vki_color_night": "[1.0, 0.55, 0.22]",
+    "vki_lgt": "LGT_Dungeon_B1_06_torch",
+    "vki_w_day": 110.0,
+    "vki_w_night": 110.0
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "radius": 0.08,
+   "shadow": true,
+   "spot_blend": null,
+   "spot_size": null,
+   "type": "POINT"
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Lights",
+   "color": [
+    1.0,
+    0.55,
+    0.22
+   ],
+   "energy": 110.0,
+   "name": "LIT_Dungeon_B1_07_torch",
+   "p": [
+    -14.3639,
+    2.3003,
+    -6.75
+   ],
+   "props": {
+    "vki_color_day": "[1.0, 0.55, 0.22]",
+    "vki_color_night": "[1.0, 0.55, 0.22]",
+    "vki_lgt": "LGT_Dungeon_B1_07_torch",
+    "vki_w_day": 110.0,
+    "vki_w_night": 110.0
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "radius": 0.08,
+   "shadow": true,
+   "spot_blend": null,
+   "spot_size": null,
+   "type": "POINT"
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Lights",
+   "color": [
+    1.0,
+    0.55,
+    0.22
+   ],
+   "energy": 110.0,
+   "name": "LIT_Dungeon_B1_08_torch",
+   "p": [
+    -14.3639,
+    2.3003,
+    -2.25
+   ],
+   "props": {
+    "vki_color_day": "[1.0, 0.55, 0.22]",
+    "vki_color_night": "[1.0, 0.55, 0.22]",
+    "vki_lgt": "LGT_Dungeon_B1_08_torch",
+    "vki_w_day": 110.0,
+    "vki_w_night": 110.0
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "radius": 0.08,
+   "shadow": true,
+   "spot_blend": null,
+   "spot_size": null,
+   "type": "POINT"
+  }
+ ],
+ "look": "AgX - Medium High Contrast",
+ "markers": [
+  {
+   "coll": "VKI_Dungeon_B1_Logic",
+   "name": "SPN_sewer",
+   "p": [
+    -13.4,
+    0.0,
+    -5.25
+   ],
+   "props": {
+    "vki_facing_deg": 270,
+    "vki_link_obj": "Dungeon_B1_Wall_Dungeon_Passage_150_Full",
+    "vki_spawn_id": "sewer"
+   },
+   "r": [
+    -0.5,
+    -0.5,
+    -0.5,
+    0.5
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Logic",
+   "name": "SPN_surface",
+   "p": [
+    -0.75,
+    0.0,
+    -3.75
+   ],
+   "props": {
+    "vki_facing_deg": 180.0,
+    "vki_link_obj": "Dungeon_B1_Stair_Up_150x450_Stone",
+    "vki_spawn_id": "surface"
+   },
+   "r": [
+    -0.0,
+    -0.707107,
+    -0.707107,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Logic",
+   "name": "SPN_crypt",
+   "p": [
+    -14.25,
+    0.0,
+    -6.75
+   ],
+   "props": {
+    "vki_facing_deg": 180.0,
+    "vki_link_obj": "Dungeon_B1_Stair_Down_150x450_Stone",
+    "vki_spawn_id": "crypt"
+   },
+   "r": [
+    -0.0,
+    -0.707107,
+    -0.707107,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Logic",
+   "name": "VKI_Root.010",
+   "p": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "props": {
+    "vki_bounds": "[0.0, 0.0, 15.0, 9.0]",
+    "vki_building": "Dungeon",
+    "vki_cam_dist": 20.602,
+    "vki_cam_h_fit": 3.0,
+    "vki_cam_margin": 0.4,
+    "vki_cam_mode": "fit",
+    "vki_cam_pitch": 50,
+    "vki_cam_target": "[7.5, 4.384, 0.0]",
+    "vki_cam_yaw": 0,
+    "vki_default_spawn": "surface",
+    "vki_family": "Dungeon",
+    "vki_floor": -1,
+    "vki_links": "[{\"id\": \"surface\", \"kind\": \"stair_up\", \"target\": \"VK_ValleyTown\", \"obj\": \"Dungeon_B1_Stair_Up_150x450_Stone\", \"spawn\": \"SPN_surface\"}, {\"id\": \"crypt\", \"kind\": \"stair_down\", \"target\": \"VKI_Dungeon_B2\", \"obj\": \"Dungeon_B1_Stair_Down_150x450_Stone\", \"spawn\": \"SPN_crypt\"}, {\"id\": \"sewer\", \"kind\": \"passage\", \"target\": \"VKI_Sewer_S1\", \"obj\": \"Dungeon_B1_Wall_Dungeon_Passage_150_Full\", \"spawn\": \"SPN_sewer\"}]",
+    "vki_preset": "Dungeon",
+    "vki_rooms_version": "2026-09-26 r1",
+    "vki_scene": "VKI_Dungeon_B1"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Logic",
+   "name": "LGT_Dungeon_B1_00_window",
+   "p": [
+    -3.75,
+    2.34,
+    -9.19
+   ],
+   "props": {
+    "vki_light": "{\"type\": \"SPOT\", \"role\": \"window\", \"color\": [0.78, 0.86, 1.0], \"intensity\": 1200.0, \"flicker\": 0, \"shadows\": 1, \"blender_w\": 1200.0, \"w_day\": 1200.0, \"w_night\": 120.0, \"color_day\": [0.78, 0.86, 1.0], \"color_night\": [0.62, 0.7, 1.0], \"cone\": 60.0, \"blend\": 0.3, \"radius\": 0.04, \"host\": \"Dungeon_B1_Wall_Dungeon_Window_150_Full\", \"piece\": \"SM_VKI_Wall_Dungeon_Window_150_Full\"}"
+   },
+   "r": [
+    -0.0,
+    -0.930086,
+    0.367341,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Logic",
+   "name": "LGT_Dungeon_B1_01_window",
+   "p": [
+    -8.25,
+    2.34,
+    -9.19
+   ],
+   "props": {
+    "vki_light": "{\"type\": \"SPOT\", \"role\": \"window\", \"color\": [0.78, 0.86, 1.0], \"intensity\": 1200.0, \"flicker\": 0, \"shadows\": 1, \"blender_w\": 1200.0, \"w_day\": 1200.0, \"w_night\": 120.0, \"color_day\": [0.78, 0.86, 1.0], \"color_night\": [0.62, 0.7, 1.0], \"cone\": 60.0, \"blend\": 0.3, \"radius\": 0.04, \"host\": \"Dungeon_B1_Wall_Dungeon_Window_150_Full.001\", \"piece\": \"SM_VKI_Wall_Dungeon_Window_150_Full\"}"
+   },
+   "r": [
+    -0.0,
+    -0.930086,
+    0.367341,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Logic",
+   "name": "LGT_Dungeon_B1_02_torch",
+   "p": [
+    -2.25,
+    2.3003,
+    -8.3639
+   ],
+   "props": {
+    "vki_light": "{\"type\": \"POINT\", \"role\": \"torch\", \"color\": [1.0, 0.55, 0.22], \"intensity\": 110.0, \"range\": 6.0, \"flicker\": 1, \"shadows\": 1, \"blender_w\": 110.0, \"w_day\": 110.0, \"w_night\": 110.0, \"color_day\": [1.0, 0.55, 0.22], \"color_night\": [1.0, 0.55, 0.22], \"radius\": 0.08, \"host\": \"Dungeon_B1_Prop_Torch_Wall\", \"piece\": \"SM_VKI_Prop_Torch_Wall\"}"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Logic",
+   "name": "FXA_Dungeon_B1_00_torch_fire",
+   "p": [
+    -2.25,
+    2.2803,
+    -8.4639
+   ],
+   "props": {
+    "vki_fx": "{\"fx\": \"torch_fire\", \"pos\": [0.0, -0.2861, 2.2803], \"scale\": 1.0, \"host\": \"Dungeon_B1_Prop_Torch_Wall\", \"piece\": \"SM_VKI_Prop_Torch_Wall\"}"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Logic",
+   "name": "LGT_Dungeon_B1_03_torch",
+   "p": [
+    -9.75,
+    2.3003,
+    -8.3639
+   ],
+   "props": {
+    "vki_light": "{\"type\": \"POINT\", \"role\": \"torch\", \"color\": [1.0, 0.55, 0.22], \"intensity\": 110.0, \"range\": 6.0, \"flicker\": 1, \"shadows\": 1, \"blender_w\": 110.0, \"w_day\": 110.0, \"w_night\": 110.0, \"color_day\": [1.0, 0.55, 0.22], \"color_night\": [1.0, 0.55, 0.22], \"radius\": 0.08, \"host\": \"Dungeon_B1_Prop_Torch_Wall.001\", \"piece\": \"SM_VKI_Prop_Torch_Wall\"}"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Logic",
+   "name": "FXA_Dungeon_B1_01_torch_fire",
+   "p": [
+    -9.75,
+    2.2803,
+    -8.4639
+   ],
+   "props": {
+    "vki_fx": "{\"fx\": \"torch_fire\", \"pos\": [0.0, -0.2861, 2.2803], \"scale\": 1.0, \"host\": \"Dungeon_B1_Prop_Torch_Wall.001\", \"piece\": \"SM_VKI_Prop_Torch_Wall\"}"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Logic",
+   "name": "LGT_Dungeon_B1_04_candle",
+   "p": [
+    -3.85,
+    0.8845,
+    -2.27
+   ],
+   "props": {
+    "vki_light": "{\"type\": \"POINT\", \"role\": \"candle\", \"color\": [1.0, 0.6, 0.28], \"intensity\": 15.0, \"range\": 2.5, \"flicker\": 1, \"shadows\": 0, \"blender_w\": 15.0, \"w_day\": 15.0, \"w_night\": 15.0, \"color_day\": [1.0, 0.6, 0.28], \"color_night\": [1.0, 0.6, 0.28], \"radius\": 0.03, \"host\": \"Dungeon_B1_Prop_TableDress_Guard\", \"piece\": \"SM_VKI_Prop_TableDress_Guard\"}"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Logic",
+   "name": "LGT_Dungeon_B1_05_brazier",
+   "p": [
+    -6.75,
+    1.29,
+    -3.69
+   ],
+   "props": {
+    "vki_light": "{\"type\": \"POINT\", \"role\": \"brazier\", \"color\": [1.0, 0.52, 0.2], \"intensity\": 260.0, \"range\": 7.0, \"flicker\": 1, \"shadows\": 1, \"blender_w\": 260.0, \"w_day\": 260.0, \"w_night\": 260.0, \"color_day\": [1.0, 0.52, 0.2], \"color_night\": [1.0, 0.52, 0.2], \"radius\": 0.25, \"host\": \"Dungeon_B1_Prop_Brazier\", \"piece\": \"SM_VKI_Prop_Brazier\"}"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Logic",
+   "name": "FXA_Dungeon_B1_02_brazier_fire",
+   "p": [
+    -6.75,
+    0.89,
+    -3.75
+   ],
+   "props": {
+    "vki_fx": "{\"fx\": \"brazier_fire\", \"pos\": [0.0, 0.0, 0.89], \"scale\": 1.4, \"host\": \"Dungeon_B1_Prop_Brazier\", \"piece\": \"SM_VKI_Prop_Brazier\"}"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Logic",
+   "name": "LGT_Dungeon_B1_06_torch",
+   "p": [
+    -0.6361,
+    2.3003,
+    -3.75
+   ],
+   "props": {
+    "vki_light": "{\"type\": \"POINT\", \"role\": \"torch\", \"color\": [1.0, 0.55, 0.22], \"intensity\": 110.0, \"range\": 6.0, \"flicker\": 1, \"shadows\": 1, \"blender_w\": 110.0, \"w_day\": 110.0, \"w_night\": 110.0, \"color_day\": [1.0, 0.55, 0.22], \"color_night\": [1.0, 0.55, 0.22], \"radius\": 0.08, \"host\": \"Dungeon_B1_Prop_Torch_Wall.002\", \"piece\": \"SM_VKI_Prop_Torch_Wall\"}"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Logic",
+   "name": "FXA_Dungeon_B1_03_torch_fire",
+   "p": [
+    -0.5361,
+    2.2803,
+    -3.75
+   ],
+   "props": {
+    "vki_fx": "{\"fx\": \"torch_fire\", \"pos\": [0.0, -0.2861, 2.2803], \"scale\": 1.0, \"host\": \"Dungeon_B1_Prop_Torch_Wall.002\", \"piece\": \"SM_VKI_Prop_Torch_Wall\"}"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Logic",
+   "name": "LGT_Dungeon_B1_07_torch",
+   "p": [
+    -14.3639,
+    2.3003,
+    -6.75
+   ],
+   "props": {
+    "vki_light": "{\"type\": \"POINT\", \"role\": \"torch\", \"color\": [1.0, 0.55, 0.22], \"intensity\": 110.0, \"range\": 6.0, \"flicker\": 1, \"shadows\": 1, \"blender_w\": 110.0, \"w_day\": 110.0, \"w_night\": 110.0, \"color_day\": [1.0, 0.55, 0.22], \"color_night\": [1.0, 0.55, 0.22], \"radius\": 0.08, \"host\": \"Dungeon_B1_Prop_Torch_Wall.003\", \"piece\": \"SM_VKI_Prop_Torch_Wall\"}"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Logic",
+   "name": "FXA_Dungeon_B1_04_torch_fire",
+   "p": [
+    -14.4639,
+    2.2803,
+    -6.75
+   ],
+   "props": {
+    "vki_fx": "{\"fx\": \"torch_fire\", \"pos\": [0.0, -0.2861, 2.2803], \"scale\": 1.0, \"host\": \"Dungeon_B1_Prop_Torch_Wall.003\", \"piece\": \"SM_VKI_Prop_Torch_Wall\"}"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Logic",
+   "name": "LGT_Dungeon_B1_08_torch",
+   "p": [
+    -14.3639,
+    2.3003,
+    -2.25
+   ],
+   "props": {
+    "vki_light": "{\"type\": \"POINT\", \"role\": \"torch\", \"color\": [1.0, 0.55, 0.22], \"intensity\": 110.0, \"range\": 6.0, \"flicker\": 1, \"shadows\": 1, \"blender_w\": 110.0, \"w_day\": 110.0, \"w_night\": 110.0, \"color_day\": [1.0, 0.55, 0.22], \"color_night\": [1.0, 0.55, 0.22], \"radius\": 0.08, \"host\": \"Dungeon_B1_Prop_Torch_Wall.004\", \"piece\": \"SM_VKI_Prop_Torch_Wall\"}"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Logic",
+   "name": "FXA_Dungeon_B1_05_torch_fire",
+   "p": [
+    -14.4639,
+    2.2803,
+    -2.25
+   ],
+   "props": {
+    "vki_fx": "{\"fx\": \"torch_fire\", \"pos\": [0.0, -0.2861, 2.2803], \"scale\": 1.0, \"host\": \"Dungeon_B1_Prop_Torch_Wall.004\", \"piece\": \"SM_VKI_Prop_Torch_Wall\"}"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  }
+ ],
+ "name": "VKI_Dungeon_B1",
+ "placements": [
+  {
+   "coll": "VKI_Dungeon_B1_Shell",
+   "mat": {},
+   "name": "Dungeon_B1_Wall_Dungeon_Plain_300_Cut",
+   "p": [
+    -3.0,
+    0.0,
+    0.0
+   ],
+   "piece": "SM_VKI_Wall_Dungeon_Plain_300_Cut",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[3.0, 0.0]",
+    "vki_class": "wall",
+    "vki_collider": "[[1.5, 0.0, 1.1, 3.0, 0.5, 2.2]]",
+    "vki_cut_pair": "SM_VKI_Wall_Dungeon_Plain_300_Full",
+    "vki_family": "Dungeon",
+    "vki_footprint": "0,-0.2801,3,0.2801",
+    "vki_fp_cells": "2,1",
+    "vki_height": "Cut",
+    "vki_kind": "Plain",
+    "vki_len": 3.0,
+    "vki_nav": "block",
+    "vki_open_ends": 1,
+    "vki_origin": "start_node",
+    "vki_piece": "SM_VKI_Wall_Dungeon_Plain_300_Cut",
+    "vki_room_role": "S",
+    "vki_rot": 180,
+    "vki_rot_lock": "none",
+    "vki_thick": 0.5,
+    "vki_uv_lock": "world"
+   },
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Shell",
+   "mat": {},
+   "name": "Dungeon_B1_Wall_Dungeon_Plain_300_Cut.001",
+   "p": [
+    -6.0,
+    0.0,
+    0.0
+   ],
+   "piece": "SM_VKI_Wall_Dungeon_Plain_300_Cut",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[6.0, 0.0]",
+    "vki_class": "wall",
+    "vki_collider": "[[1.5, 0.0, 1.1, 3.0, 0.5, 2.2]]",
+    "vki_cut_pair": "SM_VKI_Wall_Dungeon_Plain_300_Full",
+    "vki_family": "Dungeon",
+    "vki_footprint": "0,-0.2801,3,0.2801",
+    "vki_fp_cells": "2,1",
+    "vki_height": "Cut",
+    "vki_kind": "Plain",
+    "vki_len": 3.0,
+    "vki_nav": "block",
+    "vki_open_ends": 1,
+    "vki_origin": "start_node",
+    "vki_piece": "SM_VKI_Wall_Dungeon_Plain_300_Cut",
+    "vki_room_role": "S",
+    "vki_rot": 180,
+    "vki_rot_lock": "none",
+    "vki_thick": 0.5,
+    "vki_uv_lock": "world"
+   },
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Shell",
+   "mat": {},
+   "name": "Dungeon_B1_Wall_Dungeon_Plain_300_Cut.002",
+   "p": [
+    -9.0,
+    0.0,
+    0.0
+   ],
+   "piece": "SM_VKI_Wall_Dungeon_Plain_300_Cut",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[9.0, 0.0]",
+    "vki_class": "wall",
+    "vki_collider": "[[1.5, 0.0, 1.1, 3.0, 0.5, 2.2]]",
+    "vki_cut_pair": "SM_VKI_Wall_Dungeon_Plain_300_Full",
+    "vki_family": "Dungeon",
+    "vki_footprint": "0,-0.2801,3,0.2801",
+    "vki_fp_cells": "2,1",
+    "vki_height": "Cut",
+    "vki_kind": "Plain",
+    "vki_len": 3.0,
+    "vki_nav": "block",
+    "vki_open_ends": 1,
+    "vki_origin": "start_node",
+    "vki_piece": "SM_VKI_Wall_Dungeon_Plain_300_Cut",
+    "vki_room_role": "S",
+    "vki_rot": 180,
+    "vki_rot_lock": "none",
+    "vki_thick": 0.5,
+    "vki_uv_lock": "world"
+   },
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Shell",
+   "mat": {},
+   "name": "Dungeon_B1_Wall_Dungeon_Plain_300_Cut.003",
+   "p": [
+    -12.0,
+    0.0,
+    0.0
+   ],
+   "piece": "SM_VKI_Wall_Dungeon_Plain_300_Cut",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[12.0, 0.0]",
+    "vki_class": "wall",
+    "vki_collider": "[[1.5, 0.0, 1.1, 3.0, 0.5, 2.2]]",
+    "vki_cut_pair": "SM_VKI_Wall_Dungeon_Plain_300_Full",
+    "vki_family": "Dungeon",
+    "vki_footprint": "0,-0.2801,3,0.2801",
+    "vki_fp_cells": "2,1",
+    "vki_height": "Cut",
+    "vki_kind": "Plain",
+    "vki_len": 3.0,
+    "vki_nav": "block",
+    "vki_open_ends": 1,
+    "vki_origin": "start_node",
+    "vki_piece": "SM_VKI_Wall_Dungeon_Plain_300_Cut",
+    "vki_room_role": "S",
+    "vki_rot": 180,
+    "vki_rot_lock": "none",
+    "vki_thick": 0.5,
+    "vki_uv_lock": "world"
+   },
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Shell",
+   "mat": {
+    "56": "M_VKI_DungeonInDamp"
+   },
+   "name": "Dungeon_B1_Wall_Dungeon_Plain_300_Cut.004",
+   "p": [
+    -15.0,
+    0.0,
+    0.0
+   ],
+   "piece": "SM_VKI_Wall_Dungeon_Plain_300_Cut",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[15.0, 0.0]",
+    "vki_class": "wall",
+    "vki_collider": "[[1.5, 0.0, 1.1, 3.0, 0.5, 2.2]]",
+    "vki_cut_pair": "SM_VKI_Wall_Dungeon_Plain_300_Full",
+    "vki_family": "Dungeon",
+    "vki_footprint": "0,-0.2801,3,0.2801",
+    "vki_fp_cells": "2,1",
+    "vki_height": "Cut",
+    "vki_kind": "Plain",
+    "vki_len": 3.0,
+    "vki_nav": "block",
+    "vki_open_ends": 1,
+    "vki_origin": "start_node",
+    "vki_piece": "SM_VKI_Wall_Dungeon_Plain_300_Cut",
+    "vki_room_role": "S",
+    "vki_rot": 180,
+    "vki_rot_lock": "none",
+    "vki_style": "{\"wall_a\": \"DungeonInDamp\", \"wall_b\": \"DungeonIn\"}",
+    "vki_thick": 0.5,
+    "vki_uv_lock": "world"
+   },
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Shell",
+   "mat": {},
+   "name": "Dungeon_B1_Wall_Bars_Plain_300_Full",
+   "p": [
+    -12.0,
+    0.0,
+    -4.5
+   ],
+   "piece": "SM_VKI_Wall_Bars_Plain_300_Full",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[12.0, 4.5]",
+    "vki_bars_note": "bars never hide the room: Full only, never cut (vki_cut_to = itself)",
+    "vki_class": "wall",
+    "vki_collider": "[[1.5, 0.0, 1.5, 3.0, 0.3, 3.0]]",
+    "vki_cut_to": "SM_VKI_Wall_Bars_Plain_150A_Full",
+    "vki_family": "Bars",
+    "vki_footprint": "0,-0.1501,3,0.1501",
+    "vki_fp_cells": "2,1",
+    "vki_height": "Full",
+    "vki_kind": "Plain",
+    "vki_len": 3.0,
+    "vki_nav": "block",
+    "vki_no_cut": 1,
+    "vki_open_ends": 1,
+    "vki_origin": "start_node",
+    "vki_piece": "SM_VKI_Wall_Bars_Plain_300_Full",
+    "vki_room_role": "part",
+    "vki_rot": 0,
+    "vki_rot_lock": "none",
+    "vki_see_through": 1,
+    "vki_style": "{\"wall_a\": \"DungeonInDamp\", \"wall_b\": \"DungeonIn\"}",
+    "vki_thick": 0.3,
+    "vki_uv_lock": "world"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Shell",
+   "mat": {},
+   "name": "Dungeon_B1_Wall_Bars_Plain_150A_Full",
+   "p": [
+    -3.0,
+    0.0,
+    -6.0
+   ],
+   "piece": "SM_VKI_Wall_Bars_Plain_150A_Full",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[3.0, 6.0]",
+    "vki_bars_note": "bars never hide the room: Full only, never cut (vki_cut_to = itself)",
+    "vki_class": "wall",
+    "vki_collider": "[[0.75, 0.0, 1.5, 1.5, 0.3, 3.0]]",
+    "vki_cut_to": "SM_VKI_Wall_Bars_Plain_150A_Full",
+    "vki_family": "Bars",
+    "vki_footprint": "0,-0.1501,1.5,0.1501",
+    "vki_fp_cells": "1,1",
+    "vki_height": "Full",
+    "vki_kind": "Plain",
+    "vki_len": 1.5,
+    "vki_nav": "block",
+    "vki_no_cut": 1,
+    "vki_open_ends": 1,
+    "vki_origin": "start_node",
+    "vki_piece": "SM_VKI_Wall_Bars_Plain_150A_Full",
+    "vki_room_role": "part",
+    "vki_rot": 0,
+    "vki_rot_lock": "none",
+    "vki_see_through": 1,
+    "vki_style": "{\"wall_a\": \"DungeonIn\", \"wall_b\": \"DungeonInDamp\"}",
+    "vki_thick": 0.3,
+    "vki_uv_lock": "world",
+    "vki_var": "A"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Shell",
+   "mat": {},
+   "name": "Dungeon_B1_Wall_Bars_Door_150_Full",
+   "p": [
+    -4.5,
+    0.0,
+    -6.0
+   ],
+   "piece": "SM_VKI_Wall_Bars_Door_150_Full",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[4.5, 6.0]",
+    "vki_class": "wall",
+    "vki_collider": "[[0.165, 0.0, 1.5, 0.33, 0.3, 3.0], [1.335, 0.0, 1.5, 0.33000000000000007, 0.3, 3.0], [0.75, 0.0, 2.55, 1.5, 0.3, 0.9]]",
+    "vki_cut_to": "SM_VKI_Wall_Bars_Door_150_Full",
+    "vki_family": "Bars",
+    "vki_footprint": "0,-0.1501,1.5,0.1501",
+    "vki_fp_cells": "1,1",
+    "vki_height": "Full",
+    "vki_kind": "Door",
+    "vki_leaf": "SM_VKI_Leaf_BarsGate_Full",
+    "vki_leaf_open_deg": 90,
+    "vki_leaf_socket": "[0.33, -0.022, 0.0]",
+    "vki_len": 1.5,
+    "vki_nav": "door",
+    "vki_nav_open": "[0.33, 1.17]",
+    "vki_no_cut": 1,
+    "vki_open_ends": 1,
+    "vki_opening": "{\"x0\": 0.33, \"x1\": 1.17, \"z0\": 0.0, \"z1\": 2.1, \"head\": \"transom\", \"gate\": 1}",
+    "vki_origin": "start_node",
+    "vki_piece": "SM_VKI_Wall_Bars_Door_150_Full",
+    "vki_room_role": "part",
+    "vki_rot": 0,
+    "vki_rot_lock": "none",
+    "vki_see_through": 1,
+    "vki_style": "{\"wall_a\": \"DungeonIn\", \"wall_b\": \"DungeonInDamp\"}",
+    "vki_thick": 0.3,
+    "vki_uv_lock": "world"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Shell",
+   "mat": {},
+   "name": "Dungeon_B1_Leaf_BarsGate_Full",
+   "p": [
+    -4.83,
+    0.0,
+    -5.978
+   ],
+   "piece": "SM_VKI_Leaf_BarsGate_Full",
+   "props": {
+    "grid_m": 1.5,
+    "hinge_axis": "local Z",
+    "kit": "VillageInterior",
+    "vki_at": "[4.83, 5.978]",
+    "vki_class": "leaf",
+    "vki_collider": "[[0.42, 0.0025, 1.065, 0.83, 0.075, 2.06]]",
+    "vki_footprint": "0.005,-0.0351,0.835,0.04",
+    "vki_fp_cells": "1,1",
+    "vki_height": "Full",
+    "vki_hinge": "[0.0, 0.0, 0.0]",
+    "vki_kind": "BarsGate",
+    "vki_leaf_clearance": 0.005,
+    "vki_leaf_deg": 90.0,
+    "vki_leaf_door": "Dungeon_B1_Wall_Bars_Door_150_Full",
+    "vki_leaf_fits": "SM_VKI_Wall_Bars_Door_150_Full at its vki_leaf_socket, same rotation",
+    "vki_leaf_height": 2.06,
+    "vki_leaf_open_deg": 90,
+    "vki_leaf_open_dir": "rotation -deg about local Z (toward the room, -Y)",
+    "vki_leaf_state": "open",
+    "vki_leaf_width": 0.83,
+    "vki_nav": "block",
+    "vki_origin": "hinge",
+    "vki_piece": "SM_VKI_Leaf_BarsGate_Full",
+    "vki_rot": -90.0,
+    "vki_rot_lock": "none",
+    "vki_see_through": 1,
+    "vki_uv_lock": "local"
+   },
+   "r": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Shell",
+   "mat": {},
+   "name": "Dungeon_B1_Wall_Bars_Plain_150A_Full.001",
+   "p": [
+    -6.0,
+    0.0,
+    -6.0
+   ],
+   "piece": "SM_VKI_Wall_Bars_Plain_150A_Full",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[6.0, 6.0]",
+    "vki_bars_note": "bars never hide the room: Full only, never cut (vki_cut_to = itself)",
+    "vki_class": "wall",
+    "vki_collider": "[[0.75, 0.0, 1.5, 1.5, 0.3, 3.0]]",
+    "vki_cut_to": "SM_VKI_Wall_Bars_Plain_150A_Full",
+    "vki_family": "Bars",
+    "vki_footprint": "0,-0.1501,1.5,0.1501",
+    "vki_fp_cells": "1,1",
+    "vki_height": "Full",
+    "vki_kind": "Plain",
+    "vki_len": 1.5,
+    "vki_nav": "block",
+    "vki_no_cut": 1,
+    "vki_open_ends": 1,
+    "vki_origin": "start_node",
+    "vki_piece": "SM_VKI_Wall_Bars_Plain_150A_Full",
+    "vki_room_role": "part",
+    "vki_rot": 0,
+    "vki_rot_lock": "none",
+    "vki_see_through": 1,
+    "vki_style": "{\"wall_a\": \"DungeonIn\", \"wall_b\": \"DungeonInDamp\"}",
+    "vki_thick": 0.3,
+    "vki_uv_lock": "world",
+    "vki_var": "A"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Shell",
+   "mat": {},
+   "name": "Dungeon_B1_Wall_Bars_Door_150_Full.001",
+   "p": [
+    -7.5,
+    0.0,
+    -6.0
+   ],
+   "piece": "SM_VKI_Wall_Bars_Door_150_Full",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[7.5, 6.0]",
+    "vki_class": "wall",
+    "vki_collider": "[[0.165, 0.0, 1.5, 0.33, 0.3, 3.0], [1.335, 0.0, 1.5, 0.33000000000000007, 0.3, 3.0], [0.75, 0.0, 2.55, 1.5, 0.3, 0.9]]",
+    "vki_cut_to": "SM_VKI_Wall_Bars_Door_150_Full",
+    "vki_family": "Bars",
+    "vki_footprint": "0,-0.1501,1.5,0.1501",
+    "vki_fp_cells": "1,1",
+    "vki_height": "Full",
+    "vki_kind": "Door",
+    "vki_leaf": "SM_VKI_Leaf_BarsGate_Full",
+    "vki_leaf_open_deg": 90,
+    "vki_leaf_socket": "[0.33, -0.022, 0.0]",
+    "vki_len": 1.5,
+    "vki_nav": "door",
+    "vki_nav_open": "[0.33, 1.17]",
+    "vki_no_cut": 1,
+    "vki_open_ends": 1,
+    "vki_opening": "{\"x0\": 0.33, \"x1\": 1.17, \"z0\": 0.0, \"z1\": 2.1, \"head\": \"transom\", \"gate\": 1}",
+    "vki_origin": "start_node",
+    "vki_piece": "SM_VKI_Wall_Bars_Door_150_Full",
+    "vki_room_role": "part",
+    "vki_rot": 0,
+    "vki_rot_lock": "none",
+    "vki_see_through": 1,
+    "vki_style": "{\"wall_a\": \"DungeonIn\", \"wall_b\": \"DungeonInDamp\"}",
+    "vki_thick": 0.3,
+    "vki_uv_lock": "world"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Shell",
+   "mat": {},
+   "name": "Dungeon_B1_Leaf_BarsGate_Full.001",
+   "p": [
+    -7.83,
+    0.0,
+    -5.978
+   ],
+   "piece": "SM_VKI_Leaf_BarsGate_Full",
+   "props": {
+    "grid_m": 1.5,
+    "hinge_axis": "local Z",
+    "kit": "VillageInterior",
+    "vki_at": "[7.83, 5.978]",
+    "vki_class": "leaf",
+    "vki_collider": "[[0.42, 0.0025, 1.065, 0.83, 0.075, 2.06]]",
+    "vki_footprint": "0.005,-0.0351,0.835,0.04",
+    "vki_fp_cells": "1,1",
+    "vki_height": "Full",
+    "vki_hinge": "[0.0, 0.0, 0.0]",
+    "vki_kind": "BarsGate",
+    "vki_leaf_clearance": 0.005,
+    "vki_leaf_deg": 90.0,
+    "vki_leaf_door": "Dungeon_B1_Wall_Bars_Door_150_Full.001",
+    "vki_leaf_fits": "SM_VKI_Wall_Bars_Door_150_Full at its vki_leaf_socket, same rotation",
+    "vki_leaf_height": 2.06,
+    "vki_leaf_open_deg": 90,
+    "vki_leaf_open_dir": "rotation -deg about local Z (toward the room, -Y)",
+    "vki_leaf_state": "open",
+    "vki_leaf_width": 0.83,
+    "vki_nav": "block",
+    "vki_origin": "hinge",
+    "vki_piece": "SM_VKI_Leaf_BarsGate_Full",
+    "vki_rot": -90.0,
+    "vki_rot_lock": "none",
+    "vki_see_through": 1,
+    "vki_uv_lock": "local"
+   },
+   "r": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Shell",
+   "mat": {},
+   "name": "Dungeon_B1_Wall_Dungeon_Plain_300_Full",
+   "p": [
+    0.0,
+    0.0,
+    -9.0
+   ],
+   "piece": "SM_VKI_Wall_Dungeon_Plain_300_Full",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[0.0, 9.0]",
+    "vki_class": "wall",
+    "vki_collider": "[[1.5, 0.0, 1.1, 3.0, 0.5, 2.2]]",
+    "vki_cut_pair": "SM_VKI_Wall_Dungeon_Plain_300_Cut",
+    "vki_family": "Dungeon",
+    "vki_footprint": "0,-0.2801,3,0.2801",
+    "vki_fp_cells": "2,1",
+    "vki_height": "Full",
+    "vki_kind": "Plain",
+    "vki_len": 3.0,
+    "vki_nav": "block",
+    "vki_open_ends": 1,
+    "vki_origin": "start_node",
+    "vki_piece": "SM_VKI_Wall_Dungeon_Plain_300_Full",
+    "vki_room_role": "N",
+    "vki_rot": 0,
+    "vki_rot_lock": "none",
+    "vki_thick": 0.5,
+    "vki_uv_lock": "world"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Shell",
+   "mat": {
+    "56": "M_VKI_DungeonInDamp"
+   },
+   "name": "Dungeon_B1_Wall_Dungeon_Window_150_Full",
+   "p": [
+    -3.0,
+    0.0,
+    -9.0
+   ],
+   "piece": "SM_VKI_Wall_Dungeon_Window_150_Full",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[3.0, 9.0]",
+    "vki_class": "wall",
+    "vki_collider": "[[0.75, 0.0, 1.1, 1.5, 0.5, 2.2]]",
+    "vki_cut_to": "SM_VKI_Wall_Dungeon_Plain_150A_Cut",
+    "vki_family": "Dungeon",
+    "vki_footprint": "0,-0.29,1.5,0.2801",
+    "vki_fp_cells": "1,1",
+    "vki_height": "Full",
+    "vki_kind": "Window",
+    "vki_len": 1.5,
+    "vki_lights": "[{\"type\": \"SPOT\", \"role\": \"window\", \"pos\": [0.75, 0.19, 2.34], \"aim\": [0.75, -2.0, 0.0], \"cone\": 60.0, \"blend\": 0.3, \"radius\": 0.04, \"w_day\": 1200.0, \"w_night\": 120.0, \"color_day\": [0.78, 0.86, 1.0], \"color_night\": [0.62, 0.7, 1.0], \"shadows\": 1}]",
+    "vki_nav": "block",
+    "vki_open_ends": 1,
+    "vki_opening": "{\"x0\": 0.45, \"x1\": 1.05, \"z0\": 2.05, \"z1\": 2.62, \"head\": \"flat\", \"grate\": 1}",
+    "vki_origin": "start_node",
+    "vki_piece": "SM_VKI_Wall_Dungeon_Window_150_Full",
+    "vki_room_role": "N",
+    "vki_rot": 0,
+    "vki_rot_lock": "none",
+    "vki_style": "{\"wall_a\": \"DungeonInDamp\", \"wall_b\": \"DungeonIn\"}",
+    "vki_thick": 0.5,
+    "vki_uv_lock": "world"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Shell",
+   "mat": {
+    "56": "M_VKI_DungeonInDamp"
+   },
+   "name": "Dungeon_B1_Wall_Dungeon_Plain_150A_Full",
+   "p": [
+    -4.5,
+    0.0,
+    -9.0
+   ],
+   "piece": "SM_VKI_Wall_Dungeon_Plain_150A_Full",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[4.5, 9.0]",
+    "vki_class": "wall",
+    "vki_collider": "[[0.75, 0.0, 1.1, 1.5, 0.5, 2.2]]",
+    "vki_cut_pair": "SM_VKI_Wall_Dungeon_Plain_150A_Cut",
+    "vki_family": "Dungeon",
+    "vki_footprint": "0,-0.2801,1.5,0.2801",
+    "vki_fp_cells": "1,1",
+    "vki_height": "Full",
+    "vki_kind": "Plain",
+    "vki_len": 1.5,
+    "vki_nav": "block",
+    "vki_open_ends": 1,
+    "vki_origin": "start_node",
+    "vki_piece": "SM_VKI_Wall_Dungeon_Plain_150A_Full",
+    "vki_room_role": "N",
+    "vki_rot": 0,
+    "vki_rot_lock": "none",
+    "vki_style": "{\"wall_a\": \"DungeonInDamp\", \"wall_b\": \"DungeonIn\"}",
+    "vki_thick": 0.5,
+    "vki_uv_lock": "world",
+    "vki_var": "A"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Shell",
+   "mat": {
+    "56": "M_VKI_DungeonInDamp"
+   },
+   "name": "Dungeon_B1_Wall_Dungeon_Plain_150A_Full.001",
+   "p": [
+    -6.0,
+    0.0,
+    -9.0
+   ],
+   "piece": "SM_VKI_Wall_Dungeon_Plain_150A_Full",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[6.0, 9.0]",
+    "vki_class": "wall",
+    "vki_collider": "[[0.75, 0.0, 1.1, 1.5, 0.5, 2.2]]",
+    "vki_cut_pair": "SM_VKI_Wall_Dungeon_Plain_150A_Cut",
+    "vki_family": "Dungeon",
+    "vki_footprint": "0,-0.2801,1.5,0.2801",
+    "vki_fp_cells": "1,1",
+    "vki_height": "Full",
+    "vki_kind": "Plain",
+    "vki_len": 1.5,
+    "vki_nav": "block",
+    "vki_open_ends": 1,
+    "vki_origin": "start_node",
+    "vki_piece": "SM_VKI_Wall_Dungeon_Plain_150A_Full",
+    "vki_room_role": "N",
+    "vki_rot": 0,
+    "vki_rot_lock": "none",
+    "vki_style": "{\"wall_a\": \"DungeonInDamp\", \"wall_b\": \"DungeonIn\"}",
+    "vki_thick": 0.5,
+    "vki_uv_lock": "world",
+    "vki_var": "A"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Shell",
+   "mat": {
+    "56": "M_VKI_DungeonInDamp"
+   },
+   "name": "Dungeon_B1_Wall_Dungeon_Window_150_Full.001",
+   "p": [
+    -7.5,
+    0.0,
+    -9.0
+   ],
+   "piece": "SM_VKI_Wall_Dungeon_Window_150_Full",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[7.5, 9.0]",
+    "vki_class": "wall",
+    "vki_collider": "[[0.75, 0.0, 1.1, 1.5, 0.5, 2.2]]",
+    "vki_cut_to": "SM_VKI_Wall_Dungeon_Plain_150A_Cut",
+    "vki_family": "Dungeon",
+    "vki_footprint": "0,-0.29,1.5,0.2801",
+    "vki_fp_cells": "1,1",
+    "vki_height": "Full",
+    "vki_kind": "Window",
+    "vki_len": 1.5,
+    "vki_lights": "[{\"type\": \"SPOT\", \"role\": \"window\", \"pos\": [0.75, 0.19, 2.34], \"aim\": [0.75, -2.0, 0.0], \"cone\": 60.0, \"blend\": 0.3, \"radius\": 0.04, \"w_day\": 1200.0, \"w_night\": 120.0, \"color_day\": [0.78, 0.86, 1.0], \"color_night\": [0.62, 0.7, 1.0], \"shadows\": 1}]",
+    "vki_nav": "block",
+    "vki_open_ends": 1,
+    "vki_opening": "{\"x0\": 0.45, \"x1\": 1.05, \"z0\": 2.05, \"z1\": 2.62, \"head\": \"flat\", \"grate\": 1}",
+    "vki_origin": "start_node",
+    "vki_piece": "SM_VKI_Wall_Dungeon_Window_150_Full",
+    "vki_room_role": "N",
+    "vki_rot": 0,
+    "vki_rot_lock": "none",
+    "vki_style": "{\"wall_a\": \"DungeonInDamp\", \"wall_b\": \"DungeonIn\"}",
+    "vki_thick": 0.5,
+    "vki_uv_lock": "world"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Shell",
+   "mat": {},
+   "name": "Dungeon_B1_Wall_Dungeon_Plain_300_Full.001",
+   "p": [
+    -9.0,
+    0.0,
+    -9.0
+   ],
+   "piece": "SM_VKI_Wall_Dungeon_Plain_300_Full",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[9.0, 9.0]",
+    "vki_class": "wall",
+    "vki_collider": "[[1.5, 0.0, 1.1, 3.0, 0.5, 2.2]]",
+    "vki_cut_pair": "SM_VKI_Wall_Dungeon_Plain_300_Cut",
+    "vki_family": "Dungeon",
+    "vki_footprint": "0,-0.2801,3,0.2801",
+    "vki_fp_cells": "2,1",
+    "vki_height": "Full",
+    "vki_kind": "Plain",
+    "vki_len": 3.0,
+    "vki_nav": "block",
+    "vki_open_ends": 1,
+    "vki_origin": "start_node",
+    "vki_piece": "SM_VKI_Wall_Dungeon_Plain_300_Full",
+    "vki_room_role": "N",
+    "vki_rot": 0,
+    "vki_rot_lock": "none",
+    "vki_thick": 0.5,
+    "vki_uv_lock": "world"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Shell",
+   "mat": {},
+   "name": "Dungeon_B1_Wall_Dungeon_Plain_300_Full.002",
+   "p": [
+    -12.0,
+    0.0,
+    -9.0
+   ],
+   "piece": "SM_VKI_Wall_Dungeon_Plain_300_Full",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[12.0, 9.0]",
+    "vki_class": "wall",
+    "vki_collider": "[[1.5, 0.0, 1.1, 3.0, 0.5, 2.2]]",
+    "vki_cut_pair": "SM_VKI_Wall_Dungeon_Plain_300_Cut",
+    "vki_family": "Dungeon",
+    "vki_footprint": "0,-0.2801,3,0.2801",
+    "vki_fp_cells": "2,1",
+    "vki_height": "Full",
+    "vki_kind": "Plain",
+    "vki_len": 3.0,
+    "vki_nav": "block",
+    "vki_open_ends": 1,
+    "vki_origin": "start_node",
+    "vki_piece": "SM_VKI_Wall_Dungeon_Plain_300_Full",
+    "vki_room_role": "N",
+    "vki_rot": 0,
+    "vki_rot_lock": "none",
+    "vki_thick": 0.5,
+    "vki_uv_lock": "world"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Shell",
+   "mat": {},
+   "name": "Dungeon_B1_Wall_Dungeon_Rake_150_L",
+   "p": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "piece": "SM_VKI_Wall_Dungeon_Rake_150_L",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[0.0, 0.0]",
+    "vki_class": "wall",
+    "vki_collider": "[[0.75, 0.0, 1.1, 1.5, 0.5, 2.2]]",
+    "vki_cut_to": "SM_VKI_Wall_Dungeon_Plain_150A_Cut",
+    "vki_family": "Dungeon",
+    "vki_footprint": "0,-0.2801,1.5,0.2801",
+    "vki_fp_cells": "1,1",
+    "vki_height": "Rake",
+    "vki_kind": "Rake",
+    "vki_len": 1.5,
+    "vki_nav": "block",
+    "vki_open_ends": 1,
+    "vki_origin": "start_node",
+    "vki_piece": "SM_VKI_Wall_Dungeon_Rake_150_L",
+    "vki_rake_low": "x0",
+    "vki_rake_slope_deg": 66.73,
+    "vki_room_role": "W",
+    "vki_rot": 90,
+    "vki_rot_lock": "none",
+    "vki_thick": 0.5,
+    "vki_uv_lock": "world",
+    "vki_var": "L"
+   },
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Shell",
+   "mat": {},
+   "name": "Dungeon_B1_Wall_Dungeon_Plain_150A_Full.002",
+   "p": [
+    0.0,
+    0.0,
+    -1.5
+   ],
+   "piece": "SM_VKI_Wall_Dungeon_Plain_150A_Full",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[0.0, 1.5]",
+    "vki_class": "wall",
+    "vki_collider": "[[0.75, 0.0, 1.1, 1.5, 0.5, 2.2]]",
+    "vki_cut_pair": "SM_VKI_Wall_Dungeon_Plain_150A_Cut",
+    "vki_family": "Dungeon",
+    "vki_footprint": "0,-0.2801,1.5,0.2801",
+    "vki_fp_cells": "1,1",
+    "vki_height": "Full",
+    "vki_kind": "Plain",
+    "vki_len": 1.5,
+    "vki_nav": "block",
+    "vki_open_ends": 1,
+    "vki_origin": "start_node",
+    "vki_piece": "SM_VKI_Wall_Dungeon_Plain_150A_Full",
+    "vki_room_role": "W",
+    "vki_rot": 90,
+    "vki_rot_lock": "none",
+    "vki_thick": 0.5,
+    "vki_uv_lock": "world",
+    "vki_var": "A"
+   },
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Shell",
+   "mat": {},
+   "name": "Dungeon_B1_Wall_Dungeon_Plain_300_Full.003",
+   "p": [
+    0.0,
+    0.0,
+    -3.0
+   ],
+   "piece": "SM_VKI_Wall_Dungeon_Plain_300_Full",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[0.0, 3.0]",
+    "vki_class": "wall",
+    "vki_collider": "[[1.5, 0.0, 1.1, 3.0, 0.5, 2.2]]",
+    "vki_cut_pair": "SM_VKI_Wall_Dungeon_Plain_300_Cut",
+    "vki_family": "Dungeon",
+    "vki_footprint": "0,-0.2801,3,0.2801",
+    "vki_fp_cells": "2,1",
+    "vki_height": "Full",
+    "vki_kind": "Plain",
+    "vki_len": 3.0,
+    "vki_nav": "block",
+    "vki_open_ends": 1,
+    "vki_origin": "start_node",
+    "vki_piece": "SM_VKI_Wall_Dungeon_Plain_300_Full",
+    "vki_room_role": "W",
+    "vki_rot": 90,
+    "vki_rot_lock": "none",
+    "vki_thick": 0.5,
+    "vki_uv_lock": "world"
+   },
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Shell",
+   "mat": {},
+   "name": "Dungeon_B1_Wall_Dungeon_Plain_300_Full.004",
+   "p": [
+    0.0,
+    0.0,
+    -6.0
+   ],
+   "piece": "SM_VKI_Wall_Dungeon_Plain_300_Full",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[0.0, 6.0]",
+    "vki_class": "wall",
+    "vki_collider": "[[1.5, 0.0, 1.1, 3.0, 0.5, 2.2]]",
+    "vki_cut_pair": "SM_VKI_Wall_Dungeon_Plain_300_Cut",
+    "vki_family": "Dungeon",
+    "vki_footprint": "0,-0.2801,3,0.2801",
+    "vki_fp_cells": "2,1",
+    "vki_height": "Full",
+    "vki_kind": "Plain",
+    "vki_len": 3.0,
+    "vki_nav": "block",
+    "vki_open_ends": 1,
+    "vki_origin": "start_node",
+    "vki_piece": "SM_VKI_Wall_Dungeon_Plain_300_Full",
+    "vki_room_role": "W",
+    "vki_rot": 90,
+    "vki_rot_lock": "none",
+    "vki_thick": 0.5,
+    "vki_uv_lock": "world"
+   },
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Shell",
+   "mat": {
+    "56": "M_VKI_DungeonInDamp"
+   },
+   "name": "Dungeon_B1_Wall_Dungeon_Plain_300_Cut.005",
+   "p": [
+    -3.0,
+    0.0,
+    -6.0
+   ],
+   "piece": "SM_VKI_Wall_Dungeon_Plain_300_Cut",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[3.0, 6.0]",
+    "vki_class": "wall",
+    "vki_collider": "[[1.5, 0.0, 1.1, 3.0, 0.5, 2.2]]",
+    "vki_cut_pair": "SM_VKI_Wall_Dungeon_Plain_300_Full",
+    "vki_family": "Dungeon",
+    "vki_footprint": "0,-0.2801,3,0.2801",
+    "vki_fp_cells": "2,1",
+    "vki_height": "Cut",
+    "vki_kind": "Plain",
+    "vki_len": 3.0,
+    "vki_nav": "block",
+    "vki_open_ends": 1,
+    "vki_origin": "start_node",
+    "vki_piece": "SM_VKI_Wall_Dungeon_Plain_300_Cut",
+    "vki_room_role": "part",
+    "vki_rot": 90,
+    "vki_rot_lock": "none",
+    "vki_style": "{\"wall_a\": \"DungeonInDamp\", \"wall_b\": \"DungeonIn\"}",
+    "vki_thick": 0.5,
+    "vki_uv_lock": "world"
+   },
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Shell",
+   "mat": {
+    "56": "M_VKI_DungeonInDamp",
+    "57": "M_VKI_DungeonInDamp"
+   },
+   "name": "Dungeon_B1_Wall_Dungeon_Plain_300_Cut.006",
+   "p": [
+    -6.0,
+    0.0,
+    -6.0
+   ],
+   "piece": "SM_VKI_Wall_Dungeon_Plain_300_Cut",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[6.0, 6.0]",
+    "vki_class": "wall",
+    "vki_collider": "[[1.5, 0.0, 1.1, 3.0, 0.5, 2.2]]",
+    "vki_cut_pair": "SM_VKI_Wall_Dungeon_Plain_300_Full",
+    "vki_family": "Dungeon",
+    "vki_footprint": "0,-0.2801,3,0.2801",
+    "vki_fp_cells": "2,1",
+    "vki_height": "Cut",
+    "vki_kind": "Plain",
+    "vki_len": 3.0,
+    "vki_nav": "block",
+    "vki_open_ends": 1,
+    "vki_origin": "start_node",
+    "vki_piece": "SM_VKI_Wall_Dungeon_Plain_300_Cut",
+    "vki_room_role": "part",
+    "vki_rot": 90,
+    "vki_rot_lock": "none",
+    "vki_style": "{\"wall_a\": \"DungeonInDamp\", \"wall_b\": \"DungeonInDamp\"}",
+    "vki_thick": 0.5,
+    "vki_uv_lock": "world"
+   },
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Shell",
+   "mat": {
+    "57": "M_VKI_DungeonInDamp"
+   },
+   "name": "Dungeon_B1_Wall_Dungeon_Plain_300_Cut.007",
+   "p": [
+    -9.0,
+    0.0,
+    -6.0
+   ],
+   "piece": "SM_VKI_Wall_Dungeon_Plain_300_Cut",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[9.0, 6.0]",
+    "vki_class": "wall",
+    "vki_collider": "[[1.5, 0.0, 1.1, 3.0, 0.5, 2.2]]",
+    "vki_cut_pair": "SM_VKI_Wall_Dungeon_Plain_300_Full",
+    "vki_family": "Dungeon",
+    "vki_footprint": "0,-0.2801,3,0.2801",
+    "vki_fp_cells": "2,1",
+    "vki_height": "Cut",
+    "vki_kind": "Plain",
+    "vki_len": 3.0,
+    "vki_nav": "block",
+    "vki_open_ends": 1,
+    "vki_origin": "start_node",
+    "vki_piece": "SM_VKI_Wall_Dungeon_Plain_300_Cut",
+    "vki_room_role": "part",
+    "vki_rot": 90,
+    "vki_rot_lock": "none",
+    "vki_style": "{\"wall_a\": \"DungeonIn\", \"wall_b\": \"DungeonInDamp\"}",
+    "vki_thick": 0.5,
+    "vki_uv_lock": "world"
+   },
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Shell",
+   "mat": {
+    "56": "M_VKI_DungeonInDamp"
+   },
+   "name": "Dungeon_B1_Wall_Dungeon_Plain_150A_Cut",
+   "p": [
+    -12.0,
+    0.0,
+    0.0
+   ],
+   "piece": "SM_VKI_Wall_Dungeon_Plain_150A_Cut",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[12.0, 0.0]",
+    "vki_class": "wall",
+    "vki_collider": "[[0.75, 0.0, 1.1, 1.5, 0.5, 2.2]]",
+    "vki_cut_pair": "SM_VKI_Wall_Dungeon_Plain_150A_Full",
+    "vki_family": "Dungeon",
+    "vki_footprint": "0,-0.2801,1.5,0.2801",
+    "vki_fp_cells": "1,1",
+    "vki_height": "Cut",
+    "vki_kind": "Plain",
+    "vki_len": 1.5,
+    "vki_nav": "block",
+    "vki_open_ends": 1,
+    "vki_origin": "start_node",
+    "vki_piece": "SM_VKI_Wall_Dungeon_Plain_150A_Cut",
+    "vki_room_role": "part",
+    "vki_rot": 90,
+    "vki_rot_lock": "none",
+    "vki_style": "{\"wall_a\": \"DungeonInDamp\", \"wall_b\": \"DungeonIn\"}",
+    "vki_thick": 0.5,
+    "vki_uv_lock": "world",
+    "vki_var": "A"
+   },
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Shell",
+   "mat": {},
+   "name": "Dungeon_B1_Wall_Bars_Door_150_Full.002",
+   "p": [
+    -12.0,
+    0.0,
+    -1.5
+   ],
+   "piece": "SM_VKI_Wall_Bars_Door_150_Full",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[12.0, 1.5]",
+    "vki_class": "wall",
+    "vki_collider": "[[0.165, 0.0, 1.5, 0.33, 0.3, 3.0], [1.335, 0.0, 1.5, 0.33000000000000007, 0.3, 3.0], [0.75, 0.0, 2.55, 1.5, 0.3, 0.9]]",
+    "vki_cut_to": "SM_VKI_Wall_Bars_Door_150_Full",
+    "vki_family": "Bars",
+    "vki_footprint": "0,-0.1501,1.5,0.1501",
+    "vki_fp_cells": "1,1",
+    "vki_height": "Full",
+    "vki_kind": "Door",
+    "vki_leaf": "SM_VKI_Leaf_BarsGate_Full",
+    "vki_leaf_open_deg": 90,
+    "vki_leaf_socket": "[0.33, -0.022, 0.0]",
+    "vki_len": 1.5,
+    "vki_nav": "door",
+    "vki_nav_open": "[0.33, 1.17]",
+    "vki_no_cut": 1,
+    "vki_open_ends": 1,
+    "vki_opening": "{\"x0\": 0.33, \"x1\": 1.17, \"z0\": 0.0, \"z1\": 2.1, \"head\": \"transom\", \"gate\": 1}",
+    "vki_origin": "start_node",
+    "vki_piece": "SM_VKI_Wall_Bars_Door_150_Full",
+    "vki_room_role": "part",
+    "vki_rot": 90,
+    "vki_rot_lock": "none",
+    "vki_see_through": 1,
+    "vki_style": "{\"wall_a\": \"DungeonInDamp\", \"wall_b\": \"DungeonIn\"}",
+    "vki_thick": 0.3,
+    "vki_uv_lock": "world"
+   },
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Shell",
+   "mat": {},
+   "name": "Dungeon_B1_Leaf_BarsGate_Full.002",
+   "p": [
+    -12.022,
+    0.0,
+    -1.83
+   ],
+   "piece": "SM_VKI_Leaf_BarsGate_Full",
+   "props": {
+    "grid_m": 1.5,
+    "hinge_axis": "local Z",
+    "kit": "VillageInterior",
+    "vki_at": "[12.022, 1.83]",
+    "vki_class": "leaf",
+    "vki_collider": "[[0.42, 0.0025, 1.065, 0.83, 0.075, 2.06]]",
+    "vki_footprint": "0.005,-0.0351,0.835,0.04",
+    "vki_fp_cells": "1,1",
+    "vki_height": "Full",
+    "vki_hinge": "[0.0, 0.0, 0.0]",
+    "vki_kind": "BarsGate",
+    "vki_leaf_clearance": 0.005,
+    "vki_leaf_deg": 90.0,
+    "vki_leaf_door": "Dungeon_B1_Wall_Bars_Door_150_Full.002",
+    "vki_leaf_fits": "SM_VKI_Wall_Bars_Door_150_Full at its vki_leaf_socket, same rotation",
+    "vki_leaf_height": 2.06,
+    "vki_leaf_open_deg": 90,
+    "vki_leaf_open_dir": "rotation -deg about local Z (toward the room, -Y)",
+    "vki_leaf_state": "open",
+    "vki_leaf_width": 0.83,
+    "vki_nav": "block",
+    "vki_origin": "hinge",
+    "vki_piece": "SM_VKI_Leaf_BarsGate_Full",
+    "vki_rot": 0.0,
+    "vki_rot_lock": "none",
+    "vki_see_through": 1,
+    "vki_uv_lock": "local"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Shell",
+   "mat": {},
+   "name": "Dungeon_B1_Wall_Bars_Plain_150A_Full.002",
+   "p": [
+    -12.0,
+    0.0,
+    -3.0
+   ],
+   "piece": "SM_VKI_Wall_Bars_Plain_150A_Full",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[12.0, 3.0]",
+    "vki_bars_note": "bars never hide the room: Full only, never cut (vki_cut_to = itself)",
+    "vki_class": "wall",
+    "vki_collider": "[[0.75, 0.0, 1.5, 1.5, 0.3, 3.0]]",
+    "vki_cut_to": "SM_VKI_Wall_Bars_Plain_150A_Full",
+    "vki_family": "Bars",
+    "vki_footprint": "0,-0.1501,1.5,0.1501",
+    "vki_fp_cells": "1,1",
+    "vki_height": "Full",
+    "vki_kind": "Plain",
+    "vki_len": 1.5,
+    "vki_nav": "block",
+    "vki_no_cut": 1,
+    "vki_open_ends": 1,
+    "vki_origin": "start_node",
+    "vki_piece": "SM_VKI_Wall_Bars_Plain_150A_Full",
+    "vki_room_role": "part",
+    "vki_rot": 90,
+    "vki_rot_lock": "none",
+    "vki_see_through": 1,
+    "vki_style": "{\"wall_a\": \"DungeonInDamp\", \"wall_b\": \"DungeonIn\"}",
+    "vki_thick": 0.3,
+    "vki_uv_lock": "world",
+    "vki_var": "A"
+   },
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Shell",
+   "mat": {
+    "56": "M_VKI_DungeonInDamp"
+   },
+   "name": "Dungeon_B1_Wall_Dungeon_Rake_150_R",
+   "p": [
+    -15.0,
+    0.0,
+    -1.5
+   ],
+   "piece": "SM_VKI_Wall_Dungeon_Rake_150_R",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[15.0, 1.5]",
+    "vki_class": "wall",
+    "vki_collider": "[[0.75, 0.0, 1.1, 1.5, 0.5, 2.2]]",
+    "vki_cut_to": "SM_VKI_Wall_Dungeon_Plain_150A_Cut",
+    "vki_family": "Dungeon",
+    "vki_footprint": "0,-0.2801,1.5,0.2801",
+    "vki_fp_cells": "1,1",
+    "vki_height": "Rake",
+    "vki_kind": "Rake",
+    "vki_len": 1.5,
+    "vki_nav": "block",
+    "vki_open_ends": 1,
+    "vki_origin": "start_node",
+    "vki_piece": "SM_VKI_Wall_Dungeon_Rake_150_R",
+    "vki_rake_low": "xL",
+    "vki_rake_slope_deg": 66.73,
+    "vki_room_role": "E",
+    "vki_rot": -90,
+    "vki_rot_lock": "none",
+    "vki_style": "{\"wall_a\": \"DungeonInDamp\", \"wall_b\": \"DungeonIn\"}",
+    "vki_thick": 0.5,
+    "vki_uv_lock": "world",
+    "vki_var": "R"
+   },
+   "r": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Shell",
+   "mat": {
+    "56": "M_VKI_DungeonInDamp"
+   },
+   "name": "Dungeon_B1_Wall_Dungeon_Plain_150A_Full.003",
+   "p": [
+    -15.0,
+    0.0,
+    -3.0
+   ],
+   "piece": "SM_VKI_Wall_Dungeon_Plain_150A_Full",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[15.0, 3.0]",
+    "vki_class": "wall",
+    "vki_collider": "[[0.75, 0.0, 1.1, 1.5, 0.5, 2.2]]",
+    "vki_cut_pair": "SM_VKI_Wall_Dungeon_Plain_150A_Cut",
+    "vki_family": "Dungeon",
+    "vki_footprint": "0,-0.2801,1.5,0.2801",
+    "vki_fp_cells": "1,1",
+    "vki_height": "Full",
+    "vki_kind": "Plain",
+    "vki_len": 1.5,
+    "vki_nav": "block",
+    "vki_open_ends": 1,
+    "vki_origin": "start_node",
+    "vki_piece": "SM_VKI_Wall_Dungeon_Plain_150A_Full",
+    "vki_room_role": "E",
+    "vki_rot": -90,
+    "vki_rot_lock": "none",
+    "vki_style": "{\"wall_a\": \"DungeonInDamp\", \"wall_b\": \"DungeonIn\"}",
+    "vki_thick": 0.5,
+    "vki_uv_lock": "world",
+    "vki_var": "A"
+   },
+   "r": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Shell",
+   "mat": {
+    "56": "M_VKI_DungeonInDamp"
+   },
+   "name": "Dungeon_B1_Wall_Dungeon_Plain_150A_Full.004",
+   "p": [
+    -15.0,
+    0.0,
+    -4.5
+   ],
+   "piece": "SM_VKI_Wall_Dungeon_Plain_150A_Full",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[15.0, 4.5]",
+    "vki_class": "wall",
+    "vki_collider": "[[0.75, 0.0, 1.1, 1.5, 0.5, 2.2]]",
+    "vki_cut_pair": "SM_VKI_Wall_Dungeon_Plain_150A_Cut",
+    "vki_family": "Dungeon",
+    "vki_footprint": "0,-0.2801,1.5,0.2801",
+    "vki_fp_cells": "1,1",
+    "vki_height": "Full",
+    "vki_kind": "Plain",
+    "vki_len": 1.5,
+    "vki_nav": "block",
+    "vki_open_ends": 1,
+    "vki_origin": "start_node",
+    "vki_piece": "SM_VKI_Wall_Dungeon_Plain_150A_Full",
+    "vki_room_role": "E",
+    "vki_rot": -90,
+    "vki_rot_lock": "none",
+    "vki_style": "{\"wall_a\": \"DungeonInDamp\", \"wall_b\": \"DungeonIn\"}",
+    "vki_thick": 0.5,
+    "vki_uv_lock": "world",
+    "vki_var": "A"
+   },
+   "r": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Shell",
+   "mat": {},
+   "name": "Dungeon_B1_Wall_Dungeon_Passage_150_Full",
+   "p": [
+    -15.0,
+    0.0,
+    -6.0
+   ],
+   "piece": "SM_VKI_Wall_Dungeon_Passage_150_Full",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[15.0, 6.0]",
+    "vki_class": "wall",
+    "vki_collider": "[[0.165, 0.0, 1.1, 0.33, 0.5, 2.2], [1.335, 0.0, 1.1, 0.33000000000000007, 0.5, 2.2]]",
+    "vki_cut_to": "SM_VKI_Wall_Dungeon_Plain_150A_Cut",
+    "vki_facing_min": 60,
+    "vki_family": "Dungeon",
+    "vki_footprint": "0,-0.8887,1.5,0.2801",
+    "vki_fp_cells": "1,1",
+    "vki_height": "Full",
+    "vki_kind": "Passage",
+    "vki_len": 1.5,
+    "vki_link": "passage",
+    "vki_link_id": "sewer",
+    "vki_nav": "door",
+    "vki_nav_open": "[0.33, 1.17]",
+    "vki_open_ends": 1,
+    "vki_opening": "{\"x0\": 0.33, \"x1\": 1.17, \"z0\": 0.0, \"z1\": 1.8, \"head\": \"broken\", \"passage\": 1}",
+    "vki_origin": "start_node",
+    "vki_piece": "SM_VKI_Wall_Dungeon_Passage_150_Full",
+    "vki_prompt": "Go through",
+    "vki_prompt_local": "[0.75, -0.3, 1.4]",
+    "vki_prompt_text": "Go through",
+    "vki_room_role": "E",
+    "vki_rot": -90,
+    "vki_rot_lock": "none",
+    "vki_spawn_local": "[0.75, -1.6]",
+    "vki_target": "VKI_Sewer_S1",
+    "vki_thick": 0.5,
+    "vki_trigger": "[0.75, -0.55, 1.0, 0.8, 0.7, 2.0]",
+    "vki_uv_lock": "world"
+   },
+   "r": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Shell",
+   "mat": {},
+   "name": "Dungeon_B1_Wall_Dungeon_Plain_300_Full.005",
+   "p": [
+    -15.0,
+    0.0,
+    -9.0
+   ],
+   "piece": "SM_VKI_Wall_Dungeon_Plain_300_Full",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[15.0, 9.0]",
+    "vki_class": "wall",
+    "vki_collider": "[[1.5, 0.0, 1.1, 3.0, 0.5, 2.2]]",
+    "vki_cut_pair": "SM_VKI_Wall_Dungeon_Plain_300_Cut",
+    "vki_family": "Dungeon",
+    "vki_footprint": "0,-0.2801,3,0.2801",
+    "vki_fp_cells": "2,1",
+    "vki_height": "Full",
+    "vki_kind": "Plain",
+    "vki_len": 3.0,
+    "vki_nav": "block",
+    "vki_open_ends": 1,
+    "vki_origin": "start_node",
+    "vki_piece": "SM_VKI_Wall_Dungeon_Plain_300_Full",
+    "vki_room_role": "E",
+    "vki_rot": -90,
+    "vki_rot_lock": "none",
+    "vki_thick": 0.5,
+    "vki_uv_lock": "world"
+   },
+   "r": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Shell",
+   "mat": {},
+   "name": "Dungeon_B1_Post_Dungeon_Corner_Cut",
+   "p": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "piece": "SM_VKI_Post_Dungeon_Corner_Cut",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[0.0, 0.0]",
+    "vki_class": "post",
+    "vki_collider": "[[0.0, 0.0, 1.1, 0.62, 0.62, 2.2]]",
+    "vki_cut_pair": "SM_VKI_Post_Dungeon_Corner_Full",
+    "vki_family": "Dungeon",
+    "vki_footprint": "-0.3101,-0.3101,0.3101,0.3101",
+    "vki_fp_cells": "1,1",
+    "vki_height": "Cut",
+    "vki_kind": "Corner",
+    "vki_nav": "block",
+    "vki_origin": "node_centre",
+    "vki_piece": "SM_VKI_Post_Dungeon_Corner_Cut",
+    "vki_post_rule": "{\"role\": \"corner\", \"height\": \"Cut\", \"rule\": \"L/T/X junction (required, T12 error if missing); height = tallest wall-end height present (a rake contributes its end height); Dungeon wins over every other family (\\u00a72.3)\", \"toggle_to\": \"SM_VKI_Post_Dungeon_Corner_Full\", \"orient\": \"any\"}",
+    "vki_rot": 0,
+    "vki_rot_lock": "none",
+    "vki_thick": 0.5,
+    "vki_uv_lock": "local"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Shell",
+   "mat": {},
+   "name": "Dungeon_B1_Post_Dungeon_Corner_Full",
+   "p": [
+    0.0,
+    0.0,
+    -9.0
+   ],
+   "piece": "SM_VKI_Post_Dungeon_Corner_Full",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[0.0, 9.0]",
+    "vki_class": "post",
+    "vki_collider": "[[0.0, 0.0, 1.1, 0.62, 0.62, 2.2]]",
+    "vki_cut_pair": "SM_VKI_Post_Dungeon_Corner_Cut",
+    "vki_family": "Dungeon",
+    "vki_footprint": "-0.3101,-0.3101,0.3101,0.3101",
+    "vki_fp_cells": "1,1",
+    "vki_height": "Full",
+    "vki_kind": "Corner",
+    "vki_nav": "block",
+    "vki_origin": "node_centre",
+    "vki_piece": "SM_VKI_Post_Dungeon_Corner_Full",
+    "vki_post_rule": "{\"role\": \"corner\", \"height\": \"Full\", \"rule\": \"L/T/X junction (required, T12 error if missing); height = tallest wall-end height present (a rake contributes its end height); Dungeon wins over every other family (\\u00a72.3)\", \"toggle_to\": \"SM_VKI_Post_Dungeon_Corner_Cut\", \"orient\": \"any\"}",
+    "vki_rot": 0,
+    "vki_rot_lock": "none",
+    "vki_thick": 0.5,
+    "vki_uv_lock": "local"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Shell",
+   "mat": {},
+   "name": "Dungeon_B1_Post_Dungeon_Corner_Full.001",
+   "p": [
+    -3.0,
+    0.0,
+    -6.0
+   ],
+   "piece": "SM_VKI_Post_Dungeon_Corner_Full",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[3.0, 6.0]",
+    "vki_class": "post",
+    "vki_collider": "[[0.0, 0.0, 1.1, 0.62, 0.62, 2.2]]",
+    "vki_cut_pair": "SM_VKI_Post_Dungeon_Corner_Cut",
+    "vki_family": "Dungeon",
+    "vki_footprint": "-0.3101,-0.3101,0.3101,0.3101",
+    "vki_fp_cells": "1,1",
+    "vki_height": "Full",
+    "vki_kind": "Corner",
+    "vki_nav": "block",
+    "vki_origin": "node_centre",
+    "vki_piece": "SM_VKI_Post_Dungeon_Corner_Full",
+    "vki_post_rule": "{\"role\": \"corner\", \"height\": \"Full\", \"rule\": \"L/T/X junction (required, T12 error if missing); height = tallest wall-end height present (a rake contributes its end height); Dungeon wins over every other family (\\u00a72.3)\", \"toggle_to\": \"SM_VKI_Post_Dungeon_Corner_Cut\", \"orient\": \"any\"}",
+    "vki_rot": 0,
+    "vki_rot_lock": "none",
+    "vki_thick": 0.5,
+    "vki_uv_lock": "local"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Shell",
+   "mat": {},
+   "name": "Dungeon_B1_Post_Dungeon_Corner_Full.002",
+   "p": [
+    -3.0,
+    0.0,
+    -9.0
+   ],
+   "piece": "SM_VKI_Post_Dungeon_Corner_Full",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[3.0, 9.0]",
+    "vki_class": "post",
+    "vki_collider": "[[0.0, 0.0, 1.1, 0.62, 0.62, 2.2]]",
+    "vki_cut_pair": "SM_VKI_Post_Dungeon_Corner_Cut",
+    "vki_family": "Dungeon",
+    "vki_footprint": "-0.3101,-0.3101,0.3101,0.3101",
+    "vki_fp_cells": "1,1",
+    "vki_height": "Full",
+    "vki_kind": "Corner",
+    "vki_nav": "block",
+    "vki_origin": "node_centre",
+    "vki_piece": "SM_VKI_Post_Dungeon_Corner_Full",
+    "vki_post_rule": "{\"role\": \"corner\", \"height\": \"Full\", \"rule\": \"L/T/X junction (required, T12 error if missing); height = tallest wall-end height present (a rake contributes its end height); Dungeon wins over every other family (\\u00a72.3)\", \"toggle_to\": \"SM_VKI_Post_Dungeon_Corner_Cut\", \"orient\": \"any\"}",
+    "vki_rot": 0,
+    "vki_rot_lock": "none",
+    "vki_thick": 0.5,
+    "vki_uv_lock": "local"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Shell",
+   "mat": {},
+   "name": "Dungeon_B1_Post_Dungeon_Corner_Full.003",
+   "p": [
+    -6.0,
+    0.0,
+    -6.0
+   ],
+   "piece": "SM_VKI_Post_Dungeon_Corner_Full",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[6.0, 6.0]",
+    "vki_class": "post",
+    "vki_collider": "[[0.0, 0.0, 1.1, 0.62, 0.62, 2.2]]",
+    "vki_cut_pair": "SM_VKI_Post_Dungeon_Corner_Cut",
+    "vki_family": "Dungeon",
+    "vki_footprint": "-0.3101,-0.3101,0.3101,0.3101",
+    "vki_fp_cells": "1,1",
+    "vki_height": "Full",
+    "vki_kind": "Corner",
+    "vki_nav": "block",
+    "vki_origin": "node_centre",
+    "vki_piece": "SM_VKI_Post_Dungeon_Corner_Full",
+    "vki_post_rule": "{\"role\": \"corner\", \"height\": \"Full\", \"rule\": \"L/T/X junction (required, T12 error if missing); height = tallest wall-end height present (a rake contributes its end height); Dungeon wins over every other family (\\u00a72.3)\", \"toggle_to\": \"SM_VKI_Post_Dungeon_Corner_Cut\", \"orient\": \"any\"}",
+    "vki_rot": 0,
+    "vki_rot_lock": "none",
+    "vki_thick": 0.5,
+    "vki_uv_lock": "local"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Shell",
+   "mat": {},
+   "name": "Dungeon_B1_Post_Dungeon_Corner_Full.004",
+   "p": [
+    -6.0,
+    0.0,
+    -9.0
+   ],
+   "piece": "SM_VKI_Post_Dungeon_Corner_Full",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[6.0, 9.0]",
+    "vki_class": "post",
+    "vki_collider": "[[0.0, 0.0, 1.1, 0.62, 0.62, 2.2]]",
+    "vki_cut_pair": "SM_VKI_Post_Dungeon_Corner_Cut",
+    "vki_family": "Dungeon",
+    "vki_footprint": "-0.3101,-0.3101,0.3101,0.3101",
+    "vki_fp_cells": "1,1",
+    "vki_height": "Full",
+    "vki_kind": "Corner",
+    "vki_nav": "block",
+    "vki_origin": "node_centre",
+    "vki_piece": "SM_VKI_Post_Dungeon_Corner_Full",
+    "vki_post_rule": "{\"role\": \"corner\", \"height\": \"Full\", \"rule\": \"L/T/X junction (required, T12 error if missing); height = tallest wall-end height present (a rake contributes its end height); Dungeon wins over every other family (\\u00a72.3)\", \"toggle_to\": \"SM_VKI_Post_Dungeon_Corner_Cut\", \"orient\": \"any\"}",
+    "vki_rot": 0,
+    "vki_rot_lock": "none",
+    "vki_thick": 0.5,
+    "vki_uv_lock": "local"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Shell",
+   "mat": {},
+   "name": "Dungeon_B1_Post_Dungeon_Corner_Full.005",
+   "p": [
+    -9.0,
+    0.0,
+    -6.0
+   ],
+   "piece": "SM_VKI_Post_Dungeon_Corner_Full",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[9.0, 6.0]",
+    "vki_class": "post",
+    "vki_collider": "[[0.0, 0.0, 1.1, 0.62, 0.62, 2.2]]",
+    "vki_cut_pair": "SM_VKI_Post_Dungeon_Corner_Cut",
+    "vki_family": "Dungeon",
+    "vki_footprint": "-0.3101,-0.3101,0.3101,0.3101",
+    "vki_fp_cells": "1,1",
+    "vki_height": "Full",
+    "vki_kind": "Corner",
+    "vki_nav": "block",
+    "vki_origin": "node_centre",
+    "vki_piece": "SM_VKI_Post_Dungeon_Corner_Full",
+    "vki_post_rule": "{\"role\": \"corner\", \"height\": \"Full\", \"rule\": \"L/T/X junction (required, T12 error if missing); height = tallest wall-end height present (a rake contributes its end height); Dungeon wins over every other family (\\u00a72.3)\", \"toggle_to\": \"SM_VKI_Post_Dungeon_Corner_Cut\", \"orient\": \"any\"}",
+    "vki_rot": 0,
+    "vki_rot_lock": "none",
+    "vki_thick": 0.5,
+    "vki_uv_lock": "local"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Shell",
+   "mat": {},
+   "name": "Dungeon_B1_Post_Dungeon_Corner_Full.006",
+   "p": [
+    -9.0,
+    0.0,
+    -9.0
+   ],
+   "piece": "SM_VKI_Post_Dungeon_Corner_Full",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[9.0, 9.0]",
+    "vki_class": "post",
+    "vki_collider": "[[0.0, 0.0, 1.1, 0.62, 0.62, 2.2]]",
+    "vki_cut_pair": "SM_VKI_Post_Dungeon_Corner_Cut",
+    "vki_family": "Dungeon",
+    "vki_footprint": "-0.3101,-0.3101,0.3101,0.3101",
+    "vki_fp_cells": "1,1",
+    "vki_height": "Full",
+    "vki_kind": "Corner",
+    "vki_nav": "block",
+    "vki_origin": "node_centre",
+    "vki_piece": "SM_VKI_Post_Dungeon_Corner_Full",
+    "vki_post_rule": "{\"role\": \"corner\", \"height\": \"Full\", \"rule\": \"L/T/X junction (required, T12 error if missing); height = tallest wall-end height present (a rake contributes its end height); Dungeon wins over every other family (\\u00a72.3)\", \"toggle_to\": \"SM_VKI_Post_Dungeon_Corner_Cut\", \"orient\": \"any\"}",
+    "vki_rot": 0,
+    "vki_rot_lock": "none",
+    "vki_thick": 0.5,
+    "vki_uv_lock": "local"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Shell",
+   "mat": {},
+   "name": "Dungeon_B1_Post_Dungeon_Corner_Cut.001",
+   "p": [
+    -12.0,
+    0.0,
+    0.0
+   ],
+   "piece": "SM_VKI_Post_Dungeon_Corner_Cut",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[12.0, 0.0]",
+    "vki_class": "post",
+    "vki_collider": "[[0.0, 0.0, 1.1, 0.62, 0.62, 2.2]]",
+    "vki_cut_pair": "SM_VKI_Post_Dungeon_Corner_Full",
+    "vki_family": "Dungeon",
+    "vki_footprint": "-0.3101,-0.3101,0.3101,0.3101",
+    "vki_fp_cells": "1,1",
+    "vki_height": "Cut",
+    "vki_kind": "Corner",
+    "vki_nav": "block",
+    "vki_origin": "node_centre",
+    "vki_piece": "SM_VKI_Post_Dungeon_Corner_Cut",
+    "vki_post_rule": "{\"role\": \"corner\", \"height\": \"Cut\", \"rule\": \"L/T/X junction (required, T12 error if missing); height = tallest wall-end height present (a rake contributes its end height); Dungeon wins over every other family (\\u00a72.3)\", \"toggle_to\": \"SM_VKI_Post_Dungeon_Corner_Full\", \"orient\": \"any\"}",
+    "vki_rot": 0,
+    "vki_rot_lock": "none",
+    "vki_thick": 0.5,
+    "vki_uv_lock": "local"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Shell",
+   "mat": {},
+   "name": "Dungeon_B1_Post_Dungeon_Mid_Full",
+   "p": [
+    -12.0,
+    0.0,
+    -1.5
+   ],
+   "piece": "SM_VKI_Post_Dungeon_Mid_Full",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[12.0, 1.5]",
+    "vki_class": "post",
+    "vki_collider": "[[0.0, 0.0, 1.1, 0.24, 0.62, 2.2]]",
+    "vki_cut_pair": "SM_VKI_Post_Dungeon_Mid_Cut",
+    "vki_family": "Dungeon",
+    "vki_footprint": "-0.12,-0.3101,0.12,0.3101",
+    "vki_fp_cells": "1,1",
+    "vki_height": "Full",
+    "vki_kind": "Mid",
+    "vki_nav": "block",
+    "vki_origin": "node_centre",
+    "vki_piece": "SM_VKI_Post_Dungeon_Mid_Full",
+    "vki_post_rule": "{\"role\": \"mid\", \"height\": \"Full\", \"rule\": \"height/family/class step on a straight run (required) | free end (required, \\u00a710.1) | rhythm at even nodes (optional; Stone has none by default)\", \"toggle_to\": \"SM_VKI_Post_Dungeon_Mid_Cut\", \"orient\": \"along local x\"}",
+    "vki_rot": 90,
+    "vki_rot_lock": "none",
+    "vki_thick": 0.5,
+    "vki_uv_lock": "local"
+   },
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Shell",
+   "mat": {},
+   "name": "Dungeon_B1_Post_Bars_Corner_Full",
+   "p": [
+    -12.0,
+    0.0,
+    -4.5
+   ],
+   "piece": "SM_VKI_Post_Bars_Corner_Full",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[12.0, 4.5]",
+    "vki_class": "post",
+    "vki_collider": "[[0.0, 0.0, 1.5, 0.42, 0.42, 3.0]]",
+    "vki_family": "Bars",
+    "vki_footprint": "-0.21,-0.21,0.21,0.21",
+    "vki_fp_cells": "1,1",
+    "vki_height": "Full",
+    "vki_kind": "Corner",
+    "vki_nav": "block",
+    "vki_origin": "node_centre",
+    "vki_piece": "SM_VKI_Post_Bars_Corner_Full",
+    "vki_post_rule": "{\"role\": \"corner\", \"height\": \"Full\", \"toggle_to\": \"SM_VKI_Post_Bars_Corner_Full\", \"orient\": \"any\", \"rule\": \"Bars-only nodes (any Dungeon / Stone wall at the node wins, \\u00a72.3); Full only\"}",
+    "vki_rot": 0,
+    "vki_rot_lock": "none",
+    "vki_thick": 0.3,
+    "vki_uv_lock": "local"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Shell",
+   "mat": {},
+   "name": "Dungeon_B1_Post_Dungeon_Corner_Cut.002",
+   "p": [
+    -15.0,
+    0.0,
+    0.0
+   ],
+   "piece": "SM_VKI_Post_Dungeon_Corner_Cut",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[15.0, 0.0]",
+    "vki_class": "post",
+    "vki_collider": "[[0.0, 0.0, 1.1, 0.62, 0.62, 2.2]]",
+    "vki_cut_pair": "SM_VKI_Post_Dungeon_Corner_Full",
+    "vki_family": "Dungeon",
+    "vki_footprint": "-0.3101,-0.3101,0.3101,0.3101",
+    "vki_fp_cells": "1,1",
+    "vki_height": "Cut",
+    "vki_kind": "Corner",
+    "vki_nav": "block",
+    "vki_origin": "node_centre",
+    "vki_piece": "SM_VKI_Post_Dungeon_Corner_Cut",
+    "vki_post_rule": "{\"role\": \"corner\", \"height\": \"Cut\", \"rule\": \"L/T/X junction (required, T12 error if missing); height = tallest wall-end height present (a rake contributes its end height); Dungeon wins over every other family (\\u00a72.3)\", \"toggle_to\": \"SM_VKI_Post_Dungeon_Corner_Full\", \"orient\": \"any\"}",
+    "vki_rot": 0,
+    "vki_rot_lock": "none",
+    "vki_thick": 0.5,
+    "vki_uv_lock": "local"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Shell",
+   "mat": {},
+   "name": "Dungeon_B1_Post_Dungeon_Corner_Full.007",
+   "p": [
+    -15.0,
+    0.0,
+    -4.5
+   ],
+   "piece": "SM_VKI_Post_Dungeon_Corner_Full",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[15.0, 4.5]",
+    "vki_class": "post",
+    "vki_collider": "[[0.0, 0.0, 1.1, 0.62, 0.62, 2.2]]",
+    "vki_cut_pair": "SM_VKI_Post_Dungeon_Corner_Cut",
+    "vki_family": "Dungeon",
+    "vki_footprint": "-0.3101,-0.3101,0.3101,0.3101",
+    "vki_fp_cells": "1,1",
+    "vki_height": "Full",
+    "vki_kind": "Corner",
+    "vki_nav": "block",
+    "vki_origin": "node_centre",
+    "vki_piece": "SM_VKI_Post_Dungeon_Corner_Full",
+    "vki_post_rule": "{\"role\": \"corner\", \"height\": \"Full\", \"rule\": \"L/T/X junction (required, T12 error if missing); height = tallest wall-end height present (a rake contributes its end height); Dungeon wins over every other family (\\u00a72.3)\", \"toggle_to\": \"SM_VKI_Post_Dungeon_Corner_Cut\", \"orient\": \"any\"}",
+    "vki_rot": 0,
+    "vki_rot_lock": "none",
+    "vki_thick": 0.5,
+    "vki_uv_lock": "local"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Shell",
+   "mat": {},
+   "name": "Dungeon_B1_Post_Dungeon_Corner_Full.008",
+   "p": [
+    -15.0,
+    0.0,
+    -9.0
+   ],
+   "piece": "SM_VKI_Post_Dungeon_Corner_Full",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[15.0, 9.0]",
+    "vki_class": "post",
+    "vki_collider": "[[0.0, 0.0, 1.1, 0.62, 0.62, 2.2]]",
+    "vki_cut_pair": "SM_VKI_Post_Dungeon_Corner_Cut",
+    "vki_family": "Dungeon",
+    "vki_footprint": "-0.3101,-0.3101,0.3101,0.3101",
+    "vki_fp_cells": "1,1",
+    "vki_height": "Full",
+    "vki_kind": "Corner",
+    "vki_nav": "block",
+    "vki_origin": "node_centre",
+    "vki_piece": "SM_VKI_Post_Dungeon_Corner_Full",
+    "vki_post_rule": "{\"role\": \"corner\", \"height\": \"Full\", \"rule\": \"L/T/X junction (required, T12 error if missing); height = tallest wall-end height present (a rake contributes its end height); Dungeon wins over every other family (\\u00a72.3)\", \"toggle_to\": \"SM_VKI_Post_Dungeon_Corner_Cut\", \"orient\": \"any\"}",
+    "vki_rot": 0,
+    "vki_rot_lock": "none",
+    "vki_thick": 0.5,
+    "vki_uv_lock": "local"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Shell",
+   "mat": {
+    "55": "M_VKI_EarthDamp"
+   },
+   "name": "Dungeon_B1_Floor_300",
+   "p": [
+    -3.0,
+    0.0,
+    -6.0
+   ],
+   "piece": "SM_VKI_Floor_300",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[3.0, 6.0]",
+    "vki_class": "floor",
+    "vki_collider": "[[1.5, 1.5, -0.05, 3.0, 3.0, 0.1]]",
+    "vki_footprint": "0,0,3,3",
+    "vki_fp_cells": "2,2",
+    "vki_kind": "Slab",
+    "vki_len": 3.0,
+    "vki_nav": "walk",
+    "vki_origin": "min_corner",
+    "vki_piece": "SM_VKI_Floor_300",
+    "vki_place_rule": "even nodes only (x, y multiples of 3.0)",
+    "vki_rot": 0,
+    "vki_rot_lock": "world0",
+    "vki_style": "{\"floor\": \"EarthDamp\"}",
+    "vki_uv_lock": "world"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Shell",
+   "mat": {
+    "55": "M_VKI_EarthDamp"
+   },
+   "name": "Dungeon_B1_Floor_300.001",
+   "p": [
+    -6.0,
+    0.0,
+    -6.0
+   ],
+   "piece": "SM_VKI_Floor_300",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[6.0, 6.0]",
+    "vki_class": "floor",
+    "vki_collider": "[[1.5, 1.5, -0.05, 3.0, 3.0, 0.1]]",
+    "vki_footprint": "0,0,3,3",
+    "vki_fp_cells": "2,2",
+    "vki_kind": "Slab",
+    "vki_len": 3.0,
+    "vki_nav": "walk",
+    "vki_origin": "min_corner",
+    "vki_piece": "SM_VKI_Floor_300",
+    "vki_place_rule": "even nodes only (x, y multiples of 3.0)",
+    "vki_rot": 0,
+    "vki_rot_lock": "world0",
+    "vki_style": "{\"floor\": \"EarthDamp\"}",
+    "vki_uv_lock": "world"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Shell",
+   "mat": {
+    "55": "M_VKI_EarthDamp"
+   },
+   "name": "Dungeon_B1_Floor_300.002",
+   "p": [
+    -12.0,
+    0.0,
+    0.0
+   ],
+   "piece": "SM_VKI_Floor_300",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[12.0, 0.0]",
+    "vki_class": "floor",
+    "vki_collider": "[[1.5, 1.5, -0.05, 3.0, 3.0, 0.1]]",
+    "vki_footprint": "0,0,3,3",
+    "vki_fp_cells": "2,2",
+    "vki_kind": "Slab",
+    "vki_len": 3.0,
+    "vki_nav": "walk",
+    "vki_origin": "min_corner",
+    "vki_piece": "SM_VKI_Floor_300",
+    "vki_place_rule": "even nodes only (x, y multiples of 3.0)",
+    "vki_rot": 0,
+    "vki_rot_lock": "world0",
+    "vki_style": "{\"floor\": \"EarthDamp\"}",
+    "vki_uv_lock": "world"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Shell",
+   "mat": {
+    "55": "M_VKI_EarthDamp"
+   },
+   "name": "Dungeon_B1_Floor_150_Q00",
+   "p": [
+    -12.0,
+    0.0,
+    -3.0
+   ],
+   "piece": "SM_VKI_Floor_150_Q00",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[12.0, 3.0]",
+    "vki_class": "floor",
+    "vki_collider": "[[0.75, 0.75, -0.05, 1.5, 1.5, 0.1]]",
+    "vki_footprint": "0,0,1.5,1.5",
+    "vki_fp_cells": "1,1",
+    "vki_kind": "Q150",
+    "vki_len": 1.5,
+    "vki_nav": "walk",
+    "vki_origin": "min_corner",
+    "vki_piece": "SM_VKI_Floor_150_Q00",
+    "vki_place_rule": "node (i, j) with (i mod 2, j mod 2) = (0, 0)",
+    "vki_q_parity": "[0, 0]",
+    "vki_rot": 0,
+    "vki_rot_lock": "world0",
+    "vki_style": "{\"floor\": \"EarthDamp\"}",
+    "vki_uv_lock": "world",
+    "vki_var": "Q00"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Shell",
+   "mat": {
+    "55": "M_VKI_EarthDamp"
+   },
+   "name": "Dungeon_B1_Floor_150_Q10",
+   "p": [
+    -13.5,
+    0.0,
+    -3.0
+   ],
+   "piece": "SM_VKI_Floor_150_Q10",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[13.5, 3.0]",
+    "vki_class": "floor",
+    "vki_collider": "[[0.75, 0.75, -0.05, 1.5, 1.5, 0.1]]",
+    "vki_footprint": "0,0,1.5,1.5",
+    "vki_fp_cells": "1,1",
+    "vki_kind": "Q150",
+    "vki_len": 1.5,
+    "vki_nav": "walk",
+    "vki_origin": "min_corner",
+    "vki_piece": "SM_VKI_Floor_150_Q10",
+    "vki_place_rule": "node (i, j) with (i mod 2, j mod 2) = (1, 0)",
+    "vki_q_parity": "[1, 0]",
+    "vki_rot": 0,
+    "vki_rot_lock": "world0",
+    "vki_style": "{\"floor\": \"EarthDamp\"}",
+    "vki_uv_lock": "world",
+    "vki_var": "Q10"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Shell",
+   "mat": {
+    "55": "M_VKI_DungeonFlag"
+   },
+   "name": "Dungeon_B1_Floor_600",
+   "p": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "piece": "SM_VKI_Floor_600",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[0.0, 0.0]",
+    "vki_class": "floor",
+    "vki_collider": "[[3.0, 3.0, -0.05, 6.0, 6.0, 0.1]]",
+    "vki_footprint": "0,0,6,6",
+    "vki_fp_cells": "4,4",
+    "vki_kind": "Slab",
+    "vki_len": 6.0,
+    "vki_nav": "walk",
+    "vki_origin": "min_corner",
+    "vki_piece": "SM_VKI_Floor_600",
+    "vki_place_rule": "even nodes only (x, y multiples of 3.0)",
+    "vki_rot": 0,
+    "vki_rot_lock": "world0",
+    "vki_style": "{\"floor\": \"DungeonFlag\"}",
+    "vki_uv_lock": "world"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Shell",
+   "mat": {
+    "55": "M_VKI_DungeonFlag"
+   },
+   "name": "Dungeon_B1_Floor_600.001",
+   "p": [
+    -6.0,
+    0.0,
+    0.0
+   ],
+   "piece": "SM_VKI_Floor_600",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[6.0, 0.0]",
+    "vki_class": "floor",
+    "vki_collider": "[[3.0, 3.0, -0.05, 6.0, 6.0, 0.1]]",
+    "vki_footprint": "0,0,6,6",
+    "vki_fp_cells": "4,4",
+    "vki_kind": "Slab",
+    "vki_len": 6.0,
+    "vki_nav": "walk",
+    "vki_origin": "min_corner",
+    "vki_piece": "SM_VKI_Floor_600",
+    "vki_place_rule": "even nodes only (x, y multiples of 3.0)",
+    "vki_rot": 0,
+    "vki_rot_lock": "world0",
+    "vki_style": "{\"floor\": \"DungeonFlag\"}",
+    "vki_uv_lock": "world"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Shell",
+   "mat": {
+    "55": "M_VKI_DungeonFlag"
+   },
+   "name": "Dungeon_B1_Floor_300.003",
+   "p": [
+    0.0,
+    0.0,
+    -6.0
+   ],
+   "piece": "SM_VKI_Floor_300",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[0.0, 6.0]",
+    "vki_class": "floor",
+    "vki_collider": "[[1.5, 1.5, -0.05, 3.0, 3.0, 0.1]]",
+    "vki_footprint": "0,0,3,3",
+    "vki_fp_cells": "2,2",
+    "vki_kind": "Slab",
+    "vki_len": 3.0,
+    "vki_nav": "walk",
+    "vki_origin": "min_corner",
+    "vki_piece": "SM_VKI_Floor_300",
+    "vki_place_rule": "even nodes only (x, y multiples of 3.0)",
+    "vki_rot": 0,
+    "vki_rot_lock": "world0",
+    "vki_style": "{\"floor\": \"DungeonFlag\"}",
+    "vki_uv_lock": "world"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Shell",
+   "mat": {
+    "55": "M_VKI_DungeonFlag"
+   },
+   "name": "Dungeon_B1_Floor_150_Q00.001",
+   "p": [
+    -9.0,
+    0.0,
+    -6.0
+   ],
+   "piece": "SM_VKI_Floor_150_Q00",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[9.0, 6.0]",
+    "vki_class": "floor",
+    "vki_collider": "[[0.75, 0.75, -0.05, 1.5, 1.5, 0.1]]",
+    "vki_footprint": "0,0,1.5,1.5",
+    "vki_fp_cells": "1,1",
+    "vki_kind": "Q150",
+    "vki_len": 1.5,
+    "vki_nav": "walk",
+    "vki_origin": "min_corner",
+    "vki_piece": "SM_VKI_Floor_150_Q00",
+    "vki_place_rule": "node (i, j) with (i mod 2, j mod 2) = (0, 0)",
+    "vki_q_parity": "[0, 0]",
+    "vki_rot": 0,
+    "vki_rot_lock": "world0",
+    "vki_style": "{\"floor\": \"DungeonFlag\"}",
+    "vki_uv_lock": "world",
+    "vki_var": "Q00"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Shell",
+   "mat": {
+    "55": "M_VKI_DungeonFlag"
+   },
+   "name": "Dungeon_B1_Floor_150_Q01",
+   "p": [
+    -9.0,
+    0.0,
+    -7.5
+   ],
+   "piece": "SM_VKI_Floor_150_Q01",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[9.0, 7.5]",
+    "vki_class": "floor",
+    "vki_collider": "[[0.75, 0.75, -0.05, 1.5, 1.5, 0.1]]",
+    "vki_footprint": "0,0,1.5,1.5",
+    "vki_fp_cells": "1,1",
+    "vki_kind": "Q150",
+    "vki_len": 1.5,
+    "vki_nav": "walk",
+    "vki_origin": "min_corner",
+    "vki_piece": "SM_VKI_Floor_150_Q01",
+    "vki_place_rule": "node (i, j) with (i mod 2, j mod 2) = (0, 1)",
+    "vki_q_parity": "[0, 1]",
+    "vki_rot": 0,
+    "vki_rot_lock": "world0",
+    "vki_style": "{\"floor\": \"DungeonFlag\"}",
+    "vki_uv_lock": "world",
+    "vki_var": "Q01"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Shell",
+   "mat": {
+    "55": "M_VKI_DungeonFlag"
+   },
+   "name": "Dungeon_B1_Floor_150_Q10.001",
+   "p": [
+    -10.5,
+    0.0,
+    -6.0
+   ],
+   "piece": "SM_VKI_Floor_150_Q10",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[10.5, 6.0]",
+    "vki_class": "floor",
+    "vki_collider": "[[0.75, 0.75, -0.05, 1.5, 1.5, 0.1]]",
+    "vki_footprint": "0,0,1.5,1.5",
+    "vki_fp_cells": "1,1",
+    "vki_kind": "Q150",
+    "vki_len": 1.5,
+    "vki_nav": "walk",
+    "vki_origin": "min_corner",
+    "vki_piece": "SM_VKI_Floor_150_Q10",
+    "vki_place_rule": "node (i, j) with (i mod 2, j mod 2) = (1, 0)",
+    "vki_q_parity": "[1, 0]",
+    "vki_rot": 0,
+    "vki_rot_lock": "world0",
+    "vki_style": "{\"floor\": \"DungeonFlag\"}",
+    "vki_uv_lock": "world",
+    "vki_var": "Q10"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Shell",
+   "mat": {
+    "55": "M_VKI_DungeonFlag"
+   },
+   "name": "Dungeon_B1_Floor_150_Q01.001",
+   "p": [
+    -12.0,
+    0.0,
+    -4.5
+   ],
+   "piece": "SM_VKI_Floor_150_Q01",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[12.0, 4.5]",
+    "vki_class": "floor",
+    "vki_collider": "[[0.75, 0.75, -0.05, 1.5, 1.5, 0.1]]",
+    "vki_footprint": "0,0,1.5,1.5",
+    "vki_fp_cells": "1,1",
+    "vki_kind": "Q150",
+    "vki_len": 1.5,
+    "vki_nav": "walk",
+    "vki_origin": "min_corner",
+    "vki_piece": "SM_VKI_Floor_150_Q01",
+    "vki_place_rule": "node (i, j) with (i mod 2, j mod 2) = (0, 1)",
+    "vki_q_parity": "[0, 1]",
+    "vki_rot": 0,
+    "vki_rot_lock": "world0",
+    "vki_style": "{\"floor\": \"DungeonFlag\"}",
+    "vki_uv_lock": "world",
+    "vki_var": "Q01"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Shell",
+   "mat": {
+    "55": "M_VKI_DungeonFlag"
+   },
+   "name": "Dungeon_B1_Floor_150_Q00.002",
+   "p": [
+    -12.0,
+    0.0,
+    -6.0
+   ],
+   "piece": "SM_VKI_Floor_150_Q00",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[12.0, 6.0]",
+    "vki_class": "floor",
+    "vki_collider": "[[0.75, 0.75, -0.05, 1.5, 1.5, 0.1]]",
+    "vki_footprint": "0,0,1.5,1.5",
+    "vki_fp_cells": "1,1",
+    "vki_kind": "Q150",
+    "vki_len": 1.5,
+    "vki_nav": "walk",
+    "vki_origin": "min_corner",
+    "vki_piece": "SM_VKI_Floor_150_Q00",
+    "vki_place_rule": "node (i, j) with (i mod 2, j mod 2) = (0, 0)",
+    "vki_q_parity": "[0, 0]",
+    "vki_rot": 0,
+    "vki_rot_lock": "world0",
+    "vki_style": "{\"floor\": \"DungeonFlag\"}",
+    "vki_uv_lock": "world",
+    "vki_var": "Q00"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Shell",
+   "mat": {
+    "55": "M_VKI_DungeonFlag"
+   },
+   "name": "Dungeon_B1_Floor_150_Q11",
+   "p": [
+    -13.5,
+    0.0,
+    -4.5
+   ],
+   "piece": "SM_VKI_Floor_150_Q11",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[13.5, 4.5]",
+    "vki_class": "floor",
+    "vki_collider": "[[0.75, 0.75, -0.05, 1.5, 1.5, 0.1]]",
+    "vki_footprint": "0,0,1.5,1.5",
+    "vki_fp_cells": "1,1",
+    "vki_kind": "Q150",
+    "vki_len": 1.5,
+    "vki_nav": "walk",
+    "vki_origin": "min_corner",
+    "vki_piece": "SM_VKI_Floor_150_Q11",
+    "vki_place_rule": "node (i, j) with (i mod 2, j mod 2) = (1, 1)",
+    "vki_q_parity": "[1, 1]",
+    "vki_rot": 0,
+    "vki_rot_lock": "world0",
+    "vki_style": "{\"floor\": \"DungeonFlag\"}",
+    "vki_uv_lock": "world",
+    "vki_var": "Q11"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Shell",
+   "mat": {
+    "55": "M_VKI_DungeonFlag"
+   },
+   "name": "Dungeon_B1_Floor_150_Q10.002",
+   "p": [
+    -13.5,
+    0.0,
+    -6.0
+   ],
+   "piece": "SM_VKI_Floor_150_Q10",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[13.5, 6.0]",
+    "vki_class": "floor",
+    "vki_collider": "[[0.75, 0.75, -0.05, 1.5, 1.5, 0.1]]",
+    "vki_footprint": "0,0,1.5,1.5",
+    "vki_fp_cells": "1,1",
+    "vki_kind": "Q150",
+    "vki_len": 1.5,
+    "vki_nav": "walk",
+    "vki_origin": "min_corner",
+    "vki_piece": "SM_VKI_Floor_150_Q10",
+    "vki_place_rule": "node (i, j) with (i mod 2, j mod 2) = (1, 0)",
+    "vki_q_parity": "[1, 0]",
+    "vki_rot": 0,
+    "vki_rot_lock": "world0",
+    "vki_style": "{\"floor\": \"DungeonFlag\"}",
+    "vki_uv_lock": "world",
+    "vki_var": "Q10"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Shell",
+   "mat": {},
+   "name": "Dungeon_B1_Stair_Up_150x450_Stone",
+   "p": [
+    0.0,
+    0.0,
+    -4.5
+   ],
+   "piece": "SM_VKI_Stair_Up_150x450_Stone",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[0.0, 4.5]",
+    "vki_cells": "[[0, 0], [0, 1], [0, 2]]",
+    "vki_class": "link",
+    "vki_collider": "[[0.815, 2.2825, 1.5, 0.97, 3.865, 3.0]]",
+    "vki_depth": 4.5,
+    "vki_facing_min": 60,
+    "vki_floor_under": "room floor laid under the whole footprint (no FLOOR faces)",
+    "vki_footprint": "0.33,0,1.5,4.2151",
+    "vki_fp_cells": "1,3",
+    "vki_going": 0.25857,
+    "vki_kind": "Up",
+    "vki_len": 1.5,
+    "vki_link": "stair_up",
+    "vki_link_id": "surface",
+    "vki_lip": "[0.33, 3.62, 2.8, 1.5, 4.215, 3.0]",
+    "vki_nav": "block",
+    "vki_needs_walls": "[\"local x = 0 (y 0..4.5)\", \"local y = 4.5 (x 0..1.5)\"]",
+    "vki_no_wall": "local x = 1.5 side (the rail side)",
+    "vki_nominal": "0,0,1.5,4.5",
+    "vki_origin": "min_corner",
+    "vki_pair": "SM_VKI_Stair_Down_150x450_Stone",
+    "vki_piece": "SM_VKI_Stair_Up_150x450_Stone",
+    "vki_post_rule": "{\"allowed\": \"Mid post at local (0, 0); Corner post at local (0, 4.5)\", \"forbidden\": [[0.0, 1.5], [0.0, 3.0], [1.5, 4.5]], \"note\": \"rhythm posts are skipped along the stair's walls (\\u00a72.3)\"}",
+    "vki_prompt": "Go upstairs",
+    "vki_prompt_local": "[0.8, 0.3, 1.4]",
+    "vki_rise": 0.2,
+    "vki_risers": 15,
+    "vki_rot": 0,
+    "vki_rot_allowed": "[0, 90, -90]",
+    "vki_rot_lock": "no180",
+    "vki_spawn_facing": 180,
+    "vki_spawn_local": "[0.75, -0.75]",
+    "vki_target": "VK_ValleyTown",
+    "vki_trigger": "[0.8, 0.3, 1.0, 0.94, 0.55, 2.0]",
+    "vki_uv_lock": "local",
+    "vki_var": "Stone"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Shell",
+   "mat": {},
+   "name": "Dungeon_B1_Stair_Down_150x450_Stone",
+   "p": [
+    -10.5,
+    0.0,
+    -9.0
+   ],
+   "piece": "SM_VKI_Stair_Down_150x450_Stone",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[10.5, 9.0]",
+    "vki_cells": "[[0, 0], [0, 1], [0, 2]]",
+    "vki_class": "link",
+    "vki_collider": "[[0.8, 1.86, 0.5, 0.94, 3.52, 1.0], [0.8875, 0.05, 0.5, 1.085, 0.1, 1.0], [1.385, 1.5, 0.5, 0.16999999999999993, 2.99, 1.0]]",
+    "vki_collider_note": "blocked boxes: the hole and the two railings; kerbs and landing walk at z 0",
+    "vki_depth": 4.5,
+    "vki_facing_min": 60,
+    "vki_floor_under": "none: the piece covers its footprint (kerbs, landing); no FLOOR faces",
+    "vki_footprint": "0.285,0,1.5,4.2151",
+    "vki_fp_cells": "1,3",
+    "vki_going": 0.25857,
+    "vki_hole": "[0.33, 0.1, 1.27, 3.62]",
+    "vki_kind": "Down",
+    "vki_len": 1.5,
+    "vki_link": "stair_down",
+    "vki_link_id": "crypt",
+    "vki_nav": "walk",
+    "vki_needs_walls": "[\"local x = 0 (y 0..4.5)\", \"local y = 4.5 (x 0..1.5)\"]",
+    "vki_no_wall": "local x = 1.5 side (the rail side)",
+    "vki_nominal": "0,0,1.5,4.5",
+    "vki_origin": "min_corner",
+    "vki_pair": "SM_VKI_Stair_Up_150x450_Stone",
+    "vki_piece": "SM_VKI_Stair_Down_150x450_Stone",
+    "vki_post_rule": "{\"allowed\": \"Mid post at local (0, 0); Corner post at local (0, 4.5)\", \"forbidden\": [[0.0, 1.5], [0.0, 3.0], [1.5, 4.5]], \"note\": \"rhythm posts are skipped along the stair's walls (\\u00a72.3)\"}",
+    "vki_prompt": "Go downstairs",
+    "vki_prompt_local": "[1.485, 3.555, 1.4]",
+    "vki_rise": 0.2,
+    "vki_risers": 15,
+    "vki_rot": -90,
+    "vki_rot_allowed": "[0, 90, -90]",
+    "vki_rot_lock": "no180",
+    "vki_spawn_facing": 90,
+    "vki_spawn_local": "[2.25, 3.75]",
+    "vki_target": "VKI_Dungeon_B2",
+    "vki_trigger": "[1.485, 3.555, 1.0, 0.43, 1.31, 2.0]",
+    "vki_uv_lock": "local",
+    "vki_var": "Stone"
+   },
+   "r": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Props",
+   "mat": {},
+   "name": "Dungeon_B1_Prop_Cage",
+   "p": [
+    -2.243,
+    0.0,
+    -7.5
+   ],
+   "piece": "SM_VKI_Prop_Cage",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[2.25, 7.5]",
+    "vki_class": "prop",
+    "vki_collider": "[[0.0, -0.014, 1.1213, 0.944, 0.972, 2.2726]]",
+    "vki_footprint": "-0.4721,-0.5,0.4721,0.4721",
+    "vki_fp_cells": "1,1",
+    "vki_hug": "[-0.007, 0.0]",
+    "vki_kind": "Cage",
+    "vki_mount": "floor",
+    "vki_nav": "block",
+    "vki_note": "2.2 m tall but see-through: best against a north wall anyway (the hook ring and ribs)",
+    "vki_origin": "footprint_centre",
+    "vki_piece": "SM_VKI_Prop_Cage",
+    "vki_prop_index": 0,
+    "vki_rot": 0,
+    "vki_rot_lock": "none",
+    "vki_see_through": 1,
+    "vki_tier": "furniture",
+    "vki_use": "[]",
+    "vki_uv_lock": "local"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Props",
+   "mat": {},
+   "name": "Dungeon_B1_Prop_Torch_Wall",
+   "p": [
+    -2.25,
+    0.0,
+    -8.75
+   ],
+   "piece": "SM_VKI_Prop_Torch_Wall",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[2.25, 8.25]",
+    "vki_back_line": "[\"y\", 8.75]",
+    "vki_back_y": 0.0,
+    "vki_class": "prop",
+    "vki_collider": "[[0.0076, -0.1666, 2.0817, 0.113, 0.3331, 0.7771]]",
+    "vki_footprint": "-0.049,-0.3332,0.0642,0",
+    "vki_fp_cells": "1,1",
+    "vki_fx": "[{\"fx\": \"torch_fire\", \"pos\": [0.0, -0.2861, 2.2803], \"scale\": 1.0}]",
+    "vki_host": "Dungeon_B1_Wall_Dungeon_Plain_300_Full",
+    "vki_host_H": 3.0,
+    "vki_host_height": "Full",
+    "vki_kind": "Torch",
+    "vki_lights": "[{\"type\": \"POINT\", \"role\": \"torch\", \"pos\": [0.0, -0.3861, 2.3003], \"w\": 110.0, \"color\": [1.0, 0.55, 0.22], \"range\": 6.0, \"flicker\": 1, \"shadows\": 1, \"radius\": 0.08}]",
+    "vki_mount": "wall_hung",
+    "vki_mount_zmax": 2.5,
+    "vki_mount_zmin": 1.7,
+    "vki_nav": "none",
+    "vki_note": "authored at its real height (placer z 0); Full walls only",
+    "vki_origin": "footprint_centre",
+    "vki_piece": "SM_VKI_Prop_Torch_Wall",
+    "vki_prop_index": 1,
+    "vki_rot": 0,
+    "vki_rot_lock": "none",
+    "vki_tier": "dressing",
+    "vki_use": "[]",
+    "vki_uv_lock": "local",
+    "vki_var": "Wall"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Props",
+   "mat": {},
+   "name": "Dungeon_B1_Overlay_StrawPile",
+   "p": [
+    -3.9195,
+    0.0,
+    -8.19917
+   ],
+   "piece": "SM_VKI_Overlay_StrawPile",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[3.75, 8.25]",
+    "vki_class": "overlay",
+    "vki_collider": "[[-0.0271, 0.0144, 0.0674, 1.2149, 1.0028, 0.1328]]",
+    "vki_footprint": "-0.6345,-0.4871,0.5804,0.5159",
+    "vki_fp_cells": "1,1",
+    "vki_hug": "[0.1695, -0.0508]",
+    "vki_kind": "StrawPile",
+    "vki_mount": "floor",
+    "vki_nav": "none",
+    "vki_origin": "footprint_centre",
+    "vki_piece": "SM_VKI_Overlay_StrawPile",
+    "vki_prop_index": 2,
+    "vki_rot": 0,
+    "vki_rot_lock": "none",
+    "vki_tier": "dressing",
+    "vki_use": "[]",
+    "vki_uv_lock": "local"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Props",
+   "mat": {},
+   "name": "Dungeon_B1_Prop_Chains_Wall",
+   "p": [
+    -5.25,
+    0.0,
+    -8.75
+   ],
+   "piece": "SM_VKI_Prop_Chains_Wall",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[5.25, 8.25]",
+    "vki_back_line": "[\"y\", 8.75]",
+    "vki_back_y": 0.0,
+    "vki_class": "prop",
+    "vki_collider": "[[0.0, -0.0648, 1.5773, 0.64, 0.1295, 0.8254]]",
+    "vki_footprint": "-0.32,-0.1296,0.32,0",
+    "vki_fp_cells": "1,1",
+    "vki_host": "Dungeon_B1_Wall_Dungeon_Plain_150A_Full",
+    "vki_host_H": 3.0,
+    "vki_host_height": "Full",
+    "vki_kind": "Chains",
+    "vki_mount": "wall_hung",
+    "vki_nav": "none",
+    "vki_note": "authored at its real height (placer z 0); Full walls only",
+    "vki_origin": "footprint_centre",
+    "vki_piece": "SM_VKI_Prop_Chains_Wall",
+    "vki_prop_index": 3,
+    "vki_rot": 0,
+    "vki_rot_lock": "none",
+    "vki_tier": "furniture",
+    "vki_use": "[]",
+    "vki_uv_lock": "local",
+    "vki_var": "Wall"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Props",
+   "mat": {},
+   "name": "Dungeon_B1_Prop_Bucket",
+   "p": [
+    -3.75,
+    0.0,
+    -6.75
+   ],
+   "piece": "SM_VKI_Prop_Bucket",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[3.75, 6.75]",
+    "vki_class": "prop",
+    "vki_collider": "[[-0.0, 0.0, 0.1738, 0.3375, 0.3048, 0.3477]]",
+    "vki_footprint": "-0.1688,-0.1525,0.1688,0.1525",
+    "vki_fp_cells": "1,1",
+    "vki_kind": "Bucket",
+    "vki_mount": "floor",
+    "vki_nav": "block",
+    "vki_origin": "footprint_centre",
+    "vki_piece": "SM_VKI_Prop_Bucket",
+    "vki_prop_index": 4,
+    "vki_rot": 0,
+    "vki_rot_lock": "none",
+    "vki_tier": "dressing",
+    "vki_use": "[]",
+    "vki_uv_lock": "local"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Props",
+   "mat": {},
+   "name": "Dungeon_B1_Prop_Skeleton_Sitting",
+   "p": [
+    -6.75,
+    0.0,
+    -8.46106
+   ],
+   "piece": "SM_VKI_Prop_Skeleton_Sitting",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[6.75, 8.25]",
+    "vki_back_line": "[\"y\", 8.715]",
+    "vki_back_y": 0.25394,
+    "vki_class": "prop",
+    "vki_collider": "[[0.0558, -0.283, 0.4221, 0.5948, 1.074, 0.8505]]",
+    "vki_footprint": "-0.2416,-0.8201,0.3533,0.254",
+    "vki_fp_cells": "1,1",
+    "vki_host": "Dungeon_B1_Wall_Dungeon_Plain_150A_Full.001",
+    "vki_kind": "Skeleton",
+    "vki_mount": "wall_floor",
+    "vki_nav": "block",
+    "vki_origin": "footprint_centre",
+    "vki_piece": "SM_VKI_Prop_Skeleton_Sitting",
+    "vki_prop_index": 5,
+    "vki_rot": 0,
+    "vki_rot_lock": "none",
+    "vki_tier": "furniture",
+    "vki_use": "[]",
+    "vki_uv_lock": "local",
+    "vki_var": "Sitting"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Props",
+   "mat": {},
+   "name": "Dungeon_B1_Prop_Chains_Wall.001",
+   "p": [
+    -6.75,
+    0.0,
+    -8.75
+   ],
+   "piece": "SM_VKI_Prop_Chains_Wall",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[6.75, 8.25]",
+    "vki_back_line": "[\"y\", 8.75]",
+    "vki_back_y": 0.0,
+    "vki_class": "prop",
+    "vki_collider": "[[0.0, -0.0648, 1.5773, 0.64, 0.1295, 0.8254]]",
+    "vki_footprint": "-0.32,-0.1296,0.32,0",
+    "vki_fp_cells": "1,1",
+    "vki_host": "Dungeon_B1_Wall_Dungeon_Plain_150A_Full.001",
+    "vki_host_H": 3.0,
+    "vki_host_height": "Full",
+    "vki_kind": "Chains",
+    "vki_mount": "wall_hung",
+    "vki_nav": "none",
+    "vki_note": "authored at its real height (placer z 0); Full walls only",
+    "vki_origin": "footprint_centre",
+    "vki_piece": "SM_VKI_Prop_Chains_Wall",
+    "vki_prop_index": 6,
+    "vki_rot": 0,
+    "vki_rot_lock": "none",
+    "vki_tier": "furniture",
+    "vki_use": "[]",
+    "vki_uv_lock": "local",
+    "vki_var": "Wall"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Props",
+   "mat": {},
+   "name": "Dungeon_B1_Overlay_Bones",
+   "p": [
+    -6.75,
+    0.0,
+    -6.75
+   ],
+   "piece": "SM_VKI_Overlay_Bones",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[6.75, 6.75]",
+    "vki_class": "overlay",
+    "vki_collider": "[[0.0331, -0.0685, 0.0647, 0.7834, 0.6289, 0.1954]]",
+    "vki_footprint": "-0.3587,-0.383,0.4248,0.246",
+    "vki_fp_cells": "1,1",
+    "vki_kind": "Bones",
+    "vki_mount": "floor",
+    "vki_nav": "none",
+    "vki_origin": "footprint_centre",
+    "vki_piece": "SM_VKI_Overlay_Bones",
+    "vki_prop_index": 7,
+    "vki_rot": 0,
+    "vki_rot_lock": "none",
+    "vki_tier": "dressing",
+    "vki_use": "[]",
+    "vki_uv_lock": "local"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Props",
+   "mat": {},
+   "name": "Dungeon_B1_Overlay_StrawPile.001",
+   "p": [
+    -8.13463,
+    0.0,
+    -8.19917
+   ],
+   "piece": "SM_VKI_Overlay_StrawPile",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[8.25, 8.25]",
+    "vki_class": "overlay",
+    "vki_collider": "[[-0.0271, 0.0144, 0.0674, 1.2149, 1.0028, 0.1328]]",
+    "vki_footprint": "-0.6345,-0.4871,0.5804,0.5159",
+    "vki_fp_cells": "1,1",
+    "vki_hug": "[-0.1154, -0.0508]",
+    "vki_kind": "StrawPile",
+    "vki_mount": "floor",
+    "vki_nav": "none",
+    "vki_origin": "footprint_centre",
+    "vki_piece": "SM_VKI_Overlay_StrawPile",
+    "vki_prop_index": 8,
+    "vki_rot": 0,
+    "vki_rot_lock": "none",
+    "vki_tier": "dressing",
+    "vki_use": "[]",
+    "vki_uv_lock": "local"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Props",
+   "mat": {},
+   "name": "Dungeon_B1_Prop_Barrel",
+   "p": [
+    -9.75,
+    0.0,
+    -8.25
+   ],
+   "piece": "SM_VKI_Prop_Barrel",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[9.75, 8.25]",
+    "vki_class": "prop",
+    "vki_collider": "[[0.0, 0.0, 0.5, 0.8, 0.8, 1.0]]",
+    "vki_footprint": "-0.4001,-0.4001,0.4001,0.4001",
+    "vki_fp_cells": "1,1",
+    "vki_kind": "Barrel",
+    "vki_mount": "floor",
+    "vki_nav": "block",
+    "vki_origin": "footprint_centre",
+    "vki_piece": "SM_VKI_Prop_Barrel",
+    "vki_prop_index": 9,
+    "vki_rot": 0,
+    "vki_rot_lock": "none",
+    "vki_tier": "furniture",
+    "vki_use": "[[0.0, -0.75, 0]]",
+    "vki_uv_lock": "local"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Props",
+   "mat": {},
+   "name": "Dungeon_B1_Prop_Torch_Wall.001",
+   "p": [
+    -9.75,
+    0.0,
+    -8.75
+   ],
+   "piece": "SM_VKI_Prop_Torch_Wall",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[9.75, 8.25]",
+    "vki_back_line": "[\"y\", 8.75]",
+    "vki_back_y": 0.0,
+    "vki_class": "prop",
+    "vki_collider": "[[0.0076, -0.1666, 2.0817, 0.113, 0.3331, 0.7771]]",
+    "vki_footprint": "-0.049,-0.3332,0.0642,0",
+    "vki_fp_cells": "1,1",
+    "vki_fx": "[{\"fx\": \"torch_fire\", \"pos\": [0.0, -0.2861, 2.2803], \"scale\": 1.0}]",
+    "vki_host": "Dungeon_B1_Wall_Dungeon_Plain_300_Full.001",
+    "vki_host_H": 3.0,
+    "vki_host_height": "Full",
+    "vki_kind": "Torch",
+    "vki_lights": "[{\"type\": \"POINT\", \"role\": \"torch\", \"pos\": [0.0, -0.3861, 2.3003], \"w\": 110.0, \"color\": [1.0, 0.55, 0.22], \"range\": 6.0, \"flicker\": 1, \"shadows\": 1, \"radius\": 0.08}]",
+    "vki_mount": "wall_hung",
+    "vki_mount_zmax": 2.5,
+    "vki_mount_zmin": 1.7,
+    "vki_nav": "none",
+    "vki_note": "authored at its real height (placer z 0); Full walls only",
+    "vki_origin": "footprint_centre",
+    "vki_piece": "SM_VKI_Prop_Torch_Wall",
+    "vki_prop_index": 10,
+    "vki_rot": 0,
+    "vki_rot_lock": "none",
+    "vki_tier": "dressing",
+    "vki_use": "[]",
+    "vki_uv_lock": "local",
+    "vki_var": "Wall"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Props",
+   "mat": {},
+   "name": "Dungeon_B1_Prop_WeaponRack",
+   "p": [
+    -0.49837,
+    0.0,
+    -2.25
+   ],
+   "piece": "U_VARI_8c677e40",
+   "props": {
+    "cell_m": 3.0,
+    "kit": "VillageHouse",
+    "vki_at": "[0.75, 2.25]",
+    "vki_back_line": "[\"x\", 0.285]",
+    "vki_back_y": 0.21336692571640015,
+    "vki_class": "prop",
+    "vki_host": "Dungeon_B1_Wall_Dungeon_Plain_150A_Full.002",
+    "vki_mount": "wall_floor",
+    "vki_piece": "SM_VK_Prop_WeaponRack",
+    "vki_prop_index": 11,
+    "vki_reuse": 1,
+    "vki_rot": 90,
+    "vki_style": "{\"glow\": \"GlowIn\", \"window\": \"Window_Day\"}"
+   },
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Props",
+   "mat": {},
+   "name": "Dungeon_B1_Prop_Barrel.001",
+   "p": [
+    -0.75,
+    0.0,
+    -0.75
+   ],
+   "piece": "SM_VKI_Prop_Barrel",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[0.75, 0.75]",
+    "vki_class": "prop",
+    "vki_collider": "[[0.0, 0.0, 0.5, 0.8, 0.8, 1.0]]",
+    "vki_footprint": "-0.4001,-0.4001,0.4001,0.4001",
+    "vki_fp_cells": "1,1",
+    "vki_kind": "Barrel",
+    "vki_mount": "floor",
+    "vki_nav": "block",
+    "vki_origin": "footprint_centre",
+    "vki_piece": "SM_VKI_Prop_Barrel",
+    "vki_prop_index": 12,
+    "vki_rot": 90,
+    "vki_rot_lock": "none",
+    "vki_tier": "furniture",
+    "vki_use": "[[0.0, -0.75, 0]]",
+    "vki_uv_lock": "local"
+   },
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Props",
+   "mat": {},
+   "name": "Dungeon_B1_Prop_Table_Small",
+   "p": [
+    -3.75,
+    0.0,
+    -2.25
+   ],
+   "piece": "SM_VKI_Prop_Table_Small",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[3.75, 2.25]",
+    "vki_class": "prop",
+    "vki_collider": "[[0.0, 0.0, 0.39, 1.1, 0.75, 0.78]]",
+    "vki_footprint": "-0.5501,-0.375,0.5501,0.375",
+    "vki_fp_cells": "1,1",
+    "vki_kind": "Table",
+    "vki_mount": "floor",
+    "vki_nav": "block",
+    "vki_note": "table mount height 0.78 (a Candle_Plate or dressing goes at z 0.78)",
+    "vki_origin": "footprint_centre",
+    "vki_piece": "SM_VKI_Prop_Table_Small",
+    "vki_prop_index": 13,
+    "vki_rot": 0,
+    "vki_rot_lock": "none",
+    "vki_table_z": 0.78,
+    "vki_tier": "furniture",
+    "vki_top_rect": "[-0.55, -0.375, 0.55, 0.375]",
+    "vki_use": "[]",
+    "vki_uv_lock": "local",
+    "vki_var": "Small"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Props",
+   "mat": {},
+   "name": "Dungeon_B1_Prop_TableDress_Guard",
+   "p": [
+    -3.75,
+    0.78,
+    -2.25
+   ],
+   "piece": "SM_VKI_Prop_TableDress_Guard",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[3.75, 2.25]",
+    "vki_class": "prop",
+    "vki_collider": "[[0.0121, -0.0508, 0.09, 0.5137, 0.3383, 0.18]]",
+    "vki_fits": "Table_Small (vki_table_z 0.78) or a trestle table",
+    "vki_footprint": "-0.2448,-0.22,0.269,0.1184",
+    "vki_fp_cells": "1,1",
+    "vki_kind": "TableDress",
+    "vki_lights": "[{\"type\": \"POINT\", \"role\": \"candle\", \"pos\": [0.1, 0.02, 0.1045], \"w\": 15.0, \"color\": [1.0, 0.6, 0.28], \"range\": 2.5, \"flicker\": 1, \"shadows\": 0, \"radius\": 0.03}]",
+    "vki_mount": "table",
+    "vki_nav": "none",
+    "vki_on": "Dungeon_B1_Prop_Table_Small",
+    "vki_origin": "footprint_centre",
+    "vki_piece": "SM_VKI_Prop_TableDress_Guard",
+    "vki_prop_index": 14,
+    "vki_rot": 0,
+    "vki_rot_lock": "none",
+    "vki_tier": "dressing",
+    "vki_use": "[]",
+    "vki_uv_lock": "local",
+    "vki_var": "Guard"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Props",
+   "mat": {},
+   "name": "Dungeon_B1_Prop_Stool",
+   "p": [
+    -3.0,
+    0.0,
+    -2.25
+   ],
+   "piece": "U_VARI_b4e3bf86",
+   "props": {
+    "cell_m": 3.0,
+    "kit": "VillageHouse",
+    "vki_at": "[3.0, 2.25]",
+    "vki_class": "prop",
+    "vki_mount": "floor",
+    "vki_piece": "SM_VK_Prop_Stool",
+    "vki_prop_index": 15,
+    "vki_reuse": 1,
+    "vki_rot": 0,
+    "vki_style": "{\"glow\": \"GlowIn\", \"window\": \"Window_Day\"}"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Props",
+   "mat": {},
+   "name": "Dungeon_B1_Prop_Stool.001",
+   "p": [
+    -4.5,
+    0.0,
+    -2.25
+   ],
+   "piece": "U_VARI_b4e3bf86",
+   "props": {
+    "cell_m": 3.0,
+    "kit": "VillageHouse",
+    "vki_at": "[4.5, 2.25]",
+    "vki_class": "prop",
+    "vki_mount": "floor",
+    "vki_piece": "SM_VK_Prop_Stool",
+    "vki_prop_index": 16,
+    "vki_reuse": 1,
+    "vki_rot": 0,
+    "vki_style": "{\"glow\": \"GlowIn\", \"window\": \"Window_Day\"}"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Props",
+   "mat": {},
+   "name": "Dungeon_B1_Prop_Brazier",
+   "p": [
+    -6.75,
+    0.0,
+    -3.75
+   ],
+   "piece": "SM_VKI_Prop_Brazier",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[6.75, 3.75]",
+    "vki_class": "prop",
+    "vki_collider": "[[0.0, 0.0262, 0.635, 0.6852, 0.7024, 1.27]]",
+    "vki_footprint": "-0.3427,-0.325,0.3427,0.3775",
+    "vki_fp_cells": "1,1",
+    "vki_fx": "[{\"fx\": \"brazier_fire\", \"pos\": [0.0, 0.0, 0.89], \"scale\": 1.4}]",
+    "vki_kind": "Brazier",
+    "vki_lights": "[{\"type\": \"POINT\", \"role\": \"brazier\", \"pos\": [0.0, -0.06, 1.29], \"w\": 260.0, \"color\": [1.0, 0.52, 0.2], \"range\": 7.0, \"flicker\": 1, \"shadows\": 1, \"radius\": 0.25}]",
+    "vki_mount": "floor",
+    "vki_nav": "block",
+    "vki_origin": "footprint_centre",
+    "vki_piece": "SM_VKI_Prop_Brazier",
+    "vki_prop_index": 17,
+    "vki_rot": 0,
+    "vki_rot_lock": "none",
+    "vki_tier": "furniture",
+    "vki_use": "[]",
+    "vki_uv_lock": "local"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Props",
+   "mat": {},
+   "name": "Dungeon_B1_Overlay_Puddle",
+   "p": [
+    -5.25,
+    0.0,
+    -0.8045
+   ],
+   "piece": "SM_VKI_Overlay_Puddle",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[5.25, 0.75]",
+    "vki_class": "overlay",
+    "vki_collider": "[[0.0372, -0.0505, 0.0023, 0.9928, 0.938, 0.0034]]",
+    "vki_footprint": "-0.4592,-0.5196,0.5336,0.4186",
+    "vki_fp_cells": "1,1",
+    "vki_hug": "[0.0, 0.0545]",
+    "vki_kind": "Puddle",
+    "vki_mount": "floor",
+    "vki_nav": "none",
+    "vki_origin": "footprint_centre",
+    "vki_piece": "SM_VKI_Overlay_Puddle",
+    "vki_prop_index": 18,
+    "vki_rot": 0,
+    "vki_rot_lock": "none",
+    "vki_tier": "dressing",
+    "vki_use": "[]",
+    "vki_uv_lock": "local"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Props",
+   "mat": {},
+   "name": "Dungeon_B1_Overlay_DrainGrate",
+   "p": [
+    -6.75,
+    0.0,
+    -0.75
+   ],
+   "piece": "SM_VKI_Overlay_DrainGrate",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[6.75, 0.75]",
+    "vki_class": "overlay",
+    "vki_collider": "[[0.0, 0.0, 0.01, 0.66, 0.66, 0.02]]",
+    "vki_footprint": "-0.3301,-0.3301,0.3301,0.3301",
+    "vki_fp_cells": "1,1",
+    "vki_kind": "DrainGrate",
+    "vki_mount": "floor",
+    "vki_nav": "none",
+    "vki_origin": "footprint_centre",
+    "vki_piece": "SM_VKI_Overlay_DrainGrate",
+    "vki_prop_index": 19,
+    "vki_rot": 0,
+    "vki_rot_lock": "none",
+    "vki_tier": "dressing",
+    "vki_use": "[]",
+    "vki_uv_lock": "local"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Props",
+   "mat": {},
+   "name": "Dungeon_B1_Prop_Rubble",
+   "p": [
+    -9.75,
+    0.0,
+    -0.78469
+   ],
+   "piece": "SM_VKI_Prop_Rubble",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[9.75, 0.75]",
+    "vki_class": "prop",
+    "vki_collider": "[[-0.0345, 0.0146, 0.2139, 1.2879, 1.0287, 0.5025]]",
+    "vki_footprint": "-0.6785,-0.4997,0.6095,0.529",
+    "vki_fp_cells": "1,1",
+    "vki_hug": "[0.0, 0.0347]",
+    "vki_kind": "Rubble",
+    "vki_mount": "floor",
+    "vki_nav": "block",
+    "vki_origin": "footprint_centre",
+    "vki_piece": "SM_VKI_Prop_Rubble",
+    "vki_prop_index": 20,
+    "vki_rot": 0,
+    "vki_rot_lock": "none",
+    "vki_tier": "furniture",
+    "vki_use": "[]",
+    "vki_uv_lock": "local"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Props",
+   "mat": {},
+   "name": "Dungeon_B1_Overlay_Puddle.001",
+   "p": [
+    -11.25,
+    0.0,
+    -3.75
+   ],
+   "piece": "SM_VKI_Overlay_Puddle",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[11.25, 3.75]",
+    "vki_class": "overlay",
+    "vki_collider": "[[0.0372, -0.0505, 0.0023, 0.9928, 0.938, 0.0034]]",
+    "vki_footprint": "-0.4592,-0.5196,0.5336,0.4186",
+    "vki_fp_cells": "1,1",
+    "vki_kind": "Puddle",
+    "vki_mount": "floor",
+    "vki_nav": "none",
+    "vki_origin": "footprint_centre",
+    "vki_piece": "SM_VKI_Overlay_Puddle",
+    "vki_prop_index": 21,
+    "vki_rot": 0,
+    "vki_rot_lock": "none",
+    "vki_tier": "dressing",
+    "vki_use": "[]",
+    "vki_uv_lock": "local"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Props",
+   "mat": {},
+   "name": "Dungeon_B1_Prop_Torch_Wall.002",
+   "p": [
+    -0.25,
+    0.0,
+    -3.75
+   ],
+   "piece": "SM_VKI_Prop_Torch_Wall",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[0.75, 3.75]",
+    "vki_back_line": "[\"x\", 0.25]",
+    "vki_back_y": 0.0,
+    "vki_class": "prop",
+    "vki_collider": "[[0.0076, -0.1666, 2.0817, 0.113, 0.3331, 0.7771]]",
+    "vki_footprint": "-0.049,-0.3332,0.0642,0",
+    "vki_fp_cells": "1,1",
+    "vki_fx": "[{\"fx\": \"torch_fire\", \"pos\": [0.0, -0.2861, 2.2803], \"scale\": 1.0}]",
+    "vki_host": "Dungeon_B1_Wall_Dungeon_Plain_300_Full.003",
+    "vki_host_H": 3.0,
+    "vki_host_height": "Full",
+    "vki_kind": "Torch",
+    "vki_lights": "[{\"type\": \"POINT\", \"role\": \"torch\", \"pos\": [0.0, -0.3861, 2.3003], \"w\": 110.0, \"color\": [1.0, 0.55, 0.22], \"range\": 6.0, \"flicker\": 1, \"shadows\": 1, \"radius\": 0.08}]",
+    "vki_mount": "wall_hung",
+    "vki_mount_zmax": 2.5,
+    "vki_mount_zmin": 1.7,
+    "vki_nav": "none",
+    "vki_note": "authored at its real height (placer z 0); Full walls only",
+    "vki_origin": "footprint_centre",
+    "vki_piece": "SM_VKI_Prop_Torch_Wall",
+    "vki_prop_index": 22,
+    "vki_rot": 90,
+    "vki_rot_lock": "none",
+    "vki_tier": "dressing",
+    "vki_use": "[]",
+    "vki_uv_lock": "local",
+    "vki_var": "Wall"
+   },
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Props",
+   "mat": {},
+   "name": "Dungeon_B1_Prop_Torch_Wall.003",
+   "p": [
+    -14.75,
+    0.0,
+    -6.75
+   ],
+   "piece": "SM_VKI_Prop_Torch_Wall",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[14.25, 6.75]",
+    "vki_back_line": "[\"x\", 14.75]",
+    "vki_back_y": 0.0,
+    "vki_class": "prop",
+    "vki_collider": "[[0.0076, -0.1666, 2.0817, 0.113, 0.3331, 0.7771]]",
+    "vki_footprint": "-0.049,-0.3332,0.0642,0",
+    "vki_fp_cells": "1,1",
+    "vki_fx": "[{\"fx\": \"torch_fire\", \"pos\": [0.0, -0.2861, 2.2803], \"scale\": 1.0}]",
+    "vki_host": "Dungeon_B1_Wall_Dungeon_Plain_300_Full.005",
+    "vki_host_H": 3.0,
+    "vki_host_height": "Full",
+    "vki_kind": "Torch",
+    "vki_lights": "[{\"type\": \"POINT\", \"role\": \"torch\", \"pos\": [0.0, -0.3861, 2.3003], \"w\": 110.0, \"color\": [1.0, 0.55, 0.22], \"range\": 6.0, \"flicker\": 1, \"shadows\": 1, \"radius\": 0.08}]",
+    "vki_mount": "wall_hung",
+    "vki_mount_zmax": 2.5,
+    "vki_mount_zmin": 1.7,
+    "vki_nav": "none",
+    "vki_note": "authored at its real height (placer z 0); Full walls only",
+    "vki_origin": "footprint_centre",
+    "vki_piece": "SM_VKI_Prop_Torch_Wall",
+    "vki_prop_index": 23,
+    "vki_rot": -90,
+    "vki_rot_lock": "none",
+    "vki_tier": "dressing",
+    "vki_use": "[]",
+    "vki_uv_lock": "local",
+    "vki_var": "Wall"
+   },
+   "r": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Props",
+   "mat": {},
+   "name": "Dungeon_B1_Prop_Skeleton_Sitting.001",
+   "p": [
+    -14.46106,
+    0.0,
+    -3.75
+   ],
+   "piece": "SM_VKI_Prop_Skeleton_Sitting",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[14.25, 3.75]",
+    "vki_back_line": "[\"x\", 14.715]",
+    "vki_back_y": 0.25394,
+    "vki_class": "prop",
+    "vki_collider": "[[0.0558, -0.283, 0.4221, 0.5948, 1.074, 0.8505]]",
+    "vki_footprint": "-0.2416,-0.8201,0.3533,0.254",
+    "vki_fp_cells": "1,1",
+    "vki_host": "Dungeon_B1_Wall_Dungeon_Plain_150A_Full.004",
+    "vki_kind": "Skeleton",
+    "vki_mount": "wall_floor",
+    "vki_nav": "block",
+    "vki_origin": "footprint_centre",
+    "vki_piece": "SM_VKI_Prop_Skeleton_Sitting",
+    "vki_prop_index": 24,
+    "vki_rot": -90,
+    "vki_rot_lock": "none",
+    "vki_tier": "furniture",
+    "vki_use": "[]",
+    "vki_uv_lock": "local",
+    "vki_var": "Sitting"
+   },
+   "r": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Props",
+   "mat": {},
+   "name": "Dungeon_B1_Overlay_StrawPile.002",
+   "p": [
+    -14.13463,
+    0.0,
+    -0.772
+   ],
+   "piece": "SM_VKI_Overlay_StrawPile",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[14.25, 0.75]",
+    "vki_class": "overlay",
+    "vki_collider": "[[-0.0271, 0.0144, 0.0674, 1.2149, 1.0028, 0.1328]]",
+    "vki_footprint": "-0.6345,-0.4871,0.5804,0.5159",
+    "vki_fp_cells": "1,1",
+    "vki_hug": "[-0.1154, 0.022]",
+    "vki_kind": "StrawPile",
+    "vki_mount": "floor",
+    "vki_nav": "none",
+    "vki_origin": "footprint_centre",
+    "vki_piece": "SM_VKI_Overlay_StrawPile",
+    "vki_prop_index": 25,
+    "vki_rot": 0,
+    "vki_rot_lock": "none",
+    "vki_tier": "dressing",
+    "vki_use": "[]",
+    "vki_uv_lock": "local"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Props",
+   "mat": {},
+   "name": "Dungeon_B1_Prop_Bucket.001",
+   "p": [
+    -12.75,
+    0.0,
+    -0.75
+   ],
+   "piece": "SM_VKI_Prop_Bucket",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[12.75, 0.75]",
+    "vki_class": "prop",
+    "vki_collider": "[[-0.0, 0.0, 0.1738, 0.3375, 0.3048, 0.3477]]",
+    "vki_footprint": "-0.1688,-0.1525,0.1688,0.1525",
+    "vki_fp_cells": "1,1",
+    "vki_kind": "Bucket",
+    "vki_mount": "floor",
+    "vki_nav": "block",
+    "vki_origin": "footprint_centre",
+    "vki_piece": "SM_VKI_Prop_Bucket",
+    "vki_prop_index": 26,
+    "vki_rot": 0,
+    "vki_rot_lock": "none",
+    "vki_tier": "dressing",
+    "vki_use": "[]",
+    "vki_uv_lock": "local"
+   },
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Props",
+   "mat": {},
+   "name": "Dungeon_B1_Prop_Torch_Wall.004",
+   "p": [
+    -14.75,
+    0.0,
+    -2.25
+   ],
+   "piece": "SM_VKI_Prop_Torch_Wall",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[14.25, 2.25]",
+    "vki_back_line": "[\"x\", 14.75]",
+    "vki_back_y": 0.0,
+    "vki_class": "prop",
+    "vki_collider": "[[0.0076, -0.1666, 2.0817, 0.113, 0.3331, 0.7771]]",
+    "vki_footprint": "-0.049,-0.3332,0.0642,0",
+    "vki_fp_cells": "1,1",
+    "vki_fx": "[{\"fx\": \"torch_fire\", \"pos\": [0.0, -0.2861, 2.2803], \"scale\": 1.0}]",
+    "vki_host": "Dungeon_B1_Wall_Dungeon_Plain_150A_Full.003",
+    "vki_host_H": 3.0,
+    "vki_host_height": "Full",
+    "vki_kind": "Torch",
+    "vki_lights": "[{\"type\": \"POINT\", \"role\": \"torch\", \"pos\": [0.0, -0.3861, 2.3003], \"w\": 110.0, \"color\": [1.0, 0.55, 0.22], \"range\": 6.0, \"flicker\": 1, \"shadows\": 1, \"radius\": 0.08}]",
+    "vki_mount": "wall_hung",
+    "vki_mount_zmax": 2.5,
+    "vki_mount_zmin": 1.7,
+    "vki_nav": "none",
+    "vki_note": "authored at its real height (placer z 0); Full walls only",
+    "vki_origin": "footprint_centre",
+    "vki_piece": "SM_VKI_Prop_Torch_Wall",
+    "vki_prop_index": 27,
+    "vki_rot": -90,
+    "vki_rot_lock": "none",
+    "vki_tier": "dressing",
+    "vki_use": "[]",
+    "vki_uv_lock": "local",
+    "vki_var": "Wall"
+   },
+   "r": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Props",
+   "mat": {},
+   "name": "Dungeon_B1_Overlay_Debris_Pottery_A",
+   "p": [
+    -12.921,
+    0.0,
+    -3.705
+   ],
+   "piece": "SM_VKI_Overlay_Debris_Pottery_A",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[12.921, 3.705]",
+    "vki_class": "overlay",
+    "vki_collider": "[[-0.0168, -0.0127, 0.1337, 0.9376, 0.7088, 0.2714]]",
+    "vki_debris": 1,
+    "vki_debris_stone": 0,
+    "vki_debris_theme": "dungeon",
+    "vki_footprint": "-0.4857,-0.3672,0.4521,0.3417",
+    "vki_fp_cells": "1,1",
+    "vki_kind": "Debris",
+    "vki_mount": "floor",
+    "vki_nav": "none",
+    "vki_origin": "footprint_centre",
+    "vki_piece": "SM_VKI_Overlay_Debris_Pottery_A",
+    "vki_place_rule": "loose debris: anywhere on open floor, any rotation; walkable (no collider); vki_rooms_debris strews it",
+    "vki_rot": 100.1,
+    "vki_rot_lock": "none",
+    "vki_tier": "dressing",
+    "vki_use": "[]",
+    "vki_uv_lock": "local",
+    "vki_var": "Pottery_A"
+   },
+   "r": [
+    -0.0,
+    -0.766605,
+    -0.0,
+    0.642119
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Props",
+   "mat": {},
+   "name": "Dungeon_B1_Overlay_Puddle.002",
+   "p": [
+    -4.756,
+    0.0,
+    -6.856
+   ],
+   "piece": "SM_VKI_Overlay_Puddle",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[4.756, 6.856]",
+    "vki_class": "overlay",
+    "vki_collider": "[[0.0372, -0.0505, 0.0023, 0.9928, 0.938, 0.0034]]",
+    "vki_debris": 1,
+    "vki_debris_theme": "dungeon",
+    "vki_footprint": "-0.4592,-0.5196,0.5336,0.4186",
+    "vki_fp_cells": "1,1",
+    "vki_kind": "Puddle",
+    "vki_mount": "floor",
+    "vki_nav": "none",
+    "vki_origin": "footprint_centre",
+    "vki_piece": "SM_VKI_Overlay_Puddle",
+    "vki_rot": 173.1,
+    "vki_rot_lock": "none",
+    "vki_tier": "dressing",
+    "vki_use": "[]",
+    "vki_uv_lock": "local"
+   },
+   "r": [
+    -0.0,
+    -0.998188,
+    -0.0,
+    0.060178
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Props",
+   "mat": {
+    "58": "M_VKI_DungeonBlock"
+   },
+   "name": "Dungeon_B1_Overlay_Debris_Rocks_C",
+   "p": [
+    -14.061,
+    0.0,
+    -2.595
+   ],
+   "piece": "SM_VKI_Overlay_Debris_Rocks_C",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[14.061, 2.595]",
+    "vki_class": "overlay",
+    "vki_collider": "[[0.0305, -0.0134, 0.0679, 1.2182, 0.3937, 0.1459]]",
+    "vki_debris": 1,
+    "vki_debris_stone": 1,
+    "vki_debris_theme": "dungeon",
+    "vki_footprint": "-0.5786,-0.2103,0.6397,0.1834",
+    "vki_fp_cells": "1,1",
+    "vki_kind": "Debris",
+    "vki_mount": "floor",
+    "vki_nav": "none",
+    "vki_origin": "footprint_centre",
+    "vki_piece": "SM_VKI_Overlay_Debris_Rocks_C",
+    "vki_place_rule": "loose debris: anywhere on open floor, any rotation; walkable (no collider); vki_rooms_debris strews it",
+    "vki_rot": 272.6,
+    "vki_rot_lock": "none",
+    "vki_style": "{\"cap\": \"M_VKI_DungeonBlock\"}",
+    "vki_tier": "dressing",
+    "vki_use": "[]",
+    "vki_uv_lock": "local",
+    "vki_var": "Rocks_C"
+   },
+   "r": [
+    0.0,
+    0.690882,
+    0.0,
+    0.722967
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Props",
+   "mat": {},
+   "name": "Dungeon_B1_Overlay_Debris_Pottery_A.001",
+   "p": [
+    -8.067,
+    0.0,
+    -7.034
+   ],
+   "piece": "SM_VKI_Overlay_Debris_Pottery_A",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[8.067, 7.034]",
+    "vki_class": "overlay",
+    "vki_collider": "[[-0.0168, -0.0127, 0.1337, 0.9376, 0.7088, 0.2714]]",
+    "vki_debris": 1,
+    "vki_debris_stone": 0,
+    "vki_debris_theme": "dungeon",
+    "vki_footprint": "-0.4857,-0.3672,0.4521,0.3417",
+    "vki_fp_cells": "1,1",
+    "vki_kind": "Debris",
+    "vki_mount": "floor",
+    "vki_nav": "none",
+    "vki_origin": "footprint_centre",
+    "vki_piece": "SM_VKI_Overlay_Debris_Pottery_A",
+    "vki_place_rule": "loose debris: anywhere on open floor, any rotation; walkable (no collider); vki_rooms_debris strews it",
+    "vki_rot": 186.9,
+    "vki_rot_lock": "none",
+    "vki_tier": "dressing",
+    "vki_use": "[]",
+    "vki_uv_lock": "local",
+    "vki_var": "Pottery_A"
+   },
+   "r": [
+    0.0,
+    0.998188,
+    0.0,
+    0.060177
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Props",
+   "mat": {},
+   "name": "Dungeon_B1_Overlay_Debris_Rags",
+   "p": [
+    -6.44,
+    0.0,
+    -2.317
+   ],
+   "piece": "SM_VKI_Overlay_Debris_Rags",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[6.44, 2.317]",
+    "vki_class": "overlay",
+    "vki_collider": "[[0.0251, -0.1135, 0.045, 0.7, 0.7181, 0.09]]",
+    "vki_debris": 1,
+    "vki_debris_stone": 0,
+    "vki_debris_theme": "dungeon",
+    "vki_footprint": "-0.3249,-0.4727,0.3751,0.2456",
+    "vki_fp_cells": "1,1",
+    "vki_kind": "Debris",
+    "vki_mount": "floor",
+    "vki_nav": "none",
+    "vki_origin": "footprint_centre",
+    "vki_piece": "SM_VKI_Overlay_Debris_Rags",
+    "vki_place_rule": "loose debris: anywhere on open floor, any rotation; walkable (no collider); vki_rooms_debris strews it",
+    "vki_rot": 46.6,
+    "vki_rot_lock": "none",
+    "vki_tier": "dressing",
+    "vki_use": "[]",
+    "vki_uv_lock": "local",
+    "vki_var": "Rags"
+   },
+   "r": [
+    0.0,
+    -0.395546,
+    0.0,
+    0.918446
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Props",
+   "mat": {},
+   "name": "Dungeon_B1_Overlay_Puddle.003",
+   "p": [
+    -5.398,
+    0.0,
+    -3.357
+   ],
+   "piece": "SM_VKI_Overlay_Puddle",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[5.398, 3.357]",
+    "vki_class": "overlay",
+    "vki_collider": "[[0.0372, -0.0505, 0.0023, 0.9928, 0.938, 0.0034]]",
+    "vki_debris": 1,
+    "vki_debris_theme": "dungeon",
+    "vki_footprint": "-0.4592,-0.5196,0.5336,0.4186",
+    "vki_fp_cells": "1,1",
+    "vki_kind": "Puddle",
+    "vki_mount": "floor",
+    "vki_nav": "none",
+    "vki_origin": "footprint_centre",
+    "vki_piece": "SM_VKI_Overlay_Puddle",
+    "vki_rot": 266.5,
+    "vki_rot_lock": "none",
+    "vki_tier": "dressing",
+    "vki_use": "[]",
+    "vki_uv_lock": "local"
+   },
+   "r": [
+    0.0,
+    0.728371,
+    0.0,
+    0.685183
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Props",
+   "mat": {},
+   "name": "Dungeon_B1_Overlay_Debris_Pottery_A.002",
+   "p": [
+    -9.532,
+    0.0,
+    -2.41
+   ],
+   "piece": "SM_VKI_Overlay_Debris_Pottery_A",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[9.532, 2.41]",
+    "vki_class": "overlay",
+    "vki_collider": "[[-0.0168, -0.0127, 0.1337, 0.9376, 0.7088, 0.2714]]",
+    "vki_debris": 1,
+    "vki_debris_stone": 0,
+    "vki_debris_theme": "dungeon",
+    "vki_footprint": "-0.4857,-0.3672,0.4521,0.3417",
+    "vki_fp_cells": "1,1",
+    "vki_kind": "Debris",
+    "vki_mount": "floor",
+    "vki_nav": "none",
+    "vki_origin": "footprint_centre",
+    "vki_piece": "SM_VKI_Overlay_Debris_Pottery_A",
+    "vki_place_rule": "loose debris: anywhere on open floor, any rotation; walkable (no collider); vki_rooms_debris strews it",
+    "vki_rot": 350.6,
+    "vki_rot_lock": "none",
+    "vki_tier": "dressing",
+    "vki_use": "[]",
+    "vki_uv_lock": "local",
+    "vki_var": "Pottery_A"
+   },
+   "r": [
+    0.0,
+    0.081939,
+    0.0,
+    0.996637
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Props",
+   "mat": {},
+   "name": "Dungeon_B1_Overlay_Debris_Pottery_C",
+   "p": [
+    -11.454,
+    0.0,
+    -5.555
+   ],
+   "piece": "SM_VKI_Overlay_Debris_Pottery_C",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[11.454, 5.555]",
+    "vki_class": "overlay",
+    "vki_collider": "[[0.0198, -0.0478, 0.0444, 0.8614, 0.5589, 0.0929]]",
+    "vki_debris": 1,
+    "vki_debris_stone": 0,
+    "vki_debris_theme": "dungeon",
+    "vki_footprint": "-0.411,-0.3273,0.4506,0.2316",
+    "vki_fp_cells": "1,1",
+    "vki_kind": "Debris",
+    "vki_mount": "floor",
+    "vki_nav": "none",
+    "vki_origin": "footprint_centre",
+    "vki_piece": "SM_VKI_Overlay_Debris_Pottery_C",
+    "vki_place_rule": "loose debris: anywhere on open floor, any rotation; walkable (no collider); vki_rooms_debris strews it",
+    "vki_rot": 333.9,
+    "vki_rot_lock": "none",
+    "vki_tier": "dressing",
+    "vki_use": "[]",
+    "vki_uv_lock": "local",
+    "vki_var": "Pottery_C"
+   },
+   "r": [
+    0.0,
+    0.225801,
+    0.0,
+    0.974173
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Props",
+   "mat": {},
+   "name": "Dungeon_B1_Overlay_Debris_Pottery_A.003",
+   "p": [
+    -8.01,
+    0.0,
+    -3.49
+   ],
+   "piece": "SM_VKI_Overlay_Debris_Pottery_A",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[8.01, 3.49]",
+    "vki_class": "overlay",
+    "vki_collider": "[[-0.0168, -0.0127, 0.1337, 0.9376, 0.7088, 0.2714]]",
+    "vki_debris": 1,
+    "vki_debris_stone": 0,
+    "vki_debris_theme": "dungeon",
+    "vki_footprint": "-0.4857,-0.3672,0.4521,0.3417",
+    "vki_fp_cells": "1,1",
+    "vki_kind": "Debris",
+    "vki_mount": "floor",
+    "vki_nav": "none",
+    "vki_origin": "footprint_centre",
+    "vki_piece": "SM_VKI_Overlay_Debris_Pottery_A",
+    "vki_place_rule": "loose debris: anywhere on open floor, any rotation; walkable (no collider); vki_rooms_debris strews it",
+    "vki_rot": 239.7,
+    "vki_rot_lock": "none",
+    "vki_tier": "dressing",
+    "vki_use": "[]",
+    "vki_uv_lock": "local",
+    "vki_var": "Pottery_A"
+   },
+   "r": [
+    0.0,
+    0.867331,
+    0.0,
+    0.497731
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Props",
+   "mat": {},
+   "name": "Dungeon_B1_Overlay_Debris_Pottery_B",
+   "p": [
+    -2.099,
+    0.0,
+    -2.29
+   ],
+   "piece": "SM_VKI_Overlay_Debris_Pottery_B",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[2.099, 2.29]",
+    "vki_class": "overlay",
+    "vki_collider": "[[0.038, 0.0045, 0.172, 0.8735, 0.5829, 0.36]]",
+    "vki_debris": 1,
+    "vki_debris_stone": 0,
+    "vki_debris_theme": "dungeon",
+    "vki_footprint": "-0.3988,-0.287,0.4749,0.296",
+    "vki_fp_cells": "1,1",
+    "vki_kind": "Debris",
+    "vki_mount": "floor",
+    "vki_nav": "none",
+    "vki_origin": "footprint_centre",
+    "vki_piece": "SM_VKI_Overlay_Debris_Pottery_B",
+    "vki_place_rule": "loose debris: anywhere on open floor, any rotation; walkable (no collider); vki_rooms_debris strews it",
+    "vki_rot": 288.6,
+    "vki_rot_lock": "none",
+    "vki_tier": "dressing",
+    "vki_use": "[]",
+    "vki_uv_lock": "local",
+    "vki_var": "Pottery_B"
+   },
+   "r": [
+    0.0,
+    0.583541,
+    0.0,
+    0.812083
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Props",
+   "mat": {},
+   "name": "Dungeon_B1_Overlay_Debris_Planks",
+   "p": [
+    -8.325,
+    0.0,
+    -1.213
+   ],
+   "piece": "SM_VKI_Overlay_Debris_Planks",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[8.325, 1.213]",
+    "vki_class": "overlay",
+    "vki_collider": "[[0.0009, -0.0168, 0.0278, 0.8475, 0.7965, 0.0546]]",
+    "vki_debris": 1,
+    "vki_debris_stone": 0,
+    "vki_debris_theme": "dungeon",
+    "vki_footprint": "-0.4229,-0.4151,0.4247,0.3816",
+    "vki_fp_cells": "1,1",
+    "vki_kind": "Debris",
+    "vki_mount": "floor",
+    "vki_nav": "none",
+    "vki_origin": "footprint_centre",
+    "vki_piece": "SM_VKI_Overlay_Debris_Planks",
+    "vki_place_rule": "loose debris: anywhere on open floor, any rotation; walkable (no collider); vki_rooms_debris strews it",
+    "vki_rot": 16.9,
+    "vki_rot_lock": "none",
+    "vki_tier": "dressing",
+    "vki_use": "[]",
+    "vki_uv_lock": "local",
+    "vki_var": "Planks"
+   },
+   "r": [
+    0.0,
+    -0.146946,
+    0.0,
+    0.989144
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Props",
+   "mat": {},
+   "name": "Dungeon_B1_Overlay_Debris_Pottery_C.001",
+   "p": [
+    -10.169,
+    0.0,
+    -3.88
+   ],
+   "piece": "SM_VKI_Overlay_Debris_Pottery_C",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[10.169, 3.88]",
+    "vki_class": "overlay",
+    "vki_collider": "[[0.0198, -0.0478, 0.0444, 0.8614, 0.5589, 0.0929]]",
+    "vki_debris": 1,
+    "vki_debris_stone": 0,
+    "vki_debris_theme": "dungeon",
+    "vki_footprint": "-0.411,-0.3273,0.4506,0.2316",
+    "vki_fp_cells": "1,1",
+    "vki_kind": "Debris",
+    "vki_mount": "floor",
+    "vki_nav": "none",
+    "vki_origin": "footprint_centre",
+    "vki_piece": "SM_VKI_Overlay_Debris_Pottery_C",
+    "vki_place_rule": "loose debris: anywhere on open floor, any rotation; walkable (no collider); vki_rooms_debris strews it",
+    "vki_rot": 3.4,
+    "vki_rot_lock": "none",
+    "vki_tier": "dressing",
+    "vki_use": "[]",
+    "vki_uv_lock": "local",
+    "vki_var": "Pottery_C"
+   },
+   "r": [
+    0.0,
+    -0.029666,
+    0.0,
+    0.99956
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Props",
+   "mat": {
+    "58": "M_VKI_DungeonBlock"
+   },
+   "name": "Dungeon_B1_Overlay_Debris_Rocks_C.001",
+   "p": [
+    -7.005,
+    0.0,
+    -5.299
+   ],
+   "piece": "SM_VKI_Overlay_Debris_Rocks_C",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[7.005, 5.299]",
+    "vki_class": "overlay",
+    "vki_collider": "[[0.0305, -0.0134, 0.0679, 1.2182, 0.3937, 0.1459]]",
+    "vki_debris": 1,
+    "vki_debris_stone": 1,
+    "vki_debris_theme": "dungeon",
+    "vki_footprint": "-0.5786,-0.2103,0.6397,0.1834",
+    "vki_fp_cells": "1,1",
+    "vki_kind": "Debris",
+    "vki_mount": "floor",
+    "vki_nav": "none",
+    "vki_origin": "footprint_centre",
+    "vki_piece": "SM_VKI_Overlay_Debris_Rocks_C",
+    "vki_place_rule": "loose debris: anywhere on open floor, any rotation; walkable (no collider); vki_rooms_debris strews it",
+    "vki_rot": -7.7,
+    "vki_rot_lock": "none",
+    "vki_style": "{\"cap\": \"M_VKI_DungeonBlock\"}",
+    "vki_tier": "dressing",
+    "vki_use": "[]",
+    "vki_uv_lock": "local",
+    "vki_var": "Rocks_C"
+   },
+   "r": [
+    0.0,
+    0.067145,
+    0.0,
+    0.997743
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Props",
+   "mat": {},
+   "name": "Dungeon_B1_Overlay_Debris_Rags.001",
+   "p": [
+    -10.798,
+    0.0,
+    -2.135
+   ],
+   "piece": "SM_VKI_Overlay_Debris_Rags",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[10.798, 2.135]",
+    "vki_class": "overlay",
+    "vki_collider": "[[0.0251, -0.1135, 0.045, 0.7, 0.7181, 0.09]]",
+    "vki_debris": 1,
+    "vki_debris_stone": 0,
+    "vki_debris_theme": "dungeon",
+    "vki_footprint": "-0.3249,-0.4727,0.3751,0.2456",
+    "vki_fp_cells": "1,1",
+    "vki_kind": "Debris",
+    "vki_mount": "floor",
+    "vki_nav": "none",
+    "vki_origin": "footprint_centre",
+    "vki_piece": "SM_VKI_Overlay_Debris_Rags",
+    "vki_place_rule": "loose debris: anywhere on open floor, any rotation; walkable (no collider); vki_rooms_debris strews it",
+    "vki_rot": 331.5,
+    "vki_rot_lock": "none",
+    "vki_tier": "dressing",
+    "vki_use": "[]",
+    "vki_uv_lock": "local",
+    "vki_var": "Rags"
+   },
+   "r": [
+    0.0,
+    0.246153,
+    0.0,
+    0.969231
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKI_Dungeon_B1_Props",
+   "mat": {},
+   "name": "Dungeon_B1_Overlay_Debris_Sack",
+   "p": [
+    -4.042,
+    0.0,
+    -3.776
+   ],
+   "piece": "SM_VKI_Overlay_Debris_Sack",
+   "props": {
+    "grid_m": 1.5,
+    "kit": "VillageInterior",
+    "vki_at": "[4.042, 3.776]",
+    "vki_class": "overlay",
+    "vki_collider": "[[0.0454, -0.0112, 0.1069, 0.8744, 0.5029, 0.2594]]",
+    "vki_debris": 1,
+    "vki_debris_stone": 0,
+    "vki_debris_theme": "dungeon",
+    "vki_footprint": "-0.3919,-0.2627,0.4826,0.2403",
+    "vki_fp_cells": "1,1",
+    "vki_kind": "Debris",
+    "vki_mount": "floor",
+    "vki_nav": "none",
+    "vki_origin": "footprint_centre",
+    "vki_piece": "SM_VKI_Overlay_Debris_Sack",
+    "vki_place_rule": "loose debris: anywhere on open floor, any rotation; walkable (no collider); vki_rooms_debris strews it",
+    "vki_rot": 3.6,
+    "vki_rot_lock": "none",
+    "vki_tier": "dressing",
+    "vki_use": "[]",
+    "vki_uv_lock": "local",
+    "vki_var": "Sack"
+   },
+   "r": [
+    0.0,
+    -0.031411,
+    0.0,
+    0.999507
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  }
+ ],
+ "preset": "Dungeon",
+ "root": {
+  "vki_bounds": "[0.0, 0.0, 15.0, 9.0]",
+  "vki_building": "Dungeon",
+  "vki_cam_dist": 20.602,
+  "vki_cam_h_fit": 3.0,
+  "vki_cam_margin": 0.4,
+  "vki_cam_mode": "fit",
+  "vki_cam_pitch": 50,
+  "vki_cam_target": "[7.5, 4.384, 0.0]",
+  "vki_cam_yaw": 0,
+  "vki_default_spawn": "surface",
+  "vki_family": "Dungeon",
+  "vki_floor": -1,
+  "vki_links": "[{\"id\": \"surface\", \"kind\": \"stair_up\", \"target\": \"VK_ValleyTown\", \"obj\": \"Dungeon_B1_Stair_Up_150x450_Stone\", \"spawn\": \"SPN_surface\"}, {\"id\": \"crypt\", \"kind\": \"stair_down\", \"target\": \"VKI_Dungeon_B2\", \"obj\": \"Dungeon_B1_Stair_Down_150x450_Stone\", \"spawn\": \"SPN_crypt\"}, {\"id\": \"sewer\", \"kind\": \"passage\", \"target\": \"VKI_Sewer_S1\", \"obj\": \"Dungeon_B1_Wall_Dungeon_Passage_150_Full\", \"spawn\": \"SPN_sewer\"}]",
+  "vki_preset": "Dungeon",
+  "vki_rooms_version": "2026-09-26 r1",
+  "vki_scene": "VKI_Dungeon_B1"
+ },
+ "scene": "VKI_Dungeon_B1",
+ "version": "2026-09-30 slice",
+ "view_transform": "AgX",
+ "world": {
+  "camera_color": [
+   0.0118,
+   0.0098,
+   0.009
+  ],
+  "color": [
+   0.1,
+   0.11,
+   0.15
+  ],
+  "linked": false,
+  "strength": 0.9
+ }
+}

@@ -1,0 +1,100 @@
+{
+ "blender_origin": [
+  145.7842254638672,
+  0.0,
+  0.0
+ ],
+ "builder": "build_guardtower",
+ "cameras": [],
+ "exposure": -0.20000000298023224,
+ "lights": [],
+ "look": "AgX - Medium High Contrast",
+ "markers": [],
+ "name": "GuardTower",
+ "placements": [
+  {
+   "coll": "VKX_ST_GuardTower",
+   "mat": {},
+   "name": "SM_VK_GuardTower_inst.003",
+   "p": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "piece": "SM_VK_GuardTower",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_GuardTower",
+   "mat": {},
+   "name": "SM_VK_Prop_WeaponRack_inst.010",
+   "p": [
+    -2.89999,
+    0.0,
+    1.2
+   ],
+   "piece": "SM_VK_Prop_WeaponRack",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_GuardTower",
+   "mat": {},
+   "name": "SM_VK_Prop_BarrelStack_inst.028",
+   "p": [
+    2.7,
+    0.0,
+    1.8
+   ],
+   "piece": "SM_VK_Prop_BarrelStack",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  }
+ ],
+ "preset": null,
+ "root": {},
+ "scene": "VKX_Structures",
+ "structure": "GuardTower",
+ "version": "2026-09-30 slice",
+ "view_transform": "AgX",
+ "world": {
+  "color": [
+   0.42,
+   0.55,
+   0.75
+  ],
+  "linked": false,
+  "strength": 0.35
+ }
+}

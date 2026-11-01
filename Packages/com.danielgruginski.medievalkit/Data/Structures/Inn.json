@@ -1,0 +1,1989 @@
+{
+ "blender_origin": [
+  24.05757713317871,
+  0.0,
+  0.0
+ ],
+ "builder": "build_inn",
+ "cameras": [],
+ "exposure": -0.20000000298023224,
+ "lights": [],
+ "look": "AgX - Medium High Contrast",
+ "markers": [],
+ "name": "Inn",
+ "placements": [
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {
+    "10": "M_VK_Shutter_Red",
+    "4": "M_VK_Window_Lit"
+   },
+   "name": "SM_VK_Wall_Stone_Window_inst.212",
+   "p": [
+    3.0,
+    0.0,
+    3.0
+   ],
+   "piece": "SM_VK_Wall_Stone_Window",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {},
+   "name": "SM_VK_Wall_Stone_Door_inst.061",
+   "p": [
+    0.0,
+    0.0,
+    3.0
+   ],
+   "piece": "SM_VK_Wall_Stone_Door",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {},
+   "name": "SM_VK_Prop_Planter_inst.042",
+   "p": [
+    -1.05,
+    0.0,
+    3.75
+   ],
+   "piece": "SM_VK_Prop_Planter",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {},
+   "name": "SM_VK_Porch_inst.038",
+   "p": [
+    0.0,
+    0.0,
+    3.0
+   ],
+   "piece": "SM_VK_Porch",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {
+    "10": "M_VK_Shutter_Red",
+    "4": "M_VK_Window_Lit"
+   },
+   "name": "SM_VK_Wall_Stone_Window_inst.213",
+   "p": [
+    -3.0,
+    0.0,
+    3.0
+   ],
+   "piece": "SM_VK_Wall_Stone_Window",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {},
+   "name": "SM_VK_Prop_FlowerBox_inst.150",
+   "p": [
+    -3.0,
+    0.78,
+    3.55
+   ],
+   "piece": "SM_VK_Prop_FlowerBox",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {
+    "10": "M_VK_Shutter_Red",
+    "4": "M_VK_Window_Lit"
+   },
+   "name": "SM_VK_Wall_Stone_Window_inst.214",
+   "p": [
+    3.0,
+    0.0,
+    -3.0
+   ],
+   "piece": "SM_VK_Wall_Stone_Window",
+   "props": {},
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {},
+   "name": "SM_VK_Prop_FlowerBox_inst.151",
+   "p": [
+    3.0,
+    0.78,
+    -3.55
+   ],
+   "piece": "SM_VK_Prop_FlowerBox",
+   "props": {},
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {},
+   "name": "SM_VK_Wall_Stone_inst.253",
+   "p": [
+    0.0,
+    0.0,
+    -3.0
+   ],
+   "piece": "SM_VK_Wall_Stone",
+   "props": {},
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {
+    "10": "M_VK_Shutter_Red",
+    "4": "M_VK_Window_Lit"
+   },
+   "name": "SM_VK_Wall_Stone_Window_inst.215",
+   "p": [
+    -3.0,
+    0.0,
+    -3.0
+   ],
+   "piece": "SM_VK_Wall_Stone_Window",
+   "props": {},
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {},
+   "name": "SM_VK_Prop_FlowerBox_inst.152",
+   "p": [
+    -3.0,
+    0.78,
+    -3.55
+   ],
+   "piece": "SM_VK_Prop_FlowerBox",
+   "props": {},
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {},
+   "name": "SM_VK_Deco_Weeds_inst.146",
+   "p": [
+    -3.0,
+    0.0,
+    -3.0
+   ],
+   "piece": "SM_VK_Deco_Weeds",
+   "props": {},
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {},
+   "name": "SM_VK_Wall_Stone_inst.254",
+   "p": [
+    4.5,
+    0.0,
+    1.5
+   ],
+   "piece": "SM_VK_Wall_Stone",
+   "props": {},
+   "r": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {},
+   "name": "SM_VK_Wall_Stone_inst.255",
+   "p": [
+    4.5,
+    0.0,
+    -1.5
+   ],
+   "piece": "SM_VK_Wall_Stone",
+   "props": {},
+   "r": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {
+    "10": "M_VK_Shutter_Red",
+    "4": "M_VK_Window_Lit"
+   },
+   "name": "SM_VK_Wall_Stone_Window_inst.216",
+   "p": [
+    -4.5,
+    0.0,
+    -1.5
+   ],
+   "piece": "SM_VK_Wall_Stone_Window",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {},
+   "name": "SM_VK_Prop_FlowerBox_Daisy_inst.061",
+   "p": [
+    -5.05,
+    0.78,
+    -1.5
+   ],
+   "piece": "SM_VK_Prop_FlowerBox_Daisy",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {},
+   "name": "SM_VK_Deco_Weeds_inst.162",
+   "p": [
+    -4.5,
+    0.0,
+    -1.5
+   ],
+   "piece": "SM_VK_Deco_Weeds",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {},
+   "name": "SM_VK_Wall_Stone_inst.256",
+   "p": [
+    -4.5,
+    0.0,
+    1.5
+   ],
+   "piece": "SM_VK_Wall_Stone",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {},
+   "name": "SM_VK_Deco_Weeds_inst.168",
+   "p": [
+    -4.5,
+    0.0,
+    1.5
+   ],
+   "piece": "SM_VK_Deco_Weeds",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {},
+   "name": "SM_VK_Deco_Ivy_B_inst.029",
+   "p": [
+    -4.5,
+    0.0,
+    1.5
+   ],
+   "piece": "SM_VK_Deco_Ivy_B",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {},
+   "name": "SM_VK_Corner_Stone_inst.224",
+   "p": [
+    4.5,
+    0.0,
+    3.0
+   ],
+   "piece": "SM_VK_Corner_Stone",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {},
+   "name": "SM_VK_Corner_Stone_inst.225",
+   "p": [
+    -4.5,
+    0.0,
+    3.0
+   ],
+   "piece": "SM_VK_Corner_Stone",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {},
+   "name": "SM_VK_Corner_Stone_inst.226",
+   "p": [
+    -4.5,
+    0.0,
+    -3.0
+   ],
+   "piece": "SM_VK_Corner_Stone",
+   "props": {},
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {},
+   "name": "SM_VK_Corner_Stone_inst.227",
+   "p": [
+    4.5,
+    0.0,
+    -3.0
+   ],
+   "piece": "SM_VK_Corner_Stone",
+   "props": {},
+   "r": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {
+    "1": "M_VK_Plaster_Ochre",
+    "4": "M_VK_Window_Lit"
+   },
+   "name": "SM_VK_Wall_Timber_Window_inst.376",
+   "p": [
+    3.0,
+    3.0,
+    3.0
+   ],
+   "piece": "SM_VK_Wall_Timber_Window",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {
+    "1": "M_VK_Plaster_Ochre",
+    "4": "M_VK_Window_Lit"
+   },
+   "name": "SM_VK_Wall_Timber_Window_inst.377",
+   "p": [
+    0.0,
+    3.0,
+    3.0
+   ],
+   "piece": "SM_VK_Wall_Timber_Window",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {
+    "1": "M_VK_Plaster_Ochre",
+    "4": "M_VK_Window_Lit"
+   },
+   "name": "SM_VK_Wall_Timber_Window_inst.378",
+   "p": [
+    -3.0,
+    3.0,
+    3.0
+   ],
+   "piece": "SM_VK_Wall_Timber_Window",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {
+    "1": "M_VK_Plaster_Ochre",
+    "4": "M_VK_Window_Lit"
+   },
+   "name": "SM_VK_Wall_Timber_Window_inst.379",
+   "p": [
+    3.0,
+    3.0,
+    -3.0
+   ],
+   "piece": "SM_VK_Wall_Timber_Window",
+   "props": {},
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {
+    "1": "M_VK_Plaster_Ochre"
+   },
+   "name": "SM_VK_Wall_Timber_K_inst.075",
+   "p": [
+    0.0,
+    3.0,
+    -3.0
+   ],
+   "piece": "SM_VK_Wall_Timber_K",
+   "props": {},
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {
+    "1": "M_VK_Plaster_Ochre",
+    "4": "M_VK_Window_Lit"
+   },
+   "name": "SM_VK_Wall_Timber_Window_inst.380",
+   "p": [
+    -3.0,
+    3.0,
+    -3.0
+   ],
+   "piece": "SM_VK_Wall_Timber_Window",
+   "props": {},
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {
+    "1": "M_VK_Plaster_Ochre"
+   },
+   "name": "SM_VK_Wall_Timber_K_inst.076",
+   "p": [
+    4.5,
+    3.0,
+    1.5
+   ],
+   "piece": "SM_VK_Wall_Timber_K",
+   "props": {},
+   "r": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {
+    "1": "M_VK_Plaster_Ochre"
+   },
+   "name": "SM_VK_Wall_Timber_inst.061",
+   "p": [
+    4.5,
+    3.0,
+    -1.5
+   ],
+   "piece": "SM_VK_Wall_Timber",
+   "props": {},
+   "r": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {
+    "1": "M_VK_Plaster_Ochre",
+    "4": "M_VK_Window_Lit"
+   },
+   "name": "SM_VK_Wall_Timber_Window_inst.381",
+   "p": [
+    -4.5,
+    3.0,
+    -1.5
+   ],
+   "piece": "SM_VK_Wall_Timber_Window",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {
+    "1": "M_VK_Plaster_Ochre"
+   },
+   "name": "SM_VK_Wall_Timber_inst.062",
+   "p": [
+    -4.5,
+    3.0,
+    1.5
+   ],
+   "piece": "SM_VK_Wall_Timber",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {},
+   "name": "SM_VK_Corner_Timber_inst.228",
+   "p": [
+    4.5,
+    3.0,
+    3.0
+   ],
+   "piece": "SM_VK_Corner_Timber",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {},
+   "name": "SM_VK_Corner_Timber_inst.229",
+   "p": [
+    -4.5,
+    3.0,
+    3.0
+   ],
+   "piece": "SM_VK_Corner_Timber",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {},
+   "name": "SM_VK_Corner_Timber_inst.230",
+   "p": [
+    -4.5,
+    3.0,
+    -3.0
+   ],
+   "piece": "SM_VK_Corner_Timber",
+   "props": {},
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {},
+   "name": "SM_VK_Corner_Timber_inst.231",
+   "p": [
+    4.5,
+    3.0,
+    -3.0
+   ],
+   "piece": "SM_VK_Corner_Timber",
+   "props": {},
+   "r": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {
+    "1": "M_VK_Plaster_Ochre",
+    "4": "M_VK_Window_Lit"
+   },
+   "name": "SM_VK_Wall_Timber_Window_inst.382",
+   "p": [
+    3.0,
+    5.8,
+    3.0
+   ],
+   "piece": "SM_VK_Wall_Timber_Window",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {
+    "1": "M_VK_Plaster_Ochre",
+    "4": "M_VK_Window_Lit"
+   },
+   "name": "SM_VK_Wall_Timber_Window_inst.383",
+   "p": [
+    0.0,
+    5.8,
+    3.0
+   ],
+   "piece": "SM_VK_Wall_Timber_Window",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {
+    "1": "M_VK_Plaster_Ochre",
+    "4": "M_VK_Window_Lit"
+   },
+   "name": "SM_VK_Wall_Timber_Window_inst.384",
+   "p": [
+    -3.0,
+    5.8,
+    3.0
+   ],
+   "piece": "SM_VK_Wall_Timber_Window",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {
+    "1": "M_VK_Plaster_Ochre",
+    "4": "M_VK_Window_Lit"
+   },
+   "name": "SM_VK_Wall_Timber_Window_inst.385",
+   "p": [
+    3.0,
+    5.8,
+    -3.0
+   ],
+   "piece": "SM_VK_Wall_Timber_Window",
+   "props": {},
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {
+    "1": "M_VK_Plaster_Ochre"
+   },
+   "name": "SM_VK_Wall_Timber_K_inst.077",
+   "p": [
+    0.0,
+    5.8,
+    -3.0
+   ],
+   "piece": "SM_VK_Wall_Timber_K",
+   "props": {},
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {
+    "1": "M_VK_Plaster_Ochre",
+    "4": "M_VK_Window_Lit"
+   },
+   "name": "SM_VK_Wall_Timber_Window_inst.386",
+   "p": [
+    -3.0,
+    5.8,
+    -3.0
+   ],
+   "piece": "SM_VK_Wall_Timber_Window",
+   "props": {},
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {
+    "1": "M_VK_Plaster_Ochre",
+    "4": "M_VK_Window_Lit"
+   },
+   "name": "SM_VK_Wall_Timber_Window_inst.387",
+   "p": [
+    4.5,
+    5.8,
+    1.5
+   ],
+   "piece": "SM_VK_Wall_Timber_Window",
+   "props": {},
+   "r": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {
+    "1": "M_VK_Plaster_Ochre"
+   },
+   "name": "SM_VK_Wall_Timber_X_inst.052",
+   "p": [
+    4.5,
+    5.8,
+    -1.5
+   ],
+   "piece": "SM_VK_Wall_Timber_X",
+   "props": {},
+   "r": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {
+    "1": "M_VK_Plaster_Ochre",
+    "4": "M_VK_Window_Lit"
+   },
+   "name": "SM_VK_Wall_Timber_Window_inst.388",
+   "p": [
+    -4.5,
+    5.8,
+    -1.5
+   ],
+   "piece": "SM_VK_Wall_Timber_Window",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {
+    "1": "M_VK_Plaster_Ochre",
+    "4": "M_VK_Window_Lit"
+   },
+   "name": "SM_VK_Wall_Timber_Window_inst.389",
+   "p": [
+    -4.5,
+    5.8,
+    1.5
+   ],
+   "piece": "SM_VK_Wall_Timber_Window",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {},
+   "name": "SM_VK_Corner_Timber_inst.232",
+   "p": [
+    4.5,
+    5.8,
+    3.0
+   ],
+   "piece": "SM_VK_Corner_Timber",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {},
+   "name": "SM_VK_Corner_Timber_inst.233",
+   "p": [
+    -4.5,
+    5.8,
+    3.0
+   ],
+   "piece": "SM_VK_Corner_Timber",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {},
+   "name": "SM_VK_Corner_Timber_inst.234",
+   "p": [
+    -4.5,
+    5.8,
+    -3.0
+   ],
+   "piece": "SM_VK_Corner_Timber",
+   "props": {},
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {},
+   "name": "SM_VK_Corner_Timber_inst.235",
+   "p": [
+    4.5,
+    5.8,
+    -3.0
+   ],
+   "piece": "SM_VK_Corner_Timber",
+   "props": {},
+   "r": [
+    0.0,
+    0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {},
+   "name": "SM_VK_Roof_Hip_inst.022",
+   "p": [
+    3.0,
+    8.6,
+    0.0
+   ],
+   "piece": "SM_VK_Roof_Hip",
+   "props": {},
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {},
+   "name": "SM_VK_Roof_Mid_inst.054",
+   "p": [
+    0.0,
+    8.6,
+    0.0
+   ],
+   "piece": "SM_VK_Roof_Mid",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {
+    "1": "M_VK_Plaster_Ochre",
+    "4": "M_VK_Window_Lit"
+   },
+   "name": "SM_VK_Roof_Gable_inst.101",
+   "p": [
+    -3.0,
+    8.6,
+    0.0
+   ],
+   "piece": "SM_VK_Roof_Gable",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {},
+   "name": "SM_VK_Chimney_inst.068",
+   "p": [
+    3.0,
+    8.6,
+    0.0
+   ],
+   "piece": "SM_VK_Chimney",
+   "props": {},
+   "r": [
+    0.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {},
+   "name": "SM_VK_Prop_InnSign_inst.001",
+   "p": [
+    -3.9,
+    4.1,
+    3.3
+   ],
+   "piece": "SM_VK_Prop_InnSign",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {},
+   "name": "SM_VK_Prop_Lantern_inst.053",
+   "p": [
+    1.0,
+    2.3,
+    3.3
+   ],
+   "piece": "SM_VK_Prop_Lantern",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {},
+   "name": "SM_VK_Prop_Lantern_inst.054",
+   "p": [
+    -1.0,
+    2.3,
+    3.3
+   ],
+   "piece": "SM_VK_Prop_Lantern",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {},
+   "name": "SM_VK_Prop_AleCask_inst.001",
+   "p": [
+    3.3,
+    0.0,
+    4.5
+   ],
+   "piece": "SM_VK_Prop_AleCask",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {},
+   "name": "SM_VK_Prop_BarrelStack_inst.026",
+   "p": [
+    4.62,
+    0.0,
+    4.8
+   ],
+   "piece": "SM_VK_Prop_BarrelStack",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {},
+   "name": "SM_VK_Prop_HitchRail_inst.001",
+   "p": [
+    -3.0,
+    0.0,
+    5.0
+   ],
+   "piece": "SM_VK_Prop_HitchRail",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {},
+   "name": "SM_VK_Prop_Weathervane_inst.001",
+   "p": [
+    2.0,
+    14.49826,
+    0.0
+   ],
+   "piece": "SM_VK_Prop_Weathervane",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {},
+   "name": "SM_VK_Prop_Table_inst.010",
+   "p": [
+    -7.0,
+    0.0,
+    1.2
+   ],
+   "piece": "SM_VK_Prop_Table",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {},
+   "name": "SM_VK_Prop_Stool_inst.036",
+   "p": [
+    -6.175,
+    0.0,
+    1.8
+   ],
+   "piece": "SM_VK_Prop_Stool",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {},
+   "name": "SM_VK_Prop_Stool_inst.037",
+   "p": [
+    -6.175,
+    0.0,
+    0.6
+   ],
+   "piece": "SM_VK_Prop_Stool",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {},
+   "name": "SM_VK_Prop_Stool_inst.038",
+   "p": [
+    -7.825,
+    0.0,
+    1.8
+   ],
+   "piece": "SM_VK_Prop_Stool",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {},
+   "name": "SM_VK_Prop_Stool_inst.039",
+   "p": [
+    -7.825,
+    0.0,
+    0.6
+   ],
+   "piece": "SM_VK_Prop_Stool",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {},
+   "name": "SM_VK_Prop_Table_inst.011",
+   "p": [
+    -9.8,
+    0.0,
+    -1.3
+   ],
+   "piece": "SM_VK_Prop_Table",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {},
+   "name": "SM_VK_Prop_Stool_inst.040",
+   "p": [
+    -8.975,
+    0.0,
+    -0.7
+   ],
+   "piece": "SM_VK_Prop_Stool",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {},
+   "name": "SM_VK_Prop_Stool_inst.041",
+   "p": [
+    -8.975,
+    0.0,
+    -1.9
+   ],
+   "piece": "SM_VK_Prop_Stool",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {},
+   "name": "SM_VK_Prop_Stool_inst.042",
+   "p": [
+    -10.625,
+    0.0,
+    -0.7
+   ],
+   "piece": "SM_VK_Prop_Stool",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {},
+   "name": "SM_VK_Prop_Stool_inst.043",
+   "p": [
+    -10.625,
+    0.0,
+    -1.9
+   ],
+   "piece": "SM_VK_Prop_Stool",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {},
+   "name": "SM_VK_Prop_BarrelStack_inst.027",
+   "p": [
+    -10.3,
+    0.0,
+    2.3
+   ],
+   "piece": "SM_VK_Prop_BarrelStack",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {},
+   "name": "SM_VK_Prop_Festoon_inst.005",
+   "p": [
+    -7.9,
+    3.0,
+    2.4
+   ],
+   "piece": "SM_VK_Prop_Festoon",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {},
+   "name": "SM_VK_Prop_Festoon_inst.006",
+   "p": [
+    -7.9,
+    3.0,
+    -2.6
+   ],
+   "piece": "SM_VK_Prop_Festoon",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {},
+   "name": "SM_VK_Prop_LampPost_inst.040",
+   "p": [
+    -5.2,
+    0.0,
+    2.6
+   ],
+   "piece": "SM_VK_Prop_LampPost",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {},
+   "name": "SM_VK_Prop_LampPost_inst.041",
+   "p": [
+    -10.8,
+    0.0,
+    -2.9
+   ],
+   "piece": "SM_VK_Prop_LampPost",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {},
+   "name": "SM_VK_Prop_Fence_inst.187",
+   "p": [
+    -6.45,
+    0.0,
+    -3.3
+   ],
+   "piece": "SM_VK_Prop_Fence",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {},
+   "name": "SM_VK_Prop_Fence_inst.188",
+   "p": [
+    -9.75,
+    0.0,
+    -3.3
+   ],
+   "piece": "SM_VK_Prop_Fence",
+   "props": {},
+   "r": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {},
+   "name": "SM_VK_Prop_Fence_inst.189",
+   "p": [
+    -11.4,
+    0.0,
+    1.65
+   ],
+   "piece": "SM_VK_Prop_Fence",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "coll": "VKX_ST_Inn",
+   "mat": {},
+   "name": "SM_VK_Prop_FenceGate_inst.026",
+   "p": [
+    -11.4,
+    0.0,
+    -1.65
+   ],
+   "piece": "SM_VK_Prop_FenceGate",
+   "props": {},
+   "r": [
+    0.0,
+    -0.707107,
+    0.0,
+    0.707107
+   ],
+   "s": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  }
+ ],
+ "preset": null,
+ "root": {},
+ "scene": "VKX_Structures",
+ "structure": "Inn",
+ "version": "2026-09-30 slice",
+ "view_transform": "AgX",
+ "world": {
+  "color": [
+   0.42,
+   0.55,
+   0.75
+  ],
+  "linked": false,
+  "strength": 0.35
+ }
+}
