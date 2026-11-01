@@ -1,6 +1,9 @@
 ﻿<Solution>
-  <Project Path="Assembly-CSharp.csproj" />
-  <Project Path="MCPForUnity.Runtime.csproj" />
   <Project Path="MCPForUnity.Editor.csproj" />
+  <Project Path="Assembly-CSharp.csproj" />
+  <Project Path="MedievalKit.Runtime.csproj" />
   <Project Path="Assembly-CSharp-Editor.csproj" />
+  <Project Path="MCPForUnity.Runtime.csproj" />
+  <Project Path="MedievalKit.Editor.csproj" />
+  <Project Path="MedievalKit.Walker.csproj" />
 </Solution>
